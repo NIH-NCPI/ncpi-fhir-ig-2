@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        node-version: [10, 12]
+        node-version: [16]
     steps:
       - name: Check out branch
         uses: actions/checkout@v2
@@ -34,7 +34,7 @@ jobs:
 
       - name: Install SUSHI and add FSH definitions
         run: |
-          npm install -g fsh-sushi@^2.10.2
+          npm install -g fsh-sushi
           sushi .
 
       - name: Update IG publisher

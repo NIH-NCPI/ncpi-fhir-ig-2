@@ -2,7 +2,7 @@ name: 🚀 Deploy IG Site Preview
 
 on:
   pull_request:
-    types: [opened, reopened, edited, synchronize] 
+    types: [opened, reopened, edited, synchronize]
 
 jobs:
   publish:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: 👩‍💻 Checkout code
         uses: actions/checkout@v3
-         
+
       - name: 🛠 Set up OpenJDK
         uses: actions/setup-java@v1
         with:
@@ -26,11 +26,11 @@ jobs:
       - name: 🛠 Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 12 
+          node-version: 16
 
       - name: 🛠 Install SUSHI and add FSH definitions
         run: |
-          npm install -g fsh-sushi@^2.10.2
+          npm install -g fsh-sushi
           sushi .
 
       - name: ⬆️ Update IG publisher
@@ -48,7 +48,7 @@ jobs:
         uses: nwtgck/actions-netlify@v1.2
         id: netlify
         with:
-          publish-dir: './output'
+          publish-dir: "./output"
           deploy-message: "🚀 Deploy from GitHub Actions"
           github-token: ${{ secrets.GITHUB_TOKEN }}
           alias: deploy-preview-${{ github.event.number }}
@@ -69,6 +69,3 @@ jobs:
             Latest commit: ${{ github.event.pull_request.head.sha }}
 
             [View deployment](${{ steps.netlify.outputs.deploy-url }})
-
-
-
