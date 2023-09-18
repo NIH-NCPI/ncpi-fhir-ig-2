@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PatientExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>James Pond </b> (no stated gender), DoB Unknown</p><hr/></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Pond" ] ;
+     fhir:given ( [ fhir:v "James" ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,164 @@
+{
+  "date" : "Mon, 18 Sep, 2023 22:46:44 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2.json",
+      "size" : 2091,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 1166
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 44,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 1142
+        },
+        {
+          "activity" : "validate",
+          "start" : 49,
+          "length" : 1746
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 51,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 187
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 216
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 72,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 78,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-PatientExample.json",
+      "size" : 272,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 14
+        },
+        {
+          "activity" : "scan",
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-MyPatient.json",
+      "size" : 1177,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 40,
+          "length" : 58
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 130
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 41,
+          "length" : 2557
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 2373
+        },
+        {
+          "activity" : "validate",
+          "start" : 47,
+          "length" : 1914
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 51,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 51,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 358
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 3928
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 72,
+          "length" : 18
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 78,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}
