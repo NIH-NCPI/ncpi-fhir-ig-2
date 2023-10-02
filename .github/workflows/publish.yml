@@ -11,6 +11,7 @@ jobs:
   publish:
     name: Publish Implementation Guide
     runs-on: ubuntu-22.04
+    concurrency: ci-${{ github.ref }}
     strategy:
       matrix:
         node-version: [16]
