@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Contributing - NCPI FHIR Implementation Guide v2 v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">NCPI FHIR Implementation Guide v2</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a name="l152">​</a>
+        <a href="ncpi.html">NCPI</a>
+      </li>
+      <li><a name="l158">​</a>
+        <a href="ig_versioning.html">Profile Versioning</a>
+      </li>
+      <li><a name="l164">​</a>
+        <a href="FHIR_Basics.html">FHIR Basics</a>
+      </li>
+      <li><a name="l170">​</a>
+        <a href="authors.html">Authors</a>
+      </li>
+      <li><a name="l176">​</a>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformance.html">Conformance Rules</a>
+      </li>
+      <li>
+        <a href="must_support.html">Must Support</a>
+      </li>
+      <li>
+        <a href="contributing.html">Contributor Guidelines</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Contributing</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">NCPI FHIR Implementation Guide v2 - Local Development build (v0.1.0). See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Contributing</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<h3 id="contributing-guidelines">Contributing Guidelines</h3>
+<p>The NCPI FHIR IG is intended to provide a framework within which research on human subjects of all kinds can be reliably stored and queried using the FHIR Standard APIs. Given the size of the research domain, it is expected that there will be gaps in the current model and to encourage contributions to help to improve the IG for researchers of all kinds.</p>
+
+<p>The guidelines provided below are intended to make the IG content easier to find as well as helping to ensure consistency across all contributors.</p>
+
+<h4 id="helpful-resources-for-learning-fsh-and-sushi">Helpful Resources For Learning FSH and Sushi</h4>
+<ul>
+  <li><a href="https://fshschool.org/">FSH School</a> - This is a great resource for both reference and introductory material</li>
+  <li><a href="https://fshschool.org/docs/sushi/tutorial/">Sushi Tutoria</a> - Walkthrough guide for creating a sushi project, creating a handful of profiles using sushi and building a formal IG website on your local system.</li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-shorthand/">FSH Reference</a> - Official HL7 Reference Guide</li>
+  <li><a href="https://chat.fhir.org/#narrow/stream/215610-shorthand">Chat With FSH-ee Folks</a> - This zulip channel is used by members of the FSH dev team and end-users and is an excellent source of help whenever you get stuck or would like to inquire about a possible feature</li>
+</ul>
+
+<h4 id="contributor-lexicon">Contributor Lexicon</h4>
+<p>The following terms are used throughout this guide:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Implementer (Role)</td>
+      <td>The implementer is a technically experienced individual who is interested in the IG to inform them on how to transform data into FHIR resources that conform to the NCPI FHIR IG</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Researcher (Role)</td>
+      <td>A Researcher is someone who is responsible, who is interested in leveraging FHIR for storing a specific set of research data, but is not likely to be directly involved in the actual transformation of the data.</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Camel case</td>
+      <td>https://en.wikipedia.org/wiki/Camel_case</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Title case</td>
+      <td>https://en.wikipedia.org/wiki/Title_case</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Pascal case</td>
+      <td>Variant of <a href="https://en.wikipedia.org/wiki/Camel_case">Camel case</a> where the first letter of the string is always upper case</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Snake case</td>
+      <td>https://en.wikipedia.org/wiki/Snake_case</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="ig-best-practices">IG Best Practices</h4>
+<p>According to <a href="https://build.fhir.org/ig/FHIR/ig-guidance/best-practice.html">HL7</a>, there are a number of points that should be considered when authoring content for an IG. We’ll elaborate on a few outstanding points:</p>
+
+<h5 id="target-audience-and-succinct-narrative">Target Audience and Succinct Narrative</h5>
+<p>According to the Best Practice guidelines linked above, the target audience is generally software developers (Implementers). However, we believe that, in addition to developers, researchers too will be expected to familiarize themselves with this IG to understand FHIR’s role within the context of Interoperability. As such, pages describing the actual resources and their direct relationship to one another should target a software developer. Pages describing the research concepts that are being mapped into FHIR should be written for the general research investigator.</p>
+
+<p>In addition to recognizing the proper audience, it is important to avoid overly verbose narrative that isn’t absolutely necessary. It is essential that the concepts are thorough but we must remain mindful of the time the end user will be able to spend using the IG itself.</p>
+
+<h5 id="preference-for-long-pages-with-sections">Preference For Long Pages With Sections</h5>
+<p>The IG itself is a static website. As such, longer pages allow end users to quickly search over a large amount of content at once by simply using the browsers basic search functionality.</p>
+
+<p>For the purposes of writing content for this IG which doesn’t specifically refer to FHIR artifacts, the objective is to use a single file for each core concept. For instance, all content associated with the “Research Study” module should be captured inside the file, research_study.md file even though there may be a number of concepts discussed as part of that module.</p>
+
+<h5 id="write-intros-for-all-contributed-artifacts">Write Intros for All Contributed Artifacts</h5>
+<p>These introductions get embedded into the artifact page itself and should clearly indicate what the artifact is intended for and how it relates to other profiles and resources. For some types of artifacts, such as CodeSystems and ValueSets, providing a thorough <em>Description</em> in the FSH definition may be sufficient. However, for Profiles, Logical models, Extensions and Examples, an intro.md should always be provided.</p>
+
+<h5 id="narrative-should-be-consistent-with-other-igs">Narrative Should be Consistent with Other IGs</h5>
+<p>TBD</p>
+
+<h5 id="images-and-diagrams">Images and Diagrams</h5>
+<p>HL7 recommends that content should be created using free or inexpensive tools and not websites that may disappear in a few years time.</p>
+
+<p>TBD</p>
+
+<h4 id="style-guide">Style Guide</h4>
+<h5 id="background">Background</h5>
+<p>Contributing to IG content may take several different forms including:</p>
+<ul>
+  <li>Markdown describing real-world research study concepts and motivations for some decisions relating to FHIR resource choices.</li>
+  <li>Markdown providing introductory material and notes for IG artifacts.</li>
+  <li>FHIR Shorthand used to define IG artifacts including but not limited to: Profiles, Extensions, Terminologies and Examples.</li>
+</ul>
+
+<p>In general, the markdown styles will apply to all markdown files.</p>
+
+<h5 id="filenames">Filenames</h5>
+<h6 id="no-spaces-in-filenames">No Spaces in Filenames</h6>
+<p>Filenames of all kinds should contain no whitespace. There are rules determining how we must name content that gets merged into the various artifact pages which is described over at <a href="https://fshschool.org/docs/sushi/project/">fshschool.org</a> toward the bottom of that page. In order to clearly differentiate between these artifact components and the text narrative pages, those stand-alone narrative pages <em>must</em> exist in files named using <a href="https://en.wikipedia.org/wiki/Snake_case">snake case</a>.</p>
+
+<p>Sushi will parse the filename and apply <a href="https://en.wikipedia.org/wiki/Title_case">title case</a> to construct a meaningful starting header and title. For titles where that doesn’t work, such as fhir_basics which would incorrectly result in a title, <em>Fhir Basics</em>, contributors should add an appropriate entry to the sushi-config pages heading as can be seen in <a href="https://fshschool.org/docs/sushi/configuration/">this example configuration</a>. By assigning the title property for a given page, the contributor can provide any type of case as is appropriate.</p>
+
+<h6 id="artifact-intro-and-notes">Artifact Intro and Notes</h6>
+<p>For intro and notes content that will be merged into the relevant artifact page, the publisher application itself is very specific: The filename should match the resulting HTML file in Humpback notation minus the extension followed by either “-intro.md” or “-notes.md”. The material inside -intro.md files will appear <em>before</em> the differential table. Material inside -note.md files will appear afterward inside the header, *Notes”.</p>
+
+<blockquote>
+  <p>To determine the correct filename corresponding to the artifact of interest, please see the file, fsh-generated/includes/fsh-link-references.md where you can find the resulting HTML filename for each FSH based artifact.</p>
+</blockquote>
+
+<h6 id="profiles-extensions-and-standalone-terminologies">Profiles, Extensions and Standalone Terminologies</h6>
+<p>All profiles, and any extensions/terminologies which aren’t intended solely for the use of a single profile, should be defined inside a file named specifically for that resource according to the following pattern:</p>
+
+<p>[ <em>profile</em> or <em>logical</em> or <em>extension</em> or <em>codesystem</em> or <em>valueset</em> ]_[resource id].md</p>
+
+<p>For instance, a profile with the id, ncpi-patient would be defined inside the file named: profile_ncpi-patient.fsh</p>
+
+<h6 id="supporting-extensions-valuesets-etc">Supporting Extensions, ValueSets, etc</h6>
+<p>Extensions and ValueSets that exist solely as supporting resources for a profile or other extension should be defined inside the file where the primary resource is defined. As an example, a ValueSet defining the various phenotype terms that are then bound to the profile, ncpi-phenotype, should be defined inside the same file as the ncpi-phenotype profile, profile_ncpi-phenotype.fsh. By keeping supporting resources together, we can minimize the number of clicks a developer will need to use to understand a given profile.</p>
+
+<blockquote>
+  <p>It should be noted that CodeSystems will generally warrant being defined in their own file unless their purpose seems intrinsically tied to a profile. For ValueSets which exist largely to realize the contents of a single CodeSystem, the ValueSet should be defined within the same file where the CodeSystem is defined.</p>
+</blockquote>
+
+<h5 id="authoring-module-content">Authoring Module Content</h5>
+<p>Narrative content describing the research data that are to be stored inside FHIR will be aggregated together in <em>modules</em>. These modules are intended to represent common, real-world concepts such as the <em>Research Study</em> or <em>Study Summary</em> which will often be comprised of more than one actual real world entity. For instance, when we discuss a <em>research study</em>, we may need to discuss other, closely related things like <em>Consent</em>, <em>Consortia</em>, <em>Principle Investigators</em>, etc. Each of these should be described as completely as possible both in plain text, as well formally represented as a <em>Logical Model</em> using FHIR IG resources. This is necessary to clearly define what is is we are describing when discussing how one is expected to use the individual profiles.</p>
+
+<h6 id="logical-model">Logical Model</h6>
+<p>Each distinct concept that necessary to convey the details that are to be captured in FHIR should be defined as a FHIR Logical model. Together, these represent the information model that represents the real-world space as completely as possible. Each field of these models can then be referred to in the profile pages to indicate how each aspect of the real-world model is represented in FHIR.</p>
+
+<h6 id="logical-model-intro">Logical Model Intro</h6>
+<p>Similar to profiles, these logical models should have an intro file which contains a high level overview of the information being modelled with all clarifications necessary for a reader to fully understand each of the properties that they can find in the model’s differential view.</p>
+
+<h6 id="logical-model-notes">Logical Model Notes</h6>
+<p>We strongly recommend an accompanying notes section where the author is expected to describe the relationships of the current logical model component with any other module components.</p>
+
+<h5 id="use-cases">Use Cases</h5>
+<p>Use case narrative content is intended to address typical expectations an end user will have regarding a particular module’s content once it has been loaded into FHIR. Use case details for a given Module should be stored inside a file named:</p>
+
+<p>use-case_(Module Name).md</p>
+
+<p>Each individual use case associated with a given module will be enumerated as a level 2 header within the specified file. Use cases should consist of a narrative overview which references example resources defined within part of the IG. If a given use case requires information that isn’t supported with the current set of examples, then that should be addressed by providing the necessary information either by adding it to existing examples or by creating additional example resources.</p>
+
+<p>While the use cases themselves will be highly technical and directed at implementers, a non-technical synopsis should be provided as the first paragraph of each use case to allow researchers to quickly ascertain what capabilities a fully compliant set of FHIR resources can do for them.</p>
+
+<h5 id="example-narrative">Example Narrative</h5>
+<p>For each module, there should be a complementary example page which provides a high-level description of each example resource that is provided as a part of that module. This will be a mix of narrative and json segments which together, explain exactly how the resource content relates to the real world example upon which it was based.</p>
+
+<h5 id="artifacts">Artifacts</h5>
+<h6 id="profiles">Profiles</h6>
+<p>EAch profile should be defined inside a file whose name matches the profile’s id where the prefix, ncpi, is replaced with profile. Filenames should be written in kebob-case (all lower case with each word separated by the dash, “-“). Any CodeSystems, ValueSets, Extensions, etc which exist solely for use by the profile should be defined alongside the profile.</p>
+
+<p><strong>Profile Naming Conventions</strong>
+Profile names <strong>must</strong> be prefixed with the letters, “NCPI-“. The rest of the name should be concise and informative. For instance, a profile relating to a Human Patient might be named, <strong>NCPI-HumanPatient</strong> which would be defined inside the file, “profile-human_patient.fsh”.</p>
+
+<p><strong>Provide appropriate short description</strong>
+Because our use case doesn’t align perfectly with the official FHIR objective of sharing EHR data, we will often be using standard FHIR properties differently</p>
+
+<h6 id="profile-intro">Profile Intro</h6>
+<p>Each profile <strong>must</strong> contain <em>intro</em> content. This is entirely directed at the implementer and should provide that individual all the details they need in order to populate a resources of a given profile. The following subsections are required:</p>
+
+<ol>
+  <li>
+    <p>Added Profile Restrictions
+This should simply be a quick, easy to read summary of the changes listed in the differential table.</p>
+  </li>
+  <li>
+    <p>Information Model Mapping Table</p>
+  </li>
+</ol>
+
+<p>This will provide a table with fields from the relevant logical model, what they map to inside the profile, whether it is recommended, required or optional, and any notes needed for clarification.</p>
+
+<h6 id="profile-notes">Profile Notes</h6>
+<p>The notes section is optional but is where you would provide additional context about how this profile relates to resources.</p>
+
+<h6 id="logical-model-intro-1">Logical Model Intro</h6>
+<p>The logical model defines the <em>information model</em> describing the current, real world data that is to be mapped into FHIR. Unlike the other <em>intro</em> sections, the logical model intro is directed at the researcher and is intended to clarify exactly what this model represents.</p>
+
+<h6 id="logical-model-notes-1">Logical Model Notes</h6>
+<p>The notes section is optional and is intended to be used to provide additional context about how this <em>real world component</em> fits in with other parts of the larger information model.</p>
+
+<h6 id="extension-intro">Extension Intro</h6>
+<p>TBD</p>
+
+<h6 id="extension-notes">Extension Notes</h6>
+<p>TBD</p>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 2, 2023 15:19+0000">2023-10-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

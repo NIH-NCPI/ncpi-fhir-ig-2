@@ -3,14 +3,14 @@
   "id" : "ncpi-fhir-implementation-guide-v2",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCPIFHIRIGv2</h2><p>The official URL for this implementation guide is: </p><pre>https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2</pre><div><p>FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI).</p>\n</div></div>"
   },
   "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2",
   "version" : "0.1.0",
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2023-09-18T22:46:44+00:00",
+  "date" : "2023-10-02T15:19:31+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -256,6 +256,17 @@
       "extension" : [{
         "url" : "code",
         "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
       },
       {
         "url" : "value",
@@ -534,6 +545,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "active-tables"
       },
       {
@@ -625,6 +647,33 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "conformance.html"
+        }],
+        "nameUrl" : "conformance.html",
+        "title" : "Conformance",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "contributing.html"
+        }],
+        "nameUrl" : "contributing.html",
+        "title" : "Contributing",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "must_support.html"
+        }],
+        "nameUrl" : "must_support.html",
+        "title" : "Must Support",
         "generation" : "markdown"
       }]
     },
