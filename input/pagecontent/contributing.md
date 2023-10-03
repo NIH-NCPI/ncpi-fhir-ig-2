@@ -1,5 +1,5 @@
 ### Contributing Guidelines
-The NCPI FHIR IG is intended to provide a framework within which research on human subjects of all kinds can be reliably stored and queried using the FHIR Standard APIs. Given the size of the research domain, it is expected that there will be gaps in the current model and to encourage contributions to help to improve the IG for researchers of all kinds. 
+The NCPI FHIR IG is intended to provide a framework within which research on human subjects of all kinds can be reliably stored and queried using the FHIR Standard APIs. Given the size of the research domain, it is expected that there will be gaps in the current model and we want to encourage contributions to help to improve the IG for researchers of all kinds. 
 
 The guidelines provided below are intended to make the IG content easier to find as well as helping to ensure consistency across all contributors. 
 
