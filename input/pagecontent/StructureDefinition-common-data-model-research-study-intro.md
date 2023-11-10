@@ -30,7 +30,7 @@ Data within a study might be subject to different access or data use limitations
 #### Related Studies
 Some research efforts may be related to each other in ways that are important to track, even if these studies cover different Participant Identifier Contexts.  One example of this might be research efforts that are part of the same consortium.  These efforts might share a common funder and organization, and may even share some aspects of methodology or design, but constitute separate ResearchStudy instances.  The consortial relationship can be recorded in the Consortium attribute.
 
-````Note: studies could be related via funding, or by sharing of participants - do we need to include the possibility to document this type of relationship?```
+> Note: studies could be related via funding, or by sharing of participants - do we need to include the possibility to document this type of relationship?
 
 
 ## Research Study Attributes
