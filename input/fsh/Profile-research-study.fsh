@@ -1,23 +1,15 @@
-Alias: $ncpi-study-name-type = https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/study-name-type
-Alias: $ncpi-study-personnel-role = https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/study-personnel-role
-Alias: $research-study-party-role = https://hl7.org/fhir/research-study-party-role
-Alias: $research-study-party-organization-type = https://hl7.org/fhir/research-study-party-organization-type
+Alias: $ncpi-study-name-type = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type
+Alias: $ncpi-study-personnel-role = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role
+Alias: $research-study-party-role = https://hl7.org/fhir/valueset-research-study-party-role.html
+Alias: $research-study-party-organization-type = https://hl7.org/fhir/valueset-research-study-party-organization-type.html
 
-ValueSet: StudyDesign
-Id: study-design
-Title: "Study Design"
-Description: "This is a set of terms for study design characteristics."
-* ^version = "0.1.0"
-* ^status = #draft
-* ^experimental = false
-* include codes from system https://hl7.org/fhir/codesystem-study-design.html
 
 Extension: ResearchStudyDesign
 Id: research-study-design
 Title: "Research Study Design"
 Description: "Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc."
 * value[x] only CodeableConcept 
-* valueCodeableConcept from study-design (example)
+* valueCodeableConcept from https://hl7.org/fhir/valueset-study-design.html (example)
 
 Extension: ResearchStudyResult
 Id: research-study-result
@@ -88,24 +80,44 @@ Description: "The NCPI Research Study FHIR resource represents an individual res
 // * sponsor only Reference(ResearchConsortium)   
 // * principalInvestigator only Reference(Practitioner)  // The primary investigator
 
-
-ValueSet: StudyNameTypeVS
+CodeSystem: StudyNameType
 Id: study-name-type
 Title: "Study Name Type"
 Description: "Some common types of study 'names'."
-* $ncpi-study-name-type#formal-title "Formal Title"
-* $ncpi-study-name-type#internal-name "Internal Name"
-* $ncpi-study-name-type#familiar-ame "Familiar Name (Nickname)"
-* $ncpi-study-name-type#acronym "Acronym"
-* $ncpi-study-name-type#alternative-name "Alternative Name"
+* ^url = $study-name-type
+* ^experimental = false
+* ^caseSensitive = true
+* #formal-title "Formal Title"
+* #internal-name "Internal Name"
+* #familiar-ame "Familiar Name (Nickname)"
+* #acronym "Acronym"
+* #alternative-name "Alternative Name"
 
-ValueSet: StudyPersonnelRoleVS
+
+ValueSet: StudyNameTypeVS
+Id: study-name-type-vs
+Title: "Study Name Type"
+Description: "Some common types of study 'names'."
+* ^experimental = false
+* include codes from system $study-name-type
+
+CodeSystem: StudyPersonnelRole
 Id: study-personnel-role
 Title: "Study Personnel Role"
 Description: "Roles associated with study personnel."
-* $ncpi-study-personnel-role#primary-investigator "Primary Investigator"
-* $ncpi-study-personnel-role#administrator "Administrator"
-* $ncpi-study-personnel-role#collaborator "Collaborator"
+* ^url = $ncpi-study-personnel-role
+* ^experimental = false
+* ^caseSensitive = true
+* #primary-investigator "Primary Investigator"
+* #administrator "Administrator"
+* #collaborator "Collaborator"
+
+ValueSet: StudyPersonnelRoleVS
+Id: study-personnel-role-vs
+Title: "Study Personnel Role"
+Description: "Roles associated with study personnel."
+* ^experimental = false
+* include codes from system $ncpi-study-personnel-role
 
 Logical: CdmResearchStudy
 Id: CommonDataModelResearchStudy
