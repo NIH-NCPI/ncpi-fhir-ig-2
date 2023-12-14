@@ -120,9 +120,9 @@ Description: "Roles associated with study personnel."
 * include codes from system $ncpi-study-personnel-role
 
 Logical: CdmResearchStudy
-Id: CommonDataModelResearchStudy
-Title: "CDM Research Study"
-Description: "The **Common Data Model (CDM) Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG."
+Id: SharedDataModelResearchStudy
+Title: "Shared Data Model for Research Study"
+Description: "The **Shared Data Model for Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG."
 * persistentIdentifier 0..* Identifier "External facing, globally unique identifier."
 * parentStudy 0..1 CdmResearchStudy "Parent study, required only for substudies."
 // * parentStudy 0..1 Reference(CdmResearchStudy) "Parent study, required only for substudies."
