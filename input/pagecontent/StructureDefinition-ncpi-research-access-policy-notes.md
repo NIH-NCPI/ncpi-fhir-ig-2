@@ -1,0 +1,1 @@
+While the standard FHIR R4 Consent is intended to be directly associated with a particular patient, given the nature of research access control policies, this profile is intended to be instantiated once and associated with a number of patients (TBD). 
