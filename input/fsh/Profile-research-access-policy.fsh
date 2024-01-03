@@ -27,6 +27,52 @@ Description: "Enumerated list of access codes such as dbGaP consent codes among 
 * ^experimental = false
 * include codes from system $ncpi-data-access-code
 
+ValueSet: MeshTerms
+Id: mesh-terms
+Title: "MeSH Terms"
+Description: "Example terms from Medical Subject Headings (MeSH) Ontology"
+* ^version = "0.1.0"
+* ^status = #draft
+* ^experimental = false
+* include codes from system $mesh
+
+Invariant: completed-consent-code
+Description: "If category is DS then there must be a ResearchConsentDiseaseAbbreviation"
+Expression: "provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()"
+Severity: #error
+
+Extension: ResearchDiseaseUseLimitation
+Id: research-disease-use-limitation
+Title: "Research Usage Limitation Disease Code"
+Description: "Coding associated with limitation on what research can be performed this data."
+* value[x] only CodeableConcept 
+* valueCodeableConcept from mesh-terms (example)
+
+Extension: AccessPolicyDescription
+Id: access-policy-description
+Title: "Access Policy Description"
+Description: "Descriptive text summarizing the policy restrictions and other details associated with this access provision."
+* valueMarkdown 1..1
+* valueMarkdown ^short = "Descriptive text summarizing the policy restrictions and other details associated with this access provision."
+
+Profile: NcpiResearchAccessPolicy
+Parent: Consent 
+Id: ncpi-research-access-policy
+Title: "NCPI Research Access Policy"
+Description: "Limitations and/or requirements that define how a user may gain access to a particular set of data."
+* ^version = "0.1.0"
+* ^status = #draft
+* category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research "Research Information Access" 
+* provision.purpose from research-data-access-code-vs (extensible)
+* provision.extension contains ResearchDiseaseUseLimitation named diseaseUseLimitation 0..1
+* provision.extension[diseaseUseLimitation] ^short = "Consent Code Disease Abbreviation"
+* obeys completed-consent-code
+* extension contains AccessPolicyDescription named description 0..1
+* extension[description] ^short = "Descriptive text summarizing the policy restrictions and other details associated with this access provision."
+// This may be somewhat unnecessary
+* extension contains ResearchWebLink named website 0..1
+* extension[website] ^short = "URL describing the policy restrictions in detail."
+
 Logical: CdmResearchDataAccessPolicy
 Id: SharedDataModelResearchDataAccessPolicy
 Title: "Shared Data Model for Research Data Access Policy"
