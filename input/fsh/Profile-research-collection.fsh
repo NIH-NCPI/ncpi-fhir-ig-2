@@ -17,6 +17,29 @@ Description: "Enumerated list of Collection types"
 * ^experimental = false
 * include codes from system $ncpi-collection-type
 
+Extension: ResearchWebLink
+Id: research-web-Link
+Title: "Research Web Link"
+Description: "A URL pointing to a either a research study's website, an online document or other research related site or document."
+* valueUrl 1..1 
+* valueUrl ^short = "The URL associated with the document or related website."
+
+Profile: NcpiResearchCollection
+Parent: List
+Id: ncpi-research-collection
+Title: "NCPI Research Collection"
+Description: "Collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections."
+* title 1..1
+* title ^short = "The collection's title."
+* note ^short = "The description of the collection."
+* code ^short = "The type of collection being described."
+* code from $ncpi-collection-type (extensible) 
+* code 1..1
+* entry 1..* 
+* entry ^short = "List of references to items included in the list."
+* extension contains ResearchWebLink named website 0..1
+* extension[website] ^short = "URL describing the research collection, this can include a formal website, such as the Consortium or Program's website, or to an online document describing the collection."
+
 Logical: CdmResearchCollection
 Id: SharedDataModelResearchCollection
 Title: "Shared Data Model for Research Collection"
