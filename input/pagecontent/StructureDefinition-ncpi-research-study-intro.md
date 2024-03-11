@@ -1,26 +1,60 @@
-For the purposes of interoperability, some restrictions have been made to enforce a common mechanism for describing enrollment and provide a simple means for summarizing subject count as well as access control through the main (parent) consent groups. In addition, we are providing some recommended practices for the common data elements required for submission. 
+The NCPI Research Study is based upon the core HL7 FHIR ResearchStudy resource (R4) and acts as the umbrella for grouping and describing all other study resources..
 
-Please see the research study documentation for in-depth mappings on the R4 version and the necessary extensions needed to ensure interoperability. 
+For the purposes of interoperability, this guide includes recommended practices for the shared data elements required for submission.
+
+Please see the research study documentation for in-depth mappings on the R4 version and the necessary extensions needed to ensure interoperability.
 
 ### Added Profile Restrictions
-To ensure consistency across all NCPI research studies represented in FHIR, there are some additional requirements which must be enforced. These requirements are derived from the [Differential Table](#profile) section of this document. 
+To ensure consistency across all NCPI research studies represented in FHIR, there are some additional requirements which must be enforced. These requirements are derived from the [Differential Table](#profile) section of this document.
 
 #### The following requirements are true for all NCPI Research Studies:
-> TBD
-> * enrollment **must** contain 1 reference of type, [Study Group](StructureDefinition-study-group.html).
-> * category **must** contain the Coding from NCPI [StudyCohort](CodeSystem-ncpi.html).
+* each study **should** have its _accession ID_ added as an identifier. This is an identifier provided by DbGAP or other organization which represents a common identifier recognized by similar research groups.
+* each study **should** have its _study name_ as the title.
+* for those studies which exist as part of a larger study, the parent study **should** be referenced in the study’s _partOf_ property.
+* enrollment **must** contain 1 reference of type, [Study Group](structuredefinition-study-group).
+* category **must** contain the Coding from NCPI [StudyCohort](codesystem-ncpi).
+* _principalInvestigator_ **must** be of type _Practitioner_ if present. (Note: we are using practitioner to maintain consistency with existing FHIR structures.)
 
-* each study **should** have an externally recognized [persistentIdentifier](StructureDefinition-CommonDataModelResearchStudy-definitions.html#diff_CommonDataModelResearchStudy.persistentIdentifier) defined by an organization such as DbGAP marked with "use=primary". Other identifiers that are appropriate should be added as well.
-* each study **should** have its [name](StructureDefinition-CommonDataModelResearchStudy-definitions.html#diff_CommonDataModelResearchStudy.name) as the title. 
-* for those studies which exist as part of a larger study, the parent study **should** be referenced in the study's _partOf_ property. 
-
-| NCPI Common Data Elements | HL7 FHIR (R4) Element | Notes |
-| --- | --- | --- | 
-| Accession # | identifier | Accession IDs from dbGaP, etc should be added as identifiers with a meaningful system |
-| Study name | title | |
-| Substudies | partOf | Substudies other than consent based organization should reference the parent NCPI Research Study using the partOf reference |
 
 ### Recommended Practices
+To ensure consistency across all NCPI research studies represented in FHIR, there are some additional elements which should be included if applicable to your study. A recommended element is one that is important and will likely have value for those trying to understand the study’s purpose and usefulness but not essential for validation against the profile. Those elements labeled as optional are not central to the fundamental understanding of the study’s content but may play a key role in a study being _findable_.
+
+#### Shared Data Elements
+
+| NCPI Shared Data Elements | HL7 FHIR (R4) Element | Recommended or Optional | Notes |
+| ------------------------- | --------------------- | ----------------------- | ----- |
+| Study description | description | Recommended | |
+| Disease/focus | condition | Recommended | Should also have one or more Codings provided, indicating the disease or phenotypes that were interrogated during the study’s execution | |
+| Attribution | relatedArtifact | Recommended | This can include, but not limited to; principal investigators, grant numbers, etc. | |
+| Study weblinks | relatedArtifact | Optional | These elements fall under the StudyDescription element located in the [Added Profile Restrictions](#added-profile-restrictions) section of this document. | |
+| Study design | [studyDesign](structuredefinition-research-study-design) | Optional | These elements fall under the StudyDescription element located in the [Added Profile Restrictions](#added-profile-restrictions) section of this document. |
+| Study type | [studyDesign](structuredefinition-research-study-design) | Optional | These elements fall under the StudyDescription element located in the [Added Profile Restrictions](#added-profile-restrictions) section of this document. |
+| Citation | relatedArtifact | Optional | |
+| Study documents | relatedArtifact | Optional | | 
+
+For a more detailed view of these elements as well as the recommended FHIR mappings please see the research study documentation.
+
+#### Population Details
+Each NCPI Research must have one [Study Group](structuredefinition-research-study-group) which must, at the very least, indicate the total number of patients enrolled at the time the data was loaded into FHIR.
+
+Additional Study Groups may be included to describe various aspects of the study’s population.
+
+**Usage:**
+
+* Derived from this Resource Profile: [Research Study Subject](structuredefinition-research-study-subject)
+* Refer to this Resource Profile: [Study Summary](structuredefinition-study-summary) and [Study Variable Summary](structuredefinition-study-variable-summary)
+* Examples for this Resource Profile: [ResearchStudy/cmg-research-study-bhcmg](researchstudy-cmg-research-study-bhcmg) and [ResearchStudy/ncpi-research-study-01](researchstudy-ncpi-research-study-01)
+
+
+### Notes:
+As mentioned in the section, “Added Profile Restrictions” above, each NCPI Research must have one NCPI [Study Group](structuredefinition-study-group) which must, at the very least, indicate the total number of patients enrolled at the time the data was loaded into FHIR.
+
+
+### Practices for Summary Only Resources
+For Studies loaded into Summary Only FHIR servers, the Study’s Study Group resources **must** have the quantity. This promotes findability by enabling researchers without current access to the study’s row-level data to get basic study details including the different subject counts.
+
+For studies that exist alongside row-level data, the Study’s Study Group resources **should** have each corresponding Patient referenced in the Group’s members array.
+
 #### Identifiers - Best Practices
 ##### Provide meaningful systems at all times
 System uris are important for identifying the origin of an identifier. These uris should be consistent across all groups which utilize these identifiers. Some important systems to note include:
@@ -37,7 +71,7 @@ The [Identifier datatype](https://hl7.org/fhir/datatypes.html#Identifier) provid
 #### Common Data Model Mappings
 The following represents the mapping from the Logical Research Study model to this NCPI Research Study FHIR profile. 
 
-| CDM Variable | FHIR Resource Mapping | Note |
+| NCPI Shared Data Elements | FHIR Resource Mapping | Note |
 | [persistentIdentifier](https://torstees.github.io/ncpi-fhir-ig-2/StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.persistentIdentifier) | identifier | System should be provided for each identifier which clearly indicates the identifier's origin |
 | [parentStudy](https://torstees.github.io/ncpi-fhir-ig-2/StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.parentStudy) | partOf | |
 | [name](https://torstees.github.io/ncpi-fhir-ig-2/StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.name) | title | The "Formal Title" will be stored as title |
@@ -50,7 +84,3 @@ The following represents the mapping from the Logical Research Study model to th
 | [acknowledgements](https://torstees.github.io/ncpi-fhir-ig-2/StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.acknowledgements) | extension[associatedParty] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to eumulate the new approach |
 | [personnel](https://torstees.github.io/ncpi-fhir-ig-2/StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.personnel) | extension[associatedPart] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to eumulate the new approach |
 
-
-#### Population Details
-> TBD
-> Each NCPI Research must have one [Study Group](StructureDefinition-study-group.html) which must, at the very least, indicate the total number of patients enrolled at the time the data was loaded into FHIR. 
