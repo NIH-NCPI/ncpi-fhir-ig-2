@@ -45,6 +45,7 @@ Extension: ResearchDiseaseUseLimitation
 Id: research-disease-use-limitation
 Title: "Research Usage Limitation Disease Code"
 Description: "Coding associated with limitation on what research can be performed this data."
+* insert SetContext(Consent.provision) 
 * value[x] only CodeableConcept 
 * valueCodeableConcept from mesh-terms (example)
 
@@ -52,6 +53,8 @@ Extension: AccessPolicyDescription
 Id: access-policy-description
 Title: "Access Policy Description"
 Description: "Descriptive text summarizing the policy restrictions and other details associated with this access provision."
+* insert SetContext(Consent) 
+* value[x] only markdown
 * valueMarkdown 1..1
 * valueMarkdown ^short = "Descriptive text summarizing the policy restrictions and other details associated with this access provision."
 

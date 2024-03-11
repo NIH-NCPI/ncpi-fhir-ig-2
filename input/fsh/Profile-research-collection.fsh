@@ -26,12 +26,15 @@ Description: "Collections of research data including, but not limited, to Consor
 * title ^short = "The collection's title."
 * note ^short = "The description of the collection."
 * code ^short = "The type of collection being described."
-* code from $ncpi-collection-type (extensible) 
+* code from collection-type-vs (extensible) 
 * code 1..1
 * entry 1..* 
 * entry ^short = "List of references to items included in the list."
-* extension contains ResearchWebLink named website 0..1
+* extension contains 
+    ResearchWebLink named website 0..1 and
+    Label named label 0..* 
 * extension[website] ^short = "URL describing the research collection, this can include a formal website, such as the Consortium or Program's website, or to an online document describing the collection."
+* extension[label] ^short = "Alias such as acronym and alternate names."
 
 Logical: CdmResearchCollection
 Id: SharedDataModelResearchCollection
@@ -42,4 +45,4 @@ Description: "The **Shared Data Model for Research Collection** represent variou
 * type 1..1 code "The type of collection being described."
 * type  from CollectionTypeVS (extensible)
 * website 0..1 url "A URL for a website, document, or other reference that provides more information as an authoritative source of information about the collection."
-* items 1..* Reference "List of references to items included in the list. These can be studies, datasets, etc. "
+* items 1..* Reference "List of references to items included in the list. These can be studies, datasets, etc."

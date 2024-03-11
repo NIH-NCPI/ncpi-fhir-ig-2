@@ -8,6 +8,7 @@ Extension: ResearchStudyDesign
 Id: research-study-design
 Title: "Research Study Design"
 Description: "Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc."
+* insert SetContext(NcpiResearchStudy) 
 * value[x] only CodeableConcept 
 * valueCodeableConcept from https://hl7.org/fhir/valueset-study-design.html (example)
 
@@ -15,6 +16,7 @@ Extension: ResearchStudyResult
 Id: research-study-result
 Title: "Research Study Result"
 Description: "Link to citations associated with the study's publications."
+* insert SetContext(NcpiResearchStudy) 
 * valueReference only Reference(Citation)
 
 Extension: ResearchStudyAssociatedParty
