@@ -1,6 +1,6 @@
 Profile: ResearchStudyGroup
 Parent: Group
-Id: study-group
+Id: research-study-group
 Title: "NCPI Research Study Group"
 Description: "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. "
 * ^version = "0.0.1"

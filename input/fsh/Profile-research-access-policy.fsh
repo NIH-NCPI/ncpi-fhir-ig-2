@@ -19,6 +19,8 @@ Description: "Enumerated list of access codes such as dbGaP consent codes among 
 * #NPU "Not-for-profit use only"
 * #MDS "Methods"
 * #GSO "Genetic studies only"
+* #GSR "Genomic Summary Results"
+
 
 ValueSet: ResearchDataAccessCodeVS
 Id: research-data-access-code-vs
@@ -26,6 +28,28 @@ Title: "Research Data Access Codes"
 Description: "Enumerated list of access codes such as dbGaP consent codes among others."
 * ^experimental = false
 * include codes from system $ncpi-data-access-code
+
+
+CodeSystem: ResearchDataAccessType
+Id: research-data-access-type
+Title: "Research Data Access Type Codes"
+Description: "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'"
+* ^url = $ncpi-data-access-type
+* ^experimental = false
+* ^caseSensitive = true
+* #open "Open Access"
+* #registered "Registered Access"
+* #controlled "Controlled"
+* #gsr-restricted "GSR Restricted"
+* #gsr-allowed "GSR Allowed"
+
+
+ValueSet: ResearchDataAccessTypeVS
+Id: research-data-access-type-vs
+Title: "Research Data Access Type Codes"
+Description: "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'"
+* ^experimental = false
+* include codes from system $ncpi-data-access-type
 
 ValueSet: MeshTerms
 Id: mesh-terms
@@ -48,6 +72,14 @@ Description: "Coding associated with limitation on what research can be performe
 * insert SetContext(Consent.provision) 
 * value[x] only CodeableConcept 
 * valueCodeableConcept from mesh-terms (example)
+
+Extension: AccessType
+Id: access-type
+Title: "Access Type"
+Description: "Access type code associated with downloads affected by this Access Policy ( open | registered | controlled )"
+* insert SetContext(Consent)
+* value[x] only CodeableConcept
+* valueCodeableConcept from research-data-access-type-vs (required)
 
 Extension: AccessPolicyDescription
 Id: access-policy-description
@@ -72,9 +104,12 @@ Description: "Limitations and/or requirements that define how a user may gain ac
 * obeys completed-consent-code
 * extension contains AccessPolicyDescription named description 0..1
 * extension[description] ^short = "Descriptive text summarizing the policy restrictions and other details associated with this access provision."
+* extension contains AccessType named accessType 1..1
+* extension[accessType] ^short = "Type of access restrictions on file downloads ( open | registered | controlled )"
 // This may be somewhat unnecessary
 * extension contains ResearchWebLink named website 0..1
 * extension[website] ^short = "URL describing the policy restrictions in detail."
+
 
 Logical: CdmResearchDataAccessPolicy
 Id: SharedDataModelResearchDataAccessPolicy
