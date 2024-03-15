@@ -7,10 +7,10 @@
  * based on the profile, NcpiResearchCollection
  * 
  * For this example set, we'll create the following artifacts:
- * 	* Example ResearchStudy		- An example of a single study
-	* Example of ResearchGroup 	- 1 ResearchGroup for all members of the study
-	* Examples for ResearchSubjects
-	* Examples of Patients
+   * Example ResearchStudy		- An example of a single study
+	 * Example of ResearchGroup 	- 1 ResearchGroup for all members of the study
+	 * Examples for ResearchSubjects
+	 * Examples of Patients
  */
 
 Instance: cmg-research-study-bhcmg
@@ -63,7 +63,7 @@ Description: "The Centers for Mendelian Genomics project uses next-generation se
 * relatedArtifact[9].display = "1U54HG006542. National Human Genome Research Institute and National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA."
 * status = #completed
 * extension[research-study-associated-party].extension[name].valueString = "1U54HG006542 National Human Genome Research Institute and National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA."
-* extension[research-study-associated-party].extension[role].valueCodeableConcept = #funding-source
+* extension[research-study-associated-party].extension[role].valueCodeableConcept = http://hl7.org/fhir/research-study-party-role#funding-source
 * extension[research-study-associated-party].extension[classifier].valueCodeableConcept = #nih
 
 
@@ -74,12 +74,13 @@ Title: "HMB-NPU Consent"
 Usage: #example
 Description: "Consented with Health/Medical/Biomedical + Not for profit use"
 * status = #draft
-* scope = #research
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#research
 * category.coding = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research
 * policyRule = http://terminology.hl7.org/CodeSystem/consentpolicycodes#cric
 * provision.type = http://hl7.org/fhir/consent-provision-type#permit
 * provision.purpose[+] = $ncpi-data-access-code#HMB "Health/Medical/Biomedical"
 * provision.purpose[+] = $ncpi-data-access-code#NPU "Not-for-profit use only"
+* extension[accessType].valueCodeableConcept = $ncpi-data-access-type#controlled
 /* * provision.purpose[+].text = "HMB-NPU" */
 * extension[description].valueMarkdown = "Health/Medical/Biomedical, Not for profit use"
 * extension[website].valueUrl = "https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=DUC&view_pdf&stacc=phs000711.v7.p2"
@@ -91,13 +92,14 @@ Title: "HMB-IRB-NPU Consent"
 Usage: #example
 Description: "Consented with Health/Medical/Biomedical + IRB Required + Not for profit use"
 * status = #draft
-* scope = #research
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#research
 * category.coding = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research
 * policyRule = http://terminology.hl7.org/CodeSystem/consentpolicycodes#cric
 * provision.type = http://hl7.org/fhir/consent-provision-type#permit
 * provision.purpose[+] = $ncpi-data-access-code#HMB "Health/Medical/Biomedical"
 * provision.purpose[+] = $ncpi-data-access-code#IRB "IRB approval required"
 * provision.purpose[+] = $ncpi-data-access-code#NPU "Not-for-profit use only"
+* extension[accessType].valueCodeableConcept = $ncpi-data-access-type#controlled
 /* * provision.purpose[+].text = "HMB-IRB-NPU" */
 * extension[description].valueMarkdown = "Health/Medical/Biomedical, IRB Approval Required, Not for profit use"
 * extension[website].valueUrl = "https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=DUC&view_pdf&stacc=phs000711.v7.p2"
