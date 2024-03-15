@@ -8,7 +8,7 @@ Extension: ResearchStudyDesign
 Id: research-study-design
 Title: "Research Study Design"
 Description: "Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc."
-* insert SetContext(NcpiResearchStudy) 
+* insert SetContext(ResearchStudy) 
 * value[x] only CodeableConcept 
 * valueCodeableConcept from https://hl7.org/fhir/valueset-study-design.html (example)
 
@@ -16,13 +16,23 @@ Extension: ResearchStudyResult
 Id: research-study-result
 Title: "Research Study Result"
 Description: "Link to citations associated with the study's publications."
-* insert SetContext(NcpiResearchStudy) 
+* insert SetContext(ResearchStudy) 
 * valueReference only Reference(Citation)
+
+Extension: ResearchStudyAcknowledgement
+Id: research-study-acknowledgement
+Title: "Research Study Acknowledgement"
+Description: "Provides an informative description of acknowledgement expectations for those using data from the research study."
+* insert SetContext(ResearchStudy)
+* value[x] only markdown
+* valueMarkdown 1..1 
+* valueMarkdown ^short  = "Details about acknowledgement requirements for derivative publications."
 
 Extension: ResearchStudyAssociatedParty
 Id: research-study-associated-party
 Title: "Research Study Associated Party"
 Description: "Sponsors, collaborators, and other parties affiliated with a research study."
+* insert SetContext(ResearchStudy)
 * extension contains
     name 0..1 MS and
     role 1..1 MS and
@@ -66,10 +76,14 @@ Description: "The NCPI Research Study FHIR resource represents an individual res
 * focus ^comment = "Researcher specified foci that are not specific to disease/phenotype codes."
 * condition ^short =  "The primary focus(es) of the study. This is specific to the disease. MeSH terms are preferred."
 * condition ^comment = "Disease and phenotype codes identified in the CDM study's 'focus'."
-* extension contains ResearchStudyDesign named studyDesign 0..*
+* extension contains 
+    ResearchStudyDesign named studyDesign 0..* and
+    ResearchStudyResult named result 0..* and
+    ResearchStudyAssociatedParty named associatedParty 0..* and
+    ResearchStudyAcknowledgement named acknowledgement 0..*
 * extension[studyDesign] ^short = "Study Design and Study Type"
-* extension contains ResearchStudyResult named result 0..*
 * extension[result] ^short = "Link to results generated during the study."
+* extension[acknowledgement] ^short = "URL describing the policy restrictions in detail."
 
 // These are TBD for after we have completed digging into what access control 
 // will require
