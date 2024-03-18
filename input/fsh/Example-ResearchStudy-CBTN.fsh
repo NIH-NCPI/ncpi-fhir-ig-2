@@ -113,14 +113,14 @@ Description: "General Research Use (GRU)"
 
 Instance: kf-research-study-subject-gru-dac
 InstanceOf: ResearchStudySubject
-Title: "CBTN GRU data access access via DAC"
+Title: "CBTN GRU data access via DAC"
 Usage: #example
-Description: "GRU data access access via DAC"
+Description: "GRU data access via DAC"
 * identifier[0]
   * system = "https://cbtn.org/"
   * value = "GRU-DAC"
 * title = "GRU-DAC Study Subject"
-* description = "General Research Use data access access via DAC"
+* description = "General Research Use data access via DAC"
 * status = #completed
 * partOf = Reference(kf-research-study-cbtn)
 * extension[consent].valueReference = Reference(kf-gru-dac-consent)
@@ -143,14 +143,14 @@ Description: "General Research Use (GRU)"
 
 Instance: kf-research-study-subject-gru-dbgap
 InstanceOf: ResearchStudySubject
-Title: "CBTN GRU data access access via dbGaP"
+Title: "CBTN GRU data access via dbGaP"
 Usage: #example
-Description: "GRU data access access via dbGaP"
+Description: "GRU data access via dbGaP"
 * identifier[0]
   * system = "https://cbtn.org/"
   * value = "GRU-dbGaP"
 * title = "GRU-dbGaP Study Subject"
-* description = "General Research Use data access access via dbGaP"
+* description = "General Research Use data access via dbGaP"
 * status = #completed
 * partOf = Reference(kf-research-study-cbtn)
 * extension[consent].valueReference = Reference(kf-gru-dbgap-consent)

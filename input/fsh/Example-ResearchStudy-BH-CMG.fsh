@@ -86,24 +86,6 @@ Description: "Consented with Health/Medical/Biomedical + Not for profit use"
 * extension[website].valueUrl = "https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=DUC&view_pdf&stacc=phs000711.v7.p2"
 
 
-Instance: hmb-irb-npu-consent
-InstanceOf: NcpiResearchAccessPolicy
-Title: "HMB-IRB-NPU Consent"
-Usage: #example
-Description: "Consented with Health/Medical/Biomedical + IRB Required + Not for profit use"
-* status = #draft
-* scope = http://terminology.hl7.org/CodeSystem/consentscope#research
-* category.coding = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research
-* policyRule = http://terminology.hl7.org/CodeSystem/consentpolicycodes#cric
-* provision.type = http://hl7.org/fhir/consent-provision-type#permit
-* provision.purpose[+] = $ncpi-data-access-code#HMB "Health/Medical/Biomedical"
-* provision.purpose[+] = $ncpi-data-access-code#IRB "IRB approval required"
-* provision.purpose[+] = $ncpi-data-access-code#NPU "Not-for-profit use only"
-* extension[accessType].valueCodeableConcept = $ncpi-data-access-type#controlled
-/* * provision.purpose[+].text = "HMB-IRB-NPU" */
-* extension[description].valueMarkdown = "Health/Medical/Biomedical, IRB Approval Required, Not for profit use"
-* extension[website].valueUrl = "https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=DUC&view_pdf&stacc=phs000711.v7.p2"
-
 Instance: cmg-research-study-bhcmg-consent-group-hmb-npu
 InstanceOf: ResearchStudyGroup
 Title: "Participants consented under HMB-NPU"
@@ -131,6 +113,52 @@ Description: "CMG Consent Group, Health/Medical/Biomedical + Not for profit use"
 * partOf = Reference(cmg-research-study-bhcmg)
 * extension[consent].valueReference = Reference(hmb-npu-consent)
 * enrollment = Reference(cmg-research-study-bhcmg-consent-group-hmb-npu)
+
+Instance: hmb-irb-npu-consent
+InstanceOf: NcpiResearchAccessPolicy
+Title: "HMB-IRB-NPU Consent"
+Usage: #example
+Description: "Consented with Health/Medical/Biomedical + IRB Required + Not for profit use"
+* status = #draft
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#research
+* category.coding = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research
+* policyRule = http://terminology.hl7.org/CodeSystem/consentpolicycodes#cric
+* provision.type = http://hl7.org/fhir/consent-provision-type#permit
+* provision.purpose[+] = $ncpi-data-access-code#HMB "Health/Medical/Biomedical"
+* provision.purpose[+] = $ncpi-data-access-code#IRB "IRB approval required"
+* provision.purpose[+] = $ncpi-data-access-code#NPU "Not-for-profit use only"
+* extension[accessType].valueCodeableConcept = $ncpi-data-access-type#controlled
+/* * provision.purpose[+].text = "HMB-IRB-NPU" */
+* extension[description].valueMarkdown = "Health/Medical/Biomedical, IRB Approval Required, Not for profit use"
+* extension[website].valueUrl = "https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=DUC&view_pdf&stacc=phs000711.v7.p2"
+
+Instance: cmg-research-study-bhcmg-consent-group-irb-hmb-npu
+InstanceOf: ResearchStudyGroup
+Title: "Participants consented under IRB-HMB-NPU"
+Usage: #example
+Description: "BH-CMG study's population consented under Health/Medical/Biomedical + IRB Required + Not for profit use"
+* identifier[0]
+  * system = "http://mendelian.org/fhir/Group"
+  * value = "IRB-HMB-NPU-Participants"
+* name = "BM-CMG Study IRB-HMB-NPU Participants"
+* quantity = 1665
+* actual = true
+* type = #person
+
+Instance: cmg-research-study-subject-cmg-irb-hmb-npu
+InstanceOf: ResearchStudySubject
+Title: "Participants consented under IRB-HMB-NPU"
+Usage: #example
+Description: "BH-CMG Consent Group, Health/Medical/Biomedical + IRB Required + Not for profit use"
+* identifier[0]
+  * system = "http://mendelian.org/fhir"
+  * value = "BH-CMG-HMB-NPU"
+* title = "BH-CMG HMB-NPU Consent Study Subject"
+* description = "CMG Consent Group, Health/Medical/Biomedical + IRB Required + Not for profit use"
+* status = #completed
+* partOf = Reference(cmg-research-study-bhcmg)
+* extension[consent].valueReference = Reference(hmb-irb-npu-consent)
+* enrollment = Reference(cmg-research-study-bhcmg-consent-group-irb-hmb-npu)
 
 Instance: ncpi-research-collection-cmg
 InstanceOf: NcpiResearchCollection
