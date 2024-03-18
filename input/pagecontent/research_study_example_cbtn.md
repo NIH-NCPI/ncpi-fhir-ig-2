@@ -8,7 +8,7 @@ time for that, this list should be comprehensive.
 ### CHOP Organization
 * [Children's Hospital of Philadelphia](Organization-kf-research-study-organization-chop.html)
 
-### Kid's First Research Study Collections
+### Kids First Research Study Collections
 * Research Collection [X01s](List-ncpi-research-collection-kfx01.html)
 * Research Collection [PBTA](List-ncpi-research-collection-pbta.html)
 
