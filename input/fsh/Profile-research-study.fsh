@@ -34,8 +34,8 @@ Title: "Research Study Associated Party"
 Description: "Sponsors, collaborators, and other parties affiliated with a research study."
 * insert SetContext(ResearchStudy)
 * extension contains
-    name 0..1 MS and
-    role 1..1 MS and
+    name 1..1 MS and
+    role 0..1 MS and
     period 0..* and 
     classifier 0..* and
     party 0..1 MS
