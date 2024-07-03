@@ -12,6 +12,8 @@ else
 	txoption="-tx n/a"
 fi
 
+# We are getting warnings about local code systems, so I'm turning it off for now
+txoption=""
 echo "$txoption"
 
 export JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8"

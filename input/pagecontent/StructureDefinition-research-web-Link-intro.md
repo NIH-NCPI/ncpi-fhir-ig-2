@@ -1,0 +1,1 @@
+For use with NCPI Profiles which require a link to a website, where the parent Resource type doesn't provide such a thing. 
