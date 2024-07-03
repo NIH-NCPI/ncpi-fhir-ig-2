@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="research-data-access-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet research-data-access-type-vs</b></p><a name="research-data-access-type-vs"> </a><a name="hcresearch-data-access-type-vs"> </a><a name="hcresearch-data-access-type-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-research-data-access-type.html"><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</code></a></li></ul></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs"/>
+  <version value="0.1.0"/>
+  <name value="ResearchDataAccessTypeVS"/>
+  <title value="Research Data Access Type Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-07-03T23:11:23+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'"/>
+  <compose>
+    <include>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+    </include>
+  </compose>
+</ValueSet>

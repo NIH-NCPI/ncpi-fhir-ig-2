@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "research-data-access-type-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet research-data-access-type-vs</b></p><a name=\"research-data-access-type-vs\"> </a><a name=\"hcresearch-data-access-type-vs\"> </a><a name=\"hcresearch-data-access-type-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-research-data-access-type.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ResearchDataAccessTypeVS"] ; # 
+  fhir:title [ fhir:v "Research Data Access Type Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-03T23:11:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

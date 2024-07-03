@@ -1,13 +1,261 @@
 {
   "package": "ncpi-fhir-implementation-guide-v2",
   "version": "0.1.0",
-  "fhirVersion": "4.0.1",
-  "extensions": [],
+  "fhirVersion": "4.3.0",
+  "extensions": [
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description",
+      "title": "Access Policy Description",
+      "types": [
+        "markdown"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type",
+      "title": "Access Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension",
+      "title": "Label",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-disease-use-limitation",
+      "title": "Research Usage Limitation Disease Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-acknowledgement",
+      "title": "Research Study Acknowledgement",
+      "types": [
+        "markdown"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party",
+      "title": "Research Study Associated Party",
+      "types": [
+        "string",
+        "CodeableConcept",
+        "Period",
+        "CodeableConcept",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design",
+      "title": "Research Study Design",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result",
+      "title": "Research Study Result",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent",
+      "title": "Research Study Subject Consent",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
+      "title": "Research Web Link",
+      "types": [
+        "url",
+        "url"
+      ]
+    }
+  ],
   "profiles": {
-    "Patient": [
+    "Consent": [
       {
-        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient",
-        "title": "MyPatient"
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy",
+        "title": "NCPI Research Access Policy"
+      }
+    ],
+    "List": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection",
+        "title": "NCPI Research Collection"
+      }
+    ],
+    "ResearchStudy": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject",
+        "title": "Research Study Subject"
+      }
+    ],
+    "Group": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group",
+        "title": "NCPI Research Study Group"
       }
     ]
   },
@@ -21,27 +269,17 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
-      "StructureDefinition.snapshot.element.type"
-    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
-      "ImplementationGuide.definition.page",
-      "ImplementationGuide.definition.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
@@ -51,6 +289,37 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description": [
+      "Consent"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type": [
+      "Consent"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension": [
+      "List"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-disease-use-limitation": [
+      "Consent.provision"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-acknowledgement": [
+      "ResearchStudy"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party": [
+      "ResearchStudy"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design": [
+      "ResearchStudy"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result": [
+      "ResearchStudy"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent": [
+      "ResearchStudy"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link": [
+      "Consent",
+      "List"
     ]
   }
 }

@@ -1,5 +1,47 @@
 [
   {
+    "id" : "collection-type",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
+    "version" : "0.1.0",
+    "name" : "CollectionType"
+  },
+  {
+    "id" : "ncpi",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi",
+    "version" : "0.1.0",
+    "name" : "Ncpi"
+  },
+  {
+    "id" : "research-data-access-code",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
+    "version" : "0.1.0",
+    "name" : "ResearchDataAccessCode"
+  },
+  {
+    "id" : "research-data-access-type",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
+    "version" : "0.1.0",
+    "name" : "ResearchDataAccessType"
+  },
+  {
+    "id" : "study-name-type",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
+    "version" : "0.1.0",
+    "name" : "StudyNameType"
+  },
+  {
+    "id" : "study-personnel-role",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
+    "version" : "0.1.0",
+    "name" : "StudyPersonnelRole"
+  },
+  {
     "id" : "ncpi-fhir-implementation-guide-v2",
     "type" : "ImplementationGuide",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2",
@@ -7,10 +49,171 @@
     "name" : "NCPIFHIRIGv2"
   },
   {
-    "id" : "MyPatient",
+    "id" : "SharedDataModelResearchCollection",
     "type" : "StructureDefinition",
-    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchCollection",
     "version" : "0.1.0",
-    "name" : "MyPatient"
+    "name" : "CdmResearchCollection"
+  },
+  {
+    "id" : "SharedDataModelResearchDataAccessPolicy",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchDataAccessPolicy",
+    "version" : "0.1.0",
+    "name" : "CdmResearchDataAccessPolicy"
+  },
+  {
+    "id" : "SharedDataModelResearchStudy",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchStudy",
+    "version" : "0.1.0",
+    "name" : "CdmResearchStudy"
+  },
+  {
+    "id" : "access-policy-description",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description",
+    "version" : "0.1.0",
+    "name" : "AccessPolicyDescription"
+  },
+  {
+    "id" : "access-type",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type",
+    "version" : "0.1.0",
+    "name" : "AccessType"
+  },
+  {
+    "id" : "label-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension",
+    "version" : "0.1.0",
+    "name" : "Label"
+  },
+  {
+    "id" : "ncpi-research-access-policy",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy",
+    "version" : "0.1.0",
+    "name" : "NcpiResearchAccessPolicy"
+  },
+  {
+    "id" : "ncpi-research-collection",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection",
+    "version" : "0.1.0",
+    "name" : "NcpiResearchCollection"
+  },
+  {
+    "id" : "ncpi-research-study",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study",
+    "version" : "0.1.0",
+    "name" : "NcpiResearchStudy"
+  },
+  {
+    "id" : "research-disease-use-limitation",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-disease-use-limitation",
+    "version" : "0.1.0",
+    "name" : "ResearchDiseaseUseLimitation"
+  },
+  {
+    "id" : "research-study-acknowledgement",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-acknowledgement",
+    "version" : "0.1.0",
+    "name" : "ResearchStudyAcknowledgement"
+  },
+  {
+    "id" : "research-study-associated-party",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party",
+    "version" : "0.1.0",
+    "name" : "ResearchStudyAssociatedParty"
+  },
+  {
+    "id" : "research-study-design",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design",
+    "version" : "0.1.0",
+    "name" : "ResearchStudyDesign"
+  },
+  {
+    "id" : "research-study-group",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group",
+    "version" : "0.1.0",
+    "name" : "ResearchStudyGroup"
+  },
+  {
+    "id" : "research-study-result",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result",
+    "version" : "0.1.0",
+    "name" : "ResearchStudyResult"
+  },
+  {
+    "id" : "research-study-subject",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject",
+    "version" : "0.1.0",
+    "name" : "ResearchStudySubject"
+  },
+  {
+    "id" : "research-study-subject-consent",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent",
+    "version" : "0.1.0",
+    "name" : "ResearchStudySubjectConsent"
+  },
+  {
+    "id" : "research-web-Link",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
+    "version" : "0.1.0",
+    "name" : "ResearchWebLink"
+  },
+  {
+    "id" : "collection-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
+    "version" : "0.1.0",
+    "name" : "CollectionTypeVS"
+  },
+  {
+    "id" : "mesh-terms",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms",
+    "version" : "0.1.0",
+    "name" : "MeshTerms"
+  },
+  {
+    "id" : "research-data-access-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs",
+    "version" : "0.1.0",
+    "name" : "ResearchDataAccessCodeVS"
+  },
+  {
+    "id" : "research-data-access-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs",
+    "version" : "0.1.0",
+    "name" : "ResearchDataAccessTypeVS"
+  },
+  {
+    "id" : "study-name-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",
+    "version" : "0.1.0",
+    "name" : "StudyNameTypeVS"
+  },
+  {
+    "id" : "study-personnel-role-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs",
+    "version" : "0.1.0",
+    "name" : "StudyPersonnelRoleVS"
   }
 ]

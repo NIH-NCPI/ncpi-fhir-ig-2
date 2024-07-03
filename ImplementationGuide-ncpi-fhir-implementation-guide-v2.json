@@ -2,15 +2,15 @@
   "resourceType" : "ImplementationGuide",
   "id" : "ncpi-fhir-implementation-guide-v2",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCPIFHIRIGv2</h2><p>The official URL for this implementation guide is: </p><pre>https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2</pre><div><p>FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI).</p>\n</div></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ncpi-fhir-implementation-guide-v2</b></p><a name=\"ncpi-fhir-implementation-guide-v2\"> </a><a name=\"hcncpi-fhir-implementation-guide-v2\"> </a><a name=\"hcncpi-fhir-implementation-guide-v2-en-US\"> </a><h2>NCPIFHIRIGv2</h2><p>The official URL for this implementation guide is: </p><pre>https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2</pre><div><p>FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI).</p>\n</div></div>"
   },
   "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2",
   "version" : "0.1.0",
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2023-10-04T16:18:18+00:00",
+  "date" : "2024-07-03T23:11:23+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -26,7 +26,7 @@
   "description" : "FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI).",
   "packageId" : "ncpi-fhir-implementation-guide-v2",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["4.0.1"],
+  "fhirVersion" : ["4.3.0"],
   "dependsOn" : [{
     "id" : "hl7tx",
     "extension" : [{
@@ -35,7 +35,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.3.0"
+    "version" : "5.5.0"
   },
   {
     "id" : "hl7ext",
@@ -45,7 +45,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "1.0.0"
+    "version" : "5.1.0"
   },
   {
     "id" : "hl7_fhir_us_core",
@@ -331,7 +331,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
     },
     {
       "extension" : [{
@@ -611,69 +611,788 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MyPatient"
+        "reference" : "StructureDefinition/access-policy-description"
       },
-      "name" : "MyPatient",
-      "description" : "An example profile of the Patient resource.",
+      "name" : "Access Policy Description",
+      "description" : "Descriptive text summarizing the policy restrictions and other details associated with this access provision.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "Patient/PatientExample"
+        "reference" : "StructureDefinition/access-type"
       },
-      "name" : "PatientExample",
-      "description" : "An example of a patient with a license to krill.",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient"
+      "name" : "Access Type",
+      "description" : "Access type code associated with downloads affected by this Access Policy ( open | registered | controlled )",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/cmg-research-study-bhcmg"
+      },
+      "name" : "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
+      "description" : "The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/kf-gru-dac-consent"
+      },
+      "name" : "CBTN General Research Use (GRU) Consent DAC",
+      "description" : "General Research Use (GRU)",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/kf-gru-dbgap-consent"
+      },
+      "name" : "CBTN General Research Use (GRU) Consent dbGaP",
+      "description" : "General Research Use (GRU)",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/kf-research-study-subject-gsr-allowed"
+      },
+      "name" : "CBTN Genomic Summary Results (GSR) Allowed Access",
+      "description" : "Genomic Summary Results (GSR) Allowed Access",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/kf-research-study-subject-gru-dac"
+      },
+      "name" : "CBTN GRU data access via DAC",
+      "description" : "GRU data access via DAC",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/kf-research-study-subject-gru-dbgap"
+      },
+      "name" : "CBTN GRU data access via dbGaP",
+      "description" : "GRU data access via dbGaP",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/kf-research-study-personnel-role-op-lead"
+      },
+      "name" : "CBTN Operations Lead",
+      "description" : "CBTN Operations Lead",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/kf-research-study-subject-registered"
+      },
+      "name" : "CBTN Registered Tier Access",
+      "description" : "CBTN Registered Tier Access",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/kf-research-study-cbtn"
+      },
+      "name" : "Children's Brain Tumor Network (CBTN)",
+      "description" : "Brain tumors are the most common form of cancer in children aged 0-19 in the United States, and are the largest cause of cancer-related deaths. The estimated number of new cases in 2019 is nearly 3,800 and thus brain tumors are a rare disease. Despite their relative rarity, the years of potential life lost due to brain tumors in 2009 was estimated at 47,631 years for children and adolescents aged 0-19 in the United States; this is a disproportionate amount of life lost compared to adult cancers and represents an unrecognized societal threat. There is an urgent need to improve therapies for these children. Most of the high-grade glial and embryonal brain cancers still remain largely incurable despite decades of clinical and laboratory research. Existing non-targeted chemotherapies and radiation, while at times effective, often represent pyrrhic victories, leaving behind life-long health burdens and causing a significant risk of secondary malignancies. NIH funded pediatric brain tumor cohort-based genomic dataset generation efforts have lagged behind other histologies and have yet to be included as part of large-scale sequencing efforts. However, consortia-based initiatives like those supported by the Children's Brain Tumor Network (CBTN) have demonstrated the early potential for clinically annotated genomic cohorts and their utility and interest by both the pediatric cancer and structural birth defect community with more than 130 data access requests for a non-embargoed cohort of tumor/normal whole genomes and paired tumor RNAseq. Indeed more than one quarter of this 800-subject initial sequencing cohort were identified to have birth-defect-associated clinical annotations in their clinical records, however, to our knowledge limited to no trio-based genomics cohort studies exist for any one pediatric brain tumor histology. The project's proposed sequencing cohort defines the largest, clinically annotated pediatric brain tumor cohort study to date and seeks to define the intersection of germline and somatic underpinnings of pediatric brain tumors across a shared developmental context of cancer and structural birth defects.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/kf-research-study-organization-chop"
+      },
+      "name" : "Children's Hospital of Philadelphia",
+      "description" : "Represents the Organization for which CHOP PIs are affiliated",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/collection-type-vs"
+      },
+      "name" : "Collection Type",
+      "description" : "Enumerated list of Collection types",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/collection-type"
+      },
+      "name" : "Collection Type",
+      "description" : "Enumerated list of collection types",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/kf-research-study-personnel-role-pi"
+      },
+      "name" : "dbGaP PI",
+      "description" : "dbGaP PI",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/kf-research-study-personnel-role-pi-x01"
+      },
+      "name" : "dbGaP PI, X01 FY 2021",
+      "description" : "dbGaP PI, X01 FY 2021",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/kf-gsr-allowed-access"
+      },
+      "name" : "Genomic Summary Results (GSR) Allowed Access",
+      "description" : "Genomic Summary Results (GSR) Allowed Access",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/hmb-irb-npu-consent"
+      },
+      "name" : "HMB-IRB-NPU Consent",
+      "description" : "Consented with Health/Medical/Biomedical + IRB Required + Not for profit use",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/hmb-npu-consent"
+      },
+      "name" : "HMB-NPU Consent",
+      "description" : "Consented with Health/Medical/Biomedical + Not for profit use",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "List"
+      }],
+      "reference" : {
+        "reference" : "List/ncpi-research-collection-kfx01"
+      },
+      "name" : "Kids First X01s",
+      "description" : "Kids First X01s",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/label-extension"
+      },
+      "name" : "Label",
+      "description" : "A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mesh-terms"
+      },
+      "name" : "MeSH Terms",
+      "description" : "Example terms from Medical Subject Headings (MeSH) Ontology",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ncpi"
+      },
+      "name" : "NCPI FHIR Codes",
+      "description" : "Codes that would apply to NCPI projects",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ncpi-research-access-policy"
+      },
+      "name" : "NCPI Research Access Policy",
+      "description" : "Limitations and/or requirements that define how a user may gain access to a particular set of data.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ncpi-research-collection"
+      },
+      "name" : "NCPI Research Collection",
+      "description" : "Collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ncpi-research-study"
+      },
+      "name" : "NCPI Research Study",
+      "description" : "The NCPI Research Study FHIR resource represents an individual research effort and acts as a grouper or “container” for that effort’s study participants and their related data files.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-group"
+      },
+      "name" : "NCPI Research Study Group",
+      "description" : "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/cmg-research-study-bhcmg-consent-group-hmb-npu"
+      },
+      "name" : "Participants consented under HMB-NPU",
+      "description" : "BH-CMG study's population consented under Health/Medical/Biomedical + Not for profit use",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/cmg-research-study-subject-cmg-hmb-npu"
+      },
+      "name" : "Participants consented under HMB-NPU",
+      "description" : "CMG Consent Group, Health/Medical/Biomedical + Not for profit use",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/cmg-research-study-bhcmg-consent-group-irb-hmb-npu"
+      },
+      "name" : "Participants consented under IRB-HMB-NPU",
+      "description" : "BH-CMG study's population consented under Health/Medical/Biomedical + IRB Required + Not for profit use",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/cmg-research-study-subject-cmg-irb-hmb-npu"
+      },
+      "name" : "Participants consented under IRB-HMB-NPU",
+      "description" : "BH-CMG Consent Group, Health/Medical/Biomedical + IRB Required + Not for profit use",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/kf-research-study-cbtn-participants"
+      },
+      "name" : "Participants from the CBTN research study",
+      "description" : "Participants from the CBTN research study",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "List"
+      }],
+      "reference" : {
+        "reference" : "List/ncpi-research-collection-pbta"
+      },
+      "name" : "Pediatric Brain Tumor Atlas",
+      "description" : "Pediatric Brain Tumor Atlas",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/kf-registered-allowed-access"
+      },
+      "name" : "Registered Tier Access",
+      "description" : "Registered Tier Access",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/research-data-access-code-vs"
+      },
+      "name" : "Research Data Access Codes",
+      "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/research-data-access-code"
+      },
+      "name" : "Research Data Access Codes",
+      "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/research-data-access-type-vs"
+      },
+      "name" : "Research Data Access Type Codes",
+      "description" : "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/research-data-access-type"
+      },
+      "name" : "Research Data Access Type Codes",
+      "description" : "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-acknowledgement"
+      },
+      "name" : "Research Study Acknowledgement",
+      "description" : "Provides an informative description of acknowledgement expectations for those using data from the research study.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-associated-party"
+      },
+      "name" : "Research Study Associated Party",
+      "description" : "Sponsors, collaborators, and other parties affiliated with a research study.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-design"
+      },
+      "name" : "Research Study Design",
+      "description" : "Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-result"
+      },
+      "name" : "Research Study Result",
+      "description" : "Link to citations associated with the study's publications.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-subject"
+      },
+      "name" : "Research Study Subject",
+      "description" : "A ResearchStudySubject is representative of a group of participants whose consent and data use is governed by the same restrictions. This profile is an R4 proxy for the more flexible R5 ResearchSubject.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-subject-consent"
+      },
+      "name" : "Research Study Subject Consent",
+      "description" : "ResearchStudySubjectConsent provides link to a consent through which participants were enrolled.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-disease-use-limitation"
+      },
+      "name" : "Research Usage Limitation Disease Code",
+      "description" : "Coding associated with limitation on what research can be performed this data.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-web-Link"
+      },
+      "name" : "Research Web Link",
+      "description" : "A URL pointing to a either a research study's website, an online document or other research related site or document.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SharedDataModelResearchCollection"
+      },
+      "name" : "Shared Data Model for Research Collection",
+      "description" : "The **Shared Data Model for Research Collection** represent various collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SharedDataModelResearchDataAccessPolicy"
+      },
+      "name" : "Shared Data Model for Research Data Access Policy",
+      "description" : "The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SharedDataModelResearchStudy"
+      },
+      "name" : "Shared Data Model for Research Study",
+      "description" : "The **Shared Data Model for Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/study-name-type-vs"
+      },
+      "name" : "Study Name Type",
+      "description" : "Some common types of study 'names'.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/study-name-type"
+      },
+      "name" : "Study Name Type",
+      "description" : "Some common types of study 'names'.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/study-personnel-role-vs"
+      },
+      "name" : "Study Personnel Role",
+      "description" : "Roles associated with study personnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/study-personnel-role"
+      },
+      "name" : "Study Personnel Role",
+      "description" : "Roles associated with study personnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "List"
+      }],
+      "reference" : {
+        "reference" : "List/ncpi-research-collection-cmg"
+      },
+      "name" : "The Centers for Medelian Genetics",
+      "description" : "The Centers for Medelian Genetics",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
     }],
     "page" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-        "valueUrl" : "toc.html"
-      }],
       "nameUrl" : "toc.html",
       "title" : "Table of Contents",
       "generation" : "html",
       "page" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "index.html"
-        }],
         "nameUrl" : "index.html",
         "title" : "Home",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "conformance.html"
-        }],
+        "nameUrl" : "authors.html",
+        "title" : "Authors",
+        "generation" : "markdown"
+      },
+      {
         "nameUrl" : "conformance.html",
         "title" : "Conformance",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "contributing.html"
-        }],
+        "nameUrl" : "contact.html",
+        "title" : "Contact",
+        "generation" : "markdown"
+      },
+      {
         "nameUrl" : "contributing.html",
         "title" : "Contributing",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "must_support.html"
-        }],
+        "nameUrl" : "example_assays.html",
+        "title" : "Example Assays",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "example_family.html",
+        "title" : "Example Family",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "example_files.html",
+        "title" : "Example Files",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "example_participant.html",
+        "title" : "Example Participant",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "example_phenotype_condition.html",
+        "title" : "Example Phenotype Condition",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "example_research_study.html",
+        "title" : "Example Research Study",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "example_specimen.html",
+        "title" : "Example Specimen",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "FHIR_Basics.html",
+        "title" : "FHIR Basics",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "IG_Versioning.html",
+        "title" : "IG Versioning",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "module_assays.html",
+        "title" : "Module Assays",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "module_family.html",
+        "title" : "Module Family",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "module_files.html",
+        "title" : "Module Files",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "module_overview.html",
+        "title" : "Module Overview",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "module_participant.html",
+        "title" : "Module Participant",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "module_phenotype_condition.html",
+        "title" : "Module Phenotype Condition",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "module_research_study.html",
+        "title" : "Module Research Study",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "module_specimen.html",
+        "title" : "Module Specimen",
+        "generation" : "markdown"
+      },
+      {
         "nameUrl" : "must_support.html",
         "title" : "Must Support",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "ncpi.html",
+        "title" : "Ncpi",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "research_study_example_cbtn.html",
+        "title" : "Research Study Example Cbtn",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "research_study_example_cmg.html",
+        "title" : "Research Study Example Cmg",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "use_case_tbd.html",
+        "title" : "Use Case Tbd",
         "generation" : "markdown"
       }]
     },

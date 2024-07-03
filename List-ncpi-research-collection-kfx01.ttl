@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/List/ncpi-research-collection-kfx01> a fhir:List ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ncpi-research-collection-kfx01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: List ncpi-research-collection-kfx01</b></p><a name=\"ncpi-research-collection-kfx01\"> </a><a name=\"hcncpi-research-collection-kfx01\"> </a><a name=\"hcncpi-research-collection-kfx01-en-US\"> </a><h2>Kids First X01s</h2><table class=\"clstu\"><tr><td>Mode: Snapshot List </td><td>Status: Current </td><td>Code: Program </td></tr><tr><td/></tr></table>Through its Data Resource Center and NIH X01 grant mechanism, Kids First supports data generation and data sharing in the cloud. To date, the program has supported the public release of data from 30 projects and made available nearly 30,000 genomes, representing structural birth defects and childhood cancer patients and families through the Kids First Data Resource Portal<table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"ResearchStudy-kf-research-study-cbtn.html\">ResearchStudy Children's Brain Tumor Network (CBTN)</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "https://cbtn.org/pediatric-brain-tumor-atlas"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:mode [ fhir:v "snapshot"] ; # 
+  fhir:title [ fhir:v "Kids First X01s"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "program" ] ;
+       fhir:display [ fhir:v "Program" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Through its Data Resource Center and NIH X01 grant mechanism, Kids First supports data generation and data sharing in the cloud. To date, the program has supported the public release of data from 30 projects and made available nearly 30,000 genomes, representing structural birth defects and childhood cancer patients and families through the Kids First Data Resource Portal" ]
+  ] ) ; # 
+  fhir:entry ( [
+     fhir:item [
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-cbtn> ;
+       fhir:reference [ fhir:v "ResearchStudy/kf-research-study-cbtn" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

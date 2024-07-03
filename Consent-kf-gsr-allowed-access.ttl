@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/kf-gsr-allowed-access> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "kf-gsr-allowed-access"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Consent kf-gsr-allowed-access</b></p><a name=\"kf-gsr-allowed-access\"> </a><a name=\"hckf-gsr-allowed-access\"> </a><a name=\"hckf-gsr-allowed-access-en-US\"> </a><p><b>status</b>: Pending</p><p><b>scope</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentscope research}\">Research</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentcategorycodes research}\">Research Information Access</span></p><p><b>policyRule</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentpolicycodes cric}\">Common Rule Informed Consent</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Public Posting of Genomic Summary Results - Allowed." ]
+  ] [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "https://www.genome.gov/about-nhgri/Policies-Guidance/Data-Sharing-Policies-and-Expectations/GSR-update-FAQs"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "gsr-allowed" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "research" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "research" ] ;
+       fhir:display [ fhir:v "Research Information Access" ]
+     ] )
+  ] ) ; # 
+  fhir:policyRule [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentpolicycodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cric" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

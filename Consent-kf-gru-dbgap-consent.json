@@ -1,0 +1,56 @@
+{
+  "resourceType" : "Consent",
+  "id" : "kf-gru-dbgap-consent",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Consent kf-gru-dbgap-consent</b></p><a name=\"kf-gru-dbgap-consent\"> </a><a name=\"hckf-gru-dbgap-consent\"> </a><a name=\"hckf-gru-dbgap-consent-en-US\"> </a><p><b>status</b>: Pending</p><p><b>scope</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentscope research}\">Research</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentcategorycodes research}\">Research Information Access</span></p><p><b>policyRule</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/consentpolicycodes cric}\">Common Rule Informed Consent</span></p><h3>Provisions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Purpose</b></td></tr><tr><td style=\"display: none\">*</td><td>Opt In</td><td><a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-GRU\">Research Data Access Codes</a> GRU: General Research Use</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description",
+    "valueMarkdown" : "Use of the data is limited only by the terms of the model Data Use Certification."
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
+    "valueUrl" : "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002517"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
+        "code" : "controlled"
+      }]
+    }
+  }],
+  "status" : "draft",
+  "scope" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "code" : "research"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "code" : "research",
+      "display" : "Research Information Access"
+    }]
+  }],
+  "policyRule" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+      "code" : "cric"
+    }]
+  },
+  "provision" : {
+    "type" : "permit",
+    "purpose" : [{
+      "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
+      "code" : "GRU",
+      "display" : "General Research Use"
+    }]
+  }
+}

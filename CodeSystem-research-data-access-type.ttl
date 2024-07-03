@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "research-data-access-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem research-data-access-type</b></p><a name=\"research-data-access-type\"> </a><a name=\"hcresearch-data-access-type\"> </a><a name=\"hcresearch-data-access-type-en-US\"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">open<a name=\"research-data-access-type-open\"> </a></td><td>Open Access</td></tr><tr><td style=\"white-space:nowrap\">registered<a name=\"research-data-access-type-registered\"> </a></td><td>Registered Access</td></tr><tr><td style=\"white-space:nowrap\">controlled<a name=\"research-data-access-type-controlled\"> </a></td><td>Controlled</td></tr><tr><td style=\"white-space:nowrap\">gsr-restricted<a name=\"research-data-access-type-gsr-restricted\"> </a></td><td>GSR Restricted</td></tr><tr><td style=\"white-space:nowrap\">gsr-allowed<a name=\"research-data-access-type-gsr-allowed\"> </a></td><td>GSR Allowed</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ResearchDataAccessType"] ; # 
+  fhir:title [ fhir:v "Research Data Access Type Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-03T23:11:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "open" ] ;
+     fhir:display [ fhir:v "Open Access" ]
+  ] [
+     fhir:code [ fhir:v "registered" ] ;
+     fhir:display [ fhir:v "Registered Access" ]
+  ] [
+     fhir:code [ fhir:v "controlled" ] ;
+     fhir:display [ fhir:v "Controlled" ]
+  ] [
+     fhir:code [ fhir:v "gsr-restricted" ] ;
+     fhir:display [ fhir:v "GSR Restricted" ]
+  ] [
+     fhir:code [ fhir:v "gsr-allowed" ] ;
+     fhir:display [ fhir:v "GSR Allowed" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

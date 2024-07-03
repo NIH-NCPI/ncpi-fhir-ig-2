@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/List/ncpi-research-collection-pbta> a fhir:List ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ncpi-research-collection-pbta"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: List ncpi-research-collection-pbta</b></p><a name=\"ncpi-research-collection-pbta\"> </a><a name=\"hcncpi-research-collection-pbta\"> </a><a name=\"hcncpi-research-collection-pbta-en-US\"> </a><h2>Pediatric Brain Tumor Atlas</h2><table class=\"clstu\"><tr><td>Mode: Snapshot List </td><td>Status: Current </td><td>Code: Consortium </td></tr><tr><td/></tr></table>The Pediatric Brain Tumor Atlas (PBTA) is a collaborative effort to accelerate discoveries for therapeutic intervention for children diagnosed with a brain tumor. The first PBTA dataset release occurred in September of 2018 and includes data from tumor types including matched tumor/normal, whole genome data (WGS), RNAseq, proteomics, longitudinal clinical data, imaging data including MRIs and radiology reports, histology slide images and pathology reports. Funding for this initiative was provided by more than 50 foundation sponsors<table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"ResearchStudy-kf-research-study-cbtn.html\">ResearchStudy Children's Brain Tumor Network (CBTN)</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "https://cbtn.org/pediatric-brain-tumor-atlas"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/title-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "acronym" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "label"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "PBTA" ]
+     ] ) ;
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:mode [ fhir:v "snapshot"] ; # 
+  fhir:title [ fhir:v "Pediatric Brain Tumor Atlas"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "consortium" ] ;
+       fhir:display [ fhir:v "Consortium" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "The Pediatric Brain Tumor Atlas (PBTA) is a collaborative effort to accelerate discoveries for therapeutic intervention for children diagnosed with a brain tumor. The first PBTA dataset release occurred in September of 2018 and includes data from tumor types including matched tumor/normal, whole genome data (WGS), RNAseq, proteomics, longitudinal clinical data, imaging data including MRIs and radiology reports, histology slide images and pathology reports. Funding for this initiative was provided by more than 50 foundation sponsors" ]
+  ] ) ; # 
+  fhir:entry ( [
+     fhir:item [
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-cbtn> ;
+       fhir:reference [ fhir:v "ResearchStudy/kf-research-study-cbtn" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

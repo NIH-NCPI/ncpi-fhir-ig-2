@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="study-name-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem study-name-type</b></p><a name="study-name-type"> </a><a name="hcstudy-name-type"> </a><a name="hcstudy-name-type-en-US"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">formal-title<a name="study-name-type-formal-title"> </a></td><td>Formal Title</td></tr><tr><td style="white-space:nowrap">internal-name<a name="study-name-type-internal-name"> </a></td><td>Internal Name</td></tr><tr><td style="white-space:nowrap">familiar-ame<a name="study-name-type-familiar-ame"> </a></td><td>Familiar Name (Nickname)</td></tr><tr><td style="white-space:nowrap">acronym<a name="study-name-type-acronym"> </a></td><td>Acronym</td></tr><tr><td style="white-space:nowrap">alternative-name<a name="study-name-type-alternative-name"> </a></td><td>Alternative Name</td></tr></table></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type"/>
+  <version value="0.1.0"/>
+  <name value="StudyNameType"/>
+  <title value="Study Name Type"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-07-03T23:11:23+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Some common types of study 'names'."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="formal-title"/>
+    <display value="Formal Title"/>
+  </concept>
+  <concept>
+    <code value="internal-name"/>
+    <display value="Internal Name"/>
+  </concept>
+  <concept>
+    <code value="familiar-ame"/>
+    <display value="Familiar Name (Nickname)"/>
+  </concept>
+  <concept>
+    <code value="acronym"/>
+    <display value="Acronym"/>
+  </concept>
+  <concept>
+    <code value="alternative-name"/>
+    <display value="Alternative Name"/>
+  </concept>
+</CodeSystem>

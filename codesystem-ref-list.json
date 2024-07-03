@@ -1,0 +1,71 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/title-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "TitleType",
+      "title" : "TitleType",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1492"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-title-type.html" : "TitleType"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CollectionType",
+      "title" : "Collection Type",
+      "description" : "Enumerated list of collection types",
+      "uses" : {
+      },
+      "ValueSet-collection-type-vs.html" : "Collection Type"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchDataAccessCode",
+      "title" : "Research Data Access Codes",
+      "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
+      "uses" : {
+      },
+      "ValueSet-research-data-access-code-vs.html" : "Research Data Access Codes"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchDataAccessType",
+      "title" : "Research Data Access Type Codes",
+      "description" : "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'",
+      "uses" : {
+      },
+      "ValueSet-research-data-access-type-vs.html" : "Research Data Access Type Codes"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "StudyNameType",
+      "title" : "Study Name Type",
+      "description" : "Some common types of study 'names'.",
+      "uses" : {
+      },
+      "ValueSet-study-name-type-vs.html" : "Study Name Type"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "StudyPersonnelRole",
+      "title" : "Study Personnel Role",
+      "description" : "Roles associated with study personnel.",
+      "uses" : {
+      },
+      "ValueSet-study-personnel-role-vs.html" : "Study Personnel Role"
+    }
+  ]
+}

@@ -1,9 +1,652 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="481091cd-479e-40ca-906b-083034627ad2"/>
+  <id value="4cf00b02-aa50-464e-9a52-ccaf5b3dbd18"/>
   <meta>
-    <lastUpdated value="2023-10-04T16:18:18.311+00:00"/>
+    <lastUpdated value="2024-07-03T23:11:23.460+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-collection-type.html">codesystem Collection Type v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-collection-type-consortium"> </a>  
+                  <a href="CodeSystem-collection-type.html#collection-type-consortium">consortium</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td>
+                <td>Consortium</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-collection-type-program"> </a>  
+                  <a href="CodeSystem-collection-type.html#collection-type-program">program</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td>
+                <td>Program</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-collection-type-user-defined"> </a>  
+                  <a href="CodeSystem-collection-type.html#collection-type-user-defined">user-defined</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td>
+                <td>User Defined</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs"/>
+        <version value="0.1.0"/>
+        <name value="CollectionTypeVS"/>
+        <title value="Collection Type"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2024-07-03T23:11:23+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:84b48fd4-60cb-4249-81d9-6cb230f41bc4"/>
+          <timestamp value="2024-07-03T23:11:47+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type"/>
+            <code value="consortium"/>
+            <display value="Consortium"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type"/>
+            <code value="program"/>
+            <display value="Program"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type"/>
+            <code value="user-defined"/>
+            <display value="User Defined"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-research-data-access-code.html">codesystem Research Data Access Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 10 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-code-GRU"> </a>  
+                  <a href="CodeSystem-research-data-access-code.html#research-data-access-code-GRU">GRU</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
+                <td>General Research Use</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-code-HMB"> </a>  
+                  <a href="CodeSystem-research-data-access-code.html#research-data-access-code-HMB">HMB</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
+                <td>Health/Medical/Biomedical</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-code-DS"> </a>  
+                  <a href="CodeSystem-research-data-access-code.html#research-data-access-code-DS">DS</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
+                <td>Disease-Specific (Disease/Trait/Exposure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-code-IRB"> </a>  
+                  <a href="CodeSystem-research-data-access-code.html#research-data-access-code-IRB">IRB</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
+                <td>IRB approval required</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-code-PUB"> </a>  
+                  <a href="CodeSystem-research-data-access-code.html#research-data-access-code-PUB">PUB</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
+                <td>Publication required</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-code-COL"> </a>  
+                  <a href="CodeSystem-research-data-access-code.html#research-data-access-code-COL">COL</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
+                <td>Collaboration Required</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-code-NPU"> </a>  
+                  <a href="CodeSystem-research-data-access-code.html#research-data-access-code-NPU">NPU</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
+                <td>Not-for-profit use only</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-code-MDS"> </a>  
+                  <a href="CodeSystem-research-data-access-code.html#research-data-access-code-MDS">MDS</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
+                <td>Methods</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-code-GSO"> </a>  
+                  <a href="CodeSystem-research-data-access-code.html#research-data-access-code-GSO">GSO</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
+                <td>Genetic studies only</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-code-GSR"> </a>  
+                  <a href="CodeSystem-research-data-access-code.html#research-data-access-code-GSR">GSR</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
+                <td>Genomic Summary Results</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs"/>
+        <version value="0.1.0"/>
+        <name value="ResearchDataAccessCodeVS"/>
+        <title value="Research Data Access Codes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2024-07-03T23:11:23+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:3a8680ac-8590-426d-a911-450c41cf367f"/>
+          <timestamp value="2024-07-03T23:11:48+00:00"/>
+          <total value="10"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+            <code value="GRU"/>
+            <display value="General Research Use"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+            <code value="HMB"/>
+            <display value="Health/Medical/Biomedical"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+            <code value="DS"/>
+            <display value="Disease-Specific (Disease/Trait/Exposure)"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+            <code value="IRB"/>
+            <display value="IRB approval required"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+            <code value="PUB"/>
+            <display value="Publication required"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+            <code value="COL"/>
+            <display value="Collaboration Required"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+            <code value="NPU"/>
+            <display value="Not-for-profit use only"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+            <code value="MDS"/>
+            <display value="Methods"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+            <code value="GSO"/>
+            <display value="Genetic studies only"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+            <code value="GSR"/>
+            <display value="Genomic Summary Results"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-research-data-access-type.html">codesystem Research Data Access Type Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-type-open"> </a>  
+                  <a href="CodeSystem-research-data-access-type.html#research-data-access-type-open">open</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
+                <td>Open Access</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-type-registered"> </a>  
+                  <a href="CodeSystem-research-data-access-type.html#research-data-access-type-registered">registered</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
+                <td>Registered Access</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-type-controlled"> </a>  
+                  <a href="CodeSystem-research-data-access-type.html#research-data-access-type-controlled">controlled</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
+                <td>Controlled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-type-gsr-restricted"> </a>  
+                  <a href="CodeSystem-research-data-access-type.html#research-data-access-type-gsr-restricted">gsr-restricted</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
+                <td>GSR Restricted</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-type-gsr-allowed"> </a>  
+                  <a href="CodeSystem-research-data-access-type.html#research-data-access-type-gsr-allowed">gsr-allowed</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
+                <td>GSR Allowed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs"/>
+        <version value="0.1.0"/>
+        <name value="ResearchDataAccessTypeVS"/>
+        <title value="Research Data Access Type Codes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2024-07-03T23:11:23+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:1c2126f6-901a-41fe-989a-b93af5eea67c"/>
+          <timestamp value="2024-07-03T23:11:48+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+            <code value="open"/>
+            <display value="Open Access"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+            <code value="registered"/>
+            <display value="Registered Access"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+            <code value="controlled"/>
+            <display value="Controlled"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+            <code value="gsr-restricted"/>
+            <display value="GSR Restricted"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+            <code value="gsr-allowed"/>
+            <display value="GSR Allowed"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-study-name-type.html">codesystem Study Name Type v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-name-type-formal-title"> </a>  
+                  <a href="CodeSystem-study-name-type.html#study-name-type-formal-title">formal-title</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td>
+                <td>Formal Title</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-name-type-internal-name"> </a>  
+                  <a href="CodeSystem-study-name-type.html#study-name-type-internal-name">internal-name</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td>
+                <td>Internal Name</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-name-type-familiar-ame"> </a>  
+                  <a href="CodeSystem-study-name-type.html#study-name-type-familiar-ame">familiar-ame</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td>
+                <td>Familiar Name (Nickname)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-name-type-acronym"> </a>  
+                  <a href="CodeSystem-study-name-type.html#study-name-type-acronym">acronym</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td>
+                <td>Acronym</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-name-type-alternative-name"> </a>  
+                  <a href="CodeSystem-study-name-type.html#study-name-type-alternative-name">alternative-name</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td>
+                <td>Alternative Name</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs"/>
+        <version value="0.1.0"/>
+        <name value="StudyNameTypeVS"/>
+        <title value="Study Name Type"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2024-07-03T23:11:23+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:2a372ab4-1154-4a94-8720-7168cf38bad4"/>
+          <timestamp value="2024-07-03T23:11:48+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type"/>
+            <code value="formal-title"/>
+            <display value="Formal Title"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type"/>
+            <code value="internal-name"/>
+            <display value="Internal Name"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type"/>
+            <code value="familiar-ame"/>
+            <display value="Familiar Name (Nickname)"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type"/>
+            <code value="acronym"/>
+            <display value="Acronym"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type"/>
+            <code value="alternative-name"/>
+            <display value="Alternative Name"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-study-personnel-role.html">codesystem Study Personnel Role v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-personnel-role-primary-investigator"> </a>  
+                  <a href="CodeSystem-study-personnel-role.html#study-personnel-role-primary-investigator">primary-investigator</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td>
+                <td>Primary Investigator</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-personnel-role-administrator"> </a>  
+                  <a href="CodeSystem-study-personnel-role.html#study-personnel-role-administrator">administrator</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td>
+                <td>Administrator</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="null-x-https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-personnel-role-collaborator"> </a>  
+                  <a href="CodeSystem-study-personnel-role.html#study-personnel-role-collaborator">collaborator</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td>
+                <td>Collaborator</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs"/>
+        <version value="0.1.0"/>
+        <name value="StudyPersonnelRoleVS"/>
+        <title value="Study Personnel Role"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2024-07-03T23:11:23+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:90c0d8f3-8915-443c-b7e8-3c46eb1b5f5e"/>
+          <timestamp value="2024-07-03T23:11:48+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role"/>
+            <code value="primary-investigator"/>
+            <display value="Primary Investigator"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role"/>
+            <code value="administrator"/>
+            <display value="Administrator"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role"/>
+            <code value="collaborator"/>
+            <display value="Collaborator"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

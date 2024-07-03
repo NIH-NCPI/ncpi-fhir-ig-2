@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/cmg-research-study-subject-cmg-irb-hmb-npu> a fhir:ResearchStudy ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cmg-research-study-subject-cmg-irb-hmb-npu"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ResearchStudy cmg-research-study-subject-cmg-irb-hmb-npu</b></p><a name=\"cmg-research-study-subject-cmg-irb-hmb-npu\"> </a><a name=\"hccmg-research-study-subject-cmg-irb-hmb-npu\"> </a><a name=\"hccmg-research-study-subject-cmg-irb-hmb-npu-en-US\"> </a><p><b>identifier</b>: <code>http://mendelian.org/fhir</code>/BH-CMG-HMB-NPU</p><p><b>title</b>: BH-CMG HMB-NPU Consent Study Subject</p><p><b>partOf</b>: <a href=\"ResearchStudy-cmg-research-study-bhcmg.html\">ResearchStudy Baylor Hopkins Center for Mendelian Genomics (BH CMG)</a></p><p><b>status</b>: Completed</p><p><b>description</b>: </p><div><p>CMG Consent Group, Health/Medical/Biomedical + IRB Required + Not for profit use</p>\n</div><p><b>enrollment</b>: <a href=\"Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu.html\">Group BM-CMG Study IRB-HMB-NPU Participants</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/hmb-irb-npu-consent> ;
+       fhir:reference [ fhir:v "Consent/hmb-irb-npu-consent" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://mendelian.org/fhir"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "BH-CMG-HMB-NPU" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "BH-CMG HMB-NPU Consent Study Subject"] ; # 
+  fhir:partOf ( [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/cmg-research-study-bhcmg> ;
+     fhir:reference [ fhir:v "ResearchStudy/cmg-research-study-bhcmg" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:description [ fhir:v "CMG Consent Group, Health/Medical/Biomedical + IRB Required + Not for profit use"] ; # 
+  fhir:enrollment ( [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/cmg-research-study-bhcmg-consent-group-irb-hmb-npu> ;
+     fhir:reference [ fhir:v "Group/cmg-research-study-bhcmg-consent-group-irb-hmb-npu" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

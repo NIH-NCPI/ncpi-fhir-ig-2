@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "research-data-access-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem research-data-access-code</b></p><a name=\"research-data-access-code\"> </a><a name=\"hcresearch-data-access-code\"> </a><a name=\"hcresearch-data-access-code-en-US\"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">GRU<a name=\"research-data-access-code-GRU\"> </a></td><td>General Research Use</td></tr><tr><td style=\"white-space:nowrap\">HMB<a name=\"research-data-access-code-HMB\"> </a></td><td>Health/Medical/Biomedical</td></tr><tr><td style=\"white-space:nowrap\">DS<a name=\"research-data-access-code-DS\"> </a></td><td>Disease-Specific (Disease/Trait/Exposure)</td></tr><tr><td style=\"white-space:nowrap\">IRB<a name=\"research-data-access-code-IRB\"> </a></td><td>IRB approval required</td></tr><tr><td style=\"white-space:nowrap\">PUB<a name=\"research-data-access-code-PUB\"> </a></td><td>Publication required</td></tr><tr><td style=\"white-space:nowrap\">COL<a name=\"research-data-access-code-COL\"> </a></td><td>Collaboration Required</td></tr><tr><td style=\"white-space:nowrap\">NPU<a name=\"research-data-access-code-NPU\"> </a></td><td>Not-for-profit use only</td></tr><tr><td style=\"white-space:nowrap\">MDS<a name=\"research-data-access-code-MDS\"> </a></td><td>Methods</td></tr><tr><td style=\"white-space:nowrap\">GSO<a name=\"research-data-access-code-GSO\"> </a></td><td>Genetic studies only</td></tr><tr><td style=\"white-space:nowrap\">GSR<a name=\"research-data-access-code-GSR\"> </a></td><td>Genomic Summary Results</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ResearchDataAccessCode"] ; # 
+  fhir:title [ fhir:v "Research Data Access Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-03T23:11:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Enumerated list of access codes such as dbGaP consent codes among others."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "GRU" ] ;
+     fhir:display [ fhir:v "General Research Use" ]
+  ] [
+     fhir:code [ fhir:v "HMB" ] ;
+     fhir:display [ fhir:v "Health/Medical/Biomedical" ]
+  ] [
+     fhir:code [ fhir:v "DS" ] ;
+     fhir:display [ fhir:v "Disease-Specific (Disease/Trait/Exposure)" ]
+  ] [
+     fhir:code [ fhir:v "IRB" ] ;
+     fhir:display [ fhir:v "IRB approval required" ]
+  ] [
+     fhir:code [ fhir:v "PUB" ] ;
+     fhir:display [ fhir:v "Publication required" ]
+  ] [
+     fhir:code [ fhir:v "COL" ] ;
+     fhir:display [ fhir:v "Collaboration Required" ]
+  ] [
+     fhir:code [ fhir:v "NPU" ] ;
+     fhir:display [ fhir:v "Not-for-profit use only" ]
+  ] [
+     fhir:code [ fhir:v "MDS" ] ;
+     fhir:display [ fhir:v "Methods" ]
+  ] [
+     fhir:code [ fhir:v "GSO" ] ;
+     fhir:display [ fhir:v "Genetic studies only" ]
+  ] [
+     fhir:code [ fhir:v "GSR" ] ;
+     fhir:display [ fhir:v "Genomic Summary Results" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

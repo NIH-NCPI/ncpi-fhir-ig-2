@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="study-personnel-role-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet study-personnel-role-vs</b></p><a name="study-personnel-role-vs"> </a><a name="hcstudy-personnel-role-vs"> </a><a name="hcstudy-personnel-role-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-study-personnel-role.html"><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</code></a></li></ul></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs"/>
+  <version value="0.1.0"/>
+  <name value="StudyPersonnelRoleVS"/>
+  <title value="Study Personnel Role"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-07-03T23:11:23+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Roles associated with study personnel."/>
+  <compose>
+    <include>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role"/>
+    </include>
+  </compose>
+</ValueSet>

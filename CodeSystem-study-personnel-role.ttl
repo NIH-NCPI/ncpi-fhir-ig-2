@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "study-personnel-role"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem study-personnel-role</b></p><a name=\"study-personnel-role\"> </a><a name=\"hcstudy-personnel-role\"> </a><a name=\"hcstudy-personnel-role-en-US\"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">primary-investigator<a name=\"study-personnel-role-primary-investigator\"> </a></td><td>Primary Investigator</td></tr><tr><td style=\"white-space:nowrap\">administrator<a name=\"study-personnel-role-administrator\"> </a></td><td>Administrator</td></tr><tr><td style=\"white-space:nowrap\">collaborator<a name=\"study-personnel-role-collaborator\"> </a></td><td>Collaborator</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "StudyPersonnelRole"] ; # 
+  fhir:title [ fhir:v "Study Personnel Role"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-03T23:11:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Roles associated with study personnel."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "primary-investigator" ] ;
+     fhir:display [ fhir:v "Primary Investigator" ]
+  ] [
+     fhir:code [ fhir:v "administrator" ] ;
+     fhir:display [ fhir:v "Administrator" ]
+  ] [
+     fhir:code [ fhir:v "collaborator" ] ;
+     fhir:display [ fhir:v "Collaborator" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

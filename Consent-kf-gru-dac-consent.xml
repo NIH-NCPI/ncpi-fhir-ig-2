@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="kf-gru-dac-consent"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Consent kf-gru-dac-consent</b></p><a name="kf-gru-dac-consent"> </a><a name="hckf-gru-dac-consent"> </a><a name="hckf-gru-dac-consent-en-US"> </a><p><b>status</b>: Pending</p><p><b>scope</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/consentscope research}">Research</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/consentcategorycodes research}">Research Information Access</span></p><p><b>policyRule</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/consentpolicycodes cric}">Common Rule Informed Consent</span></p><h3>Provisions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Purpose</b></td></tr><tr><td style="display: none">*</td><td>Opt In</td><td><a href="CodeSystem-research-data-access-code.html#research-data-access-code-GRU">Research Data Access Codes</a> GRU: General Research Use</td></tr></table></div>
+  </text>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description">
+    <valueMarkdown value="Use of the data is limited only by the terms of the model Data Use Certification."/>
+  </extension>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link">
+    <valueUrl value="https://redcap.chop.edu/surveys/?s=A7M873HMN8"/>
+  </extension>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+        <code value="controlled"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="draft"/>
+  <scope>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <code value="research"/>
+    </coding>
+  </scope>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
+      <code value="research"/>
+      <display value="Research Information Access"/>
+    </coding>
+  </category>
+  <policyRule>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentpolicycodes"/>
+      <code value="cric"/>
+    </coding>
+  </policyRule>
+  <provision>
+    <type value="permit"/>
+    <purpose>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+      <code value="GRU"/>
+      <display value="General Research Use"/>
+    </purpose>
+  </provision>
+</Consent>

@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "collection-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem collection-type</b></p><a name=\"collection-type\"> </a><a name=\"hccollection-type\"> </a><a name=\"hccollection-type-en-US\"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">consortium<a name=\"collection-type-consortium\"> </a></td><td>Consortium</td></tr><tr><td style=\"white-space:nowrap\">program<a name=\"collection-type-program\"> </a></td><td>Program</td></tr><tr><td style=\"white-space:nowrap\">user-defined<a name=\"collection-type-user-defined\"> </a></td><td>User Defined</td></tr></table></div>"
+  },
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
+  "version" : "0.1.0",
+  "name" : "CollectionType",
+  "title" : "Collection Type",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-07-03T23:11:23+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
+  "description" : "Enumerated list of collection types",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "consortium",
+    "display" : "Consortium"
+  },
+  {
+    "code" : "program",
+    "display" : "Program"
+  },
+  {
+    "code" : "user-defined",
+    "display" : "User Defined"
+  }]
+}

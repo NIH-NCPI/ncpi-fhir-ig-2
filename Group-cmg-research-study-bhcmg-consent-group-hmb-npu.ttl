@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/cmg-research-study-bhcmg-consent-group-hmb-npu> a fhir:Group ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cmg-research-study-bhcmg-consent-group-hmb-npu"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Group cmg-research-study-bhcmg-consent-group-hmb-npu</b></p><a name=\"cmg-research-study-bhcmg-consent-group-hmb-npu\"> </a><a name=\"hccmg-research-study-bhcmg-consent-group-hmb-npu\"> </a><a name=\"hccmg-research-study-bhcmg-consent-group-hmb-npu-en-US\"> </a><p><b>identifier</b>: <code>http://mendelian.org/fhir/Group</code>/HMB-NPU-Participants</p><p><b>type</b>: Person</p><p><b>actual</b>: true</p><p><b>name</b>: BM-CMG Study HMB-NPU Participants</p><p><b>quantity</b>: 1665</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://mendelian.org/fhir/Group"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HMB-NPU-Participants" ]
+  ] ) ; # 
+  fhir:type [ fhir:v "person"] ; # 
+  fhir:actual [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name [ fhir:v "BM-CMG Study HMB-NPU Participants"] ; # 
+  fhir:quantity [ fhir:v "1665"^^xsd:nonNegativeInteger] . # 
+
+# -------------------------------------------------------------------------------------
+

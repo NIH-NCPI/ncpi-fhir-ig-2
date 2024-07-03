@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="research-data-access-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem research-data-access-type</b></p><a name="research-data-access-type"> </a><a name="hcresearch-data-access-type"> </a><a name="hcresearch-data-access-type-en-US"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">open<a name="research-data-access-type-open"> </a></td><td>Open Access</td></tr><tr><td style="white-space:nowrap">registered<a name="research-data-access-type-registered"> </a></td><td>Registered Access</td></tr><tr><td style="white-space:nowrap">controlled<a name="research-data-access-type-controlled"> </a></td><td>Controlled</td></tr><tr><td style="white-space:nowrap">gsr-restricted<a name="research-data-access-type-gsr-restricted"> </a></td><td>GSR Restricted</td></tr><tr><td style="white-space:nowrap">gsr-allowed<a name="research-data-access-type-gsr-allowed"> </a></td><td>GSR Allowed</td></tr></table></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+  <version value="0.1.0"/>
+  <name value="ResearchDataAccessType"/>
+  <title value="Research Data Access Type Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-07-03T23:11:23+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="open"/>
+    <display value="Open Access"/>
+  </concept>
+  <concept>
+    <code value="registered"/>
+    <display value="Registered Access"/>
+  </concept>
+  <concept>
+    <code value="controlled"/>
+    <display value="Controlled"/>
+  </concept>
+  <concept>
+    <code value="gsr-restricted"/>
+    <display value="GSR Restricted"/>
+  </concept>
+  <concept>
+    <code value="gsr-allowed"/>
+    <display value="GSR Allowed"/>
+  </concept>
+</CodeSystem>
