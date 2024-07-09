@@ -1,15 +1,13 @@
 
 # 👩‍💻 Contributor's Guide
 
-## Software Development Lifecycle
-
-### Overview
+## 🔁 Software Development Life Cycle
 This project uses [Github Flow](https://docs.github.com/en/get-started/using-github/github-flow)
 for its software development lifecycle. Github workflow is a simple workflow 
 that works well for a small project with multiple developers needing to work 
 on the code and review each other's code before merging into the main branch.
 
-#### Process
+### Process
 
 1. **Developer A** wants to make a change to the code
 2. On their local machine, developer A checkouts a branch to make that change
@@ -33,12 +31,12 @@ the next version and creates the release on Github
 
 Let's solidify this with an example.
 
-### Develop
+## 👨🏻‍💻 Develop
 
 This assumes you've already setup your development environment. If not, 
 follow the steps in [Setup Dev Environment](#setup-dev-environment)
 
-#### Create a branch
+### Create a branch
 ```shell
 # Checkout your local main branch
 git checkout main
@@ -51,11 +49,30 @@ git pull
 git checkout -b add-patient-birth-sex 
 ```
 
-#### Make a change
+### Commit the change 
 
-Commit messages
+After you've made the change you want on your local machine its time 
+to commit that change to the project repo. 
 
-#### ✅ Important - Rebase
+#### Emoji Commits
+This project uses emoji based commits where we prefix the commit message with 
+an emoji code that is relevant to that change. 
+
+This is actually somewhat of a standard practice in the industry, to the point 
+where standard emoji codes for various types of changes are published on the [gitmoji]() 
+website. 
+
+Here's an example commit message for adding something new:
+
+```shell
+# Stage the file(s) to commit
+$ git add <file path to the file you want to commit>
+
+# Commit the file(s) to the local repo
+$ git commit -m ":sparkles: Add new birthSex extension to Patient" 
+```
+
+### ⚠️  Important! - Rebase
 If another developer has merged their code (Pull Request) while you're working
 on your change, you will need to update your branch with those changes before
 you continue developing. To do that, you will need to [rebase your branch]()
@@ -79,13 +96,27 @@ git push -f
 If you do this often you will rarely have conflicts.
 
 
-### Pull Request
+## 📝 Pull Request
 
 Once you're happy with your changes, its time to [open a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui)
 so that others can review your code and upon their approval you can merge your branch
 into the main branch.
 
-### Squash and Merge
+### Title
+Similar to commit messages, the standard practice for this project is to 
+prefix the PR title with the appropriate emoji from Gitmoji. 
+
+For example:
+
+**✨ Add new birthSex field to Patient**
+
+### Description
+When you open a pull request you will notice that the description is populated
+with a "Motivation" and "Approach" section. Please be sure to fill these out 
+so that reviewers can quickly and easily understand the purpose of the PR and 
+the changes.
+
+## Squash and Merge
 Once your PR has been approved you're ready to merge it. Before you merge it,
 you'll want to "squash" all of your commits into 1 commit. This cleans up your 
 branch's commit history and makes the main branch much cleaner as feature 
@@ -105,9 +136,9 @@ The git log for this branch shows 5 seperate commits
 
 $ git log
 
-:sparkles: New birth sex field 
+:sparkles: New birth sex extension 
 
-:recycle: Change type 
+:recycle: Change data type 
 
 :recycle: Change values in ValueSet
 
@@ -126,28 +157,57 @@ individual commit messages to preserve history.
 $ git log
 
 Merge pull request #19 from ncpi/add-patient-birth-sex
-:sparkles: New birth sex field 
-:recycle: Change type 
+:sparkles: New birth sex extension 
+:recycle: Change data type 
 :recycle: Change values in ValueSet
 :bug: Fix typo in ValueSet
 :bug: Fix another typo in ValueSet
 ```
 
+## 🔢 Versioning
+As changes are made to the implementation guide (IG), we will want a way to track 
+versions of the IG and tie those versions to snapshots of the project. 
+
+In this project we use [Semantic Versioning](https://semver.org/) to mint 
+version numbers for various types of changes. Please read more at semvar.org. 
+
+## 📦 Release
+Releases on Github are snapshots of the project at a particular point in time,
+stamped with a versionn number of some kind, in our case, semantic version number.
+A release can be made at any time, although, it is typical to make a release after
+a desired set of changes have been merged into the main branch.
+
+To make a release you will need to install and run the [D3b release maker](https://github.com/d3b-center/d3b-release-maker?tab=readme-ov-file#part-ii-the-cli-that-updates-release-notes-and-creates-a-github-release-pr) CLI 
+tool:
+
+```shell
+$ release build
+```
+### Create Release PR
+The build command will create a "Release Pull Request" on Github, which will 
+have an updated Change Log of all the commit messages of the pull requests that 
+were merged since the last release. It will also mint the next release version
+which is used to tag the main branch later.
+
+### Merge Release PR
+When this PR is merged, the Github release workflow (already part of the repo)
+will tag the main branch with the release number, create a snapshot of the 
+repo, create the Github release and attach the snapsot to the release.
+
+The Github workflow will also publish the IG to its domain.
 
 
-### Release
+# TODO: 🛠️ Getting Started - Developers
 
-## TODO - Getting Started - Developers
+## Setup Dev Environment
 
-### Setup Dev Environment
+## Make a Change
 
-### Make a Change
+## Test
 
-### Test
+## Push Code
 
-### Push Code
-
-### Review
+## Review
 
 
 
