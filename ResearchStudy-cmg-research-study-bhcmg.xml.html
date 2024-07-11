@@ -1,37 +1,39 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>Baylor Hopkins Center for Mendelian Genomics (BH CMG) - XML Representation - NCPI FHIR Implementation Guide v2 v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-      <!-- Placeholder for child template CSS declarations -->
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -39,11 +41,11 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"28.31"}
-    h3,h4,h5,h6{--heading-prefix:"28.31"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+    <style type="text/css">h2{--heading-prefix:"30.31"}
+    h3,h4,h5,h6{--heading-prefix:"30.31"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
@@ -55,27 +57,27 @@
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4B/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -209,9 +211,6 @@
       <li>
         <a href="artifacts.html#structures-extension-definitions">Extensions</a>
       </li>
-      <li><a name="l381">​</a>
-        <a href="artifacts.html#structures-data-type-profiles">Data Types</a>
-      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -219,43 +218,43 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="l398">​</a>
+      <li>
         <a href="fhir_version.html">FHIR Versions</a>
       </li>
       <li>
         <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
       </li>
-      <li><a name="l410">​</a>
+      <li>
         <a href="downloads.html">Downloads</a>
       </li>
     </ul>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Baylor Hopkins Center for Mendelian Genomics (BH CMG)</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Baylor Hopkins Center for Mendelian Genomics (BH CMG)</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">NCPI FHIR Implementation Guide v2 - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+<!--ReleaseHeader--><p id="publish-box">NCPI FHIR Implementation Guide v2 - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -304,206 +303,206 @@
 <h2 id="root">: Baylor Hopkins Center for Mendelian Genomics (BH CMG) - XML Representation</h2>
 
 
-<p><a href="ResearchStudy-cmg-research-study-bhcmg.xml" no-download="true">Raw xml</a> | <a download="null" href="ResearchStudy-cmg-research-study-bhcmg.xml">Download</a></p>
+<p><a href="ResearchStudy-cmg-research-study-bhcmg.xml" no-download="true">Raw xml</a> | <a href="ResearchStudy-cmg-research-study-bhcmg.xml" download>Download</a></p>
 
-    <!-- insert intro if present -->
+  <!-- insert intro if present -->
   
 
 
 
-  <pre style="white-space: pre; text-wrap: nowrap;" class="xml"><code style="white-space: pre; text-wrap: nowrap;" class="language-xml">
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 
-&lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy">ResearchStudy</a> xmlns="http://hl7.org/fhir"&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.id">id</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#id">value</a>="cmg-research-study-bhcmg"/&gt;
+&lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy">ResearchStudy</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.id">id</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#id">value</a>=&quot;cmg-research-study-bhcmg&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/resource.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">value</a>="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"/&gt;
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#canonical">value</a>=&quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study&quot;/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="generated"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: ResearchStudy cmg-research-study-bhcmg&lt;/b&gt;&lt;/p&gt;&lt;a name="cmg-research-study-bhcmg"&gt; &lt;/a&gt;&lt;a name="hccmg-research-study-bhcmg"&gt; &lt;/a&gt;&lt;a name="hccmg-research-study-bhcmg-en-US"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://mendelian.org/fhir&lt;/code&gt;/BH-CMG, &lt;code&gt;https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=&lt;/code&gt;/phs000711&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Baylor Hopkins Center for Mendelian Genomics (BH CMG)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;span title="Codes:{urn:oid:2.16.840.1.113883.6.177 D057182}, {urn:oid:2.16.840.1.113883.6.177 D056769}, {urn:oid:2.16.840.1.113883.6.177 D019571}, {urn:oid:2.16.840.1.113883.6.177 D013576}, {urn:oid:2.16.840.1.113883.6.177 D019465}"&gt;Mendelian Randomization Analysis&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;RelatedArtifacts&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Label&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Citation&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Url&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;acronym&lt;/td&gt;&lt;td&gt;BH-CMG&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;Website&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;a href="https://mendeliangenomics.org/"&gt;https://mendeliangenomics.org/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;National Institutes of Health (NIH) support was provided in part by a grant from the National Human Genome Research Institute and the National Heart, Lung, and Blood Institute (1U54HG006542) to Dr. David Valle for the Baylor Hopkins Center for Mendelian Genomics program. The dataset(s) used for the analyses described in this manuscript was obtained from the database of Genotype and Phenotype (dbGaP) found at http://www.ncbi.nlm.nih.gov/gap through dbGaP accession number phs000711.v7.p2.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;Publication&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Gonzaga-Jauregui C, Lupski JR, Gibbs RA
+    &lt;<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ResearchStudy cmg-research-study-bhcmg&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;cmg-research-study-bhcmg&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hccmg-research-study-bhcmg&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hccmg-research-study-bhcmg-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://mendelian.org/fhir&lt;/code&gt;/BH-CMG, &lt;code&gt;https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=&lt;/code&gt;/phs000711&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Baylor Hopkins Center for Mendelian Genomics (BH CMG)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:oid:2.16.840.1.113883.6.177 D057182}, {urn:oid:2.16.840.1.113883.6.177 D056769}, {urn:oid:2.16.840.1.113883.6.177 D019571}, {urn:oid:2.16.840.1.113883.6.177 D013576}, {urn:oid:2.16.840.1.113883.6.177 D019465}&quot;&gt;Mendelian Randomization Analysis&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;RelatedArtifacts&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Label&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Citation&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Url&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;acronym&lt;/td&gt;&lt;td&gt;BH-CMG&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;Website&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://mendeliangenomics.org/&quot;&gt;https://mendeliangenomics.org/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;National Institutes of Health (NIH) support was provided in part by a grant from the National Human Genome Research Institute and the National Heart, Lung, and Blood Institute (1U54HG006542) to Dr. David Valle for the Baylor Hopkins Center for Mendelian Genomics program. The dataset(s) used for the analyses described in this manuscript was obtained from the database of Genotype and Phenotype (dbGaP) found at http://www.ncbi.nlm.nih.gov/gap through dbGaP accession number phs000711.v7.p2.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;Publication&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Gonzaga-Jauregui C, Lupski JR, Gibbs RA
 Human genome sequencing in health and disease.
 Annu Rev Med. 2012; 63:35-61.
 PMID: 22248320&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;Publication&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Bamshad MJ, Shendure JA, Valle D, Hamosh A, Lupski JR, Gibbs RA, Boerwinkle E, Lifton RP, Gerstein M, Gunel M, Mane S, Nickerson DA, Centers for Mendelian Genomics
+&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;Publication&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Bamshad MJ, Shendure JA, Valle D, Hamosh A, Lupski JR, Gibbs RA, Boerwinkle E, Lifton RP, Gerstein M, Gunel M, Mane S, Nickerson DA, Centers for Mendelian Genomics
 The Centers for Mendelian Genomics: a new large-scale initiative to identify the genes underlying rare Mendelian conditions.
 Am J Med Genet A. 2012 Jul; 158A(7):1523-5.
 PMID: 22628075&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;Publication&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Boone PM, Campbell IM, Baggett BC, Soens ZT, Rao MM, Hixson PM, Patel A, Bi W, Cheung SW, Lalani SR, Beaudet AL, Stankiewicz P, Shaw CA, Lupski JR
+&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;Publication&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Boone PM, Campbell IM, Baggett BC, Soens ZT, Rao MM, Hixson PM, Patel A, Bi W, Cheung SW, Lalani SR, Beaudet AL, Stankiewicz P, Shaw CA, Lupski JR
 Deletions of recessive disease genes: CNV contribution to carrier states and disease-causing alleles.
 Genome Res. 2013 Sep; 23(9):1383-94.
 PMID: 23685542&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;Publication&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Cheung YH, Gayden T, Campeau PM, LeDuc CA, Russo D, Nguyen VH, Guo J, Qi M, Guan Y, Albrecht S, Moroz B, Eldin KW, Lu JT, Schwartzentruber J, Malkin D, Berghuis AM, Emil S, Gibbs RA, Burk DL, Vanstone M, Lee BH, Orchard D, Boycott KM, Chung WK, Jabado N
+&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;Publication&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Cheung YH, Gayden T, Campeau PM, LeDuc CA, Russo D, Nguyen VH, Guo J, Qi M, Guan Y, Albrecht S, Moroz B, Eldin KW, Lu JT, Schwartzentruber J, Malkin D, Berghuis AM, Emil S, Gibbs RA, Burk DL, Vanstone M, Lee BH, Orchard D, Boycott KM, Chung WK, Jabado N
 A recurrent PDGFRB mutation causes familial infantile myofibromatosis.
 Am J Hum Genet. 2013 Jun 06; 92(6):996-1000.
 PMID: 23731537&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;Publication&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Campeau PM, Kasperaviciute D, Lu JT, Burrage LC, Kim C, Hori M, Powell BR, Stewart F, Félix TM, van den Ende J, Wisniewska M, Kayserili H, Rump P, Nampoothiri S, Aftimos S, Mey A, Nair LD, Begleiter ML, De Bie I, Meenakshi G, Murray ML, Repetto GM, Golabi M, Blair E, Male A, Giuliano F, Kariminejad A, Newman WG, Bhaskar SS, Dickerson JE, Kerr B, Banka S, Giltay JC, Wieczorek D, Tostevin A, Wiszniewska J, Cheung SW, Hennekam RC, Gibbs RA, Lee BH, Sisodiya SM
+&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Citation&lt;/td&gt;&lt;td&gt;Publication&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Campeau PM, Kasperaviciute D, Lu JT, Burrage LC, Kim C, Hori M, Powell BR, Stewart F, Félix TM, van den Ende J, Wisniewska M, Kayserili H, Rump P, Nampoothiri S, Aftimos S, Mey A, Nair LD, Begleiter ML, De Bie I, Meenakshi G, Murray ML, Repetto GM, Golabi M, Blair E, Male A, Giuliano F, Kariminejad A, Newman WG, Bhaskar SS, Dickerson JE, Kerr B, Banka S, Giltay JC, Wieczorek D, Tostevin A, Wiszniewska J, Cheung SW, Hennekam RC, Gibbs RA, Lee BH, Sisodiya SM
 The genetic basis of DOORS syndrome: an exome-sequencing study.
 Lancet Neurol. 2014 Jan; 13(1):44-58.
 PMID: 24291220&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;AdditionalDocumentation&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;a href="https://app.terra.bio/#workspaces/anvil-datastorage/AnVIL_CMG_BaylorHopkins_HMB-IRB-NPU_WES"&gt;https://app.terra.bio/#workspaces/anvil-datastorage/AnVIL_CMG_BaylorHopkins_HMB-IRB-NPU_WES&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;Grant&lt;/td&gt;&lt;td&gt;1U54HG006542. National Human Genome Research Institute and National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA.&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;AdditionalDocumentation&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://app.terra.bio/#workspaces/anvil-datastorage/AnVIL_CMG_BaylorHopkins_HMB-IRB-NPU_WES&quot;&gt;https://app.terra.bio/#workspaces/anvil-datastorage/AnVIL_CMG_BaylorHopkins_HMB-IRB-NPU_WES&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Documentation&lt;/td&gt;&lt;td&gt;Grant&lt;/td&gt;&lt;td&gt;1U54HG006542. National Human Genome Research Institute and National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA.&lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;td&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: &lt;/p&gt;&lt;div&gt;&lt;p&gt;The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party"&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>="name"&gt;
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;name&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueString</a>
-                   <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="1U54HG006542 National Human Genome Research Institute and National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA."/&gt;
+                   <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;1U54HG006542 National Human Genome Research Institute and National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA.&quot;/&gt;
     &lt;/extension&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>="role"&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;role&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>="http://hl7.org/fhir/research-study-party-role"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="funding-source"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/research-study-party-role&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;funding-source&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>="classifier"&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;classifier&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="nih"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;nih&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.identifier">identifier</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>="http://mendelian.org/fhir"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="BH-CMG"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;http://mendelian.org/fhir&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;BH-CMG&quot;/&gt;
   &lt;/identifier&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.system">system</a>
-            <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id="/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="phs000711"/&gt;
+            <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;phs000711&quot;/&gt;
   &lt;/identifier&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.title">title</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Baylor Hopkins Center for Mendelian Genomics (BH CMG)"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="completed"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.title">title</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Baylor Hopkins Center for Mendelian Genomics (BH CMG)&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;completed&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.focus">focus</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>="urn:oid:2.16.840.1.113883.6.177"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="D057182"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Mendelian Randomization Analysis"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.840.1.113883.6.177&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;D057182&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Mendelian Randomization Analysis&quot;/&gt;
     &lt;/coding&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>="urn:oid:2.16.840.1.113883.6.177"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="D056769"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Alstrom Syndrome"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.840.1.113883.6.177&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;D056769&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Alstrom Syndrome&quot;/&gt;
     &lt;/coding&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>="urn:oid:2.16.840.1.113883.6.177"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="D019571"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Arrhythmogenic Right Ventricular Dysplasia"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.840.1.113883.6.177&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;D019571&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Arrhythmogenic Right Ventricular Dysplasia&quot;/&gt;
     &lt;/coding&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>="urn:oid:2.16.840.1.113883.6.177"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="D013576"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Syndactyly"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.840.1.113883.6.177&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;D013576&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Syndactyly&quot;/&gt;
     &lt;/coding&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>="urn:oid:2.16.840.1.113883.6.177"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="D019465"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Craniofacial Abnormalities"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.840.1.113883.6.177&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;D019465&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Craniofacial Abnormalities&quot;/&gt;
     &lt;/coding&gt;
   &lt;/focus&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.relatedArtifact">relatedArtifact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="documentation"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="acronym"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="BH-CMG"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;documentation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;acronym&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;BH-CMG&quot;/&gt;
   &lt;/relatedArtifact&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.relatedArtifact">relatedArtifact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="documentation"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Website"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.url">url</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#url">value</a>="https://mendeliangenomics.org/"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;documentation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Website&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.url">url</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#url">value</a>=&quot;https://mendeliangenomics.org/&quot;/&gt;
   &lt;/relatedArtifact&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.relatedArtifact">relatedArtifact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="citation"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;citation&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.citation">citation</a>
-              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>="National Institutes of Health (NIH) support was provided in part by a grant from the National Human Genome Research Institute and the National Heart, Lung, and Blood Institute (1U54HG006542) to Dr. David Valle for the Baylor Hopkins Center for Mendelian Genomics program. The dataset(s) used for the analyses described in this manuscript was obtained from the database of Genotype and Phenotype (dbGaP) found at http://www.ncbi.nlm.nih.gov/gap through dbGaP accession number phs000711.v7.p2."/&gt;
+              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;National Institutes of Health (NIH) support was provided in part by a grant from the National Human Genome Research Institute and the National Heart, Lung, and Blood Institute (1U54HG006542) to Dr. David Valle for the Baylor Hopkins Center for Mendelian Genomics program. The dataset(s) used for the analyses described in this manuscript was obtained from the database of Genotype and Phenotype (dbGaP) found at http://www.ncbi.nlm.nih.gov/gap through dbGaP accession number phs000711.v7.p2.&quot;/&gt;
   &lt;/relatedArtifact&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.relatedArtifact">relatedArtifact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="citation"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Publication"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;citation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Publication&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.citation">citation</a>
-              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>="Gonzaga-Jauregui C, Lupski JR, Gibbs RA
+              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;Gonzaga-Jauregui C, Lupski JR, Gibbs RA
 Human genome sequencing in health and disease.
 Annu Rev Med. 2012; 63:35-61.
-PMID: 22248320"/&gt;
+PMID: 22248320&quot;/&gt;
   &lt;/relatedArtifact&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.relatedArtifact">relatedArtifact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="citation"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Publication"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;citation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Publication&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.citation">citation</a>
-              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>="Bamshad MJ, Shendure JA, Valle D, Hamosh A, Lupski JR, Gibbs RA, Boerwinkle E, Lifton RP, Gerstein M, Gunel M, Mane S, Nickerson DA, Centers for Mendelian Genomics
+              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;Bamshad MJ, Shendure JA, Valle D, Hamosh A, Lupski JR, Gibbs RA, Boerwinkle E, Lifton RP, Gerstein M, Gunel M, Mane S, Nickerson DA, Centers for Mendelian Genomics
 The Centers for Mendelian Genomics: a new large-scale initiative to identify the genes underlying rare Mendelian conditions.
 Am J Med Genet A. 2012 Jul; 158A(7):1523-5.
-PMID: 22628075"/&gt;
+PMID: 22628075&quot;/&gt;
   &lt;/relatedArtifact&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.relatedArtifact">relatedArtifact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="citation"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Publication"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;citation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Publication&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.citation">citation</a>
-              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>="Boone PM, Campbell IM, Baggett BC, Soens ZT, Rao MM, Hixson PM, Patel A, Bi W, Cheung SW, Lalani SR, Beaudet AL, Stankiewicz P, Shaw CA, Lupski JR
+              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;Boone PM, Campbell IM, Baggett BC, Soens ZT, Rao MM, Hixson PM, Patel A, Bi W, Cheung SW, Lalani SR, Beaudet AL, Stankiewicz P, Shaw CA, Lupski JR
 Deletions of recessive disease genes: CNV contribution to carrier states and disease-causing alleles.
 Genome Res. 2013 Sep; 23(9):1383-94.
-PMID: 23685542"/&gt;
+PMID: 23685542&quot;/&gt;
   &lt;/relatedArtifact&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.relatedArtifact">relatedArtifact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="citation"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Publication"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;citation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Publication&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.citation">citation</a>
-              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>="Cheung YH, Gayden T, Campeau PM, LeDuc CA, Russo D, Nguyen VH, Guo J, Qi M, Guan Y, Albrecht S, Moroz B, Eldin KW, Lu JT, Schwartzentruber J, Malkin D, Berghuis AM, Emil S, Gibbs RA, Burk DL, Vanstone M, Lee BH, Orchard D, Boycott KM, Chung WK, Jabado N
+              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;Cheung YH, Gayden T, Campeau PM, LeDuc CA, Russo D, Nguyen VH, Guo J, Qi M, Guan Y, Albrecht S, Moroz B, Eldin KW, Lu JT, Schwartzentruber J, Malkin D, Berghuis AM, Emil S, Gibbs RA, Burk DL, Vanstone M, Lee BH, Orchard D, Boycott KM, Chung WK, Jabado N
 A recurrent PDGFRB mutation causes familial infantile myofibromatosis.
 Am J Hum Genet. 2013 Jun 06; 92(6):996-1000.
-PMID: 23731537"/&gt;
+PMID: 23731537&quot;/&gt;
   &lt;/relatedArtifact&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.relatedArtifact">relatedArtifact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="citation"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Publication"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;citation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Publication&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.citation">citation</a>
-              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>="Campeau PM, Kasperaviciute D, Lu JT, Burrage LC, Kim C, Hori M, Powell BR, Stewart F, Félix TM, van den Ende J, Wisniewska M, Kayserili H, Rump P, Nampoothiri S, Aftimos S, Mey A, Nair LD, Begleiter ML, De Bie I, Meenakshi G, Murray ML, Repetto GM, Golabi M, Blair E, Male A, Giuliano F, Kariminejad A, Newman WG, Bhaskar SS, Dickerson JE, Kerr B, Banka S, Giltay JC, Wieczorek D, Tostevin A, Wiszniewska J, Cheung SW, Hennekam RC, Gibbs RA, Lee BH, Sisodiya SM
+              <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;Campeau PM, Kasperaviciute D, Lu JT, Burrage LC, Kim C, Hori M, Powell BR, Stewart F, Félix TM, van den Ende J, Wisniewska M, Kayserili H, Rump P, Nampoothiri S, Aftimos S, Mey A, Nair LD, Begleiter ML, De Bie I, Meenakshi G, Murray ML, Repetto GM, Golabi M, Blair E, Male A, Giuliano F, Kariminejad A, Newman WG, Bhaskar SS, Dickerson JE, Kerr B, Banka S, Giltay JC, Wieczorek D, Tostevin A, Wiszniewska J, Cheung SW, Hennekam RC, Gibbs RA, Lee BH, Sisodiya SM
 The genetic basis of DOORS syndrome: an exome-sequencing study.
 Lancet Neurol. 2014 Jan; 13(1):44-58.
-PMID: 24291220"/&gt;
+PMID: 24291220&quot;/&gt;
   &lt;/relatedArtifact&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.relatedArtifact">relatedArtifact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="documentation"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="AdditionalDocumentation"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;documentation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;AdditionalDocumentation&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.url">url</a>
-         <a href="http://hl7.org/fhir/R4B/datatypes.html#url">value</a>="https://app.terra.bio/#workspaces/anvil-datastorage/AnVIL_CMG_BaylorHopkins_HMB-IRB-NPU_WES"/&gt;
+         <a href="http://hl7.org/fhir/R4B/datatypes.html#url">value</a>=&quot;https://app.terra.bio/#workspaces/anvil-datastorage/AnVIL_CMG_BaylorHopkins_HMB-IRB-NPU_WES&quot;/&gt;
   &lt;/relatedArtifact&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.relatedArtifact">relatedArtifact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>="documentation"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="Grant"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;documentation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.label">label</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Grant&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">display</a>
-             <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>="1U54HG006542. National Human Genome Research Institute and National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA."/&gt;
+             <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;1U54HG006542. National Human Genome Research Institute and National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA.&quot;/&gt;
   &lt;/relatedArtifact&gt;
   &lt;<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.description">description</a>
-               <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>="The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments."/&gt;
+               <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.&quot;/&gt;
 &lt;/ResearchStudy&gt;</code></pre>
 
 
-    <!-- insert notes if present -->
+  <!-- insert notes if present -->
   
 
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Mon, Jul 8, 2024 16:31+0000">2024-07-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Jul 11, 2024 20:02+0000">2024-07-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -512,27 +511,28 @@ PMID: 24291220"/&gt;
                 
           </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+
