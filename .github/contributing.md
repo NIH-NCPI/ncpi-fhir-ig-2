@@ -54,13 +54,13 @@ git checkout -b add-patient-birth-sex
 After you've made the change you want on your local machine its time 
 to commit that change to the project repo. 
 
-#### Emoji Commits
-This project uses emoji based commits where we prefix the commit message with 
+#### (Optional) Emoji Commits
+If you would like, you can prefix the commit message with 
 an emoji code that is relevant to that change. 
 
-This is actually somewhat of a standard practice in the industry, to the point 
-where standard emoji codes for various types of changes are published on the [gitmoji]() 
-website. 
+You can look up which emoji to use on the [gitmoji]() website. Emoji commits 
+can be useful when you want to quickly visually scan the commit history and 
+get a quick idea of what kinds of commits a PR has (i.e. feature, bug, refactor, etc)  
 
 Here's an example commit message for adding something new:
 
@@ -75,7 +75,9 @@ $ git commit -m ":sparkles: Add new birthSex extension to Patient"
 ### ⚠️  Important! - Rebase
 If another developer has merged their code (Pull Request) while you're working
 on your change, you will need to update your branch with those changes before
-you continue developing. To do that, you will need to [rebase your branch]()
+you continue developing. 
+
+To do that, you will need to [rebase your branch](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
 on the main branch like this:
 
 ```shell
@@ -102,9 +104,8 @@ Once you're happy with your changes, its time to [open a Pull Request](https://d
 so that others can review your code and upon their approval you can merge your branch
 into the main branch.
 
-### Title
-Similar to commit messages, the standard practice for this project is to 
-prefix the PR title with the appropriate emoji from Gitmoji. 
+### (Optional) Title
+Similar to commit messages, you can prefix the PR title with the appropriate emoji from Gitmoji. 
 
 For example:
 
@@ -112,7 +113,7 @@ For example:
 
 ### Description
 When you open a pull request you will notice that the description is populated
-with a "Motivation" and "Approach" section. Please be sure to fill these out 
+with a **"Motivation"** and **"Approach"** section. Please be sure to fill these out 
 so that reviewers can quickly and easily understand the purpose of the PR and 
 the changes.
 
@@ -195,19 +196,5 @@ will tag the main branch with the release number, create a snapshot of the
 repo, create the Github release and attach the snapsot to the release.
 
 The Github workflow will also publish the IG to its domain.
-
-
-# TODO: 🛠️ Getting Started - Developers
-
-## Setup Dev Environment
-
-## Make a Change
-
-## Test
-
-## Push Code
-
-## Review
-
 
 
