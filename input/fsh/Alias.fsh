@@ -6,5 +6,6 @@ Alias: $ncpi-data-access-code = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSy
 Alias: $ncpi-data-access-type = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type
 Alias: $title-type = http://terminology.hl7.org/CodeSystem/title-type
 Alias: $mesh = urn:oid:2.16.840.1.113883.6.177
+Alias: $ncpi-dob-method = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/dob-method
 
 Alias: $ncit = http://purl.obolibrary.org/obo/ncit.owl
