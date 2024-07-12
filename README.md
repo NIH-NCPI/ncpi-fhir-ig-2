@@ -25,12 +25,12 @@ Defining examples for your IG components will eliminate warnings from your QA lo
 For intro and notes content that will be merged into the relevant artifact page, the publisher application itself is very specific: The filename should match the resulting HTML file in Humpback notation minus the extension followed by either "-intro.md" or "-notes.md". The material inside -intro.md files will appear *before* the differential table. Material inside -note.md files will appear afterward inside the header, *Notes". These files will be written into the directory, input/pagecontent.
 
 For profiles, we definitely should define:
-    **Added Profile Restrictions** Where we list all properties as being **should**, **must**, etc. 
-    **Recommended Practices** - We should profile bullets under headings of **recommended** and **optional**. 
+*    **Added Profile Restrictions** Where we list all properties as being **should**, **must**, etc. 
+*    **Recommended Practices** - We should profile bullets under headings of **recommended** and **optional**. 
 
-    Also, under **Recommended Practices** and guidance about any special cases such as we are doing with (Population Details)[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition-ncpi-research-study.html#population-details]
+Also, under **Recommended Practices** and guidance about any special cases such as we are doing with (Population Details)[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition-ncpi-research-study.html#population-details]
 
-    **Notes** (sibling to the **Recommended Restrictions**) Should indicate any other general profile relationships that should be discussed.
+**Notes** (sibling to the **Recommended Restrictions**) Should indicate any other general profile relationships that should be discussed.
 
 > To determine the correct filename corresponding to the artifact of interest, please see the file, fsh-generated/includes/fsh-link-references.md where you can find the resulting HTML filename for each FSH based artifact. 
 
