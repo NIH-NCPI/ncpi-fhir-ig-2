@@ -24,6 +24,14 @@ Defining examples for your IG components will eliminate warnings from your QA lo
 #### Technical Documentation for Profiles and Relationships - Artifact Intro and Notes
 For intro and notes content that will be merged into the relevant artifact page, the publisher application itself is very specific: The filename should match the resulting HTML file in Humpback notation minus the extension followed by either "-intro.md" or "-notes.md". The material inside -intro.md files will appear *before* the differential table. Material inside -note.md files will appear afterward inside the header, *Notes". These files will be written into the directory, input/pagecontent.
 
+For profiles, we definitely should define:
+    **Added Profile Restrictions** Where we list all properties as being **should**, **must**, etc. 
+    **Recommended Practices** - We should profile bullets under headings of **recommended** and **optional**. 
+
+    Also, under **Recommended Practices** and guidance about any special cases such as we are doing with (Population Details)[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition-ncpi-research-study.html#population-details]
+
+    **Notes** (sibling to the **Recommended Restrictions**) Should indicate any other general profile relationships that should be discussed.
+
 > To determine the correct filename corresponding to the artifact of interest, please see the file, fsh-generated/includes/fsh-link-references.md where you can find the resulting HTML filename for each FSH based artifact. 
 
 For each profile, there should always be a matching -info file that contains the following information:
@@ -32,6 +40,8 @@ For each profile, there should always be a matching -info file that contains the
 * Relationships between the current profile and other resources and profiles
 
 The -notes.md file is optional and should be used to add clarification for unusual cases or other details that should be called out that don't naturally fit within the typical use cases. 
+
+
 
 #### Example Overview
 Each module should have at least a single example page as part of the release. This should, at the very least, link each of the associated example profiles with an explanation of how they fit together if the example spans multiple profiles. To provide context within the example page itself, you can provide -info.md and -notes.md pages similarly to profiles, extensions, etc. 
