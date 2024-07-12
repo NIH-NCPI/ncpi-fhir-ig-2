@@ -1,0 +1,46 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "research-study-subject",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject",
+  "version": "0.1.0",
+  "name": "ResearchStudySubject",
+  "title": "Research Study Subject",
+  "status": "draft",
+  "description": "A ResearchStudySubject is representative of a group of participants whose consent and data use is governed by the same restrictions. This profile is an R4 proxy for the more flexible R5 ResearchSubject.",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ResearchStudy",
+  "baseDefinition": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ResearchStudy.extension",
+        "path": "ResearchStudy.extension",
+        "min": 1
+      },
+      {
+        "id": "ResearchStudy.extension:consent",
+        "path": "ResearchStudy.extension",
+        "sliceName": "consent",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ResearchStudy.partOf",
+        "path": "ResearchStudy.partOf",
+        "min": 1,
+        "max": "1"
+      }
+    ]
+  }
+}

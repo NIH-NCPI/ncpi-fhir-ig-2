@@ -1,0 +1,345 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SharedDataModelResearchStudy",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchStudy",
+  "name": "CdmResearchStudy",
+  "title": "Shared Data Model for Research Study",
+  "status": "draft",
+  "description": "The **Shared Data Model for Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG.",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchStudy",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SharedDataModelResearchStudy",
+        "path": "SharedDataModelResearchStudy",
+        "short": "Shared Data Model for Research Study",
+        "definition": "The **Shared Data Model for Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG."
+      },
+      {
+        "id": "SharedDataModelResearchStudy.persistentIdentifier",
+        "path": "SharedDataModelResearchStudy.persistentIdentifier",
+        "short": "External facing, globally unique identifier.",
+        "definition": "External facing, globally unique identifier.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.parentStudy",
+        "path": "SharedDataModelResearchStudy.parentStudy",
+        "short": "Parent study, required only for substudies.",
+        "definition": "Parent study, required only for substudies.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchStudy"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.name",
+        "path": "SharedDataModelResearchStudy.name",
+        "short": "Name is a repeatable object that consists of sets of two fields.  All ResearchStudy records must have at least one Name object with Name.Type=”formal title”.",
+        "definition": "Name is a repeatable object that consists of sets of two fields.  All ResearchStudy records must have at least one Name object with Name.Type=”formal title”.",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.name.text",
+        "path": "SharedDataModelResearchStudy.name.text",
+        "short": "The study's name",
+        "definition": "The study's name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.name.type",
+        "path": "SharedDataModelResearchStudy.name.type",
+        "short": "Type of name or title this name relates to (formal-title, internale-name, familiar-name, etc)",
+        "definition": "Type of name or title this name relates to (formal-title, internale-name, familiar-name, etc)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs"
+        }
+      },
+      {
+        "id": "SharedDataModelResearchStudy.description",
+        "path": "SharedDataModelResearchStudy.description",
+        "short": "short summary of relevant and important information about the study.",
+        "definition": "short summary of relevant and important information about the study.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.website",
+        "path": "SharedDataModelResearchStudy.website",
+        "short": "A URL for a website that provides information about the research effort as a whole.",
+        "definition": "A URL for a website that provides information about the research effort as a whole.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "url"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.totalParticipants",
+        "path": "SharedDataModelResearchStudy.totalParticipants",
+        "short": "Number of total participants represented by the data in this study.",
+        "definition": "Number of total participants represented by the data in this study.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.studyFocus",
+        "path": "SharedDataModelResearchStudy.studyFocus",
+        "short": "The primary focus(es) of the study. This can include terms related to disease area, intervention, drug, device, or other focus. MeSH terms are preferred.",
+        "definition": "The primary focus(es) of the study. This can include terms related to disease area, intervention, drug, device, or other focus. MeSH terms are preferred.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.studyFocus.term",
+        "path": "SharedDataModelResearchStudy.studyFocus.term",
+        "short": "The term used to describe the focus of the study. A valid MeSH is preferred.",
+        "definition": "The term used to describe the focus of the study. A valid MeSH is preferred.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.studyFocus.termSource",
+        "path": "SharedDataModelResearchStudy.studyFocus.termSource",
+        "short": "The source ontology or vocabulary for subjectFocus.Term (optional if term uses curie).",
+        "definition": "The source ontology or vocabulary for subjectFocus.Term (optional if term uses curie).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.enrollmentCriteria",
+        "path": "SharedDataModelResearchStudy.enrollmentCriteria",
+        "short": "EnrollmentCriteria describes the inclusion and exclusion criteria used to enroll participants in this study. This can be provided as a free text description, but may also be structured using bullets, tables, or other organizational methods.",
+        "definition": "EnrollmentCriteria describes the inclusion and exclusion criteria used to enroll participants in this study. This can be provided as a free text description, but may also be structured using bullets, tables, or other organizational methods.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.population",
+        "path": "SharedDataModelResearchStudy.population",
+        "short": "Population is a repeatable object that consists of sets of two fields. Population provides an overall description of the general population enrolled in the study, including basic demographics at a minimum and other useful population descriptors as appropriate.",
+        "definition": "Population is a repeatable object that consists of sets of two fields. Population provides an overall description of the general population enrolled in the study, including basic demographics at a minimum and other useful population descriptors as appropriate.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.population.type",
+        "path": "SharedDataModelResearchStudy.population.type",
+        "short": "A term that specifies the population being described.",
+        "definition": "A term that specifies the population being described.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.population.description",
+        "path": "SharedDataModelResearchStudy.population.description",
+        "short": "A free text field that provides more information about the population specified in PopulationType within the context of this researchStudy.",
+        "definition": "A free text field that provides more information about the population specified in PopulationType within the context of this researchStudy.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.citation",
+        "path": "SharedDataModelResearchStudy.citation",
+        "short": "Provide any relevant information regarding how to cite this study. This can be as specific as including a full citation or as simple as a DOI.",
+        "definition": "Provide any relevant information regarding how to cite this study. This can be as specific as including a full citation or as simple as a DOI.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.publications",
+        "path": "SharedDataModelResearchStudy.publications",
+        "short": "Provide a list of publications that use this data. This may be updated to include new publications as they are created.",
+        "definition": "Provide a list of publications that use this data. This may be updated to include new publications as they are created.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.additionalDocumentation",
+        "path": "SharedDataModelResearchStudy.additionalDocumentation",
+        "short": "AdditionalDocumentation should be used to provide URLs, citations, or other appropriate references to technical documentation that is important for understanding the data included in this study. This can include data dictionaries, methods descriptions, github repositories, case report forms (CRFs), or any other relevant documentation.",
+        "definition": "AdditionalDocumentation should be used to provide URLs, citations, or other appropriate references to technical documentation that is important for understanding the data included in this study. This can include data dictionaries, methods descriptions, github repositories, case report forms (CRFs), or any other relevant documentation.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.consortium",
+        "path": "SharedDataModelResearchStudy.consortium",
+        "short": "If the data in this study was gathered as part of a consortial effort, list the consortium here.",
+        "definition": "If the data in this study was gathered as part of a consortial effort, list the consortium here.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.acknowledgements",
+        "path": "SharedDataModelResearchStudy.acknowledgements",
+        "short": "Acknowledgements describes any attribution or acknowledgements relevant to the study.  This can include but is not limited to funding sources, organizational affiliations or sponsors.",
+        "definition": "Acknowledgements describes any attribution or acknowledgements relevant to the study.  This can include but is not limited to funding sources, organizational affiliations or sponsors.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.personnel",
+        "path": "SharedDataModelResearchStudy.personnel",
+        "short": "Every study must have at least one Primary Contact defined. Additional personnel such as Primary Investigator(s), Administrator(s), Collaborator(s) or other roles may also be included. If there are no appropriate individuals who can serve as primary contact for a study, an organization may be provided.",
+        "definition": "Every study must have at least one Primary Contact defined. Additional personnel such as Primary Investigator(s), Administrator(s), Collaborator(s) or other roles may also be included. If there are no appropriate individuals who can serve as primary contact for a study, an organization may be provided.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.personnel.name",
+        "path": "SharedDataModelResearchStudy.personnel.name",
+        "short": "The name of the person being described.",
+        "definition": "The name of the person being described.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchStudy.personnel.role",
+        "path": "SharedDataModelResearchStudy.personnel.role",
+        "short": "The role of the person being described.",
+        "definition": "The role of the person being described.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs"
+        }
+      },
+      {
+        "id": "SharedDataModelResearchStudy.personnel.organization",
+        "path": "SharedDataModelResearchStudy.personnel.organization",
+        "short": "The organizational affiliation of the person being described.",
+        "definition": "The organizational affiliation of the person being described.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

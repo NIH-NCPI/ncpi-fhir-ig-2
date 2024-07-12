@@ -1,0 +1,137 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SharedDataModelResearchParticipant",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchParticipant",
+  "name": "CdmResearchParticipant",
+  "title": "Shared Data Model for Research Participants",
+  "status": "draft",
+  "description": "The **Shared Data Model for Research Participants**",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchParticipant",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SharedDataModelResearchParticipant",
+        "path": "SharedDataModelResearchParticipant",
+        "short": "Shared Data Model for Research Participants",
+        "definition": "The **Shared Data Model for Research Participants**"
+      },
+      {
+        "id": "SharedDataModelResearchParticipant.ParticipantID",
+        "path": "SharedDataModelResearchParticipant.ParticipantID",
+        "short": "Unique participant identifier. System identifier used for internal references.",
+        "definition": "Unique participant identifier. System identifier used for internal references.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchParticipant.ExternalID",
+        "path": "SharedDataModelResearchParticipant.ExternalID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchParticipant.Population",
+        "path": "SharedDataModelResearchParticipant.Population",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchParticipant.OmbRace",
+        "path": "SharedDataModelResearchParticipant.OmbRace",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchParticipant.OmbEth",
+        "path": "SharedDataModelResearchParticipant.OmbEth",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchParticipant.Sex",
+        "path": "SharedDataModelResearchParticipant.Sex",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchParticipant.DateOfBirth",
+        "path": "SharedDataModelResearchParticipant.DateOfBirth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchParticipant.DOBMethod",
+        "path": "SharedDataModelResearchParticipant.DOBMethod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchParticipant.AgeAtLastVitalStatus",
+        "path": "SharedDataModelResearchParticipant.AgeAtLastVitalStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelResearchParticipant.VitalStatus",
+        "path": "SharedDataModelResearchParticipant.VitalStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      }
+    ]
+  }
+}
