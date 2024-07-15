@@ -4,23 +4,23 @@ Logical: CdmResearchParticipant
 Id: SharedDataModelResearchParticipant
 Title: "Shared Data Model for Research Participants"
 Description: "The **Shared Data Model for Research Participants**"
-* ParticipantID 1..1 string "Unique participant identifier. System identifier used for internal references."
-* ExternalID 0..* code ""
-* Population 0..* code ""
-* OmbRace 0..* code ""
-* OmbEth 0..* code ""
-* Sex 1..1 code ""
-* DateOfBirth 0..1 date ""
-* DOBMethod 0..1 code ""
-* AgeAtLastVitalStatus 0..1 date ""
-* VitalStatus 0..1 code ""
+* participantID 1..1 string "Unique participant identifier. System identifier used for internal references."
+* externalID 0..* code "Unique participant identifier. System identifier used for internal references."
+* population 0..* code "Population, Race, and/or Ethnicity information."
+* ombRace 0..* code "OMB coded Race for backwards compatibility"
+* ombEth 0..* code "OMB coded Ethnicity for backwards compatibility"
+* sex 1..1 code "Sex assigned at birth (or pre-natal observed sex)"
+* dateOfBirth 0..1 date "Date of Birth of the participant. Details of privacy method should be included in DOBMethod"
+* dobMethod 0..1 code "Specifies method used to alter DOB for research sharing. Details should be available in the study protocols."
+* ageAtLastVitalStatus 0..1 date "Age at last vital status"
+* vitalStatus 0..1 code "Vital Status"
 
 Logical: CdmPerson
 Id: SharedDataModelPerson
 Title: "Shared Data Model for Research Persons"
 Description: "The **Shared data model for Person**"
-* identifier 1..1 string ""
-* participant 1..1 reference ""
+* identifier 1..1 string "Unique Person identifier."
+* participant 1..1 reference "The participant we are describing"
 
 
 CodeSystem: ResearchDataDateOfBirthMethod
@@ -30,11 +30,11 @@ Description: "Enumerations for how DOB was constructed"
 * ^url = $ncpi-dob-method 
 * ^experimental = false
 * ^caseSensitive = true
-* #Exact "Exact"
-* #YearOnly "Year Only"
-* #Shifted "Shifted"
-* #DecadeOnly "Decade Only"
-* #Other "Other"
+* #exact "Exact"
+* #year-only "Year Only"
+* #shifted "Shifted"
+* #decade-only "Decade Only"
+* #other "Other"
 
 ValueSet: ResearchDataDateOfBirthMethodVS
 Id: research-data-date-of-birth-method-vs
@@ -63,7 +63,32 @@ Id: research-age-at-last-vital-status
 Title: "Age at Last Vital Status Extension"
 Description: "Age at Last Vital Status Extension"
 * insert SetContext(Patient)
-* value[x] only date
-* valueDate ^short = "Indicate age via relative date time extension or official date of when last vital status was assessed."
+// * value[x] only date
+* value[x] only Quantity
+* valueQuantity ^short = "Indicate age via relative date time extension or official date of when last vital status was assessed."
 
+Profile: NcpiParticipant
+Parent: Patient
+Id: ncpi-patient 
+Title: "NCPI Participant"
+Description: "Research oriented patient"
+* ^version = "0.1.0"
+* ^status = #draft
+* id 1..1 
+* id ^short = "ParticipantID - Unique participant identifier. System identifier used for internal references."
+* identifier 0..* 
+* identifier ^short = "External IDs for this participant. Requires scoping."
+* birthDate ^short = "Date of Birth of the participant. Details of privacy method should be included in DOBMethod"
+* deceased[x] ^short = "Implementers can provide relativeDateTime or actual date or T/F, depending on data available."
+
+* extension contains USCoreRaceExtension named us-core-race 0..1
+* extension[us-core-race] ^short = "US Core Race"
+* extension contains USCoreEthnicityExtension named us-core-ethnicity 0..1
+* extension[us-core-ethnicity] ^short = "US Core Ethnicity"
+* extension contains ResearchPopulation named population 0..1
+* extension[population] ^short = "Population, Race, and/or Ethnicity information."
+* extension contains ResearchDateOfBirthMethod named dob-method 0..1
+* extension[dob-method] ^short = "Specifies method used to alter DOB for research sharing. Details should be available in the study protocols."
+* extension contains AgeAtLastVitalStatus named age-at-last-vital-status 0..1
+* extension[age-at-last-vital-status] ^short = "Age or date of last vital status"
 
