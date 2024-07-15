@@ -36,6 +36,38 @@
         }
       },
       {
+        "id": "Patient.extension:us-core-race",
+        "path": "Patient.extension",
+        "sliceName": "us-core-race",
+        "short": "US Core Race",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:us-core-ethnicity",
+        "path": "Patient.extension",
+        "sliceName": "us-core-ethnicity",
+        "short": "US Core Ethnicity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:population",
         "path": "Patient.extension",
         "sliceName": "population",

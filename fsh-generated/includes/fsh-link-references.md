@@ -17,6 +17,7 @@
 [kf-research-study-personnel-role-pi-x01]: PractitionerRole-kf-research-study-personnel-role-pi-x01.html
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
 [ResearchDataDateOfBirthMethod]: CodeSystem-research-data-date-of-birth-method.html
+[PT-KZG2CZ95]: Patient-PT-KZG2CZ95.html
 [kf-gsr-allowed-access]: Consent-kf-gsr-allowed-access.html
 [hmb-irb-npu-consent]: Consent-hmb-irb-npu-consent.html
 [hmb-npu-consent]: Consent-hmb-npu-consent.html
