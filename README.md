@@ -26,9 +26,9 @@ For intro and notes content that will be merged into the relevant artifact page,
 
 For profiles, we definitely should define:
 *    **Added Profile Restrictions** Where we list all properties as being **should**, **must**, etc. 
-*    **Recommended Practices** - We should profile bullets under headings of **recommended** and **optional**. 
+*    **Recommended Practices** - We should add bullets for each relevant property under headings of **recommended** and **optional**. 
 
-Also, under **Recommended Practices** and guidance about any special cases such as we are doing with (Population Details)[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition-ncpi-research-study.html#population-details]
+Also, under **Recommended Practices** and guidance about any special cases such as we are doing with [Population Details](https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition-ncpi-research-study.html#population-details)
 
 **Notes** (sibling to the **Recommended Restrictions**) Should indicate any other general profile relationships that should be discussed.
 
