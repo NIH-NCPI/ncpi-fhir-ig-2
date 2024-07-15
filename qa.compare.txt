@@ -1,7 +1,7 @@
 NCPIFHIRIGv2 : Validation Results
 =========================================
 
-err = 5, warn = 22, info = 29
+err = 5, warn = 19, info = 29
 $--
 Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
  Build Errors : 2 / 4 / 0
@@ -20,7 +20,7 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-kf-research-study-cbtn-participants : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2 : 0 / 3 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-cmg : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-kfx01 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-pbta : 0 / 0 / 2
@@ -90,9 +90,6 @@ INFORMATION: Consent/kf-registered-allowed-access: Consent.extension[2].value.of
 == fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu.json ==
 == fsh-generated/resources/Group-kf-research-study-cbtn-participants.json ==
 == fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2.json ==
-WARNING: ImplementationGuide/ncpi-fhir-implementation-guide-v2: ImplementationGuide.dependsOn[0]: The ImplementationGuide is based on FHIR version 4.3.0 but package hl7.terminology.r4#5.5.0 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
-WARNING: ImplementationGuide/ncpi-fhir-implementation-guide-v2: ImplementationGuide.dependsOn[1]: The ImplementationGuide is based on FHIR version 4.3.0 but package hl7.fhir.uv.extensions.r4#5.1.0 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
-WARNING: ImplementationGuide/ncpi-fhir-implementation-guide-v2: ImplementationGuide.dependsOn[2]: The ImplementationGuide is based on FHIR version 4.3.0 but package hl7.fhir.us.core#3.1.1 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
 == fsh-generated/resources/List-ncpi-research-collection-cmg.json ==
 INFORMATION: List/ncpi-research-collection-cmg: List.extension[1].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/title-type|4.3.0
 == fsh-generated/resources/List-ncpi-research-collection-kfx01.json ==
