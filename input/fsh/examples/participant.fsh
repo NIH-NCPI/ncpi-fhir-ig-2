@@ -1,22 +1,62 @@
 
+Instance: PT-KZG2CZ95
+InstanceOf: NcpiParticipant
+Title: "Example patients based on data from CBTN"
+Usage: #example
+Description: "Example patients based on data from CBTN."
+// Notice that we can use the DbGaP study ID for easier searching
+* identifier[0]
+  * system = "https://cbtn.org/"
+  * value = "C21156"
+* identifier[1]
+  * system = "https://data.kidsfirstdrc.org"
+  * value = "PT_KZG2CZ95"
+* gender = $admin-gender#female
+* birthDate.extension[+]
+  * url = $cqf-relativeDateTime
+  * extension[+]
+    * url = "target"
+    * valueReference = Reference(PT-KZG2CZ95)
+  * extension[+]
+    * url = "targetPath"
+    * valueString =  "birthDate"
+  * extension[+]
+    * url = "relationship"
+    * valueCode = #after
+  * extension[+]
+    * url = "offset"
+    * valueDuration = 2006 'days'
+    * valueDuration.unit = "d"
+* extension[us-core-race]
+  * extension[ombCategory].valueCoding =  $omb-race-eth#2106-3 "White"
+  * extension[text].valueString = "White"
+* extension[us-core-ethnicity]
+  * extension[ombCategory].valueCoding =  $omb-race-eth#2186-5 "Not Hispanic or Latino"
+  * extension[text].valueString = "Not Hispanic or Latino"
+* extension[dob-method].valueCoding = $ncpi-dob-method#year-only
+* extension[age-at-last-vital-status].valueQuantity
+  * value = 6314
+  * unit = "days"
+  * system = $ucum
+  * code = #d "days"
+/*
 
-Profile: NcpiParticipant
-Parent: Patient
-Id: ncpi-patient 
-Title: "NCPI Participant"
-Description: "Research oriented patient"
-* ^version = "0.1.0"
-* ^status = #draft
-* id 1..1 
-* id ^short = "ParticipantID - Unique participant identifier. System identifier used for internal references."
-* identifier 0..* 
-* identifier ^short = "External IDs for this participant. Requires scoping."
-* birthDate ^short = "Date of Birth of the participant. Details of privacy method should be included in DOBMethod"
-* deceased[x] ^short = "Implementers can provide relativeDateTime or actual date or T/F, depending on data available."
+* extension[age-at-last-vital-status].valueDate = 1991-01-23
+  * extension[+]
+    * url = $cqf-relativeDateTime 
+    * extension[+]
+      * url = "target"
+      * valueReference = Reference(PT-KZG2CZ95)
+    * extension[+]
+      * url = "targetPath"
+      * valueString =  "birthDate"
+    * extension[+]
+      * url = "relationship"
+      * valueCode = #after
+    * extension[+]
+      * url = "offset"
+      * valueDuration = 6314 'days'
+      * valueDuration.unit = "d"
 
-* extension contains ResearchPopulation named population 0..1
-* extension[population] ^short = "Population, Race, and/or Ethnicity information."
-* extension contains ResearchDateOfBirthMethod named dob-method 0..1
-* extension[dob-method] ^short = "Specifies method used to alter DOB for research sharing. Details should be available in the study protocols."
-* extension contains AgeAtLastVitalStatus named age-at-last-vital-status 0..1
-* extension[age-at-last-vital-status] ^short = "Age or date of last vital status"
+
+*/
