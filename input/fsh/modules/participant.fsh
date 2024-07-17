@@ -69,7 +69,7 @@ Description: "Age at Last Vital Status Extension"
 
 Profile: NcpiParticipant
 Parent: Patient
-Id: ncpi-patient 
+Id: ncpi-participant 
 Title: "NCPI Participant"
 Description: "Research oriented patient"
 * ^version = "0.1.0"
@@ -81,6 +81,8 @@ Description: "Research oriented patient"
 * birthDate ^short = "Date of Birth of the participant. Details of privacy method should be included in DOBMethod"
 * deceased[x] ^short = "Implementers can provide relativeDateTime or actual date or T/F, depending on data available."
 
+* extension contains USCoreBirthSexExtension named us-core-birth-sex 0..1
+* extension[us-core-birth-sex] ^short = "Sex assigned at birth (or pre-natal observed sex)"
 * extension contains USCoreRaceExtension named us-core-race 0..1
 * extension[us-core-race] ^short = "US Core Race"
 * extension contains USCoreEthnicityExtension named us-core-ethnicity 0..1
