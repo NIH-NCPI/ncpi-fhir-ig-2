@@ -25,7 +25,7 @@
 [Label]: StructureDefinition-label-extension.html
 [MeshTerms]: ValueSet-mesh-terms.html
 [Ncpi]: CodeSystem-ncpi.html
-[NcpiParticipant]: StructureDefinition-ncpi-patient.html
+[NcpiParticipant]: StructureDefinition-ncpi-participant.html
 [NcpiResearchAccessPolicy]: StructureDefinition-ncpi-research-access-policy.html
 [NcpiResearchCollection]: StructureDefinition-ncpi-research-collection.html
 [NcpiResearchStudy]: StructureDefinition-ncpi-research-study.html

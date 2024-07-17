@@ -11,7 +11,6 @@ Description: "Example patients based on data from CBTN."
 * identifier[1]
   * system = "https://data.kidsfirstdrc.org"
   * value = "PT_KZG2CZ95"
-* gender = $admin-gender#female
 * birthDate.extension[+]
   * url = $cqf-relativeDateTime
   * extension[+]
@@ -27,6 +26,7 @@ Description: "Example patients based on data from CBTN."
     * url = "offset"
     * valueDuration = 2006 'days'
     * valueDuration.unit = "d"
+* extension[us-core-birth-sex].valueCode = #F "Female"
 * extension[us-core-race]
   * extension[ombCategory].valueCoding =  $omb-race-eth#2106-3 "White"
   * extension[text].valueString = "White"
