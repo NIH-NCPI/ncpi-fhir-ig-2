@@ -8,3 +8,7 @@ Alias: $title-type = http://terminology.hl7.org/CodeSystem/title-type
 Alias: $mesh = urn:oid:2.16.840.1.113883.6.177
 
 Alias: $ncit = http://purl.obolibrary.org/obo/ncit.owl
+Alias: $ncit = http://purl.obolibrary.org/obo/ncit.owl
+Alias: $ucum = http://unitsofmeasure.org
+Alias: $SNOMEDCT_US = http://snomed.info/sct
+
