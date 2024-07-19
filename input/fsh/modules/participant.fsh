@@ -15,14 +15,6 @@ Description: "The **Shared Data Model for Research Participants**"
 * ageAtLastVitalStatus 0..1 date "Age at last vital status"
 * vitalStatus 0..1 code "Vital Status"
 
-Logical: CdmPerson
-Id: SharedDataModelPerson
-Title: "Shared Data Model for Research Persons"
-Description: "The **Shared data model for Person**"
-* identifier 1..1 string "Unique Person identifier."
-* participant 1..1 reference "The participant we are describing"
-
-
 CodeSystem: ResearchDataDateOfBirthMethod
 Id: research-data-date-of-birth-method 
 Title: "Enumerations for how DOB was constructed"
@@ -94,3 +86,59 @@ Description: "Research oriented patient"
 * extension contains AgeAtLastVitalStatus named age-at-last-vital-status 0..1
 * extension[age-at-last-vital-status] ^short = "Age or date of last vital status"
 
+
+
+//  Person Module
+
+Logical: CdmPerson
+Id: SharedDataModelPerson
+Title: "Shared Data Model for Research Persons"
+Description: "The **Shared data model for Person**"
+* identifier 1..1 string "Unique Person identifier."
+* participant 1..1 reference "The participant we are describing"
+
+Extension: AccessPolicy
+Id: access-policy
+Title: "Access policy"
+Description: "Access Policy Extension"
+* insert SetContext(ResearchSubject)
+* value[x] only Reference
+* valueReference 1..1
+* valueReference only Reference(Consent)
+
+Profile: NcpiPerson
+Parent: Person
+Id: ncpi-person 
+Title: "NCPI Person"
+Description: "Person"
+* ^version = "0.1.0"
+* ^status = #draft
+* id 0..1 
+* id ^short = "Unique participant identifier"
+* link.target only Reference(NcpiParticipant)
+* link.target ^short = "The participant we are describing"
+
+
+//  Study Participant Module
+
+Logical: CdmStudyParticipant
+Id: SharedDataModelStudyParticipant
+Title: "Shared Data Model for Research Participant and Study Mapping"
+Description: "The **Shared data model for StudyParticipant**"
+* participant 1..1 reference "The participant we are describing"
+* researchStudy 0..1 reference "The Research Study this participant has a relationship with"
+* accessPolicy 0..* reference "The Access Policy that may apply to this participant's data from this study. Not canonical, ie, one must rely on the row level AP."
+
+Profile: NcpiStudyParticipant
+Parent: ResearchSubject
+Id: ncpi-Study-Participant 
+Title: "NCPI Participant Study"
+Description: "Research Study"
+* ^version = "0.1.0"
+* ^status = #draft
+* individual only Reference(NcpiParticipant)
+* individual ^short = "The participant we are describing"
+* study only Reference(ResearchStudy)
+* study ^short = "The Research Study this participant has a relationship with"
+* extension contains AccessPolicy named access-policy 0..*
+* extension[access-policy] ^short = "The Access Policy that may apply to this participant's data from this study. Not canonical, ie, one must rely on the row level AP."

@@ -1,0 +1,19 @@
+{
+  "resourceType": "ResearchSubject",
+  "id": "emerge-example-participantstudy",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+    ]
+  },
+  "individual": {
+    "reference": "Patient/6812345"
+  },
+  "study": {
+    "reference": "phv00407460.v2"
+  },
+  "status": "candidate",
+  "consent": {
+    "reference": "AP-GRU"
+  }
+}

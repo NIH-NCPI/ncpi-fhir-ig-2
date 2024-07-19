@@ -1,3 +1,4 @@
+[AccessPolicy]: StructureDefinition-access-policy.html
 [AccessPolicyDescription]: StructureDefinition-access-policy-description.html
 [AccessType]: StructureDefinition-access-type.html
 [AgeAtLastVitalStatus]: StructureDefinition-research-age-at-last-vital-status.html
@@ -17,7 +18,15 @@
 [kf-research-study-personnel-role-pi-x01]: PractitionerRole-kf-research-study-personnel-role-pi-x01.html
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
 [ResearchDataDateOfBirthMethod]: CodeSystem-research-data-date-of-birth-method.html
+[cbtn-example-participantstudy]: ResearchSubject-cbtn-example-participantstudy.html
+[emerge-example-participantstudy]: ResearchSubject-emerge-example-participantstudy.html
+[pcgc-example-participantstudy]: ResearchSubject-pcgc-example-participantstudy.html
 [PT-KZG2CZ95]: Patient-PT-KZG2CZ95.html
+[cbtn-example-person]: Person-cbtn-example-person.html
+[6812345]: Patient-6812345.html
+[emerge-example-person]: Person-emerge-example-person.html
+[PT-005B7CZ4]: Patient-PT-005B7CZ4.html
+[pcgc-example-person]: Person-pcgc-example-person.html
 [kf-gsr-allowed-access]: Consent-kf-gsr-allowed-access.html
 [hmb-irb-npu-consent]: Consent-hmb-irb-npu-consent.html
 [hmb-npu-consent]: Consent-hmb-npu-consent.html
@@ -26,6 +35,8 @@
 [MeshTerms]: ValueSet-mesh-terms.html
 [Ncpi]: CodeSystem-ncpi.html
 [NcpiParticipant]: StructureDefinition-ncpi-participant.html
+[NcpiStudyParticipant]: StructureDefinition-ncpi-Study-Participant.html
+[NcpiPerson]: StructureDefinition-ncpi-person.html
 [NcpiResearchAccessPolicy]: StructureDefinition-ncpi-research-access-policy.html
 [NcpiResearchCollection]: StructureDefinition-ncpi-research-collection.html
 [NcpiResearchStudy]: StructureDefinition-ncpi-research-study.html
@@ -53,6 +64,7 @@
 [ResearchWebLink]: StructureDefinition-research-web-Link.html
 [CdmResearchCollection]: StructureDefinition-SharedDataModelResearchCollection.html
 [CdmResearchDataAccessPolicy]: StructureDefinition-SharedDataModelResearchDataAccessPolicy.html
+[CdmStudyParticipant]: StructureDefinition-SharedDataModelStudyParticipant.html
 [CdmResearchParticipant]: StructureDefinition-SharedDataModelResearchParticipant.html
 [CdmPerson]: StructureDefinition-SharedDataModelPerson.html
 [CdmResearchStudy]: StructureDefinition-SharedDataModelResearchStudy.html

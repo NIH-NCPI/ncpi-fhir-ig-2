@@ -39,6 +39,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/access-policy"
+        },
+        "name": "Access policy",
+        "description": "Access Policy Extension",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/access-policy-description"
         },
         "name": "Access Policy Description",
@@ -191,11 +199,75 @@
       },
       {
         "reference": {
+          "reference": "ResearchSubject/cbtn-example-participantstudy"
+        },
+        "name": "Example mappings based on data from CBTN",
+        "description": "Example mappings based on data from CBTN",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/emerge-example-participantstudy"
+        },
+        "name": "Example mappings based on data from eMERGE",
+        "description": "Example mappings based on data from eMERGE",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/pcgc-example-participantstudy"
+        },
+        "name": "Example mappings based on data from PCGC",
+        "description": "Example mappings based on data from PCGC",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+      },
+      {
+        "reference": {
           "reference": "Patient/PT-KZG2CZ95"
         },
         "name": "Example patients based on data from CBTN",
         "description": "Example patients based on data from CBTN.",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+      },
+      {
+        "reference": {
+          "reference": "Person/cbtn-example-person"
+        },
+        "name": "Example patients based on data from CBTN",
+        "description": "Example patients based on data from CBTN",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
+      },
+      {
+        "reference": {
+          "reference": "Patient/6812345"
+        },
+        "name": "Example patients based on data from eMERGE",
+        "description": "Example patients based on data from eMERGE",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+      },
+      {
+        "reference": {
+          "reference": "Person/emerge-example-person"
+        },
+        "name": "Example patients based on data from eMERGE",
+        "description": "Example patients based on data from eMERGE",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
+      },
+      {
+        "reference": {
+          "reference": "Patient/PT-005B7CZ4"
+        },
+        "name": "Example patients based on data from PCGC",
+        "description": "Example patients based on data from PCGC.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+      },
+      {
+        "reference": {
+          "reference": "Person/pcgc-example-person"
+        },
+        "name": "Example patients based on data from PCGC",
+        "description": "Example patients based on data from PCGC",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
       },
       {
         "reference": {
@@ -259,6 +331,22 @@
         },
         "name": "NCPI Participant",
         "description": "Research oriented patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-Study-Participant"
+        },
+        "name": "NCPI Participant Study",
+        "description": "Research Study",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-person"
+        },
+        "name": "NCPI Person",
+        "description": "Person",
         "exampleBoolean": false
       },
       {
@@ -475,6 +563,14 @@
         },
         "name": "Shared Data Model for Research Data Access Policy",
         "description": "The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelStudyParticipant"
+        },
+        "name": "Shared Data Model for Research Participant and Study Mapping",
+        "description": "The **Shared data model for StudyParticipant**",
         "exampleBoolean": false
       },
       {

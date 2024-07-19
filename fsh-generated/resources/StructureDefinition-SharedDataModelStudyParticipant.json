@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SharedDataModelStudyParticipant",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelStudyParticipant",
+  "name": "CdmStudyParticipant",
+  "title": "Shared Data Model for Research Participant and Study Mapping",
+  "status": "draft",
+  "description": "The **Shared data model for StudyParticipant**",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelStudyParticipant",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SharedDataModelStudyParticipant",
+        "path": "SharedDataModelStudyParticipant",
+        "short": "Shared Data Model for Research Participant and Study Mapping",
+        "definition": "The **Shared data model for StudyParticipant**"
+      },
+      {
+        "id": "SharedDataModelStudyParticipant.participant",
+        "path": "SharedDataModelStudyParticipant.participant",
+        "short": "The participant we are describing",
+        "definition": "The participant we are describing",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/valueset-reference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelStudyParticipant.researchStudy",
+        "path": "SharedDataModelStudyParticipant.researchStudy",
+        "short": "The Research Study this participant has a relationship with",
+        "definition": "The Research Study this participant has a relationship with",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/valueset-reference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelStudyParticipant.accessPolicy",
+        "path": "SharedDataModelStudyParticipant.accessPolicy",
+        "short": "The Access Policy that may apply to this participant's data from this study. Not canonical, ie, one must rely on the row level AP.",
+        "definition": "The Access Policy that may apply to this participant's data from this study. Not canonical, ie, one must rely on the row level AP.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/valueset-reference"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
