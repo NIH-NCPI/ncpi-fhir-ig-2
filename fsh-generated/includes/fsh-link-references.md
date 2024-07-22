@@ -33,6 +33,11 @@
 [ncpi-research-collection-kfx01]: List-ncpi-research-collection-kfx01.html
 [Label]: StructureDefinition-label-extension.html
 [MeshTerms]: ValueSet-mesh-terms.html
+[AP-GRU]: Consent-AP-GRU.html
+[AP-HMB]: Consent-AP-HMB.html
+[SD-BHJXBDQK]: ResearchStudy-SD-BHJXBDQK.html
+[SD-PREASA7S]: ResearchStudy-SD-PREASA7S.html
+[phv00407460.v2]: ResearchStudy-phv00407460.v2.html
 [Ncpi]: CodeSystem-ncpi.html
 [NcpiParticipant]: StructureDefinition-ncpi-participant.html
 [NcpiStudyParticipant]: StructureDefinition-ncpi-Study-Participant.html
