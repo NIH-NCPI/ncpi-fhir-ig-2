@@ -1,5 +1,5 @@
 #### Key Guidelines
-The NCPI Study Participant profile is based on the standard resource type, [Research Study](https://hl7.org/fhir/R4B/researchstudy.html) and is intended to link Participant resources to a ResearchStudy.
+Study Participation (ResearchSubject) describes the relationship between a specific Participant and a Research Study that collects and is sharing data on that Participant. A single Participant may have this “Study Participation” relationship with multiple Research Studies, and each relationship may have a different sharing restriction. These relationships are primarily illustrative, as the Access Policy details of any given element are documented within that element. 
 
 ##### Added Profile Restrictions
 

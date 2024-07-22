@@ -1,6 +1,5 @@
 #### Key Guidelines
-
-The NCPI Participant profile is based on the standard resource type, [Person](https://hl7.org/fhir/R4B/person.html) and is intended to represent the emographics and administrative information about a person independent of a specific health-related context.
+In situations where a person participates in multiple studies that have participant data scoped in an exclusive way within one or more projects, we have a Person entity. It is functionally a “group” of Participants that are all describing one “actual” person. This is especially to support situations where access policies about that participant might be conflicting and cases where the data itself about the participant might conflict but cannot be adjudicated by the repository.
 
 ##### Added Profile Restrictions
 In order to ensure that our resources are interoperable across studies, we have employed a number of restrictions that should make consuming Patient resources more consistent.
