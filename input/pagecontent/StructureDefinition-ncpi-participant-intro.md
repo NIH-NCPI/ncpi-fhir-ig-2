@@ -16,16 +16,16 @@ TDOD: Write Recommended Practices
 The following fields from the shared data model are to be mapped into the NCPI Participant as shown below:
 
 | **Logical Model Property** | **Cardinality** |  **NCPI Participant Mapping** |**Usage Guidance** | **Notes** |
-[participantID](structuredefinition-shareddatamodelresearchparticipant-definitions.html#diff_SharedDataModelResearchParticipant.participantID)|1..1|id| Strongly recommended | It is strongly recommended for the Participant Resource ID to be a unique identifier with an appropriate system|
-[externalID](structuredefinition-shareddatamodelresearchparticipant-definitions.html#diff_SharedDataModelResearchParticipant.externalID)|0..*|identifier||
-[population](structuredefinition-shareddatamodelresearchparticipant-definitions.html#diff_SharedDataModelResearchParticipant.population)|0..*|TBD|Strongly recommended ||
-[ombRace](structuredefinition-shareddatamodelresearchparticipant-definitions.html#diff_SharedDataModelResearchParticipant.ombRace)|0..*|extension|Required if available |Use the [us-core-race extension](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-race.html)|
-[ombEth](structuredefinition-shareddatamodelresearchparticipant-definitions.html#diff_SharedDataModelResearchParticipant.ombEth)|0..*|extension|Required if available|Use the [us-core-ethnicity](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-ethnicity.html)|
-[sex](structuredefinition-shareddatamodelresearchparticipant-definitions.html#diff_SharedDataModelResearchParticipant.sex)|1..1|extension|Required if avaialble|Use the [us-core-birthsex](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-birthsex.html) extension|
-[dateOfBirth](structuredefinition-shareddatamodelresearchparticipant-definitions.html#diff_SharedDataModelResearchParticipant.dateOfBirth)|0..1|birthDate|Optional||
-[dobMethod](structuredefinition-shareddatamodelresearchparticipant-definitions.html#diff_SharedDataModelResearchParticipant.dobMethod)|0..1|extension [ResearchDateOfBirthMethod](StructureDefinition-research-date-of-birth-method)|Required if dateOfBirth is provided||
-[ageAtLastVitalStatus](structuredefinition-shareddatamodelresearchparticipant-definitions.html#diff_SharedDataModelResearchParticipant.ageAtLastVitalStatus)|0..1|extension [AgeAtLastVitalStatus](StructureDefinition-research-age-at-last-vital-status)|Recommended||
-[vitalStatus](structuredefinition-shareddatamodelresearchparticipant-definitions.html#diff_SharedDataModelResearchParticipant..vitalStatus)|0..1|deceased|Recommended||
+[participantID](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.participantID)|1..1|id| Strongly recommended | It is strongly recommended for the Participant Resource ID to be a unique identifier with an appropriate system|
+[externalID](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.externalID)|0..*|identifier||
+[population](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.population)|0..*|TBD|Strongly recommended ||
+[ombRace](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.ombRace)|0..*|extension|Required if available |Use the [us-core-race extension](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-race.html)|
+[ombEth](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.ombEth)|0..*|extension|Required if available|Use the [us-core-ethnicity](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-ethnicity.html)|
+[sex](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.sex)|1..1|extension|Required if avaialble|Use the [us-core-birthsex](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-birthsex.html) extension|
+[dateOfBirth](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.dateOfBirth)|0..1|birthDate|Optional||
+[dobMethod](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.dobMethod)|0..1|extension [ResearchDateOfBirthMethod](StructureDefinition-research-date-of-birth-method.html)|Required if dateOfBirth is provided||
+[ageAtLastVitalStatus](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.ageAtLastVitalStatus)|0..1|extension [AgeAtLastVitalStatus](StructureDefinition-research-age-at-last-vital-status.html)|Recommended||
+[vitalStatus](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.vitalStatus)|0..1|deceased|Recommended||
 
 ##### Study Participation
 The conventional FHIR mechanism to link Patient resources to a ResearchStudy is through the use of a ResearchSubject resource. **TODO: Write up details regarding the TBD Profile, NCPI Person, and the NCPI ResearchStudy.**
