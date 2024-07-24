@@ -1,0 +1,59 @@
+{
+  "resourceType": "List",
+  "id": "ncpi-research-collection-cmg",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
+    ]
+  },
+  "note": [
+    {
+      "text": "The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments."
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
+      "valueUrl": "https://mendeliangenomics.org/"
+    },
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "acronym",
+                "system": "http://terminology.hl7.org/CodeSystem/title-type"
+              }
+            ]
+          }
+        },
+        {
+          "url": "label",
+          "valueString": "CMG"
+        }
+      ],
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension"
+    }
+  ],
+  "entry": [
+    {
+      "item": {
+        "reference": "ResearchStudy/cmg-research-study-bhcmg"
+      }
+    }
+  ],
+  "title": "The Centers for Medelian Genetics",
+  "code": {
+    "coding": [
+      {
+        "code": "consortium",
+        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
+        "display": "Consortium"
+      }
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot"
+}

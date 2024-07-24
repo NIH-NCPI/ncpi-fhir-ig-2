@@ -1,0 +1,27 @@
+{
+  "resourceType": "Observation",
+  "id": "cbtn-family-relationship-mother",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
+    ]
+  },
+  "focus": [
+    {
+      "reference": "PT_005B7CZ4"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/PT-KZG2CZ95"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "MTH",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "display": "mother"
+      }
+    ]
+  },
+  "status": "registered"
+}

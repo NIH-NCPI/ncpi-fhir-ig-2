@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "research-age-at-last-vital-status",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status",
+  "name": "AgeAtLastVitalStatus",
+  "title": "Age at Last Vital Status Extension",
+  "status": "draft",
+  "description": "Age at Last Vital Status Extension",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Age at Last Vital Status Extension",
+        "definition": "Age at Last Vital Status Extension"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Indicate age via relative date time extension or official date of when last vital status was assessed.",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      }
+    ]
+  }
+}

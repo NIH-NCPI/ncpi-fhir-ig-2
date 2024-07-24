@@ -42,7 +42,6 @@ Additional Study Groups may be included to describe various aspects of the study
 **Usage:**
 
 * Derived from this Resource Profile: [Research Study Subject](StructureDefinition-research-study-subject.html)
-* Refer to this Resource Profile: [Study Summary](StructureDefinition-study-summary.html) and [Study Variable Summary](StructureDefinition-study-variable-summary.html)
 * Examples for this Resource Profile: [ResearchStudy/cmg-research-study-bhcmg](ResearchStudy-cmg-research-study-bhcmg.html)
 
 
@@ -68,7 +67,7 @@ For those identifiers that have been defined by the investigators and collaborat
 ##### Utilize 'use' Property
 The [Identifier datatype](https://hl7.org/fhir/datatypes.html#Identifier) provides a **use** property which is used to indicate which identifier is **official** and **secondary** [(among others)](https://hl7.org/fhir/valueset-identifier-use.html) and should be used where appropriate. It is **strongly recommended** that the most visible external identifier be marked as **official**.
 
-#### Common Data Model Mappings
+### Common Data Model Mappings
 The following represents the mapping from the Logical Research Study model to this NCPI Research Study FHIR profile. 
 
 | NCPI Shared Data Elements | FHIR Resource Mapping | Note |

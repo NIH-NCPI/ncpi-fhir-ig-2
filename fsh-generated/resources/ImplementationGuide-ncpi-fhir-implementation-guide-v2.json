@@ -1,0 +1,996 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ncpi-fhir-implementation-guide-v2",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2",
+  "version": "0.1.0",
+  "name": "NCPIFHIRIGv2",
+  "title": "NCPI FHIR Implementation Guide v2",
+  "status": "draft",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        },
+        {
+          "system": "email",
+          "value": "ncpi-fhir-ig@googlegroups.com"
+        }
+      ]
+    }
+  ],
+  "description": "FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI).",
+  "packageId": "ncpi-fhir-implementation-guide-v2",
+  "fhirVersion": [
+    "4.3.0"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.1.1",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/access-policy"
+        },
+        "name": "Access policy",
+        "description": "Access Policy Extension",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/access-policy-description"
+        },
+        "name": "Access Policy Description",
+        "description": "Descriptive text summarizing the policy restrictions and other details associated with this access provision.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/access-type"
+        },
+        "name": "Access Type",
+        "description": "Access type code associated with downloads affected by this Access Policy ( open | registered | controlled )",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-age-at-last-vital-status"
+        },
+        "name": "Age at Last Vital Status Extension",
+        "description": "Age at Last Vital Status Extension",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/cbtn-family-relationship-mother"
+        },
+        "name": "An example family relationship based on data from CBTN",
+        "description": "An example family relationship based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
+      },
+      {
+        "reference": {
+          "reference": "Observation/cbtn-family-relationship-son"
+        },
+        "name": "An example family relationship based on data from CBTN",
+        "description": "An example family relationship based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
+      },
+      {
+        "reference": {
+          "reference": "Group/cbtn-family-role-mother"
+        },
+        "name": "An example family role based on data from CBTN",
+        "description": "An example family role based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+      },
+      {
+        "reference": {
+          "reference": "Group/cbtn-family-role-son"
+        },
+        "name": "An example family role based on data from CBTN",
+        "description": "An example family role based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/cmg-research-study-bhcmg"
+        },
+        "name": "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
+        "description": "The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
+      },
+      {
+        "reference": {
+          "reference": "Consent/kf-gru-dac-consent"
+        },
+        "name": "CBTN General Research Use (GRU) Consent DAC",
+        "description": "General Research Use (GRU)",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "Consent/kf-gru-dbgap-consent"
+        },
+        "name": "CBTN General Research Use (GRU) Consent dbGaP",
+        "description": "General Research Use (GRU)",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/kf-research-study-subject-gsr-allowed"
+        },
+        "name": "CBTN Genomic Summary Results (GSR) Allowed Access",
+        "description": "Genomic Summary Results (GSR) Allowed Access",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/kf-research-study-subject-gru-dac"
+        },
+        "name": "CBTN GRU data access via DAC",
+        "description": "GRU data access via DAC",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/kf-research-study-subject-gru-dbgap"
+        },
+        "name": "CBTN GRU data access via dbGaP",
+        "description": "GRU data access via dbGaP",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/kf-research-study-personnel-role-op-lead"
+        },
+        "name": "CBTN Operations Lead",
+        "description": "CBTN Operations Lead",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/kf-research-study-subject-registered"
+        },
+        "name": "CBTN Registered Tier Access",
+        "description": "CBTN Registered Tier Access",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/kf-research-study-cbtn"
+        },
+        "name": "Children's Brain Tumor Network (CBTN)",
+        "description": "Brain tumors are the most common form of cancer in children aged 0-19 in the United States, and are the largest cause of cancer-related deaths. The estimated number of new cases in 2019 is nearly 3,800 and thus brain tumors are a rare disease. Despite their relative rarity, the years of potential life lost due to brain tumors in 2009 was estimated at 47,631 years for children and adolescents aged 0-19 in the United States; this is a disproportionate amount of life lost compared to adult cancers and represents an unrecognized societal threat. There is an urgent need to improve therapies for these children. Most of the high-grade glial and embryonal brain cancers still remain largely incurable despite decades of clinical and laboratory research. Existing non-targeted chemotherapies and radiation, while at times effective, often represent pyrrhic victories, leaving behind life-long health burdens and causing a significant risk of secondary malignancies. NIH funded pediatric brain tumor cohort-based genomic dataset generation efforts have lagged behind other histologies and have yet to be included as part of large-scale sequencing efforts. However, consortia-based initiatives like those supported by the Children's Brain Tumor Network (CBTN) have demonstrated the early potential for clinically annotated genomic cohorts and their utility and interest by both the pediatric cancer and structural birth defect community with more than 130 data access requests for a non-embargoed cohort of tumor/normal whole genomes and paired tumor RNAseq. Indeed more than one quarter of this 800-subject initial sequencing cohort were identified to have birth-defect-associated clinical annotations in their clinical records, however, to our knowledge limited to no trio-based genomics cohort studies exist for any one pediatric brain tumor histology. The project's proposed sequencing cohort defines the largest, clinically annotated pediatric brain tumor cohort study to date and seeks to define the intersection of germline and somatic underpinnings of pediatric brain tumors across a shared developmental context of cancer and structural birth defects.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
+      },
+      {
+        "reference": {
+          "reference": "Organization/kf-research-study-organization-chop"
+        },
+        "name": "Children's Hospital of Philadelphia",
+        "description": "Represents the Organization for which CHOP PIs are affiliated",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/collection-type-vs"
+        },
+        "name": "Collection Type",
+        "description": "Enumerated list of Collection types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/collection-type"
+        },
+        "name": "Collection Type",
+        "description": "Enumerated list of collection types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/consanguinity"
+        },
+        "name": "Consanguinity Extension",
+        "description": "Extension containing Consanguinity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/consanguinity-assertion-vs"
+        },
+        "name": "Consanguinity Value Codes",
+        "description": "List of codes indicates the level of known consanguinity (blood relation) within a family study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/kf-research-study-personnel-role-pi"
+        },
+        "name": "dbGaP PI",
+        "description": "dbGaP PI",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/kf-research-study-personnel-role-pi-x01"
+        },
+        "name": "dbGaP PI, X01 FY 2021",
+        "description": "dbGaP PI, X01 FY 2021",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/research-data-date-of-birth-method-vs"
+        },
+        "name": "Enumerations for how DOB was constructed",
+        "description": "Enumerations for how DOB was constructed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/research-data-date-of-birth-method"
+        },
+        "name": "Enumerations for how DOB was constructed",
+        "description": "Enumerations for how DOB was constructed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/cbtn-example-participantstudy"
+        },
+        "name": "Example mappings based on data from CBTN",
+        "description": "Example mappings based on data from CBTN",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/emerge-example-participantstudy"
+        },
+        "name": "Example mappings based on data from eMERGE",
+        "description": "Example mappings based on data from eMERGE",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/pcgc-example-participantstudy"
+        },
+        "name": "Example mappings based on data from PCGC",
+        "description": "Example mappings based on data from PCGC",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+      },
+      {
+        "reference": {
+          "reference": "Group/cbtn-family-study"
+        },
+        "name": "Example patients based on data from CBTN",
+        "description": "Example patients based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-study"
+      },
+      {
+        "reference": {
+          "reference": "Patient/PT-KZG2CZ95"
+        },
+        "name": "Example patients based on data from CBTN",
+        "description": "Example patients based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+      },
+      {
+        "reference": {
+          "reference": "Person/cbtn-example-person"
+        },
+        "name": "Example patients based on data from CBTN",
+        "description": "Example patients based on data from CBTN",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
+      },
+      {
+        "reference": {
+          "reference": "Patient/6812345"
+        },
+        "name": "Example patients based on data from eMERGE",
+        "description": "Example patients based on data from eMERGE",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+      },
+      {
+        "reference": {
+          "reference": "Person/emerge-example-person"
+        },
+        "name": "Example patients based on data from eMERGE",
+        "description": "Example patients based on data from eMERGE",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
+      },
+      {
+        "reference": {
+          "reference": "Patient/PT-005B7CZ4"
+        },
+        "name": "Example patients based on data from PCGC",
+        "description": "Example patients based on data from PCGC.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+      },
+      {
+        "reference": {
+          "reference": "Person/pcgc-example-person"
+        },
+        "name": "Example patients based on data from PCGC",
+        "description": "Example patients based on data from PCGC",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/desctiption"
+        },
+        "name": "Family Study Description",
+        "description": "Free text describing the family study, such as potential inheritance or details about consanguinity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/family-role"
+        },
+        "name": "Family Study Focus",
+        "description": "Extension containing Family Role",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/family-study-focus"
+        },
+        "name": "Family Study Focus Extension",
+        "description": "Extension containing Family Study Focus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/family-study"
+        },
+        "name": "Family Study Reference",
+        "description": "Extension containing Family Study Reference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/family-type"
+        },
+        "name": "Family Type Extension",
+        "description": "Extension containing Family Type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Consent/kf-gsr-allowed-access"
+        },
+        "name": "Genomic Summary Results (GSR) Allowed Access",
+        "description": "Genomic Summary Results (GSR) Allowed Access",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "Consent/hmb-irb-npu-consent"
+        },
+        "name": "HMB-IRB-NPU Consent",
+        "description": "Consented with Health/Medical/Biomedical + IRB Required + Not for profit use",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "Consent/hmb-npu-consent"
+        },
+        "name": "HMB-NPU Consent",
+        "description": "Consented with Health/Medical/Biomedical + Not for profit use",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "List/ncpi-research-collection-kfx01"
+        },
+        "name": "Kids First X01s",
+        "description": "Kids First X01s",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/label-extension"
+        },
+        "name": "Label",
+        "description": "A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mesh-terms"
+        },
+        "name": "MeSH Terms",
+        "description": "Example terms from Medical Subject Headings (MeSH) Ontology",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Consent/AP-GRU"
+        },
+        "name": "Mock consent based on kf-gru-dac-consent",
+        "description": "General Research Use (GRU)",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "Consent/AP-HMB"
+        },
+        "name": "Mock consent based on kf-gru-dbgap-consent",
+        "description": "General Research Use (GRU)",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/SD-BHJXBDQK"
+        },
+        "name": "Mock study based on kf-research-study-subject-gru-dac",
+        "description": "GRU data access via DAC",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/SD-PREASA7S"
+        },
+        "name": "Mock Study based on kf-research-study-subject-gru-dbgap",
+        "description": "GRU data access via dbGaP",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/phv00407460.v2"
+        },
+        "name": "Mock study based on kf-research-study-subject-gsr-allowed",
+        "description": "Genomic Summary Results (GSR) Allowed Access",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-family-study"
+        },
+        "name": "NCPI Family Study",
+        "description": "Family Study",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ncpi-family-types"
+        },
+        "name": "NCPI Family Types CodeSystem",
+        "description": "CodeSystem for Types of Families",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ncpi"
+        },
+        "name": "NCPI FHIR Codes",
+        "description": "Codes that would apply to NCPI projects",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-participant"
+        },
+        "name": "NCPI Participant",
+        "description": "Research oriented patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-Study-Participant"
+        },
+        "name": "NCPI Participant Study",
+        "description": "Research Study",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-person"
+        },
+        "name": "NCPI Person",
+        "description": "Person",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-research-access-policy"
+        },
+        "name": "NCPI Research Access Policy",
+        "description": "Limitations and/or requirements that define how a user may gain access to a particular set of data.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-research-collection"
+        },
+        "name": "NCPI Research Collection",
+        "description": "Collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-research-study"
+        },
+        "name": "NCPI Research Study",
+        "description": "The NCPI Research Study FHIR resource represents an individual research effort and acts as a grouper or “container” for that effort’s study participants and their related data files.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-study-group"
+        },
+        "name": "NCPI Research Study Group",
+        "description": "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Group/cmg-research-study-bhcmg-consent-group-hmb-npu"
+        },
+        "name": "Participants consented under HMB-NPU",
+        "description": "BH-CMG study's population consented under Health/Medical/Biomedical + Not for profit use",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/cmg-research-study-subject-cmg-hmb-npu"
+        },
+        "name": "Participants consented under HMB-NPU",
+        "description": "CMG Consent Group, Health/Medical/Biomedical + Not for profit use",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+      },
+      {
+        "reference": {
+          "reference": "Group/cmg-research-study-bhcmg-consent-group-irb-hmb-npu"
+        },
+        "name": "Participants consented under IRB-HMB-NPU",
+        "description": "BH-CMG study's population consented under Health/Medical/Biomedical + IRB Required + Not for profit use",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/cmg-research-study-subject-cmg-irb-hmb-npu"
+        },
+        "name": "Participants consented under IRB-HMB-NPU",
+        "description": "BH-CMG Consent Group, Health/Medical/Biomedical + IRB Required + Not for profit use",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+      },
+      {
+        "reference": {
+          "reference": "Group/kf-research-study-cbtn-participants"
+        },
+        "name": "Participants from the CBTN research study",
+        "description": "Participants from the CBTN research study",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
+      },
+      {
+        "reference": {
+          "reference": "List/ncpi-research-collection-pbta"
+        },
+        "name": "Pediatric Brain Tumor Atlas",
+        "description": "Pediatric Brain Tumor Atlas",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
+      },
+      {
+        "reference": {
+          "reference": "Consent/kf-registered-allowed-access"
+        },
+        "name": "Registered Tier Access",
+        "description": "Registered Tier Access",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/research-data-access-code-vs"
+        },
+        "name": "Research Data Access Codes",
+        "description": "Enumerated list of access codes such as dbGaP consent codes among others.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/research-data-access-code"
+        },
+        "name": "Research Data Access Codes",
+        "description": "Enumerated list of access codes such as dbGaP consent codes among others.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/research-data-access-type-vs"
+        },
+        "name": "Research Data Access Type Codes",
+        "description": "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/research-data-access-type"
+        },
+        "name": "Research Data Access Type Codes",
+        "description": "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-date-of-birth-method"
+        },
+        "name": "Research Date of Birth Method",
+        "description": "Code indicating method of the DOB construction",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-population"
+        },
+        "name": "Research Population",
+        "description": "Code describing the population (CDC)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-study-acknowledgement"
+        },
+        "name": "Research Study Acknowledgement",
+        "description": "Provides an informative description of acknowledgement expectations for those using data from the research study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-study-associated-party"
+        },
+        "name": "Research Study Associated Party",
+        "description": "Sponsors, collaborators, and other parties affiliated with a research study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-study-design"
+        },
+        "name": "Research Study Design",
+        "description": "Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-study-result"
+        },
+        "name": "Research Study Result",
+        "description": "Link to citations associated with the study's publications.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-study-subject"
+        },
+        "name": "Research Study Subject",
+        "description": "A ResearchStudySubject is representative of a group of participants whose consent and data use is governed by the same restrictions. This profile is an R4 proxy for the more flexible R5 ResearchSubject.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-study-subject-consent"
+        },
+        "name": "Research Study Subject Consent",
+        "description": "ResearchStudySubjectConsent provides link to a consent through which participants were enrolled.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-disease-use-limitation"
+        },
+        "name": "Research Usage Limitation Disease Code",
+        "description": "Coding associated with limitation on what research can be performed this data.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/research-web-Link"
+        },
+        "name": "Research Web Link",
+        "description": "A URL pointing to a either a research study's website, an online document or other research related site or document.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-family-relationship"
+        },
+        "name": "Shared Data Model for Family Relationship",
+        "description": "Shared Data Model for Family Relationship",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-family-role"
+        },
+        "name": "Shared Data Model for Family Role",
+        "description": "Shared Data Model for Family Role",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFamilyRole"
+        },
+        "name": "Shared Data Model for Family Role",
+        "description": "The **Shared Data Model for Family Role**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFamilyStudy"
+        },
+        "name": "Shared Data Model for Family Study",
+        "description": "The **Shared Data Model for Family Study**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
+        },
+        "name": "Shared Data Model for Family Study",
+        "description": "The **Shared Data Model for Family Study**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelResearchCollection"
+        },
+        "name": "Shared Data Model for Research Collection",
+        "description": "The **Shared Data Model for Research Collection** represent various collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelResearchDataAccessPolicy"
+        },
+        "name": "Shared Data Model for Research Data Access Policy",
+        "description": "The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelStudyParticipant"
+        },
+        "name": "Shared Data Model for Research Participant and Study Mapping",
+        "description": "The **Shared data model for StudyParticipant**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelResearchParticipant"
+        },
+        "name": "Shared Data Model for Research Participants",
+        "description": "The **Shared Data Model for Research Participants**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelPerson"
+        },
+        "name": "Shared Data Model for Research Persons",
+        "description": "The **Shared data model for Person**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelResearchStudy"
+        },
+        "name": "Shared Data Model for Research Study",
+        "description": "The **Shared Data Model for Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/study-name-type-vs"
+        },
+        "name": "Study Name Type",
+        "description": "Some common types of study 'names'.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/study-name-type"
+        },
+        "name": "Study Name Type",
+        "description": "Some common types of study 'names'.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/study-personnel-role-vs"
+        },
+        "name": "Study Personnel Role",
+        "description": "Roles associated with study personnel.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/study-personnel-role"
+        },
+        "name": "Study Personnel Role",
+        "description": "Roles associated with study personnel.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "List/ncpi-research-collection-cmg"
+        },
+        "name": "The Centers for Medelian Genetics",
+        "description": "The Centers for Medelian Genetics",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "authors.html",
+          "title": "Authors",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "conformance.html",
+          "title": "Conformance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "contact.html",
+          "title": "Contact",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "contributing.html",
+          "title": "Contributing",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "example_assays.html",
+          "title": "Example Assays",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "example_family.html",
+          "title": "Example Family",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "example_files.html",
+          "title": "Example Files",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "example_participant.html",
+          "title": "Example Participant",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "example_phenotype_condition.html",
+          "title": "Example Phenotype Condition",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "example_research_study.html",
+          "title": "Example Research Study",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "example_specimen.html",
+          "title": "Example Specimen",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "FHIR_Basics.html",
+          "title": "FHIR Basics",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "fhir_version.html",
+          "title": "Fhir Version",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "IG_Versioning.html",
+          "title": "IG Versioning",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "module_assays.html",
+          "title": "Module Assays",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "module_family.html",
+          "title": "Module Family",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "module_files.html",
+          "title": "Module Files",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "module_overview.html",
+          "title": "Module Overview",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "module_participant.html",
+          "title": "Module Participant",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "module_phenotype_condition.html",
+          "title": "Module Phenotype Condition",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "module_research_study.html",
+          "title": "Module Research Study",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "module_specimen.html",
+          "title": "Module Specimen",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "must_support.html",
+          "title": "Must Support",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ncpi.html",
+          "title": "Ncpi",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "research_study_example_cbtn.html",
+          "title": "Research Study Example Cbtn",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "research_study_example_cmg.html",
+          "title": "Research Study Example Cmg",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "use_case_tbd.html",
+          "title": "Use Case Tbd",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2023+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

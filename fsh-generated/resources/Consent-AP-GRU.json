@@ -1,0 +1,68 @@
+{
+  "resourceType": "Consent",
+  "id": "AP-GRU",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "research",
+          "system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+          "display": "Research Information Access"
+        }
+      ]
+    }
+  ],
+  "provision": {
+    "purpose": [
+      {
+        "code": "GRU",
+        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
+        "display": "General Research Use"
+      }
+    ],
+    "type": "permit"
+  },
+  "extension": [
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description",
+      "valueMarkdown": "Use of the data is limited only by the terms of the model Data Use Certification."
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
+      "valueUrl": "https://redcap.chop.edu/surveys/?s=A7M873HMN8"
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "controlled",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "draft",
+  "scope": {
+    "coding": [
+      {
+        "code": "research",
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+      }
+    ]
+  },
+  "policyRule": {
+    "coding": [
+      {
+        "code": "cric",
+        "system": "http://terminology.hl7.org/CodeSystem/consentpolicycodes"
+      }
+    ]
+  }
+}
