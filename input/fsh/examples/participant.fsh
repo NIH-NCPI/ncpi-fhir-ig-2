@@ -85,7 +85,7 @@ Description: "Example patients based on data from CBTN"
 * link
   * target = Reference(PT-KZG2CZ95)  
 
-Instance: AP-GRU
+Instance: GRU
 InstanceOf: NcpiResearchAccessPolicy
 Title: "Mock consent based on kf-gru-dac-consent"
 Usage: #example
@@ -123,7 +123,7 @@ Description: "Example mappings based on data from CBTN"
 * individual = Reference(PT-KZG2CZ95)  
 * study = Reference(SD-BHJXBDQK)
 * status = #candidate
-* consent = Reference(AP-GRU)  
+* consent = Reference(GRU)  
 
 
 
@@ -175,7 +175,7 @@ Description: "Example patients based on data from PCGC"
 * link
   * target = Reference(PT-005B7CZ4) 
 
-Instance: AP-HMB
+Instance: HMB
 InstanceOf: NcpiResearchAccessPolicy
 Title: "Mock consent based on kf-gru-dbgap-consent"
 Usage: #example
@@ -213,7 +213,7 @@ Description: "Example mappings based on data from PCGC"
 * individual = Reference(PT-005B7CZ4)  
 * study = Reference(SD-PREASA7S)  
 * status = #candidate
-* consent = Reference(AP-HMB) 
+* consent = Reference(HMB) 
 
 
 
@@ -265,7 +265,7 @@ Description: "Example patients based on data from eMERGE"
 * link
   * target = Reference(6812345) 
 
-// Example uses AP-GRU for consent seen in example 2
+// Example uses GRU for consent seen in example 2
 
 Instance: phv00407460.v2
 InstanceOf: ResearchStudySubject
@@ -290,4 +290,4 @@ Description: "Example mappings based on data from eMERGE"
 * individual = Reference(6812345)  
 * study = Reference(phv00407460.v2)
 * status = #candidate
-* consent = Reference(AP-GRU) 
+* consent = Reference(GRU) 

@@ -97,14 +97,6 @@ Description: "The **Shared data model for Person**"
 * identifier 1..1 string "Unique Person identifier."
 * participant 1..1 reference "The participant we are describing"
 
-Extension: AccessPolicy
-Id: access-policy
-Title: "Access policy"
-Description: "Access Policy Extension"
-* insert SetContext(ResearchSubject)
-* value[x] only Reference
-* valueReference 1..1
-* valueReference only Reference(Consent)
 
 Profile: NcpiPerson
 Parent: Person
@@ -113,11 +105,11 @@ Title: "NCPI Person"
 Description: "Person"
 * ^version = "0.1.0"
 * ^status = #draft
-* id 0..1 
+* id 1..1 
 * id ^short = "Unique participant identifier"
 * link.target only Reference(NcpiParticipant)
 * link.target ^short = "The participant we are describing"
-
+* link.target 1..1
 
 //  Study Participant Module
 
@@ -129,10 +121,19 @@ Description: "The **Shared data model for StudyParticipant**"
 * researchStudy 0..1 reference "The Research Study this participant has a relationship with"
 * accessPolicy 0..* reference "The Access Policy that may apply to this participant's data from this study. Not canonical, ie, one must rely on the row level AP."
 
+Extension: AccessPolicy
+Id: access-policy
+Title: "Access policy"
+Description: "Access Policy Extension"
+* insert SetContext(ResearchSubject)
+* value[x] only Reference
+* valueReference 1..1
+* valueReference only Reference(NcpiResearchAccessPolicy)
+
 Profile: NcpiStudyParticipant
 Parent: ResearchSubject
 Id: ncpi-Study-Participant 
-Title: "NCPI Participant Study"
+Title: "NCPI Study Participant"
 Description: "Research Study"
 * ^version = "0.1.0"
 * ^status = #draft
