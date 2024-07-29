@@ -12,18 +12,21 @@ else
 	txoption="-tx n/a"
 fi
 
+# We are getting warnings about local code systems, so I'm turning it off for now
+txoption=""
 echo "$txoption"
 
 export JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8"
 
 publisher=$input_cache_path/$publisher_jar
 if test -f "$publisher"; then
-	java -jar $publisher -ig . $txoption $*
+    # For folks working on headless machines who don't want to bother with X11
+	java -Djava.awt.headless=true -jar $publisher -ig . $txoption $*
 
 else
 	publisher=../$publisher_jar
 	if test -f "$publisher"; then
-		java -jar $publisher -ig . $txoption $*
+		java -Djava.awt.headless=true -jar $publisher -ig . $txoption $*
 	else
 		echo IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
 	fi
