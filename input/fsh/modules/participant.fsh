@@ -107,9 +107,9 @@ Description: "Person"
 * ^status = #draft
 * id 1..1 
 * id ^short = "Unique participant identifier"
+* link 1..*
 * link.target only Reference(NcpiParticipant)
 * link.target ^short = "The participant we are describing"
-* link.target 1..1
 
 //  Study Participant Module
 
