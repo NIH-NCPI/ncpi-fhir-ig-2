@@ -1,0 +1,20 @@
+{
+  "resourceType" : "Person",
+  "id" : "emerge-example-person",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Person emerge-example-person</b></p><a name=\"emerge-example-person\"> </a><a name=\"hcemerge-example-person\"> </a><a name=\"emerge-example-person-en-US\"> </a><p><b>identifier</b>: <code>https://emerge-network.org/</code>/PS_321</p><h3>Links</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Target</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient-6812345.html\">Anonymous Patient (no stated gender), DoB:  ( https://emerge-network.org/#12345)</a></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://emerge-network.org/",
+    "value" : "PS_321"
+  }],
+  "link" : [{
+    "target" : {
+      "reference" : "Patient/6812345"
+    }
+  }]
+}

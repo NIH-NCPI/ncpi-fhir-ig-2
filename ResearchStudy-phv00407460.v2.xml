@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ResearchStudy xmlns="http://hl7.org/fhir">
+  <id value="phv00407460.v2"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ResearchStudy phv00407460.v2</b></p><a name="phv00407460.v2"> </a><a name="hcphv00407460.v2"> </a><a name="phv00407460.v2-en-US"> </a><p><b>identifier</b>: <code>https://cbtn.org/</code>/GSR-ALLOWED</p><p><b>title</b>: GSR-ALLOWED Study Subject</p><p><b>partOf</b>: <a href="ResearchStudy-kf-research-study-cbtn.html">ResearchStudy Children's Brain Tumor Network (CBTN)</a></p><p><b>status</b>: Completed</p><p><b>description</b>: </p><div><p>Genomic Summary Results (GSR) Allowed Access</p>
+</div><p><b>enrollment</b>: <a href="Group-kf-research-study-cbtn-participants.html">Group Participants from the CBTN research study</a></p></div>
+  </text>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent">
+    <valueReference>
+      <reference value="Consent/kf-gsr-allowed-access"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="https://cbtn.org/"/>
+    <value value="GSR-ALLOWED"/>
+  </identifier>
+  <title value="GSR-ALLOWED Study Subject"/>
+  <partOf>
+    <reference value="ResearchStudy/kf-research-study-cbtn"/>
+  </partOf>
+  <status value="completed"/>
+  <description value="Genomic Summary Results (GSR) Allowed Access"/>
+  <enrollment>
+    <reference value="Group/kf-research-study-cbtn-participants"/>
+  </enrollment>
+</ResearchStudy>

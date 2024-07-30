@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ResearchSubject xmlns="http://hl7.org/fhir">
+  <id value="cbtn-example-participantstudy"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ResearchSubject cbtn-example-participantstudy</b></p><a name="cbtn-example-participantstudy"> </a><a name="hccbtn-example-participantstudy"> </a><a name="cbtn-example-participantstudy-en-US"> </a><p><b>status</b>: Candidate</p><p><b>study</b>: <a href="ResearchStudy-SD-BHJXBDQK.html">ResearchStudy GRU-DAC Study Subject</a></p><p><b>individual</b>: <a href="Patient-PT-KZG2CZ95.html">Anonymous Patient (no stated gender), DoB:  ( https://cbtn.org/#C21156)</a></p><p><b>consent</b>: <a href="Consent-GRU.html">Consent: extension = No display for Extension ,No display for Extension ,No display for Extension ; status = draft; scope = Research; category = Research Information Access; policyRule = Common Rule Informed Consent</a></p></div>
+  </text>
+  <status value="candidate"/>
+  <study>
+    <reference value="ResearchStudy/SD-BHJXBDQK"/>
+  </study>
+  <individual>
+    <reference value="Patient/PT-KZG2CZ95"/>
+  </individual>
+  <consent>
+    <reference value="Consent/GRU"/>
+  </consent>
+</ResearchSubject>

@@ -13,6 +13,18 @@
       "http://hl7.org/fhir/R4B/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
       "url" : "http://hl7.org/fhir/consent-data-meaning",
       "version" : "4.3.0",
       "status" : "draft",
@@ -61,6 +73,30 @@
       "http://hl7.org/fhir/R4B/valueset-group-type.html" : "GroupType"
     },
     {
+      "url" : "http://hl7.org/fhir/identity-assuranceLevel",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "IdentityAssuranceLevel",
+      "title" : "IdentityAssuranceLevel",
+      "description" : "The level of confidence that this link represents the same actual person, based on NIST Authentication Levels.",
+      "oids" : ["2.16.840.1.113883.4.642.4.657"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-identity-assuranceLevel.html" : "IdentityAssuranceLevel"
+    },
+    {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "oids" : ["2.16.840.1.113883.4.642.4.424"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-link-type.html" : "LinkType"
+    },
+    {
       "url" : "http://hl7.org/fhir/list-mode",
       "version" : "4.3.0",
       "status" : "draft",
@@ -95,6 +131,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4B/valueset-research-study-status.html" : "ResearchStudyStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-subject-status",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ResearchSubjectStatus",
+      "title" : "ResearchSubjectStatus",
+      "description" : "Indicates the progression of a study subject through a study.",
+      "oids" : ["2.16.840.1.113883.4.642.4.830"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-research-subject-status.html" : "ResearchSubjectStatus"
     },
     {
       "url" : "http://hl7.org/fhir/resource-types",
@@ -134,8 +182,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/consentaction",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ConsentActionCodes",
       "title" : "Consent Action Codes",
       "description" : "This value set includes sample Consent Action codes.",
@@ -146,8 +194,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ConsentCategoryCodes",
       "title" : "Consent Category Codes",
       "description" : "This value set includes sample Consent Directive Type codes, including several consent directive related LOINC codes; HL7 VALUE SET: ActConsentType(2.16.840.1.113883.1.11.19897); examples of US realm consent directive legal descriptions and references to online and/or downloadable forms such as the SSA-827 Authorization to Disclose Information to the Social Security Administration; and other anticipated consent directives related to participation in a clinical trial, medical procedures, reproductive procedures; health care directive (Living Will); advance directive, do not resuscitate (DNR); Physician Orders for Life-Sustaining Treatment (POLST)",
@@ -158,8 +206,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
-      "version" : "3.0.0",
-      "status" : "draft",
+      "version" : "3.0.1",
+      "status" : "active",
       "name" : "ConsentPolicyRuleCodes",
       "title" : "Consent PolicyRule Codes",
       "description" : "This value set includes sample Regulatory consent policy types from the US and other regions.",
@@ -170,8 +218,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/consentscope",
-      "version" : "2.0.0",
-      "status" : "draft",
+      "version" : "2.0.1",
+      "status" : "active",
       "name" : "ConsentScopeCodes",
       "title" : "Consent Scope Codes",
       "description" : "This value set includes the four Consent scope codes.",
@@ -182,8 +230,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ContractSignerTypeCodes",
       "title" : "Contract Signer Type Codes",
       "description" : "This value set includes sample Contract Signer Type codes.",
@@ -194,8 +242,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "SecurityRoleType",
       "title" : "Security Role Type",
       "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
@@ -205,8 +253,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ListEmptyReasons",
       "title" : "List Empty Reasons",
       "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
@@ -217,8 +265,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/list-order",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ListOrderCodes",
       "title" : "List Order Codes",
       "description" : "Base values for the order of the items in a list resource.",
@@ -285,7 +333,44 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1492"],
       "uses" : {
       },
+      "ValueSet-research-data-date-of-birth-method-vs.html" : "Enumerations for how DOB was constructed",
       "http://hl7.org/fhir/R4B/valueset-title-type.html" : "TitleType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-patient-contactrelationship.html" : "Patient Contact Relationship"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-marital-status.html" : "MaritalStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",

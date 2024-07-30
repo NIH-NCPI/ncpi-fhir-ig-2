@@ -69,10 +69,7 @@
      fhir:extension ( [
        fhir:url [ fhir:v "name"^^xsd:anyURI ] ;
        fhir:value [ fhir:v "Jennifer Mason" ]
-     ] ) ;
-     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party"^^xsd:anyURI ]
-  ] [
-     fhir:extension ( [
+     ] [
        fhir:url [ fhir:v "role"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:CodeableConcept ;
@@ -88,8 +85,6 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/PractitionerRole/kf-research-study-personnel-role-op-lead> ;
          fhir:reference [ fhir:v "PractitionerRole/kf-research-study-personnel-role-op-lead" ]
        ]
-     ] [
-       fhir:url [ fhir:v "name"^^xsd:anyURI ]
      ] ) ;
      fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party"^^xsd:anyURI ]
   ] ) ; # 

@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchSubject/cbtn-example-participantstudy> a fhir:ResearchSubject ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cbtn-example-participantstudy"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ResearchSubject cbtn-example-participantstudy</b></p><a name=\"cbtn-example-participantstudy\"> </a><a name=\"hccbtn-example-participantstudy\"> </a><a name=\"cbtn-example-participantstudy-en-US\"> </a><p><b>status</b>: Candidate</p><p><b>study</b>: <a href=\"ResearchStudy-SD-BHJXBDQK.html\">ResearchStudy GRU-DAC Study Subject</a></p><p><b>individual</b>: <a href=\"Patient-PT-KZG2CZ95.html\">Anonymous Patient (no stated gender), DoB:  ( https://cbtn.org/#C21156)</a></p><p><b>consent</b>: <a href=\"Consent-GRU.html\">Consent: extension = No display for Extension ,No display for Extension ,No display for Extension ; status = draft; scope = Research; category = Research Information Access; policyRule = Common Rule Informed Consent</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "candidate"] ; # 
+  fhir:study [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/SD-BHJXBDQK> ;
+     fhir:reference [ fhir:v "ResearchStudy/SD-BHJXBDQK" ]
+  ] ; # 
+  fhir:individual [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-KZG2CZ95> ;
+     fhir:reference [ fhir:v "Patient/PT-KZG2CZ95" ]
+  ] ; # 
+  fhir:consent [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/GRU> ;
+     fhir:reference [ fhir:v "Consent/GRU" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

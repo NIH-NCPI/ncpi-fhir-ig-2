@@ -4,6 +4,13 @@
   "fhirVersion": "4.3.0",
   "extensions": [
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy",
+      "title": "Access policy",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description",
       "title": "Access Policy Description",
       "types": [
@@ -77,8 +84,29 @@
       ]
     },
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status",
+      "title": "Age at Last Vital Status Extension",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method",
+      "title": "Research Date of Birth Method",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-disease-use-limitation",
       "title": "Research Usage Limitation Disease Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-population",
+      "title": "Research Population",
       "types": [
         "CodeableConcept"
       ]
@@ -234,6 +262,24 @@
     }
   ],
   "profiles": {
+    "ResearchSubject": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant",
+        "title": "NCPI Study Participant"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant",
+        "title": "NCPI Participant"
+      }
+    ],
+    "Person": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person",
+        "title": "NCPI Person"
+      }
+    ],
     "Consent": [
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy",
@@ -260,6 +306,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime": [
+      "Patient.birthDate"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -278,6 +327,13 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/valueset-reference": [
+      "SharedDataModelPerson",
+      "SharedDataModelStudyParticipant"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
     ],
@@ -290,6 +346,18 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy": [
+      "ResearchSubject"
+    ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description": [
       "Consent"
     ],
@@ -299,8 +367,17 @@
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension": [
       "List"
     ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status": [
+      "Patient"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method": [
+      "Patient"
+    ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-disease-use-limitation": [
       "Consent.provision"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-population": [
+      "Patient"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-acknowledgement": [
       "ResearchStudy"

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="6812345"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient 6812345</b></p><a name="6812345"> </a><a name="hc6812345"> </a><a name="6812345-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient (no stated gender), DoB:  ( https://emerge-network.org/#12345)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3"><code>https://emerge-network.org/</code>/6812345</td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.">US Core Ethnicity Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2186-5">Race &amp; Ethnicity - CDC</a> 2186-5: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Code indicating method of the DOB construction"><a href="StructureDefinition-research-date-of-birth-method.html">Research Date of Birth Method</a></td><td colspan="3"><a href="CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-decade-only">Enumerations for how DOB was constructed</a> decade-only: Decade Only</td></tr><tr><td style="background-color: #f3f5da" title="A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9)."><a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a></td><td colspan="3">F</td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
+
+ - American Indian or Alaska Native
+ - Asian
+ - Black or African American
+ - Native Hawaiian or Other Pacific Islander
+ - White.">US Core Race Extension:</td><td colspan="3"><ul><li>ombCategory: <a href="http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-1002-5">Race &amp; Ethnicity - CDC</a> 1002-5: American Indian or Alaska Native</li><li>text: American Indian or Alaska Native</li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+    <valueCode value="F"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="1002-5"/>
+        <display value="American Indian or Alaska Native"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="American Indian or Alaska Native"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2186-5"/>
+        <display value="Not Hispanic or Latino"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Not Hispanic or Latino"/>
+    </extension>
+  </extension>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method">
+    <valueCoding>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method"/>
+      <code value="decade-only"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <system value="https://emerge-network.org/"/>
+    <value value="12345"/>
+  </identifier>
+  <identifier>
+    <system value="https://emerge-network.org/"/>
+    <value value="6812345"/>
+  </identifier>
+  <birthDate>
+    <extension url="http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime">
+      <extension url="target">
+        <valueReference>
+          <reference value="Patient/6812345"/>
+        </valueReference>
+      </extension>
+      <extension url="targetPath">
+        <valueString value="birthDate"/>
+      </extension>
+      <extension url="relationship">
+        <valueCode value="after"/>
+      </extension>
+      <extension url="offset">
+        <valueDuration>
+          <value value="2006"/>
+          <unit value="d"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="days"/>
+        </valueDuration>
+      </extension>
+    </extension>
+  </birthDate>
+</Patient>

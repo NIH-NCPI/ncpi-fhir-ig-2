@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Person xmlns="http://hl7.org/fhir">
+  <id value="pcgc-example-person"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Person pcgc-example-person</b></p><a name="pcgc-example-person"> </a><a name="hcpcgc-example-person"> </a><a name="pcgc-example-person-en-US"> </a><p><b>identifier</b>: <code>http://chdgenes.org/</code>/PS_123</p><h3>Links</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Target</b></td></tr><tr><td style="display: none">*</td><td><a href="Patient-PT-005B7CZ4.html">Anonymous Patient (no stated gender), DoB:  ( http://chdgenes.org/#20757)</a></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://chdgenes.org/"/>
+    <value value="PS_123"/>
+  </identifier>
+  <link>
+    <target>
+      <reference value="Patient/PT-005B7CZ4"/>
+    </target>
+  </link>
+</Person>

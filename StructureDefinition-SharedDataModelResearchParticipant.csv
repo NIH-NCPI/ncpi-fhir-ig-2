@@ -1,0 +1,23 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"SharedDataModelResearchParticipant","SharedDataModelResearchParticipant","","","",0,*,"","","","null {[]} {[]}
+","Shared Data Model for Research Participants","The **Shared Data Model for Research Participants**","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"SharedDataModelResearchParticipant.participantID","SharedDataModelResearchParticipant.participantID","","","",1,1,"","","","string {[]} {[]}
+","Unique participant identifier. System identifier used for internal references.","Unique participant identifier. System identifier used for internal references.","","","","","","","","","",,,,,"",,,,"SharedDataModelResearchParticipant.participantID",1,1,"",""
+"SharedDataModelResearchParticipant.externalID","SharedDataModelResearchParticipant.externalID","","","",0,*,"","","","code {[]} {[]}
+","Unique participant identifier. System identifier used for internal references.","Unique participant identifier. System identifier used for internal references.","","","","","","","","","",,,,,"",,,,"SharedDataModelResearchParticipant.externalID",0,*,"",""
+"SharedDataModelResearchParticipant.population","SharedDataModelResearchParticipant.population","","","",0,*,"","","","code {[]} {[]}
+","Population, Race, and/or Ethnicity information.","Population, Race, and/or Ethnicity information.","","","","","","","","","",,,,,"",,,,"SharedDataModelResearchParticipant.population",0,*,"",""
+"SharedDataModelResearchParticipant.ombRace","SharedDataModelResearchParticipant.ombRace","","","",0,*,"","","","code {[]} {[]}
+","OMB coded Race for backwards compatibility","OMB coded Race for backwards compatibility","","","","","","","","","",,,,,"",,,,"SharedDataModelResearchParticipant.ombRace",0,*,"",""
+"SharedDataModelResearchParticipant.ombEth","SharedDataModelResearchParticipant.ombEth","","","",0,*,"","","","code {[]} {[]}
+","OMB coded Ethnicity for backwards compatibility","OMB coded Ethnicity for backwards compatibility","","","","","","","","","",,,,,"",,,,"SharedDataModelResearchParticipant.ombEth",0,*,"",""
+"SharedDataModelResearchParticipant.sex","SharedDataModelResearchParticipant.sex","","","",1,1,"","","","code {[]} {[]}
+","Sex assigned at birth (or pre-natal observed sex)","Sex assigned at birth (or pre-natal observed sex)","","","","","","","","","",,,,,"",,,,"SharedDataModelResearchParticipant.sex",1,1,"",""
+"SharedDataModelResearchParticipant.dateOfBirth","SharedDataModelResearchParticipant.dateOfBirth","","","",0,1,"","","","date {[]} {[]}
+","Date of Birth of the participant. Details of privacy method should be included in DOBMethod","Date of Birth of the participant. Details of privacy method should be included in DOBMethod","","","","","","","","","",,,,,"",,,,"SharedDataModelResearchParticipant.dateOfBirth",0,1,"",""
+"SharedDataModelResearchParticipant.dobMethod","SharedDataModelResearchParticipant.dobMethod","","","",0,1,"","","","code {[]} {[]}
+","Specifies method used to alter DOB for research sharing. Details should be available in the study protocols.","Specifies method used to alter DOB for research sharing. Details should be available in the study protocols.","","","","","","","","","",,,,,"",,,,"SharedDataModelResearchParticipant.dobMethod",0,1,"",""
+"SharedDataModelResearchParticipant.ageAtLastVitalStatus","SharedDataModelResearchParticipant.ageAtLastVitalStatus","","","",0,1,"","","","date {[]} {[]}
+","Age at last vital status","Age at last vital status","","","","","","","","","",,,,,"",,,,"SharedDataModelResearchParticipant.ageAtLastVitalStatus",0,1,"",""
+"SharedDataModelResearchParticipant.vitalStatus","SharedDataModelResearchParticipant.vitalStatus","","","",0,1,"","","","code {[]} {[]}
+","Vital Status","Vital Status","","","","","","","","","",,,,,"",,,,"SharedDataModelResearchParticipant.vitalStatus",0,1,"",""
