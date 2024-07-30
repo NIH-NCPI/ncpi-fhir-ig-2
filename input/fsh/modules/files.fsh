@@ -47,6 +47,12 @@ Description: "Explains the relationship of this file to the file of reference"
 * #has_data_dictionary "Has data dictionary"
 * #plink-type-associated-files "Plink-type associated files"
 
+ValueSet: EDAMOntologyTerms
+Id: edam-ontology-terms
+Title: "Enumerations for the EDAM ontology"
+Description: "Enumerations for the EDAM ontology"
+* include codes from system $edam
+
 Extension: FileFormat
 Id: file-format
 Title: "The file format used"
@@ -132,5 +138,5 @@ Description: "Information about a file related to a research participant"
 * description 0..1 /*Description*/
 * description ^short = "A description of the file"
 * type 0..1 /*File Type*/
-* type from $edam (extensible) 
+* type from edam-ontology-terms (extensible) 
 * type ^short = "The type of data contained in this file."
