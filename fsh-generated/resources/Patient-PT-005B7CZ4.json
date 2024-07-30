@@ -1,0 +1,91 @@
+{
+  "resourceType": "Patient",
+  "id": "PT-005B7CZ4",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://chdgenes.org/",
+      "value": "20757"
+    },
+    {
+      "system": "http://chdgenes.org/",
+      "value": "PT_005B7CZ4"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+      "valueCode": "F"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2106-3",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "White"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "White"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2135-2",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "Hispanic or Latino"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+    }
+  ],
+  "_birthDate": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "target",
+            "valueReference": {
+              "reference": "Patient/PT-005B7CZ4"
+            }
+          },
+          {
+            "url": "targetPath",
+            "valueString": "birthDate"
+          },
+          {
+            "url": "relationship",
+            "valueCode": "after"
+          },
+          {
+            "valueDuration": {
+              "value": 2006,
+              "code": "days",
+              "system": "http://unitsofmeasure.org",
+              "unit": "d"
+            },
+            "url": "offset"
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"
+      }
+    ]
+  }
+}

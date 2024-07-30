@@ -1,0 +1,39 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncpi-person",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person",
+  "version": "0.1.0",
+  "name": "NcpiPerson",
+  "title": "NCPI Person",
+  "status": "draft",
+  "description": "Person",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Person",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Person",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Person.id",
+        "path": "Person.id",
+        "short": "Unique participant identifier",
+        "min": 1
+      },
+      {
+        "id": "Person.link.target",
+        "path": "Person.link.target",
+        "short": "The participant we are describing",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
