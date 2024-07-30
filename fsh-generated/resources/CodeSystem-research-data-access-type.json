@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ResearchDataAccessType",
+  "id": "research-data-access-type",
+  "title": "Research Data Access Type Codes",
+  "description": "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
+  "concept": [
+    {
+      "code": "open",
+      "display": "Open Access"
+    },
+    {
+      "code": "registered",
+      "display": "Registered Access"
+    },
+    {
+      "code": "controlled",
+      "display": "Controlled"
+    },
+    {
+      "code": "gsr-restricted",
+      "display": "GSR Restricted"
+    },
+    {
+      "code": "gsr-allowed",
+      "display": "GSR Allowed"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 5
+}

@@ -1,0 +1,136 @@
+{
+  "resourceType": "ResearchStudy",
+  "id": "cmg-research-study-bhcmg",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://mendelian.org/fhir",
+      "value": "BH-CMG"
+    },
+    {
+      "system": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=",
+      "value": "phs000711"
+    }
+  ],
+  "focus": [
+    {
+      "coding": [
+        {
+          "code": "D057182",
+          "system": "urn:oid:2.16.840.1.113883.6.177",
+          "display": "Mendelian Randomization Analysis"
+        },
+        {
+          "code": "D056769",
+          "system": "urn:oid:2.16.840.1.113883.6.177",
+          "display": "Alstrom Syndrome"
+        },
+        {
+          "code": "D019571",
+          "system": "urn:oid:2.16.840.1.113883.6.177",
+          "display": "Arrhythmogenic Right Ventricular Dysplasia"
+        },
+        {
+          "code": "D013576",
+          "system": "urn:oid:2.16.840.1.113883.6.177",
+          "display": "Syndactyly"
+        },
+        {
+          "code": "D019465",
+          "system": "urn:oid:2.16.840.1.113883.6.177",
+          "display": "Craniofacial Abnormalities"
+        }
+      ]
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "documentation",
+      "label": "acronym",
+      "display": "BH-CMG"
+    },
+    {
+      "type": "documentation",
+      "label": "Website",
+      "url": "https://mendeliangenomics.org/"
+    },
+    {
+      "type": "citation",
+      "citation": "National Institutes of Health (NIH) support was provided in part by a grant from the National Human Genome Research Institute and the National Heart, Lung, and Blood Institute (1U54HG006542) to Dr. David Valle for the Baylor Hopkins Center for Mendelian Genomics program. The dataset(s) used for the analyses described in this manuscript was obtained from the database of Genotype and Phenotype (dbGaP) found at http://www.ncbi.nlm.nih.gov/gap through dbGaP accession number phs000711.v7.p2."
+    },
+    {
+      "type": "citation",
+      "label": "Publication",
+      "citation": "Gonzaga-Jauregui C, Lupski JR, Gibbs RA\nHuman genome sequencing in health and disease.\nAnnu Rev Med. 2012; 63:35-61.\nPMID: 22248320"
+    },
+    {
+      "type": "citation",
+      "label": "Publication",
+      "citation": "Bamshad MJ, Shendure JA, Valle D, Hamosh A, Lupski JR, Gibbs RA, Boerwinkle E, Lifton RP, Gerstein M, Gunel M, Mane S, Nickerson DA, Centers for Mendelian Genomics\nThe Centers for Mendelian Genomics: a new large-scale initiative to identify the genes underlying rare Mendelian conditions.\nAm J Med Genet A. 2012 Jul; 158A(7):1523-5.\nPMID: 22628075"
+    },
+    {
+      "type": "citation",
+      "label": "Publication",
+      "citation": "Boone PM, Campbell IM, Baggett BC, Soens ZT, Rao MM, Hixson PM, Patel A, Bi W, Cheung SW, Lalani SR, Beaudet AL, Stankiewicz P, Shaw CA, Lupski JR\nDeletions of recessive disease genes: CNV contribution to carrier states and disease-causing alleles.\nGenome Res. 2013 Sep; 23(9):1383-94.\nPMID: 23685542"
+    },
+    {
+      "type": "citation",
+      "label": "Publication",
+      "citation": "Cheung YH, Gayden T, Campeau PM, LeDuc CA, Russo D, Nguyen VH, Guo J, Qi M, Guan Y, Albrecht S, Moroz B, Eldin KW, Lu JT, Schwartzentruber J, Malkin D, Berghuis AM, Emil S, Gibbs RA, Burk DL, Vanstone M, Lee BH, Orchard D, Boycott KM, Chung WK, Jabado N\nA recurrent PDGFRB mutation causes familial infantile myofibromatosis.\nAm J Hum Genet. 2013 Jun 06; 92(6):996-1000.\nPMID: 23731537"
+    },
+    {
+      "type": "citation",
+      "label": "Publication",
+      "citation": "Campeau PM, Kasperaviciute D, Lu JT, Burrage LC, Kim C, Hori M, Powell BR, Stewart F, Félix TM, van den Ende J, Wisniewska M, Kayserili H, Rump P, Nampoothiri S, Aftimos S, Mey A, Nair LD, Begleiter ML, De Bie I, Meenakshi G, Murray ML, Repetto GM, Golabi M, Blair E, Male A, Giuliano F, Kariminejad A, Newman WG, Bhaskar SS, Dickerson JE, Kerr B, Banka S, Giltay JC, Wieczorek D, Tostevin A, Wiszniewska J, Cheung SW, Hennekam RC, Gibbs RA, Lee BH, Sisodiya SM\nThe genetic basis of DOORS syndrome: an exome-sequencing study.\nLancet Neurol. 2014 Jan; 13(1):44-58.\nPMID: 24291220"
+    },
+    {
+      "type": "documentation",
+      "label": "AdditionalDocumentation",
+      "url": "https://app.terra.bio/#workspaces/anvil-datastorage/AnVIL_CMG_BaylorHopkins_HMB-IRB-NPU_WES"
+    },
+    {
+      "type": "documentation",
+      "label": "Grant",
+      "display": "1U54HG006542. National Human Genome Research Institute and National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA."
+    }
+  ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "1U54HG006542 National Human Genome Research Institute and National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD, USA."
+        },
+        {
+          "url": "role",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "funding-source",
+                "system": "http://hl7.org/fhir/research-study-party-role"
+              }
+            ]
+          }
+        },
+        {
+          "url": "classifier",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "nih"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party"
+    }
+  ],
+  "title": "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
+  "description": "The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.",
+  "status": "completed"
+}

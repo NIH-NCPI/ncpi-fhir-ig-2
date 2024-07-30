@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ResearchDataDateOfBirthMethod",
+  "id": "research-data-date-of-birth-method",
+  "title": "Enumerations for how DOB was constructed",
+  "description": "Enumerations for how DOB was constructed",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
+  "concept": [
+    {
+      "code": "exact",
+      "display": "Exact"
+    },
+    {
+      "code": "year-only",
+      "display": "Year Only"
+    },
+    {
+      "code": "shifted",
+      "display": "Shifted"
+    },
+    {
+      "code": "decade-only",
+      "display": "Decade Only"
+    },
+    {
+      "code": "other",
+      "display": "Other"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 5
+}

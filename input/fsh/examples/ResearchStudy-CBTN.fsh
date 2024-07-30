@@ -73,7 +73,7 @@ Description: "Brain tumors are the most common form of cancer in children aged 0
   * label = "Publication"
   * url = "https://cbtn.org/publications"
 * status = #completed
-* extension[acknowledgement].valueMarkdown = "Please cite/reference the use of dbGaP data by including the dbGaP accession phs002517.v2.p2. Additionally, use the following statement to acknowledge the submitter(s) of this study:\n\n\nThe data from this study phs002517 was made available pre-publication without embargo to support rapid and collaborative research in pediatric cancer via the NCI's Cancer Research Data Commons (https://datacommons.cancer.gov). This availability is made possible with the support of NCI's Childhood Cancer Data Initiative (grant No. 3P30CA082103-21S9) and Gabriella Miller Kids First Pediatric Research Program (X01 CA267587). Initial data generation efforts and coordination costs were supported by a number of philanthropic and industry partners with further details at cbtn.org.\n\n\n\nSuggested Acknowledgement Statement for secondary users: The results analyzed and <published or shown> here are based in whole or in part analyzing the study phs002517 and were accessed from the NCI's Cancer Research Data Commons (https://datacommons.cancer.gov)." 
+* extension[acknowledgement].valueMarkdown = """Please cite/reference the use of dbGaP data by including the dbGaP accession phs002517.v2.p2. Additionally, use the following statement to acknowledge the submitter(s) of this study:\n\n\nThe data from this study phs002517 was made available pre-publication without embargo to support rapid and collaborative research in pediatric cancer via the NCI's Cancer Research Data Commons (https://datacommons.cancer.gov). This availability is made possible with the support of NCI's Childhood Cancer Data Initiative (grant No. 3P30CA082103-21S9) and Gabriella Miller Kids First Pediatric Research Program (X01 CA267587). Initial data generation efforts and coordination costs were supported by a number of philanthropic and industry partners with further details at cbtn.org.\n\n\n\nSuggested Acknowledgement Statement for secondary users: The results analyzed and <published or shown> here are based in whole or in part analyzing the study phs002517 and were accessed from the NCI's Cancer Research Data Commons (https://datacommons.cancer.gov)."""
 * extension[research-study-associated-party][+]
   * extension[name].valueString = "Adam C. Resnick"
   * extension[role].valueCodeableConcept = http://hl7.org/fhir/research-study-party-role#primary-investigator
@@ -84,7 +84,6 @@ Description: "Brain tumors are the most common form of cancer in children aged 0
   * extension[party].valueReference = Reference(kf-research-study-personnel-role-pi)
 * extension[research-study-associated-party][+]
   * extension[name].valueString = "Jennifer Mason"
-* extension[research-study-associated-party][+]
   * extension[role].valueCodeableConcept = http://hl7.org/fhir/research-study-party-role#study-director
   * extension[party].valueReference = Reference(kf-research-study-personnel-role-op-lead)
 
