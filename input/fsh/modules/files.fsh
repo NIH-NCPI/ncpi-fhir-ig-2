@@ -6,7 +6,7 @@ Logical: CdmFile
 Id: SharedDataModelFile
 Title: "Shared Data Model for File"
 Description: "The **Shared Data Model for File**"
-* participantID 1..* reference "The participant(s) for whom this file contains data"
+* participantID 1..1 reference "The participant(s) for whom this file contains data"
 * fileExternalID 0..1 string "A related identifier of this file"
 * format 1..1 code "The file format used"
 * location 1..* List "List of locations where this data can be accessed"
@@ -22,6 +22,8 @@ Description: "The **Shared Data Model for File**"
 * relatedFile 0..1 List "Provides a reference to another file that is related to this one"
 * relatedFile.file 0..1 reference "The file to which this related file is related"
 * relatedFile.type 0..1 code "The relationship of the file to the parent file in reference"
+
+/* TODO Add Related file to metadata - AH 2024-07-30 */ 
 
 CodeSystem: HashTypeCS
 Id: example-hash-type-code-system
@@ -52,6 +54,14 @@ Description: "The file format used"
 * insert SetContext(DocumentReference)
 * value[x] only CodeableConcept
 * valueCodeableConcept from $edam (extensible)
+
+Extension: LocationAccess
+Id: location-access
+Title: "If present, only those under the specific Access Policy can access the file in this location."
+Description: "If present, only those under the specific Access Policy can access the file in this location."
+* insert SetContext(DocumentReference.content)
+* value[x] only Reference
+* valueReference ^short = "If present, only those under the specific Access Policy can access the file in this location."
 
 Extension: FileSize
 Id: file-size
@@ -95,6 +105,8 @@ Description: "Provides a list of hashes for confirming file transfers"
 * extension contains HashType named hash-type 1..1
 * extension[hash-type] ^short = "Algorithm used to calculate the hash (and size, where applicable)"
 
+/** TODO Add Related file to metadata - AH 2024-07-30 */ 
+
 Profile: NcpiFile
 Parent: DocumentReference
 Id: ncpi-file
@@ -102,23 +114,23 @@ Title: "NCPI File"
 Description: "Information about a file related to a research participant"
 * ^version = "0.0.1"
 * ^status = #draft
-* identifier 0..*
+* identifier 0..* /*File External ID*/
 * identifier ^short = "A related external file ID"
-* subject 0..1 
+* subject 0..1 /*Participant*/
 * subject ^short = "The participant(s) for whom this file contains data (i.e., ParticipantID)"
-* extension contains FileFormat named file-format 1..1
+* extension contains FileFormat named file-format 1..1 /*File Format*/
 * extension[file-format] ^short = "The file format used (EDAM is preferred)"
-* extension contains FileSize named file-size 1..1
+* content.attachment.url 1..1 /*Location uri*/
+* content.attachment.url ^short = "The URI at which this data can be accessed"
+* extension contains LocationAccess named location-access 0..* /*Location Access Policy*/
+* extension[location-access] ^short = "If present, only those under the specific Access Policy can access the file in this location."
+* extension contains FileSize named file-size 1..1 /*File Size*/
 * extension[file-size] ^short = "Indicate the size of the file in reference"
-* extension contains ContentVersion named content-version 0..1
+* extension contains HashExtension named hash 0..* /*Hash (contains type and value)*/
+* extension contains ContentVersion named content-version 0..1 /*Content Version*/
 * extension[content-version] ^short = "The version of the content in the file"
-* extension contains HashExtension named hash 0..*
-* description 0..1 
+* description 0..1 /*Description*/
 * description ^short = "A description of the file"
-* type 0..1
+* type 0..1 /*File Type*/
 * type from $edam (extensible) 
 * type ^short = "The type of data contained in this file."
-
-/*
-CodeSystem for EDAM-- link it as an external code system?
-*/

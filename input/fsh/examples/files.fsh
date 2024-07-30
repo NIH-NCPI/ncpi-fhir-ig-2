@@ -8,8 +8,8 @@ Description: "Use case of file information from CBTN"
 * description = "Annotated Variant Call"
 * type = $edam#operation_3227 "Variant calling"
 * status = #current
-* content[0].attachment.url = "s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz"
-/** content[0].profile = $ncpi-data-access-type#controlled "Controlled"*/
+* content.attachment.url = "s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz"
+* extension[location-access].valueReference = Reference(NcpiResearchAccessPolicy.accessType)
 * extension[file-format].valueCodeableConcept.coding = $edam#format_3016 "VCF"
 * extension[file-size]
   * valueQuantity
