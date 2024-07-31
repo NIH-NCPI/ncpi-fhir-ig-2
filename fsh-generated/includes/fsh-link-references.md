@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [AccessPolicy]: StructureDefinition-access-policy.html
 [AccessPolicyDescription]: StructureDefinition-access-policy-description.html
 [AccessType]: StructureDefinition-access-type.html
@@ -6,6 +7,11 @@
 [cbtn-family-relationship-son]: Observation-cbtn-family-relationship-son.html
 [cbtn-family-role-mother]: Group-cbtn-family-role-mother.html
 [cbtn-family-role-son]: Group-cbtn-family-role-son.html
+=======
+[AccessPolicyDescription]: StructureDefinition-access-policy-description.html
+[AccessType]: StructureDefinition-access-type.html
+[AgeAtLastVitalStatus]: StructureDefinition-research-age-at-last-vital-status.html
+>>>>>>> 7d5b21b (Actual products of the sushi run)
 [cmg-research-study-bhcmg]: ResearchStudy-cmg-research-study-bhcmg.html
 [kf-gru-dac-consent]: Consent-kf-gru-dac-consent.html
 [kf-gru-dbgap-consent]: Consent-kf-gru-dbgap-consent.html
@@ -18,12 +24,16 @@
 [kf-research-study-organization-chop]: Organization-kf-research-study-organization-chop.html
 [CollectionTypeVS]: ValueSet-collection-type-vs.html
 [CollectionType]: CodeSystem-collection-type.html
+<<<<<<< HEAD
 [Consanguinity]: StructureDefinition-consanguinity.html
 [ConsanguinityAssertionVS]: ValueSet-consanguinity-assertion-vs.html
+=======
+>>>>>>> 7d5b21b (Actual products of the sushi run)
 [kf-research-study-personnel-role-pi]: PractitionerRole-kf-research-study-personnel-role-pi.html
 [kf-research-study-personnel-role-pi-x01]: PractitionerRole-kf-research-study-personnel-role-pi-x01.html
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
 [ResearchDataDateOfBirthMethod]: CodeSystem-research-data-date-of-birth-method.html
+<<<<<<< HEAD
 [cbtn-example-participantstudy]: ResearchSubject-cbtn-example-participantstudy.html
 [emerge-example-participantstudy]: ResearchSubject-emerge-example-participantstudy.html
 [pcgc-example-participantstudy]: ResearchSubject-pcgc-example-participantstudy.html
@@ -39,12 +49,15 @@
 [FamilyStudyFocus]: StructureDefinition-family-study-focus.html
 [FamilyStudy]: StructureDefinition-family-study.html
 [FamilyType]: StructureDefinition-family-type.html
+=======
+>>>>>>> 7d5b21b (Actual products of the sushi run)
 [kf-gsr-allowed-access]: Consent-kf-gsr-allowed-access.html
 [hmb-irb-npu-consent]: Consent-hmb-irb-npu-consent.html
 [hmb-npu-consent]: Consent-hmb-npu-consent.html
 [ncpi-research-collection-kfx01]: List-ncpi-research-collection-kfx01.html
 [Label]: StructureDefinition-label-extension.html
 [MeshTerms]: ValueSet-mesh-terms.html
+<<<<<<< HEAD
 [AP-GRU]: Consent-AP-GRU.html
 [AP-HMB]: Consent-AP-HMB.html
 [SD-BHJXBDQK]: ResearchStudy-SD-BHJXBDQK.html
@@ -56,6 +69,10 @@
 [NcpiParticipant]: StructureDefinition-ncpi-participant.html
 [NcpiStudyParticipant]: StructureDefinition-ncpi-Study-Participant.html
 [NcpiPerson]: StructureDefinition-ncpi-person.html
+=======
+[Ncpi]: CodeSystem-ncpi.html
+[NcpiParticipant]: StructureDefinition-ncpi-patient.html
+>>>>>>> 7d5b21b (Actual products of the sushi run)
 [NcpiResearchAccessPolicy]: StructureDefinition-ncpi-research-access-policy.html
 [NcpiResearchCollection]: StructureDefinition-ncpi-research-collection.html
 [NcpiResearchStudy]: StructureDefinition-ncpi-research-study.html
@@ -81,6 +98,7 @@
 [ResearchStudySubjectConsent]: StructureDefinition-research-study-subject-consent.html
 [ResearchDiseaseUseLimitation]: StructureDefinition-research-disease-use-limitation.html
 [ResearchWebLink]: StructureDefinition-research-web-Link.html
+<<<<<<< HEAD
 [NcpiFamilyRelationship]: StructureDefinition-ncpi-family-relationship.html
 [NcpiFamilyRole]: StructureDefinition-ncpi-family-role.html
 [CdmFamilyRole]: StructureDefinition-SharedDataModelFamilyRole.html
@@ -89,6 +107,10 @@
 [CdmResearchCollection]: StructureDefinition-SharedDataModelResearchCollection.html
 [CdmResearchDataAccessPolicy]: StructureDefinition-SharedDataModelResearchDataAccessPolicy.html
 [CdmStudyParticipant]: StructureDefinition-SharedDataModelStudyParticipant.html
+=======
+[CdmResearchCollection]: StructureDefinition-SharedDataModelResearchCollection.html
+[CdmResearchDataAccessPolicy]: StructureDefinition-SharedDataModelResearchDataAccessPolicy.html
+>>>>>>> 7d5b21b (Actual products of the sushi run)
 [CdmResearchParticipant]: StructureDefinition-SharedDataModelResearchParticipant.html
 [CdmPerson]: StructureDefinition-SharedDataModelPerson.html
 [CdmResearchStudy]: StructureDefinition-SharedDataModelResearchStudy.html

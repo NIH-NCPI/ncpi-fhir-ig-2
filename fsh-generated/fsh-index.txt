@@ -1,5 +1,6 @@
 Output File                                                       Name                                                Type        FSH File                             Lines
 CodeSystem-collection-type.json                                   CollectionType                                      CodeSystem  modules/research-collection.fsh      2 - 11
+<<<<<<< HEAD
 CodeSystem-ncpi-family-types.json                                 NcpiFamilyTypes                                     CodeSystem  modules/family.fsh                   24 - 39
 CodeSystem-ncpi.json                                              Ncpi                                                CodeSystem  terminologies/ncpi.fsh               6 - 34
 CodeSystem-research-data-access-code.json                         ResearchDataAccessCode                              CodeSystem  modules/research-accesss-policy.fsh  6 - 22
@@ -82,6 +83,54 @@ StructureDefinition-research-age-at-last-vital-status.json        AgeAtLastVital
 StructureDefinition-research-date-of-birth-method.json            ResearchDateOfBirthMethod                           Extension   modules/participant.fsh              45 - 51
 StructureDefinition-research-disease-use-limitation.json          ResearchDiseaseUseLimitation                        Extension   modules/research-accesss-policy.fsh  67 - 73
 StructureDefinition-research-population.json                      ResearchPopulation                                  Extension   modules/participant.fsh              37 - 42
+=======
+CodeSystem-ncpi.json                                              Ncpi                                                CodeSystem  terminologies/ncpi.fsh               6 - 34
+CodeSystem-research-data-access-code.json                         ResearchDataAccessCode                              CodeSystem  modules/research-accesss-policy.fsh  6 - 22
+CodeSystem-research-data-access-type.json                         ResearchDataAccessType                              CodeSystem  modules/research-accesss-policy.fsh  33 - 44
+CodeSystem-research-data-date-of-birth-method.json                ResearchDataDateOfBirthMethod                       CodeSystem  modules/participant.fsh              26 - 37
+CodeSystem-study-name-type.json                                   StudyNameType                                       CodeSystem  modules/research-study.fsh           99 - 110
+CodeSystem-study-personnel-role.json                              StudyPersonnelRole                                  CodeSystem  modules/research-study.fsh           120 - 129
+Consent-hmb-irb-npu-consent.json                                  hmb-irb-npu-consent                                 Instance    examples/ResearchStudy-BH-CMG.fsh    117 - 133
+Consent-hmb-npu-consent.json                                      hmb-npu-consent                                     Instance    examples/ResearchStudy-BH-CMG.fsh    71 - 86
+Consent-kf-gru-dac-consent.json                                   kf-gru-dac-consent                                  Instance    examples/ResearchStudy-CBTN.fsh      106 - 119
+Consent-kf-gru-dbgap-consent.json                                 kf-gru-dbgap-consent                                Instance    examples/ResearchStudy-CBTN.fsh      136 - 149
+Consent-kf-gsr-allowed-access.json                                kf-gsr-allowed-access                               Instance    examples/ResearchStudy-CBTN.fsh      166 - 177
+Consent-kf-registered-allowed-access.json                         kf-registered-allowed-access                        Instance    examples/ResearchStudy-CBTN.fsh      194 - 205
+Group-cmg-research-study-bhcmg-consent-group-hmb-npu.json         cmg-research-study-bhcmg-consent-group-hmb-npu      Instance    examples/ResearchStudy-BH-CMG.fsh    89 - 100
+Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu.json     cmg-research-study-bhcmg-consent-group-irb-hmb-npu  Instance    examples/ResearchStudy-BH-CMG.fsh    135 - 146
+Group-kf-research-study-cbtn-participants.json                    kf-research-study-cbtn-participants                 Instance    examples/ResearchStudy-CBTN.fsh      93 - 104
+List-ncpi-research-collection-cmg.json                            ncpi-research-collection-cmg                        Instance    examples/ResearchStudy-BH-CMG.fsh    163 - 175
+List-ncpi-research-collection-kfx01.json                          ncpi-research-collection-kfx01                      Instance    examples/ResearchStudy-CBTN.fsh      237 - 247
+List-ncpi-research-collection-pbta.json                           ncpi-research-collection-pbta                       Instance    examples/ResearchStudy-CBTN.fsh      223 - 235
+Organization-kf-research-study-organization-chop.json             kf-research-study-organization-chop                 Instance    examples/ResearchStudy-CBTN.fsh      4 - 11
+PractitionerRole-kf-research-study-personnel-role-op-lead.json    kf-research-study-personnel-role-op-lead            Instance    examples/ResearchStudy-CBTN.fsh      29 - 35
+PractitionerRole-kf-research-study-personnel-role-pi-x01.json     kf-research-study-personnel-role-pi-x01             Instance    examples/ResearchStudy-CBTN.fsh      13 - 19
+PractitionerRole-kf-research-study-personnel-role-pi.json         kf-research-study-personnel-role-pi                 Instance    examples/ResearchStudy-CBTN.fsh      21 - 27
+ResearchStudy-cmg-research-study-bhcmg.json                       cmg-research-study-bhcmg                            Instance    examples/ResearchStudy-BH-CMG.fsh    16 - 67
+ResearchStudy-cmg-research-study-subject-cmg-hmb-npu.json         cmg-research-study-subject-cmg-hmb-npu              Instance    examples/ResearchStudy-BH-CMG.fsh    102 - 115
+ResearchStudy-cmg-research-study-subject-cmg-irb-hmb-npu.json     cmg-research-study-subject-cmg-irb-hmb-npu          Instance    examples/ResearchStudy-BH-CMG.fsh    148 - 161
+ResearchStudy-kf-research-study-cbtn.json                         kf-research-study-cbtn                              Instance    examples/ResearchStudy-CBTN.fsh      37 - 89
+ResearchStudy-kf-research-study-subject-gru-dac.json              kf-research-study-subject-gru-dac                   Instance    examples/ResearchStudy-CBTN.fsh      121 - 134
+ResearchStudy-kf-research-study-subject-gru-dbgap.json            kf-research-study-subject-gru-dbgap                 Instance    examples/ResearchStudy-CBTN.fsh      151 - 164
+ResearchStudy-kf-research-study-subject-gsr-allowed.json          kf-research-study-subject-gsr-allowed               Instance    examples/ResearchStudy-CBTN.fsh      179 - 192
+ResearchStudy-kf-research-study-subject-registered.json           kf-research-study-subject-registered                Instance    examples/ResearchStudy-CBTN.fsh      207 - 220
+StructureDefinition-SharedDataModelPerson.json                    CdmPerson                                           Logical     modules/participant.fsh              18 - 23
+StructureDefinition-SharedDataModelResearchCollection.json        CdmResearchCollection                               Logical     modules/research-collection.fsh      39 - 48
+StructureDefinition-SharedDataModelResearchDataAccessPolicy.json  CdmResearchDataAccessPolicy                         Logical     modules/research-accesss-policy.fsh  114 - 121
+StructureDefinition-SharedDataModelResearchParticipant.json       CdmResearchParticipant                              Logical     modules/participant.fsh              3 - 16
+StructureDefinition-SharedDataModelResearchStudy.json             CdmResearchStudy                                    Logical     modules/research-study.fsh           138 - 168
+StructureDefinition-access-policy-description.json                AccessPolicyDescription                             Extension   modules/research-accesss-policy.fsh  84 - 91
+StructureDefinition-access-type.json                              AccessType                                          Extension   modules/research-accesss-policy.fsh  76 - 82
+StructureDefinition-label-extension.json                          Label                                               Extension   extensions/Label.fsh                 1 - 13
+StructureDefinition-ncpi-patient.json                             NcpiParticipant                                     Profile     examples/participant.fsh             3 - 22
+StructureDefinition-ncpi-research-access-policy.json              NcpiResearchAccessPolicy                            Profile     modules/research-accesss-policy.fsh  93 - 111
+StructureDefinition-ncpi-research-collection.json                 NcpiResearchCollection                              Profile     modules/research-collection.fsh      20 - 37
+StructureDefinition-ncpi-research-study.json                      NcpiResearchStudy                                   Profile     modules/research-study.fsh           60 - 86
+StructureDefinition-research-age-at-last-vital-status.json        AgeAtLastVitalStatus                                Extension   modules/participant.fsh              61 - 67
+StructureDefinition-research-date-of-birth-method.json            ResearchDateOfBirthMethod                           Extension   modules/participant.fsh              53 - 59
+StructureDefinition-research-disease-use-limitation.json          ResearchDiseaseUseLimitation                        Extension   modules/research-accesss-policy.fsh  68 - 74
+StructureDefinition-research-population.json                      ResearchPopulation                                  Extension   modules/participant.fsh              45 - 50
+>>>>>>> 7d5b21b (Actual products of the sushi run)
 StructureDefinition-research-study-acknowledgement.json           ResearchStudyAcknowledgement                        Extension   modules/research-study.fsh           22 - 29
 StructureDefinition-research-study-associated-party.json          ResearchStudyAssociatedParty                        Extension   modules/research-study.fsh           31 - 57
 StructureDefinition-research-study-design.json                    ResearchStudyDesign                                 Extension   modules/research-study.fsh           7 - 13
@@ -91,10 +140,17 @@ StructureDefinition-research-study-subject-consent.json           ResearchStudyS
 StructureDefinition-research-study-subject.json                   ResearchStudySubject                                Profile     modules/research-study-subject.fsh   7 - 15
 StructureDefinition-research-web-Link.json                        ResearchWebLink                                     Extension   extensions/ResearchWebLink.fsh       2 - 9
 ValueSet-collection-type-vs.json                                  CollectionTypeVS                                    ValueSet    modules/research-collection.fsh      13 - 18
+<<<<<<< HEAD
 ValueSet-consanguinity-assertion-vs.json                          ConsanguinityAssertionVS                            ValueSet    modules/family.fsh                   64 - 72
 ValueSet-mesh-terms.json                                          MeshTerms                                           ValueSet    modules/research-accesss-policy.fsh  54 - 60
 ValueSet-research-data-access-code-vs.json                        ResearchDataAccessCodeVS                            ValueSet    modules/research-accesss-policy.fsh  25 - 30
 ValueSet-research-data-access-type-vs.json                        ResearchDataAccessTypeVS                            ValueSet    modules/research-accesss-policy.fsh  47 - 52
 ValueSet-research-data-date-of-birth-method-vs.json               ResearchDataDateOfBirthMethodVS                     ValueSet    modules/participant.fsh              31 - 35
+=======
+ValueSet-mesh-terms.json                                          MeshTerms                                           ValueSet    modules/research-accesss-policy.fsh  54 - 61
+ValueSet-research-data-access-code-vs.json                        ResearchDataAccessCodeVS                            ValueSet    modules/research-accesss-policy.fsh  25 - 30
+ValueSet-research-data-access-type-vs.json                        ResearchDataAccessTypeVS                            ValueSet    modules/research-accesss-policy.fsh  47 - 52
+ValueSet-research-data-date-of-birth-method-vs.json               ResearchDataDateOfBirthMethodVS                     ValueSet    modules/participant.fsh              39 - 43
+>>>>>>> 7d5b21b (Actual products of the sushi run)
 ValueSet-study-name-type-vs.json                                  StudyNameTypeVS                                     ValueSet    modules/research-study.fsh           113 - 118
 ValueSet-study-personnel-role-vs.json                             StudyPersonnelRoleVS                                ValueSet    modules/research-study.fsh           131 - 136
