@@ -8,6 +8,14 @@
     "endLine": 11
   },
   {
+    "outputFile": "CodeSystem-ncpi-family-types.json",
+    "fshName": "NcpiFamilyTypes",
+    "fshType": "CodeSystem",
+    "fshFile": "modules/family.fsh",
+    "startLine": 24,
+    "endLine": 38
+  },
+  {
     "outputFile": "CodeSystem-ncpi.json",
     "fshName": "Ncpi",
     "fshType": "CodeSystem",
@@ -120,6 +128,30 @@
     "endLine": 204
   },
   {
+    "outputFile": "Group-cbtn-family-role-mother.json",
+    "fshName": "cbtn-family-role-mother",
+    "fshType": "Instance",
+    "fshFile": "examples/family.fsh",
+    "startLine": 30,
+    "endLine": 39
+  },
+  {
+    "outputFile": "Group-cbtn-family-role-son.json",
+    "fshName": "cbtn-family-role-son",
+    "fshType": "Instance",
+    "fshFile": "examples/family.fsh",
+    "startLine": 57,
+    "endLine": 66
+  },
+  {
+    "outputFile": "Group-cbtn-family-study.json",
+    "fshName": "FM_00C8Y7DG",
+    "fshType": "Instance",
+    "fshFile": "examples/family.fsh",
+    "startLine": 13,
+    "endLine": 28
+  },
+  {
     "outputFile": "Group-cmg-research-study-bhcmg-consent-group-hmb-npu.json",
     "fshName": "cmg-research-study-bhcmg-consent-group-hmb-npu",
     "fshType": "Instance",
@@ -166,6 +198,22 @@
     "fshFile": "examples/ResearchStudy-CBTN.fsh",
     "startLine": 222,
     "endLine": 234
+  },
+  {
+    "outputFile": "Observation-cbtn-family-relationship-mother.json",
+    "fshName": "cbtn-family-relationship-mother",
+    "fshType": "Instance",
+    "fshFile": "examples/family.fsh",
+    "startLine": 41,
+    "endLine": 50
+  },
+  {
+    "outputFile": "Observation-cbtn-family-relationship-son.json",
+    "fshName": "cbtn-family-relationship-son",
+    "fshType": "Instance",
+    "fshFile": "examples/family.fsh",
+    "startLine": 68,
+    "endLine": 77
   },
   {
     "outputFile": "Organization-kf-research-study-organization-chop.json",
@@ -360,6 +408,30 @@
     "endLine": 216
   },
   {
+    "outputFile": "StructureDefinition-SharedDataModelFamilyRelationship.json",
+    "fshName": "CdmFamilyRelationship",
+    "fshType": "Logical",
+    "fshFile": "modules/family.fsh",
+    "startLine": 153,
+    "endLine": 159
+  },
+  {
+    "outputFile": "StructureDefinition-SharedDataModelFamilyRole.json",
+    "fshName": "CdmFamilyRole",
+    "fshType": "Logical",
+    "fshFile": "modules/family.fsh",
+    "startLine": 110,
+    "endLine": 116
+  },
+  {
+    "outputFile": "StructureDefinition-SharedDataModelFamilyStudy.json",
+    "fshName": "CdmFamilyStudy",
+    "fshType": "Logical",
+    "fshFile": "modules/family.fsh",
+    "startLine": 13,
+    "endLine": 22
+  },
+  {
     "outputFile": "StructureDefinition-SharedDataModelPerson.json",
     "fshName": "CdmPerson",
     "fshType": "Logical",
@@ -432,6 +504,54 @@
     "endLine": 81
   },
   {
+    "outputFile": "StructureDefinition-consanguinity.json",
+    "fshName": "Consanguinity",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 73,
+    "endLine": 79
+  },
+  {
+    "outputFile": "StructureDefinition-desctiption.json",
+    "fshName": "Description",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 56,
+    "endLine": 61
+  },
+  {
+    "outputFile": "StructureDefinition-family-role.json",
+    "fshName": "FamilyRole",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 127,
+    "endLine": 133
+  },
+  {
+    "outputFile": "StructureDefinition-family-study-focus.json",
+    "fshName": "FamilyStudyFocus",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 81,
+    "endLine": 86
+  },
+  {
+    "outputFile": "StructureDefinition-family-study.json",
+    "fshName": "FamilyStudy",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 118,
+    "endLine": 125
+  },
+  {
+    "outputFile": "StructureDefinition-family-type.json",
+    "fshName": "FamilyType",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 48,
+    "endLine": 54
+  },
+  {
     "outputFile": "StructureDefinition-label-extension.json",
     "fshName": "Label",
     "fshType": "Extension",
@@ -446,6 +566,30 @@
     "fshFile": "modules/participant.fsh",
     "startLine": 133,
     "endLine": 145
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-family-relationship.json",
+    "fshName": "NcpiFamilyRelationship",
+    "fshType": "Profile",
+    "fshFile": "modules/family.fsh",
+    "startLine": 161,
+    "endLine": 173
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-family-role.json",
+    "fshName": "NcpiFamilyRole",
+    "fshType": "Profile",
+    "fshFile": "modules/family.fsh",
+    "startLine": 135,
+    "endLine": 148
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-family-study.json",
+    "fshName": "NcpiFamilyStudy",
+    "fshType": "Profile",
+    "fshFile": "modules/family.fsh",
+    "startLine": 88,
+    "endLine": 106
   },
   {
     "outputFile": "StructureDefinition-ncpi-participant.json",
@@ -592,12 +736,28 @@
     "endLine": 18
   },
   {
+    "outputFile": "ValueSet-consanguinity-assertion-vs.json",
+    "fshName": "ConsanguinityAssertionVS",
+    "fshType": "ValueSet",
+    "fshFile": "modules/family.fsh",
+    "startLine": 63,
+    "endLine": 71
+  },
+  {
     "outputFile": "ValueSet-mesh-terms.json",
     "fshName": "MeshTerms",
     "fshType": "ValueSet",
     "fshFile": "modules/research-accesss-policy.fsh",
     "startLine": 54,
     "endLine": 60
+  },
+  {
+    "outputFile": "ValueSet-ncpi-family-types-vs.json",
+    "fshName": "NcpiFamilyTypesVS",
+    "fshType": "ValueSet",
+    "fshFile": "modules/family.fsh",
+    "startLine": 40,
+    "endLine": 46
   },
   {
     "outputFile": "ValueSet-research-data-access-code-vs.json",

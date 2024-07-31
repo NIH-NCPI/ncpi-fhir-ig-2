@@ -71,6 +71,38 @@
       },
       {
         "reference": {
+          "reference": "Observation/cbtn-family-relationship-mother"
+        },
+        "name": "An example family relationship based on data from CBTN",
+        "description": "An example family relationship based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
+      },
+      {
+        "reference": {
+          "reference": "Observation/cbtn-family-relationship-son"
+        },
+        "name": "An example family relationship based on data from CBTN",
+        "description": "An example family relationship based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
+      },
+      {
+        "reference": {
+          "reference": "Group/cbtn-family-role-mother"
+        },
+        "name": "An example family role based on data from CBTN",
+        "description": "An example family role based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+      },
+      {
+        "reference": {
+          "reference": "Group/cbtn-family-role-son"
+        },
+        "name": "An example family role based on data from CBTN",
+        "description": "An example family role based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+      },
+      {
+        "reference": {
           "reference": "ResearchStudy/cmg-research-study-bhcmg"
         },
         "name": "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
@@ -167,6 +199,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/consanguinity"
+        },
+        "name": "Consanguinity Extension",
+        "description": "Extension containing Consanguinity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/consanguinity-assertion-vs"
+        },
+        "name": "Consanguinity Value Codes",
+        "description": "List of codes indicates the level of known consanguinity (blood relation) within a family study.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "PractitionerRole/kf-research-study-personnel-role-pi"
         },
         "name": "dbGaP PI",
@@ -223,6 +271,14 @@
       },
       {
         "reference": {
+          "reference": "Group/cbtn-family-study"
+        },
+        "name": "Example patients based on data from CBTN",
+        "description": "Example patients based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-study"
+      },
+      {
+        "reference": {
           "reference": "Patient/PT-KZG2CZ95"
         },
         "name": "Example patients based on data from CBTN",
@@ -268,6 +324,54 @@
         "name": "Example patients based on data from PCGC",
         "description": "Example patients based on data from PCGC",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/desctiption"
+        },
+        "name": "Family Study Description",
+        "description": "Free text describing the family study, such as potential inheritance or details about consanguinity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/family-role"
+        },
+        "name": "Family Study Focus",
+        "description": "Extension containing Family Role",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/family-study-focus"
+        },
+        "name": "Family Study Focus Extension",
+        "description": "Extension containing Family Study Focus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/family-study"
+        },
+        "name": "Family Study Reference",
+        "description": "Extension containing Family Study Reference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/family-type"
+        },
+        "name": "Family Type Extension",
+        "description": "Extension containing Family Type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ncpi-family-types-vs"
+        },
+        "name": "Family Types Codes",
+        "description": "A value set with all codes used for the expected family types.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -356,6 +460,22 @@
         "name": "Mock study based on kf-research-study-subject-gsr-allowed",
         "description": "Genomic Summary Results (GSR) Allowed Access",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-family-study"
+        },
+        "name": "NCPI Family Study",
+        "description": "Family Study",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ncpi-family-types"
+        },
+        "name": "NCPI Family Types CodeSystem",
+        "description": "CodeSystem for Types of Families",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -587,6 +707,46 @@
         },
         "name": "Research Web Link",
         "description": "A URL pointing to a either a research study's website, an online document or other research related site or document.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-family-relationship"
+        },
+        "name": "Shared Data Model for Family Relationship",
+        "description": "Shared Data Model for Family Relationship",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-family-role"
+        },
+        "name": "Shared Data Model for Family Role",
+        "description": "Shared Data Model for Family Role",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFamilyRole"
+        },
+        "name": "Shared Data Model for Family Role",
+        "description": "The **Shared Data Model for Family Role**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFamilyStudy"
+        },
+        "name": "Shared Data Model for Family Study",
+        "description": "The **Shared Data Model for Family Study**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
+        },
+        "name": "Shared Data Model for Family Study",
+        "description": "The **Shared Data Model for Family Study**",
         "exampleBoolean": false
       },
       {

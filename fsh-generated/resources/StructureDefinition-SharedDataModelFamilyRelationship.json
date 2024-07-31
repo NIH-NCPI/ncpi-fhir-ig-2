@@ -1,0 +1,64 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SharedDataModelFamilyRelationship",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRelationship",
+  "name": "CdmFamilyRelationship",
+  "title": "Shared Data Model for Family Study",
+  "status": "draft",
+  "description": "The **Shared Data Model for Family Study**",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRelationship",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SharedDataModelFamilyRelationship",
+        "path": "SharedDataModelFamilyRelationship",
+        "short": "Shared Data Model for Family Study",
+        "definition": "The **Shared Data Model for Family Study**"
+      },
+      {
+        "id": "SharedDataModelFamilyRelationship.subject",
+        "path": "SharedDataModelFamilyRelationship.subject",
+        "short": "The participant we are describing",
+        "definition": "The participant we are describing",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFamilyRelationship.target",
+        "path": "SharedDataModelFamilyRelationship.target",
+        "short": "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'",
+        "definition": "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFamilyRelationship.relationship",
+        "path": "SharedDataModelFamilyRelationship.relationship",
+        "short": "The relationship between the subject and the target.",
+        "definition": "The relationship between the subject and the target.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      }
+    ]
+  }
+}
