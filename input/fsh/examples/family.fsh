@@ -1,6 +1,6 @@
 /*
 
-CBTN, PCGC, and eMERGE examples for:
+Examples for:
 * NcpiFamilyStudy
 * NcpiFamilyRole
 * NcpiFamilyRelationship
@@ -10,7 +10,7 @@ CBTN, PCGC, and eMERGE examples for:
 
 // Example 1
 
-Instance: FM_00C8Y7DG
+Instance: FM-00C8Y7DG
 InstanceOf: NcpiFamilyStudy
 Title: "Example patients based on data from CBTN"
 Usage: #example
@@ -18,7 +18,7 @@ Description: "Example patients based on data from CBTN."
 * id = "cbtn-family-study"
 * identifier[0]
   * system = "https://cbtn.org/"
-  * value = "FM_00C8Y7DG"
+  * value = "FM-00C8Y7DG"
 * type = #person // Required by Group with required VS
 * actual = true // Required by Group
 
@@ -33,7 +33,7 @@ Title: "An example family role based on data from CBTN"
 Usage: #example
 Description: "An example family role based on data from CBTN."
 * member.entity = Reference(PT-KZG2CZ95)
-* extension[family-study].valueReference = Reference(FM_00C8Y7DG)
+* extension[family-study].valueReference = Reference(FM-00C8Y7DG)
 * extension[family-role].valueCodeableConcept = $family-role-code#MTH "mother"
 * type = #person // Required by Group with required VS
 * actual = true // Required by Group
@@ -45,7 +45,6 @@ Usage: #example
 Description: "An example family relationship based on data from CBTN."
 * subject = Reference(PT-KZG2CZ95)
 * focus = Reference(PT-005B7CZ4)
-// TODO correct use of family role vs family relationship codesystems
 * code = $family-role-code#MTH "mother"
 * status = #registered
 
@@ -60,7 +59,7 @@ Title: "An example family role based on data from CBTN"
 Usage: #example
 Description: "An example family role based on data from CBTN."
 * member.entity = Reference(PT-005B7CZ4)
-* extension[family-study].valueReference = Reference(FM_00C8Y7DG)
+* extension[family-study].valueReference = Reference(FM-00C8Y7DG)
 * extension[family-role].valueCodeableConcept = $family-role-code#SON "natural son"
 * type = #person // Required by Group with required VS
 * actual = true // Required by Group
@@ -70,8 +69,7 @@ InstanceOf: NcpiFamilyRelationship
 Title: "An example family relationship based on data from CBTN"
 Usage: #example
 Description: "An example family relationship based on data from CBTN."
-* subject = Reference(PT_005B7CZ4)
+* subject = Reference(PT-005B7CZ4)
 * focus = Reference(PT-KZG2CZ95)
-// TODO correct use of family role vs family relationship codesystems
 * code = $family-role-code#SON "natural son"
 * status = #registered

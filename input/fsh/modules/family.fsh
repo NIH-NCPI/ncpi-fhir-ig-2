@@ -2,9 +2,9 @@
 Family Module
 
 Logical models, profiles, extensions and valuesets for:
-* Family Study
-* Family Role
-* Family Relationships
+* NcpiFamilyStudy
+* NcpiFamilyRole
+* NcpiFamilyRelationship
 
 */ 
 
@@ -170,4 +170,4 @@ Description: "Shared Data Model for Family Relationship"
 * focus 1..1 
 * focus only Reference(NcpiParticipant)
 * code ^short = "The relationship between the subject and the target."
-* code from research-data-date-of-birth-method-vs (extensible)
+* code from $ncpi-family-member (extensible)
