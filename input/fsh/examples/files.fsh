@@ -7,9 +7,11 @@ Description: "Use case of file information from CBTN"
 * subject = Reference(GF_6BAD9S7D)
 * description = "Annotated Variant Call"
 * type = $edam#operation_3227 "Variant calling"
+* extension[content-version].valueString = "V1"
 * status = #current
-* content.attachment.url = "s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz"
-* extension[location-access].valueReference = Reference(NcpiResearchAccessPolicy.accessType)
+* content[+]
+  * attachment.url = "s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz"
+  * extension[location-access].valueReference = Reference(kf-gru-dac-consent)
 * extension[file-format].valueCodeableConcept.coding = $edam#format_3016 "VCF"
 * extension[file-size]
   * valueQuantity

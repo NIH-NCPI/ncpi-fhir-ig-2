@@ -105,7 +105,7 @@ Extension: HashExtension
 Id: hash-extension
 Title: "Provides a list of hashes for confirming file transfers"
 Description: "Provides a list of hashes for confirming file transfers"
-* insert SetContext(List)
+* insert SetContext(DocumentReference)
 * extension contains HashValue named hash-value 1..1
 * extension[hash-value] ^short = "Value of hashing the file"
 * extension contains HashType named hash-type 1..1
