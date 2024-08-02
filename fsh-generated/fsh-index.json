@@ -360,6 +360,22 @@
     "endLine": 216
   },
   {
+    "outputFile": "StructureDefinition-SharedDataModelAliquot.json",
+    "fshName": "CmdAliquot",
+    "fshType": "Logical",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 56,
+    "endLine": 64
+  },
+  {
+    "outputFile": "StructureDefinition-SharedDataModelBiospecimenCollection.json",
+    "fshName": "CdmBiospecimenCollection",
+    "fshType": "Logical",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 3,
+    "endLine": 13
+  },
+  {
     "outputFile": "StructureDefinition-SharedDataModelPerson.json",
     "fshName": "CdmPerson",
     "fshType": "Logical",
@@ -400,6 +416,14 @@
     "endLine": 168
   },
   {
+    "outputFile": "StructureDefinition-SharedDataModelSample.json",
+    "fshName": "CdmSample",
+    "fshType": "Logical",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 33,
+    "endLine": 44
+  },
+  {
     "outputFile": "StructureDefinition-SharedDataModelStudyParticipant.json",
     "fshName": "CdmStudyParticipant",
     "fshType": "Logical",
@@ -432,6 +456,38 @@
     "endLine": 81
   },
   {
+    "outputFile": "StructureDefinition-aliquot-availability.json",
+    "fshName": "AliquotAvailability",
+    "fshType": "Extension",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 66,
+    "endLine": 71
+  },
+  {
+    "outputFile": "StructureDefinition-aliquot-concentration.json",
+    "fshName": "AliquotConcentration",
+    "fshType": "Extension",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 74,
+    "endLine": 80
+  },
+  {
+    "outputFile": "StructureDefinition-biospecimen-laterality.json",
+    "fshName": "BiospecimenLaterality",
+    "fshType": "Extension",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 23,
+    "endLine": 28
+  },
+  {
+    "outputFile": "StructureDefinition-biospecimen-spatial.json",
+    "fshName": "BiospecimenSpatial",
+    "fshType": "Extension",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 15,
+    "endLine": 20
+  },
+  {
     "outputFile": "StructureDefinition-label-extension.json",
     "fshName": "Label",
     "fshType": "Extension",
@@ -446,6 +502,14 @@
     "fshFile": "modules/participant.fsh",
     "startLine": 133,
     "endLine": 145
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-biospecimen.json",
+    "fshName": "NCPIBiospecimen",
+    "fshType": "Profile",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 84,
+    "endLine": 104
   },
   {
     "outputFile": "StructureDefinition-ncpi-participant.json",

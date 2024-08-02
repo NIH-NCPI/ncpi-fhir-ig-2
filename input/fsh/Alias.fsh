@@ -18,3 +18,5 @@ Alias: $ncpi-dob-method = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/r
 
 Alias: $ncit = http://purl.obolibrary.org/obo/ncit.owl
 Alias: $ucum = http://unitsofmeasure.org
+
+Alias: $spec = https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html

@@ -2,6 +2,7 @@
 [AccessPolicyDescription]: StructureDefinition-access-policy-description.html
 [AccessType]: StructureDefinition-access-type.html
 [AgeAtLastVitalStatus]: StructureDefinition-research-age-at-last-vital-status.html
+[AliquotAvailability]: StructureDefinition-aliquot-availability.html
 [cmg-research-study-bhcmg]: ResearchStudy-cmg-research-study-bhcmg.html
 [kf-gru-dac-consent]: Consent-kf-gru-dac-consent.html
 [kf-gru-dbgap-consent]: Consent-kf-gru-dbgap-consent.html
@@ -14,6 +15,7 @@
 [kf-research-study-organization-chop]: Organization-kf-research-study-organization-chop.html
 [CollectionTypeVS]: ValueSet-collection-type-vs.html
 [CollectionType]: CodeSystem-collection-type.html
+[AliquotConcentration]: StructureDefinition-aliquot-concentration.html
 [kf-research-study-personnel-role-pi]: PractitionerRole-kf-research-study-personnel-role-pi.html
 [kf-research-study-personnel-role-pi-x01]: PractitionerRole-kf-research-study-personnel-role-pi-x01.html
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
@@ -32,12 +34,14 @@
 [hmb-npu-consent]: Consent-hmb-npu-consent.html
 [ncpi-research-collection-kfx01]: List-ncpi-research-collection-kfx01.html
 [Label]: StructureDefinition-label-extension.html
+[BiospecimenLaterality]: StructureDefinition-biospecimen-laterality.html
 [MeshTerms]: ValueSet-mesh-terms.html
 [GRU]: Consent-GRU.html
 [HMB]: Consent-HMB.html
 [SD-BHJXBDQK]: ResearchStudy-SD-BHJXBDQK.html
 [SD-PREASA7S]: ResearchStudy-SD-PREASA7S.html
 [phv00407460.v2]: ResearchStudy-phv00407460.v2.html
+[NCPIBiospecimen]: StructureDefinition-ncpi-biospecimen.html
 [Ncpi]: CodeSystem-ncpi.html
 [NcpiParticipant]: StructureDefinition-ncpi-participant.html
 [NcpiPerson]: StructureDefinition-ncpi-person.html
@@ -67,12 +71,16 @@
 [ResearchStudySubjectConsent]: StructureDefinition-research-study-subject-consent.html
 [ResearchDiseaseUseLimitation]: StructureDefinition-research-disease-use-limitation.html
 [ResearchWebLink]: StructureDefinition-research-web-Link.html
+[CmdAliquot]: StructureDefinition-SharedDataModelAliquot.html
+[CdmBiospecimenCollection]: StructureDefinition-SharedDataModelBiospecimenCollection.html
 [CdmResearchCollection]: StructureDefinition-SharedDataModelResearchCollection.html
 [CdmResearchDataAccessPolicy]: StructureDefinition-SharedDataModelResearchDataAccessPolicy.html
 [CdmStudyParticipant]: StructureDefinition-SharedDataModelStudyParticipant.html
 [CdmResearchParticipant]: StructureDefinition-SharedDataModelResearchParticipant.html
 [CdmPerson]: StructureDefinition-SharedDataModelPerson.html
 [CdmResearchStudy]: StructureDefinition-SharedDataModelResearchStudy.html
+[CdmSample]: StructureDefinition-SharedDataModelSample.html
+[BiospecimenSpatial]: StructureDefinition-biospecimen-spatial.html
 [StudyNameTypeVS]: ValueSet-study-name-type-vs.html
 [StudyNameType]: CodeSystem-study-name-type.html
 [StudyPersonnelRoleVS]: ValueSet-study-personnel-role-vs.html
