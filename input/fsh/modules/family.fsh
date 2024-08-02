@@ -54,7 +54,7 @@ Description: "Extension containing Family Type"
 * valueCodeableConcept from ncpi-family-types-vs (extensible)
 
 Extension: Description
-Id: desctiption
+Id: description
 Title: "Family Study Description"
 Description: "Free text describing the family study, such as potential inheritance or details about consanguinity"
 * value[x] only markdown 
@@ -167,7 +167,9 @@ Description: "Shared Data Model for Family Relationship"
 * ^status = #draft
 * subject 1..1 
 * subject only Reference(NcpiParticipant)
+* subject ^short = "The participant we are describing"
 * focus 1..1 
 * focus only Reference(NcpiParticipant)
+* focus ^short = "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'"
 * code ^short = "The relationship between the subject and the target."
 * code from $ncpi-family-member (extensible)

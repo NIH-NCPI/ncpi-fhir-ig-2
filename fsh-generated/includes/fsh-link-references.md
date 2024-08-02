@@ -34,7 +34,7 @@
 [emerge-example-person]: Person-emerge-example-person.html
 [PT-005B7CZ4]: Patient-PT-005B7CZ4.html
 [pcgc-example-person]: Person-pcgc-example-person.html
-[Description]: StructureDefinition-desctiption.html
+[Description]: StructureDefinition-description.html
 [FamilyRole]: StructureDefinition-family-role.html
 [FamilyStudyFocus]: StructureDefinition-family-study-focus.html
 [FamilyStudy]: StructureDefinition-family-study.html
