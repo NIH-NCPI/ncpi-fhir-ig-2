@@ -1,0 +1,26 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncpi-condiiton",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condiiton",
+  "version": "0.1.0",
+  "name": "NcpiCondition",
+  "title": "NCPI Conditon",
+  "status": "draft",
+  "description": "Information about a condition related to a research participant",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.id",
+        "path": "Observation.id",
+        "short": "ParticipantID - The participant we are describing",
+        "min": 1
+      }
+    ]
+  }
+}
