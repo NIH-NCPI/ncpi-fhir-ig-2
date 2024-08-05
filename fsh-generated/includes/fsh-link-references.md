@@ -20,6 +20,7 @@
 [kf-research-study-personnel-role-pi-x01]: PractitionerRole-kf-research-study-personnel-role-pi-x01.html
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
 [ResearchDataDateOfBirthMethod]: CodeSystem-research-data-date-of-birth-method.html
+[SA-000]: Specimen-SA-000.html
 [cbtn-example-participantstudy]: ResearchSubject-cbtn-example-participantstudy.html
 [emerge-example-participantstudy]: ResearchSubject-emerge-example-participantstudy.html
 [pcgc-example-participantstudy]: ResearchSubject-pcgc-example-participantstudy.html
@@ -41,7 +42,9 @@
 [SD-BHJXBDQK]: ResearchStudy-SD-BHJXBDQK.html
 [SD-PREASA7S]: ResearchStudy-SD-PREASA7S.html
 [phv00407460.v2]: ResearchStudy-phv00407460.v2.html
-[NCPIBiospecimen]: StructureDefinition-ncpi-biospecimen.html
+[NCPISample]: StructureDefinition-ncpi-sample.html
+[NCPICollectedSample]: StructureDefinition-ncpi-collected-sample.html
+[NCPINonCollectedSample]: StructureDefinition-ncpi-non-collected-sample.html
 [Ncpi]: CodeSystem-ncpi.html
 [NcpiParticipant]: StructureDefinition-ncpi-participant.html
 [NcpiPerson]: StructureDefinition-ncpi-person.html

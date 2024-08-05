@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SharedDataModelBiospecimenCollection",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelBiospecimenCollection",
+  "name": "CdmBiospecimenCollection",
+  "title": "Shared Data Model for Biospecimen Collection",
+  "status": "draft",
+  "description": "Shared Data Model for Biospecimen Collection",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelBiospecimenCollection",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SharedDataModelBiospecimenCollection",
+        "path": "SharedDataModelBiospecimenCollection",
+        "short": "Shared Data Model for Biospecimen Collection",
+        "definition": "Shared Data Model for Biospecimen Collection"
+      },
+      {
+        "id": "SharedDataModelBiospecimenCollection.sampleGenerated",
+        "path": "SharedDataModelBiospecimenCollection.sampleGenerated",
+        "short": "Sample that was generated from this collection event",
+        "definition": "Sample that was generated from this collection event",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/valueset-reference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelBiospecimenCollection.participant",
+        "path": "SharedDataModelBiospecimenCollection.participant",
+        "short": "The participant from whom the biospecimen was taken",
+        "definition": "The participant from whom the biospecimen was taken",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/valueset-reference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelBiospecimenCollection.ageAtCondition",
+        "path": "SharedDataModelBiospecimenCollection.ageAtCondition",
+        "short": "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range.",
+        "definition": "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelBiospecimenCollection.method",
+        "path": "SharedDataModelBiospecimenCollection.method",
+        "short": "The approach used to collect the biospecimen",
+        "definition": "The approach used to collect the biospecimen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelBiospecimenCollection.site",
+        "path": "SharedDataModelBiospecimenCollection.site",
+        "short": "The location of the specimen collection",
+        "definition": "The location of the specimen collection",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelBiospecimenCollection.spatial",
+        "path": "SharedDataModelBiospecimenCollection.spatial",
+        "short": "Any spatial/location qualifiers",
+        "definition": "Any spatial/location qualifiers",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelBiospecimenCollection.laterality",
+        "path": "SharedDataModelBiospecimenCollection.laterality",
+        "short": "Any spatial/location qualifiers",
+        "definition": "Any spatial/location qualifiers",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      }
+    ]
+  }
+}

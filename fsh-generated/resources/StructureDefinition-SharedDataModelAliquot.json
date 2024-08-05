@@ -1,0 +1,93 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SharedDataModelAliquot",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelAliquot",
+  "name": "CmdAliquot",
+  "title": "Shared Data Model for Aliquot",
+  "status": "draft",
+  "description": "Shared Data Model for Aliquot",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelAliquot",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SharedDataModelAliquot",
+        "path": "SharedDataModelAliquot",
+        "short": "Shared Data Model for Aliquot",
+        "definition": "Shared Data Model for Aliquot"
+      },
+      {
+        "id": "SharedDataModelAliquot.aliquotId",
+        "path": "SharedDataModelAliquot.aliquotId",
+        "short": "Unique ID for this aliquot",
+        "definition": "Unique ID for this aliquot",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelAliquot.sample",
+        "path": "SharedDataModelAliquot.sample",
+        "short": "The sample of which this tube is a part.",
+        "definition": "The sample of which this tube is a part.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/valueset-reference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelAliquot.availabilityStatus",
+        "path": "SharedDataModelAliquot.availabilityStatus",
+        "short": "Can this Sample be requested for further analysis?",
+        "definition": "Can this Sample be requested for further analysis?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelAliquot.quantity",
+        "path": "SharedDataModelAliquot.quantity",
+        "short": "What is the volume of the Aliquot?",
+        "definition": "What is the volume of the Aliquot?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelAliquot.concentration",
+        "path": "SharedDataModelAliquot.concentration",
+        "short": "What is the concentration of the analyte in the Aliquot?",
+        "definition": "What is the concentration of the analyte in the Aliquot?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      }
+    ]
+  }
+}

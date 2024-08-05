@@ -360,12 +360,20 @@
     "endLine": 216
   },
   {
+    "outputFile": "Specimen-SA-000.json",
+    "fshName": "SA-000",
+    "fshType": "Instance",
+    "fshFile": "examples/biospecimen.fsh",
+    "startLine": 3,
+    "endLine": 26
+  },
+  {
     "outputFile": "StructureDefinition-SharedDataModelAliquot.json",
     "fshName": "CmdAliquot",
     "fshType": "Logical",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 56,
-    "endLine": 64
+    "startLine": 57,
+    "endLine": 65
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelBiospecimenCollection.json",
@@ -420,8 +428,8 @@
     "fshName": "CdmSample",
     "fshType": "Logical",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 33,
-    "endLine": 44
+    "startLine": 34,
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelStudyParticipant.json",
@@ -460,16 +468,16 @@
     "fshName": "AliquotAvailability",
     "fshType": "Extension",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 66,
-    "endLine": 71
+    "startLine": 67,
+    "endLine": 72
   },
   {
     "outputFile": "StructureDefinition-aliquot-concentration.json",
     "fshName": "AliquotConcentration",
     "fshType": "Extension",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 74,
-    "endLine": 80
+    "startLine": 75,
+    "endLine": 81
   },
   {
     "outputFile": "StructureDefinition-biospecimen-laterality.json",
@@ -504,12 +512,20 @@
     "endLine": 145
   },
   {
-    "outputFile": "StructureDefinition-ncpi-biospecimen.json",
-    "fshName": "NCPIBiospecimen",
+    "outputFile": "StructureDefinition-ncpi-collected-sample.json",
+    "fshName": "NCPICollectedSample",
     "fshType": "Profile",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 84,
-    "endLine": 104
+    "startLine": 128,
+    "endLine": 135
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-non-collected-sample.json",
+    "fshName": "NCPINonCollectedSample",
+    "fshType": "Profile",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 137,
+    "endLine": 144
   },
   {
     "outputFile": "StructureDefinition-ncpi-participant.json",
@@ -550,6 +566,14 @@
     "fshFile": "modules/research-study.fsh",
     "startLine": 60,
     "endLine": 86
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-sample.json",
+    "fshName": "NCPISample",
+    "fshType": "Profile",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 85,
+    "endLine": 125
   },
   {
     "outputFile": "StructureDefinition-research-age-at-last-vital-status.json",
