@@ -71,35 +71,11 @@
       },
       {
         "reference": {
-          "reference": "Observation/cbtn-family-relationship-mother"
+          "reference": "StructureDefinition/aliquot-availability"
         },
-        "name": "An example family relationship based on data from CBTN",
-        "description": "An example family relationship based on data from CBTN.",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
-      },
-      {
-        "reference": {
-          "reference": "Observation/cbtn-family-relationship-son"
-        },
-        "name": "An example family relationship based on data from CBTN",
-        "description": "An example family relationship based on data from CBTN.",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
-      },
-      {
-        "reference": {
-          "reference": "Group/cbtn-family-role-mother"
-        },
-        "name": "An example family role based on data from CBTN",
-        "description": "An example family role based on data from CBTN.",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
-      },
-      {
-        "reference": {
-          "reference": "Group/cbtn-family-role-son"
-        },
-        "name": "An example family role based on data from CBTN",
-        "description": "An example family role based on data from CBTN.",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+        "name": "Availability Status of Aliquot",
+        "description": "Availability Status of Aliquot",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -199,18 +175,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/consanguinity"
+          "reference": "StructureDefinition/aliquot-concentration"
         },
-        "name": "Consanguinity Extension",
-        "description": "Extension containing Consanguinity",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/consanguinity-assertion-vs"
-        },
-        "name": "Consanguinity Value Codes",
-        "description": "List of codes indicates the level of known consanguinity (blood relation) within a study family.",
+        "name": "Concentration of the Aliquot",
+        "description": "Concentration of the Aliquot",
         "exampleBoolean": false
       },
       {
@@ -247,6 +215,14 @@
       },
       {
         "reference": {
+          "reference": "Specimen/SA-000"
+        },
+        "name": "Example biospecimen based on data from CBTN",
+        "description": "Example biospecimen based on data from CBTN",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
+      },
+      {
+        "reference": {
           "reference": "ResearchSubject/cbtn-example-participantstudy"
         },
         "name": "Example mappings based on data from CBTN",
@@ -268,14 +244,6 @@
         "name": "Example mappings based on data from PCGC",
         "description": "Example mappings based on data from PCGC",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
-      },
-      {
-        "reference": {
-          "reference": "Group/cbtn-study-family"
-        },
-        "name": "Example patients based on data from CBTN",
-        "description": "Example patients based on data from CBTN.",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"
       },
       {
         "reference": {
@@ -327,38 +295,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-family-relationship"
-        },
-        "name": "Family Relationship",
-        "description": "Family Relationship",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncpi-family-role"
-        },
-        "name": "Family Role",
-        "description": "Family Role",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/family-type"
-        },
-        "name": "Family Type Extension",
-        "description": "Extension containing Family Type",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ncpi-family-types-vs"
-        },
-        "name": "Family Types Codes",
-        "description": "A value set with all codes used for the expected family types.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Consent/kf-gsr-allowed-access"
         },
         "name": "Genomic Summary Results (GSR) Allowed Access",
@@ -395,6 +331,14 @@
         },
         "name": "Label",
         "description": "A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/biospecimen-laterality"
+        },
+        "name": "Laterality Information",
+        "description": "Laterality Information",
         "exampleBoolean": false
       },
       {
@@ -447,10 +391,26 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/ncpi-family-types"
+          "reference": "StructureDefinition/ncpi-sample"
         },
-        "name": "NCPI Family Types CodeSystem",
-        "description": "CodeSystem for Types of Families",
+        "name": "NCPI biospecimen definition",
+        "description": "NCPI biospecimen definition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-collected-sample"
+        },
+        "name": "NCPI biospecimen definition for collected samples",
+        "description": "NCPI biospecimen definition for collected samples",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-non-collected-sample"
+        },
+        "name": "NCPI biospecimen definition for non-collected samples",
+        "description": "NCPI biospecimen definition for non-collected samples",
         "exampleBoolean": false
       },
       {
@@ -507,14 +467,6 @@
         },
         "name": "NCPI Research Study Group",
         "description": "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. ",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncpi-study-family"
-        },
-        "name": "NCPI Study Family",
-        "description": "Study Family",
         "exampleBoolean": false
       },
       {
@@ -695,18 +647,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
+          "reference": "StructureDefinition/SharedDataModelAliquot"
         },
-        "name": "Shared Data Model for Family Relationship",
-        "description": "The **Shared Data Model for Family Relationship**",
+        "name": "Shared Data Model for Aliquot",
+        "description": "Shared Data Model for Aliquot",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/SharedDataModelFamilyRole"
+          "reference": "StructureDefinition/SharedDataModelBiospecimenCollection"
         },
-        "name": "Shared Data Model for Family Role",
-        "description": "The **Shared Data Model for Family Role**",
+        "name": "Shared Data Model for Biospecimen Collection",
+        "description": "Shared Data Model for Biospecimen Collection",
         "exampleBoolean": false
       },
       {
@@ -759,42 +711,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/SharedDataModelStudyFamily"
+          "reference": "StructureDefinition/SharedDataModelSample"
         },
-        "name": "Shared Data Model for Study Family",
-        "description": "The **Shared Data Model for Study Family**",
+        "name": "Shared Data Model for Sample",
+        "description": "Shared Data Model for Sample",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/description"
+          "reference": "StructureDefinition/biospecimen-spatial"
         },
-        "name": "Study Family Description",
-        "description": "Free text describing the study family, such as potential inheritance or details about consanguinity",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/family-role"
-        },
-        "name": "Study Family Focus",
-        "description": "Extension containing Family Role",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/study-family-focus"
-        },
-        "name": "Study Family Focus Extension",
-        "description": "Extension containing Study Family Focus",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/study-family"
-        },
-        "name": "Study Family Reference",
-        "description": "Extension containing Study Family Reference",
+        "name": "Spatial Information",
+        "description": "Spatial Information",
         "exampleBoolean": false
       },
       {

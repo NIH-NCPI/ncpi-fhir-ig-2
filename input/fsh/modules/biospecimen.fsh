@@ -28,6 +28,7 @@ Description: "Laterality Information"
 * value[x] only code
 /*Add a value set?*/
 
+
 /*Sample Module*/
 
 Logical: CdmSample
@@ -81,9 +82,9 @@ Description: "Concentration of the Aliquot"
 
 /*Combined Profile*/
 
-Profile: NCPIBiospecimen
+Profile: NCPISample
 Parent: Specimen
-Id: ncpi-biospecimen
+Id: ncpi-sample
 Title: "NCPI biospecimen definition"
 Description: "NCPI biospecimen definition"
 * ^version = "0.1.0"
@@ -92,6 +93,8 @@ Description: "NCPI biospecimen definition"
 * identifier ^short = "Unique ID for this sample"
 * subject 1..1 /*Sample.Participant*/
 * subject ^short = "The participant from whom the biospecimen was taken"
+* parent 0..* /*Sample.ParentSample*/
+* parent ^short = "The Sample from which this Sample was derived"
 * type 1..1 /*Sample.Type*/
 * type ^short = "The type of material of which this Sample is comprised"
 * processing 0..* /*Sample.Processing*/
@@ -100,5 +103,42 @@ Description: "NCPI biospecimen definition"
 * status ^short = "Can this Sample be requested for further analysis?"
 * condition 0..* /*Sample.StorageMethod*/
 * condition ^short = "How is the Sample stored, eg, Frozen or with additives"
+* collection.collected[x] only dateTime /*Age at collection*/
+* collection.collectedDateTime ^short = "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 * collection.quantity 0..1 /*Sample.Quantity*/
 * collection.quantity ^short = "The total quantity of the specimen"
+* collection.method 0..1 /*Biospecimen.StorageMethod*/
+* collection.method ^short = "The approach used to collect the biospecimen"
+* collection.bodySite 0..1 /*Biospecimen.Site*/
+* collection.bodySite ^short = "The location of the specimen collection"
+* extension contains BiospecimenSpatial named biospecimen-spatial 0..1 /*Biospecimen.Spatial*/
+* extension[biospecimen-spatial] ^short = "Any spatial/location qualifiers"
+* extension contains BiospecimenLaterality named biospecimen-laterality 0..1 /*Biospecimen.Laterality*/
+* extension[biospecimen-laterality] ^short = "Laterality information for the site"
+* container.identifier 1..1 /*Aliquot.AliquotID*/
+* container.identifier ^short = "Unique ID for this aliquot"
+* extension contains AliquotAvailability named aliquot-availability 0..1 /*Aliquot.AvailabilityStatus*/
+* extension[aliquot-availability] ^short = "Can this Sample be requested for further analysis?"
+* container.specimenQuantity 0..1 /*Aliquot.Volume*/
+* container.specimenQuantity ^short = "What is the volume of the Aliquot?"
+* extension contains AliquotConcentration named aliquot-concentration 0..1 /*Aliquot.Concentration*/
+* extension[aliquot-concentration] ^short = "What is the concentration of the analyte in the Aliquot?"
+
+
+Profile: NCPICollectedSample
+Parent: NCPISample
+Id: ncpi-collected-sample
+Title: "NCPI biospecimen definition for collected samples"
+Description: "NCPI biospecimen definition for collected samples"
+* ^version = "0.1.0"
+* ^status = #draft
+* collection 1..1 
+
+Profile: NCPINonCollectedSample
+Parent: NCPISample
+Id: ncpi-non-collected-sample
+Title: "NCPI biospecimen definition for non-collected samples"
+Description: "NCPI biospecimen definition for non-collected samples"
+* ^version = "0.1.0"
+* ^status = #draft
+* collection 0..0 
