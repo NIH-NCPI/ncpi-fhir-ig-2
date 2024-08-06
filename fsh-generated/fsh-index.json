@@ -144,7 +144,7 @@
     "endLine": 65
   },
   {
-    "outputFile": "Group-cbtn-family-study.json",
+    "outputFile": "Group-cbtn-study-family.json",
     "fshName": "FM-00C8Y7DG",
     "fshType": "Instance",
     "fshFile": "examples/family.fsh",
@@ -424,14 +424,6 @@
     "endLine": 116
   },
   {
-    "outputFile": "StructureDefinition-SharedDataModelFamilyStudy.json",
-    "fshName": "CdmFamilyStudy",
-    "fshType": "Logical",
-    "fshFile": "modules/family.fsh",
-    "startLine": 13,
-    "endLine": 22
-  },
-  {
     "outputFile": "StructureDefinition-SharedDataModelPerson.json",
     "fshName": "CdmPerson",
     "fshType": "Logical",
@@ -470,6 +462,14 @@
     "fshFile": "modules/research-study.fsh",
     "startLine": 138,
     "endLine": 168
+  },
+  {
+    "outputFile": "StructureDefinition-SharedDataModelStudyFamily.json",
+    "fshName": "CdmStudyFamily",
+    "fshType": "Logical",
+    "fshFile": "modules/family.fsh",
+    "startLine": 13,
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelStudyParticipant.json",
@@ -528,22 +528,6 @@
     "endLine": 133
   },
   {
-    "outputFile": "StructureDefinition-family-study-focus.json",
-    "fshName": "FamilyStudyFocus",
-    "fshType": "Extension",
-    "fshFile": "modules/family.fsh",
-    "startLine": 81,
-    "endLine": 86
-  },
-  {
-    "outputFile": "StructureDefinition-family-study.json",
-    "fshName": "FamilyStudy",
-    "fshType": "Extension",
-    "fshFile": "modules/family.fsh",
-    "startLine": 118,
-    "endLine": 125
-  },
-  {
     "outputFile": "StructureDefinition-family-type.json",
     "fshName": "FamilyType",
     "fshType": "Extension",
@@ -584,14 +568,6 @@
     "endLine": 148
   },
   {
-    "outputFile": "StructureDefinition-ncpi-family-study.json",
-    "fshName": "NcpiFamilyStudy",
-    "fshType": "Profile",
-    "fshFile": "modules/family.fsh",
-    "startLine": 88,
-    "endLine": 106
-  },
-  {
     "outputFile": "StructureDefinition-ncpi-participant.json",
     "fshName": "NcpiParticipant",
     "fshType": "Profile",
@@ -630,6 +606,14 @@
     "fshFile": "modules/research-study.fsh",
     "startLine": 60,
     "endLine": 86
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-study-family.json",
+    "fshName": "NcpiStudyFamily",
+    "fshType": "Profile",
+    "fshFile": "modules/family.fsh",
+    "startLine": 88,
+    "endLine": 106
   },
   {
     "outputFile": "StructureDefinition-research-age-at-last-vital-status.json",
@@ -726,6 +710,22 @@
     "fshFile": "extensions/ResearchWebLink.fsh",
     "startLine": 2,
     "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-study-family-focus.json",
+    "fshName": "StudyFamilyFocus",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 81,
+    "endLine": 86
+  },
+  {
+    "outputFile": "StructureDefinition-study-family.json",
+    "fshName": "StudyFamily",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 118,
+    "endLine": 125
   },
   {
     "outputFile": "ValueSet-collection-type-vs.json",

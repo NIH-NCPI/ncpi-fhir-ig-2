@@ -210,7 +210,7 @@
           "reference": "ValueSet/consanguinity-assertion-vs"
         },
         "name": "Consanguinity Value Codes",
-        "description": "List of codes indicates the level of known consanguinity (blood relation) within a family study.",
+        "description": "List of codes indicates the level of known consanguinity (blood relation) within a study family.",
         "exampleBoolean": false
       },
       {
@@ -271,11 +271,11 @@
       },
       {
         "reference": {
-          "reference": "Group/cbtn-family-study"
+          "reference": "Group/cbtn-study-family"
         },
         "name": "Example patients based on data from CBTN",
         "description": "Example patients based on data from CBTN.",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-study"
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"
       },
       {
         "reference": {
@@ -324,38 +324,6 @@
         "name": "Example patients based on data from PCGC",
         "description": "Example patients based on data from PCGC",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/description"
-        },
-        "name": "Family Study Description",
-        "description": "Free text describing the family study, such as potential inheritance or details about consanguinity",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/family-role"
-        },
-        "name": "Family Study Focus",
-        "description": "Extension containing Family Role",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/family-study-focus"
-        },
-        "name": "Family Study Focus Extension",
-        "description": "Extension containing Family Study Focus",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/family-study"
-        },
-        "name": "Family Study Reference",
-        "description": "Extension containing Family Study Reference",
-        "exampleBoolean": false
       },
       {
         "reference": {
@@ -463,14 +431,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-family-study"
-        },
-        "name": "NCPI Family Study",
-        "description": "Family Study",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/ncpi-family-types"
         },
         "name": "NCPI Family Types CodeSystem",
@@ -531,6 +491,14 @@
         },
         "name": "NCPI Research Study Group",
         "description": "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-study-family"
+        },
+        "name": "NCPI Study Family",
+        "description": "Study Family",
         "exampleBoolean": false
       },
       {
@@ -735,22 +703,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/SharedDataModelFamilyStudy"
-        },
-        "name": "Shared Data Model for Family Study",
-        "description": "The **Shared Data Model for Family Study**",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
-        },
-        "name": "Shared Data Model for Family Study",
-        "description": "The **Shared Data Model for Family Study**",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/SharedDataModelResearchCollection"
         },
         "name": "Shared Data Model for Research Collection",
@@ -795,6 +747,54 @@
         },
         "name": "Shared Data Model for Research Study",
         "description": "The **Shared Data Model for Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelStudyFamily"
+        },
+        "name": "Shared Data Model for Study Family",
+        "description": "The **Shared Data Model for Study Family**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
+        },
+        "name": "Shared Data Model for Study Family",
+        "description": "The **Shared Data Model for Study Family**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/description"
+        },
+        "name": "Study Family Description",
+        "description": "Free text describing the study family, such as potential inheritance or details about consanguinity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/family-role"
+        },
+        "name": "Study Family Focus",
+        "description": "Extension containing Family Role",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/study-family-focus"
+        },
+        "name": "Study Family Focus Extension",
+        "description": "Extension containing Study Family Focus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/study-family"
+        },
+        "name": "Study Family Reference",
+        "description": "Extension containing Study Family Reference",
         "exampleBoolean": false
       },
       {

@@ -1,5 +1,5 @@
 #### Key Guidelines
-Family Study describes a group of Participants that are related. This is not an expression of all individuals in a “family”, but a tool to identify “family members of interest” that were studied. For example, a family trio in a rare disease study does not exclude the existence of other siblings. Family Studies do not require much detail, but there are often attributes of those families that may be of use to researchers.
+Study Family describes a group of Participants that are related. This is not an expression of all individuals in a “family”, but a tool to identify “family members of interest” that were studied. For example, a family trio in a rare disease study does not exclude the existence of other siblings. Family Studies do not require much detail, but there are often attributes of those families that may be of use to researchers.
 
 ##### Added Profile Restrictions
 In order to ensure that our resources are interoperable across studies, we have employed a number of restrictions that should make consuming Patient resources more consistent.
@@ -19,5 +19,5 @@ externalID|0..*|identifier|||
 FamilyType|0..1|extension [FamilyType](StructureDefinition-family-type.html)|||
 Description|0..1|extension [Description](StructureDefinition-description.html)|||
 Consanguinity|0..1|extension [Consanguinity](StructureDefinition-consanguinity.html)|||
-FamilyStudyFocus|0..1|extension [FamilyStudyFocus](StructureDefinition-family-study-focus.html)|||
+StudyFamilyFocus|0..1|extension [StudyFamilyFocus](StructureDefinition-study-family-focus.html)|||
 

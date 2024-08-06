@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncpi-family-study",
-  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-study",
+  "id": "ncpi-study-family",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family",
   "version": "0.1.0",
-  "name": "NcpiFamilyStudy",
-  "title": "NCPI Family Study",
+  "name": "NcpiStudyFamily",
+  "title": "NCPI Study Family",
   "status": "draft",
-  "description": "Family Study",
+  "description": "Study Family",
   "fhirVersion": "4.3.0",
   "kind": "resource",
   "abstract": false,
@@ -39,7 +39,7 @@
         "id": "Group.extension:family-type",
         "path": "Group.extension",
         "sliceName": "family-type",
-        "short": "Describes the 'type' of family study, eg, trio.",
+        "short": "Describes the 'type' of study family, eg, trio.",
         "min": 0,
         "max": "1",
         "type": [
@@ -55,7 +55,7 @@
         "id": "Group.extension:description",
         "path": "Group.extension",
         "sliceName": "description",
-        "short": "Free text describing the family study, such as potential inheritance or details about consanguinity",
+        "short": "Free text describing the study family, such as potential inheritance or details about consanguinity",
         "min": 0,
         "max": "1",
         "type": [
@@ -71,7 +71,7 @@
         "id": "Group.extension:consanguinity",
         "path": "Group.extension",
         "sliceName": "consanguinity",
-        "short": "Is there known or suspected consanguinity in this family study?",
+        "short": "Is there known or suspected consanguinity in this study family?",
         "min": 0,
         "max": "1",
         "type": [
@@ -84,17 +84,17 @@
         ]
       },
       {
-        "id": "Group.extension:family-study-focus",
+        "id": "Group.extension:study-family-focus",
         "path": "Group.extension",
-        "sliceName": "family-study-focus",
-        "short": "What is this family study investigating? EG, a specific condition",
+        "sliceName": "study-family-focus",
+        "short": "What is this study family investigating? EG, a specific condition",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-study-focus"
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus"
             ]
           }
         ]

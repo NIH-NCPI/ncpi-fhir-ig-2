@@ -2,24 +2,24 @@
 Family Module
 
 Logical models, profiles, extensions and valuesets for:
-* NcpiFamilyStudy
+* NcpiStudyFamily
 * NcpiFamilyRole
 * NcpiFamilyRelationship
 
 */ 
 
-// Family Study 
+// Study Family
 
-Logical: CdmFamilyStudy
-Id: SharedDataModelFamilyStudy
-Title: "Shared Data Model for Family Study"
-Description: "The **Shared Data Model for Family Study**"
-* familyID 1..1 string "Unique family study identifier. System identifier used for internal references."
-* externalID 0..* string "Family study identifier. System identifier used for external references."
-* familyType 0..1 code "Describes the 'type' of family study, eg, trio. "
-* description 0..1 string "Free text describing the family study, such as potential inheritance or details about consanguinity"
-* consanguinity 0..1 code "Is there known or suspected consanguinity in this family study?"
-* familyStudyFocus 0..1 code "What is this family study investigating? EG, a specific condition"
+Logical: CdmStudyFamily
+Id: SharedDataModelStudyFamily
+Title: "Shared Data Model for Study Family"
+Description: "The **Shared Data Model for Study Family**"
+* familyID 1..1 string "Unique study family identifier. System identifier used for internal references."
+* externalID 0..* string "Study family identifier. System identifier used for external references."
+* familyType 0..1 code "Describes the 'type' of study family, eg, trio. "
+* description 0..1 string "Free text describing the study family, such as potential inheritance or details about consanguinity"
+* consanguinity 0..1 code "Is there known or suspected consanguinity in this study family?"
+* studyFamilyFocus 0..1 code "What is this study family investigating? EG, a specific condition"
 
 CodeSystem: NcpiFamilyTypes
 Id: ncpi-family-types
@@ -50,20 +50,20 @@ Id: family-type
 Title: "Family Type Extension"
 Description: "Extension containing Family Type"
 * value[x] only CodeableConcept 
-* valueCodeableConcept ^short = "Describes the 'type' of family study, eg, trio."
+* valueCodeableConcept ^short = "Describes the 'type' of study family, eg, trio."
 * valueCodeableConcept from ncpi-family-types-vs (extensible)
 
 Extension: Description
 Id: description
-Title: "Family Study Description"
-Description: "Free text describing the family study, such as potential inheritance or details about consanguinity"
+Title: "Study Family Description"
+Description: "Free text describing the study family, such as potential inheritance or details about consanguinity"
 * value[x] only markdown 
 * valueMarkdown 0..1
 
 ValueSet: ConsanguinityAssertionVS
 Id: consanguinity-assertion-vs
 Title: "Consanguinity Value Codes"
-Description: "List of codes indicates the level of known consanguinity (blood relation) within a family study."
+Description: "List of codes indicates the level of known consanguinity (blood relation) within a study family."
 * ^experimental = false
 * $snomedct_us#428263003  "NOT suspected"
 * $snomedct_us#415684004  "Suspected"
@@ -76,20 +76,20 @@ Title: "Consanguinity Extension"
 Description: "Extension containing Consanguinity"
 * value[x] only CodeableConcept
 * valueCodeableConcept from consanguinity-assertion-vs (extensible)
-* valueCodeableConcept ^short = "Is there known or suspected consanguinity in this family study?"
+* valueCodeableConcept ^short = "Is there known or suspected consanguinity in this study family?"
 
-Extension: FamilyStudyFocus
-Id: family-study-focus
-Title: "Family Study Focus Extension"
-Description: "Extension containing Family Study Focus"
+Extension: StudyFamilyFocus
+Id: study-family-focus
+Title: "Study Family Focus Extension"
+Description: "Extension containing Study Family Focus"
 * value[x] only CodeableConcept 
-* valueCodeableConcept ^short = "What is this family study investigating? EG, a specific condition"
+* valueCodeableConcept ^short = "What is this study family investigating? EG, a specific condition"
 
-Profile: NcpiFamilyStudy
+Profile: NcpiStudyFamily
 Parent: Group
-Id: ncpi-family-study
-Title: "NCPI Family Study"
-Description: "Family Study"
+Id: ncpi-study-family
+Title: "NCPI Study Family"
+Description: "Study Family"
 * ^version = "0.1.0"
 * ^status = #draft
 * id 1..1 
@@ -97,13 +97,13 @@ Description: "Family Study"
 * identifier 0..* 
 * identifier ^short = "External IDs for this participant. Requires scoping."
 * extension contains FamilyType named family-type 0..1
-* extension[family-type] ^short = "Describes the 'type' of family study, eg, trio."
+* extension[family-type] ^short = "Describes the 'type' of study family, eg, trio."
 * extension contains Description named description 0..1
-* extension[description] ^short = "Free text describing the family study, such as potential inheritance or details about consanguinity"
+* extension[description] ^short = "Free text describing the study family, such as potential inheritance or details about consanguinity"
 * extension contains Consanguinity named consanguinity 0..1
-* extension[consanguinity] ^short = "Is there known or suspected consanguinity in this family study?"
-* extension contains FamilyStudyFocus named family-study-focus 0..1
-* extension[family-study-focus] ^short = "What is this family study investigating? EG, a specific condition"
+* extension[consanguinity] ^short = "Is there known or suspected consanguinity in this study family?"
+* extension contains StudyFamilyFocus named study-family-focus 0..1
+* extension[study-family-focus] ^short = "What is this study family investigating? EG, a specific condition"
 
 // Family Role
 
@@ -112,21 +112,21 @@ Id: SharedDataModelFamilyRole
 Title: "Shared Data Model for Family Role"
 Description: "The **Shared Data Model for Family Role**"
 * participant 1..1 Reference "The participant we are describing"
-* familyStudy 1..1 Reference "The family study this participant is part of"
+* studyFamily 1..1 Reference "The study family this participant is part of"
 * familyRole 0..1 code "The role this individual has in the family, specifically with respect to a proband or index participant"
 
-Extension: FamilyStudy
-Id: family-study
-Title: "Family Study Reference"
-Description: "Extension containing Family Study Reference"
+Extension: StudyFamily
+Id: study-family
+Title: "Study Family Reference"
+Description: "Extension containing Study Family Reference"
 * insert SetContext(Group)
 * value[x] only Reference
 * valueReference 1..1
-* valueReference only Reference(NcpiFamilyStudy)
+* valueReference only Reference(NcpiStudyFamily)
 
 Extension: FamilyRole
 Id: family-role
-Title: "Family Study Focus"
+Title: "Study Family Focus"
 Description: "Extension containing Family Role"
 * value[x] only CodeableConcept 
 * valueCodeableConcept ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
@@ -142,8 +142,8 @@ Description: "Shared Data Model for Family Role"
 * member.entity 1..1
 * member.entity only Reference(NcpiParticipant)
 * member.entity ^short = "The participant we are describing."
-* extension contains FamilyStudy named family-study 0..1
-* extension[family-study] ^short = "The family study this participant is part of"
+* extension contains StudyFamily named study-family 0..1
+* extension[study-family] ^short = "The study family this participant is part of"
 * extension contains FamilyRole named family-role 0..1
 * extension[family-role] ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
 
@@ -152,8 +152,8 @@ Description: "Shared Data Model for Family Role"
 
 Logical: CdmFamilyRelationship
 Id: SharedDataModelFamilyRelationship
-Title: "Shared Data Model for Family Study"
-Description: "The **Shared Data Model for Family Study**"
+Title: "Shared Data Model for Study Family"
+Description: "The **Shared Data Model for Study Family**"
 * subject 1..1 Reference "The participant we are describing"
 * target 1..1 Reference "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'"
 * relationship 1..1 code "The relationship between the subject and the target."
