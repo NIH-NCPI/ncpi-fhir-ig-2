@@ -21,12 +21,30 @@ Description: "The **Shared Data Model for Condition**"
 * asserter 0..1 code "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
 
 
+<<<<<<< HEAD
+CodeSystem: ConditionCodes 
+Id: condition-codes
+* ^url = $hpo
+
+ValueSet: ConditionCodeVS
+Id: condition-code-vs
+Title: "Condiiton Codes"
+Description: "Includes all codes from **HPO** and **MONDO**"
+* include codes from system $hpo 
+* include codes from system $mondo 
+
+=======
+>>>>>>> 336d5ce6275b1cb0573164f75314df0dda42473d
 Profile: NcpiCondition
 Parent: Observation
 Id: ncpi-condiiton 
 Title: "NCPI Conditon"
 Description: "Information about a condition related to a research participant"
+<<<<<<< HEAD
+* ^version = "0.0.1"
+=======
 * ^version = "0.1.0"
+>>>>>>> 336d5ce6275b1cb0573164f75314df0dda42473d
 * ^status = #draft
 * subject 0..1 /*Participant*/
 * subject ^short = "The participant we are describing"
