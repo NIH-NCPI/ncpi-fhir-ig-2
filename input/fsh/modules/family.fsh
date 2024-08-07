@@ -152,8 +152,8 @@ Description: "Shared Data Model for Family Role"
 
 Logical: CdmFamilyRelationship
 Id: SharedDataModelFamilyRelationship
-Title: "Shared Data Model for Study Family"
-Description: "The **Shared Data Model for Study Family**"
+Title: "Shared Data Model for Family Relationship"
+Description: "The **Shared Data Model for Family Relationship**"
 * subject 1..1 Reference "The participant we are describing"
 * target 1..1 Reference "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'"
 * relationship 1..1 code "The relationship between the subject and the target."
