@@ -18,5 +18,8 @@ Alias: $ncpi-dob-method = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/r
 
 Alias: $ncit = http://purl.obolibrary.org/obo/ncit.owl
 Alias: $ucum = http://unitsofmeasure.org
+Alias: $loinc = https://loinc.org
+Alias: $body-location-qualifer = http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs
+Alias: $laterality-qualifier = http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs
 
 Alias: $spec = https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html

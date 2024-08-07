@@ -74,6 +74,7 @@
 [ResearchStudySubjectConsent]: StructureDefinition-research-study-subject-consent.html
 [ResearchDiseaseUseLimitation]: StructureDefinition-research-disease-use-limitation.html
 [ResearchWebLink]: StructureDefinition-research-web-Link.html
+[BiospecimenAvailability]: CodeSystem-biospecimen-availability.html
 [CmdAliquot]: StructureDefinition-SharedDataModelAliquot.html
 [CdmBiospecimenCollection]: StructureDefinition-SharedDataModelBiospecimenCollection.html
 [CdmResearchCollection]: StructureDefinition-SharedDataModelResearchCollection.html

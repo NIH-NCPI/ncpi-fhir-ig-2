@@ -1,4 +1,4 @@
-### NCPI Biospecimen
+### NCPI Sample
 #### Biospecimen Collection
 The Collection entity describes the collection procedure that generated the biospecimen. This can be very lightweight, for example just describing the age at collection and pointing to the Sample that was collected, or it can have robust information about the procedure, location, and laterality. Collection details are not required, but it should be indicated if a Sample was the “collected sample” (if known).
 

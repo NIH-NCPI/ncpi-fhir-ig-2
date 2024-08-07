@@ -18,7 +18,6 @@ Title: "Spatial Information"
 Description: "Spatial Information"
 * insert SetContext(Specimen.collection)
 * value[x] only code
-/*Add a value set?*/
 
 Extension: BiospecimenLaterality
 Id: biospecimen-laterality
@@ -26,8 +25,6 @@ Title: "Laterality Information"
 Description: "Laterality Information"
 * insert SetContext(Specimen.collection)
 * value[x] only code
-/*Add a value set?*/
-
 
 /*Sample Module*/
 
@@ -44,13 +41,12 @@ Description: "Shared Data Model for Sample"
 * storageMethod 0..* code "How is the Sample stored, eg, Frozen or with additives"
 * quantity 0..1 Quantity "The total quantity of the specimen"
 
-/* CodeSystem: BiospecimenAvailability
+CodeSystem: BiospecimenAvailability
 Id: biospecimen-availability
 Title: "Sample availability for Sample and Aliquot modules"
 Description: "Sample availability for Sample and Aliquot modules"
-* ^url = $bio-available
 * #available "Available"
-* #unavailable "Unavailable" */
+* #unavailable "Unavailable" 
 
 /*Aliquot Module*/
 
@@ -70,7 +66,7 @@ Title: "Availability Status of Aliquot"
 Description: "Availability Status of Aliquot"
 * insert SetContext(Specimen.container)
 * value[x] only code
-/* * include codes from system $bio-available */
+* valueCode ^short = "Can this Sample be requested for further analysis?"
 
 Extension: AliquotConcentration
 Id: aliquot-concentration
