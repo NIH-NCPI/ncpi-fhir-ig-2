@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/PT-006SP660> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PT-006SP660"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference PT-006SP660</b></p><a name=\"PT-006SP660\"> </a><a name=\"hcPT-006SP660\"> </a><a name=\"PT-006SP660-en-US\"> </a><p><b>identifier</b>: PT_006SP660</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://edamontology.org operation_3227}\">Variant calling</span></p><p><b>subject</b>: <a href=\"GF_6BAD9S7D\">GF_6BAD9S7D</a></p><p><b>description</b>: Annotated Variant Call</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz</td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "V1" ]
+  ] [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://edamontology.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "format_3016" ] ;
+         fhir:display [ fhir:v "VCF" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "1044770380"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "bytes" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "8f107912d862cf91fbfb77bf9c1bab36-4" ]
+     ] [
+       fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "etag" ]
+     ] ) ;
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "PT_006SP660" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://edamontology.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "operation_3227" ] ;
+       fhir:display [ fhir:v "Variant calling" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "GF_6BAD9S7D" ]
+  ] ; # 
+  fhir:description [ fhir:v "Annotated Variant Call"] ; # 
+  fhir:content ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/kf-gru-dac-consent> ;
+         fhir:reference [ fhir:v "Consent/kf-gru-dac-consent" ]
+       ]
+     ] ) ;
+     fhir:attachment [
+       fhir:url [ fhir:v "s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

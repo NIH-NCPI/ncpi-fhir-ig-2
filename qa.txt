@@ -1,12 +1,14 @@
 NCPIFHIRIGv2 : Validation Results
 =========================================
 
-err = 4, warn = 22, info = 29
-IG Publisher Version: 1.6.18
-Generated Tue Jul 30 19:48:33 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
- Build Errors : 0 / 4 / 0
+err = 9, warn = 30, info = 31
+IG Publisher Version: 1.6.19
+Generated Thu Aug 08 16:41:37 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
+ Build Errors : 1 / 4 / 0
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-collection-type : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-example-hash-type-code-system : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-ncpi : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-related-file-type-code-system : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-research-data-access-code : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-research-data-access-type : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-research-data-date-of-birth-method : 0 / 0 / 1
@@ -20,6 +22,7 @@ Generated Tue Jul 30 19:48:33 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-impleme
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Consent-kf-gru-dbgap-consent : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Consent-kf-gsr-allowed-access : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Consent-kf-registered-allowed-access : 0 / 0 / 2
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/DocumentReference-PT-006SP660 : 4 / 3 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-kf-research-study-cbtn-participants : 0 / 0 / 1
@@ -51,6 +54,7 @@ Generated Tue Jul 30 19:48:33 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-impleme
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchSubject-cbtn-example-participantstudy : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchSubject-emerge-example-participantstudy : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchSubject-pcgc-example-participantstudy : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelFile : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelPerson : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchCollection : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchDataAccessPolicy : 0 / 0 / 1
@@ -60,8 +64,16 @@ Generated Tue Jul 30 19:48:33 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-impleme
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-access-policy : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-access-policy-description : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-access-type : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-content-version : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-file-format : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-file-size : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-hash-extension : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-hash-type : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-hash-value : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-label-extension : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-location-access : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-Study-Participant : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-file : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-participant : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-person : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-access-policy : 0 / 0 / 2
@@ -80,6 +92,7 @@ Generated Tue Jul 30 19:48:33 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-impleme
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-subject-consent : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-web-Link : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-collection-type-vs : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-edam-ontology-terms : 1 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-mesh-terms : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-research-data-access-code-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-research-data-access-type-vs : 0 / 0 / 1
@@ -88,12 +101,21 @@ Generated Tue Jul 30 19:48:33 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-impleme
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-study-personnel-role-vs : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/DocumentReference-PT-006SP660.html#/html/body/div/div/div/div/div/div/p/a at Line 313, column 409: The link 'GF_6BAD9S7D' for "GF_6BAD9S7D" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-collection-type.json ==
+== fsh-generated/resources/CodeSystem-example-hash-type-code-system.json ==
+INFORMATION: CodeSystem/example-hash-type-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/example-hash-type-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/example-hash-type-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-ncpi.json ==
+== fsh-generated/resources/CodeSystem-related-file-type-code-system.json ==
+INFORMATION: CodeSystem/related-file-type-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/related-file-type-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/related-file-type-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-research-data-access-code.json ==
 == fsh-generated/resources/CodeSystem-research-data-access-type.json ==
 == fsh-generated/resources/CodeSystem-research-data-date-of-birth-method.json ==
@@ -115,6 +137,14 @@ INFORMATION: Consent/kf-gru-dbgap-consent: Consent.extension[2].value.ofType(Cod
 INFORMATION: Consent/kf-gsr-allowed-access: Consent.extension[2].value.ofType(CodeableConcept): Reference to draft CodeSystem https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type|0.1.0
 == fsh-generated/resources/Consent-kf-registered-allowed-access.json ==
 INFORMATION: Consent/kf-registered-allowed-access: Consent.extension[2].value.ofType(CodeableConcept): Reference to draft CodeSystem https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type|0.1.0
+== fsh-generated/resources/DocumentReference-PT-006SP660.json ==
+WARNING: DocumentReference/PT-006SP660: DocumentReference.extension[1].value.ofType(CodeableConcept): ValueSet 'http://edamontology.org' not found
+ERROR: DocumentReference/PT-006SP660: DocumentReference.extension[1].value.ofType(CodeableConcept).coding[0].system: The Coding references a value set, not a code system ('http://edamontology.org')
+ERROR: DocumentReference/PT-006SP660: DocumentReference.type.coding[0].system: The Coding references a value set, not a code system ('http://edamontology.org')
+WARNING: DocumentReference/PT-006SP660: DocumentReference.type: A definition for CodeSystem 'http://edamontology.org' could not be found, so the code cannot be validated
+WARNING: DocumentReference/PT-006SP660: DocumentReference.type: Unable to check whether the code is in the value set 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms|0.1.0' because the code system http://edamontology.org was not found
+ERROR: DocumentReference/PT-006SP660: DocumentReference.subject: Unable to resolve resource with reference 'GF_6BAD9S7D'
+ERROR: DocumentReference.text.div: Hyperlink 'GF_6BAD9S7D' at 'div/p/a' for 'GF_6BAD9S7D' does not resolve
 == fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-hmb-npu.json ==
 == fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu.json ==
 == fsh-generated/resources/Group-kf-research-study-cbtn-participants.json ==
@@ -176,6 +206,7 @@ INFORMATION: ResearchStudy/kf-research-study-cbtn: ResearchStudy.focus[0].coding
 == fsh-generated/resources/ResearchSubject-cbtn-example-participantstudy.json ==
 == fsh-generated/resources/ResearchSubject-emerge-example-participantstudy.json ==
 == fsh-generated/resources/ResearchSubject-pcgc-example-participantstudy.json ==
+== fsh-generated/resources/StructureDefinition-SharedDataModelFile.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelPerson.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelResearchCollection.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelResearchDataAccessPolicy.json ==
@@ -186,8 +217,16 @@ INFORMATION: ResearchStudy/kf-research-study-cbtn: ResearchStudy.focus[0].coding
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-access-policy-description.json ==
 == fsh-generated/resources/StructureDefinition-access-type.json ==
+== fsh-generated/resources/StructureDefinition-content-version.json ==
+== fsh-generated/resources/StructureDefinition-file-format.json ==
+== fsh-generated/resources/StructureDefinition-file-size.json ==
+== fsh-generated/resources/StructureDefinition-hash-extension.json ==
+== fsh-generated/resources/StructureDefinition-hash-type.json ==
+== fsh-generated/resources/StructureDefinition-hash-value.json ==
 == fsh-generated/resources/StructureDefinition-label-extension.json ==
+== fsh-generated/resources/StructureDefinition-location-access.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-Study-Participant.json ==
+== fsh-generated/resources/StructureDefinition-ncpi-file.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-participant.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-person.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-research-access-policy.json ==
@@ -216,6 +255,9 @@ INFORMATION: StructureDefinition/research-study-subject: StructureDefinition.sna
 WARNING: StructureDefinition/research-study-subject-consent: StructureDefinition.context[0]: Review the extension type for research-study-subject-consent: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-research-web-Link.json ==
 == fsh-generated/resources/ValueSet-collection-type-vs.json ==
+== fsh-generated/resources/ValueSet-edam-ontology-terms.json ==
+WARNING: ValueSet/edam-ontology-terms: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'edam-ontology-terms'): Error from http://tx.fhir.org/r4: Attempt to reference http://edamontology.org as a CodeSystem when it's a ValueSet
 == fsh-generated/resources/ValueSet-mesh-terms.json ==
 WARNING: ValueSet.where(id = 'mesh-terms'): Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.177
 == fsh-generated/resources/ValueSet-research-data-access-code-vs.json ==

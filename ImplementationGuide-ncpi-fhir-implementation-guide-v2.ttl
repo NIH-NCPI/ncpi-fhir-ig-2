@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-30T19:47:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-08T16:40:30+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -572,6 +572,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/hash-type" ]
+       ] ;
+       fhir:name [ fhir:v "Algorithm used to calculate the hash (and size, where applicable)" ] ;
+       fhir:description [ fhir:v "Algorithm used to calculate the hash (and size, where applicable)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ResearchStudy" ]
        ] ) ;
        fhir:reference [
@@ -788,6 +800,33 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms> ;
+         fhir:reference [ fhir:v "ValueSet/edam-ontology-terms" ]
+       ] ;
+       fhir:name [ fhir:v "Enumerations for the EDAM ontology" ] ;
+       fhir:description [ fhir:v "Enumerations for the EDAM ontology" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DocumentReference" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/PT-006SP660> ;
+         fhir:reference [ fhir:v "DocumentReference/PT-006SP660" ]
+       ] ;
+       fhir:name [ fhir:v "Example file based on CBTN" ] ;
+       fhir:description [ fhir:v "Use case of file information from CBTN" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ResearchSubject" ]
        ] ) ;
        fhir:reference [
@@ -938,6 +977,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/example-hash-type-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Hash Types Code System" ] ;
+       fhir:description [ fhir:v "Algorithm used to calculate the hash (and size, where applicable)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Consent" ]
        ] ) ;
        fhir:reference [
@@ -965,6 +1016,18 @@
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access> ;
+         fhir:reference [ fhir:v "StructureDefinition/location-access" ]
+       ] ;
+       fhir:name [ fhir:v "If present, only those under the specific Access Policy can access the file in this location." ] ;
+       fhir:description [ fhir:v "If present, only those under the specific Access Policy can access the file in this location." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1090,6 +1153,18 @@
        ] ;
        fhir:name [ fhir:v "NCPI FHIR Codes" ] ;
        fhir:description [ fhir:v "Codes that would apply to NCPI projects" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-file" ]
+       ] ;
+       fhir:name [ fhir:v "NCPI File" ] ;
+       fhir:description [ fhir:v "Information about a file related to a research participant" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1268,6 +1343,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/hash-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Provides a list of hashes for confirming file transfers" ] ;
+       fhir:description [ fhir:v "Provides a list of hashes for confirming file transfers" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Consent" ]
        ] ) ;
        fhir:reference [
@@ -1280,6 +1367,18 @@
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/related-file-type-code-system> ;
+         fhir:reference [ fhir:v "CodeSystem/related-file-type-code-system" ]
+       ] ;
+       fhir:name [ fhir:v "Related File Type Code System" ] ;
+       fhir:description [ fhir:v "Explains the relationship of this file to the file of reference" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1454,6 +1553,18 @@
          fhir:value [ fhir:v "StructureDefinition:logical" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFile> ;
+         fhir:reference [ fhir:v "StructureDefinition/SharedDataModelFile" ]
+       ] ;
+       fhir:name [ fhir:v "Shared Data Model for File" ] ;
+       fhir:description [ fhir:v "The **Shared Data Model for File**" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchCollection> ;
          fhir:reference [ fhir:v "StructureDefinition/SharedDataModelResearchCollection" ]
        ] ;
@@ -1583,6 +1694,54 @@
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format> ;
+         fhir:reference [ fhir:v "StructureDefinition/file-format" ]
+       ] ;
+       fhir:name [ fhir:v "The file format used" ] ;
+       fhir:description [ fhir:v "The file format used" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size> ;
+         fhir:reference [ fhir:v "StructureDefinition/file-size" ]
+       ] ;
+       fhir:name [ fhir:v "The size of the file, e.g., in bytes." ] ;
+       fhir:description [ fhir:v "The size of the file, e.g., in bytes." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value> ;
+         fhir:reference [ fhir:v "StructureDefinition/hash-value" ]
+       ] ;
+       fhir:name [ fhir:v "Value of hashing the file" ] ;
+       fhir:description [ fhir:v "Value of hashing the file" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version> ;
+         fhir:reference [ fhir:v "StructureDefinition/content-version" ]
+       ] ;
+       fhir:name [ fhir:v "Version of the contents of the file" ] ;
+       fhir:description [ fhir:v "Version of the contents of the file" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;

@@ -25,6 +25,98 @@
       ]
     },
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version",
+      "title": "Version of the contents of the file",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format",
+      "title": "The file format used",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size",
+      "title": "The size of the file, e.g., in bytes.",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension",
+      "title": "Provides a list of hashes for confirming file transfers",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type",
+      "title": "Algorithm used to calculate the hash (and size, where applicable)",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
+      "title": "Value of hashing the file",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension",
       "title": "Label",
       "types": [
@@ -81,6 +173,13 @@
         "TriggerDefinition",
         "UsageContext",
         "Dosage"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access",
+      "title": "If present, only those under the specific Access Policy can access the file in this location.",
+      "types": [
+        "Reference"
       ]
     },
     {
@@ -268,6 +367,12 @@
         "title": "NCPI Study Participant"
       }
     ],
+    "DocumentReference": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file",
+        "title": "NCPI File"
+      }
+    ],
     "Patient": [
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant",
@@ -318,6 +423,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
@@ -331,8 +439,14 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/valueset-reference": [
+      "SharedDataModelFile",
+      "SharedDataModelFile.location",
+      "SharedDataModelFile.relatedFile",
       "SharedDataModelPerson",
       "SharedDataModelStudyParticipant"
+    ],
+    "http://hl7.org/fhir/build/StructureDefinition/binding-definition": [
+      "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -364,8 +478,30 @@
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type": [
       "Consent"
     ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version": [
+      "DocumentReference"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format": [
+      "DocumentReference"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size": [
+      "DocumentReference"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension": [
+      "DocumentReference"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type": [
+      "Extension"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value": [
+      "Extension"
+    ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension": [
       "List"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access": [
+      "DocumentReference",
+      "DocumentReference.content"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status": [
       "Patient"

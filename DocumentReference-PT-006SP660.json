@@ -1,0 +1,69 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "PT-006SP660",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference PT-006SP660</b></p><a name=\"PT-006SP660\"> </a><a name=\"hcPT-006SP660\"> </a><a name=\"PT-006SP660-en-US\"> </a><p><b>identifier</b>: PT_006SP660</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://edamontology.org operation_3227}\">Variant calling</span></p><p><b>subject</b>: <a href=\"GF_6BAD9S7D\">GF_6BAD9S7D</a></p><p><b>description</b>: Annotated Variant Call</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz</td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version",
+    "valueString" : "V1"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://edamontology.org",
+        "code" : "format_3016",
+        "display" : "VCF"
+      }]
+    }
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size",
+    "valueQuantity" : {
+      "value" : 1044770380,
+      "unit" : "bytes"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
+      "valueString" : "8f107912d862cf91fbfb77bf9c1bab36-4"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type",
+      "valueCode" : "etag"
+    }],
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"
+  }],
+  "identifier" : [{
+    "value" : "PT_006SP660"
+  }],
+  "status" : "current",
+  "type" : {
+    "coding" : [{
+      "system" : "http://edamontology.org",
+      "code" : "operation_3227",
+      "display" : "Variant calling"
+    }]
+  },
+  "subject" : {
+    "reference" : "GF_6BAD9S7D"
+  },
+  "description" : "Annotated Variant Call",
+  "content" : [{
+    "extension" : [{
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access",
+      "valueReference" : {
+        "reference" : "Consent/kf-gru-dac-consent"
+      }
+    }],
+    "attachment" : {
+      "url" : "s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz"
+    }
+  }]
+}

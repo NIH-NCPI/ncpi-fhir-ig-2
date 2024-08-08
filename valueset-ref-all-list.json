@@ -12,8 +12,50 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-participant.html" : "NCPI Participant",
-      "StructureDefinition-ncpi-person.html" : "NCPI Person"
+      "StructureDefinition-ncpi-person.html" : "NCPI Person",
+      "StructureDefinition-ncpi-participant.html" : "NCPI Participant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "FacilityTypeCodeValueSet",
+      "title" : "Facility Type Code Value Set",
+      "description" : "This is the code representing the type of organizational setting where the clinical encounter, service, interaction, or treatment occurred. The value set used for Healthcare Facility Type has been defined by HITSP to be the value set reproduced from HITSP C80 Table 2-147.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.67"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.241"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -27,8 +69,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-action",
@@ -166,6 +208,62 @@
       "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/doc-classcodes",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "DocumentClassValueSet",
+      "title" : "Document Class Value Set",
+      "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "systems" : ["http://hl7.org/fhir/document-reference-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.7"],
+      "sources" : ["2.16.840.1.113883.4.642.3.7"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.244"],
+      "sources" : ["2.16.840.1.113883.4.642.3.244"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/formatcodes",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "DocumentReferenceFormatCodeSet",
+      "title" : "DocumentReference Format Code Set",
+      "description" : "The value set is defined to be the set of format codes defined by the IHE Technical Framework, and also including additional format codes defined by the    HL7. The value set is listed in HITSP C80 Table 2-153 Format Code Value Set Definition,    with additions published later by IHE as published    at http://wiki.ihe.net/index.php?title=IHE_Format_Codes   and with additions published later by HL7 as published at https://confluence.hl7.org/display/SD/Format+Codes+for+IHE+XDS.   This is the code specifying the technical format of the document. Along with the typeCode,    it should provide sufficient information to allow any potential document consumer to know    if it will be able to process the document. The code shall be sufficiently specific to    ensure processing/display by identifying a document encoding, structure and template. The actual list of codes here is incomplete",
+      "systems" : ["http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem"],
+      "oids" : ["1.3.6.1.4.1.19376.1.2.7.1"],
+      "sources" : ["1.3.6.1.4.1.19376.1.2.7.1"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/group-type",
       "version" : "4.3.0",
       "status" : "draft",
@@ -209,8 +307,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.48"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -224,14 +322,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
       "StructureDefinition-ncpi-Study-Participant.html" : "NCPI Study Participant",
-      "StructureDefinition-ncpi-participant.html" : "NCPI Participant",
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
       "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
       "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
-      "StructureDefinition-ncpi-person.html" : "NCPI Person"
+      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
+      "StructureDefinition-ncpi-file.html" : "NCPI File",
+      "StructureDefinition-ncpi-person.html" : "NCPI Person",
+      "StructureDefinition-ncpi-participant.html" : "NCPI Participant"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -259,7 +359,24 @@
       "sources" : ["2.16.840.1.113883.4.642.3.322"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-example-codes",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ExampleUseCodesForList",
+      "title" : "Example Use Codes for List",
+      "description" : "Example use codes for the List resource - typical kinds of use.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/list-example-use-codes"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.316"],
+      "sources" : ["2.16.840.1.113883.4.642.3.316"],
+      "uses" : {
+      },
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-item-flag",
@@ -273,7 +390,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.320"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-mode",
@@ -287,7 +405,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.318"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-order",
@@ -301,7 +420,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.324"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-status",
@@ -315,7 +435,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.326"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -333,6 +454,20 @@
       "uses" : {
       },
       "StructureDefinition-ncpi-participant.html" : "NCPI Participant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "Mime Types",
+      "title" : "MimeType",
+      "description" : "This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)",
+      "systems" : ["urn:ietf:bcp:13"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1024"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1024"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -362,8 +497,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.823"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-phase",
@@ -377,8 +512,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.821"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type",
@@ -394,8 +529,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.827"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-reason-stopped",
@@ -411,8 +546,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.825"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-status",
@@ -426,8 +561,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.819"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-subject-status",
@@ -460,7 +595,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
@@ -499,6 +635,18 @@
       "StructureDefinition-label-extension.html" : "Label"
     },
     {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -510,8 +658,20 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection"
+      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "EDAMOntologyTerms",
+      "title" : "Enumerations for the EDAM ontology",
+      "description" : "Enumerations for the EDAM ontology",
+      "systems" : ["http://edamontology.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms",
@@ -537,8 +697,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
-      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy"
+      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy",
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs",

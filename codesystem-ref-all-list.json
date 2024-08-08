@@ -25,6 +25,18 @@
       "http://hl7.org/fhir/R4B/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
+      "url" : "http://hl7.org/fhir/composition-status",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "oids" : ["2.16.840.1.113883.4.642.4.242"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-composition-status.html" : "CompositionStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/consent-data-meaning",
       "version" : "4.3.0",
       "status" : "draft",
@@ -59,6 +71,30 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4B/valueset-consent-state-codes.html" : "ConsentState"
+    },
+    {
+      "url" : "http://hl7.org/fhir/document-reference-status",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "oids" : ["2.16.840.1.113883.4.642.1.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-document-reference-status.html" : "DocumentReferenceStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/document-relationship-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "oids" : ["2.16.840.1.113883.4.642.4.245"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-document-relationship-type.html" : "DocumentRelationshipType"
     },
     {
       "url" : "http://hl7.org/fhir/group-type",
@@ -166,7 +202,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4B/valueset-consent-content-code.html" : "Consent Content Codes",
-      "http://hl7.org/fhir/R4B/valueset-consent-category.html" : "Consent Category Codes"
+      "http://hl7.org/fhir/R4B/valueset-consent-category.html" : "Consent Category Codes",
+      "http://hl7.org/fhir/R4B/valueset-doc-classcodes.html" : "Document Class Value Set"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -178,7 +215,9 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4B/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes"
+      "http://hl7.org/fhir/R4B/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+      "http://hl7.org/fhir/R4B/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4B/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/consentaction",
@@ -264,6 +303,18 @@
       "http://hl7.org/fhir/R4B/valueset-list-empty-reason.html" : "List Empty Reasons"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/list-example-use-codes",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ExampleUseCodesForList",
+      "title" : "Example Use Codes for List",
+      "description" : "Example use codes for the List resource - typical kinds of use.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1105"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-list-example-codes.html" : "Example Use Codes for List"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/list-order",
       "version" : "1.0.1",
       "status" : "active",
@@ -333,8 +384,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1492"],
       "uses" : {
       },
-      "ValueSet-research-data-date-of-birth-method-vs.html" : "Enumerations for how DOB was constructed",
-      "http://hl7.org/fhir/R4B/valueset-title-type.html" : "TitleType"
+      "http://hl7.org/fhir/R4B/valueset-title-type.html" : "TitleType",
+      "ValueSet-research-data-date-of-birth-method-vs.html" : "Enumerations for how DOB was constructed"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -347,6 +398,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4B/valueset-patient-contactrelationship.html" : "Patient Contact Relationship"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "9.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "oids" : ["2.16.840.1.113883.5.4"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",

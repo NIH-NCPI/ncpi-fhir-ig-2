@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2024-07-30T19:47:38+00:00"/>
+  <date value="2024-08-08T16:40:30+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -499,6 +499,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hash-type"/>
+      </reference>
+      <name value="Algorithm used to calculate the hash (and size, where applicable)"/>
+      <description value="Algorithm used to calculate the hash (and size, where applicable)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ResearchStudy"/>
       </extension>
       <reference>
@@ -675,6 +686,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/edam-ontology-terms"/>
+      </reference>
+      <name value="Enumerations for the EDAM ontology"/>
+      <description value="Enumerations for the EDAM ontology"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/PT-006SP660"/>
+      </reference>
+      <name value="Example file based on CBTN"/>
+      <description value="Use case of file information from CBTN"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ResearchSubject"/>
       </extension>
       <reference>
@@ -785,6 +818,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/example-hash-type-code-system"/>
+      </reference>
+      <name value="Hash Types Code System"/>
+      <description value="Algorithm used to calculate the hash (and size, where applicable)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Consent"/>
       </extension>
       <reference>
@@ -804,6 +848,17 @@
       <name value="HMB-NPU Consent"/>
       <description value="Consented with Health/Medical/Biomedical + Not for profit use"/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/location-access"/>
+      </reference>
+      <name value="If present, only those under the specific Access Policy can access the file in this location."/>
+      <description value="If present, only those under the specific Access Policy can access the file in this location."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -902,6 +957,17 @@
       </reference>
       <name value="NCPI FHIR Codes"/>
       <description value="Codes that would apply to NCPI projects"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-file"/>
+      </reference>
+      <name value="NCPI File"/>
+      <description value="Information about a file related to a research participant"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1049,6 +1115,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hash-extension"/>
+      </reference>
+      <name value="Provides a list of hashes for confirming file transfers"/>
+      <description value="Provides a list of hashes for confirming file transfers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Consent"/>
       </extension>
       <reference>
@@ -1057,6 +1134,17 @@
       <name value="Registered Tier Access"/>
       <description value="Registered Tier Access"/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/related-file-type-code-system"/>
+      </reference>
+      <name value="Related File Type Code System"/>
+      <description value="Explains the relationship of this file to the file of reference"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1217,6 +1305,17 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/SharedDataModelFile"/>
+      </reference>
+      <name value="Shared Data Model for File"/>
+      <description value="The **Shared Data Model for File**"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/SharedDataModelResearchCollection"/>
       </reference>
       <name value="Shared Data Model for Research Collection"/>
@@ -1332,6 +1431,50 @@
       <name value="The Centers for Medelian Genetics"/>
       <description value="The Centers for Medelian Genetics"/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/file-format"/>
+      </reference>
+      <name value="The file format used"/>
+      <description value="The file format used"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/file-size"/>
+      </reference>
+      <name value="The size of the file, e.g., in bytes."/>
+      <description value="The size of the file, e.g., in bytes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hash-value"/>
+      </reference>
+      <name value="Value of hashing the file"/>
+      <description value="Value of hashing the file"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/content-version"/>
+      </reference>
+      <name value="Version of the contents of the file"/>
+      <description value="Version of the contents of the file"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

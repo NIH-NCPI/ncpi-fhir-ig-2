@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2024-07-30T19:47:38+00:00",
+  "date" : "2024-08-08T16:40:30+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -659,6 +659,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hash-type"
+      },
+      "name" : "Algorithm used to calculate the hash (and size, where applicable)",
+      "description" : "Algorithm used to calculate the hash (and size, where applicable)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ResearchStudy"
       }],
       "reference" : {
@@ -851,6 +863,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/edam-ontology-terms"
+      },
+      "name" : "Enumerations for the EDAM ontology",
+      "description" : "Enumerations for the EDAM ontology",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/PT-006SP660"
+      },
+      "name" : "Example file based on CBTN",
+      "description" : "Use case of file information from CBTN",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ResearchSubject"
       }],
       "reference" : {
@@ -971,6 +1007,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/example-hash-type-code-system"
+      },
+      "name" : "Hash Types Code System",
+      "description" : "Algorithm used to calculate the hash (and size, where applicable)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
       }],
       "reference" : {
@@ -991,6 +1039,18 @@
       "name" : "HMB-NPU Consent",
       "description" : "Consented with Health/Medical/Biomedical + Not for profit use",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/location-access"
+      },
+      "name" : "If present, only those under the specific Access Policy can access the file in this location.",
+      "description" : "If present, only those under the specific Access Policy can access the file in this location.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1098,6 +1158,18 @@
       },
       "name" : "NCPI FHIR Codes",
       "description" : "Codes that would apply to NCPI projects",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ncpi-file"
+      },
+      "name" : "NCPI File",
+      "description" : "Information about a file related to a research participant",
       "exampleBoolean" : false
     },
     {
@@ -1259,6 +1331,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hash-extension"
+      },
+      "name" : "Provides a list of hashes for confirming file transfers",
+      "description" : "Provides a list of hashes for confirming file transfers",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
       }],
       "reference" : {
@@ -1267,6 +1351,18 @@
       "name" : "Registered Tier Access",
       "description" : "Registered Tier Access",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/related-file-type-code-system"
+      },
+      "name" : "Related File Type Code System",
+      "description" : "Explains the relationship of this file to the file of reference",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1442,6 +1538,18 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/SharedDataModelFile"
+      },
+      "name" : "Shared Data Model for File",
+      "description" : "The **Shared Data Model for File**",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/SharedDataModelResearchCollection"
       },
       "name" : "Shared Data Model for Research Collection",
@@ -1567,6 +1675,54 @@
       "name" : "The Centers for Medelian Genetics",
       "description" : "The Centers for Medelian Genetics",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/file-format"
+      },
+      "name" : "The file format used",
+      "description" : "The file format used",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/file-size"
+      },
+      "name" : "The size of the file, e.g., in bytes.",
+      "description" : "The size of the file, e.g., in bytes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hash-value"
+      },
+      "name" : "Value of hashing the file",
+      "description" : "Value of hashing the file",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/content-version"
+      },
+      "name" : "Version of the contents of the file",
+      "description" : "Version of the contents of the file",
+      "exampleBoolean" : false
     }],
     "page" : {
       "nameUrl" : "toc.html",

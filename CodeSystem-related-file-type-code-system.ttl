@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/related-file-type-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "related-file-type-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem related-file-type-code-system</b></p><a name=\"related-file-type-code-system\"> </a><a name=\"hcrelated-file-type-code-system\"> </a><a name=\"related-file-type-code-system-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/related-file-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">index_of<a name=\"related-file-type-code-system-index_of\"> </a></td><td>Index of</td></tr><tr><td style=\"white-space:nowrap\">has_index<a name=\"related-file-type-code-system-has_index\"> </a></td><td>Has index</td></tr><tr><td style=\"white-space:nowrap\">data_dictionary_of<a name=\"related-file-type-code-system-data_dictionary_of\"> </a></td><td>Data dictionary of</td></tr><tr><td style=\"white-space:nowrap\">has_data_dictionary<a name=\"related-file-type-code-system-has_data_dictionary\"> </a></td><td>Has data dictionary</td></tr><tr><td style=\"white-space:nowrap\">plink-type-associated-files<a name=\"related-file-type-code-system-plink-type-associated-files\"> </a></td><td>Plink-type associated files</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/related-file-type-code-system"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "RelatedFileTypeCS"] ; # 
+  fhir:title [ fhir:v "Related File Type Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-08-08T16:40:30+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Explains the relationship of this file to the file of reference"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "index_of" ] ;
+     fhir:display [ fhir:v "Index of" ]
+  ] [
+     fhir:code [ fhir:v "has_index" ] ;
+     fhir:display [ fhir:v "Has index" ]
+  ] [
+     fhir:code [ fhir:v "data_dictionary_of" ] ;
+     fhir:display [ fhir:v "Data dictionary of" ]
+  ] [
+     fhir:code [ fhir:v "has_data_dictionary" ] ;
+     fhir:display [ fhir:v "Has data dictionary" ]
+  ] [
+     fhir:code [ fhir:v "plink-type-associated-files" ] ;
+     fhir:display [ fhir:v "Plink-type associated files" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

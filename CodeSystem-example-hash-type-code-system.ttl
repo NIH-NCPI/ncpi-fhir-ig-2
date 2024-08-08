@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-hash-type-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem example-hash-type-code-system</b></p><a name=\"example-hash-type-code-system\"> </a><a name=\"hcexample-hash-type-code-system\"> </a><a name=\"example-hash-type-code-system-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">md5<a name=\"example-hash-type-code-system-md5\"> </a></td><td>md5 hash type</td></tr><tr><td style=\"white-space:nowrap\">sha256<a name=\"example-hash-type-code-system-sha256\"> </a></td><td>sha256 hash type</td></tr><tr><td style=\"white-space:nowrap\">sha512<a name=\"example-hash-type-code-system-sha512\"> </a></td><td>sha512 hash type</td></tr><tr><td style=\"white-space:nowrap\">sha1<a name=\"example-hash-type-code-system-sha1\"> </a></td><td>sha1 hash type</td></tr><tr><td style=\"white-space:nowrap\">crc32<a name=\"example-hash-type-code-system-crc32\"> </a></td><td>crc32 hash type</td></tr><tr><td style=\"white-space:nowrap\">crc32c<a name=\"example-hash-type-code-system-crc32c\"> </a></td><td>crc32c hash type</td></tr><tr><td style=\"white-space:nowrap\">etag<a name=\"example-hash-type-code-system-etag\"> </a></td><td>etag hash type</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HashTypeCS"] ; # 
+  fhir:title [ fhir:v "Hash Types Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-08-08T16:40:30+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Algorithm used to calculate the hash (and size, where applicable)"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "md5" ] ;
+     fhir:display [ fhir:v "md5 hash type" ]
+  ] [
+     fhir:code [ fhir:v "sha256" ] ;
+     fhir:display [ fhir:v "sha256 hash type" ]
+  ] [
+     fhir:code [ fhir:v "sha512" ] ;
+     fhir:display [ fhir:v "sha512 hash type" ]
+  ] [
+     fhir:code [ fhir:v "sha1" ] ;
+     fhir:display [ fhir:v "sha1 hash type" ]
+  ] [
+     fhir:code [ fhir:v "crc32" ] ;
+     fhir:display [ fhir:v "crc32 hash type" ]
+  ] [
+     fhir:code [ fhir:v "crc32c" ] ;
+     fhir:display [ fhir:v "crc32c hash type" ]
+  ] [
+     fhir:code [ fhir:v "etag" ] ;
+     fhir:display [ fhir:v "etag hash type" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

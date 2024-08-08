@@ -7,11 +7,25 @@
     "name" : "CollectionType"
   },
   {
+    "id" : "example-hash-type-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system",
+    "version" : "0.1.0",
+    "name" : "HashTypeCS"
+  },
+  {
     "id" : "ncpi",
     "type" : "CodeSystem",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi",
     "version" : "0.1.0",
     "name" : "Ncpi"
+  },
+  {
+    "id" : "related-file-type-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/related-file-type-code-system",
+    "version" : "0.1.0",
+    "name" : "RelatedFileTypeCS"
   },
   {
     "id" : "research-data-access-code",
@@ -54,6 +68,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2",
     "version" : "0.1.0",
     "name" : "NCPIFHIRIGv2"
+  },
+  {
+    "id" : "SharedDataModelFile",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFile",
+    "version" : "0.1.0",
+    "name" : "CdmFile"
   },
   {
     "id" : "SharedDataModelPerson",
@@ -119,6 +140,48 @@
     "name" : "AccessType"
   },
   {
+    "id" : "content-version",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version",
+    "version" : "0.1.0",
+    "name" : "ContentVersion"
+  },
+  {
+    "id" : "file-format",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format",
+    "version" : "0.1.0",
+    "name" : "FileFormat"
+  },
+  {
+    "id" : "file-size",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size",
+    "version" : "0.1.0",
+    "name" : "FileSize"
+  },
+  {
+    "id" : "hash-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension",
+    "version" : "0.1.0",
+    "name" : "HashExtension"
+  },
+  {
+    "id" : "hash-type",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type",
+    "version" : "0.1.0",
+    "name" : "HashType"
+  },
+  {
+    "id" : "hash-value",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
+    "version" : "0.1.0",
+    "name" : "HashValue"
+  },
+  {
     "id" : "label-extension",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension",
@@ -126,11 +189,25 @@
     "name" : "Label"
   },
   {
+    "id" : "location-access",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access",
+    "version" : "0.1.0",
+    "name" : "LocationAccess"
+  },
+  {
     "id" : "ncpi-Study-Participant",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant",
     "version" : "0.1.0",
     "name" : "NcpiStudyParticipant"
+  },
+  {
+    "id" : "ncpi-file",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file",
+    "version" : "0.1.0",
+    "name" : "NcpiFile"
   },
   {
     "id" : "ncpi-participant",
@@ -257,6 +334,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
     "version" : "0.1.0",
     "name" : "CollectionTypeVS"
+  },
+  {
+    "id" : "edam-ontology-terms",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms",
+    "version" : "0.1.0",
+    "name" : "EDAMOntologyTerms"
   },
   {
     "id" : "mesh-terms",

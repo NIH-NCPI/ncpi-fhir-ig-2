@@ -38,7 +38,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"14"}
     h3,h4,h5,h6{--heading-prefix:"14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -300,18 +301,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 <h3 id="fhir-terminologies">FHIR Terminologies</h3>
-<p>Terminology has always been a fundamental part of knowledge exchange and it’s importance is even more salient than ever. FHIR addresses the need with a handful of resources:</p>
+<p>Terminology has always been a fundamental part of knowledge exchange and it's importance is even more salient than ever. FHIR addresses the need with a handful of resources:</p>
 
 <h4 id="codesystem">CodeSystem</h4>
-<p>FHIR defines related codes by enumerating them inside a <a href="https://hl7.org/fhir/codesystem.html">CodeSystem</a>. The CodeSystem will have a unique <em>url</em> property to establish it’s functional identity, and codes from that CodeSystem will typically carry that url as the code’s <em>system</em> property to establish the code’s origins (and thus it’s true meaning). Many times, each code will be accompanied by a <em>display</em> which provides a more <em>human readable</em> representation of the code and possibly a <em>definition</em> which may provide additional clarity about the code’s intended use.</p>
+<p>FHIR defines related codes by enumerating them inside a <a href="https://hl7.org/fhir/codesystem.html">CodeSystem</a>. The CodeSystem will have a unique <em>url</em> property to establish it's functional identity, and codes from that CodeSystem will typically carry that url as the code's <em>system</em> property to establish the code's origins (and thus it's true meaning). Many times, each code will be accompanied by a <em>display</em> which provides a more <em>human readable</em> representation of the code and possibly a <em>definition</em> which may provide additional clarity about the code's intended use.</p>
 
 <p>Codes within a CodeSystem can optionally be arranged hierarchically.</p>
 
 <h4 id="valueset">ValueSet</h4>
-<p>A CodeSystem acts as the definition of a set of codes which have a common system (the <em>url</em>). A ValueSet, on the other hand, is a collection of codes that is defined for a specific purpose (binding). The members of a ValueSet do not have to originate from the same CodeSystem. One might want to bind a specific Condition profile’s code property to a fixed set of codes from one or more public ontologies. This would be done by adding the members to a specific ValueSet and binding it to the code property in the profile.</p>
+<p>A CodeSystem acts as the definition of a set of codes which have a common system (the <em>url</em>). A ValueSet, on the other hand, is a collection of codes that is defined for a specific purpose (binding). The members of a ValueSet do not have to originate from the same CodeSystem. One might want to bind a specific Condition profile's code property to a fixed set of codes from one or more public ontologies. This would be done by adding the members to a specific ValueSet and binding it to the code property in the profile.</p>
 
 <h4 id="coding">Coding</h4>
-<p>A <a href="https://hl7.org/fhir/datatypes.html#Coding">Coding</a> is a FHIR data type that describes a single code. In addition to the <em>code</em> property, it will usually include a <em>system</em> and possibly the code’s <em>display</em> property.</p>
+<p>A <a href="https://hl7.org/fhir/datatypes.html#Coding">Coding</a> is a FHIR data type that describes a single code. In addition to the <em>code</em> property, it will usually include a <em>system</em> and possibly the code's <em>display</em> property.</p>
 
 <h4 id="codeableconcept">CodeableConcept</h4>
 <p>A <a href="https://hl7.org/fhir/datatypes.html#CodeableConcept">CodeableConcept</a> is a common data type in FHIR that allows a resource to attach one or more Codings. A typical use for multiple Codings is to provide terms from other ontologies that represent the same concept.</p>
@@ -338,7 +339,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Tue, Jul 30, 2024 19:47+0000">2024-07-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Aug 8, 2024 16:40+0000">2024-08-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -355,7 +356,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -366,7 +367,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

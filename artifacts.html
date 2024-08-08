@@ -38,7 +38,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"30"}
     h3,h4,h5,h6{--heading-prefix:"30.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -302,6 +303,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-SharedDataModelFile.html"
+                  title="StructureDefinition/SharedDataModelFile">Shared Data Model for File</a>
+            </td>
+            <td>
+<p>The <strong>Shared Data Model for File</strong></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-SharedDataModelResearchCollection.html"
                   title="StructureDefinition/SharedDataModelResearchCollection">Shared Data Model for Research Collection</a>
             </td>
@@ -315,7 +325,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SharedDataModelResearchDataAccessPolicy">Shared Data Model for Research Data Access Policy</a>
             </td>
             <td>
-<p>The <strong>Shared Data Model for Research Data Access Policy</strong> represent the various Data Use Agreements that govern a researcher’s access and use of research data.</p>
+<p>The <strong>Shared Data Model for Research Data Access Policy</strong> represent the various Data Use Agreements that govern a researcher's access and use of research data.</p>
 </td>
          </tr>
          <tr>
@@ -362,6 +372,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ncpi-file.html"
+                  title="StructureDefinition/ncpi-file">NCPI File</a>
+            </td>
+            <td>
+<p>Information about a file related to a research participant</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-ncpi-participant.html"
@@ -488,11 +507,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-hash-type.html"
+                  title="StructureDefinition/hash-type">Algorithm used to calculate the hash (and size, where applicable)</a>
+            </td>
+            <td>
+<p>Algorithm used to calculate the hash (and size, where applicable)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-location-access.html"
+                  title="StructureDefinition/location-access">If present, only those under the specific Access Policy can access the file in this location.</a>
+            </td>
+            <td>
+<p>If present, only those under the specific Access Policy can access the file in this location.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-label-extension.html"
                   title="StructureDefinition/label-extension">Label</a>
             </td>
             <td>
 <p>A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hash-extension.html"
+                  title="StructureDefinition/hash-extension">Provides a list of hashes for confirming file transfers</a>
+            </td>
+            <td>
+<p>Provides a list of hashes for confirming file transfers</p>
 </td>
          </tr>
          <tr>
@@ -546,7 +592,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/research-study-result">Research Study Result</a>
             </td>
             <td>
-<p>Link to citations associated with the study’s publications.</p>
+<p>Link to citations associated with the study's publications.</p>
 </td>
          </tr>
          <tr>
@@ -573,7 +619,43 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/research-web-Link">Research Web Link</a>
             </td>
             <td>
-<p>A URL pointing to a either a research study’s website, an online document or other research related site or document.</p>
+<p>A URL pointing to a either a research study's website, an online document or other research related site or document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-file-format.html"
+                  title="StructureDefinition/file-format">The file format used</a>
+            </td>
+            <td>
+<p>The file format used</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-file-size.html"
+                  title="StructureDefinition/file-size">The size of the file, e.g., in bytes.</a>
+            </td>
+            <td>
+<p>The size of the file, e.g., in bytes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hash-value.html"
+                  title="StructureDefinition/hash-value">Value of hashing the file</a>
+            </td>
+            <td>
+<p>Value of hashing the file</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-content-version.html"
+                  title="StructureDefinition/content-version">Version of the contents of the file</a>
+            </td>
+            <td>
+<p>Version of the contents of the file</p>
 </td>
          </tr>
       </tbody>
@@ -604,6 +686,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-edam-ontology-terms.html"
+                  title="ValueSet/edam-ontology-terms">Enumerations for the EDAM ontology</a>
+            </td>
+            <td>
+<p>Enumerations for the EDAM ontology</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-mesh-terms.html" title="ValueSet/mesh-terms">MeSH Terms</a>
             </td>
             <td>
@@ -625,7 +716,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/research-data-access-type-vs">Research Data Access Type Codes</a>
             </td>
             <td>
-<p>Enumerated list of access type codes such as ‘Open Access’, ‘Registered Access’ and ‘Controlled Access’</p>
+<p>Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'</p>
 </td>
          </tr>
          <tr>
@@ -634,7 +725,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/study-name-type-vs">Study Name Type</a>
             </td>
             <td>
-<p>Some common types of study ‘names’.</p>
+<p>Some common types of study 'names'.</p>
 </td>
          </tr>
          <tr>
@@ -674,10 +765,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-example-hash-type-code-system.html"
+                  title="CodeSystem/example-hash-type-code-system">Hash Types Code System</a>
+            </td>
+            <td>
+<p>Algorithm used to calculate the hash (and size, where applicable)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-ncpi.html" title="CodeSystem/ncpi">NCPI FHIR Codes</a>
             </td>
             <td>
 <p>Codes that would apply to NCPI projects</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-related-file-type-code-system.html"
+                  title="CodeSystem/related-file-type-code-system">Related File Type Code System</a>
+            </td>
+            <td>
+<p>Explains the relationship of this file to the file of reference</p>
 </td>
          </tr>
          <tr>
@@ -695,7 +804,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="CodeSystem/research-data-access-type">Research Data Access Type Codes</a>
             </td>
             <td>
-<p>Enumerated list of access type codes such as ‘Open Access’, ‘Registered Access’ and ‘Controlled Access’</p>
+<p>Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'</p>
 </td>
          </tr>
          <tr>
@@ -704,7 +813,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="CodeSystem/study-name-type">Study Name Type</a>
             </td>
             <td>
-<p>Some common types of study ‘names’.</p>
+<p>Some common types of study 'names'.</p>
 </td>
          </tr>
          <tr>
@@ -802,7 +911,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ResearchStudy/kf-research-study-cbtn">Children's Brain Tumor Network (CBTN)</a>
             </td>
             <td>
-<p>Brain tumors are the most common form of cancer in children aged 0-19 in the United States, and are the largest cause of cancer-related deaths. The estimated number of new cases in 2019 is nearly 3,800 and thus brain tumors are a rare disease. Despite their relative rarity, the years of potential life lost due to brain tumors in 2009 was estimated at 47,631 years for children and adolescents aged 0-19 in the United States; this is a disproportionate amount of life lost compared to adult cancers and represents an unrecognized societal threat. There is an urgent need to improve therapies for these children. Most of the high-grade glial and embryonal brain cancers still remain largely incurable despite decades of clinical and laboratory research. Existing non-targeted chemotherapies and radiation, while at times effective, often represent pyrrhic victories, leaving behind life-long health burdens and causing a significant risk of secondary malignancies. NIH funded pediatric brain tumor cohort-based genomic dataset generation efforts have lagged behind other histologies and have yet to be included as part of large-scale sequencing efforts. However, consortia-based initiatives like those supported by the Children’s Brain Tumor Network (CBTN) have demonstrated the early potential for clinically annotated genomic cohorts and their utility and interest by both the pediatric cancer and structural birth defect community with more than 130 data access requests for a non-embargoed cohort of tumor/normal whole genomes and paired tumor RNAseq. Indeed more than one quarter of this 800-subject initial sequencing cohort were identified to have birth-defect-associated clinical annotations in their clinical records, however, to our knowledge limited to no trio-based genomics cohort studies exist for any one pediatric brain tumor histology. The project’s proposed sequencing cohort defines the largest, clinically annotated pediatric brain tumor cohort study to date and seeks to define the intersection of germline and somatic underpinnings of pediatric brain tumors across a shared developmental context of cancer and structural birth defects.</p>
+<p>Brain tumors are the most common form of cancer in children aged 0-19 in the United States, and are the largest cause of cancer-related deaths. The estimated number of new cases in 2019 is nearly 3,800 and thus brain tumors are a rare disease. Despite their relative rarity, the years of potential life lost due to brain tumors in 2009 was estimated at 47,631 years for children and adolescents aged 0-19 in the United States; this is a disproportionate amount of life lost compared to adult cancers and represents an unrecognized societal threat. There is an urgent need to improve therapies for these children. Most of the high-grade glial and embryonal brain cancers still remain largely incurable despite decades of clinical and laboratory research. Existing non-targeted chemotherapies and radiation, while at times effective, often represent pyrrhic victories, leaving behind life-long health burdens and causing a significant risk of secondary malignancies. NIH funded pediatric brain tumor cohort-based genomic dataset generation efforts have lagged behind other histologies and have yet to be included as part of large-scale sequencing efforts. However, consortia-based initiatives like those supported by the Children's Brain Tumor Network (CBTN) have demonstrated the early potential for clinically annotated genomic cohorts and their utility and interest by both the pediatric cancer and structural birth defect community with more than 130 data access requests for a non-embargoed cohort of tumor/normal whole genomes and paired tumor RNAseq. Indeed more than one quarter of this 800-subject initial sequencing cohort were identified to have birth-defect-associated clinical annotations in their clinical records, however, to our knowledge limited to no trio-based genomics cohort studies exist for any one pediatric brain tumor histology. The project's proposed sequencing cohort defines the largest, clinically annotated pediatric brain tumor cohort study to date and seeks to define the intersection of germline and somatic underpinnings of pediatric brain tumors across a shared developmental context of cancer and structural birth defects.</p>
 </td>
          </tr>
          <tr>
@@ -812,6 +921,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Represents the Organization for which CHOP PIs are affiliated</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-PT-006SP660.html"
+                  title="DocumentReference/PT-006SP660">Example file based on CBTN</a>
+            </td>
+            <td>
+<p>Use case of file information from CBTN</p>
 </td>
          </tr>
          <tr>
@@ -974,7 +1092,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="Group/cmg-research-study-bhcmg-consent-group-hmb-npu">Participants consented under HMB-NPU</a>
             </td>
             <td>
-<p>BH-CMG study’s population consented under Health/Medical/Biomedical + Not for profit use</p>
+<p>BH-CMG study's population consented under Health/Medical/Biomedical + Not for profit use</p>
 </td>
          </tr>
          <tr>
@@ -992,7 +1110,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="Group/cmg-research-study-bhcmg-consent-group-irb-hmb-npu">Participants consented under IRB-HMB-NPU</a>
             </td>
             <td>
-<p>BH-CMG study’s population consented under Health/Medical/Biomedical + IRB Required + Not for profit use</p>
+<p>BH-CMG study's population consented under Health/Medical/Biomedical + IRB Required + Not for profit use</p>
 </td>
          </tr>
          <tr>
@@ -1078,7 +1196,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Tue, Jul 30, 2024 19:47+0000">2024-07-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Aug 8, 2024 16:40+0000">2024-08-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -1095,7 +1213,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -1106,7 +1224,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

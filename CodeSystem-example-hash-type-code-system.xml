@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="example-hash-type-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem example-hash-type-code-system</b></p><a name="example-hash-type-code-system"> </a><a name="hcexample-hash-type-code-system"> </a><a name="example-hash-type-code-system-en-US"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">md5<a name="example-hash-type-code-system-md5"> </a></td><td>md5 hash type</td></tr><tr><td style="white-space:nowrap">sha256<a name="example-hash-type-code-system-sha256"> </a></td><td>sha256 hash type</td></tr><tr><td style="white-space:nowrap">sha512<a name="example-hash-type-code-system-sha512"> </a></td><td>sha512 hash type</td></tr><tr><td style="white-space:nowrap">sha1<a name="example-hash-type-code-system-sha1"> </a></td><td>sha1 hash type</td></tr><tr><td style="white-space:nowrap">crc32<a name="example-hash-type-code-system-crc32"> </a></td><td>crc32 hash type</td></tr><tr><td style="white-space:nowrap">crc32c<a name="example-hash-type-code-system-crc32c"> </a></td><td>crc32c hash type</td></tr><tr><td style="white-space:nowrap">etag<a name="example-hash-type-code-system-etag"> </a></td><td>etag hash type</td></tr></table></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system"/>
+  <version value="0.1.0"/>
+  <name value="HashTypeCS"/>
+  <title value="Hash Types Code System"/>
+  <status value="draft"/>
+  <date value="2024-08-08T16:40:30+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Algorithm used to calculate the hash (and size, where applicable)"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="md5"/>
+    <display value="md5 hash type"/>
+  </concept>
+  <concept>
+    <code value="sha256"/>
+    <display value="sha256 hash type"/>
+  </concept>
+  <concept>
+    <code value="sha512"/>
+    <display value="sha512 hash type"/>
+  </concept>
+  <concept>
+    <code value="sha1"/>
+    <display value="sha1 hash type"/>
+  </concept>
+  <concept>
+    <code value="crc32"/>
+    <display value="crc32 hash type"/>
+  </concept>
+  <concept>
+    <code value="crc32c"/>
+    <display value="crc32c hash type"/>
+  </concept>
+  <concept>
+    <code value="etag"/>
+    <display value="etag hash type"/>
+  </concept>
+</CodeSystem>
