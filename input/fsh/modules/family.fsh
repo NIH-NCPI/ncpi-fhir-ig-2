@@ -135,8 +135,8 @@ Description: "Extension containing Family Role"
 Profile: NcpiFamilyRole
 Parent: Group
 Id: ncpi-family-role
-Title: "Shared Data Model for Family Role"
-Description: "Shared Data Model for Family Role"
+Title: "Family Role"
+Description: "Family Role"
 * ^version = "0.1.0"
 * ^status = #draft
 * member.entity 1..1
@@ -161,8 +161,8 @@ Description: "The **Shared Data Model for Family Relationship**"
 Profile: NcpiFamilyRelationship
 Parent: Observation
 Id: ncpi-family-relationship
-Title: "Shared Data Model for Family Relationship"
-Description: "Shared Data Model for Family Relationship"
+Title: "Family Relationship"
+Description: "Family Relationship"
 * ^version = "0.1.0"
 * ^status = #draft
 * subject 1..1 
