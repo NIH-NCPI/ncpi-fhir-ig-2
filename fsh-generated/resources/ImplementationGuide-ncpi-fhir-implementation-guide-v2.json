@@ -327,6 +327,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-family-relationship"
+        },
+        "name": "Family Relationship",
+        "description": "Family Relationship",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-family-role"
+        },
+        "name": "Family Role",
+        "description": "Family Role",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/family-type"
         },
         "name": "Family Type Extension",
@@ -679,18 +695,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-family-relationship"
+          "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
         },
         "name": "Shared Data Model for Family Relationship",
-        "description": "Shared Data Model for Family Relationship",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncpi-family-role"
-        },
-        "name": "Shared Data Model for Family Role",
-        "description": "Shared Data Model for Family Role",
+        "description": "The **Shared Data Model for Family Relationship**",
         "exampleBoolean": false
       },
       {
@@ -752,14 +760,6 @@
       {
         "reference": {
           "reference": "StructureDefinition/SharedDataModelStudyFamily"
-        },
-        "name": "Shared Data Model for Study Family",
-        "description": "The **Shared Data Model for Study Family**",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
         },
         "name": "Shared Data Model for Study Family",
         "description": "The **Shared Data Model for Study Family**",

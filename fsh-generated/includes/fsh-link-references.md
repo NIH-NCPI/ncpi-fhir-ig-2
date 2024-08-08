@@ -34,6 +34,8 @@
 [emerge-example-person]: Person-emerge-example-person.html
 [PT-005B7CZ4]: Patient-PT-005B7CZ4.html
 [pcgc-example-person]: Person-pcgc-example-person.html
+[NcpiFamilyRelationship]: StructureDefinition-ncpi-family-relationship.html
+[NcpiFamilyRole]: StructureDefinition-ncpi-family-role.html
 [FamilyType]: StructureDefinition-family-type.html
 [NcpiFamilyTypesVS]: ValueSet-ncpi-family-types-vs.html
 [kf-gsr-allowed-access]: Consent-kf-gsr-allowed-access.html
@@ -78,8 +80,7 @@
 [ResearchStudySubjectConsent]: StructureDefinition-research-study-subject-consent.html
 [ResearchDiseaseUseLimitation]: StructureDefinition-research-disease-use-limitation.html
 [ResearchWebLink]: StructureDefinition-research-web-Link.html
-[NcpiFamilyRelationship]: StructureDefinition-ncpi-family-relationship.html
-[NcpiFamilyRole]: StructureDefinition-ncpi-family-role.html
+[CdmFamilyRelationship]: StructureDefinition-SharedDataModelFamilyRelationship.html
 [CdmFamilyRole]: StructureDefinition-SharedDataModelFamilyRole.html
 [CdmResearchCollection]: StructureDefinition-SharedDataModelResearchCollection.html
 [CdmResearchDataAccessPolicy]: StructureDefinition-SharedDataModelResearchDataAccessPolicy.html
@@ -88,7 +89,6 @@
 [CdmPerson]: StructureDefinition-SharedDataModelPerson.html
 [CdmResearchStudy]: StructureDefinition-SharedDataModelResearchStudy.html
 [CdmStudyFamily]: StructureDefinition-SharedDataModelStudyFamily.html
-[CdmFamilyRelationship]: StructureDefinition-SharedDataModelFamilyRelationship.html
 [Description]: StructureDefinition-description.html
 [FamilyRole]: StructureDefinition-family-role.html
 [StudyFamilyFocus]: StructureDefinition-study-family-focus.html
