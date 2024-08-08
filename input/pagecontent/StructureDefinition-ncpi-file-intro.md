@@ -21,7 +21,7 @@ The following fields from the shared data model are to be mapped to the NCPI Fil
 | **Logical Model Property** | **Cardinality** | **NCPI FHIR Mapping** | **Usage Guidance** | **Notes**|
 participantID|1..1|identifier.value|The participant(s) for whom this file contains data|
 fileExternalID|0..1|subject|A related identifier of this file|
-format|1..1|codextension[file-format].valueCodeableConcept.codinge|The file format used|
+format|1..1|extension[file-format].valueCodeableConcept.coding|The file format used|
 location|1..*|content|List of locations where this data can be accessed|
 location.uri|1..1|content.attachment.url|The URI at which this data can be accessed|
 location.accessPolicy|0..*|content.extension[location-access].valueReference|If present, only those under the specific Access Policy can access the file in this location.|
@@ -35,3 +35,6 @@ type|1..1|type|The type of data contained in this file. Should be as detailed as
 relatedFile|0..1|TODO|Provides a reference to another file that is related to this one|
 relatedFile.file|0..1|TODO|The file to which this related file is related|
 relatedFile.type|0..1|TODO|The relationship of the file to the parent file in reference|
+
+##### Note on Related Files
+The fields of related files are under the scope of file metadata and that module has yet to be written at the time of the definition of Files. Once a file metadata module is written, the FHIR mappings for related file in this IG should be updated.
