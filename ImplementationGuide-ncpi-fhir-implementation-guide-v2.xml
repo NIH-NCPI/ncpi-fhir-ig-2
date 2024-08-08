@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2024-08-08T16:40:30+00:00"/>
+  <date value="2024-08-08T19:03:14+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -510,6 +510,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/cbtn-family-relationship-mother"/>
+      </reference>
+      <name value="An example family relationship based on data from CBTN"/>
+      <description value="An example family relationship based on data from CBTN."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/cbtn-family-relationship-son"/>
+      </reference>
+      <name value="An example family relationship based on data from CBTN"/>
+      <description value="An example family relationship based on data from CBTN."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/cbtn-family-role-mother"/>
+      </reference>
+      <name value="An example family role based on data from CBTN"/>
+      <description value="An example family role based on data from CBTN."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/cbtn-family-role-son"/>
+      </reference>
+      <name value="An example family role based on data from CBTN"/>
+      <description value="An example family role based on data from CBTN."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ResearchStudy"/>
       </extension>
       <reference>
@@ -642,6 +686,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/consanguinity"/>
+      </reference>
+      <name value="Consanguinity Extension"/>
+      <description value="Extension containing Consanguinity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/consanguinity-assertion-vs"/>
+      </reference>
+      <name value="Consanguinity Value Codes"/>
+      <description value="List of codes indicates the level of known consanguinity (blood relation) within a study family."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
@@ -741,6 +807,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/cbtn-study-family"/>
+      </reference>
+      <name value="Example patients based on data from CBTN"/>
+      <description value="Example patients based on data from CBTN."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -804,6 +881,50 @@
       <name value="Example patients based on data from PCGC"/>
       <description value="Example patients based on data from PCGC"/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-family-relationship"/>
+      </reference>
+      <name value="Family Relationship"/>
+      <description value="Family Relationship"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-family-role"/>
+      </reference>
+      <name value="Family Role"/>
+      <description value="Family Role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/family-type"/>
+      </reference>
+      <name value="Family Type Extension"/>
+      <description value="Extension containing Family Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ncpi-family-types-vs"/>
+      </reference>
+      <name value="Family Types Codes"/>
+      <description value="A value set with all codes used for the expected family types."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -953,6 +1074,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/ncpi-family-types"/>
+      </reference>
+      <name value="NCPI Family Types CodeSystem"/>
+      <description value="CodeSystem for Types of Families"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/ncpi"/>
       </reference>
       <name value="NCPI FHIR Codes"/>
@@ -1034,6 +1166,17 @@
       </reference>
       <name value="NCPI Research Study Group"/>
       <description value="Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-study-family"/>
+      </reference>
+      <name value="NCPI Study Family"/>
+      <description value="Study Family"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1305,6 +1448,28 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/SharedDataModelFamilyRelationship"/>
+      </reference>
+      <name value="Shared Data Model for Family Relationship"/>
+      <description value="The **Shared Data Model for Family Relationship**"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SharedDataModelFamilyRole"/>
+      </reference>
+      <name value="Shared Data Model for Family Role"/>
+      <description value="The **Shared Data Model for Family Role**"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/SharedDataModelFile"/>
       </reference>
       <name value="Shared Data Model for File"/>
@@ -1375,6 +1540,61 @@
       </reference>
       <name value="Shared Data Model for Research Study"/>
       <description value="The **Shared Data Model for Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SharedDataModelStudyFamily"/>
+      </reference>
+      <name value="Shared Data Model for Study Family"/>
+      <description value="The **Shared Data Model for Study Family**"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/description"/>
+      </reference>
+      <name value="Study Family Description"/>
+      <description value="Free text describing the study family, such as potential inheritance or details about consanguinity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/family-role"/>
+      </reference>
+      <name value="Study Family Focus"/>
+      <description value="Extension containing Family Role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study-family-focus"/>
+      </reference>
+      <name value="Study Family Focus Extension"/>
+      <description value="Extension containing Study Family Focus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study-family"/>
+      </reference>
+      <name value="Study Family Reference"/>
+      <description value="Extension containing Study Family Reference"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

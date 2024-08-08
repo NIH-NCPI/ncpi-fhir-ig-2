@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"SharedDataModelFamilyRole","SharedDataModelFamilyRole","","","",0,*,"","","","null {[]} {[]}
+","Shared Data Model for Family Role","The **Shared Data Model for Family Role**","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"SharedDataModelFamilyRole.participant","SharedDataModelFamilyRole.participant","","","",1,1,"","","","Reference {[]} {[]}
+","The participant we are describing","The participant we are describing","","","","","","","","","",,,,,"",,,,"SharedDataModelFamilyRole.participant",1,1,"",""
+"SharedDataModelFamilyRole.studyFamily","SharedDataModelFamilyRole.studyFamily","","","",1,1,"","","","Reference {[]} {[]}
+","The study family this participant is part of","The study family this participant is part of","","","","","","","","","",,,,,"",,,,"SharedDataModelFamilyRole.studyFamily",1,1,"",""
+"SharedDataModelFamilyRole.familyRole","SharedDataModelFamilyRole.familyRole","","","",0,1,"","","","code {[]} {[]}
+","The role this individual has in the family, specifically with respect to a proband or index participant","The role this individual has in the family, specifically with respect to a proband or index participant","","","","","","","","","",,,,,"",,,,"SharedDataModelFamilyRole.familyRole",0,1,"",""

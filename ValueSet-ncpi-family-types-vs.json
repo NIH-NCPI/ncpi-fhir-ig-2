@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ncpi-family-types-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ncpi-family-types-vs</b></p><a name=\"ncpi-family-types-vs\"> </a><a name=\"hcncpi-family-types-vs\"> </a><a name=\"ncpi-family-types-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-ncpi-family-types.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</code></a></li></ul></div>"
+  },
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/ncpi-family-types-vs",
+  "version" : "0.1.0",
+  "name" : "NcpiFamilyTypesVS",
+  "title" : "Family Types Codes",
+  "status" : "active",
+  "date" : "2024-08-08T19:03:14+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
+  "description" : "A value set with all codes used for the expected family types.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types"
+    }]
+  }
+}

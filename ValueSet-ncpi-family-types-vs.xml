@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ncpi-family-types-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ncpi-family-types-vs</b></p><a name="ncpi-family-types-vs"> </a><a name="hcncpi-family-types-vs"> </a><a name="ncpi-family-types-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ncpi-family-types.html"><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</code></a></li></ul></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/ncpi-family-types-vs"/>
+  <version value="0.1.0"/>
+  <name value="NcpiFamilyTypesVS"/>
+  <title value="Family Types Codes"/>
+  <status value="active"/>
+  <date value="2024-08-08T19:03:14+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="A value set with all codes used for the expected family types."/>
+  <compose>
+    <include>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types"/>
+    </include>
+  </compose>
+</ValueSet>

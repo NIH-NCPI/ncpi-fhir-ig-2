@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2024-08-08T16:40:30+00:00",
+  "date" : "2024-08-08T19:03:14+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -671,6 +671,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/cbtn-family-relationship-mother"
+      },
+      "name" : "An example family relationship based on data from CBTN",
+      "description" : "An example family relationship based on data from CBTN.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/cbtn-family-relationship-son"
+      },
+      "name" : "An example family relationship based on data from CBTN",
+      "description" : "An example family relationship based on data from CBTN.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/cbtn-family-role-mother"
+      },
+      "name" : "An example family role based on data from CBTN",
+      "description" : "An example family role based on data from CBTN.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/cbtn-family-role-son"
+      },
+      "name" : "An example family role based on data from CBTN",
+      "description" : "An example family role based on data from CBTN.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ResearchStudy"
       }],
       "reference" : {
@@ -815,6 +863,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/consanguinity"
+      },
+      "name" : "Consanguinity Extension",
+      "description" : "Extension containing Consanguinity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/consanguinity-assertion-vs"
+      },
+      "name" : "Consanguinity Value Codes",
+      "description" : "List of codes indicates the level of known consanguinity (blood relation) within a study family.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PractitionerRole"
       }],
       "reference" : {
@@ -923,6 +995,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/cbtn-study-family"
+      },
+      "name" : "Example patients based on data from CBTN",
+      "description" : "Example patients based on data from CBTN.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -991,6 +1075,54 @@
       "name" : "Example patients based on data from PCGC",
       "description" : "Example patients based on data from PCGC",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ncpi-family-relationship"
+      },
+      "name" : "Family Relationship",
+      "description" : "Family Relationship",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ncpi-family-role"
+      },
+      "name" : "Family Role",
+      "description" : "Family Role",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/family-type"
+      },
+      "name" : "Family Type Extension",
+      "description" : "Extension containing Family Type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ncpi-family-types-vs"
+      },
+      "name" : "Family Types Codes",
+      "description" : "A value set with all codes used for the expected family types.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1154,6 +1286,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/ncpi-family-types"
+      },
+      "name" : "NCPI Family Types CodeSystem",
+      "description" : "CodeSystem for Types of Families",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/ncpi"
       },
       "name" : "NCPI FHIR Codes",
@@ -1242,6 +1386,18 @@
       },
       "name" : "NCPI Research Study Group",
       "description" : "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ncpi-study-family"
+      },
+      "name" : "NCPI Study Family",
+      "description" : "Study Family",
       "exampleBoolean" : false
     },
     {
@@ -1538,6 +1694,30 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/SharedDataModelFamilyRelationship"
+      },
+      "name" : "Shared Data Model for Family Relationship",
+      "description" : "The **Shared Data Model for Family Relationship**",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SharedDataModelFamilyRole"
+      },
+      "name" : "Shared Data Model for Family Role",
+      "description" : "The **Shared Data Model for Family Role**",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/SharedDataModelFile"
       },
       "name" : "Shared Data Model for File",
@@ -1614,6 +1794,66 @@
       },
       "name" : "Shared Data Model for Research Study",
       "description" : "The **Shared Data Model for Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SharedDataModelStudyFamily"
+      },
+      "name" : "Shared Data Model for Study Family",
+      "description" : "The **Shared Data Model for Study Family**",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/description"
+      },
+      "name" : "Study Family Description",
+      "description" : "Free text describing the study family, such as potential inheritance or details about consanguinity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/family-role"
+      },
+      "name" : "Study Family Focus",
+      "description" : "Extension containing Family Role",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/study-family-focus"
+      },
+      "name" : "Study Family Focus Extension",
+      "description" : "Extension containing Study Family Focus",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/study-family"
+      },
+      "name" : "Study Family Reference",
+      "description" : "Extension containing Study Family Reference",
       "exampleBoolean" : false
     },
     {

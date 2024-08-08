@@ -1,13 +1,14 @@
 NCPIFHIRIGv2 : Validation Results
 =========================================
 
-err = 9, warn = 30, info = 31
+err = 9, warn = 46, info = 34
 $--
 Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
  Build Errors : 1 / 4 / 0
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-collection-type : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-example-hash-type-code-system : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-ncpi : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-ncpi-family-types : 0 / 1 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-related-file-type-code-system : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-research-data-access-code : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-research-data-access-type : 0 / 0 / 1
@@ -23,6 +24,9 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Consent-kf-gsr-allowed-access : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Consent-kf-registered-allowed-access : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/DocumentReference-PT-006SP660 : 4 / 3 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cbtn-family-role-mother : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cbtn-family-role-son : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cbtn-study-family : 0 / 1 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-kf-research-study-cbtn-participants : 0 / 0 / 1
@@ -30,6 +34,8 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-cmg : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-kfx01 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-pbta : 0 / 0 / 2
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-cbtn-family-relationship-mother : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-cbtn-family-relationship-son : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Organization-kf-research-study-organization-chop : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Patient-6812345 : 0 / 0 / 3
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Patient-PT-005B7CZ4 : 0 / 0 / 1
@@ -54,17 +60,24 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchSubject-cbtn-example-participantstudy : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchSubject-emerge-example-participantstudy : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchSubject-pcgc-example-participantstudy : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelFamilyRelationship : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelFamilyRole : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelFile : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelPerson : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchCollection : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchDataAccessPolicy : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchParticipant : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchStudy : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelStudyFamily : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelStudyParticipant : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-access-policy : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-access-policy-description : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-access-type : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-consanguinity : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-content-version : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-description : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-family-role : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-family-type : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-file-format : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-file-size : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-hash-extension : 0 / 0 / 1
@@ -73,12 +86,15 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-label-extension : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-location-access : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-Study-Participant : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-family-relationship : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-family-role : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-file : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-participant : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-person : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-access-policy : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-collection : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-study : 0 / 0 / 2
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-study-family : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-age-at-last-vital-status : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-date-of-birth-method : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-disease-use-limitation : 0 / 1 / 1
@@ -91,9 +107,13 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-subject : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-subject-consent : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-web-Link : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-study-family : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-study-family-focus : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-collection-type-vs : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-consanguinity-assertion-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-edam-ontology-terms : 1 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-mesh-terms : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-ncpi-family-types-vs : 0 / 1 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-research-data-access-code-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-research-data-access-type-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-research-data-date-of-birth-method-vs : 0 / 1 / 1
@@ -112,6 +132,9 @@ INFORMATION: CodeSystem/example-hash-type-code-system: CodeSystem: CodeSystems S
 WARNING: CodeSystem/example-hash-type-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/example-hash-type-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-ncpi.json ==
+== fsh-generated/resources/CodeSystem-ncpi-family-types.json ==
+INFORMATION: CodeSystem/ncpi-family-types: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/ncpi-family-types: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-related-file-type-code-system.json ==
 INFORMATION: CodeSystem/related-file-type-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/related-file-type-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -145,6 +168,11 @@ WARNING: DocumentReference/PT-006SP660: DocumentReference.type: A definition for
 WARNING: DocumentReference/PT-006SP660: DocumentReference.type: Unable to check whether the code is in the value set 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms|0.1.0' because the code system http://edamontology.org was not found
 ERROR: DocumentReference/PT-006SP660: DocumentReference.subject: Unable to resolve resource with reference 'GF_6BAD9S7D'
 ERROR: DocumentReference.text.div: Hyperlink 'GF_6BAD9S7D' at 'div/p/a' for 'GF_6BAD9S7D' does not resolve
+== fsh-generated/resources/Group-cbtn-family-role-mother.json ==
+== fsh-generated/resources/Group-cbtn-family-role-son.json ==
+== fsh-generated/resources/Group-cbtn-study-family.json ==
+WARNING: Group/cbtn-study-family: Group.extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types' could not be found, so the code cannot be validated
+INFORMATION: Group/cbtn-study-family: Group.extension[1].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://purl.obolibrary.org/obo/mondo.owl' could not be found, so the code cannot be validated
 == fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-hmb-npu.json ==
 == fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu.json ==
 == fsh-generated/resources/Group-kf-research-study-cbtn-participants.json ==
@@ -154,6 +182,12 @@ INFORMATION: List/ncpi-research-collection-cmg: List.extension[1].extension[0].v
 == fsh-generated/resources/List-ncpi-research-collection-kfx01.json ==
 == fsh-generated/resources/List-ncpi-research-collection-pbta.json ==
 INFORMATION: List/ncpi-research-collection-pbta: List.extension[1].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/title-type|4.3.0
+== fsh-generated/resources/Observation-cbtn-family-relationship-mother.json ==
+WARNING: Observation/cbtn-family-relationship-mother: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/cbtn-family-relationship-mother: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-cbtn-family-relationship-son.json ==
+WARNING: Observation/cbtn-family-relationship-son: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/cbtn-family-relationship-son: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Organization-kf-research-study-organization-chop.json ==
 == fsh-generated/resources/Patient-6812345.json ==
 INFORMATION: Patient/6812345: Patient.extension[3].value.ofType(Coding): Reference to draft CodeSystem https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method|0.1.0
@@ -206,18 +240,33 @@ INFORMATION: ResearchStudy/kf-research-study-cbtn: ResearchStudy.focus[0].coding
 == fsh-generated/resources/ResearchSubject-cbtn-example-participantstudy.json ==
 == fsh-generated/resources/ResearchSubject-emerge-example-participantstudy.json ==
 == fsh-generated/resources/ResearchSubject-pcgc-example-participantstudy.json ==
+== fsh-generated/resources/StructureDefinition-SharedDataModelFamilyRelationship.json ==
+== fsh-generated/resources/StructureDefinition-SharedDataModelFamilyRole.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelFile.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelPerson.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelResearchCollection.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelResearchDataAccessPolicy.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelResearchParticipant.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelResearchStudy.json ==
+== fsh-generated/resources/StructureDefinition-SharedDataModelStudyFamily.json ==
+WARNING: StructureDefinition/SharedDataModelStudyFamily: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace 'Describes the 'type' of study family, eg, trio. '
+WARNING: StructureDefinition/SharedDataModelStudyFamily: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace 'Describes the 'type' of study family, eg, trio. '
 == fsh-generated/resources/StructureDefinition-SharedDataModelStudyParticipant.json ==
 == fsh-generated/resources/StructureDefinition-access-policy.json ==
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-access-policy-description.json ==
 == fsh-generated/resources/StructureDefinition-access-type.json ==
+== fsh-generated/resources/StructureDefinition-consanguinity.json ==
+WARNING: StructureDefinition/consanguinity: StructureDefinition.context[0]: Review the extension type for consanguinity: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/consanguinity'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-content-version.json ==
+== fsh-generated/resources/StructureDefinition-description.json ==
+WARNING: StructureDefinition/description: StructureDefinition.context[0]: Review the extension type for description: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/description'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-family-role.json ==
+WARNING: StructureDefinition/family-role: StructureDefinition.context[0]: Review the extension type for family-role: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-family-type.json ==
+WARNING: StructureDefinition/family-type: StructureDefinition.context[0]: Review the extension type for family-type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-file-format.json ==
 == fsh-generated/resources/StructureDefinition-file-size.json ==
 == fsh-generated/resources/StructureDefinition-hash-extension.json ==
@@ -226,6 +275,8 @@ WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-i
 == fsh-generated/resources/StructureDefinition-label-extension.json ==
 == fsh-generated/resources/StructureDefinition-location-access.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-Study-Participant.json ==
+== fsh-generated/resources/StructureDefinition-ncpi-family-relationship.json ==
+== fsh-generated/resources/StructureDefinition-ncpi-family-role.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-file.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-participant.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-person.json ==
@@ -234,6 +285,7 @@ INFORMATION: StructureDefinition/ncpi-research-access-policy: StructureDefinitio
 == fsh-generated/resources/StructureDefinition-ncpi-research-collection.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-research-study.json ==
 INFORMATION: StructureDefinition/ncpi-research-study: StructureDefinition.snapshot.element[23].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+== fsh-generated/resources/StructureDefinition-ncpi-study-family.json ==
 == fsh-generated/resources/StructureDefinition-research-age-at-last-vital-status.json ==
 == fsh-generated/resources/StructureDefinition-research-date-of-birth-method.json ==
 == fsh-generated/resources/StructureDefinition-research-disease-use-limitation.json ==
@@ -254,12 +306,19 @@ INFORMATION: StructureDefinition/research-study-subject: StructureDefinition.sna
 == fsh-generated/resources/StructureDefinition-research-study-subject-consent.json ==
 WARNING: StructureDefinition/research-study-subject-consent: StructureDefinition.context[0]: Review the extension type for research-study-subject-consent: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-research-web-Link.json ==
+== fsh-generated/resources/StructureDefinition-study-family.json ==
+== fsh-generated/resources/StructureDefinition-study-family-focus.json ==
+WARNING: StructureDefinition/study-family-focus: StructureDefinition.context[0]: Review the extension type for study-family-focus: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/ValueSet-collection-type-vs.json ==
+== fsh-generated/resources/ValueSet-consanguinity-assertion-vs.json ==
 == fsh-generated/resources/ValueSet-edam-ontology-terms.json ==
 WARNING: ValueSet/edam-ontology-terms: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: ValueSet.where(id = 'edam-ontology-terms'): Error from http://tx.fhir.org/r4: Attempt to reference http://edamontology.org as a CodeSystem when it's a ValueSet
 == fsh-generated/resources/ValueSet-mesh-terms.json ==
 WARNING: ValueSet.where(id = 'mesh-terms'): Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.177
+== fsh-generated/resources/ValueSet-ncpi-family-types-vs.json ==
+INFORMATION: ValueSet/ncpi-family-types-vs: ValueSet.compose.include[0]: The value set references CodeSystem 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types' which has status 'fragment'
+WARNING: ValueSet/ncpi-family-types-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-research-data-access-code-vs.json ==
 == fsh-generated/resources/ValueSet-research-data-access-type-vs.json ==
 == fsh-generated/resources/ValueSet-research-data-date-of-birth-method-vs.json ==

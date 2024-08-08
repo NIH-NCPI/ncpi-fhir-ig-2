@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/cbtn-family-relationship-son> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cbtn-family-relationship-son"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation cbtn-family-relationship-son</b></p><a name=\"cbtn-family-relationship-son\"> </a><a name=\"hccbtn-family-relationship-son\"> </a><a name=\"cbtn-family-relationship-son-en-US\"> </a><p><b>status</b>: Registered</p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode SON}\">natural son</span></p><p><b>subject</b>: <a href=\"Patient-PT-005B7CZ4.html\">Anonymous Patient (no stated gender), DoB:  ( http://chdgenes.org/#20757)</a></p><p><b>focus</b>: <a href=\"Patient-PT-KZG2CZ95.html\">Anonymous Patient (no stated gender), DoB:  ( https://cbtn.org/#C21156)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "registered"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SON" ] ;
+       fhir:display [ fhir:v "natural son" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-005B7CZ4> ;
+     fhir:reference [ fhir:v "Patient/PT-005B7CZ4" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-KZG2CZ95> ;
+     fhir:reference [ fhir:v "Patient/PT-KZG2CZ95" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

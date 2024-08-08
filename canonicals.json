@@ -21,6 +21,13 @@
     "name" : "Ncpi"
   },
   {
+    "id" : "ncpi-family-types",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
+    "version" : "0.1.0",
+    "name" : "NcpiFamilyTypes"
+  },
+  {
     "id" : "related-file-type-code-system",
     "type" : "CodeSystem",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/related-file-type-code-system",
@@ -70,6 +77,20 @@
     "name" : "NCPIFHIRIGv2"
   },
   {
+    "id" : "SharedDataModelFamilyRelationship",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRelationship",
+    "version" : "0.1.0",
+    "name" : "CdmFamilyRelationship"
+  },
+  {
+    "id" : "SharedDataModelFamilyRole",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRole",
+    "version" : "0.1.0",
+    "name" : "CdmFamilyRole"
+  },
+  {
     "id" : "SharedDataModelFile",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFile",
@@ -112,6 +133,13 @@
     "name" : "CdmResearchStudy"
   },
   {
+    "id" : "SharedDataModelStudyFamily",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelStudyFamily",
+    "version" : "0.1.0",
+    "name" : "CdmStudyFamily"
+  },
+  {
     "id" : "SharedDataModelStudyParticipant",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelStudyParticipant",
@@ -140,11 +168,39 @@
     "name" : "AccessType"
   },
   {
+    "id" : "consanguinity",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/consanguinity",
+    "version" : "0.1.0",
+    "name" : "Consanguinity"
+  },
+  {
     "id" : "content-version",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version",
     "version" : "0.1.0",
     "name" : "ContentVersion"
+  },
+  {
+    "id" : "description",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/description",
+    "version" : "0.1.0",
+    "name" : "Description"
+  },
+  {
+    "id" : "family-role",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
+    "version" : "0.1.0",
+    "name" : "FamilyRole"
+  },
+  {
+    "id" : "family-type",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-type",
+    "version" : "0.1.0",
+    "name" : "FamilyType"
   },
   {
     "id" : "file-format",
@@ -203,6 +259,20 @@
     "name" : "NcpiStudyParticipant"
   },
   {
+    "id" : "ncpi-family-relationship",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship",
+    "version" : "0.1.0",
+    "name" : "NcpiFamilyRelationship"
+  },
+  {
+    "id" : "ncpi-family-role",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role",
+    "version" : "0.1.0",
+    "name" : "NcpiFamilyRole"
+  },
+  {
     "id" : "ncpi-file",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file",
@@ -243,6 +313,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study",
     "version" : "0.1.0",
     "name" : "NcpiResearchStudy"
+  },
+  {
+    "id" : "ncpi-study-family",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family",
+    "version" : "0.1.0",
+    "name" : "NcpiStudyFamily"
   },
   {
     "id" : "research-age-at-last-vital-status",
@@ -329,11 +406,32 @@
     "name" : "ResearchWebLink"
   },
   {
+    "id" : "study-family",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family",
+    "version" : "0.1.0",
+    "name" : "StudyFamily"
+  },
+  {
+    "id" : "study-family-focus",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus",
+    "version" : "0.1.0",
+    "name" : "StudyFamilyFocus"
+  },
+  {
     "id" : "collection-type-vs",
     "type" : "ValueSet",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
     "version" : "0.1.0",
     "name" : "CollectionTypeVS"
+  },
+  {
+    "id" : "consanguinity-assertion-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/consanguinity-assertion-vs",
+    "version" : "0.1.0",
+    "name" : "ConsanguinityAssertionVS"
   },
   {
     "id" : "edam-ontology-terms",
@@ -348,6 +446,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms",
     "version" : "0.1.0",
     "name" : "MeshTerms"
+  },
+  {
+    "id" : "ncpi-family-types-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/ncpi-family-types-vs",
+    "version" : "0.1.0",
+    "name" : "NcpiFamilyTypesVS"
   },
   {
     "id" : "research-data-access-code-vs",

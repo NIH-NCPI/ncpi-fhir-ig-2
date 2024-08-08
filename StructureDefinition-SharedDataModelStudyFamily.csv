@@ -1,0 +1,15 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"SharedDataModelStudyFamily","SharedDataModelStudyFamily","","","",0,*,"","","","null {[]} {[]}
+","Shared Data Model for Study Family","The **Shared Data Model for Study Family**","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"SharedDataModelStudyFamily.familyID","SharedDataModelStudyFamily.familyID","","","",1,1,"","","","string {[]} {[]}
+","Unique study family identifier. System identifier used for internal references.","Unique study family identifier. System identifier used for internal references.","","","","","","","","","",,,,,"",,,,"SharedDataModelStudyFamily.familyID",1,1,"",""
+"SharedDataModelStudyFamily.externalID","SharedDataModelStudyFamily.externalID","","","",0,*,"","","","string {[]} {[]}
+","Study family identifier. System identifier used for external references.","Study family identifier. System identifier used for external references.","","","","","","","","","",,,,,"",,,,"SharedDataModelStudyFamily.externalID",0,*,"",""
+"SharedDataModelStudyFamily.familyType","SharedDataModelStudyFamily.familyType","","","",0,1,"","","","code {[]} {[]}
+","Describes the 'type' of study family, eg, trio. ","Describes the 'type' of study family, eg, trio.","","","","","","","","","",,,,,"",,,,"SharedDataModelStudyFamily.familyType",0,1,"",""
+"SharedDataModelStudyFamily.description","SharedDataModelStudyFamily.description","","","",0,1,"","","","string {[]} {[]}
+","Free text describing the study family, such as potential inheritance or details about consanguinity","Free text describing the study family, such as potential inheritance or details about consanguinity","","","","","","","","","",,,,,"",,,,"SharedDataModelStudyFamily.description",0,1,"",""
+"SharedDataModelStudyFamily.consanguinity","SharedDataModelStudyFamily.consanguinity","","","",0,1,"","","","code {[]} {[]}
+","Is there known or suspected consanguinity in this study family?","Is there known or suspected consanguinity in this study family?","","","","","","","","","",,,,,"",,,,"SharedDataModelStudyFamily.consanguinity",0,1,"",""
+"SharedDataModelStudyFamily.studyFamilyFocus","SharedDataModelStudyFamily.studyFamilyFocus","","","",0,1,"","","","code {[]} {[]}
+","What is this study family investigating? EG, a specific condition","What is this study family investigating? EG, a specific condition","","","","","","","","","",,,,,"",,,,"SharedDataModelStudyFamily.studyFamilyFocus",0,1,"",""

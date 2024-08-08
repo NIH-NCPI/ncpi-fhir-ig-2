@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ncpi-family-types"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ncpi-family-types</b></p><a name=\"ncpi-family-types\"> </a><a name=\"hcncpi-family-types\"> </a><a name=\"ncpi-family-types-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</code> provides <b>a fragment</b> that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Control-only<a name=\"ncpi-family-types-Control-only\"> </a></td><td>Control Only</td></tr><tr><td style=\"white-space:nowrap\">Duo<a name=\"ncpi-family-types-Duo\"> </a></td><td>Duo</td></tr><tr><td style=\"white-space:nowrap\">Other<a name=\"ncpi-family-types-Other\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">Proband-only<a name=\"ncpi-family-types-Proband-only\"> </a></td><td>Proband Only</td></tr><tr><td style=\"white-space:nowrap\">Trio<a name=\"ncpi-family-types-Trio\"> </a></td><td>Trio</td></tr><tr><td style=\"white-space:nowrap\">Trio+<a name=\"ncpi-family-types-Trio.43\"> </a></td><td>Trio+</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "NcpiFamilyTypes"] ; # 
+  fhir:title [ fhir:v "NCPI Family Types CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-08T19:03:14+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for Types of Families"] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Control-only" ] ;
+     fhir:display [ fhir:v "Control Only" ]
+  ] [
+     fhir:code [ fhir:v "Duo" ] ;
+     fhir:display [ fhir:v "Duo" ]
+  ] [
+     fhir:code [ fhir:v "Other" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "Proband-only" ] ;
+     fhir:display [ fhir:v "Proband Only" ]
+  ] [
+     fhir:code [ fhir:v "Trio" ] ;
+     fhir:display [ fhir:v "Trio" ]
+  ] [
+     fhir:code [ fhir:v "Trio+" ] ;
+     fhir:display [ fhir:v "Trio+" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
