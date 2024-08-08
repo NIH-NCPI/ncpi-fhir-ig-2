@@ -1,0 +1,38 @@
+{
+  "resourceType": "Group",
+  "id": "cbtn-family-role-son",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+    ]
+  },
+  "member": [
+    {
+      "entity": {
+        "reference": "Patient/PT-005B7CZ4"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family",
+      "valueReference": {
+        "reference": "Group/cbtn-study-family"
+      }
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "SON",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "display": "natural son"
+          }
+        ]
+      }
+    }
+  ],
+  "type": "person",
+  "actual": true
+}
