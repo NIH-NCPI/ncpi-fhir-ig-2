@@ -135,7 +135,6 @@ Additional Study Groups may be included to describe various aspects of the study
 
 
 * Derived from this Resource Profile: [Research Study Subject](structuredefinition-research-study-subject)
-* Refer to this Resource Profile: [Study Summary](structuredefinition-study-summary) and [Study Variable Summary](structuredefinition-study-variable-summary)
 * Examples for this Resource Profile: [ResearchStudy/cmg-research-study-bhcmg](researchstudy-cmg-research-study-bhcmg) and [ResearchStudy/ncpi-research-study-01](researchstudy-ncpi-research-study-01)
 
 

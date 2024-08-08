@@ -1,0 +1,36 @@
+{
+  "resourceType": "ResearchStudy",
+  "id": "kf-research-study-subject-gru-dbgap",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://cbtn.org/",
+      "value": "GRU-dbGaP"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "ResearchStudy/kf-research-study-cbtn"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent",
+      "valueReference": {
+        "reference": "Consent/kf-gru-dbgap-consent"
+      }
+    }
+  ],
+  "enrollment": [
+    {
+      "reference": "Group/kf-research-study-cbtn-participants"
+    }
+  ],
+  "title": "GRU-dbGaP Study Subject",
+  "description": "General Research Use data access via dbGaP",
+  "status": "completed"
+}
