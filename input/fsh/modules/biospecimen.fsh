@@ -26,13 +26,18 @@ Description: "Laterality Information"
 * insert SetContext(Specimen.collection)
 * value[x] only code
 
+/*For spatial and laterality information, there are proposed codes in the $body-location-qualifer and
+$laterality-qualifer URLs in the Alias.fsh file for this project. We may want to revisit which set of terms
+we use for both of these extensions
+AH 08 August 2024*/
+
 /*Sample Module*/
 
 Logical: CdmSample
 Id: SharedDataModelSample
 Title: "Shared Data Model for Sample"
 Description: "Shared Data Model for Sample"
-* sampleId 1..1 string "Unique ID for this sample"
+* sampleId 1..* string "Unique ID for this sample"
 * participant 1..1 reference "The participant from whom the biospecimen was taken"
 * parentSample 0..* reference "The Sample from which this Sample was derived"
 * type 1..1 code "The type of material of which this Sample is comprised"
@@ -40,6 +45,10 @@ Description: "Shared Data Model for Sample"
 * availabilityStatus 0..1 code "Can this Sample be requested for further analysis?"
 * storageMethod 0..* code "How is the Sample stored, eg, Frozen or with additives"
 * quantity 0..1 Quantity "The total quantity of the specimen"
+
+/*Regarding sample processing method, we need a codesystem that will describe the method of processing
+applied to the sample from which a user can select.
+AH 08 August 2024*/
 
 CodeSystem: BiospecimenAvailability
 Id: biospecimen-availability
@@ -81,11 +90,11 @@ Description: "Concentration of the Aliquot"
 Profile: NCPISample
 Parent: Specimen
 Id: ncpi-sample
-Title: "NCPI biospecimen definition"
-Description: "NCPI biospecimen definition"
+Title: "FHIR Profile for NCPI Sample"
+Description: "FHIR Profile for NCPI Sample"
 * ^version = "0.1.0"
 * ^status = #draft
-* identifier 1..1 /*Sample.SampleID*/
+* identifier 1..* /*Sample.SampleID*/
 * identifier ^short = "Unique ID for this sample"
 * subject 1..1 /*Sample.Participant*/
 * subject ^short = "The participant from whom the biospecimen was taken"
@@ -95,6 +104,8 @@ Description: "NCPI biospecimen definition"
 * type ^short = "The type of material of which this Sample is comprised"
 * processing 0..* /*Sample.Processing*/
 * processing ^short = "Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample"
+* processing.procedure 1..1 
+* processing.procedure ^short = "Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample"
 * status 0..1 /*Sample.AvailabilityStatus*/
 * status ^short = "Can this Sample be requested for further analysis?"
 * condition 0..* /*Sample.StorageMethod*/
