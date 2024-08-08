@@ -1,5 +1,6 @@
 #### Key Guidelines
-Family Relationships describe the relationship between two Participants. The core use case is to present biological parentage of a participant to support family / pedigree analyses. In this spirit, platforms should seek to provide minimally the information in a “ped” file: if known, a Participant should have a Family Relationship to their biological mother and father. Twins are also a high priority item for reporting. Further extended relationships can be made available using Family Relationship, but may not be as widely supported as they are harder to interpret.
+The Family Membership Role indicates the inclusion of a Participant in a “Family Study” and describes their high level role, for example “Proband”. This summary is a helpful tool and often reported by studies. Participants may be part of 0 or more Family Studies, though in most circumstances we anticipate this to be only 0 or 1. This flexibility to support circumstances where Participants may have different “roles” in different analyses or groups. 
+
 
 ##### Added Profile Restrictions
 In order to ensure that our resources are interoperable across studies, we have employed a number of restrictions that should make consuming Patient resources more consistent.
@@ -14,6 +15,6 @@ TODO: Write Recommended Practices
 The following fields from the shared data model are to be mapped into the NCPI Participant as shown below:
 
 | **Logical Model Property** | **Cardinality** |  **NCPI Person Mapping** |**Usage Guidance** | **Notes** |
-subject|1..1|subject| Required | |
-target|1..1|focus|||
-relationship|1..1|code|||
+participant|1..1|member.entity| Required ||
+studyFamily|0..1|extension [StudyFamily](StructureDefinition-study-family.html)|||
+familyRole|0..1|extension  [FamilyRole](StructureDefinition-family-role.html)|||
