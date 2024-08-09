@@ -63,6 +63,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/aliquot-availability"
+        },
+        "name": "Availability Status of Aliquot",
+        "description": "Availability Status of Aliquot",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ResearchStudy/cmg-research-study-bhcmg"
         },
         "name": "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
@@ -159,6 +167,29 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/aliquot-concentration"
+        },
+        "name": "Concentration of the Aliquot",
+        "description": "Concentration of the Aliquot",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/condition-code-vs"
+        },
+        "name": "Condiiton Codes",
+        "description": "Includes all codes from **HPO** and **MONDO**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/condition-codes"
+        },
+        "name": "ConditionCodes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "PractitionerRole/kf-research-study-personnel-role-pi"
         },
         "name": "dbGaP PI",
@@ -188,6 +219,14 @@
         "name": "Enumerations for how DOB was constructed",
         "description": "Enumerations for how DOB was constructed",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Specimen/SA-000"
+        },
+        "name": "Example biospecimen based on data from CBTN",
+        "description": "Example biospecimen based on data from CBTN",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
       },
       {
         "reference": {
@@ -239,10 +278,42 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/biospecimen-laterality"
+        },
+        "name": "Laterality Information",
+        "description": "Laterality Information",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mesh-terms"
         },
         "name": "MeSH Terms",
         "description": "Example terms from Medical Subject Headings (MeSH) Ontology",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-sample"
+        },
+        "name": "NCPI biospecimen definition",
+        "description": "NCPI biospecimen definition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-collected-sample"
+        },
+        "name": "NCPI biospecimen definition for collected samples",
+        "description": "NCPI biospecimen definition for collected samples",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-non-collected-sample"
+        },
+        "name": "NCPI biospecimen definition for non-collected samples",
+        "description": "NCPI biospecimen definition for non-collected samples",
         "exampleBoolean": false
       },
       {
@@ -348,6 +419,14 @@
         "name": "Pediatric Brain Tumor Atlas",
         "description": "Pediatric Brain Tumor Atlas",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/condition-asserter"
+        },
+        "name": "Person who recorded assertion about participant",
+        "description": "Person who recorded assertion about participant",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -471,6 +550,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/SharedDataModelAliquot"
+        },
+        "name": "Shared Data Model for Aliquot",
+        "description": "Shared Data Model for Aliquot",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelBiospecimenCollection"
+        },
+        "name": "Shared Data Model for Biospecimen Collection",
+        "description": "Shared Data Model for Biospecimen Collection",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/SharedDataModelCondition"
         },
         "name": "Shared Data Model for Condition",
@@ -515,6 +610,22 @@
         },
         "name": "Shared Data Model for Research Study",
         "description": "The **Shared Data Model for Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelSample"
+        },
+        "name": "Shared Data Model for Sample",
+        "description": "Shared Data Model for Sample",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/biospecimen-spatial"
+        },
+        "name": "Spatial Information",
+        "description": "Spatial Information",
         "exampleBoolean": false
       },
       {
