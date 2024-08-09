@@ -54,7 +54,7 @@
         "path": "SharedDataModelCondition.conditonText",
         "short": "Detailed description / free text about this condition.",
         "definition": "Detailed description / free text about this condition.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -68,7 +68,7 @@
         "short": "The date or age at which this condition is being asserted. ",
         "definition": "The date or age at which this condition is being asserted. ",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "date"
@@ -80,8 +80,8 @@
         "path": "SharedDataModelCondition.assertion",
         "short": "Does the participant have this condition?",
         "definition": "Does the participant have this condition?",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "code"
@@ -94,7 +94,7 @@
         "short": "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting.",
         "definition": "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "code"
@@ -106,7 +106,7 @@
         "path": "SharedDataModelCondition.ageAtOnset",
         "short": "The age of onset for this condition. Could be expressed with a term, an age, or an age range.",
         "definition": "The age of onset for this condition. Could be expressed with a term, an age, or an age range.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -133,7 +133,7 @@
         "short": "Any additional modifiers for this condition, such as severity.",
         "definition": "Any additional modifiers for this condition, such as severity.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "code"
@@ -159,7 +159,7 @@
         "short": "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows.",
         "definition": "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows.",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "code"
@@ -167,8 +167,8 @@
         ]
       },
       {
-        "id": "SharedDataModelCondition.assertionSourcce",
-        "path": "SharedDataModelCondition.assertionSourcce",
+        "id": "SharedDataModelCondition.assertionSource",
+        "path": "SharedDataModelCondition.assertionSource",
         "short": "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc.",
         "definition": "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc.",
         "min": 0,
