@@ -29,6 +29,14 @@ CodeSystem: ConditionCodes
 Id: condition-codes
 * ^url = $hpo
 
+CodeSystem: ConditionAssertion
+Id: condition-assertion
+Title: "Assertion of Condition Codes"
+Description: "Code System for assertion of condition presence"
+* #Present "Present"
+* #Absent "Absent"
+* #Unknown "Unknown"
+
 Extension: ConditionAsserter
 Id: condition-asserter
 Title: "Person who recorded assertion about participant"
@@ -45,7 +53,7 @@ Description: "Information about a condition related to a research participant"
 * ^version = "0.0.1"
 * ^status = #draft
 /*participant*/
-* subject only Reference(Participant)
+* subject only Reference(NcpiParticipant)
 * subject ^short = "The participant we are describing"
 /* condition */
 * code.coding ^short = "The condition, disease, phenotypic feature, etc that this participant may have."
@@ -54,6 +62,7 @@ Description: "Information about a condition related to a research participant"
 /*ageAtAssertion*/
 * effectiveDateTime ^short = "The date or age at which this condition is being asserted. "
 /*assertion*/
+* valueCodeableConcept from $condition-assertion
 * valueCodeableConcept ^short = "Does the participant have this condition?"
 /*conditionType*/ 
 * category ^short = "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
