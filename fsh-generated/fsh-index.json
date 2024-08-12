@@ -16,6 +16,14 @@
     "endLine": 11
   },
   {
+    "outputFile": "CodeSystem-ncpi-family-types.json",
+    "fshName": "NcpiFamilyTypes",
+    "fshType": "CodeSystem",
+    "fshFile": "modules/family.fsh",
+    "startLine": 24,
+    "endLine": 38
+  },
+  {
     "outputFile": "CodeSystem-ncpi.json",
     "fshName": "Ncpi",
     "fshType": "CodeSystem",
@@ -128,6 +136,30 @@
     "endLine": 204
   },
   {
+    "outputFile": "Group-cbtn-family-role-mother.json",
+    "fshName": "cbtn-family-role-mother",
+    "fshType": "Instance",
+    "fshFile": "examples/family.fsh",
+    "startLine": 30,
+    "endLine": 39
+  },
+  {
+    "outputFile": "Group-cbtn-family-role-son.json",
+    "fshName": "cbtn-family-role-son",
+    "fshType": "Instance",
+    "fshFile": "examples/family.fsh",
+    "startLine": 56,
+    "endLine": 65
+  },
+  {
+    "outputFile": "Group-cbtn-study-family.json",
+    "fshName": "FM-00C8Y7DG",
+    "fshType": "Instance",
+    "fshFile": "examples/family.fsh",
+    "startLine": 13,
+    "endLine": 28
+  },
+  {
     "outputFile": "Group-cmg-research-study-bhcmg-consent-group-hmb-npu.json",
     "fshName": "cmg-research-study-bhcmg-consent-group-hmb-npu",
     "fshType": "Instance",
@@ -174,6 +206,22 @@
     "fshFile": "examples/ResearchStudy-CBTN.fsh",
     "startLine": 222,
     "endLine": 234
+  },
+  {
+    "outputFile": "Observation-cbtn-family-relationship-mother.json",
+    "fshName": "cbtn-family-relationship-mother",
+    "fshType": "Instance",
+    "fshFile": "examples/family.fsh",
+    "startLine": 41,
+    "endLine": 49
+  },
+  {
+    "outputFile": "Observation-cbtn-family-relationship-son.json",
+    "fshName": "cbtn-family-relationship-son",
+    "fshType": "Instance",
+    "fshFile": "examples/family.fsh",
+    "startLine": 67,
+    "endLine": 75
   },
   {
     "outputFile": "Organization-kf-research-study-organization-chop.json",
@@ -368,6 +416,7 @@
     "endLine": 216
   },
   {
+
     "outputFile": "Specimen-SA-000.json",
     "fshName": "SA-000",
     "fshType": "Instance",
@@ -390,6 +439,22 @@
     "fshFile": "modules/biospecimen.fsh",
     "startLine": 3,
     "endLine": 13
+
+    "outputFile": "StructureDefinition-SharedDataModelFamilyRelationship.json",
+    "fshName": "CdmFamilyRelationship",
+    "fshType": "Logical",
+    "fshFile": "modules/family.fsh",
+    "startLine": 153,
+    "endLine": 159
+  },
+  {
+    "outputFile": "StructureDefinition-SharedDataModelFamilyRole.json",
+    "fshName": "CdmFamilyRole",
+    "fshType": "Logical",
+    "fshFile": "modules/family.fsh",
+    "startLine": 110,
+    "endLine": 116
+
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelPerson.json",
@@ -438,6 +503,14 @@
     "fshFile": "modules/biospecimen.fsh",
     "startLine": 31,
     "endLine": 42
+    
+    "outputFile": "StructureDefinition-SharedDataModelStudyFamily.json",
+    "fshName": "CdmStudyFamily",
+    "fshType": "Logical",
+    "fshFile": "modules/family.fsh",
+    "startLine": 13,
+    "endLine": 22
+
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelStudyParticipant.json",
@@ -472,6 +545,7 @@
     "endLine": 81
   },
   {
+
     "outputFile": "StructureDefinition-aliquot-availability.json",
     "fshName": "AliquotAvailability",
     "fshType": "Extension",
@@ -502,6 +576,38 @@
     "fshFile": "modules/biospecimen.fsh",
     "startLine": 15,
     "endLine": 20
+
+    "outputFile": "StructureDefinition-consanguinity.json",
+    "fshName": "Consanguinity",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 73,
+    "endLine": 79
+  },
+  {
+    "outputFile": "StructureDefinition-description.json",
+    "fshName": "Description",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 56,
+    "endLine": 61
+  },
+  {
+    "outputFile": "StructureDefinition-family-role.json",
+    "fshName": "FamilyRole",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 127,
+    "endLine": 133
+  },
+  {
+    "outputFile": "StructureDefinition-family-type.json",
+    "fshName": "FamilyType",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 48,
+    "endLine": 54
+
   },
   {
     "outputFile": "StructureDefinition-label-extension.json",
@@ -520,6 +626,7 @@
     "endLine": 145
   },
   {
+
     "outputFile": "StructureDefinition-ncpi-collected-sample.json",
     "fshName": "NCPICollectedSample",
     "fshType": "Profile",
@@ -534,6 +641,22 @@
     "fshFile": "modules/biospecimen.fsh",
     "startLine": 133,
     "endLine": 140
+
+    "outputFile": "StructureDefinition-ncpi-family-relationship.json",
+    "fshName": "NcpiFamilyRelationship",
+    "fshType": "Profile",
+    "fshFile": "modules/family.fsh",
+    "startLine": 161,
+    "endLine": 175
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-family-role.json",
+    "fshName": "NcpiFamilyRole",
+    "fshType": "Profile",
+    "fshFile": "modules/family.fsh",
+    "startLine": 135,
+    "endLine": 148
+
   },
   {
     "outputFile": "StructureDefinition-ncpi-participant.json",
@@ -576,12 +699,21 @@
     "endLine": 86
   },
   {
+
     "outputFile": "StructureDefinition-ncpi-sample.json",
     "fshName": "NCPISample",
     "fshType": "Profile",
     "fshFile": "modules/biospecimen.fsh",
     "startLine": 81,
     "endLine": 121
+
+    "outputFile": "StructureDefinition-ncpi-study-family.json",
+    "fshName": "NcpiStudyFamily",
+    "fshType": "Profile",
+    "fshFile": "modules/family.fsh",
+    "startLine": 88,
+    "endLine": 106
+
   },
   {
     "outputFile": "StructureDefinition-research-age-at-last-vital-status.json",
@@ -680,6 +812,22 @@
     "endLine": 9
   },
   {
+    "outputFile": "StructureDefinition-study-family-focus.json",
+    "fshName": "StudyFamilyFocus",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 81,
+    "endLine": 86
+  },
+  {
+    "outputFile": "StructureDefinition-study-family.json",
+    "fshName": "StudyFamily",
+    "fshType": "Extension",
+    "fshFile": "modules/family.fsh",
+    "startLine": 118,
+    "endLine": 125
+  },
+  {
     "outputFile": "ValueSet-collection-type-vs.json",
     "fshName": "CollectionTypeVS",
     "fshType": "ValueSet",
@@ -688,12 +836,28 @@
     "endLine": 18
   },
   {
+    "outputFile": "ValueSet-consanguinity-assertion-vs.json",
+    "fshName": "ConsanguinityAssertionVS",
+    "fshType": "ValueSet",
+    "fshFile": "modules/family.fsh",
+    "startLine": 63,
+    "endLine": 71
+  },
+  {
     "outputFile": "ValueSet-mesh-terms.json",
     "fshName": "MeshTerms",
     "fshType": "ValueSet",
     "fshFile": "modules/research-accesss-policy.fsh",
     "startLine": 54,
     "endLine": 60
+  },
+  {
+    "outputFile": "ValueSet-ncpi-family-types-vs.json",
+    "fshName": "NcpiFamilyTypesVS",
+    "fshType": "ValueSet",
+    "fshFile": "modules/family.fsh",
+    "startLine": 40,
+    "endLine": 46
   },
   {
     "outputFile": "ValueSet-research-data-access-code-vs.json",

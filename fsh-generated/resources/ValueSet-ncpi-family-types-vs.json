@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NcpiFamilyTypesVS",
+  "id": "ncpi-family-types-vs",
+  "title": "Family Types Codes",
+  "description": "A value set with all codes used for the expected family types.",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/ncpi-family-types-vs",
+  "version": "0.1.0",
+  "compose": {
+    "include": [
+      {
+        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types"
+      }
+    ]
+  }
+}

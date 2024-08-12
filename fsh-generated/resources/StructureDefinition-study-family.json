@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "study-family",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family",
+  "name": "StudyFamily",
+  "title": "Study Family Reference",
+  "status": "draft",
+  "description": "Extension containing Study Family Reference",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Group"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Study Family Reference",
+        "definition": "Extension containing Study Family Reference"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

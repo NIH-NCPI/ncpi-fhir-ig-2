@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "family-type",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-type",
+  "name": "FamilyType",
+  "title": "Family Type Extension",
+  "status": "draft",
+  "description": "Extension containing Family Type",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Family Type Extension",
+        "definition": "Extension containing Family Type"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-type"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Describes the 'type' of study family, eg, trio.",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/ncpi-family-types-vs"
+        }
+      }
+    ]
+  }
+}

@@ -3,6 +3,10 @@
 [AccessType]: StructureDefinition-access-type.html
 [AgeAtLastVitalStatus]: StructureDefinition-research-age-at-last-vital-status.html
 [AliquotAvailability]: StructureDefinition-aliquot-availability.html
+[cbtn-family-relationship-mother]: Observation-cbtn-family-relationship-mother.html
+[cbtn-family-relationship-son]: Observation-cbtn-family-relationship-son.html
+[cbtn-family-role-mother]: Group-cbtn-family-role-mother.html
+[cbtn-family-role-son]: Group-cbtn-family-role-son.html
 [cmg-research-study-bhcmg]: ResearchStudy-cmg-research-study-bhcmg.html
 [kf-gru-dac-consent]: Consent-kf-gru-dac-consent.html
 [kf-gru-dbgap-consent]: Consent-kf-gru-dbgap-consent.html
@@ -16,6 +20,8 @@
 [CollectionTypeVS]: ValueSet-collection-type-vs.html
 [CollectionType]: CodeSystem-collection-type.html
 [AliquotConcentration]: StructureDefinition-aliquot-concentration.html
+[Consanguinity]: StructureDefinition-consanguinity.html
+[ConsanguinityAssertionVS]: ValueSet-consanguinity-assertion-vs.html
 [kf-research-study-personnel-role-pi]: PractitionerRole-kf-research-study-personnel-role-pi.html
 [kf-research-study-personnel-role-pi-x01]: PractitionerRole-kf-research-study-personnel-role-pi-x01.html
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
@@ -24,12 +30,17 @@
 [cbtn-example-participantstudy]: ResearchSubject-cbtn-example-participantstudy.html
 [emerge-example-participantstudy]: ResearchSubject-emerge-example-participantstudy.html
 [pcgc-example-participantstudy]: ResearchSubject-pcgc-example-participantstudy.html
+[cbtn-study-family]: Group-cbtn-study-family.html
 [PT-KZG2CZ95]: Patient-PT-KZG2CZ95.html
 [cbtn-example-person]: Person-cbtn-example-person.html
 [6812345]: Patient-6812345.html
 [emerge-example-person]: Person-emerge-example-person.html
 [PT-005B7CZ4]: Patient-PT-005B7CZ4.html
 [pcgc-example-person]: Person-pcgc-example-person.html
+[NcpiFamilyRelationship]: StructureDefinition-ncpi-family-relationship.html
+[NcpiFamilyRole]: StructureDefinition-ncpi-family-role.html
+[FamilyType]: StructureDefinition-family-type.html
+[NcpiFamilyTypesVS]: ValueSet-ncpi-family-types-vs.html
 [kf-gsr-allowed-access]: Consent-kf-gsr-allowed-access.html
 [hmb-irb-npu-consent]: Consent-hmb-irb-npu-consent.html
 [hmb-npu-consent]: Consent-hmb-npu-consent.html
@@ -45,6 +56,7 @@
 [NCPISample]: StructureDefinition-ncpi-sample.html
 [NCPICollectedSample]: StructureDefinition-ncpi-collected-sample.html
 [NCPINonCollectedSample]: StructureDefinition-ncpi-non-collected-sample.html
+[NcpiFamilyTypes]: CodeSystem-ncpi-family-types.html
 [Ncpi]: CodeSystem-ncpi.html
 [NcpiParticipant]: StructureDefinition-ncpi-participant.html
 [NcpiPerson]: StructureDefinition-ncpi-person.html
@@ -52,6 +64,7 @@
 [NcpiResearchCollection]: StructureDefinition-ncpi-research-collection.html
 [NcpiResearchStudy]: StructureDefinition-ncpi-research-study.html
 [ResearchStudyGroup]: StructureDefinition-research-study-group.html
+[NcpiStudyFamily]: StructureDefinition-ncpi-study-family.html
 [NcpiStudyParticipant]: StructureDefinition-ncpi-Study-Participant.html
 [cmg-research-study-bhcmg-consent-group-hmb-npu]: Group-cmg-research-study-bhcmg-consent-group-hmb-npu.html
 [cmg-research-study-subject-cmg-hmb-npu]: ResearchStudy-cmg-research-study-subject-cmg-hmb-npu.html
@@ -77,6 +90,8 @@
 [BiospecimenAvailability]: CodeSystem-biospecimen-availability.html
 [CmdAliquot]: StructureDefinition-SharedDataModelAliquot.html
 [CdmBiospecimenCollection]: StructureDefinition-SharedDataModelBiospecimenCollection.html
+[CdmFamilyRelationship]: StructureDefinition-SharedDataModelFamilyRelationship.html
+[CdmFamilyRole]: StructureDefinition-SharedDataModelFamilyRole.html
 [CdmResearchCollection]: StructureDefinition-SharedDataModelResearchCollection.html
 [CdmResearchDataAccessPolicy]: StructureDefinition-SharedDataModelResearchDataAccessPolicy.html
 [CdmStudyParticipant]: StructureDefinition-SharedDataModelStudyParticipant.html
@@ -85,6 +100,11 @@
 [CdmResearchStudy]: StructureDefinition-SharedDataModelResearchStudy.html
 [CdmSample]: StructureDefinition-SharedDataModelSample.html
 [BiospecimenSpatial]: StructureDefinition-biospecimen-spatial.html
+[CdmStudyFamily]: StructureDefinition-SharedDataModelStudyFamily.html
+[Description]: StructureDefinition-description.html
+[FamilyRole]: StructureDefinition-family-role.html
+[StudyFamilyFocus]: StructureDefinition-study-family-focus.html
+[StudyFamily]: StructureDefinition-study-family.html
 [StudyNameTypeVS]: ValueSet-study-name-type-vs.html
 [StudyNameType]: CodeSystem-study-name-type.html
 [StudyPersonnelRoleVS]: ValueSet-study-personnel-role-vs.html
