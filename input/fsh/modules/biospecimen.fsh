@@ -102,9 +102,7 @@ Description: "FHIR Profile for NCPI Sample"
 * parent ^short = "The Sample from which this Sample was derived"
 * type 1..1 /*Sample.Type*/
 * type ^short = "The type of material of which this Sample is comprised"
-* processing 0..* /*Sample.Processing*/
-* processing ^short = "Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample"
-* processing.procedure 1..1 
+* processing.procedure 1..1 /*Sample.Processing*/
 * processing.procedure ^short = "Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample"
 * status 0..1 /*Sample.AvailabilityStatus*/
 * status ^short = "Can this Sample be requested for further analysis?"
