@@ -1,0 +1,25 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncpi-non-collected-sample",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-non-collected-sample",
+  "version": "0.1.0",
+  "name": "NCPINonCollectedSample",
+  "title": "NCPI biospecimen definition for non-collected samples",
+  "status": "draft",
+  "description": "NCPI biospecimen definition for non-collected samples",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.collection",
+        "path": "Specimen.collection",
+        "max": "0"
+      }
+    ]
+  }
+}
