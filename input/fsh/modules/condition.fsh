@@ -3,7 +3,7 @@
 Logical: CdmCondition
 Id: SharedDataModelCondition
 Title: "Shared Data Model for Condition"
-Description: "The **Shared Data Model for Condition**"
+Description: "The Shared Data Model for **Condition**"
 * participant 1..1 reference "The participant we are describing"
 * condition 0..* code "The condition, disease, phenotypic feature, etc that this participant may have."
 * conditonText 1..1 string "Detailed description / free text about this condition."
@@ -25,9 +25,16 @@ Description: "Includes all codes from **HPO** and **MONDO**"
 * include codes from system $hpo 
 * include codes from system $mondo 
 
-CodeSystem: ConditionCodes 
-Id: condition-codes
-* ^url = $hpo
+CodeSystem: ConditionType
+Id: condition-type
+Title: "Type of Condition"
+Description: "Code System for type of condition"
+* #Phenotypic-Feature "Phenotypic Feature"
+* #Disease "Disease"
+* #Comorbidity "Comorbidity"
+* #Histology "Histology"
+* #Clinical-Finding "Clinical Finding"
+* #EHR-Condition-Code "EHR Condition Code"
 
 CodeSystem: ConditionAssertion
 Id: condition-assertion
