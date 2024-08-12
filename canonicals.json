@@ -1,5 +1,12 @@
 [
   {
+    "id" : "biospecimen-availability",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability",
+    "version" : "0.1.0",
+    "name" : "BiospecimenAvailability"
+  },
+  {
     "id" : "collection-type",
     "type" : "CodeSystem",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
@@ -77,6 +84,20 @@
     "name" : "NCPIFHIRIGv2"
   },
   {
+    "id" : "SharedDataModelAliquot",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelAliquot",
+    "version" : "0.1.0",
+    "name" : "CmdAliquot"
+  },
+  {
+    "id" : "SharedDataModelBiospecimenCollection",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelBiospecimenCollection",
+    "version" : "0.1.0",
+    "name" : "CdmBiospecimenCollection"
+  },
+  {
     "id" : "SharedDataModelFamilyRelationship",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRelationship",
@@ -133,6 +154,13 @@
     "name" : "CdmResearchStudy"
   },
   {
+    "id" : "SharedDataModelSample",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelSample",
+    "version" : "0.1.0",
+    "name" : "CdmSample"
+  },
+  {
     "id" : "SharedDataModelStudyFamily",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelStudyFamily",
@@ -166,6 +194,34 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type",
     "version" : "0.1.0",
     "name" : "AccessType"
+  },
+  {
+    "id" : "aliquot-availability",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability",
+    "version" : "0.1.0",
+    "name" : "AliquotAvailability"
+  },
+  {
+    "id" : "aliquot-concentration",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration",
+    "version" : "0.1.0",
+    "name" : "AliquotConcentration"
+  },
+  {
+    "id" : "biospecimen-laterality",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality",
+    "version" : "0.1.0",
+    "name" : "BiospecimenLaterality"
+  },
+  {
+    "id" : "biospecimen-spatial",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial",
+    "version" : "0.1.0",
+    "name" : "BiospecimenSpatial"
   },
   {
     "id" : "consanguinity",
@@ -259,6 +315,13 @@
     "name" : "NcpiStudyParticipant"
   },
   {
+    "id" : "ncpi-collected-sample",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample",
+    "version" : "0.1.0",
+    "name" : "NCPICollectedSample"
+  },
+  {
     "id" : "ncpi-family-relationship",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship",
@@ -278,6 +341,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file",
     "version" : "0.1.0",
     "name" : "NcpiFile"
+  },
+  {
+    "id" : "ncpi-non-collected-sample",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-non-collected-sample",
+    "version" : "0.1.0",
+    "name" : "NCPINonCollectedSample"
   },
   {
     "id" : "ncpi-participant",
@@ -313,6 +383,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study",
     "version" : "0.1.0",
     "name" : "NcpiResearchStudy"
+  },
+  {
+    "id" : "ncpi-sample",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample",
+    "version" : "0.1.0",
+    "name" : "NCPISample"
   },
   {
     "id" : "ncpi-study-family",

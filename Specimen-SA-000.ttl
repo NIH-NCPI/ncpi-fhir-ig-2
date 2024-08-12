@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/Specimen/SA-000> a fhir:Specimen ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SA-000"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen SA-000</b></p><a name=\"SA-000\"> </a><a name=\"hcSA-000\"> </a><a name=\"SA-000-en-US\"> </a><p><b>identifier</b>: SA_RV52EY7S</p><p><b>type</b>: <span title=\"Codes:\">Peripheral Whole Blood</span></p><p><b>subject</b>: <a href=\"PT_006SP660\">PT_006SP660</a></p><p><b style=\"color: maroon\">Exception Generating Narrative: null </b></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "SA_RV52EY7S" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Peripheral Whole Blood" ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "PT_006SP660" ]
+  ] ; # 
+  fhir:collection [
+     fhir:collected [
+       a fhir:dateTime ;
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "target"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:reference [ fhir:v "PT_006SP660" ]
+           ]
+         ] [
+           fhir:url [ fhir:v "targetPath"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "None" ]
+         ] [
+           fhir:url [ fhir:v "relationship"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "after" ]
+         ] [
+           fhir:url [ fhir:v "offset"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Duration ;
+             fhir:value [ fhir:v "4931"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "d" ] ;
+             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "days" ]
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"^^xsd:anyURI ]
+       ] )
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LP125037-4" ]
+       ] ) ;
+       fhir:text [ fhir:v "Blood Draw" ]
+     ]
+  ] ; # 
+  fhir:container ( [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "BS_9QM8EXG3" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

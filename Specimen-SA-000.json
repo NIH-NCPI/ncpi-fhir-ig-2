@@ -1,0 +1,62 @@
+{
+  "resourceType" : "Specimen",
+  "id" : "SA-000",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen SA-000</b></p><a name=\"SA-000\"> </a><a name=\"hcSA-000\"> </a><a name=\"SA-000-en-US\"> </a><p><b>identifier</b>: SA_RV52EY7S</p><p><b>type</b>: <span title=\"Codes:\">Peripheral Whole Blood</span></p><p><b>subject</b>: <a href=\"PT_006SP660\">PT_006SP660</a></p><p><b style=\"color: maroon\">Exception Generating Narrative: null </b></p></div>"
+  },
+  "identifier" : [{
+    "value" : "SA_RV52EY7S"
+  }],
+  "type" : {
+    "text" : "Peripheral Whole Blood"
+  },
+  "subject" : {
+    "reference" : "PT_006SP660"
+  },
+  "collection" : {
+    "_collectedDateTime" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "target",
+          "valueReference" : {
+            "reference" : "PT_006SP660"
+          }
+        },
+        {
+          "url" : "targetPath",
+          "valueString" : "None"
+        },
+        {
+          "url" : "relationship",
+          "valueCode" : "after"
+        },
+        {
+          "url" : "offset",
+          "valueDuration" : {
+            "value" : 4931,
+            "unit" : "d",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "days"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "https://loinc.org",
+        "code" : "LP125037-4"
+      }],
+      "text" : "Blood Draw"
+    }
+  },
+  "container" : [{
+    "identifier" : [{
+      "value" : "BS_9QM8EXG3"
+    }]
+  }]
+}

@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2024-08-08T19:03:14+00:00"/>
+  <date value="2024-08-12T19:06:04+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -554,6 +554,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/aliquot-availability"/>
+      </reference>
+      <name value="Availability Status of Aliquot"/>
+      <description value="Availability Status of Aliquot"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ResearchStudy"/>
       </extension>
       <reference>
@@ -689,6 +700,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/aliquot-concentration"/>
+      </reference>
+      <name value="Concentration of the Aliquot"/>
+      <description value="Concentration of the Aliquot"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/consanguinity"/>
       </reference>
       <name value="Consanguinity Extension"/>
@@ -760,6 +782,17 @@
       <name value="Enumerations for the EDAM ontology"/>
       <description value="Enumerations for the EDAM ontology"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/SA-000"/>
+      </reference>
+      <name value="Example biospecimen based on data from CBTN"/>
+      <description value="Example biospecimen based on data from CBTN"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -928,6 +961,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-sample"/>
+      </reference>
+      <name value="FHIR Profile for NCPI Sample"/>
+      <description value="FHIR Profile for NCPI Sample"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Consent"/>
       </extension>
       <reference>
@@ -1005,6 +1049,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/biospecimen-laterality"/>
+      </reference>
+      <name value="Laterality Information"/>
+      <description value="Laterality Information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1068,6 +1123,28 @@
       <name value="Mock study based on kf-research-study-subject-gsr-allowed"/>
       <description value="Genomic Summary Results (GSR) Allowed Access"/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-collected-sample"/>
+      </reference>
+      <name value="NCPI biospecimen definition for collected samples"/>
+      <description value="NCPI biospecimen definition for collected samples"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-non-collected-sample"/>
+      </reference>
+      <name value="NCPI biospecimen definition for non-collected samples"/>
+      <description value="NCPI biospecimen definition for non-collected samples"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1445,6 +1522,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/biospecimen-availability"/>
+      </reference>
+      <name value="Sample availability for Sample and Aliquot modules"/>
+      <description value="Sample availability for Sample and Aliquot modules"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SharedDataModelAliquot"/>
+      </reference>
+      <name value="Shared Data Model for Aliquot"/>
+      <description value="Shared Data Model for Aliquot"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SharedDataModelBiospecimenCollection"/>
+      </reference>
+      <name value="Shared Data Model for Biospecimen Collection"/>
+      <description value="Shared Data Model for Biospecimen Collection"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -1547,10 +1657,32 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/SharedDataModelSample"/>
+      </reference>
+      <name value="Shared Data Model for Sample"/>
+      <description value="Shared Data Model for Sample"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/SharedDataModelStudyFamily"/>
       </reference>
       <name value="Shared Data Model for Study Family"/>
       <description value="The **Shared Data Model for Study Family**"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/biospecimen-spatial"/>
+      </reference>
+      <name value="Spatial Information"/>
+      <description value="Spatial Information"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-08-08T19:03:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-12T19:06:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -644,6 +644,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability> ;
+         fhir:reference [ fhir:v "StructureDefinition/aliquot-availability" ]
+       ] ;
+       fhir:name [ fhir:v "Availability Status of Aliquot" ] ;
+       fhir:description [ fhir:v "Availability Status of Aliquot" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ResearchStudy" ]
        ] ) ;
        fhir:reference [
@@ -815,6 +827,18 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration> ;
+         fhir:reference [ fhir:v "StructureDefinition/aliquot-concentration" ]
+       ] ;
+       fhir:name [ fhir:v "Concentration of the Aliquot" ] ;
+       fhir:description [ fhir:v "Concentration of the Aliquot" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/consanguinity> ;
          fhir:reference [ fhir:v "StructureDefinition/consanguinity" ]
        ] ;
@@ -893,6 +917,21 @@
        fhir:name [ fhir:v "Enumerations for the EDAM ontology" ] ;
        fhir:description [ fhir:v "Enumerations for the EDAM ontology" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Specimen" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Specimen/SA-000> ;
+         fhir:reference [ fhir:v "Specimen/SA-000" ]
+       ] ;
+       fhir:name [ fhir:v "Example biospecimen based on data from CBTN" ] ;
+       fhir:description [ fhir:v "Example biospecimen based on data from CBTN" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1109,6 +1148,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-sample" ]
+       ] ;
+       fhir:name [ fhir:v "FHIR Profile for NCPI Sample" ] ;
+       fhir:description [ fhir:v "FHIR Profile for NCPI Sample" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Consent" ]
        ] ) ;
        fhir:reference [
@@ -1205,6 +1256,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality> ;
+         fhir:reference [ fhir:v "StructureDefinition/biospecimen-laterality" ]
+       ] ;
+       fhir:name [ fhir:v "Laterality Information" ] ;
+       fhir:description [ fhir:v "Laterality Information" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -1289,6 +1352,30 @@
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-collected-sample" ]
+       ] ;
+       fhir:name [ fhir:v "NCPI biospecimen definition for collected samples" ] ;
+       fhir:description [ fhir:v "NCPI biospecimen definition for collected samples" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-non-collected-sample> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-non-collected-sample" ]
+       ] ;
+       fhir:name [ fhir:v "NCPI biospecimen definition for non-collected samples" ] ;
+       fhir:description [ fhir:v "NCPI biospecimen definition for non-collected samples" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1721,6 +1808,42 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability> ;
+         fhir:reference [ fhir:v "CodeSystem/biospecimen-availability" ]
+       ] ;
+       fhir:name [ fhir:v "Sample availability for Sample and Aliquot modules" ] ;
+       fhir:description [ fhir:v "Sample availability for Sample and Aliquot modules" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelAliquot> ;
+         fhir:reference [ fhir:v "StructureDefinition/SharedDataModelAliquot" ]
+       ] ;
+       fhir:name [ fhir:v "Shared Data Model for Aliquot" ] ;
+       fhir:description [ fhir:v "Shared Data Model for Aliquot" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelBiospecimenCollection> ;
+         fhir:reference [ fhir:v "StructureDefinition/SharedDataModelBiospecimenCollection" ]
+       ] ;
+       fhir:name [ fhir:v "Shared Data Model for Biospecimen Collection" ] ;
+       fhir:description [ fhir:v "Shared Data Model for Biospecimen Collection" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:logical" ]
        ] ) ;
        fhir:reference [
@@ -1832,11 +1955,35 @@
          fhir:value [ fhir:v "StructureDefinition:logical" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelSample> ;
+         fhir:reference [ fhir:v "StructureDefinition/SharedDataModelSample" ]
+       ] ;
+       fhir:name [ fhir:v "Shared Data Model for Sample" ] ;
+       fhir:description [ fhir:v "Shared Data Model for Sample" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelStudyFamily> ;
          fhir:reference [ fhir:v "StructureDefinition/SharedDataModelStudyFamily" ]
        ] ;
        fhir:name [ fhir:v "Shared Data Model for Study Family" ] ;
        fhir:description [ fhir:v "The **Shared Data Model for Study Family**" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial> ;
+         fhir:reference [ fhir:v "StructureDefinition/biospecimen-spatial" ]
+       ] ;
+       fhir:name [ fhir:v "Spatial Information" ] ;
+       fhir:description [ fhir:v "Spatial Information" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

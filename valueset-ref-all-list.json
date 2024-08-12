@@ -27,7 +27,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -303,8 +306,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.284"],
       "uses" : {
       },
-      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
       "StructureDefinition-ncpi-family-role.html" : "Family Role",
+      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
       "StructureDefinition-ncpi-study-family.html" : "NCPI Study Family"
     },
     {
@@ -352,19 +355,22 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-person.html" : "NCPI Person",
-      "StructureDefinition-ncpi-family-role.html" : "Family Role",
       "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-Study-Participant.html" : "NCPI Study Participant",
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
       "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
       "StructureDefinition-ncpi-study-family.html" : "NCPI Study Family",
+      "StructureDefinition-ncpi-Study-Participant.html" : "NCPI Study Participant",
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
       "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-ncpi-participant.html" : "NCPI Participant",
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-ncpi-family-role.html" : "Family Role",
+      "StructureDefinition-ncpi-person.html" : "NCPI Person",
+      "StructureDefinition-ncpi-participant.html" : "NCPI Participant"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -392,8 +398,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.322"],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-example-codes",
@@ -423,8 +429,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.320"],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-mode",
@@ -438,8 +444,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.318"],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-order",
@@ -453,8 +459,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.324"],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-status",
@@ -468,8 +474,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.326"],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -733,8 +739,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
@@ -759,6 +765,70 @@
       "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "FHIRSpecimenCollectionMethod",
+      "title" : "FHIR Specimen Collection Method",
+      "description" : " This example value set defines a set of codes that can be used to indicate the method by which a specimen was collected.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.468"],
+      "sources" : ["2.16.840.1.113883.4.642.3.468"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "SpecimenContainer",
+      "title" : null,
+      "description" : "Containers which may hold specimens or specimen containers. Include codes  SNOMED CT(http://snomed.info/sct) where concept is-a 434711009 (Specimen container (physical object))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.470"],
+      "sources" : ["2.16.840.1.113883.4.642.3.470"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-processing-procedure",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "SpecimenProcessingProcedure",
+      "title" : null,
+      "description" : "The technique that is used to perform the process or preserve the specimen.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0373"],
+      "oids" : ["2.16.840.1.113883.4.642.3.469"],
+      "sources" : ["2.16.840.1.113883.4.642.3.469"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-status",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "SpecimenStatus",
+      "title" : "SpecimenStatus",
+      "description" : "Codes providing the status/availability of a specimen.",
+      "systems" : ["http://hl7.org/fhir/specimen-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.471"],
+      "sources" : ["2.16.840.1.113883.4.642.3.471"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/title-type",
       "version" : "4.3.0",
       "status" : "draft",
@@ -771,6 +841,70 @@
       "uses" : {
       },
       "StructureDefinition-label-extension.html" : "Label"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAdditivePreservative",
+      "title" : "hl7VS-additivePreservative",
+      "description" : "Concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0371"],
+      "oids" : ["2.16.840.1.113883.21.245"],
+      "sources" : ["2.16.840.1.113883.21.245"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0487",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSSpecimenType",
+      "title" : "hl7VS-specimenType",
+      "description" : "Concepts that describe the precise nature of an entity that may be used as the source material for an observation.  This is one of two code systems that are used instead of table 0070 (code system xxxx) which conflated specimen types and specimen collection methods.   Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0487"],
+      "oids" : ["2.16.840.1.113883.21.327"],
+      "sources" : ["2.16.840.1.113883.21.327"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSSpecimenCondition",
+      "title" : "hl7VS-specimenCondition",
+      "description" : "Concepts of modes or states of being that describe the nature of a specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493"],
+      "oids" : ["2.16.840.1.113883.21.333"],
+      "sources" : ["2.16.840.1.113883.21.333"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0916",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSRelevantClincialInformation",
+      "title" : "hl7VS-relevantClincialInformation",
+      "description" : "Value Set of codes that specify additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0916"],
+      "oids" : ["2.16.840.1.113883.21.440"],
+      "sources" : ["2.16.840.1.113883.21.440"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
@@ -796,8 +930,8 @@
       "sources" : ["2.16.840.1.113883.1.11.19579"],
       "uses" : {
       },
-      "StructureDefinition-family-role.html" : "Study Family Focus",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-family-role.html" : "Study Family Focus"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
@@ -811,8 +945,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/consanguinity-assertion-vs",
@@ -876,8 +1010,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy",
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
+      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs",

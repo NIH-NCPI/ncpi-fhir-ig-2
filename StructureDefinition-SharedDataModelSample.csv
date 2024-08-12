@@ -1,0 +1,19 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"SharedDataModelSample","SharedDataModelSample","","","",0,*,"","","","null {[]} {[]}
+","Shared Data Model for Sample","Shared Data Model for Sample","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"SharedDataModelSample.sampleId","SharedDataModelSample.sampleId","","","",1,*,"","","","string {[]} {[]}
+","Unique ID for this sample","Unique ID for this sample","","","","","","","","","",,,,,"",,,,"SharedDataModelSample.sampleId",1,*,"",""
+"SharedDataModelSample.participant","SharedDataModelSample.participant","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/valueset-reference]]} {[]}
+","The participant from whom the biospecimen was taken","The participant from whom the biospecimen was taken","","","","","","","","","",,,,,"",,,,"SharedDataModelSample.participant",1,1,"",""
+"SharedDataModelSample.parentSample","SharedDataModelSample.parentSample","","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/valueset-reference]]} {[]}
+","The Sample from which this Sample was derived","The Sample from which this Sample was derived","","","","","","","","","",,,,,"",,,,"SharedDataModelSample.parentSample",0,*,"",""
+"SharedDataModelSample.type","SharedDataModelSample.type","","","",1,1,"","","","code {[]} {[]}
+","The type of material of which this Sample is comprised","The type of material of which this Sample is comprised","","","","","","","","","",,,,,"",,,,"SharedDataModelSample.type",1,1,"",""
+"SharedDataModelSample.processing","SharedDataModelSample.processing","","","",0,*,"","","","code {[]} {[]}
+","Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample","Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample","","","","","","","","","",,,,,"",,,,"SharedDataModelSample.processing",0,*,"",""
+"SharedDataModelSample.availabilityStatus","SharedDataModelSample.availabilityStatus","","","",0,1,"","","","code {[]} {[]}
+","Can this Sample be requested for further analysis?","Can this Sample be requested for further analysis?","","","","","","","","","",,,,,"",,,,"SharedDataModelSample.availabilityStatus",0,1,"",""
+"SharedDataModelSample.storageMethod","SharedDataModelSample.storageMethod","","","",0,*,"","","","code {[]} {[]}
+","How is the Sample stored, eg, Frozen or with additives","How is the Sample stored, eg, Frozen or with additives","","","","","","","","","",,,,,"",,,,"SharedDataModelSample.storageMethod",0,*,"",""
+"SharedDataModelSample.quantity","SharedDataModelSample.quantity","","","",0,1,"","","","Quantity {[]} {[]}
+","The total quantity of the specimen","The total quantity of the specimen","","","","","","","","","",,,,,"",,,,"SharedDataModelSample.quantity",0,1,"",""

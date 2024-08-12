@@ -25,6 +25,34 @@
       ]
     },
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability",
+      "title": "Availability Status of Aliquot",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration",
+      "title": "Concentration of the Aliquot",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality",
+      "title": "Laterality Information",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial",
+      "title": "Spatial Information",
+      "types": [
+        "code"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/consanguinity",
       "title": "Consanguinity Extension",
       "types": [
@@ -409,6 +437,12 @@
         "title": "NCPI Study Participant"
       }
     ],
+    "Specimen": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample",
+        "title": "FHIR Profile for NCPI Sample"
+      }
+    ],
     "Observation": [
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship",
@@ -464,7 +498,8 @@
   },
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime": [
-      "Patient.birthDate"
+      "Patient.birthDate",
+      "Specimen.collection.collectedDateTime"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -494,10 +529,13 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/valueset-reference": [
+      "SharedDataModelAliquot",
+      "SharedDataModelBiospecimenCollection",
       "SharedDataModelFile",
       "SharedDataModelFile.location",
       "SharedDataModelFile.relatedFile",
       "SharedDataModelPerson",
+      "SharedDataModelSample",
       "SharedDataModelStudyParticipant"
     ],
     "http://hl7.org/fhir/build/StructureDefinition/binding-definition": [
@@ -532,6 +570,18 @@
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type": [
       "Consent"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability": [
+      "Specimen"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration": [
+      "Specimen"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality": [
+      "Specimen"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial": [
+      "Specimen"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/consanguinity": [
       "Group"

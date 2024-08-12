@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "biospecimen-availability",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem biospecimen-availability</b></p><a name=\"biospecimen-availability\"> </a><a name=\"hcbiospecimen-availability\"> </a><a name=\"biospecimen-availability-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">available<a name=\"biospecimen-availability-available\"> </a></td><td>Available</td></tr><tr><td style=\"white-space:nowrap\">unavailable<a name=\"biospecimen-availability-unavailable\"> </a></td><td>Unavailable</td></tr></table></div>"
+  },
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability",
+  "version" : "0.1.0",
+  "name" : "BiospecimenAvailability",
+  "title" : "Sample availability for Sample and Aliquot modules",
+  "status" : "draft",
+  "date" : "2024-08-12T19:06:04+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
+  "description" : "Sample availability for Sample and Aliquot modules",
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "available",
+    "display" : "Available"
+  },
+  {
+    "code" : "unavailable",
+    "display" : "Unavailable"
+  }]
+}

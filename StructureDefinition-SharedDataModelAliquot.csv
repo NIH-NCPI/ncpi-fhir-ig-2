@@ -1,0 +1,13 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"SharedDataModelAliquot","SharedDataModelAliquot","","","",0,*,"","","","null {[]} {[]}
+","Shared Data Model for Aliquot","Shared Data Model for Aliquot","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"SharedDataModelAliquot.aliquotId","SharedDataModelAliquot.aliquotId","","","",1,1,"","","","string {[]} {[]}
+","Unique ID for this aliquot","Unique ID for this aliquot","","","","","","","","","",,,,,"",,,,"SharedDataModelAliquot.aliquotId",1,1,"",""
+"SharedDataModelAliquot.sample","SharedDataModelAliquot.sample","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/valueset-reference]]} {[]}
+","The sample of which this tube is a part.","The sample of which this tube is a part.","","","","","","","","","",,,,,"",,,,"SharedDataModelAliquot.sample",1,1,"",""
+"SharedDataModelAliquot.availabilityStatus","SharedDataModelAliquot.availabilityStatus","","","",0,1,"","","","code {[]} {[]}
+","Can this Sample be requested for further analysis?","Can this Sample be requested for further analysis?","","","","","","","","","",,,,,"",,,,"SharedDataModelAliquot.availabilityStatus",0,1,"",""
+"SharedDataModelAliquot.quantity","SharedDataModelAliquot.quantity","","","",0,1,"","","","Quantity {[]} {[]}
+","What is the volume of the Aliquot?","What is the volume of the Aliquot?","","","","","","","","","",,,,,"",,,,"SharedDataModelAliquot.quantity",0,1,"",""
+"SharedDataModelAliquot.concentration","SharedDataModelAliquot.concentration","","","",0,1,"","","","Quantity {[]} {[]}
+","What is the concentration of the analyte in the Aliquot?","What is the concentration of the analyte in the Aliquot?","","","","","","","","","",,,,,"",,,,"SharedDataModelAliquot.concentration",0,1,"",""
