@@ -18,6 +18,11 @@ Alias: $ncpi-dob-method = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/r
 
 Alias: $ncit = http://purl.obolibrary.org/obo/ncit.owl
 Alias: $ucum = http://unitsofmeasure.org
+Alias: $loinc = https://loinc.org
+Alias: $body-location-qualifer = http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs
+Alias: $laterality-qualifier = http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs
+
+Alias: $spec = https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html
 
 Alias: $snomedct_us = http://snomed.info/sct
 Alias: $family-role-code = http://terminology.hl7.org/CodeSystem/v3-RoleCode
@@ -25,4 +30,3 @@ Alias: $ncpi-family-types = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem
 Alias: $ncpi-family-member = http://terminology.hl7.org/ValueSet/v3-FamilyMember
 Alias: $mondo = http://purl.obolibrary.org/obo/mondo.owl
 Alias: $edam = http://edamontology.org
-

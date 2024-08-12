@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "CodeSystem-biospecimen-availability.json",
+    "fshName": "BiospecimenAvailability",
+    "fshType": "CodeSystem",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 44,
+    "endLine": 49
+  },
+  {
     "outputFile": "CodeSystem-collection-type.json",
     "fshName": "CollectionType",
     "fshType": "CodeSystem",
@@ -408,6 +416,30 @@
     "endLine": 216
   },
   {
+
+    "outputFile": "Specimen-SA-000.json",
+    "fshName": "SA-000",
+    "fshType": "Instance",
+    "fshFile": "examples/biospecimen.fsh",
+    "startLine": 3,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-SharedDataModelAliquot.json",
+    "fshName": "CmdAliquot",
+    "fshType": "Logical",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 53,
+    "endLine": 61
+  },
+  {
+    "outputFile": "StructureDefinition-SharedDataModelBiospecimenCollection.json",
+    "fshName": "CdmBiospecimenCollection",
+    "fshType": "Logical",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 3,
+    "endLine": 13
+
     "outputFile": "StructureDefinition-SharedDataModelFamilyRelationship.json",
     "fshName": "CdmFamilyRelationship",
     "fshType": "Logical",
@@ -422,6 +454,7 @@
     "fshFile": "modules/family.fsh",
     "startLine": 110,
     "endLine": 116
+
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelPerson.json",
@@ -464,12 +497,20 @@
     "endLine": 168
   },
   {
+    "outputFile": "StructureDefinition-SharedDataModelSample.json",
+    "fshName": "CdmSample",
+    "fshType": "Logical",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 31,
+    "endLine": 42
+    
     "outputFile": "StructureDefinition-SharedDataModelStudyFamily.json",
     "fshName": "CdmStudyFamily",
     "fshType": "Logical",
     "fshFile": "modules/family.fsh",
     "startLine": 13,
     "endLine": 22
+
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelStudyParticipant.json",
@@ -504,6 +545,38 @@
     "endLine": 81
   },
   {
+
+    "outputFile": "StructureDefinition-aliquot-availability.json",
+    "fshName": "AliquotAvailability",
+    "fshType": "Extension",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 63,
+    "endLine": 69
+  },
+  {
+    "outputFile": "StructureDefinition-aliquot-concentration.json",
+    "fshName": "AliquotConcentration",
+    "fshType": "Extension",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 71,
+    "endLine": 77
+  },
+  {
+    "outputFile": "StructureDefinition-biospecimen-laterality.json",
+    "fshName": "BiospecimenLaterality",
+    "fshType": "Extension",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 22,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-biospecimen-spatial.json",
+    "fshName": "BiospecimenSpatial",
+    "fshType": "Extension",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 15,
+    "endLine": 20
+
     "outputFile": "StructureDefinition-consanguinity.json",
     "fshName": "Consanguinity",
     "fshType": "Extension",
@@ -534,6 +607,7 @@
     "fshFile": "modules/family.fsh",
     "startLine": 48,
     "endLine": 54
+
   },
   {
     "outputFile": "StructureDefinition-label-extension.json",
@@ -552,6 +626,22 @@
     "endLine": 145
   },
   {
+
+    "outputFile": "StructureDefinition-ncpi-collected-sample.json",
+    "fshName": "NCPICollectedSample",
+    "fshType": "Profile",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 124,
+    "endLine": 131
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-non-collected-sample.json",
+    "fshName": "NCPINonCollectedSample",
+    "fshType": "Profile",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 133,
+    "endLine": 140
+
     "outputFile": "StructureDefinition-ncpi-family-relationship.json",
     "fshName": "NcpiFamilyRelationship",
     "fshType": "Profile",
@@ -566,6 +656,7 @@
     "fshFile": "modules/family.fsh",
     "startLine": 135,
     "endLine": 148
+
   },
   {
     "outputFile": "StructureDefinition-ncpi-participant.json",
@@ -608,12 +699,21 @@
     "endLine": 86
   },
   {
+
+    "outputFile": "StructureDefinition-ncpi-sample.json",
+    "fshName": "NCPISample",
+    "fshType": "Profile",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 81,
+    "endLine": 121
+
     "outputFile": "StructureDefinition-ncpi-study-family.json",
     "fshName": "NcpiStudyFamily",
     "fshType": "Profile",
     "fshFile": "modules/family.fsh",
     "startLine": 88,
     "endLine": 106
+
   },
   {
     "outputFile": "StructureDefinition-research-age-at-last-vital-status.json",

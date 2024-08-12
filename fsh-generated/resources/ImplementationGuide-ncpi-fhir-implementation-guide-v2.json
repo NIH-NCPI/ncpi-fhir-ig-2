@@ -71,6 +71,11 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/aliquot-availability"
+        },
+        "name": "Availability Status of Aliquot",
+        "description": "Availability Status of Aliquot",
+        "exampleBoolean": false
           "reference": "Observation/cbtn-family-relationship-mother"
         },
         "name": "An example family relationship based on data from CBTN",
@@ -199,6 +204,10 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/aliquot-concentration"
+        },
+        "name": "Concentration of the Aliquot",
+        "description": "Concentration of the Aliquot",
           "reference": "StructureDefinition/consanguinity"
         },
         "name": "Consanguinity Extension",
@@ -244,6 +253,14 @@
         "name": "Enumerations for how DOB was constructed",
         "description": "Enumerations for how DOB was constructed",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Specimen/SA-000"
+        },
+        "name": "Example biospecimen based on data from CBTN",
+        "description": "Example biospecimen based on data from CBTN",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
       },
       {
         "reference": {
@@ -399,6 +416,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/biospecimen-laterality"
+        },
+        "name": "Laterality Information",
+        "description": "Laterality Information",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mesh-terms"
         },
         "name": "MeSH Terms",
@@ -447,6 +472,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-sample"
+        },
+        "name": "NCPI biospecimen definition",
+        "description": "NCPI biospecimen definition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-collected-sample"
+        },
+        "name": "NCPI biospecimen definition for collected samples",
+        "description": "NCPI biospecimen definition for collected samples",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-non-collected-sample"
+        },
+        "name": "NCPI biospecimen definition for non-collected samples",
+        "description": "NCPI biospecimen definition for non-collected samples",
           "reference": "CodeSystem/ncpi-family-types"
         },
         "name": "NCPI Family Types CodeSystem",
@@ -695,6 +740,10 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/biospecimen-availability"
+        },
+        "name": "Sample availability for Sample and Aliquot modules",
+        "description": "Sample availability for Sample and Aliquot modules",
           "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
         },
         "name": "Shared Data Model for Family Relationship",
@@ -703,6 +752,18 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/SharedDataModelAliquot"
+        },
+        "name": "Shared Data Model for Aliquot",
+        "description": "Shared Data Model for Aliquot",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelBiospecimenCollection"
+        },
+        "name": "Shared Data Model for Biospecimen Collection",
+        "description": "Shared Data Model for Biospecimen Collection",
           "reference": "StructureDefinition/SharedDataModelFamilyRole"
         },
         "name": "Shared Data Model for Family Role",
@@ -759,6 +820,10 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/SharedDataModelSample"
+        },
+        "name": "Shared Data Model for Sample",
+        "description": "Shared Data Model for Sample",
           "reference": "StructureDefinition/SharedDataModelStudyFamily"
         },
         "name": "Shared Data Model for Study Family",
@@ -767,6 +832,10 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/biospecimen-spatial"
+        },
+        "name": "Spatial Information",
+        "description": "Spatial Information",
           "reference": "StructureDefinition/description"
         },
         "name": "Study Family Description",
