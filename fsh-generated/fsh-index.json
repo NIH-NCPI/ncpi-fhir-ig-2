@@ -4,8 +4,8 @@
     "fshName": "BiospecimenAvailability",
     "fshType": "CodeSystem",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 44,
-    "endLine": 49
+    "startLine": 53,
+    "endLine": 58
   },
   {
     "outputFile": "CodeSystem-collection-type.json",
@@ -14,6 +14,30 @@
     "fshFile": "modules/research-collection.fsh",
     "startLine": 2,
     "endLine": 11
+  },
+  {
+    "outputFile": "CodeSystem-condition-assertion.json",
+    "fshName": "ConditionAssertion",
+    "fshType": "CodeSystem",
+    "fshFile": "modules/condition.fsh",
+    "startLine": 48,
+    "endLine": 57
+  },
+  {
+    "outputFile": "CodeSystem-condition-type.json",
+    "fshName": "ConditionType",
+    "fshType": "CodeSystem",
+    "fshFile": "modules/condition.fsh",
+    "startLine": 34,
+    "endLine": 46
+  },
+  {
+    "outputFile": "CodeSystem-example-hash-type-code-system.json",
+    "fshName": "HashTypeCS",
+    "fshType": "CodeSystem",
+    "fshFile": "modules/files.fsh",
+    "startLine": 28,
+    "endLine": 38
   },
   {
     "outputFile": "CodeSystem-ncpi-family-types.json",
@@ -30,6 +54,14 @@
     "fshFile": "terminologies/ncpi.fsh",
     "startLine": 6,
     "endLine": 34
+  },
+  {
+    "outputFile": "CodeSystem-related-file-type-code-system.json",
+    "fshName": "RelatedFileTypeCS",
+    "fshType": "CodeSystem",
+    "fshFile": "modules/files.fsh",
+    "startLine": 40,
+    "endLine": 48
   },
   {
     "outputFile": "CodeSystem-research-data-access-code.json",
@@ -52,8 +84,8 @@
     "fshName": "ResearchDataDateOfBirthMethod",
     "fshType": "CodeSystem",
     "fshFile": "modules/participant.fsh",
-    "startLine": 18,
-    "endLine": 29
+    "startLine": 26,
+    "endLine": 37
   },
   {
     "outputFile": "CodeSystem-study-name-type.json",
@@ -70,22 +102,6 @@
     "fshFile": "modules/research-study.fsh",
     "startLine": 120,
     "endLine": 129
-  },
-  {
-    "outputFile": "Consent-GRU.json",
-    "fshName": "GRU",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 88,
-    "endLine": 101
-  },
-  {
-    "outputFile": "Consent-HMB.json",
-    "fshName": "HMB",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 178,
-    "endLine": 191
   },
   {
     "outputFile": "Consent-hmb-irb-npu-consent.json",
@@ -134,6 +150,14 @@
     "fshFile": "examples/ResearchStudy-CBTN.fsh",
     "startLine": 193,
     "endLine": 204
+  },
+  {
+    "outputFile": "DocumentReference-PT-006SP660.json",
+    "fshName": "PT-006SP660",
+    "fshType": "Instance",
+    "fshFile": "examples/files.fsh",
+    "startLine": 1,
+    "endLine": 22
   },
   {
     "outputFile": "Group-cbtn-family-role-mother.json",
@@ -224,6 +248,14 @@
     "endLine": 75
   },
   {
+    "outputFile": "Observation-condition-example.json",
+    "fshName": "condition-example",
+    "fshType": "Instance",
+    "fshFile": "examples/condition.fsh",
+    "startLine": 2,
+    "endLine": 32
+  },
+  {
     "outputFile": "Organization-kf-research-study-organization-chop.json",
     "fshName": "kf-research-study-organization-chop",
     "fshType": "Instance",
@@ -232,52 +264,12 @@
     "endLine": 11
   },
   {
-    "outputFile": "Patient-6812345.json",
-    "fshName": "6812345",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 222,
-    "endLine": 255
-  },
-  {
-    "outputFile": "Patient-PT-005B7CZ4.json",
-    "fshName": "PT-005B7CZ4",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 132,
-    "endLine": 164
-  },
-  {
     "outputFile": "Patient-PT-KZG2CZ95.json",
     "fshName": "PT-KZG2CZ95",
     "fshType": "Instance",
     "fshFile": "examples/participant.fsh",
-    "startLine": 15,
-    "endLine": 54
-  },
-  {
-    "outputFile": "Person-cbtn-example-person.json",
-    "fshName": "cbtn-example-person",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 77,
-    "endLine": 86
-  },
-  {
-    "outputFile": "Person-emerge-example-person.json",
-    "fshName": "emerge-example-person",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 257,
-    "endLine": 266
-  },
-  {
-    "outputFile": "Person-pcgc-example-person.json",
-    "fshName": "pcgc-example-person",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 167,
-    "endLine": 176
+    "startLine": 2,
+    "endLine": 41
   },
   {
     "outputFile": "PractitionerRole-kf-research-study-personnel-role-op-lead.json",
@@ -302,22 +294,6 @@
     "fshFile": "examples/ResearchStudy-CBTN.fsh",
     "startLine": 21,
     "endLine": 27
-  },
-  {
-    "outputFile": "ResearchStudy-SD-BHJXBDQK.json",
-    "fshName": "SD-BHJXBDQK",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 103,
-    "endLine": 116
-  },
-  {
-    "outputFile": "ResearchStudy-SD-PREASA7S.json",
-    "fshName": "SD-PREASA7S",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 193,
-    "endLine": 206
   },
   {
     "outputFile": "ResearchStudy-cmg-research-study-bhcmg.json",
@@ -384,39 +360,6 @@
     "endLine": 219
   },
   {
-    "outputFile": "ResearchStudy-phv00407460.v2.json",
-    "fshName": "phv00407460.v2",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 270,
-    "endLine": 283
-  },
-  {
-    "outputFile": "ResearchSubject-cbtn-example-participantstudy.json",
-    "fshName": "cbtn-example-participantstudy",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 118,
-    "endLine": 126
-  },
-  {
-    "outputFile": "ResearchSubject-emerge-example-participantstudy.json",
-    "fshName": "emerge-example-participantstudy",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 285,
-    "endLine": 293
-  },
-  {
-    "outputFile": "ResearchSubject-pcgc-example-participantstudy.json",
-    "fshName": "pcgc-example-participantstudy",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 208,
-    "endLine": 216
-  },
-  {
-
     "outputFile": "Specimen-SA-000.json",
     "fshName": "SA-000",
     "fshType": "Instance",
@@ -429,8 +372,8 @@
     "fshName": "CmdAliquot",
     "fshType": "Logical",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 53,
-    "endLine": 61
+    "startLine": 62,
+    "endLine": 70
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelBiospecimenCollection.json",
@@ -439,7 +382,16 @@
     "fshFile": "modules/biospecimen.fsh",
     "startLine": 3,
     "endLine": 13
-
+  },
+  {
+    "outputFile": "StructureDefinition-SharedDataModelCondition.json",
+    "fshName": "CdmCondition",
+    "fshType": "Logical",
+    "fshFile": "modules/condition.fsh",
+    "startLine": 3,
+    "endLine": 19
+  },
+  {
     "outputFile": "StructureDefinition-SharedDataModelFamilyRelationship.json",
     "fshName": "CdmFamilyRelationship",
     "fshType": "Logical",
@@ -454,15 +406,22 @@
     "fshFile": "modules/family.fsh",
     "startLine": 110,
     "endLine": 116
-
+  },
+  {
+    "outputFile": "StructureDefinition-SharedDataModelFile.json",
+    "fshName": "CdmFile",
+    "fshType": "Logical",
+    "fshFile": "modules/files.fsh",
+    "startLine": 5,
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelPerson.json",
     "fshName": "CdmPerson",
     "fshType": "Logical",
     "fshFile": "modules/participant.fsh",
-    "startLine": 93,
-    "endLine": 98
+    "startLine": 18,
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelResearchCollection.json",
@@ -501,24 +460,16 @@
     "fshName": "CdmSample",
     "fshType": "Logical",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 31,
-    "endLine": 42
-    
+    "startLine": 36,
+    "endLine": 47
+  },
+  {
     "outputFile": "StructureDefinition-SharedDataModelStudyFamily.json",
     "fshName": "CdmStudyFamily",
     "fshType": "Logical",
     "fshFile": "modules/family.fsh",
     "startLine": 13,
     "endLine": 22
-
-  },
-  {
-    "outputFile": "StructureDefinition-SharedDataModelStudyParticipant.json",
-    "fshName": "CdmStudyParticipant",
-    "fshType": "Logical",
-    "fshFile": "modules/participant.fsh",
-    "startLine": 116,
-    "endLine": 122
   },
   {
     "outputFile": "StructureDefinition-access-policy-description.json",
@@ -529,14 +480,6 @@
     "endLine": 90
   },
   {
-    "outputFile": "StructureDefinition-access-policy.json",
-    "fshName": "AccessPolicy",
-    "fshType": "Extension",
-    "fshFile": "modules/participant.fsh",
-    "startLine": 124,
-    "endLine": 131
-  },
-  {
     "outputFile": "StructureDefinition-access-type.json",
     "fshName": "AccessType",
     "fshType": "Extension",
@@ -545,21 +488,28 @@
     "endLine": 81
   },
   {
-
+    "outputFile": "StructureDefinition-age-at-assertion.json",
+    "fshName": "AgeAtAssertion",
+    "fshType": "Extension",
+    "fshFile": "modules/condition.fsh",
+    "startLine": 62,
+    "endLine": 69
+  },
+  {
     "outputFile": "StructureDefinition-aliquot-availability.json",
     "fshName": "AliquotAvailability",
     "fshType": "Extension",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 63,
-    "endLine": 69
+    "startLine": 72,
+    "endLine": 78
   },
   {
     "outputFile": "StructureDefinition-aliquot-concentration.json",
     "fshName": "AliquotConcentration",
     "fshType": "Extension",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 71,
-    "endLine": 77
+    "startLine": 80,
+    "endLine": 86
   },
   {
     "outputFile": "StructureDefinition-biospecimen-laterality.json",
@@ -576,13 +526,30 @@
     "fshFile": "modules/biospecimen.fsh",
     "startLine": 15,
     "endLine": 20
-
+  },
+  {
+    "outputFile": "StructureDefinition-condition-asserter.json",
+    "fshName": "ConditionAsserter",
+    "fshType": "Extension",
+    "fshFile": "modules/condition.fsh",
+    "startLine": 72,
+    "endLine": 78
+  },
+  {
     "outputFile": "StructureDefinition-consanguinity.json",
     "fshName": "Consanguinity",
     "fshType": "Extension",
     "fshFile": "modules/family.fsh",
     "startLine": 73,
     "endLine": 79
+  },
+  {
+    "outputFile": "StructureDefinition-content-version.json",
+    "fshName": "ContentVersion",
+    "fshType": "Extension",
+    "fshFile": "modules/files.fsh",
+    "startLine": 80,
+    "endLine": 86
   },
   {
     "outputFile": "StructureDefinition-description.json",
@@ -607,7 +574,46 @@
     "fshFile": "modules/family.fsh",
     "startLine": 48,
     "endLine": 54
-
+  },
+  {
+    "outputFile": "StructureDefinition-file-format.json",
+    "fshName": "FileFormat",
+    "fshType": "Extension",
+    "fshFile": "modules/files.fsh",
+    "startLine": 56,
+    "endLine": 62
+  },
+  {
+    "outputFile": "StructureDefinition-file-size.json",
+    "fshName": "FileSize",
+    "fshType": "Extension",
+    "fshFile": "modules/files.fsh",
+    "startLine": 72,
+    "endLine": 78
+  },
+  {
+    "outputFile": "StructureDefinition-hash-extension.json",
+    "fshName": "HashExtension",
+    "fshType": "Extension",
+    "fshFile": "modules/files.fsh",
+    "startLine": 104,
+    "endLine": 112
+  },
+  {
+    "outputFile": "StructureDefinition-hash-type.json",
+    "fshName": "HashType",
+    "fshType": "Extension",
+    "fshFile": "modules/files.fsh",
+    "startLine": 96,
+    "endLine": 102
+  },
+  {
+    "outputFile": "StructureDefinition-hash-value.json",
+    "fshName": "HashValue",
+    "fshType": "Extension",
+    "fshFile": "modules/files.fsh",
+    "startLine": 88,
+    "endLine": 94
   },
   {
     "outputFile": "StructureDefinition-label-extension.json",
@@ -618,30 +624,30 @@
     "endLine": 13
   },
   {
-    "outputFile": "StructureDefinition-ncpi-Study-Participant.json",
-    "fshName": "NcpiStudyParticipant",
-    "fshType": "Profile",
-    "fshFile": "modules/participant.fsh",
-    "startLine": 133,
-    "endLine": 145
+    "outputFile": "StructureDefinition-location-access.json",
+    "fshName": "LocationAccess",
+    "fshType": "Extension",
+    "fshFile": "modules/files.fsh",
+    "startLine": 64,
+    "endLine": 70
   },
   {
-
     "outputFile": "StructureDefinition-ncpi-collected-sample.json",
     "fshName": "NCPICollectedSample",
     "fshType": "Profile",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 124,
-    "endLine": 131
-  },
-  {
-    "outputFile": "StructureDefinition-ncpi-non-collected-sample.json",
-    "fshName": "NCPINonCollectedSample",
-    "fshType": "Profile",
-    "fshFile": "modules/biospecimen.fsh",
     "startLine": 133,
     "endLine": 140
-
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-condition.json",
+    "fshName": "NcpiCondition",
+    "fshType": "Profile",
+    "fshFile": "modules/condition.fsh",
+    "startLine": 83,
+    "endLine": 119
+  },
+  {
     "outputFile": "StructureDefinition-ncpi-family-relationship.json",
     "fshName": "NcpiFamilyRelationship",
     "fshType": "Profile",
@@ -656,23 +662,30 @@
     "fshFile": "modules/family.fsh",
     "startLine": 135,
     "endLine": 148
-
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-file.json",
+    "fshName": "NcpiFile",
+    "fshType": "Profile",
+    "fshFile": "modules/files.fsh",
+    "startLine": 116,
+    "endLine": 142
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-non-collected-sample.json",
+    "fshName": "NCPINonCollectedSample",
+    "fshType": "Profile",
+    "fshFile": "modules/biospecimen.fsh",
+    "startLine": 142,
+    "endLine": 149
   },
   {
     "outputFile": "StructureDefinition-ncpi-participant.json",
     "fshName": "NcpiParticipant",
     "fshType": "Profile",
     "fshFile": "modules/participant.fsh",
-    "startLine": 62,
-    "endLine": 87
-  },
-  {
-    "outputFile": "StructureDefinition-ncpi-person.json",
-    "fshName": "NcpiPerson",
-    "fshType": "Profile",
-    "fshFile": "modules/participant.fsh",
-    "startLine": 101,
-    "endLine": 112
+    "startLine": 70,
+    "endLine": 95
   },
   {
     "outputFile": "StructureDefinition-ncpi-research-access-policy.json",
@@ -699,37 +712,36 @@
     "endLine": 86
   },
   {
-
     "outputFile": "StructureDefinition-ncpi-sample.json",
     "fshName": "NCPISample",
     "fshType": "Profile",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 81,
-    "endLine": 121
-
+    "startLine": 90,
+    "endLine": 130
+  },
+  {
     "outputFile": "StructureDefinition-ncpi-study-family.json",
     "fshName": "NcpiStudyFamily",
     "fshType": "Profile",
     "fshFile": "modules/family.fsh",
     "startLine": 88,
     "endLine": 106
-
   },
   {
     "outputFile": "StructureDefinition-research-age-at-last-vital-status.json",
     "fshName": "AgeAtLastVitalStatus",
     "fshType": "Extension",
     "fshFile": "modules/participant.fsh",
-    "startLine": 53,
-    "endLine": 60
+    "startLine": 61,
+    "endLine": 68
   },
   {
     "outputFile": "StructureDefinition-research-date-of-birth-method.json",
     "fshName": "ResearchDateOfBirthMethod",
     "fshType": "Extension",
     "fshFile": "modules/participant.fsh",
-    "startLine": 45,
-    "endLine": 51
+    "startLine": 53,
+    "endLine": 59
   },
   {
     "outputFile": "StructureDefinition-research-disease-use-limitation.json",
@@ -744,8 +756,8 @@
     "fshName": "ResearchPopulation",
     "fshType": "Extension",
     "fshFile": "modules/participant.fsh",
-    "startLine": 37,
-    "endLine": 42
+    "startLine": 45,
+    "endLine": 50
   },
   {
     "outputFile": "StructureDefinition-research-study-acknowledgement.json",
@@ -836,12 +848,28 @@
     "endLine": 18
   },
   {
+    "outputFile": "ValueSet-condition-code-vs.json",
+    "fshName": "ConditionCodeVS",
+    "fshType": "ValueSet",
+    "fshFile": "modules/condition.fsh",
+    "startLine": 24,
+    "endLine": 29
+  },
+  {
     "outputFile": "ValueSet-consanguinity-assertion-vs.json",
     "fshName": "ConsanguinityAssertionVS",
     "fshType": "ValueSet",
     "fshFile": "modules/family.fsh",
     "startLine": 63,
     "endLine": 71
+  },
+  {
+    "outputFile": "ValueSet-edam-ontology-terms.json",
+    "fshName": "EDAMOntologyTerms",
+    "fshType": "ValueSet",
+    "fshFile": "modules/files.fsh",
+    "startLine": 50,
+    "endLine": 54
   },
   {
     "outputFile": "ValueSet-mesh-terms.json",
@@ -880,8 +908,8 @@
     "fshName": "ResearchDataDateOfBirthMethodVS",
     "fshType": "ValueSet",
     "fshFile": "modules/participant.fsh",
-    "startLine": 31,
-    "endLine": 35
+    "startLine": 39,
+    "endLine": 43
   },
   {
     "outputFile": "ValueSet-study-name-type-vs.json",

@@ -39,14 +39,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/access-policy"
-        },
-        "name": "Access policy",
-        "description": "Access Policy Extension",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/access-policy-description"
         },
         "name": "Access Policy Description",
@@ -63,6 +55,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/age-at-assertion"
+        },
+        "name": "Age at Assertion",
+        "description": "Age at Assertion Extension",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/research-age-at-last-vital-status"
         },
         "name": "Age at Last Vital Status Extension",
@@ -71,11 +71,14 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/aliquot-availability"
+          "reference": "StructureDefinition/hash-type"
         },
-        "name": "Availability Status of Aliquot",
-        "description": "Availability Status of Aliquot",
+        "name": "Algorithm used to calculate the hash (and size, where applicable)",
+        "description": "Algorithm used to calculate the hash (and size, where applicable)",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/cbtn-family-relationship-mother"
         },
         "name": "An example family relationship based on data from CBTN",
@@ -105,6 +108,22 @@
         "name": "An example family role based on data from CBTN",
         "description": "An example family role based on data from CBTN.",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/condition-assertion"
+        },
+        "name": "Assertion of Condition Codes",
+        "description": "Code System for assertion of condition presence",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aliquot-availability"
+        },
+        "name": "Availability Status of Aliquot",
+        "description": "Availability Status of Aliquot",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -208,6 +227,18 @@
         },
         "name": "Concentration of the Aliquot",
         "description": "Concentration of the Aliquot",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/condition-code-vs"
+        },
+        "name": "Conditon Codes",
+        "description": "Includes all codes from **HPO** and **MONDO**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/consanguinity"
         },
         "name": "Consanguinity Extension",
@@ -256,6 +287,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/edam-ontology-terms"
+        },
+        "name": "Enumerations for the EDAM ontology",
+        "description": "Enumerations for the EDAM ontology",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Specimen/SA-000"
         },
         "name": "Example biospecimen based on data from CBTN",
@@ -264,27 +303,19 @@
       },
       {
         "reference": {
-          "reference": "ResearchSubject/cbtn-example-participantstudy"
+          "reference": "Observation/condition-example"
         },
-        "name": "Example mappings based on data from CBTN",
-        "description": "Example mappings based on data from CBTN",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+        "name": "Example condition using data from Kids First",
+        "description": "Example condition using data from Kids First.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"
       },
       {
         "reference": {
-          "reference": "ResearchSubject/emerge-example-participantstudy"
+          "reference": "DocumentReference/PT-006SP660"
         },
-        "name": "Example mappings based on data from eMERGE",
-        "description": "Example mappings based on data from eMERGE",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
-      },
-      {
-        "reference": {
-          "reference": "ResearchSubject/pcgc-example-participantstudy"
-        },
-        "name": "Example mappings based on data from PCGC",
-        "description": "Example mappings based on data from PCGC",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+        "name": "Example file based on CBTN",
+        "description": "Use case of file information from CBTN",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
       },
       {
         "reference": {
@@ -301,46 +332,6 @@
         "name": "Example patients based on data from CBTN",
         "description": "Example patients based on data from CBTN.",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-      },
-      {
-        "reference": {
-          "reference": "Person/cbtn-example-person"
-        },
-        "name": "Example patients based on data from CBTN",
-        "description": "Example patients based on data from CBTN",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
-      },
-      {
-        "reference": {
-          "reference": "Patient/6812345"
-        },
-        "name": "Example patients based on data from eMERGE",
-        "description": "Example patients based on data from eMERGE",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-      },
-      {
-        "reference": {
-          "reference": "Person/emerge-example-person"
-        },
-        "name": "Example patients based on data from eMERGE",
-        "description": "Example patients based on data from eMERGE",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
-      },
-      {
-        "reference": {
-          "reference": "Patient/PT-005B7CZ4"
-        },
-        "name": "Example patients based on data from PCGC",
-        "description": "Example patients based on data from PCGC.",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-      },
-      {
-        "reference": {
-          "reference": "Person/pcgc-example-person"
-        },
-        "name": "Example patients based on data from PCGC",
-        "description": "Example patients based on data from PCGC",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
       },
       {
         "reference": {
@@ -376,11 +367,27 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-sample"
+        },
+        "name": "FHIR Profile for NCPI Sample",
+        "description": "FHIR Profile for NCPI Sample",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Consent/kf-gsr-allowed-access"
         },
         "name": "Genomic Summary Results (GSR) Allowed Access",
         "description": "Genomic Summary Results (GSR) Allowed Access",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/example-hash-type-code-system"
+        },
+        "name": "Hash Types Code System",
+        "description": "Algorithm used to calculate the hash (and size, where applicable)",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -397,6 +404,14 @@
         "name": "HMB-NPU Consent",
         "description": "Consented with Health/Medical/Biomedical + Not for profit use",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/location-access"
+        },
+        "name": "If present, only those under the specific Access Policy can access the file in this location.",
+        "description": "If present, only those under the specific Access Policy can access the file in this location.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -432,54 +447,6 @@
       },
       {
         "reference": {
-          "reference": "Consent/GRU"
-        },
-        "name": "Mock consent based on kf-gru-dac-consent",
-        "description": "General Research Use (GRU)",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
-      },
-      {
-        "reference": {
-          "reference": "Consent/HMB"
-        },
-        "name": "Mock consent based on kf-gru-dbgap-consent",
-        "description": "General Research Use (GRU)",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/SD-BHJXBDQK"
-        },
-        "name": "Mock study based on kf-research-study-subject-gru-dac",
-        "description": "GRU data access via DAC",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/SD-PREASA7S"
-        },
-        "name": "Mock Study based on kf-research-study-subject-gru-dbgap",
-        "description": "GRU data access via dbGaP",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/phv00407460.v2"
-        },
-        "name": "Mock study based on kf-research-study-subject-gsr-allowed",
-        "description": "Genomic Summary Results (GSR) Allowed Access",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncpi-sample"
-        },
-        "name": "NCPI biospecimen definition",
-        "description": "NCPI biospecimen definition",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ncpi-collected-sample"
         },
         "name": "NCPI biospecimen definition for collected samples",
@@ -492,6 +459,18 @@
         },
         "name": "NCPI biospecimen definition for non-collected samples",
         "description": "NCPI biospecimen definition for non-collected samples",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-condition"
+        },
+        "name": "NCPI Conditon",
+        "description": "Information about a condition related to a research participant",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ncpi-family-types"
         },
         "name": "NCPI Family Types CodeSystem",
@@ -508,18 +487,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-participant"
+          "reference": "StructureDefinition/ncpi-file"
         },
-        "name": "NCPI Participant",
-        "description": "Research oriented patient",
+        "name": "NCPI File",
+        "description": "Information about a file related to a research participant",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-person"
+          "reference": "StructureDefinition/ncpi-participant"
         },
-        "name": "NCPI Person",
-        "description": "Person",
+        "name": "NCPI Participant",
+        "description": "Research oriented patient",
         "exampleBoolean": false
       },
       {
@@ -560,14 +539,6 @@
         },
         "name": "NCPI Study Family",
         "description": "Study Family",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncpi-Study-Participant"
-        },
-        "name": "NCPI Study Participant",
-        "description": "Research Study",
         "exampleBoolean": false
       },
       {
@@ -620,11 +591,35 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/condition-asserter"
+        },
+        "name": "Person who recorded assertion about participant",
+        "description": "Person who recorded assertion about participant",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/hash-extension"
+        },
+        "name": "Provides a list of hashes for confirming file transfers",
+        "description": "Provides a list of hashes for confirming file transfers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Consent/kf-registered-allowed-access"
         },
         "name": "Registered Tier Access",
         "description": "Registered Tier Access",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/related-file-type-code-system"
+        },
+        "name": "Related File Type Code System",
+        "description": "Explains the relationship of this file to the file of reference",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -744,10 +739,6 @@
         },
         "name": "Sample availability for Sample and Aliquot modules",
         "description": "Sample availability for Sample and Aliquot modules",
-          "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
-        },
-        "name": "Shared Data Model for Family Relationship",
-        "description": "The **Shared Data Model for Family Relationship**",
         "exampleBoolean": false
       },
       {
@@ -764,10 +755,38 @@
         },
         "name": "Shared Data Model for Biospecimen Collection",
         "description": "Shared Data Model for Biospecimen Collection",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelCondition"
+        },
+        "name": "Shared Data Model for Condition",
+        "description": "The Shared Data Model for **Condition**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
+        },
+        "name": "Shared Data Model for Family Relationship",
+        "description": "The **Shared Data Model for Family Relationship**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/SharedDataModelFamilyRole"
         },
         "name": "Shared Data Model for Family Role",
         "description": "The **Shared Data Model for Family Role**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFile"
+        },
+        "name": "Shared Data Model for File",
+        "description": "The **Shared Data Model for File**",
         "exampleBoolean": false
       },
       {
@@ -784,14 +803,6 @@
         },
         "name": "Shared Data Model for Research Data Access Policy",
         "description": "The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/SharedDataModelStudyParticipant"
-        },
-        "name": "Shared Data Model for Research Participant and Study Mapping",
-        "description": "The **Shared data model for StudyParticipant**",
         "exampleBoolean": false
       },
       {
@@ -824,6 +835,10 @@
         },
         "name": "Shared Data Model for Sample",
         "description": "Shared Data Model for Sample",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/SharedDataModelStudyFamily"
         },
         "name": "Shared Data Model for Study Family",
@@ -836,6 +851,10 @@
         },
         "name": "Spatial Information",
         "description": "Spatial Information",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/description"
         },
         "name": "Study Family Description",
@@ -905,6 +924,46 @@
         "name": "The Centers for Medelian Genetics",
         "description": "The Centers for Medelian Genetics",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/file-format"
+        },
+        "name": "The file format used",
+        "description": "The file format used",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/file-size"
+        },
+        "name": "The size of the file, e.g., in bytes.",
+        "description": "The size of the file, e.g., in bytes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/condition-type"
+        },
+        "name": "Type of Condition",
+        "description": "Code System for type of condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/hash-value"
+        },
+        "name": "Value of hashing the file",
+        "description": "Value of hashing the file",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/content-version"
+        },
+        "name": "Version of the contents of the file",
+        "description": "Version of the contents of the file",
+        "exampleBoolean": false
       }
     ],
     "page": {

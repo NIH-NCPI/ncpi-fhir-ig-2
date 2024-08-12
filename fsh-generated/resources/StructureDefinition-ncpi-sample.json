@@ -4,9 +4,9 @@
   "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample",
   "version": "0.1.0",
   "name": "NCPISample",
-  "title": "NCPI biospecimen definition",
+  "title": "FHIR Profile for NCPI Sample",
   "status": "draft",
-  "description": "NCPI biospecimen definition",
+  "description": "FHIR Profile for NCPI Sample",
   "fhirVersion": "4.3.0",
   "kind": "resource",
   "abstract": false,
@@ -97,8 +97,7 @@
         "id": "Specimen.identifier",
         "path": "Specimen.identifier",
         "short": "Unique ID for this sample",
-        "min": 1,
-        "max": "1"
+        "min": 1
       },
       {
         "id": "Specimen.status",
@@ -148,9 +147,10 @@
         "short": "The location of the specimen collection"
       },
       {
-        "id": "Specimen.processing",
-        "path": "Specimen.processing",
-        "short": "Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample"
+        "id": "Specimen.processing.procedure",
+        "path": "Specimen.processing.procedure",
+        "short": "Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample",
+        "min": 1
       },
       {
         "id": "Specimen.container.identifier",
