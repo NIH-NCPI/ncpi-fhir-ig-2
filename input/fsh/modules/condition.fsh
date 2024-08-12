@@ -7,7 +7,7 @@ Description: "The Shared Data Model for **Condition**"
 * participant 1..1 reference "The participant we are describing"
 * condition 0..* code "The condition, disease, phenotypic feature, etc that this participant may have."
 * conditonText 1..1 string "Detailed description / free text about this condition."
-* ageAtAssertion 0..1 date "The date or age at which this condition is being asserted. "
+* ageAtAssertion 0..1 Quantity "The date or age at which this condition is being asserted. "
 * assertion 1..1 code "Does the participant have this condition?"
 * conditionType 0..1 code "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
 * ageAtOnset 0..1 code "The age of onset for this condition. Could be expressed with a term, an age, or an age range."
@@ -17,6 +17,7 @@ Description: "The Shared Data Model for **Condition**"
 * location 0..* code "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
 * assertionSource 0..1 code "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc."
 * asserter 0..1 code "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
+
 
 ValueSet: ConditionCodeVS
 Id: condition-code-vs
@@ -44,6 +45,16 @@ Description: "Code System for assertion of condition presence"
 * #Absent "Absent"
 * #Unknown "Unknown"
 
+Extension: AgeAtAssertion
+Id: age-at-assertion
+Title: "Age at Assertion"
+Description: "Age at Assertion Extension"
+* insert SetContext(Condition)
+// * value[x] only date
+* value[x] only Quantity
+* valueQuantity ^short = "Indicate age via relative date time extension or official date of when condition was asserted."
+
+
 Extension: ConditionAsserter
 Id: condition-asserter
 Title: "Person who recorded assertion about participant"
@@ -67,7 +78,7 @@ Description: "Information about a condition related to a research participant"
 /*conditionText*/
 * code.text ^short = "Detailed description / free text about this condition."
 /*ageAtAssertion*/
-* effectiveDateTime ^short = "The date or age at which this condition is being asserted. "
+* effectiveDateTime ^short = "The date or age at which this condition is being asserted.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 /*assertion*/
 * valueCodeableConcept from $condition-assertion
 * valueCodeableConcept ^short = "Does the participant have this condition?"
