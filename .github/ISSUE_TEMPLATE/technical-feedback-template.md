@@ -1,11 +1,11 @@
 ---
 name: Technical Suggestion
 about: Provide technical suggestions or comments on the FSH work in the FHIR IG
-title: "[Technical Suggestion] - [Module Name] - [Brief Description]"
+title: "Technical Suggestion - [Brief Description]"
 
 ---
 
-### Module Name:
+### Module/Profile/etc. Name:
 [Specify the module or area of the FSH work you are commenting on]
 
 ### Description of Suggestion:
