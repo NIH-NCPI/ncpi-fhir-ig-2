@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "HashTypeCS",
+  "id": "example-hash-type-code-system",
+  "title": "Hash Types Code System",
+  "description": "Algorithm used to calculate the hash (and size, where applicable)",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system",
+  "concept": [
+    {
+      "code": "md5",
+      "display": "md5 hash type"
+    },
+    {
+      "code": "sha256",
+      "display": "sha256 hash type"
+    },
+    {
+      "code": "sha512",
+      "display": "sha512 hash type"
+    },
+    {
+      "code": "sha1",
+      "display": "sha1 hash type"
+    },
+    {
+      "code": "crc32",
+      "display": "crc32 hash type"
+    },
+    {
+      "code": "crc32c",
+      "display": "crc32c hash type"
+    },
+    {
+      "code": "etag",
+      "display": "etag hash type"
+    }
+  ],
+  "count": 7
+}

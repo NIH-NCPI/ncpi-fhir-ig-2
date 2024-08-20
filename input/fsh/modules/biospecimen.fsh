@@ -6,7 +6,7 @@ Title: "Shared Data Model for Biospecimen Collection"
 Description: "Shared Data Model for Biospecimen Collection"
 * sampleGenerated 1..1 reference "Sample that was generated from this collection event"
 * participant 1..1 reference "The participant from whom the biospecimen was taken"
-* ageAtCondition 0..1 Quantity "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range."
+* ageAtCollection 0..1 Quantity "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range."
 * method 0..1 code "The approach used to collect the biospecimen"
 * site 0..1 code "The location of the specimen collection"
 * spatial 0..1 code "Any spatial/location qualifiers"
@@ -37,7 +37,7 @@ Logical: CdmSample
 Id: SharedDataModelSample
 Title: "Shared Data Model for Sample"
 Description: "Shared Data Model for Sample"
-* sampleId 1..* string "Unique ID for this sample"
+* sampleId 1..1 string "Unique ID for this sample"
 * participant 1..1 reference "The participant from whom the biospecimen was taken"
 * parentSample 0..* reference "The Sample from which this Sample was derived"
 * type 1..1 code "The type of material of which this Sample is comprised"
@@ -66,7 +66,7 @@ Description: "Shared Data Model for Aliquot"
 * aliquotId 1..1 string "Unique ID for this aliquot"
 * sample 1..1 reference "The sample of which this tube is a part."
 * availabilityStatus 0..1 code "Can this Sample be requested for further analysis?"
-* quantity 0..1 Quantity "What is the volume of the Aliquot?"
+* volume 0..1 Quantity "What is the volume of the Aliquot?"
 * concentration 0..1 Quantity "What is the concentration of the analyte in the Aliquot?"
 
 Extension: AliquotAvailability
@@ -94,7 +94,7 @@ Title: "FHIR Profile for NCPI Sample"
 Description: "FHIR Profile for NCPI Sample"
 * ^version = "0.1.0"
 * ^status = #draft
-* identifier 1..* /*Sample.SampleID*/
+* identifier 1..1 /*Sample.SampleID*/
 * identifier ^short = "Unique ID for this sample"
 * subject 1..1 /*Sample.Participant*/
 * subject ^short = "The participant from whom the biospecimen was taken"

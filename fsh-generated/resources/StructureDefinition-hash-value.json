@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hash-value",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
+  "name": "HashValue",
+  "title": "Value of hashing the file",
+  "status": "draft",
+  "description": "Value of hashing the file",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DocumentReference.extension"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Value of hashing the file",
+        "definition": "Value of hashing the file"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Value of hashing the file",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

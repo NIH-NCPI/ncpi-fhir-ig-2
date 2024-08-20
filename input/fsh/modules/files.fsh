@@ -14,7 +14,7 @@ Description: "The **Shared Data Model for File**"
 * location.accessPolicy 0..* reference "If present, only those under the specific Access Policy can access the file in this location."
 * fileSize 1..1 Quantity "The size of the file, e.g., in bytes."
 * hash 0..* List "Provides a list of hashes for confirming file transfers"
-* hash.type 0..1 code "Algorithm used to calculate the hash (and size, where applicable)"
+* hash.type 1..1 code "Algorithm used to calculate the hash (and size, where applicable)"
 * hash.value 1..1 string "Value of hashing the file"
 * contentVersion 0..1 string "Version of the file content"
 * description 0..1 string "A description of the file"
@@ -120,9 +120,9 @@ Title: "NCPI File"
 Description: "Information about a file related to a research participant"
 * ^version = "0.0.1"
 * ^status = #draft
-* identifier 0..* /*File External ID*/
+* identifier 0..1 /*File External ID*/
 * identifier ^short = "A related external file ID"
-* subject 0..1 /*Participant*/
+* subject 1..1 /*Participant*/
 * subject ^short = "The participant(s) for whom this file contains data (i.e., ParticipantID)"
 * extension contains FileFormat named file-format 1..1 /*File Format*/
 * extension[file-format] ^short = "The file format used (EDAM is preferred)"
