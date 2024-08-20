@@ -1,7 +1,7 @@
 ---
 name: Bug Report Template
 about: Report a specific issue or problem with the FHIR IG modules
-title: "[Bug] - [Module Name] - [Brief Descr.]"
+title: "Bug - [Brief Descr.]"
 labels: 'bug'
 
 ---
