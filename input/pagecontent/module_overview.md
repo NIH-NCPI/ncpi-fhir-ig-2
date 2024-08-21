@@ -5,3 +5,20 @@ While interoperability is a primary objective for using FHIR, research data by i
 Some use cases, such as the Data Dictionary component, may be useful across many or even all of the servers implementing the NCPI FHIR IG while others, such as Family Relationships, apply only to a fraction of those servers. Study summary and meta-data would likely lack traditional restrictions on their accessibility and could be hosted on a public server, while row-level, restricted data would be require some sort of authorization to access. 
 
 Administrators for these FHIR servers should selectively apply only those module profiles that apply to the machines expected use cases, providing clear delineation for what sorts of data can be found therein. 
+
+#### Table of Logical Models & Profiles
+
+|**Name**|**Logical Model**|**FHIR Profile**|
+|Aliquot|[Shared Data Model for Aliquot](StructureDefinition-SharedDataModelAliquot.html)|[Aliquot Profile](StructureDefinition-ncpi-sample.html)|
+|Biospecimen Collection|[Shared Data Model for Biospecimen](StructureDefinition-SharedDataModelBiospecimenCollection.html)|[Biospecimen Profile](StructureDefinition-ncpi-sample.html)|
+|Sample|[Shared Data Model for Sample](StructureDefinition-SharedDataModelSample.html)|[Sample Profile](StructureDefinition-ncpi-sample.html)|
+|Family Relationship|[Shared Data Model for Family Relationship](StructureDefinition-SharedDataModelFamilyRelationship.html)|[Family Relationship Profile](StructureDefinition-ncpi-family-relationship.html)|
+|Family Role|[Shared Data Model for Family Role](StructureDefinition-SharedDataModelFamilyRole.html)|[Family Role Profile](StructureDefinition-ncpi-family-role.html)|
+|File|[Shared Data Model for File](StructureDefinition-SharedDataModelFile.html)|[File Profile](StructureDefinition-ncpi-file.html)|
+|Participant|[Shared Data Model for Participant](StructureDefinition-SharedDataModelResearchParticipant.html)|[Participant Profile](StructureDefinition-ncpi-participant.html)|
+|Person|[Shared Data Model for Person](StructureDefinition-SharedDataModelPerson.html)|[Person Profile](StructureDefinition-ncpi-person.html)|
+|Research Collection|[Shared Data Model for Research Collection](StructureDefinition-SharedDataModelResearchCollection.html)|[Research Collection Profile](StructureDefinition-ncpi-research-collection.html)|
+|Access Policy|[Shared Data Model for Access Policy](StructureDefinition-SharedDataModelResearchDataAccessPolicy.html)|[Access Policy Profile](StructureDefinition-ncpi-research-access-policy.html)|
+|Study Participant|[Shared Data Model for Study Participant](StructureDefinition-SharedDataModelStudyParticipant.html)|[Study Participant Profile](StructureDefinition-ncpi-Study-Participant.html)|
+|Study Family|[Shared Data Model for Study Family](StructureDefinition-SharedDataModelStudyFamily.html)|[Study Family Profile](StructureDefinition-ncpi-study-family.html)|
+|Research Study|[Shared Data Model for Research Study](StructureDefinition-SharedDataModelResearchStudy.html)|[Research Study Profile](StructureDefinition-ncpi-research-study.html)|

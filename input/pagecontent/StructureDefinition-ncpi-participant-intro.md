@@ -15,7 +15,7 @@ TDOD: Write Recommended Practices
 ##### FHIR Mappings
 The following fields from the shared data model are to be mapped into the NCPI Participant as shown below:
 
-| **Logical Model Property** | **Cardinality** |  **NCPI Participant Mapping** |**Usage Guidance** | **Notes** |
+| **Logical Model Property** | **Cardinality** |  **NCPI FHIR Mapping** |**Usage Guidance** | **Notes** |
 [participantID](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.participantID)|1..1|id| Strongly recommended | It is strongly recommended for the Participant Resource ID to be a unique identifier with an appropriate system|
 [externalID](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.externalID)|0..*|identifier||
 [population](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.population)|0..*|TBD|Strongly recommended ||
