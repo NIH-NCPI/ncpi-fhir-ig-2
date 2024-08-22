@@ -1,7 +1,18 @@
-# ncpi-fhir-ig-2
-Welcome to NCPI FHIR IG 2. The goal for this repository is to relaunch the IG project with a clearer focus, an explicit style guide using the current tools including Sushi v3. 
+# NCPI FHIR Implementation Guide 2
 
-# Contributing Quick Updates
+Welcome to NCPI FHIR IG 2. The goal for this repository is to relaunch the IG project
+with a clearer focus, an explicit style guide using the current tools including Sushi v3. 
+
+This repository is currently under development.
+Feel free to [take a look](https://torstees.github.io/ncpi-fhir-ig-2/) at the working version.
+
+## 👨🏻‍💻 Contributor's Guide 
+
+If you would like to contribute to this project, please take a look at the 
+software development lifecycle and standard practices for this project
+[here](./.github/contributing.md).
+
+# 📝 IG Development Details 
 The contribution content I wrote back during the initial start for IG v2 is somewhat outdated, but I don't have time to correct it for this gathering. So, here are some key points to consider if you are up for contributing:
 
 ## Module Content Requirements
