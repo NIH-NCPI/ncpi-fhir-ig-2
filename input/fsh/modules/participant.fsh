@@ -56,7 +56,7 @@ Title: "Age at Last Vital Status Extension"
 Description: "Age at Last Vital Status Extension"
 * insert SetContext(Patient)
 // * value[x] only date
-* value[x] only Quantity
+* value[x] only Quantity or date
 * valueQuantity ^short = "Indicate age via relative date time extension or official date of when last vital status was assessed."
 
 Profile: NcpiParticipant

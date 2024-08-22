@@ -14,6 +14,6 @@ TODO: Write Recommended Practices
 The following fields from the shared data model are to be mapped into the NCPI Participant as shown below:
 
 | **Logical Model Property** | **Cardinality** |  **NCPI Person Mapping** |**Usage Guidance** | **Notes** |
-subject|1..1|subject| Required | |
-target|1..1|focus|||
-relationship|1..1|code|||
+|[subject](StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#diff_SharedDataModelFamilyRelationship.subject)|1..1|subject| Required | |
+|[target](StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#diff_SharedDataModelFamilyRelationship.target)|1..1|focus|||
+|[relationship](StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#diff_SharedDataModelFamilyRelationship.relationship)|1..1|code|||

@@ -21,6 +21,7 @@ Alias: $ucum = http://unitsofmeasure.org
 Alias: $loinc = https://loinc.org
 Alias: $body-location-qualifer = http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs
 Alias: $laterality-qualifier = http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs
+Alias: $storage-method = https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html
 
 Alias: $spec = https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html
 

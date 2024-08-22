@@ -71,11 +71,14 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/aliquot-availability"
+          "reference": "StructureDefinition/hash-type"
         },
-        "name": "Availability Status of Aliquot",
-        "description": "Availability Status of Aliquot",
+        "name": "Algorithm used to calculate the hash (and size, where applicable)",
+        "description": "Algorithm used to calculate the hash (and size, where applicable)",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/cbtn-family-relationship-mother"
         },
         "name": "An example family relationship based on data from CBTN",
@@ -105,6 +108,14 @@
         "name": "An example family role based on data from CBTN",
         "description": "An example family role based on data from CBTN.",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/aliquot-availability"
+        },
+        "name": "Availability Status of Aliquot",
+        "description": "Availability Status of Aliquot",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -208,6 +219,10 @@
         },
         "name": "Concentration of the Aliquot",
         "description": "Concentration of the Aliquot",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/consanguinity"
         },
         "name": "Consanguinity Extension",
@@ -256,11 +271,27 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/edam-ontology-terms"
+        },
+        "name": "Enumerations for the EDAM ontology",
+        "description": "Enumerations for the EDAM ontology",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Specimen/SA-000"
         },
         "name": "Example biospecimen based on data from CBTN",
         "description": "Example biospecimen based on data from CBTN",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/PT-006SP660"
+        },
+        "name": "Example file based on CBTN",
+        "description": "Use case of file information from CBTN",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
       },
       {
         "reference": {
@@ -376,11 +407,27 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-sample"
+        },
+        "name": "FHIR Profile for NCPI Sample",
+        "description": "FHIR Profile for NCPI Sample",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Consent/kf-gsr-allowed-access"
         },
         "name": "Genomic Summary Results (GSR) Allowed Access",
         "description": "Genomic Summary Results (GSR) Allowed Access",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/example-hash-type-code-system"
+        },
+        "name": "Hash Types Code System",
+        "description": "Algorithm used to calculate the hash (and size, where applicable)",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -397,6 +444,14 @@
         "name": "HMB-NPU Consent",
         "description": "Consented with Health/Medical/Biomedical + Not for profit use",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/location-access"
+        },
+        "name": "If present, only those under the specific Access Policy can access the file in this location.",
+        "description": "If present, only those under the specific Access Policy can access the file in this location.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -472,14 +527,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-sample"
-        },
-        "name": "NCPI biospecimen definition",
-        "description": "NCPI biospecimen definition",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ncpi-collected-sample"
         },
         "name": "NCPI biospecimen definition for collected samples",
@@ -492,6 +539,10 @@
         },
         "name": "NCPI biospecimen definition for non-collected samples",
         "description": "NCPI biospecimen definition for non-collected samples",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ncpi-family-types"
         },
         "name": "NCPI Family Types CodeSystem",
@@ -504,6 +555,14 @@
         },
         "name": "NCPI FHIR Codes",
         "description": "Codes that would apply to NCPI projects",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-file"
+        },
+        "name": "NCPI File",
+        "description": "Information about a file related to a research participant",
         "exampleBoolean": false
       },
       {
@@ -620,11 +679,27 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/hash-extension"
+        },
+        "name": "Provides a list of hashes for confirming file transfers",
+        "description": "Provides a list of hashes for confirming file transfers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Consent/kf-registered-allowed-access"
         },
         "name": "Registered Tier Access",
         "description": "Registered Tier Access",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/related-file-type-code-system"
+        },
+        "name": "Related File Type Code System",
+        "description": "Explains the relationship of this file to the file of reference",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -744,10 +819,6 @@
         },
         "name": "Sample availability for Sample and Aliquot modules",
         "description": "Sample availability for Sample and Aliquot modules",
-          "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
-        },
-        "name": "Shared Data Model for Family Relationship",
-        "description": "The **Shared Data Model for Family Relationship**",
         "exampleBoolean": false
       },
       {
@@ -764,10 +835,30 @@
         },
         "name": "Shared Data Model for Biospecimen Collection",
         "description": "Shared Data Model for Biospecimen Collection",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFamilyRelationship"
+        },
+        "name": "Shared Data Model for Family Relationship",
+        "description": "The **Shared Data Model for Family Relationship**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/SharedDataModelFamilyRole"
         },
         "name": "Shared Data Model for Family Role",
         "description": "The **Shared Data Model for Family Role**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFile"
+        },
+        "name": "Shared Data Model for File",
+        "description": "The **Shared Data Model for File**",
         "exampleBoolean": false
       },
       {
@@ -824,6 +915,10 @@
         },
         "name": "Shared Data Model for Sample",
         "description": "Shared Data Model for Sample",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/SharedDataModelStudyFamily"
         },
         "name": "Shared Data Model for Study Family",
@@ -836,6 +931,10 @@
         },
         "name": "Spatial Information",
         "description": "Spatial Information",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/description"
         },
         "name": "Study Family Description",
@@ -905,6 +1004,38 @@
         "name": "The Centers for Medelian Genetics",
         "description": "The Centers for Medelian Genetics",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/file-format"
+        },
+        "name": "The file format used",
+        "description": "The file format used",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/file-size"
+        },
+        "name": "The size of the file, e.g., in bytes.",
+        "description": "The size of the file, e.g., in bytes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/hash-value"
+        },
+        "name": "Value of hashing the file",
+        "description": "Value of hashing the file",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/content-version"
+        },
+        "name": "Version of the contents of the file",
+        "description": "Version of the contents of the file",
+        "exampleBoolean": false
       }
     ],
     "page": {

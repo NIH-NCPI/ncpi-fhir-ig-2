@@ -142,7 +142,7 @@ Description: "Family Role"
 * member.entity 1..1
 * member.entity only Reference(NcpiParticipant)
 * member.entity ^short = "The participant we are describing."
-* extension contains StudyFamily named study-family 0..1
+* extension contains StudyFamily named study-family 1..1
 * extension[study-family] ^short = "The study family this participant is part of"
 * extension contains FamilyRole named family-role 0..1
 * extension[family-role] ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"

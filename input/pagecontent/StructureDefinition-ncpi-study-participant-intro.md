@@ -12,7 +12,7 @@ The following fields from the shared data model are to be mapped into the NCPI P
 
 
 | **Logical Model Property** | **Cardinality** |  **NCPI Participant Mapping** |**Usage Guidance** | **Notes** |
-Participant|1..1|reference|Required||
-ResearchStudy|1..1|reference|Required||
-AccessPolicy|0..*|reference|Required if available||
+|[Participant](StructureDefinition-SharedDataModelStudyParticipant-definitions.html#diff_SharedDataModelStudyParticipant.participant)|1..1|reference|Required||
+|[ResearchStudy](StructureDefinition-SharedDataModelStudyParticipant-definitions.html#diff_SharedDataModelStudyParticipant.researchStudy)|1..1|reference|Required||
+|[AccessPolicy](StructureDefinition-SharedDataModelStudyParticipant-definitions.html#diff_SharedDataModelStudyParticipant.accessPolicy)|0..*|reference|Required if available||
 

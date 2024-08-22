@@ -14,7 +14,7 @@ TODO: Write Recommended Practices
 ##### FHIR Mappings
 The following fields from the shared data model are to be mapped into the NCPI Participant as shown below:
 
-| **Logical Model Property** | **Cardinality** |  **NCPI Person Mapping** |**Usage Guidance** | **Notes** |
-participant|1..1|member.entity| Required ||
-studyFamily|0..1|extension [StudyFamily](StructureDefinition-study-family.html)|||
-familyRole|0..1|extension  [FamilyRole](StructureDefinition-family-role.html)|||
+| **Logical Model Property** | **Cardinality** |  **NCPI FHIR Mapping** |**Usage Guidance** | **Notes** |
+|[participant](StructureDefinition-SharedDataModelFamilyRole-definitions.html#diff_SharedDataModelFamilyRole.participant)|1..1|member.entity| Required ||
+|[studyFamily](StructureDefinition-SharedDataModelFamilyRole-definitions.html#diff_SharedDataModelFamilyRole.studyFamily)|0..1|extension [StudyFamily](StructureDefinition-study-family.html)|||
+|[familyRole](StructureDefinition-SharedDataModelFamilyRole-definitions.html#diff_SharedDataModelFamilyRole.familyRole)|0..1|extension  [FamilyRole](StructureDefinition-family-role.html)|||
