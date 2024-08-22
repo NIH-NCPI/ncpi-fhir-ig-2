@@ -120,7 +120,7 @@ Title: "NCPI File"
 Description: "Information about a file related to a research participant"
 * ^version = "0.0.1"
 * ^status = #draft
-* identifier 0..1 /*File External ID*/
+* identifier 1..* /*File External ID*/
 * identifier ^short = "A related external file ID"
 * subject 1..1 /*Participant*/
 * subject ^short = "The participant(s) for whom this file contains data (i.e., ParticipantID)"
