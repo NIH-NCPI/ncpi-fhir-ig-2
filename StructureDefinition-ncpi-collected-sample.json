@@ -10,7 +10,7 @@
   "name" : "NCPICollectedSample",
   "title" : "NCPI biospecimen definition for collected samples",
   "status" : "draft",
-  "date" : "2024-08-20T21:48:07+00:00",
+  "date" : "2024-08-22T16:27:20+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -555,7 +555,7 @@
       "short" : "Unique ID for this sample",
       "definition" : "Id for specimen.",
       "min" : 1,
-      "max" : "*",
+      "max" : "1",
       "base" : {
         "path" : "Specimen.identifier",
         "min" : 0,

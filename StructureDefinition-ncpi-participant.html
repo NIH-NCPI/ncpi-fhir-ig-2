@@ -363,7 +363,7 @@
         
           Draft
           
-            as of 2024-08-20
+            as of 2024-08-22
           
         
       </td>
@@ -416,7 +416,7 @@
     <tr>
       <td><strong>Logical Model Property</strong></td>
       <td><strong>Cardinality</strong></td>
-      <td><strong>NCPI Participant Mapping</strong></td>
+      <td><strong>NCPI FHIR Mapping</strong></td>
       <td><strong>Usage Guidance</strong></td>
       <td><strong>Notes</strong></td>
     </tr>
@@ -1281,7 +1281,9 @@ Not handled yet: complex extension http://hl7.org/fhir/us/core/StructureDefiniti
       },
       { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children unless an empty Parameters resource; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> Age or date of last vital status</span>
         "url": "<a href="StructureDefinition-research-age-at-last-vital-status.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status</a>",
-        "<a href="StructureDefinition-ncpi-participant.html#Patient.extension.valueQuantity" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4B/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueQuantity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity">Quantity</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Indicate age via relative date time extension or official date of when last vital status was assessed.</span>
+<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Value of extension</span>. One of these 2:</span>
+        "<a href="StructureDefinition-ncpi-participant.html#Patient.extension.valueDate" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4B/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueDate</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#date">date</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Value of extension</span>
+        "<a href="StructureDefinition-ncpi-participant.html#Patient.extension.valueQuantity" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4B/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueQuantity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity">Quantity</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Value of extension</span>
       }
     ],
     "<a href="StructureDefinition-ncpi-participant.html#Patient.identifier" title="An identifier for this patient" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">External IDs for this participant. Requires scoping.</span>
@@ -2107,7 +2109,9 @@ Not handled yet: complex extension http://hl7.org/fhir/us/core/StructureDefiniti
       },
       { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children unless an empty Parameters resource; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> Age or date of last vital status</span>
         "url": "<a href="StructureDefinition-research-age-at-last-vital-status.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status</a>",
-        "<a href="StructureDefinition-ncpi-participant.html#Patient.extension.valueQuantity" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4B/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueQuantity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity">Quantity</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Indicate age via relative date time extension or official date of when last vital status was assessed.</span>
+<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Value of extension</span>. One of these 2:</span>
+        "<a href="StructureDefinition-ncpi-participant.html#Patient.extension.valueDate" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4B/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueDate</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#date">date</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Value of extension</span>
+        "<a href="StructureDefinition-ncpi-participant.html#Patient.extension.valueQuantity" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4B/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueQuantity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Quantity">Quantity</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Value of extension</span>
       }
     ],
     "<a href="StructureDefinition-ncpi-participant.html#Patient.identifier" title="An identifier for this patient" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">External IDs for this participant. Requires scoping.</span>
@@ -2284,7 +2288,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Tue, Aug 20, 2024 21:48+0000">2024-08-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Aug 22, 2024 16:27+0000">2024-08-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

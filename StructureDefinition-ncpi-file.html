@@ -363,7 +363,7 @@
         
           Draft
           
-            as of 2024-08-20
+            as of 2024-08-22
           
         
       </td>
@@ -426,112 +426,112 @@
       <td><strong>Notes</strong></td>
     </tr>
     <tr>
-      <td>participantID</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.participantID">participantID</a></td>
       <td>1..1</td>
       <td>identifier.value</td>
       <td>The participant(s) for whom this file contains data</td>
       <td> </td>
     </tr>
     <tr>
-      <td>fileExternalID</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.fileExternalID">fileExternalID</a></td>
       <td>0..1</td>
       <td>subject</td>
       <td>A related identifier of this file</td>
       <td> </td>
     </tr>
     <tr>
-      <td>format</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.format">format</a></td>
       <td>1..1</td>
       <td>extension[file-format].valueCodeableConcept.coding</td>
       <td>The file format used</td>
       <td> </td>
     </tr>
     <tr>
-      <td>location</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.location">location</a></td>
       <td>1..*</td>
       <td>content</td>
       <td>List of locations where this data can be accessed</td>
       <td> </td>
     </tr>
     <tr>
-      <td>location.uri</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.location.uri">location.uri</a></td>
       <td>1..1</td>
       <td>content.attachment.url</td>
       <td>The URI at which this data can be accessed</td>
       <td> </td>
     </tr>
     <tr>
-      <td>location.accessPolicy</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.location.accessPolicy">location.accessPolicy</a></td>
       <td>0..*</td>
       <td>content.extension[location-access].valueReference</td>
       <td>If present, only those under the specific Access Policy can access the file in this location.</td>
       <td> </td>
     </tr>
     <tr>
-      <td>fileSize</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.fileSize">fileSize</a></td>
       <td>1..1</td>
       <td>extension[file-size].valueQuantity.value, extension[file-size].valueQuantity.unit</td>
       <td>The size of the file, e.g., in bytes.</td>
       <td> </td>
     </tr>
     <tr>
-      <td>hash</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.hash">hash</a></td>
       <td>0..*</td>
       <td>extension[hash]</td>
       <td>Provides a list of hashes for confirming file transfers</td>
       <td> </td>
     </tr>
     <tr>
-      <td>hash.type</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.hash.type">hash.type</a></td>
       <td>0..1</td>
       <td>extension[hash-type].valueCode</td>
       <td>Algorithm used to calculate the hash (and size, where applicable)</td>
       <td> </td>
     </tr>
     <tr>
-      <td>hash.value</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.hash.value">hash.value</a></td>
       <td>1..1</td>
       <td>extension[hash-value].valueString</td>
       <td>Value of hashing the file</td>
       <td> </td>
     </tr>
     <tr>
-      <td>contentVersion</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.contentVersion">contentVersion</a></td>
       <td>0..1</td>
       <td>extension[content-version].valueString</td>
       <td>Version of the file content</td>
       <td> </td>
     </tr>
     <tr>
-      <td>description</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.description">description</a></td>
       <td>0..1</td>
       <td>description</td>
       <td>A description of the file</td>
       <td> </td>
     </tr>
     <tr>
-      <td>type</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.type">type</a></td>
       <td>1..1</td>
       <td>type</td>
       <td>The type of data contained in this file. Should be as detailed as possible, e.g., Whole Exome Variant Calls.</td>
       <td> </td>
     </tr>
     <tr>
-      <td>relatedFile</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.relatedFile">relatedFile</a></td>
       <td>0..1</td>
       <td>TODO</td>
       <td>Provides a reference to another file that is related to this one</td>
       <td> </td>
     </tr>
     <tr>
-      <td>relatedFile.file</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.relatedFile.file">relatedFile.file</a></td>
       <td>0..1</td>
       <td>TODO</td>
       <td>The file to which this related file is related</td>
       <td> </td>
     </tr>
     <tr>
-      <td>relatedFile.type</td>
+      <td><a href="StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.relatedFile.type">relatedFile.type</a></td>
       <td>0..1</td>
       <td>TODO</td>
       <td>The relationship of the file to the parent file in reference</td>
@@ -644,7 +644,7 @@
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ab"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.identifier">identifier</a><a name="d-DocumentReference.identifier"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A related external file ID</td></tr>
 
@@ -656,7 +656,7 @@
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.subject">subject</a><a name="d-DocumentReference.subject"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/patient.html">Patient</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/group.html">Group</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/device.html">Device</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant(s) for whom this file contains data (i.e., ParticipantID)</td></tr>
 
@@ -763,7 +763,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.identifier" title="Other identifiers associated with the document, including version independent identifiers.">identifier</a><a name="k-DocumentReference.identifier"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A related external file ID<br/></td></tr>
 
@@ -781,7 +781,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ag"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.subject" title="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).">subject</a><a name="k-DocumentReference.subject"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4B/patient.html">Patient</a> | <a href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R4B/group.html">Group</a> | <a href="http://hl7.org/fhir/R4B/device.html">Device</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant(s) for whom this file contains data (i.e., ParticipantID)</td></tr>
 
@@ -950,7 +950,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aj"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.identifier" title="Other identifiers associated with the document, including version independent identifiers.">identifier</a><a name="DocumentReference.identifier"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A related external file ID<br/></td></tr>
 
@@ -980,7 +980,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ao"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.subject" title="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).">subject</a><a name="DocumentReference.subject"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4B/patient.html">Patient</a> | <a href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R4B/group.html">Group</a> | <a href="http://hl7.org/fhir/R4B/device.html">Device</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant(s) for whom this file contains data (i.e., ParticipantID)</td></tr>
 
@@ -1350,12 +1350,12 @@ Not handled yet: complex extension https://nih-ncpi.github.io/ncpi-fhir-ig-2/Str
       }
     ],
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.masterIdentifier" title="Document identifier as assigned by the source of the document. This identifier is specific to this version of the document. This unique identifier may be used elsewhere to identify this version of the document" class="dict"><span style="text-decoration: underline">masterIdentifier</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Master Version Specific Identifier</span>
-    "<a href="StructureDefinition-ncpi-file.html#DocumentReference.identifier" title="Other identifiers associated with the document, including version independent identifiers" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">A related external file ID</span>
+    "<a href="StructureDefinition-ncpi-file.html#DocumentReference.identifier" title="Other identifiers associated with the document, including version independent identifiers" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">A related external file ID</span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.status" title="The status of this document reference (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">status</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">current | superseded | entered-in-error</a></span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.docStatus" title="The status of the underlying document" class="dict"><span style="text-decoration: underline">docStatus</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">preliminary | final | amended | entered-in-error</a></span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.type" title="Specifies the particular kind of document referenced  (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the document referenced" class="dict"><span style="text-decoration: underline">type</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">The type of data contained in this file.</a></span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.category" title="A categorization for the type of document referenced - helps for indexing and searching. This may be implied by or derived from the code specified in the DocumentReference.type" class="dict"><span style="text-decoration: underline">category</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Categorization of document</a></span>
-    "<a href="StructureDefinition-ncpi-file.html#DocumentReference.subject" title="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/patient.html">Patient</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The participant(s) for whom this file contains data (i.e., ParticipantID)</span>
+    "<a href="StructureDefinition-ncpi-file.html#DocumentReference.subject" title="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/patient.html">Patient</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The participant(s) for whom this file contains data (i.e., ParticipantID)</span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.date" title="When the document reference was created" class="dict"><span style="text-decoration: underline">date</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#instant">instant</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When this document reference was created</span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.author" title="Identifies who is responsible for adding the information to the document" class="dict"><span style="text-decoration: underline">author</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who and/or what authored the document</span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.authenticator" title="Which person or organization authenticates that this document is valid" class="dict"><span style="text-decoration: underline">authenticator</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who/what authenticated the document</span>
@@ -1424,7 +1424,7 @@ Not handled yet: complex extension https://nih-ncpi.github.io/ncpi-fhir-ig-2/Str
 <p><b>
 Summary
 </b></p>
-<p>Mandatory: 3 elements</p><p><b>Extensions</b></p>
+<p>Mandatory: 5 elements</p><p><b>Extensions</b></p>
 <p>This structure refers to these extensions:</p>
 <ul>
 <li><a href="StructureDefinition-file-format.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format</a></li>
@@ -1493,7 +1493,7 @@ Summary
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ab"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.identifier">identifier</a><a name="da-DocumentReference.identifier"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A related external file ID</td></tr>
 
@@ -1505,7 +1505,7 @@ Summary
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.subject">subject</a><a name="da-DocumentReference.subject"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/patient.html">Patient</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/group.html">Group</a> | <a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/device.html">Device</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant(s) for whom this file contains data (i.e., ParticipantID)</td></tr>
 
@@ -1611,7 +1611,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.identifier" title="Other identifiers associated with the document, including version independent identifiers.">identifier</a><a name="ka-DocumentReference.identifier"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A related external file ID<br/></td></tr>
 
@@ -1629,7 +1629,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ag"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.subject" title="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).">subject</a><a name="ka-DocumentReference.subject"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4B/patient.html">Patient</a> | <a href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R4B/group.html">Group</a> | <a href="http://hl7.org/fhir/R4B/device.html">Device</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant(s) for whom this file contains data (i.e., ParticipantID)</td></tr>
 
@@ -1798,7 +1798,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aj"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.identifier" title="Other identifiers associated with the document, including version independent identifiers.">identifier</a><a name="sa-DocumentReference.identifier"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A related external file ID<br/></td></tr>
 
@@ -1828,7 +1828,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ao"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-definitions.html#DocumentReference.subject" title="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).">subject</a><a name="sa-DocumentReference.subject"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4B/patient.html">Patient</a> | <a href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R4B/group.html">Group</a> | <a href="http://hl7.org/fhir/R4B/device.html">Device</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant(s) for whom this file contains data (i.e., ParticipantID)</td></tr>
 
@@ -2198,12 +2198,12 @@ Not handled yet: complex extension https://nih-ncpi.github.io/ncpi-fhir-ig-2/Str
       }
     ],
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.masterIdentifier" title="Document identifier as assigned by the source of the document. This identifier is specific to this version of the document. This unique identifier may be used elsewhere to identify this version of the document" class="dict"><span style="text-decoration: underline">masterIdentifier</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Master Version Specific Identifier</span>
-    "<a href="StructureDefinition-ncpi-file.html#DocumentReference.identifier" title="Other identifiers associated with the document, including version independent identifiers" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">A related external file ID</span>
+    "<a href="StructureDefinition-ncpi-file.html#DocumentReference.identifier" title="Other identifiers associated with the document, including version independent identifiers" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">A related external file ID</span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.status" title="The status of this document reference (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">status</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">current | superseded | entered-in-error</a></span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.docStatus" title="The status of the underlying document" class="dict"><span style="text-decoration: underline">docStatus</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">preliminary | final | amended | entered-in-error</a></span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.type" title="Specifies the particular kind of document referenced  (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the document referenced" class="dict"><span style="text-decoration: underline">type</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">The type of data contained in this file.</a></span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.category" title="A categorization for the type of document referenced - helps for indexing and searching. This may be implied by or derived from the code specified in the DocumentReference.type" class="dict"><span style="text-decoration: underline">category</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4B/null.html" style="color: navy">Categorization of document</a></span>
-    "<a href="StructureDefinition-ncpi-file.html#DocumentReference.subject" title="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/patient.html">Patient</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The participant(s) for whom this file contains data (i.e., ParticipantID)</span>
+    "<a href="StructureDefinition-ncpi-file.html#DocumentReference.subject" title="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure)" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/patient.html">Patient</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The participant(s) for whom this file contains data (i.e., ParticipantID)</span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.date" title="When the document reference was created" class="dict"><span style="text-decoration: underline">date</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#instant">instant</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When this document reference was created</span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.author" title="Identifies who is responsible for adding the information to the document" class="dict"><span style="text-decoration: underline">author</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who and/or what authored the document</span>
     "<a href="StructureDefinition-ncpi-file.html#DocumentReference.authenticator" title="Which person or organization authenticates that this document is valid" class="dict"><span style="text-decoration: underline">authenticator</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who/what authenticated the document</span>
@@ -2268,7 +2268,7 @@ Not handled yet: complex extension https://nih-ncpi.github.io/ncpi-fhir-ig-2/Str
 <p><b>
 Summary
 </b></p>
-<p>Mandatory: 3 elements</p><p><b>Extensions</b></p>
+<p>Mandatory: 5 elements</p><p><b>Extensions</b></p>
 <p>This structure refers to these extensions:</p>
 <ul>
 <li><a href="StructureDefinition-file-format.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format</a></li>
@@ -2315,7 +2315,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Tue, Aug 20, 2024 21:48+0000">2024-08-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Aug 22, 2024 16:27+0000">2024-08-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

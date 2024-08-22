@@ -363,7 +363,7 @@
         
           Draft
           
-            as of 2024-08-20
+            as of 2024-08-22
           
         
       </td>
@@ -413,26 +413,26 @@
     <tr>
       <td><strong>Logical Model Property</strong></td>
       <td><strong>Cardinality</strong></td>
-      <td><strong>NCPI Person Mapping</strong></td>
+      <td><strong>NCPI FHIR Mapping</strong></td>
       <td><strong>Usage Guidance</strong></td>
       <td><strong>Notes</strong></td>
     </tr>
     <tr>
-      <td>participant</td>
+      <td><a href="StructureDefinition-SharedDataModelFamilyRole-definitions.html#diff_SharedDataModelFamilyRole.participant">participant</a></td>
       <td>1..1</td>
       <td>member.entity</td>
       <td>Required</td>
       <td> </td>
     </tr>
     <tr>
-      <td>studyFamily</td>
+      <td><a href="StructureDefinition-SharedDataModelFamilyRole-definitions.html#diff_SharedDataModelFamilyRole.studyFamily">studyFamily</a></td>
       <td>0..1</td>
       <td>extension <a href="StructureDefinition-study-family.html">StudyFamily</a></td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>familyRole</td>
+      <td><a href="StructureDefinition-SharedDataModelFamilyRole-definitions.html#diff_SharedDataModelFamilyRole.familyRole">familyRole</a></td>
       <td>0..1</td>
       <td>extension  <a href="StructureDefinition-family-role.html">FamilyRole</a></td>
       <td> </td>
@@ -507,13 +507,13 @@
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension">Slices for extension</a><a name="d-Group.extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url</td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension:study-family" title="Extension URL = https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family">study-family</a><a name="d-Group.extension.2"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="StructureDefinition-ncpi-study-family.html">NCPI Study Family</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The study family this participant is part of<br/><span style="font-weight:bold">URL: </span><a href="StructureDefinition-study-family.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family</a></td></tr>
 
@@ -565,13 +565,13 @@
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension" title="An Extension">Slices for extension</a><a name="k-Group.extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extension<br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url<br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aba"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension:study-family" title="Extension URL = https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family">study-family</a><a name="k-Group.extension.2"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="StructureDefinition-ncpi-study-family.html">NCPI Study Family</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The study family this participant is part of<br/><span style="font-weight:bold">URL: </span><a href="StructureDefinition-study-family.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family</a><br/></td></tr>
 
@@ -684,13 +684,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ag"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension" title="An Extension">Slices for extension</a><a name="Group.extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extension<br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url<br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aga"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension:study-family" title="Extension URL = https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family">study-family</a><a name="Group.extension.2"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="StructureDefinition-ncpi-study-family.html">NCPI Study Family</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The study family this participant is part of<br/><span style="font-weight:bold">URL: </span><a href="StructureDefinition-study-family.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family</a><br/></td></tr>
 
@@ -958,7 +958,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     "<a href="StructureDefinition-ncpi-family-role.html#Group.text" title="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety" class="dict"><span style="text-decoration: underline">text</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/narrative.html#Narrative">Narrative</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Text summary of the resource, for human interpretation</span>
     "<a href="StructureDefinition-ncpi-family-role.html#Group.contained" title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope" class="dict"><span style="text-decoration: underline">contained</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/resource.html#Resource">Resource</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="dom-r4b: Containing new R4B resources within R4 resources may cause interoperability issues if instances are shared with R4 systems"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Contained, inline Resources</span>
     "extension": [
-      { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children unless an empty Parameters resource; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> The study family this participant is part of</span>
+      { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children unless an empty Parameters resource; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> The study family this participant is part of</span>
         "url": "<a href="StructureDefinition-study-family.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family</a>",
         "<a href="StructureDefinition-ncpi-family-role.html#Group.extension.valueReference" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4B/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>([CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family]])} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Value of extension</span>
       },
@@ -1023,7 +1023,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <p><b>
 Summary
 </b></p>
-<p><b>Structures</b></p>
+<p>Mandatory: 2 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
 <li><a href="StructureDefinition-ncpi-participant.html">NCPI Participant <span style="font-size: 8px">(https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant)</span></a></li>
@@ -1060,13 +1060,13 @@ Summary
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension">Slices for extension</a><a name="da-Group.extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4B/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url</td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension:study-family" title="Extension URL = https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family">study-family</a><a name="da-Group.extension.2"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="StructureDefinition-ncpi-study-family.html">NCPI Study Family</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The study family this participant is part of<br/><span style="font-weight:bold">URL: </span><a href="StructureDefinition-study-family.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family</a></td></tr>
 
@@ -1117,13 +1117,13 @@ Summary
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension" title="An Extension">Slices for extension</a><a name="ka-Group.extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extension<br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url<br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aba"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension:study-family" title="Extension URL = https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family">study-family</a><a name="ka-Group.extension.2"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="StructureDefinition-ncpi-study-family.html">NCPI Study Family</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The study family this participant is part of<br/><span style="font-weight:bold">URL: </span><a href="StructureDefinition-study-family.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family</a><br/></td></tr>
 
@@ -1236,13 +1236,13 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ag"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension" title="An Extension">Slices for extension</a><a name="sa-Group.extension"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/extensibility.html#Extension">Extension</a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extension<br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url<br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aga"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-family-role-definitions.html#Group.extension:study-family" title="Extension URL = https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family">study-family</a><a name="sa-Group.extension.2"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>(<a href="StructureDefinition-ncpi-study-family.html">NCPI Study Family</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The study family this participant is part of<br/><span style="font-weight:bold">URL: </span><a href="StructureDefinition-study-family.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family</a><br/></td></tr>
 
@@ -1510,7 +1510,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     "<a href="StructureDefinition-ncpi-family-role.html#Group.text" title="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety" class="dict"><span style="text-decoration: underline">text</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/narrative.html#Narrative">Narrative</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Text summary of the resource, for human interpretation</span>
     "<a href="StructureDefinition-ncpi-family-role.html#Group.contained" title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope" class="dict"><span style="text-decoration: underline">contained</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/resource.html#Resource">Resource</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="dom-r4b: Containing new R4B resources within R4 resources may cause interoperability issues if instances are shared with R4 systems"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Contained, inline Resources</span>
     "extension": [
-      { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children unless an empty Parameters resource; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> The study family this participant is part of</span>
+      { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children unless an empty Parameters resource; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> The study family this participant is part of</span>
         "url": "<a href="StructureDefinition-study-family.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family</a>",
         "<a href="StructureDefinition-ncpi-family-role.html#Group.extension.valueReference" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4B/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>([CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family]])} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Value of extension</span>
       },
@@ -1571,7 +1571,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <p><b>
 Summary
 </b></p>
-<p><b>Structures</b></p>
+<p>Mandatory: 2 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
 <li><a href="StructureDefinition-ncpi-participant.html">NCPI Participant <span style="font-size: 8px">(https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant)</span></a></li>
@@ -1632,7 +1632,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Tue, Aug 20, 2024 21:48+0000">2024-08-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Aug 22, 2024 16:27+0000">2024-08-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

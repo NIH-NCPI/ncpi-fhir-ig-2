@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NCPICollectedSample"] ; # 
   fhir:title [ fhir:v "NCPI biospecimen definition for collected samples"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-08-20T21:48:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-22T16:27:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -613,7 +613,7 @@
        fhir:short [ fhir:v "Unique ID for this sample" ] ;
        fhir:definition [ fhir:v "Id for specimen." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
+       fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "Specimen.identifier" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
