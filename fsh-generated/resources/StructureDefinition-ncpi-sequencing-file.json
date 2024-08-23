@@ -1,0 +1,74 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncpi-sequencing-file",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sequencing-file",
+  "version": "0.0.1",
+  "name": "NcpiSequencingFile",
+  "title": "NCPI sequencing file",
+  "status": "draft",
+  "description": "NCPI sequencing file",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-file",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.component:workflow_type",
+        "path": "Observation.component",
+        "sliceName": "workflow_type",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:workflow_type.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "WorkflowType"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:workflow_type.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:workflow_tool",
+        "path": "Observation.component",
+        "sliceName": "workflow_tool",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:workflow_tool.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "WorkflowTool"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:workflow_tool.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}
