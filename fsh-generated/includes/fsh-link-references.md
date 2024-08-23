@@ -10,6 +10,7 @@
 [cbtn-family-role-son]: Group-cbtn-family-role-son.html
 [AssayStrategyCS]: CodeSystem-assay-strategy-cs.html
 [AliquotAvailability]: StructureDefinition-aliquot-availability.html
+[NcpiBAMCRAM]: StructureDefinition-ncpi-bamcram.html
 [cmg-research-study-bhcmg]: ResearchStudy-cmg-research-study-bhcmg.html
 [kf-gru-dac-consent]: Consent-kf-gru-dac-consent.html
 [kf-gru-dbgap-consent]: Consent-kf-gru-dbgap-consent.html
@@ -32,6 +33,7 @@
 [EDAMOntologyTerms]: ValueSet-edam-ontology-terms.html
 [SA-000]: Specimen-SA-000.html
 [PT-006SP660]: DocumentReference-PT-006SP660.html
+[BAM-CRAM-example]: Observation-BAM-CRAM-example.html
 [FASTQ-example]: Observation-FASTQ-example.html
 [cbtn-example-participantstudy]: ResearchSubject-cbtn-example-participantstudy.html
 [emerge-example-participantstudy]: ResearchSubject-emerge-example-participantstudy.html
@@ -136,3 +138,5 @@
 [FileSize]: StructureDefinition-file-size.html
 [HashValue]: StructureDefinition-hash-value.html
 [ContentVersion]: StructureDefinition-content-version.html
+[WorkflowToolCS]: CodeSystem-workflow-tool-cs.html
+[WorkflowTypeCS]: CodeSystem-workflow-type-cs.html

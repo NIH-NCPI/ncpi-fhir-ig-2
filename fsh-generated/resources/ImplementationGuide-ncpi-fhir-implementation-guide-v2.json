@@ -135,6 +135,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-bamcram"
+        },
+        "name": "BAM or CRAM file profile",
+        "description": "BAM or CRAM file profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ResearchStudy/cmg-research-study-bhcmg"
         },
         "name": "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
@@ -308,6 +316,14 @@
         "name": "Example file based on CBTN",
         "description": "Use case of file information from CBTN",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
+      },
+      {
+        "reference": {
+          "reference": "Observation/BAM-CRAM-example"
+        },
+        "name": "Example file metadata for a BAM-CRAM file",
+        "description": "Example file metadata for a BAM-CRAM file",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram"
       },
       {
         "reference": {
@@ -1139,6 +1155,22 @@
         },
         "name": "Version of the contents of the file",
         "description": "Version of the contents of the file",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/workflow-tool-cs"
+        },
+        "name": "Workflow tool options",
+        "description": "Workflow tool options",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/workflow-type-cs"
+        },
+        "name": "Workflow type options",
+        "description": "Workflow type options",
         "exampleBoolean": false
       }
     ],

@@ -53,6 +53,20 @@ Description: "Adaptor trimmed options"
 * #yes "Yes"
 * #no "No"
 
+CodeSystem: WorkflowTypeCS
+Id: workflow-type-cs
+Title: "Workflow type options"
+Description: "Workflow type options"
+* #alignment "Alignment"
+* #somatic "Somatic"
+
+CodeSystem: WorkflowToolCS
+Id: workflow-tool-cs
+Title: "Workflow tool options"
+Description: "Workflow tool options"
+* #bammem "BAM-MEM"
+* #GATKHaplotypeCaller "GATK-Haplotype Caller"
+
 Profile: NcpiFileMetadata
 Parent: Observation
 Id: ncpi-file-metadata
@@ -151,6 +165,35 @@ Description: "NCPI FASTQ File"
 * component[is_paired_end].value[x] only CodeableConcept or boolean
 * component[workflow_type].code = #WorkflowType
 * component[workflow_type].value[x] only CodeableConcept
+* component[adaptor_trimmed].code = #AdaptorTrimmed
+* component[adaptor_trimmed].value[x] only CodeableConcept or boolean
+* component[reference_genome].code = #ReferenceGenome
+* component[reference_genome].value[x] only CodeableConcept
+
+Profile: NcpiBAMCRAM
+Parent: NcpiRawFile
+Id: ncpi-bamcram
+Title: "BAM or CRAM file profile"
+Description: "BAM or CRAM file profile"
+* ^version = "0.0.1"
+* ^status = #draft
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
+* component ^slicing.description = "Slice pattern for component.code"
+* component contains
+  workflow_type 1..1 and
+  workflow_tool 1..1 and
+  is_paired_end 0..1 and
+  adaptor_trimmed 1..1 and
+  reference_genome 1..1
+* component[workflow_type].code = #WorkflowType
+* component[workflow_type].value[x] only CodeableConcept
+* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].value[x] only CodeableConcept
+* component[is_paired_end].code = #IsPairedEnd
+* component[is_paired_end].value[x] only CodeableConcept or boolean
 * component[adaptor_trimmed].code = #AdaptorTrimmed
 * component[adaptor_trimmed].value[x] only CodeableConcept or boolean
 * component[reference_genome].code = #ReferenceGenome
