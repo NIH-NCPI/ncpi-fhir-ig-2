@@ -35,6 +35,7 @@
 [PT-006SP660]: DocumentReference-PT-006SP660.html
 [BAM-CRAM-example]: Observation-BAM-CRAM-example.html
 [FASTQ-example]: Observation-FASTQ-example.html
+[VCF-example]: Observation-VCF-example.html
 [cbtn-example-participantstudy]: ResearchSubject-cbtn-example-participantstudy.html
 [emerge-example-participantstudy]: ResearchSubject-emerge-example-participantstudy.html
 [pcgc-example-participantstudy]: ResearchSubject-pcgc-example-participantstudy.html
@@ -66,6 +67,7 @@
 [SD-BHJXBDQK]: ResearchStudy-SD-BHJXBDQK.html
 [SD-PREASA7S]: ResearchStudy-SD-PREASA7S.html
 [phv00407460.v2]: ResearchStudy-phv00407460.v2.html
+[NcpiAnalysisFile]: StructureDefinition-ncpi-analysis-file.html
 [NcpiAssayFile]: StructureDefinition-ncpi-assay-file.html
 [NCPICollectedSample]: StructureDefinition-ncpi-collected-sample.html
 [NCPINonCollectedSample]: StructureDefinition-ncpi-non-collected-sample.html
@@ -137,6 +139,7 @@
 [FileFormat]: StructureDefinition-file-format.html
 [FileSize]: StructureDefinition-file-size.html
 [HashValue]: StructureDefinition-hash-value.html
+[NcpiVCF]: StructureDefinition-ncpi-vcf.html
 [ContentVersion]: StructureDefinition-content-version.html
 [WorkflowToolCS]: CodeSystem-workflow-tool-cs.html
 [WorkflowTypeCS]: CodeSystem-workflow-type-cs.html

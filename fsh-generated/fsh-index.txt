@@ -39,6 +39,7 @@ List-ncpi-research-collection-kfx01.json                          ncpi-research-
 List-ncpi-research-collection-pbta.json                           ncpi-research-collection-pbta                       Instance    examples/ResearchStudy-CBTN.fsh      222 - 234
 Observation-BAM-CRAM-example.json                                 BAM-CRAM-example                                    Instance    examples/file-metadata.fsh           27 - 54
 Observation-FASTQ-example.json                                    FASTQ-example                                       Instance    examples/file-metadata.fsh           1 - 24
+Observation-VCF-example.json                                      VCF-example                                         Instance    examples/file-metadata.fsh           56 - 83
 Observation-cbtn-family-relationship-mother.json                  cbtn-family-relationship-mother                     Instance    examples/family.fsh                  41 - 49
 Observation-cbtn-family-relationship-son.json                     cbtn-family-relationship-son                        Instance    examples/family.fsh                  67 - 75
 Organization-kf-research-study-organization-chop.json             kf-research-study-organization-chop                 Instance    examples/ResearchStudy-CBTN.fsh      4 - 11
@@ -99,12 +100,13 @@ StructureDefinition-hash-value.json                               HashValue     
 StructureDefinition-label-extension.json                          Label                                               Extension   extensions/Label.fsh                 1 - 13
 StructureDefinition-location-access.json                          LocationAccess                                      Extension   modules/files.fsh                    64 - 70
 StructureDefinition-ncpi-Study-Participant.json                   NcpiStudyParticipant                                Profile     modules/participant.fsh              133 - 145
+StructureDefinition-ncpi-analysis-file.json                       NcpiAnalysisFile                                    Profile     modules/file-metadata.fsh            148 - 172
 StructureDefinition-ncpi-assay-file.json                          NcpiAssayFile                                       Profile     modules/file-metadata.fsh            79 - 100
-StructureDefinition-ncpi-bamcram.json                             NcpiBAMCRAM                                         Profile     modules/file-metadata.fsh            173 - 200
+StructureDefinition-ncpi-bamcram.json                             NcpiBAMCRAM                                         Profile     modules/file-metadata.fsh            199 - 220
 StructureDefinition-ncpi-collected-sample.json                    NCPICollectedSample                                 Profile     modules/biospecimen.fsh              133 - 140
 StructureDefinition-ncpi-family-relationship.json                 NcpiFamilyRelationship                              Profile     modules/family.fsh                   161 - 175
 StructureDefinition-ncpi-family-role.json                         NcpiFamilyRole                                      Profile     modules/family.fsh                   135 - 148
-StructureDefinition-ncpi-fastq.json                               NcpiFASTQ                                           Profile     modules/file-metadata.fsh            148 - 171
+StructureDefinition-ncpi-fastq.json                               NcpiFASTQ                                           Profile     modules/file-metadata.fsh            174 - 197
 StructureDefinition-ncpi-file-metadata.json                       NcpiFileMetadata                                    Profile     modules/file-metadata.fsh            70 - 77
 StructureDefinition-ncpi-file.json                                NcpiFile                                            Profile     modules/files.fsh                    116 - 142
 StructureDefinition-ncpi-non-collected-sample.json                NCPINonCollectedSample                              Profile     modules/biospecimen.fsh              142 - 149
@@ -117,6 +119,7 @@ StructureDefinition-ncpi-research-study.json                      NcpiResearchSt
 StructureDefinition-ncpi-sample.json                              NCPISample                                          Profile     modules/biospecimen.fsh              90 - 130
 StructureDefinition-ncpi-sequencing-file.json                     NcpiSequencingFile                                  Profile     modules/file-metadata.fsh            102 - 120
 StructureDefinition-ncpi-study-family.json                        NcpiStudyFamily                                     Profile     modules/family.fsh                   88 - 106
+StructureDefinition-ncpi-vcf.json                                 NcpiVCF                                             Profile     modules/file-metadata.fsh            222 - 240
 StructureDefinition-research-age-at-last-vital-status.json        AgeAtLastVitalStatus                                Extension   modules/participant.fsh              53 - 60
 StructureDefinition-research-date-of-birth-method.json            ResearchDateOfBirthMethod                           Extension   modules/participant.fsh              45 - 51
 StructureDefinition-research-disease-use-limitation.json          ResearchDiseaseUseLimitation                        Extension   modules/research-accesss-policy.fsh  67 - 73

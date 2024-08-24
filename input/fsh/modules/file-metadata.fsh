@@ -145,6 +145,32 @@ Description: "NCPI raw file"
 * component[target_region].code = #TargetRegion
 * component[target_region].value[x] only CodeableConcept
 
+Profile: NcpiAnalysisFile
+Parent: NcpiSequencingFile
+Id: ncpi-analysis-file
+Title: "NCPI analysis file"
+Description: "NCPI analysis file"
+* ^version = "0.0.1"
+* ^status = #draft
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
+* component ^slicing.description = "Slice pattern for component.code"
+* component contains
+  library_prep 0..1 and
+  library_selection 0..1 and
+  strandedness 0..1 and
+  target_region 0..1
+* component[library_prep].code = #LibraryPrep
+* component[library_prep].value[x] only CodeableConcept
+* component[library_selection].code = #LibrarySelection
+* component[library_selection].value[x] only CodeableConcept
+* component[strandedness].code = #Strandedness
+* component[strandedness].value[x] only CodeableConcept
+* component[target_region].code = #TargetRegion
+* component[target_region].value[x] only CodeableConcept
+
 Profile: NcpiFASTQ
 Parent: NcpiRawFile
 Id: ncpi-fastq
@@ -183,18 +209,32 @@ Description: "BAM or CRAM file profile"
 * component ^slicing.ordered = false
 * component ^slicing.description = "Slice pattern for component.code"
 * component contains
-  workflow_type 1..1 and
-  workflow_tool 1..1 and
   is_paired_end 0..1 and
   adaptor_trimmed 1..1 and
   reference_genome 1..1
-* component[workflow_type].code = #WorkflowType
-* component[workflow_type].value[x] only CodeableConcept
-* component[workflow_tool].code = #WorkflowTool
-* component[workflow_tool].value[x] only CodeableConcept
 * component[is_paired_end].code = #IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
 * component[adaptor_trimmed].code = #AdaptorTrimmed
 * component[adaptor_trimmed].value[x] only CodeableConcept or boolean
+* component[reference_genome].code = #ReferenceGenome
+* component[reference_genome].value[x] only CodeableConcept
+
+Profile: NcpiVCF
+Parent: NcpiAnalysisFile
+Id: ncpi-vcf
+Title: "VCF or gVCF file profile"
+Description: "VCF or gVCF file profile"
+* ^version = "0.0.1"
+* ^status = #draft
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
+* component ^slicing.description = "Slice pattern for component.code"
+* component contains
+  is_paired_end 0..1 and
+  reference_genome 0..1
+* component[is_paired_end].code = #IsPairedEnd
+* component[is_paired_end].value[x] only CodeableConcept or boolean
 * component[reference_genome].code = #ReferenceGenome
 * component[reference_genome].value[x] only CodeableConcept
