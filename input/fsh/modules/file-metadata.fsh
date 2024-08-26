@@ -97,14 +97,14 @@ Description: "Representation of assay file"
 * component ^slicing.description = "Slice pattern for component.code"
 * component contains
   assay_strategy 1..1 and
-  platform_instrument 1..1 and
-  related_samples 1..*
+  platform_instrument 1..1
 * component[assay_strategy].code = #AssayStrategy
 * component[assay_strategy].value[x] only CodeableConcept
 * component[platform_instrument].code = #PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
-* component[related_samples].code = #RelatedSamples
-* component[related_samples].value[x] only string /*Related samples cannot be a reference*/
+/* * component[related_samples].code = #RelatedSamples
+* component[related_samples].value[x] only Reference /*Related samples cannot be a reference*/
+/*component slicing does not allow for datatype of Reference so for now we're using specimen (see above) */
 
 Profile: NcpiSequencingFile
 Parent: NcpiAssayFile

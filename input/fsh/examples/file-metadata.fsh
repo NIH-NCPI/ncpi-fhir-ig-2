@@ -6,12 +6,14 @@ Description: "Example file metadata for a FASTQ file"
 * focus = Reference(ParentFile)
 * status = #final
 * code = $edam#format_1930
+* specimen = Reference(SA-000) /*using specimen is a placeholder for using a slice of component for related samples*/
 * component.code = #AssayStrategy
 * component[assay_strategy].valueCodeableConcept = #WGS
 * component.code = #PlatformInstrument
 * component[platform_instrument].valueCodeableConcept = #IlluminaHiSeq2000
-* component.code = #RelatedSamples
-* component[related_samples].valueString = "SA-000"
+/* * component.code = #RelatedSamples
+* component[related_samples].valueString = "SA-000"*/ 
+/*component slicing does not allow for datatype of Reference so for now we're using specimen (see above) */
 * component.code = #LibraryPrep
 * component[library_prep].valueCodeableConcept = #polyA
 * component.code = #LibrarySelection
@@ -32,12 +34,14 @@ Description: "Example file metadata for a BAM-CRAM file"
 * focus = Reference(ParentFile)
 * status = #final
 * code = $edam#format_2572 /*for a BAM file | $edam#format_3462 for CRAM*/
+* specimen = Reference(SA-000) /*using specimen is a placeholder for using a slice of component for related samples*/
 * component.code = #AssayStrategy
 * component[assay_strategy].valueCodeableConcept = #WGS
 * component.code = #PlatformInstrument
 * component[platform_instrument].valueCodeableConcept = #IlluminaHiSeq2000
-* component.code = #RelatedSamples
-* component[related_samples].valueString = "SA-000"
+/** component.code = #RelatedSamples
+* component[related_samples].valueString = "SA-000"*/
+/*component slicing does not allow for datatype of Reference so for now we're using specimen (see above) */
 * component.code = #LibraryPrep
 * component[library_prep].valueCodeableConcept = #polyA
 * component.code = #LibrarySelection
@@ -61,12 +65,14 @@ Description: "Example file metadata for a VCF file"
 * focus = Reference(ParentFile)
 * status = #final
 * code = $edam#format_3016
+* specimen = Reference(SA-000) /*using specimen is a placeholder for using a slice of component for related samples*/
 * component.code = #AssayStrategy
 * component[assay_strategy].valueCodeableConcept = #WGS
 * component.code = #PlatformInstrument
 * component[platform_instrument].valueCodeableConcept = #IlluminaHiSeq2000
-* component.code = #RelatedSamples
-* component[related_samples].valueString = "SA-000"
+/** component.code = #RelatedSamples
+* component[related_samples].valueString = "SA-000"*/
+/*component slicing does not allow for datatype of Reference so for now we're using specimen (see above) */
 * component.code = #LibraryPrep
 * component[library_prep].valueCodeableConcept = #polyA
 * component.code = #LibrarySelection
