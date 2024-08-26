@@ -11,7 +11,7 @@ Description: "Example file metadata for a FASTQ file"
 * component.code = #PlatformInstrument
 * component[platform_instrument].valueCodeableConcept = #IlluminaHiSeq2000
 * component.code = #RelatedSamples
-* component[related_samples].valueReference = Reference(Example) /*Does not resolve because related samples cannot be a reference*/
+* component[related_samples].valueString = "SA-000"
 * component.code = #LibraryPrep
 * component[library_prep].valueCodeableConcept = #polyA
 * component.code = #LibrarySelection
@@ -37,7 +37,7 @@ Description: "Example file metadata for a BAM-CRAM file"
 * component.code = #PlatformInstrument
 * component[platform_instrument].valueCodeableConcept = #IlluminaHiSeq2000
 * component.code = #RelatedSamples
-* component[related_samples].valueReference = Reference(Example) /*Does not resolve because related samples cannot be a reference*/
+* component[related_samples].valueString = "SA-000"
 * component.code = #LibraryPrep
 * component[library_prep].valueCodeableConcept = #polyA
 * component.code = #LibrarySelection
@@ -45,7 +45,7 @@ Description: "Example file metadata for a BAM-CRAM file"
 * component.code = #Strandedness
 * component[strandedness].valueCodeableConcept = #unstranded
 * component.code = #ReferenceGenome
-* component[reference_genome].valueReference = Reference(GRCh37)
+* component[reference_genome].valueCodeableConcept = #GRCh37
 * component.code = #IsPairedEnd
 * component[is_paired_end].valueBoolean = false
 * component.code = #WorkflowTool
@@ -66,7 +66,7 @@ Description: "Example file metadata for a VCF file"
 * component.code = #PlatformInstrument
 * component[platform_instrument].valueCodeableConcept = #IlluminaHiSeq2000
 * component.code = #RelatedSamples
-* component[related_samples].valueReference = Reference(Example) /*Does not resolve because related samples cannot be a reference*/
+* component[related_samples].valueString = "SA-000"
 * component.code = #LibraryPrep
 * component[library_prep].valueCodeableConcept = #polyA
 * component.code = #LibrarySelection
@@ -74,7 +74,7 @@ Description: "Example file metadata for a VCF file"
 * component.code = #Strandedness
 * component[strandedness].valueCodeableConcept = #unstranded
 * component.code = #ReferenceGenome
-* component[reference_genome].valueReference = Reference(GRCh38)
+* component[reference_genome].valueCodeableConcept = #GRCh38
 * component.code = #IsPairedEnd
 * component[is_paired_end].valueBoolean = false
 * component.code = #WorkflowTool

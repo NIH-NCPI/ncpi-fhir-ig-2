@@ -67,6 +67,13 @@ Description: "Workflow tool options"
 * #bammem "BAM-MEM"
 * #GATKHaplotypeCaller "GATK-Haplotype Caller"
 
+CodeSystem: ReferenceGenomeCS
+Id: reference-genome-cs
+Title: "Reference genome examples"
+Description: "Reference genome examples"
+* #GRCh37 "GRCh37"
+* #GRCh38 "GRCh38"
+
 Profile: NcpiFileMetadata
 Parent: Observation
 Id: ncpi-file-metadata
@@ -97,7 +104,7 @@ Description: "Representation of assay file"
 * component[platform_instrument].code = #PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
 * component[related_samples].code = #RelatedSamples
-* component[related_samples].value[x] only Reference /*Related samples cannot be a reference*/
+* component[related_samples].value[x] only string /*Related samples cannot be a reference*/
 
 Profile: NcpiSequencingFile
 Parent: NcpiAssayFile
