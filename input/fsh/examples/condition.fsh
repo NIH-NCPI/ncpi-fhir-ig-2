@@ -1,11 +1,11 @@
 
-Instance: condition-example
+Instance: PT-006SP660
 InstanceOf: NcpiCondition
 Title: "Example condition using data from Kids First"
 Usage: #example
 Description: "Example condition using data from Kids First."
 * status = #final
-* subject = Reference(PT-KZG2CZ95)
+* subject = Reference(PT-006SP660)
 /* condition code */
 * code.coding = $mondo#MONDO:0002203
 /* condition text */
@@ -15,7 +15,7 @@ Description: "Example condition using data from Kids First."
   * url = $cqf-relativeDateTime
   * extension[+]
     * url = "target"
-    * valueReference = Reference(PT-KZG2CZ95)
+    * valueReference = Reference(PT-006SP660)
   * extension[+]
     * url = "targetPath"
     * valueString = "None"
