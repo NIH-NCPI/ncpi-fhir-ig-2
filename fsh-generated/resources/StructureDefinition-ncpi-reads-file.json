@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ncpi-raw-file",
-  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-raw-file",
+  "id": "ncpi-reads-file",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-reads-file",
   "version": "0.0.1",
-  "name": "NcpiRawFile",
-  "title": "NCPI raw file",
+  "name": "NcpiReadsFile",
+  "title": "NCPI reads file",
   "status": "draft",
-  "description": "NCPI raw file",
+  "description": "NCPI reads file",
   "fhirVersion": "4.3.0",
   "kind": "resource",
   "abstract": false,
@@ -18,7 +18,7 @@
       {
         "id": "Observation.component",
         "path": "Observation.component",
-        "min": 6
+        "min": 5
       },
       {
         "id": "Observation.component:library_prep",

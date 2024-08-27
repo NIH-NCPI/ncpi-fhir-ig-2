@@ -29,7 +29,7 @@
           "ordered": false,
           "description": "Slice pattern for component.code"
         },
-        "min": 3
+        "min": 2
       },
       {
         "id": "Observation.component:assay_strategy",
@@ -84,24 +84,6 @@
             "code": "CodeableConcept"
           }
         ]
-      },
-      {
-        "id": "Observation.component:related_samples",
-        "path": "Observation.component",
-        "sliceName": "related_samples",
-        "min": 1,
-        "max": "*"
-      },
-      {
-        "id": "Observation.component:related_samples.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "RelatedSamples"
-            }
-          ]
-        }
       }
     ]
   }

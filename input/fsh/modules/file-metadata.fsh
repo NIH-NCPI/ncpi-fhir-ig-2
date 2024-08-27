@@ -113,7 +113,7 @@ Title: "NCPI sequencing file"
 Description: "NCPI sequencing file"
 * ^version = "0.0.1"
 * ^status = #draft
-* component ^slicing.discriminator.type = #value
+/** component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.ordered = false
@@ -124,13 +124,13 @@ Description: "NCPI sequencing file"
 * component[workflow_type].code = #WorkflowType
 * component[workflow_type].value[x] only CodeableConcept
 * component[workflow_tool].code = #WorkflowTool
-* component[workflow_tool].value[x] only CodeableConcept
+* component[workflow_tool].value[x] only CodeableConcept */
 
-Profile: NcpiRawFile
+Profile: NcpiReadsFile
 Parent: NcpiSequencingFile
-Id: ncpi-raw-file
-Title: "NCPI raw file"
-Description: "NCPI raw file"
+Id: ncpi-reads-file
+Title: "NCPI reads file"
+Description: "NCPI reads file"
 * ^version = "0.0.1"
 * ^status = #draft
 * component ^slicing.discriminator.type = #value
@@ -179,7 +179,7 @@ Description: "NCPI analysis file"
 * component[target_region].value[x] only CodeableConcept
 
 Profile: NcpiFASTQ
-Parent: NcpiRawFile
+Parent: NcpiReadsFile
 Id: ncpi-fastq
 Title: "NCPI FASTQ File"
 Description: "NCPI FASTQ File"
@@ -193,18 +193,22 @@ Description: "NCPI FASTQ File"
 * component contains
   is_paired_end 1..1 and
   adaptor_trimmed 1..1 and
-  reference_genome 0..1
+  reference_genome 0..1 and  
+  workflow_type 0..1 and
+  workflow_tool 0..1
 * component[is_paired_end].code = #IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
-* component[workflow_type].code = #WorkflowType
-* component[workflow_type].value[x] only CodeableConcept
 * component[adaptor_trimmed].code = #AdaptorTrimmed
 * component[adaptor_trimmed].value[x] only CodeableConcept or boolean
 * component[reference_genome].code = #ReferenceGenome
 * component[reference_genome].value[x] only CodeableConcept
+* component[workflow_type].code = #WorkflowType
+* component[workflow_type].value[x] only CodeableConcept
+* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].value[x] only CodeableConcept
 
 Profile: NcpiBAMCRAM
-Parent: NcpiRawFile
+Parent: NcpiReadsFile
 Id: ncpi-bamcram
 Title: "BAM or CRAM file profile"
 Description: "BAM or CRAM file profile"
@@ -218,13 +222,19 @@ Description: "BAM or CRAM file profile"
 * component contains
   is_paired_end 0..1 and
   adaptor_trimmed 1..1 and
-  reference_genome 1..1
+  reference_genome 1..1 and
+  workflow_type 0..1 and
+  workflow_tool 0..1
 * component[is_paired_end].code = #IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
 * component[adaptor_trimmed].code = #AdaptorTrimmed
 * component[adaptor_trimmed].value[x] only CodeableConcept or boolean
 * component[reference_genome].code = #ReferenceGenome
 * component[reference_genome].value[x] only CodeableConcept
+* component[workflow_type].code = #WorkflowType
+* component[workflow_type].value[x] only CodeableConcept
+* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].value[x] only CodeableConcept
 
 Profile: NcpiVCF
 Parent: NcpiAnalysisFile
@@ -240,8 +250,14 @@ Description: "VCF or gVCF file profile"
 * component ^slicing.description = "Slice pattern for component.code"
 * component contains
   is_paired_end 0..1 and
-  reference_genome 0..1
+  reference_genome 0..1 and
+  workflow_type 0..1 and
+  workflow_tool 0..1
 * component[is_paired_end].code = #IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
 * component[reference_genome].code = #ReferenceGenome
 * component[reference_genome].value[x] only CodeableConcept
+* component[workflow_type].code = #WorkflowType
+* component[workflow_type].value[x] only CodeableConcept
+* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].value[x] only CodeableConcept

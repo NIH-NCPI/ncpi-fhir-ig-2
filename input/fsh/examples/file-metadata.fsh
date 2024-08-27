@@ -3,7 +3,7 @@ InstanceOf: NcpiFASTQ
 Title: "Example file metadata for a FASTQ file"
 Usage: #example
 Description: "Example file metadata for a FASTQ file"
-* focus = Reference(ParentFile)
+* focus = Reference(PT_006SP660)
 * status = #final
 * code = $edam#format_1930
 * specimen = Reference(SA-000) /*using specimen is a placeholder for using a slice of component for related samples*/
@@ -31,7 +31,7 @@ InstanceOf: NcpiBAMCRAM
 Title: "Example file metadata for a BAM-CRAM file"
 Usage: #example
 Description: "Example file metadata for a BAM-CRAM file"
-* focus = Reference(ParentFile)
+* focus = Reference(PT_006SP660)
 * status = #final
 * code = $edam#format_2572 /*for a BAM file | $edam#format_3462 for CRAM*/
 * specimen = Reference(SA-000) /*using specimen is a placeholder for using a slice of component for related samples*/
@@ -62,7 +62,7 @@ InstanceOf: NcpiVCF
 Usage: #example
 Title: "Example file metadata for a VCF file"
 Description: "Example file metadata for a VCF file"
-* focus = Reference(ParentFile)
+* focus = Reference(PT_006SP660)
 * status = #final
 * code = $edam#format_3016
 * specimen = Reference(SA-000) /*using specimen is a placeholder for using a slice of component for related samples*/

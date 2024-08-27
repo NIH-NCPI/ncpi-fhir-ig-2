@@ -8,7 +8,7 @@
   },
   "focus": [
     {
-      "reference": "ParentFile"
+      "reference": "PT_006SP660"
     }
   ],
   "component": [
@@ -105,6 +105,22 @@
       "code": {
         "coding": [
           {
+            "code": "ReferenceGenome"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "GRCh37"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
             "code": "IsPairedEnd"
           }
         ]
@@ -147,25 +163,7 @@
       "code": {
         "coding": [
           {
-            "code": "RelatedSamples"
-          }
-        ]
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
             "code": "AdaptorTrimmed"
-          }
-        ]
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "code": "ReferenceGenome"
           }
         ]
       }
@@ -179,5 +177,8 @@
         "system": "http://edamontology.org"
       }
     ]
+  },
+  "specimen": {
+    "reference": "Specimen/SA-000"
   }
 }

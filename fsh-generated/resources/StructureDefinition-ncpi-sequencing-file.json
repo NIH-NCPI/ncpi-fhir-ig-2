@@ -16,58 +16,8 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.component:workflow_type",
-        "path": "Observation.component",
-        "sliceName": "workflow_type",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:workflow_type.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "WorkflowType"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:workflow_type.value[x]",
-        "path": "Observation.component.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "Observation.component:workflow_tool",
-        "path": "Observation.component",
-        "sliceName": "workflow_tool",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:workflow_tool.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "WorkflowTool"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:workflow_tool.value[x]",
-        "path": "Observation.component.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
+        "id": "Observation",
+        "path": "Observation"
       }
     ]
   }

@@ -79,7 +79,7 @@
 [MetadataElements]: CodeSystem-metadata-elements.html
 [NcpiParticipant]: StructureDefinition-ncpi-participant.html
 [NcpiPerson]: StructureDefinition-ncpi-person.html
-[NcpiRawFile]: StructureDefinition-ncpi-raw-file.html
+[NcpiReadsFile]: StructureDefinition-ncpi-reads-file.html
 [NcpiResearchAccessPolicy]: StructureDefinition-ncpi-research-access-policy.html
 [NcpiResearchCollection]: StructureDefinition-ncpi-research-collection.html
 [NcpiResearchStudy]: StructureDefinition-ncpi-research-study.html
@@ -95,6 +95,7 @@
 [ncpi-research-collection-pbta]: List-ncpi-research-collection-pbta.html
 [PlatformInstrumentCS]: CodeSystem-platform-instrument-cs.html
 [HashExtension]: StructureDefinition-hash-extension.html
+[ReferenceGenomeCS]: CodeSystem-reference-genome-cs.html
 [kf-registered-allowed-access]: Consent-kf-registered-allowed-access.html
 [RelatedFileTypeCS]: CodeSystem-related-file-type-code-system.html
 [ResearchDataAccessCodeVS]: ValueSet-research-data-access-code-vs.html
