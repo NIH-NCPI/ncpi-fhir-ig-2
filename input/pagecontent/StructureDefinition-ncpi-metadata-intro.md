@@ -1,6 +1,8 @@
 #### Key Guidelines
 The NCPI File Metadata profile is based on the standard resource type, [Observation](https://hl7.org/fhir/r4/observation.html) and is intended to represent information about the file metadata associated with a file.
 
+<img width="100%" src="file_meta_data_example_hierarchy.jpeg" alt="Inheritance style of File Metadata profile" />
+
 ##### Added Profile Restrictions
 In order to ensure that our resources are interoperable across studies, we have employed a number of restrictions that should make consuming Patient resources more consistent.
 
