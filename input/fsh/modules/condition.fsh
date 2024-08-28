@@ -40,6 +40,11 @@ Description: "Code System for type of condition"
 * #Clinical-Finding "Clinical Finding"
 * #EHR-Condition-Code "EHR Condition Code"
 
+ValueSet: ConditionTypeVS
+Id: condition-type-vs
+Title: "Type of Condition"
+* include codes from system condition-type
+
 CodeSystem: ConditionAssertion
 Id: condition-assertion
 Title: "Assertion of Condition Codes"
@@ -50,6 +55,11 @@ Description: "Code System for assertion of condition presence"
 * #Present "Present"
 * #Absent "Absent"
 * #Unknown "Unknown"
+
+ValueSet: ConditionAssertionVS
+Id: condition-assertion-vs
+Title: "Assertion of Condition Codes"
+* include codes from system condition-assertion
 
 Extension: AgeAtAssertion
 Id: age-at-assertion
@@ -87,7 +97,7 @@ Description: "Information about a condition related to a research participant"
 * effective[x] only dateTime
 * effectiveDateTime ^short = "The date or age at which this condition is being asserted.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 /*assertion*/
-* valueCodeableConcept from $condition-assertion
+* valueCodeableConcept from condition-assertion-vs
 * valueCodeableConcept ^short = "Does the participant have this condition?"
 /*conditionType*/ 
 * category ^short = "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
