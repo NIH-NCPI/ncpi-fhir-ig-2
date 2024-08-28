@@ -15,6 +15,8 @@ Description: "The Shared Data Model for **Condition**"
 * otherModifiers 0..* code "Any additional modifiers for this condition, such as severity."
 * stage 0..1 date "Cancer staging information"
 * location 0..* code "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
+* locationQualifier 0..1 code "Any spatial/location qualifiers"
+* lateralityQualifier 0..1 code "Any laterality qualifiers"
 * assertionSource 0..1 code "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc."
 * asserter 0..1 code "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
 
@@ -61,6 +63,18 @@ Id: condition-assertion-vs
 Title: "Assertion of Condition Codes"
 * include codes from system condition-assertion
 
+ValueSet: BodyLocationQualifierVS
+Id: condition-location-vs
+Title: "Location Information"
+Description: "Location Information"
+* include codes from system $body-location-qualifier
+
+ValueSet: LateralityQualifierVS
+Id: condition-laterality-vs
+Title: "Laterality Information"
+Description: "Laterality Information"
+* include codes from system $laterality-qualifier
+
 Extension: AgeAtAssertion
 Id: age-at-assertion
 Title: "Age at Assertion"
@@ -78,6 +92,23 @@ Description: "Person who recorded assertion about participant"
 * insert SetContext(Observation)
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
+
+
+Extension: ConditionLocation
+Id: condition-location
+Title: "Location Information"
+Description: "Location Information"
+* insert SetContext(Observation.bodySite)
+* value[x] only code 
+* value[x] from BodyLocationQualifierVS 
+
+Extension: ConditionLaterality
+Id: condition-laterality
+Title: "Laterality Information"
+Description: "Laterality Information"
+* insert SetContext(Observation)
+* value[x] only code
+* value[x] from LateralityQualifierVS
 
 Profile: NcpiCondition
 Parent: Observation
@@ -111,6 +142,10 @@ Description: "Information about a condition related to a research participant"
 * component ^short = "Cancer staging information"
 /*location*/ 
 * bodySite ^short = "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
+* extension contains ConditionLocation named condition-location 0..1 /*Condition.LocationQualifieri*/
+* extension[condition-location] ^short = "Any location qualifiers"
+* extension contains ConditionLaterality named condition-laterality 0..1 /*Condition.LateralityQualifier*/
+* extension[condition-laterality] ^short = "Laterality information for the condition site"
 /*assertionSource*/ 
 * method ^short = "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc."
 /*asserter*/
