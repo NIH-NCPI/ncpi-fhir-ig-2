@@ -110,6 +110,16 @@ Description: "Laterality Information"
 * value[x] only code
 * value[x] from LateralityQualifierVS
 
+
+CodeSystem: ComponentElements
+Id: component-elements
+Title: "Elements of Component"
+Description: "Slicing for elements of component"
+* #ageAtOnset "Age at Onset"
+* #ageAtResolution "Age at Resolution"
+* #otherModifiers "Other Modifiers"
+* #stage "Stage"
+
 Profile: NcpiCondition
 Parent: Observation
 Id: ncpi-condition 
@@ -133,13 +143,31 @@ Description: "Information about a condition related to a research participant"
 /*conditionType*/ 
 * category ^short = "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
 /*ageAtOnset*/ 
-* component ^short = "The age of onset for this condition. Could be expressed with a term, an age, or an age range."
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.description = "Slicing logic for observation component"
+* component ^slicing.ordered = false
+* component contains
+  ageAtOnset 0..1 and
+  ageAtResolution 0..1 and
+  otherModifiers 0..* and
+  stage 0..1
+* component[ageAtOnset].code = #ageAtOnset
+* component[ageAtOnset].value[x] only Quantity or dateTime or CodeableConcept or Range
+* component[ageAtOnset] ^short = "The age of onset for this condition. Could be expressed with a term, an age, or an age range."
 /*ageAtResolution*/ 
-* component ^short = "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range."
+* component[ageAtResolution].code = #ageAtResolution
+* component[ageAtResolution].value[x] only Quantity or dateTime or CodeableConcept or Range
+* component[ageAtResolution] ^short = "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range."
 /*otherModifiers*/ 
-* component ^short = "Any additional modifiers for this condition, such as severity."
+* component[otherModifiers].code = #ageAtOnset
+* component[otherModifiers].value[x] only CodeableConcept
+* component[otherModifiers] ^short = "Any additional modifiers for this condition, such as severity."
 /*stage*/ 
-* component ^short = "Cancer staging information"
+* component[stage].code = #ageAtOnset
+* component[stage].value[x] only CodeableConcept
+* component[stage] ^short = "Cancer staging information"
 /*location*/ 
 * bodySite ^short = "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
 * extension contains ConditionLocation named condition-location 0..1 /*Condition.LocationQualifieri*/
