@@ -83,103 +83,9 @@ Description: "Representation of file metadata for NCPI"
 * ^status = #draft
 * focus 1..1 /*Parent_file*/
 
-Profile: NcpiAssayFile
-Parent: NcpiFileMetadata
-Id: ncpi-assay-file
-Title: "NCPI Assay File"
-Description: "Representation of assay file"
-* ^version = "0.0.1"
-* ^status = #draft
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component ^slicing.ordered = false
-* component ^slicing.description = "Slice pattern for component.code"
-* component contains
-  assay_strategy 1..1 and
-  platform_instrument 1..1
-* component[assay_strategy].code = #AssayStrategy
-* component[assay_strategy].value[x] only CodeableConcept
-* component[platform_instrument].code = #PlatformInstrument
-* component[platform_instrument].value[x] only CodeableConcept
-/* * component[related_samples].code = #RelatedSamples
-* component[related_samples].value[x] only Reference /*Related samples cannot be a reference*/
-/*component slicing does not allow for datatype of Reference so for now we're using specimen (see above) */
-
-Profile: NcpiSequencingFile
-Parent: NcpiAssayFile
-Id: ncpi-sequencing-file
-Title: "NCPI sequencing file"
-Description: "NCPI sequencing file"
-* ^version = "0.0.1"
-* ^status = #draft
-/** component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component ^slicing.ordered = false
-* component ^slicing.description = "Slice pattern for component.code"
-* component contains
-  workflow_type 0..1 and
-  workflow_tool 0..1
-* component[workflow_type].code = #WorkflowType
-* component[workflow_type].value[x] only CodeableConcept
-* component[workflow_tool].code = #WorkflowTool
-* component[workflow_tool].value[x] only CodeableConcept */
-
-Profile: NcpiReadsFile
-Parent: NcpiSequencingFile
-Id: ncpi-reads-file
-Title: "NCPI reads file"
-Description: "NCPI reads file"
-* ^version = "0.0.1"
-* ^status = #draft
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component ^slicing.ordered = false
-* component ^slicing.description = "Slice pattern for component.code"
-* component contains
-  library_prep 1..1 and
-  library_selection 1..1 and
-  strandedness 1..1 and
-  target_region 0..1
-* component[library_prep].code = #LibraryPrep
-* component[library_prep].value[x] only CodeableConcept
-* component[library_selection].code = #LibrarySelection
-* component[library_selection].value[x] only CodeableConcept
-* component[strandedness].code = #Strandedness
-* component[strandedness].value[x] only CodeableConcept
-* component[target_region].code = #TargetRegion
-* component[target_region].value[x] only CodeableConcept
-
-Profile: NcpiAnalysisFile
-Parent: NcpiSequencingFile
-Id: ncpi-analysis-file
-Title: "NCPI analysis file"
-Description: "NCPI analysis file"
-* ^version = "0.0.1"
-* ^status = #draft
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component ^slicing.ordered = false
-* component ^slicing.description = "Slice pattern for component.code"
-* component contains
-  library_prep 0..1 and
-  library_selection 0..1 and
-  strandedness 0..1 and
-  target_region 0..1
-* component[library_prep].code = #LibraryPrep
-* component[library_prep].value[x] only CodeableConcept
-* component[library_selection].code = #LibrarySelection
-* component[library_selection].value[x] only CodeableConcept
-* component[strandedness].code = #Strandedness
-* component[strandedness].value[x] only CodeableConcept
-* component[target_region].code = #TargetRegion
-* component[target_region].value[x] only CodeableConcept
 
 Profile: NcpiFASTQ
-Parent: NcpiReadsFile
+Parent: NcpiFileMetadata
 Id: ncpi-fastq
 Title: "NCPI FASTQ File"
 Description: "NCPI FASTQ File"
@@ -191,11 +97,29 @@ Description: "NCPI FASTQ File"
 * component ^slicing.ordered = false
 * component ^slicing.description = "Slice pattern for component.code"
 * component contains
+  assay_strategy 1..1 and
+  platform_instrument 1..1 and
+  library_prep 1..1 and
+  library_selection 1..1 and
+  strandedness 1..1 and
+  target_region 1..1 and
   is_paired_end 1..1 and
   adaptor_trimmed 1..1 and
   reference_genome 0..1 and  
   workflow_type 0..1 and
   workflow_tool 0..1
+* component[assay_strategy].code = #AssayStrategy
+* component[assay_strategy].value[x] only CodeableConcept
+* component[platform_instrument].code = #PlatformInstrument
+* component[platform_instrument].value[x] only CodeableConcept
+* component[library_prep].code = #LibraryPrep
+* component[library_prep].value[x] only CodeableConcept
+* component[library_selection].code = #LibrarySelection
+* component[library_selection].value[x] only CodeableConcept
+* component[strandedness].code = #Strandedness
+* component[strandedness].value[x] only CodeableConcept
+* component[target_region].code = #TargetRegion
+* component[target_region].value[x] only CodeableConcept
 * component[is_paired_end].code = #IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
 * component[adaptor_trimmed].code = #AdaptorTrimmed
@@ -208,7 +132,7 @@ Description: "NCPI FASTQ File"
 * component[workflow_tool].value[x] only CodeableConcept
 
 Profile: NcpiBAMCRAM
-Parent: NcpiReadsFile
+Parent: NcpiFileMetadata
 Id: ncpi-bamcram
 Title: "BAM or CRAM file profile"
 Description: "BAM or CRAM file profile"
@@ -220,11 +144,29 @@ Description: "BAM or CRAM file profile"
 * component ^slicing.ordered = false
 * component ^slicing.description = "Slice pattern for component.code"
 * component contains
+  assay_strategy 1..1 and
+  platform_instrument 1..1 and
+  library_prep 1..1 and
+  library_selection 1..1 and
+  strandedness 1..1 and
+  target_region 1..1 and
   is_paired_end 0..1 and
-  adaptor_trimmed 1..1 and
-  reference_genome 1..1 and
-  workflow_type 0..1 and
-  workflow_tool 0..1
+  adaptor_trimmed 0..1 and
+  reference_genome 1..1 and  
+  workflow_type 1..1 and
+  workflow_tool 1..1
+* component[assay_strategy].code = #AssayStrategy
+* component[assay_strategy].value[x] only CodeableConcept
+* component[platform_instrument].code = #PlatformInstrument
+* component[platform_instrument].value[x] only CodeableConcept
+* component[library_prep].code = #LibraryPrep
+* component[library_prep].value[x] only CodeableConcept
+* component[library_selection].code = #LibrarySelection
+* component[library_selection].value[x] only CodeableConcept
+* component[strandedness].code = #Strandedness
+* component[strandedness].value[x] only CodeableConcept
+* component[target_region].code = #TargetRegion
+* component[target_region].value[x] only CodeableConcept
 * component[is_paired_end].code = #IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
 * component[adaptor_trimmed].code = #AdaptorTrimmed
@@ -237,7 +179,7 @@ Description: "BAM or CRAM file profile"
 * component[workflow_tool].value[x] only CodeableConcept
 
 Profile: NcpiVCF
-Parent: NcpiAnalysisFile
+Parent: NcpiFileMetadata
 Id: ncpi-vcf
 Title: "VCF or gVCF file profile"
 Description: "VCF or gVCF file profile"
@@ -249,12 +191,174 @@ Description: "VCF or gVCF file profile"
 * component ^slicing.ordered = false
 * component ^slicing.description = "Slice pattern for component.code"
 * component contains
+  assay_strategy 1..1 and
+  platform_instrument 1..1 and
+  library_prep 0..1 and
+  library_selection 0..1 and
+  strandedness 0..1 and
+  target_region 1..1 and
   is_paired_end 0..1 and
-  reference_genome 0..1 and
-  workflow_type 0..1 and
-  workflow_tool 0..1
+  adaptor_trimmed 0..1 and
+  reference_genome 1..1 and  
+  workflow_type 1..1 and
+  workflow_tool 1..1
+* component[assay_strategy].code = #AssayStrategy
+* component[assay_strategy].value[x] only CodeableConcept
+* component[platform_instrument].code = #PlatformInstrument
+* component[platform_instrument].value[x] only CodeableConcept
+* component[library_prep].code = #LibraryPrep
+* component[library_prep].value[x] only CodeableConcept
+* component[library_selection].code = #LibrarySelection
+* component[library_selection].value[x] only CodeableConcept
+* component[strandedness].code = #Strandedness
+* component[strandedness].value[x] only CodeableConcept
+* component[target_region].code = #TargetRegion
+* component[target_region].value[x] only CodeableConcept
 * component[is_paired_end].code = #IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
+* component[adaptor_trimmed].code = #AdaptorTrimmed
+* component[adaptor_trimmed].value[x] only CodeableConcept or boolean
+* component[reference_genome].code = #ReferenceGenome
+* component[reference_genome].value[x] only CodeableConcept
+* component[workflow_type].code = #WorkflowType
+* component[workflow_type].value[x] only CodeableConcept
+* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].value[x] only CodeableConcept
+
+Profile: NcpiMAF
+Parent: NcpiFileMetadata
+Id: ncpi-maf
+Title: "MAF (Somatic Mutation) file profile"
+Description: "MAF (Somatic Mutation) file profile"
+* ^version = "0.0.1"
+* ^status = #draft
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
+* component ^slicing.description = "Slice pattern for component.code"
+* component contains
+  assay_strategy 1..1 and
+  platform_instrument 1..1 and
+  library_prep 0..1 and
+  library_selection 0..1 and
+  strandedness 0..1 and
+  target_region 1..1 and
+  is_paired_end 0..1 and
+  adaptor_trimmed 0..1 and
+  reference_genome 1..1 and  
+  workflow_type 1..1 and
+  workflow_tool 1..1
+* component[assay_strategy].code = #AssayStrategy
+* component[assay_strategy].value[x] only CodeableConcept
+* component[platform_instrument].code = #PlatformInstrument
+* component[platform_instrument].value[x] only CodeableConcept
+* component[library_prep].code = #LibraryPrep
+* component[library_prep].value[x] only CodeableConcept
+* component[library_selection].code = #LibrarySelection
+* component[library_selection].value[x] only CodeableConcept
+* component[strandedness].code = #Strandedness
+* component[strandedness].value[x] only CodeableConcept
+* component[target_region].code = #TargetRegion
+* component[target_region].value[x] only CodeableConcept
+* component[is_paired_end].code = #IsPairedEnd
+* component[is_paired_end].value[x] only CodeableConcept or boolean
+* component[adaptor_trimmed].code = #AdaptorTrimmed
+* component[adaptor_trimmed].value[x] only CodeableConcept or boolean
+* component[reference_genome].code = #ReferenceGenome
+* component[reference_genome].value[x] only CodeableConcept
+* component[workflow_type].code = #WorkflowType
+* component[workflow_type].value[x] only CodeableConcept
+* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].value[x] only CodeableConcept
+
+Profile: NcpiGeneFusionOrExpression
+Parent: NcpiFileMetadata
+Id: ncpi-gene-fusion-expression
+Title: "Gene fusion or gene expression file profile"
+Description: "Gene fusion or gene expression file profile"
+* ^version = "0.0.1"
+* ^status = #draft
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
+* component ^slicing.description = "Slice pattern for component.code"
+* component contains
+  assay_strategy 1..1 and
+  platform_instrument 1..1 and
+  library_prep 1..1 and
+  library_selection 1..1 and
+  strandedness 1..1 and
+  target_region 0..1 and
+  is_paired_end 0..1 and
+  adaptor_trimmed 0..1 and
+  reference_genome 1..1 and  
+  workflow_type 1..1 and
+  workflow_tool 1..1
+* component[assay_strategy].code = #AssayStrategy
+* component[assay_strategy].value[x] only CodeableConcept
+* component[platform_instrument].code = #PlatformInstrument
+* component[platform_instrument].value[x] only CodeableConcept
+* component[library_prep].code = #LibraryPrep
+* component[library_prep].value[x] only CodeableConcept
+* component[library_selection].code = #LibrarySelection
+* component[library_selection].value[x] only CodeableConcept
+* component[strandedness].code = #Strandedness
+* component[strandedness].value[x] only CodeableConcept
+* component[target_region].code = #TargetRegion
+* component[target_region].value[x] only CodeableConcept
+* component[is_paired_end].code = #IsPairedEnd
+* component[is_paired_end].value[x] only CodeableConcept or boolean
+* component[adaptor_trimmed].code = #AdaptorTrimmed
+* component[adaptor_trimmed].value[x] only CodeableConcept or boolean
+* component[reference_genome].code = #ReferenceGenome
+* component[reference_genome].value[x] only CodeableConcept
+* component[workflow_type].code = #WorkflowType
+* component[workflow_type].value[x] only CodeableConcept
+* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].value[x] only CodeableConcept
+
+Profile: NcpiProteomics
+Parent: NcpiFileMetadata
+Id: ncpi-proteomics
+Title: "Proteomics file profile"
+Description: "Proteomics file profile"
+* ^version = "0.0.1"
+* ^status = #draft
+* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component ^slicing.ordered = false
+* component ^slicing.description = "Slice pattern for component.code"
+* component contains
+  assay_strategy 1..1 and
+  platform_instrument 1..1 and
+  library_prep 0..1 and
+  library_selection 0..1 and
+  strandedness 0..1 and
+  target_region 0..1 and
+  is_paired_end 0..1 and
+  adaptor_trimmed 0..1 and
+  reference_genome 1..1 and  
+  workflow_type 1..1 and
+  workflow_tool 1..1
+* component[assay_strategy].code = #AssayStrategy
+* component[assay_strategy].value[x] only CodeableConcept
+* component[platform_instrument].code = #PlatformInstrument
+* component[platform_instrument].value[x] only CodeableConcept
+* component[library_prep].code = #LibraryPrep
+* component[library_prep].value[x] only CodeableConcept
+* component[library_selection].code = #LibrarySelection
+* component[library_selection].value[x] only CodeableConcept
+* component[strandedness].code = #Strandedness
+* component[strandedness].value[x] only CodeableConcept
+* component[target_region].code = #TargetRegion
+* component[target_region].value[x] only CodeableConcept
+* component[is_paired_end].code = #IsPairedEnd
+* component[is_paired_end].value[x] only CodeableConcept or boolean
+* component[adaptor_trimmed].code = #AdaptorTrimmed
+* component[adaptor_trimmed].value[x] only CodeableConcept or boolean
 * component[reference_genome].code = #ReferenceGenome
 * component[reference_genome].value[x] only CodeableConcept
 * component[workflow_type].code = #WorkflowType
