@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="condition-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem condition-type</b></p><a name="condition-type"> </a><a name="hccondition-type"> </a><a name="condition-type-en-US"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Phenotypic-Feature<a name="condition-type-Phenotypic-Feature"> </a></td><td>Phenotypic Feature</td></tr><tr><td style="white-space:nowrap">Disease<a name="condition-type-Disease"> </a></td><td>Disease</td></tr><tr><td style="white-space:nowrap">Comorbidity<a name="condition-type-Comorbidity"> </a></td><td>Comorbidity</td></tr><tr><td style="white-space:nowrap">Histology<a name="condition-type-Histology"> </a></td><td>Histology</td></tr><tr><td style="white-space:nowrap">Clinical-Finding<a name="condition-type-Clinical-Finding"> </a></td><td>Clinical Finding</td></tr><tr><td style="white-space:nowrap">EHR-Condition-Code<a name="condition-type-EHR-Condition-Code"> </a></td><td>EHR Condition Code</td></tr></table></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
+  <version value="0.1.0"/>
+  <name value="ConditionType"/>
+  <title value="Type of Condition"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-09-10T18:56:29+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Code System for type of condition"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="Phenotypic-Feature"/>
+    <display value="Phenotypic Feature"/>
+  </concept>
+  <concept>
+    <code value="Disease"/>
+    <display value="Disease"/>
+  </concept>
+  <concept>
+    <code value="Comorbidity"/>
+    <display value="Comorbidity"/>
+  </concept>
+  <concept>
+    <code value="Histology"/>
+    <display value="Histology"/>
+  </concept>
+  <concept>
+    <code value="Clinical-Finding"/>
+    <display value="Clinical Finding"/>
+  </concept>
+  <concept>
+    <code value="EHR-Condition-Code"/>
+    <display value="EHR Condition Code"/>
+  </concept>
+</CodeSystem>

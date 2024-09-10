@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "condition-assertion",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem condition-assertion</b></p><a name=\"condition-assertion\"> </a><a name=\"hccondition-assertion\"> </a><a name=\"condition-assertion-en-US\"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Present<a name=\"condition-assertion-Present\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Absent<a name=\"condition-assertion-Absent\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Unknown<a name=\"condition-assertion-Unknown\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion",
+  "version" : "0.1.0",
+  "name" : "ConditionAssertion",
+  "title" : "Assertion of Condition Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-09-10T18:56:29+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
+  "description" : "Code System for assertion of condition presence",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "Present",
+    "display" : "Present"
+  },
+  {
+    "code" : "Absent",
+    "display" : "Absent"
+  },
+  {
+    "code" : "Unknown",
+    "display" : "Unknown"
+  }]
+}

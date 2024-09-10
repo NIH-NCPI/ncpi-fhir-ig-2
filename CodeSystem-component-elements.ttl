@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/component-elements> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "component-elements"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem component-elements</b></p><a name=\"component-elements\"> </a><a name=\"hccomponent-elements\"> </a><a name=\"component-elements-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/component-elements</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ageAtOnset<a name=\"component-elements-ageAtOnset\"> </a></td><td>Age at Onset</td></tr><tr><td style=\"white-space:nowrap\">ageAtResolution<a name=\"component-elements-ageAtResolution\"> </a></td><td>Age at Resolution</td></tr><tr><td style=\"white-space:nowrap\">otherModifiers<a name=\"component-elements-otherModifiers\"> </a></td><td>Other Modifiers</td></tr><tr><td style=\"white-space:nowrap\">stage<a name=\"component-elements-stage\"> </a></td><td>Stage</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/component-elements"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ComponentElements"] ; # 
+  fhir:title [ fhir:v "Elements of Component"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-09-10T18:56:29+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Slicing for elements of component"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ageAtOnset" ] ;
+     fhir:display [ fhir:v "Age at Onset" ]
+  ] [
+     fhir:code [ fhir:v "ageAtResolution" ] ;
+     fhir:display [ fhir:v "Age at Resolution" ]
+  ] [
+     fhir:code [ fhir:v "otherModifiers" ] ;
+     fhir:display [ fhir:v "Other Modifiers" ]
+  ] [
+     fhir:code [ fhir:v "stage" ] ;
+     fhir:display [ fhir:v "Stage" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4d4e3a32-6787-48eb-a45b-d3be353f24d4"/>
+  <id value="f0cff114-f96b-41be-9374-c8a37168a720"/>
   <meta>
-    <lastUpdated value="2024-08-22T16:27:20.355+00:00"/>
+    <lastUpdated value="2024-09-10T18:56:29.628+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -65,10 +65,10 @@
         <title value="Collection Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-08-22T16:27:20+00:00"/>
+        <date value="2024-09-10T18:56:29+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:66e82560-2e7b-462a-94e6-efcaf59232e4"/>
-          <timestamp value="2024-08-22T16:28:02+00:00"/>
+          <identifier value="urn:uuid:4ad34bb0-d0c8-4c90-b0f2-d890266eb303"/>
+          <timestamp value="2024-09-10T18:57:16+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -101,6 +101,243 @@
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type"/>
             <code value="user-defined"/>
             <display value="User Defined"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-assertion-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-condition-assertion.html">codesystem Assertion of Condition Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Present"> </a>  
+                  <a href="CodeSystem-condition-assertion.html#condition-assertion-Present">Present</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td>
+                <td>Present</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Absent"> </a>  
+                  <a href="CodeSystem-condition-assertion.html#condition-assertion-Absent">Absent</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td>
+                <td>Absent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Unknown"> </a>  
+                  <a href="CodeSystem-condition-assertion.html#condition-assertion-Unknown">Unknown</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td>
+                <td>Unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-assertion-vs"/>
+        <version value="0.1.0"/>
+        <name value="ConditionAssertionVS"/>
+        <title value="Assertion of Condition Codes"/>
+        <status value="draft"/>
+        <date value="2024-09-10T18:56:29+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:e8622cdd-5b77-4062-ada5-bf7659271bc3"/>
+          <timestamp value="2024-09-10T18:57:16+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion"/>
+            <code value="Present"/>
+            <display value="Present"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion"/>
+            <code value="Absent"/>
+            <display value="Absent"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion"/>
+            <code value="Unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-condition-type.html">codesystem Type of Condition v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Phenotypic-Feature"> </a>  
+                  <a href="CodeSystem-condition-type.html#condition-type-Phenotypic-Feature">Phenotypic-Feature</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
+                <td>Phenotypic Feature</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Disease"> </a>  
+                  <a href="CodeSystem-condition-type.html#condition-type-Disease">Disease</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
+                <td>Disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Comorbidity"> </a>  
+                  <a href="CodeSystem-condition-type.html#condition-type-Comorbidity">Comorbidity</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
+                <td>Comorbidity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Histology"> </a>  
+                  <a href="CodeSystem-condition-type.html#condition-type-Histology">Histology</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
+                <td>Histology</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Clinical-Finding"> </a>  
+                  <a href="CodeSystem-condition-type.html#condition-type-Clinical-Finding">Clinical-Finding</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
+                <td>Clinical Finding</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-EHR-Condition-Code"> </a>  
+                  <a href="CodeSystem-condition-type.html#condition-type-EHR-Condition-Code">EHR-Condition-Code</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
+                <td>EHR Condition Code</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs"/>
+        <version value="0.1.0"/>
+        <name value="ConditionTypeVS"/>
+        <title value="Type of Condition"/>
+        <status value="draft"/>
+        <date value="2024-09-10T18:56:29+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:f7bba139-9903-488f-8eb3-79c95d47563a"/>
+          <timestamp value="2024-09-10T18:57:17+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
+            <code value="Phenotypic-Feature"/>
+            <display value="Phenotypic Feature"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
+            <code value="Disease"/>
+            <display value="Disease"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
+            <code value="Comorbidity"/>
+            <display value="Comorbidity"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
+            <code value="Histology"/>
+            <display value="Histology"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
+            <code value="Clinical-Finding"/>
+            <display value="Clinical Finding"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
+            <code value="EHR-Condition-Code"/>
+            <display value="EHR Condition Code"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -171,10 +408,10 @@
         <title value="Consanguinity Value Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-08-22T16:27:20+00:00"/>
+        <date value="2024-09-10T18:56:29+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b5dc770b-a007-41b5-9017-971210945f61"/>
-          <timestamp value="2024-08-22T16:28:02+00:00"/>
+          <identifier value="urn:uuid:e6a0d561-64f0-432f-8ff9-24df29e68009"/>
+          <timestamp value="2024-09-10T18:57:17+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -310,10 +547,10 @@
         <name value="NcpiFamilyTypesVS"/>
         <title value="Family Types Codes"/>
         <status value="active"/>
-        <date value="2024-08-22T16:27:20+00:00"/>
+        <date value="2024-09-10T18:56:29+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e1cdd69c-3d1e-451f-8bbc-a77fe5491169"/>
-          <timestamp value="2024-08-22T16:28:03+00:00"/>
+          <identifier value="urn:uuid:99aa39e1-87f5-490a-a70e-3f3f744fbb24"/>
+          <timestamp value="2024-09-10T18:57:18+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -485,10 +722,10 @@
         <title value="Research Data Access Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-08-22T16:27:20+00:00"/>
+        <date value="2024-09-10T18:56:29+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b3cb1b43-0c67-4d08-baed-d6c02fb6a211"/>
-          <timestamp value="2024-08-22T16:28:03+00:00"/>
+          <identifier value="urn:uuid:ef22b7cc-ee6d-406e-ad92-3c1a520820af"/>
+          <timestamp value="2024-09-10T18:57:18+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -636,10 +873,10 @@
         <title value="Research Data Access Type Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-08-22T16:27:20+00:00"/>
+        <date value="2024-09-10T18:56:29+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bb457cac-8e70-4079-8056-f8e6d7cb20bb"/>
-          <timestamp value="2024-08-22T16:28:03+00:00"/>
+          <identifier value="urn:uuid:bad6c851-2180-4d99-9cd9-8c3307f03a6f"/>
+          <timestamp value="2024-09-10T18:57:18+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -906,10 +1143,10 @@
         <name value="ResearchDataDateOfBirthMethodVS"/>
         <title value="Enumerations for how DOB was constructed"/>
         <status value="draft"/>
-        <date value="2024-08-22T16:27:20+00:00"/>
+        <date value="2024-09-10T18:56:29+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:56acc252-3577-411d-99f6-2b92dd241c9e"/>
-          <timestamp value="2024-08-22T16:28:03+00:00"/>
+          <identifier value="urn:uuid:60e6b462-dc97-43c0-9d50-5ff9834f4842"/>
+          <timestamp value="2024-09-10T18:57:18+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -1072,10 +1309,10 @@
         <title value="Study Name Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-08-22T16:27:20+00:00"/>
+        <date value="2024-09-10T18:56:29+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7b334d5a-a8ae-469d-be1a-e30d44218331"/>
-          <timestamp value="2024-08-22T16:28:03+00:00"/>
+          <identifier value="urn:uuid:2ec0ed9c-e106-4537-aed4-f64699f824fd"/>
+          <timestamp value="2024-09-10T18:57:18+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -1182,10 +1419,10 @@
         <title value="Study Personnel Role"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-08-22T16:27:20+00:00"/>
+        <date value="2024-09-10T18:56:29+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3a2d2c33-b9fa-4295-8726-a8af9bdaffac"/>
-          <timestamp value="2024-08-22T16:28:03+00:00"/>
+          <identifier value="urn:uuid:88aaf017-6914-40ca-8c5b-000bdc88db21"/>
+          <timestamp value="2024-09-10T18:57:18+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>

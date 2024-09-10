@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "4d4e3a32-6787-48eb-a45b-d3be353f24d4",
+  "id" : "f0cff114-f96b-41be-9374-c8a37168a720",
   "meta" : {
-    "lastUpdated" : "2024-08-22T16:27:20.355+00:00"
+    "lastUpdated" : "2024-09-10T18:56:29.628+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,10 +19,10 @@
       "title" : "Collection Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-08-22T16:27:20+00:00",
+      "date" : "2024-09-10T18:56:29+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:66e82560-2e7b-462a-94e6-efcaf59232e4",
-        "timestamp" : "2024-08-22T16:28:02+00:00",
+        "identifier" : "urn:uuid:4ad34bb0-d0c8-4c90-b0f2-d890266eb303",
+        "timestamp" : "2024-09-10T18:57:16+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -60,6 +60,127 @@
     }
   },
   {
+    "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-assertion-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-condition-assertion.html\">codesystem Assertion of Condition Codes v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Present\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-assertion.html#condition-assertion-Present\">Present</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td><td>Present</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Absent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-assertion.html#condition-assertion-Absent\">Absent</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td><td>Absent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Unknown\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-assertion.html#condition-assertion-Unknown\">Unknown</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-assertion-vs",
+      "version" : "0.1.0",
+      "name" : "ConditionAssertionVS",
+      "title" : "Assertion of Condition Codes",
+      "status" : "draft",
+      "date" : "2024-09-10T18:56:29+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:e8622cdd-5b77-4062-ada5-bf7659271bc3",
+        "timestamp" : "2024-09-10T18:57:16+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion",
+          "code" : "Present",
+          "display" : "Present"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion",
+          "code" : "Absent",
+          "display" : "Absent"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion",
+          "code" : "Unknown",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-condition-type.html\">codesystem Type of Condition v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Phenotypic-Feature\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Phenotypic-Feature\">Phenotypic-Feature</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>Phenotypic Feature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Disease\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Disease\">Disease</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>Disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Comorbidity\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Comorbidity\">Comorbidity</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>Comorbidity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Histology\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Histology\">Histology</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>Histology</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Clinical-Finding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Clinical-Finding\">Clinical-Finding</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>Clinical Finding</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-EHR-Condition-Code\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-EHR-Condition-Code\">EHR-Condition-Code</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>EHR Condition Code</td></tr></table></div>"
+      },
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs",
+      "version" : "0.1.0",
+      "name" : "ConditionTypeVS",
+      "title" : "Type of Condition",
+      "status" : "draft",
+      "date" : "2024-09-10T18:56:29+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:f7bba139-9903-488f-8eb3-79c95d47563a",
+        "timestamp" : "2024-09-10T18:57:17+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+          "code" : "Phenotypic-Feature",
+          "display" : "Phenotypic Feature"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+          "code" : "Disease",
+          "display" : "Disease"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+          "code" : "Comorbidity",
+          "display" : "Comorbidity"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+          "code" : "Histology",
+          "display" : "Histology"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+          "code" : "Clinical-Finding",
+          "display" : "Clinical Finding"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+          "code" : "EHR-Condition-Code",
+          "display" : "EHR Condition Code"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/consanguinity-assertion-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -73,10 +194,10 @@
       "title" : "Consanguinity Value Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-08-22T16:27:20+00:00",
+      "date" : "2024-09-10T18:56:29+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:b5dc770b-a007-41b5-9017-971210945f61",
-        "timestamp" : "2024-08-22T16:28:02+00:00",
+        "identifier" : "urn:uuid:e6a0d561-64f0-432f-8ff9-24df29e68009",
+        "timestamp" : "2024-09-10T18:57:17+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -139,10 +260,10 @@
       "name" : "NcpiFamilyTypesVS",
       "title" : "Family Types Codes",
       "status" : "active",
-      "date" : "2024-08-22T16:27:20+00:00",
+      "date" : "2024-09-10T18:56:29+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e1cdd69c-3d1e-451f-8bbc-a77fe5491169",
-        "timestamp" : "2024-08-22T16:28:03+00:00",
+        "identifier" : "urn:uuid:99aa39e1-87f5-490a-a70e-3f3f744fbb24",
+        "timestamp" : "2024-09-10T18:57:18+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -212,10 +333,10 @@
       "title" : "Research Data Access Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-08-22T16:27:20+00:00",
+      "date" : "2024-09-10T18:56:29+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:b3cb1b43-0c67-4d08-baed-d6c02fb6a211",
-        "timestamp" : "2024-08-22T16:28:03+00:00",
+        "identifier" : "urn:uuid:ef22b7cc-ee6d-406e-ad92-3c1a520820af",
+        "timestamp" : "2024-09-10T18:57:18+00:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{
@@ -301,10 +422,10 @@
       "title" : "Research Data Access Type Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-08-22T16:27:20+00:00",
+      "date" : "2024-09-10T18:56:29+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:bb457cac-8e70-4079-8056-f8e6d7cb20bb",
-        "timestamp" : "2024-08-22T16:28:03+00:00",
+        "identifier" : "urn:uuid:bad6c851-2180-4d99-9cd9-8c3307f03a6f",
+        "timestamp" : "2024-09-10T18:57:18+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -364,10 +485,10 @@
       "name" : "ResearchDataDateOfBirthMethodVS",
       "title" : "Enumerations for how DOB was constructed",
       "status" : "draft",
-      "date" : "2024-08-22T16:27:20+00:00",
+      "date" : "2024-09-10T18:56:29+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:56acc252-3577-411d-99f6-2b92dd241c9e",
-        "timestamp" : "2024-08-22T16:28:03+00:00",
+        "identifier" : "urn:uuid:60e6b462-dc97-43c0-9d50-5ff9834f4842",
+        "timestamp" : "2024-09-10T18:57:18+00:00",
         "total" : 13,
         "offset" : 0,
         "parameter" : [{
@@ -468,10 +589,10 @@
       "title" : "Study Name Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-08-22T16:27:20+00:00",
+      "date" : "2024-09-10T18:56:29+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:7b334d5a-a8ae-469d-be1a-e30d44218331",
-        "timestamp" : "2024-08-22T16:28:03+00:00",
+        "identifier" : "urn:uuid:2ec0ed9c-e106-4537-aed4-f64699f824fd",
+        "timestamp" : "2024-09-10T18:57:18+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -532,10 +653,10 @@
       "title" : "Study Personnel Role",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-08-22T16:27:20+00:00",
+      "date" : "2024-09-10T18:56:29+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:3a2d2c33-b9fa-4295-8726-a8af9bdaffac",
-        "timestamp" : "2024-08-22T16:28:03+00:00",
+        "identifier" : "urn:uuid:88aaf017-6914-40ca-8c5b-000bdc88db21",
+        "timestamp" : "2024-09-10T18:57:18+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{

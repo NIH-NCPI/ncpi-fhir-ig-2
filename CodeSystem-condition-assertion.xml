@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="condition-assertion"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem condition-assertion</b></p><a name="condition-assertion"> </a><a name="hccondition-assertion"> </a><a name="condition-assertion-en-US"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Present<a name="condition-assertion-Present"> </a></td></tr><tr><td style="white-space:nowrap">Absent<a name="condition-assertion-Absent"> </a></td></tr><tr><td style="white-space:nowrap">Unknown<a name="condition-assertion-Unknown"> </a></td></tr></table></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion"/>
+  <version value="0.1.0"/>
+  <name value="ConditionAssertion"/>
+  <title value="Assertion of Condition Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-09-10T18:56:29+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Code System for assertion of condition presence"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Present"/>
+    <display value="Present"/>
+  </concept>
+  <concept>
+    <code value="Absent"/>
+    <display value="Absent"/>
+  </concept>
+  <concept>
+    <code value="Unknown"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

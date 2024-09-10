@@ -216,6 +216,18 @@
       "http://hl7.org/fhir/R4B/valueset-specimen-status.html" : "SpecimenStatus"
     },
     {
+      "url" : "http://human-phenotype-ontology.org",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "HPO",
+      "title" : "Human Phenotype Ontology",
+      "description" : "\"The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Each term in the HPO describes a phenotypic abnormality, such as Atrial septal defect. The HPO is currently being developed using the medical literature, Orphanet, DECIPHER, and OMIM. HPO currently contains over 13,000 terms and over 156,000 annotations to hereditary diseases. The HPO project and others have developed software for phenotype-driven differential diagnostics, genomic diagnostics, and translational research. The HPO is a flagship product of the Monarch Initiative, an NIH-supported international consortium dedicated to semantic integration of biomedical and model organism data with the ultimate goal of improving biomedical research. The HPO, as a part of the Monarch Initiative, is a central component of one of the 13 driver projects in the Global Alliance for Genomics and Health (GA4GH) strategic roadmap.\"\r\n\r\nPlease see https://hpo.jax.org/app/download/ontology.\r\n\r\nReleases, produced approximately every 2 months, can be found [here](https://github.com/obophenotype/human-phenotype-ontology/releases).",
+      "oids" : ["2.16.840.1.113883.6.339"],
+      "uses" : {
+      },
+      "ValueSet-condition-code-vs.html" : "Conditon Codes"
+    },
+    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -225,10 +237,22 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4B/valueset-consent-category.html" : "Consent Category Codes",
-      "http://hl7.org/fhir/R4B/valueset-observation-codes.html" : "LOINC Codes",
       "http://hl7.org/fhir/R4B/valueset-doc-classcodes.html" : "Document Class Value Set",
-      "http://hl7.org/fhir/R4B/valueset-consent-content-code.html" : "Consent Content Codes"
+      "http://hl7.org/fhir/R4B/valueset-consent-category.html" : "Consent Category Codes",
+      "http://hl7.org/fhir/R4B/valueset-consent-content-code.html" : "Consent Content Codes",
+      "http://hl7.org/fhir/R4B/valueset-observation-codes.html" : "LOINC Codes"
+    },
+    {
+      "url" : "http://purl.obolibrary.org/obo/mondo.owl",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MONDO",
+      "title" : "Mondo Disease Ontology",
+      "description" : "The Mondo Disease Ontology is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology that contains cross-species disease terminology.\r\n\r\nNumerous sources for disease definitions and data models currently exist, which include HPO, OMIM, SNOMED CT, ICD, PhenoDB, MedDRA, MedGen, ORDO, DO, GARD, etc; however, these sources partially overlap and sometimes conflict, making it difficult to know definitively how they relate to each other. This has resulted in a proliferation of mappings between disease entries in different resources; however mappings are problematic: collectively, they are expensive to create and maintain. Most importantly, the mappings lack completeness, accuracy, and precision; as a result, mapping calls are often inconsistent between resources. The UMLS provides intermediate concepts through which other resources can be mapped, but these mappings suffer from the same challenges: they are not guaranteed to be one-to-one, especially in areas with evolving disease concepts such as rare disease.\r\n\r\nIn order to address the lack of a unified disease terminology that provides precise equivalences between disease concepts, we created Mondo, which provides a logic-based structure for unifying multiple disease resources.\r\n\r\nMondo’s development is coordinated with the Human Phenotype Ontology (HPO), which describes the individual phenotypic features that constitute a disease. Like the HPO, Mondo provides a hierarchical structure which can be used for classification or “rolling up” diseases to higher level groupings. It provides mappings to other disease resources, but in contrast to other mappings between ontologies, we precisely annotate each mapping using strict semantics, so that we know when two disease names or identifiers are equivalent or one-to-one, in contrast to simply being closely related.\r\n\r\nFor more information, see [https://mondo.monarchinitiative.org/](https://mondo.monarchinitiative.org/)",
+      "oids" : ["2.16.840.1.113883.3.9216"],
+      "uses" : {
+      },
+      "ValueSet-condition-code-vs.html" : "Conditon Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -240,15 +264,15 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
       "http://hl7.org/fhir/R4B/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4B/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4B/valueset-specimen-container-type.html" : "SpecimenContainer",
       "http://hl7.org/fhir/R4B/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4B/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4B/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
       "ValueSet-consanguinity-assertion-vs.html" : "Consanguinity Value Codes",
       "http://hl7.org/fhir/R4B/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-      "http://hl7.org/fhir/R4B/valueset-specimen-container-type.html" : "SpecimenContainer"
+      "http://hl7.org/fhir/R4B/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4B/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+      "http://hl7.org/fhir/R4B/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/consentaction",
@@ -451,8 +475,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1492"],
       "uses" : {
       },
-      "ValueSet-research-data-date-of-birth-method-vs.html" : "Enumerations for how DOB was constructed",
-      "http://hl7.org/fhir/R4B/valueset-title-type.html" : "TitleType"
+      "http://hl7.org/fhir/R4B/valueset-title-type.html" : "TitleType",
+      "ValueSet-research-data-date-of-birth-method-vs.html" : "Enumerations for how DOB was constructed"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -620,8 +644,8 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4B/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://terminology.hl7.org/6.0.2/ValueSet-v3-FamilyMember.html" : "FamilyMember"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-FamilyMember.html" : "FamilyMember",
+      "http://hl7.org/fhir/R4B/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
@@ -633,6 +657,28 @@
       "uses" : {
       },
       "ValueSet-collection-type-vs.html" : "Collection Type"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConditionAssertion",
+      "title" : "Assertion of Condition Codes",
+      "description" : "Code System for assertion of condition presence",
+      "uses" : {
+      },
+      "ValueSet-condition-assertion-vs.html" : "Assertion of Condition Codes"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConditionType",
+      "title" : "Type of Condition",
+      "description" : "Code System for type of condition",
+      "uses" : {
+      },
+      "ValueSet-condition-type-vs.html" : "Type of Condition"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",

@@ -14,6 +14,27 @@
     "name" : "CollectionType"
   },
   {
+    "id" : "component-elements",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/component-elements",
+    "version" : "0.1.0",
+    "name" : "ComponentElements"
+  },
+  {
+    "id" : "condition-assertion",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion",
+    "version" : "0.1.0",
+    "name" : "ConditionAssertion"
+  },
+  {
+    "id" : "condition-type",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+    "version" : "0.1.0",
+    "name" : "ConditionType"
+  },
+  {
     "id" : "example-hash-type-code-system",
     "type" : "CodeSystem",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system",
@@ -96,6 +117,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelBiospecimenCollection",
     "version" : "0.1.0",
     "name" : "CdmBiospecimenCollection"
+  },
+  {
+    "id" : "SharedDataModelCondition",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelCondition",
+    "version" : "0.1.0",
+    "name" : "CdmCondition"
   },
   {
     "id" : "SharedDataModelFamilyRelationship",
@@ -196,6 +224,13 @@
     "name" : "AccessType"
   },
   {
+    "id" : "age-at-assertion",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-assertion",
+    "version" : "0.1.0",
+    "name" : "AgeAtAssertion"
+  },
+  {
     "id" : "aliquot-availability",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability",
@@ -222,6 +257,27 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial",
     "version" : "0.1.0",
     "name" : "BiospecimenSpatial"
+  },
+  {
+    "id" : "condition-asserter",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-asserter",
+    "version" : "0.1.0",
+    "name" : "ConditionAsserter"
+  },
+  {
+    "id" : "condition-laterality",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-laterality",
+    "version" : "0.1.0",
+    "name" : "ConditionLaterality"
+  },
+  {
+    "id" : "condition-location",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-location",
+    "version" : "0.1.0",
+    "name" : "ConditionLocation"
   },
   {
     "id" : "consanguinity",
@@ -320,6 +376,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample",
     "version" : "0.1.0",
     "name" : "NCPICollectedSample"
+  },
+  {
+    "id" : "ncpi-condition",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition",
+    "version" : "0.1.0",
+    "name" : "NcpiCondition"
   },
   {
     "id" : "ncpi-family-relationship",
@@ -502,6 +565,41 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
     "version" : "0.1.0",
     "name" : "CollectionTypeVS"
+  },
+  {
+    "id" : "condition-assertion-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-assertion-vs",
+    "version" : "0.1.0",
+    "name" : "ConditionAssertionVS"
+  },
+  {
+    "id" : "condition-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs",
+    "version" : "0.1.0",
+    "name" : "ConditionCodeVS"
+  },
+  {
+    "id" : "condition-laterality-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-laterality-vs",
+    "version" : "0.1.0",
+    "name" : "LateralityQualifierVS"
+  },
+  {
+    "id" : "condition-location-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-location-vs",
+    "version" : "0.1.0",
+    "name" : "BodyLocationQualifierVS"
+  },
+  {
+    "id" : "condition-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs",
+    "version" : "0.1.0",
+    "name" : "ConditionTypeVS"
   },
   {
     "id" : "consanguinity-assertion-vs",

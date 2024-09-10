@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-person.html" : "NCPI Person",
-      "StructureDefinition-ncpi-participant.html" : "NCPI Participant"
+      "StructureDefinition-ncpi-participant.html" : "NCPI Participant",
+      "StructureDefinition-ncpi-person.html" : "NCPI Person"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -27,10 +27,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
       "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -236,7 +237,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/doc-classcodes",
@@ -306,9 +308,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.284"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-study-family.html" : "NCPI Study Family",
+      "StructureDefinition-ncpi-family-role.html" : "Family Role",
       "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
-      "StructureDefinition-ncpi-family-role.html" : "Family Role"
+      "StructureDefinition-ncpi-study-family.html" : "NCPI Study Family"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identity-assuranceLevel",
@@ -355,22 +357,23 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
-      "StructureDefinition-ncpi-study-family.html" : "NCPI Study Family",
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
       "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-ncpi-Study-Participant.html" : "NCPI Study Participant",
-      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
-      "StructureDefinition-ncpi-family-role.html" : "Family Role",
       "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
-      "StructureDefinition-ncpi-person.html" : "NCPI Person",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
+      "StructureDefinition-ncpi-study-family.html" : "NCPI Study Family",
       "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
       "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-family-role.html" : "Family Role",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-Study-Participant.html" : "NCPI Study Participant",
       "StructureDefinition-ncpi-participant.html" : "NCPI Participant",
-      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
+      "StructureDefinition-ncpi-person.html" : "NCPI Person",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -398,8 +401,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.322"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-example-codes",
@@ -429,8 +432,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.320"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-mode",
@@ -444,8 +447,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.318"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-order",
@@ -459,8 +462,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.324"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-status",
@@ -474,8 +477,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.326"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -520,7 +523,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -534,7 +538,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -550,7 +555,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -564,7 +570,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -578,7 +585,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -609,7 +617,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -625,7 +634,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-objective-type",
@@ -776,8 +786,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.468"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
     },
     {
@@ -792,8 +802,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.470"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
     },
     {
@@ -808,8 +818,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.469"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
     },
     {
@@ -824,8 +834,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.471"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
     },
     {
@@ -854,8 +864,8 @@
       "sources" : ["2.16.840.1.113883.21.245"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
     },
     {
@@ -870,8 +880,8 @@
       "sources" : ["2.16.840.1.113883.21.327"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
     },
     {
@@ -886,8 +896,8 @@
       "sources" : ["2.16.840.1.113883.21.333"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
     },
     {
@@ -902,8 +912,8 @@
       "sources" : ["2.16.840.1.113883.21.440"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
     },
     {
@@ -930,8 +940,8 @@
       "sources" : ["2.16.840.1.113883.1.11.19579"],
       "uses" : {
       },
-      "StructureDefinition-family-role.html" : "Study Family Focus",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-family-role.html" : "Study Family Focus"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
@@ -945,8 +955,73 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection"
+      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-assertion-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConditionAssertionVS",
+      "title" : "Assertion of Condition Codes",
+      "description" : null,
+      "systems" : [
+        "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConditionCodeVS",
+      "title" : "Conditon Codes",
+      "description" : "Includes all codes from **HPO** and **MONDO**",
+      "systems" : [
+        "http://human-phenotype-ontology.org",
+        "http://purl.obolibrary.org/obo/mondo.owl"
+      ]
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-laterality-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LateralityQualifierVS",
+      "title" : "Laterality Information",
+      "description" : "Laterality Information",
+      "systems" : [
+        "http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-condition-laterality.html" : "Laterality Information"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-location-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BodyLocationQualifierVS",
+      "title" : "Location Information",
+      "description" : "Location Information",
+      "systems" : [
+        "http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-condition-location.html" : "Location Information"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConditionTypeVS",
+      "title" : "Type of Condition",
+      "description" : null,
+      "systems" : [
+        "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"
+      ]
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/consanguinity-assertion-vs",

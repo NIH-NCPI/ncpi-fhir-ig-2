@@ -1,12 +1,15 @@
 NCPIFHIRIGv2 : Validation Results
 =========================================
 
-err = 12, warn = 54, info = 36
+err = 14, warn = 97, info = 23
 $--
 Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
- Build Errors : 3 / 4 / 0
+ Build Errors : 3 / 6 / 0
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-biospecimen-availability : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-collection-type : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-component-elements : 0 / 2 / 2
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-condition-assertion : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-condition-type : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-example-hash-type-code-system : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-ncpi : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-ncpi-family-types : 0 / 1 / 2
@@ -27,7 +30,7 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/DocumentReference-PT-006SP660 : 4 / 3 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cbtn-family-role-mother : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cbtn-family-role-son : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cbtn-study-family : 0 / 1 / 2
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cbtn-study-family : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-kf-research-study-cbtn-participants : 0 / 0 / 1
@@ -35,10 +38,11 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-cmg : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-kfx01 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-pbta : 0 / 0 / 2
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-PT-006SP660-condition : 0 / 2 / 3
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-cbtn-family-relationship-mother : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-cbtn-family-relationship-son : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Organization-kf-research-study-organization-chop : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Patient-6812345 : 0 / 0 / 3
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Patient-6812345 : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Patient-PT-005B7CZ4 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Patient-PT-KZG2CZ95 : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Person-cbtn-example-person : 0 / 0 / 1
@@ -49,10 +53,10 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/PractitionerRole-kf-research-study-personnel-role-pi-x01 : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-SD-BHJXBDQK : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-SD-PREASA7S : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-cmg-research-study-bhcmg : 1 / 3 / 7
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-cmg-research-study-bhcmg : 1 / 9 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-cmg-research-study-subject-cmg-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-cmg-research-study-subject-cmg-irb-hmb-npu : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-kf-research-study-cbtn : 3 / 4 / 6
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-kf-research-study-cbtn : 3 / 9 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-kf-research-study-subject-gru-dac : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-kf-research-study-subject-gru-dbgap : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-kf-research-study-subject-gsr-allowed : 0 / 0 / 1
@@ -61,9 +65,10 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchSubject-cbtn-example-participantstudy : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchSubject-emerge-example-participantstudy : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchSubject-pcgc-example-participantstudy : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Specimen-SA-000 : 3 / 0 / 2
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Specimen-SA-000 : 3 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelAliquot : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelBiospecimenCollection : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelCondition : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelFamilyRelationship : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelFamilyRole : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelFile : 0 / 0 / 1
@@ -78,10 +83,14 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-access-policy : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-access-policy-description : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-access-type : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-age-at-assertion : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-aliquot-availability : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-aliquot-concentration : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-biospecimen-laterality : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-biospecimen-spatial : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-condition-asserter : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-condition-laterality : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-condition-location : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-consanguinity : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-content-version : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-description : 0 / 2 / 1
@@ -96,6 +105,7 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-location-access : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-Study-Participant : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-collected-sample : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-condition : 0 / 8 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-family-relationship : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-family-role : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-file : 0 / 0 / 1
@@ -114,7 +124,7 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-acknowledgement : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-associated-party : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-design : 0 / 1 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-group : 0 / 0 / 3
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-group : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-result : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-subject : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-subject-consent : 0 / 1 / 1
@@ -122,6 +132,11 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-study-family : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-study-family-focus : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-collection-type-vs : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-condition-assertion-vs : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-condition-code-vs : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-condition-laterality-vs : 1 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-condition-location-vs : 1 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-condition-type-vs : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-consanguinity-assertion-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-edam-ontology-terms : 1 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-mesh-terms : 0 / 1 / 1
@@ -133,7 +148,9 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-study-personnel-role-vs : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/DocumentReference-PT-006SP660.html#/html/body/div/div/div/div/div/div/p/a at Line 313, column 409: The link 'GF_6BAD9S7D' for "GF_6BAD9S7D" cannot be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/condition-assertion-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/condition-type-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/DocumentReference-PT-006SP660.html#/html/body/div/div/div/div/div/div/p/a at Line 313, column 941: The link 'GF_6BAD9S7D' for "GF_6BAD9S7D" cannot be resolved
 ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/Specimen-SA-000.html#/html/body/div/div/div/div/div/div/p/a at Line 313, column 318: The link 'PT_006SP660' for "PT_006SP660" cannot be resolved
 ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/StructureDefinition-ncpi-sample.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 439, column 12: The link 'StructureDefinition-SharedDataModelBiospecimenCollection-definitions.html#diff_SharedDataModelBiospecimenCollection.ageAtCondition' for "ageAtCollection" cannot be resolved (valid targets: 41 targets)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -145,6 +162,12 @@ INFORMATION: CodeSystem/biospecimen-availability: CodeSystem: CodeSystems SHOULD
 WARNING: CodeSystem/biospecimen-availability: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/biospecimen-availability: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-collection-type.json ==
+== fsh-generated/resources/CodeSystem-component-elements.json ==
+INFORMATION: CodeSystem/component-elements: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/component-elements: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/component-elements: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-condition-assertion.json ==
+== fsh-generated/resources/CodeSystem-condition-type.json ==
 == fsh-generated/resources/CodeSystem-example-hash-type-code-system.json ==
 INFORMATION: CodeSystem/example-hash-type-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/example-hash-type-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -190,7 +213,7 @@ ERROR: DocumentReference.text.div: Hyperlink 'GF_6BAD9S7D' at 'div/p/a' for 'GF_
 == fsh-generated/resources/Group-cbtn-family-role-son.json ==
 == fsh-generated/resources/Group-cbtn-study-family.json ==
 WARNING: Group/cbtn-study-family: Group.extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types' could not be found, so the code cannot be validated
-INFORMATION: Group/cbtn-study-family: Group.extension[1].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://purl.obolibrary.org/obo/mondo.owl' could not be found, so the code cannot be validated
+WARNING: Group/cbtn-study-family: Group.extension[1].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://purl.obolibrary.org/obo/mondo.owl' could not be found, so the code cannot be validated
 == fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-hmb-npu.json ==
 == fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu.json ==
 == fsh-generated/resources/Group-kf-research-study-cbtn-participants.json ==
@@ -200,6 +223,11 @@ INFORMATION: List/ncpi-research-collection-cmg: List.extension[1].extension[0].v
 == fsh-generated/resources/List-ncpi-research-collection-kfx01.json ==
 == fsh-generated/resources/List-ncpi-research-collection-pbta.json ==
 INFORMATION: List/ncpi-research-collection-pbta: List.extension[1].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/title-type|4.3.0
+== fsh-generated/resources/Observation-PT-006SP660-condition.json ==
+WARNING: Observation/PT-006SP660-condition: Observation.code.coding[0].system: A definition for CodeSystem 'http://purl.obolibrary.org/obo/mondo.owl' could not be found, so the code cannot be validated
+INFORMATION: Observation/PT-006SP660-condition: Observation.effective.ofType(dateTime).extension[0]: The extension http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime|5.1.0 is deprecated
+INFORMATION: Observation/PT-006SP660-condition: Observation.value.ofType(CodeableConcept): Reference to draft CodeSystem https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion|0.1.0
+WARNING: Observation/PT-006SP660-condition: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-cbtn-family-relationship-mother.json ==
 WARNING: Observation/cbtn-family-relationship-mother: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/cbtn-family-relationship-mother: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
@@ -209,7 +237,6 @@ WARNING: Observation/cbtn-family-relationship-son: Observation: Best Practice Re
 == fsh-generated/resources/Organization-kf-research-study-organization-chop.json ==
 == fsh-generated/resources/Patient-6812345.json ==
 INFORMATION: Patient/6812345: Patient.extension[3].value.ofType(Coding): Reference to draft CodeSystem https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method|0.1.0
-INFORMATION: Patient/6812345: Patient.birthDate.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime|5.1.0 is deprecated
 == fsh-generated/resources/Patient-PT-005B7CZ4.json ==
 == fsh-generated/resources/Patient-PT-KZG2CZ95.json ==
 INFORMATION: Patient/PT-KZG2CZ95: Patient.extension[3].value.ofType(Coding): Reference to draft CodeSystem https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method|0.1.0
@@ -225,31 +252,31 @@ WARNING: PractitionerRole/kf-research-study-personnel-role-pi-x01: PractitionerR
 == fsh-generated/resources/ResearchStudy-SD-BHJXBDQK.json ==
 == fsh-generated/resources/ResearchStudy-SD-PREASA7S.json ==
 == fsh-generated/resources/ResearchStudy-cmg-research-study-bhcmg.json ==
-INFORMATION: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.extension[0].extension[1].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/research-study-party-role' could not be found, so the code cannot be validated
+WARNING: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.extension[0].extension[1].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://hl7.org/fhir/research-study-party-role' could not be found, so the code cannot be validated
 ERROR: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.extension[0].extension[1].value.ofType(CodeableConcept).coding[0].system: URL value 'http://hl7.org/fhir/research-study-party-role' does not resolve
 WARNING: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.extension[0].extension[1].value.ofType(CodeableConcept): ValueSet 'https://hl7.org/fhir/valueset-research-study-party-role.html' not found
 WARNING: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.extension[0].extension[2].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.extension[0].extension[2].value.ofType(CodeableConcept): ValueSet 'https://hl7.org/fhir/valueset-research-study-party-organization-type.html' not found
-INFORMATION: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
-INFORMATION: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[1]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
-INFORMATION: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[2]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
-INFORMATION: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[3]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
-INFORMATION: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[4]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
+WARNING: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[0].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
+WARNING: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[1]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
+WARNING: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[2]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
+WARNING: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[3]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
+WARNING: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[4]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
 == fsh-generated/resources/ResearchStudy-cmg-research-study-subject-cmg-hmb-npu.json ==
 == fsh-generated/resources/ResearchStudy-cmg-research-study-subject-cmg-irb-hmb-npu.json ==
 == fsh-generated/resources/ResearchStudy-kf-research-study-cbtn.json ==
 WARNING: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[0].value.ofType(markdown): The markdown contains content that appears to be an embedded HTML tag starting at 'Pl'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-INFORMATION: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[1].extension[1].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://hl7.org/fhir/research-study-party-role' could not be found, so the code cannot be validated
+WARNING: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[1].extension[1].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://hl7.org/fhir/research-study-party-role' could not be found, so the code cannot be validated
 ERROR: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[1].extension[1].value.ofType(CodeableConcept).coding[0].system: URL value 'http://hl7.org/fhir/research-study-party-role' does not resolve
 WARNING: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[1].extension[1].value.ofType(CodeableConcept): ValueSet 'https://hl7.org/fhir/valueset-research-study-party-role.html' not found
-INFORMATION: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[2].extension[1].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://hl7.org/fhir/research-study-party-role' could not be found, so the code cannot be validated
+WARNING: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[2].extension[1].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://hl7.org/fhir/research-study-party-role' could not be found, so the code cannot be validated
 ERROR: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[2].extension[1].value.ofType(CodeableConcept).coding[0].system: URL value 'http://hl7.org/fhir/research-study-party-role' does not resolve
 WARNING: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[2].extension[1].value.ofType(CodeableConcept): ValueSet 'https://hl7.org/fhir/valueset-research-study-party-role.html' not found
-INFORMATION: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[3].extension[1].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://hl7.org/fhir/research-study-party-role' could not be found, so the code cannot be validated
+WARNING: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[3].extension[1].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://hl7.org/fhir/research-study-party-role' could not be found, so the code cannot be validated
 ERROR: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[3].extension[1].value.ofType(CodeableConcept).coding[0].system: URL value 'http://hl7.org/fhir/research-study-party-role' does not resolve
 WARNING: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[3].extension[1].value.ofType(CodeableConcept): ValueSet 'https://hl7.org/fhir/valueset-research-study-party-role.html' not found
-INFORMATION: ResearchStudy/kf-research-study-cbtn: ResearchStudy.focus[0].coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
-INFORMATION: ResearchStudy/kf-research-study-cbtn: ResearchStudy.focus[0].coding[1]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
+WARNING: ResearchStudy/kf-research-study-cbtn: ResearchStudy.focus[0].coding[0]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
+WARNING: ResearchStudy/kf-research-study-cbtn: ResearchStudy.focus[0].coding[1]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
 == fsh-generated/resources/ResearchStudy-kf-research-study-subject-gru-dac.json ==
 == fsh-generated/resources/ResearchStudy-kf-research-study-subject-gru-dbgap.json ==
 == fsh-generated/resources/ResearchStudy-kf-research-study-subject-gsr-allowed.json ==
@@ -261,10 +288,11 @@ INFORMATION: ResearchStudy/kf-research-study-cbtn: ResearchStudy.focus[0].coding
 == fsh-generated/resources/Specimen-SA-000.json ==
 ERROR: Specimen/SA-000: Specimen.subject: Unable to resolve resource with reference 'PT_006SP660'
 ERROR: Specimen/SA-000: Specimen.collection.collected.ofType(dateTime).extension[0].extension[0].value.ofType(Reference): Unable to resolve resource with reference 'PT_006SP660'
-INFORMATION: Specimen/SA-000: Specimen.collection.method.coding[0].system: A definition for CodeSystem 'https://loinc.org' could not be found, so the code cannot be validated
+WARNING: Specimen/SA-000: Specimen.collection.method.coding[0].system: A definition for CodeSystem 'https://loinc.org' could not be found, so the code cannot be validated
 ERROR: Specimen.text.div: Hyperlink 'PT_006SP660' at 'div/p/a' for 'PT_006SP660' does not resolve
 == fsh-generated/resources/StructureDefinition-SharedDataModelAliquot.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelBiospecimenCollection.json ==
+== fsh-generated/resources/StructureDefinition-SharedDataModelCondition.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelFamilyRelationship.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelFamilyRole.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelFile.json ==
@@ -282,6 +310,8 @@ WARNING: StructureDefinition/SharedDataModelStudyFamily: StructureDefinition.dif
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-access-policy-description.json ==
 == fsh-generated/resources/StructureDefinition-access-type.json ==
+== fsh-generated/resources/StructureDefinition-age-at-assertion.json ==
+WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-assertion'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-aliquot-availability.json ==
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-aliquot-concentration.json ==
@@ -290,6 +320,12 @@ WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-i
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-biospecimen-spatial.json ==
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-condition-asserter.json ==
+WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-asserter'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-condition-laterality.json ==
+WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-laterality'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-condition-location.json ==
+WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-location'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-consanguinity.json ==
 WARNING: StructureDefinition/consanguinity: StructureDefinition.context[0]: Review the extension type for consanguinity: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/consanguinity'): The Implementation Guide contains no examples for this extension
@@ -310,6 +346,15 @@ WARNING: StructureDefinition/family-type: StructureDefinition.context[0]: Review
 == fsh-generated/resources/StructureDefinition-location-access.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-Study-Participant.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-collected-sample.json ==
+== fsh-generated/resources/StructureDefinition-ncpi-condition.json ==
+WARNING: StructureDefinition/ncpi-condition: StructureDefinition.snapshot.element[62].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ncpi-condition: StructureDefinition.snapshot.element[71].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ncpi-condition: StructureDefinition.snapshot.element[80].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ncpi-condition: StructureDefinition.snapshot.element[89].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ncpi-condition: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ncpi-condition: StructureDefinition.differential.element[19].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ncpi-condition: StructureDefinition.differential.element[22].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ncpi-condition: StructureDefinition.differential.element[25].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/StructureDefinition-ncpi-family-relationship.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-family-role.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-file.json ==
@@ -336,8 +381,8 @@ WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-i
 == fsh-generated/resources/StructureDefinition-research-study-design.json ==
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-research-study-group.json ==
-INFORMATION: StructureDefinition/research-study-group: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://purl.obolibrary.org/obo/ncit.owl' could not be found, so the code cannot be validated
-INFORMATION: StructureDefinition/research-study-group: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://purl.obolibrary.org/obo/ncit.owl' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/research-study-group: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://purl.obolibrary.org/obo/ncit.owl' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/research-study-group: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://purl.obolibrary.org/obo/ncit.owl' could not be found, so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-research-study-result.json ==
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-research-study-subject.json ==
@@ -349,6 +394,23 @@ WARNING: StructureDefinition/research-study-subject-consent: StructureDefinition
 == fsh-generated/resources/StructureDefinition-study-family-focus.json ==
 WARNING: StructureDefinition/study-family-focus: StructureDefinition.context[0]: Review the extension type for study-family-focus: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/ValueSet-collection-type-vs.json ==
+== fsh-generated/resources/ValueSet-condition-assertion-vs.json ==
+WARNING: ValueSet/condition-assertion-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/condition-assertion-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-condition-code-vs.json ==
+WARNING: ValueSet/condition-code-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'condition-code-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://human-phenotype-ontology.org
+== fsh-generated/resources/ValueSet-condition-laterality-vs.json ==
+ERROR: ValueSet/condition-laterality-vs: ValueSet.compose.include[0].system: URL value 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs' does not resolve
+WARNING: ValueSet/condition-laterality-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'condition-laterality-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs
+== fsh-generated/resources/ValueSet-condition-location-vs.json ==
+ERROR: ValueSet/condition-location-vs: ValueSet.compose.include[0].system: URL value 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs' does not resolve
+WARNING: ValueSet/condition-location-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'condition-location-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs
+== fsh-generated/resources/ValueSet-condition-type-vs.json ==
+WARNING: ValueSet/condition-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/condition-type-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-consanguinity-assertion-vs.json ==
 == fsh-generated/resources/ValueSet-edam-ontology-terms.json ==
 WARNING: ValueSet/edam-ontology-terms: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

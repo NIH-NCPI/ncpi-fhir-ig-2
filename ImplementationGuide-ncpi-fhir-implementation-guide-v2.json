@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2024-08-22T16:27:20+00:00",
+  "date" : "2024-09-10T18:56:29+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -331,7 +331,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
     },
     {
       "extension" : [{
@@ -650,6 +650,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/age-at-assertion"
+      },
+      "name" : "Age at Assertion",
+      "description" : "Age at Assertion Extension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/research-age-at-last-vital-status"
       },
       "name" : "Age at Last Vital Status Extension",
@@ -715,6 +727,29 @@
       "name" : "An example family role based on data from CBTN",
       "description" : "An example family role based on data from CBTN.",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/condition-assertion-vs"
+      },
+      "name" : "Assertion of Condition Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/condition-assertion"
+      },
+      "name" : "Assertion of Condition Codes",
+      "description" : "Code System for assertion of condition presence",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -887,6 +922,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/condition-code-vs"
+      },
+      "name" : "Conditon Codes",
+      "description" : "Includes all codes from **HPO** and **MONDO**",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -935,6 +982,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/component-elements"
+      },
+      "name" : "Elements of Component",
+      "description" : "Slicing for elements of component",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -979,6 +1038,18 @@
       "name" : "Example biospecimen based on data from CBTN",
       "description" : "Example biospecimen based on data from CBTN",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/PT-006SP660-condition"
+      },
+      "name" : "Example condition using data from Kids First",
+      "description" : "Example condition using data from Kids First.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"
     },
     {
       "extension" : [{
@@ -1271,6 +1342,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-laterality"
+      },
+      "name" : "Laterality Information",
+      "description" : "Laterality Information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/condition-laterality-vs"
+      },
+      "name" : "Laterality Information",
+      "description" : "Laterality Information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-location"
+      },
+      "name" : "Location Information",
+      "description" : "Location Information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/condition-location-vs"
+      },
+      "name" : "Location Information",
+      "description" : "Location Information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1362,6 +1481,18 @@
       },
       "name" : "NCPI biospecimen definition for non-collected samples",
       "description" : "NCPI biospecimen definition for non-collected samples",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ncpi-condition"
+      },
+      "name" : "NCPI Conditon",
+      "description" : "Information about a condition related to a research participant",
       "exampleBoolean" : false
     },
     {
@@ -1567,6 +1698,18 @@
       "name" : "Pediatric Brain Tumor Atlas",
       "description" : "Pediatric Brain Tumor Atlas",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-asserter"
+      },
+      "name" : "Person who recorded assertion about participant",
+      "description" : "Person who recorded assertion about participant",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1806,6 +1949,18 @@
       },
       "name" : "Shared Data Model for Biospecimen Collection",
       "description" : "Shared Data Model for Biospecimen Collection",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SharedDataModelCondition"
+      },
+      "name" : "Shared Data Model for Condition",
+      "description" : "The Shared Data Model for **Condition**",
       "exampleBoolean" : false
     },
     {
@@ -2082,6 +2237,29 @@
       },
       "name" : "The size of the file, e.g., in bytes.",
       "description" : "The size of the file, e.g., in bytes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/condition-type-vs"
+      },
+      "name" : "Type of Condition",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/condition-type"
+      },
+      "name" : "Type of Condition",
+      "description" : "Code System for type of condition",
       "exampleBoolean" : false
     },
     {

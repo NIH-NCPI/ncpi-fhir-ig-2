@@ -25,6 +25,13 @@
       ]
     },
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-assertion",
+      "title": "Age at Assertion",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability",
       "title": "Availability Status of Aliquot",
       "types": [
@@ -48,6 +55,27 @@
     {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial",
       "title": "Spatial Information",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-asserter",
+      "title": "Person who recorded assertion about participant",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-laterality",
+      "title": "Laterality Information",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-location",
+      "title": "Location Information",
       "types": [
         "code"
       ]
@@ -447,6 +475,10 @@
     ],
     "Observation": [
       {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition",
+        "title": "NCPI Conditon"
+      },
+      {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship",
         "title": "Family Relationship"
       }
@@ -500,6 +532,7 @@
   },
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime": [
+      "Observation.effectiveDateTime",
       "Patient.birthDate",
       "Specimen.collection.collectedDateTime"
     ],
@@ -533,6 +566,7 @@
     "http://hl7.org/fhir/StructureDefinition/valueset-reference": [
       "SharedDataModelAliquot",
       "SharedDataModelBiospecimenCollection",
+      "SharedDataModelCondition",
       "SharedDataModelFile",
       "SharedDataModelFile.location",
       "SharedDataModelFile.relatedFile",
@@ -584,6 +618,15 @@
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial": [
       "Specimen"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-asserter": [
+      "Observation"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-laterality": [
+      "Observation"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-location": [
+      "Observation"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/consanguinity": [
       "Group"

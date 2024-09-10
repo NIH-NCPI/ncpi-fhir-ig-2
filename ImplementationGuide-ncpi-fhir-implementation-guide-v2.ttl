@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-08-22T16:27:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-10T18:56:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -294,7 +294,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -563,6 +563,18 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-assertion> ;
+         fhir:reference [ fhir:v "StructureDefinition/age-at-assertion" ]
+       ] ;
+       fhir:name [ fhir:v "Age at Assertion" ] ;
+       fhir:description [ fhir:v "Age at Assertion Extension" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status> ;
          fhir:reference [ fhir:v "StructureDefinition/research-age-at-last-vital-status" ]
        ] ;
@@ -641,6 +653,29 @@
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-assertion-vs> ;
+         fhir:reference [ fhir:v "ValueSet/condition-assertion-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Assertion of Condition Codes" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion> ;
+         fhir:reference [ fhir:v "CodeSystem/condition-assertion" ]
+       ] ;
+       fhir:name [ fhir:v "Assertion of Condition Codes" ] ;
+       fhir:description [ fhir:v "Code System for assertion of condition presence" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -836,6 +871,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs> ;
+         fhir:reference [ fhir:v "ValueSet/condition-code-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Conditon Codes" ] ;
+       fhir:description [ fhir:v "Includes all codes from **HPO** and **MONDO**" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -881,6 +928,18 @@
        fhir:name [ fhir:v "dbGaP PI, X01 FY 2021" ] ;
        fhir:description [ fhir:v "dbGaP PI, X01 FY 2021" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/component-elements> ;
+         fhir:reference [ fhir:v "CodeSystem/component-elements" ]
+       ] ;
+       fhir:name [ fhir:v "Elements of Component" ] ;
+       fhir:description [ fhir:v "Slicing for elements of component" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -931,6 +990,21 @@
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/PT-006SP660-condition> ;
+         fhir:reference [ fhir:v "Observation/PT-006SP660-condition" ]
+       ] ;
+       fhir:name [ fhir:v "Example condition using data from Kids First" ] ;
+       fhir:description [ fhir:v "Example condition using data from Kids First." ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition>
        ]
      ] [
        fhir:extension ( [
@@ -1268,6 +1342,54 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-laterality> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-laterality" ]
+       ] ;
+       fhir:name [ fhir:v "Laterality Information" ] ;
+       fhir:description [ fhir:v "Laterality Information" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-laterality-vs> ;
+         fhir:reference [ fhir:v "ValueSet/condition-laterality-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Laterality Information" ] ;
+       fhir:description [ fhir:v "Laterality Information" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-location" ]
+       ] ;
+       fhir:name [ fhir:v "Location Information" ] ;
+       fhir:description [ fhir:v "Location Information" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-location-vs> ;
+         fhir:reference [ fhir:v "ValueSet/condition-location-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Location Information" ] ;
+       fhir:description [ fhir:v "Location Information" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -1375,6 +1497,18 @@
        ] ;
        fhir:name [ fhir:v "NCPI biospecimen definition for non-collected samples" ] ;
        fhir:description [ fhir:v "NCPI biospecimen definition for non-collected samples" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-condition" ]
+       ] ;
+       fhir:name [ fhir:v "NCPI Conditon" ] ;
+       fhir:description [ fhir:v "Information about a condition related to a research participant" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1598,6 +1732,18 @@
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-asserter> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-asserter" ]
+       ] ;
+       fhir:name [ fhir:v "Person who recorded assertion about participant" ] ;
+       fhir:description [ fhir:v "Person who recorded assertion about participant" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1840,6 +1986,18 @@
        ] ;
        fhir:name [ fhir:v "Shared Data Model for Biospecimen Collection" ] ;
        fhir:description [ fhir:v "Shared Data Model for Biospecimen Collection" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelCondition> ;
+         fhir:reference [ fhir:v "StructureDefinition/SharedDataModelCondition" ]
+       ] ;
+       fhir:name [ fhir:v "Shared Data Model for Condition" ] ;
+       fhir:description [ fhir:v "The Shared Data Model for **Condition**" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2119,6 +2277,29 @@
        ] ;
        fhir:name [ fhir:v "The size of the file, e.g., in bytes." ] ;
        fhir:description [ fhir:v "The size of the file, e.g., in bytes." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/condition-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Type of Condition" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type> ;
+         fhir:reference [ fhir:v "CodeSystem/condition-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type of Condition" ] ;
+       fhir:description [ fhir:v "Code System for type of condition" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

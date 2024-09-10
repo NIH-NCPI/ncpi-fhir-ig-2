@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2024-08-22T16:27:20+00:00"/>
+  <date value="2024-09-10T18:56:29+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -251,7 +251,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -491,6 +491,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/age-at-assertion"/>
+      </reference>
+      <name value="Age at Assertion"/>
+      <description value="Age at Assertion Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/research-age-at-last-vital-status"/>
       </reference>
       <name value="Age at Last Vital Status Extension"/>
@@ -551,6 +562,27 @@
       <name value="An example family role based on data from CBTN"/>
       <description value="An example family role based on data from CBTN."/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/condition-assertion-vs"/>
+      </reference>
+      <name value="Assertion of Condition Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/condition-assertion"/>
+      </reference>
+      <name value="Assertion of Condition Codes"/>
+      <description value="Code System for assertion of condition presence"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -708,6 +740,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/condition-code-vs"/>
+      </reference>
+      <name value="Conditon Codes"/>
+      <description value="Includes all codes from **HPO** and **MONDO**"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -752,6 +795,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/component-elements"/>
+      </reference>
+      <name value="Elements of Component"/>
+      <description value="Slicing for elements of component"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -793,6 +847,17 @@
       <name value="Example biospecimen based on data from CBTN"/>
       <description value="Example biospecimen based on data from CBTN"/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PT-006SP660-condition"/>
+      </reference>
+      <name value="Example condition using data from Kids First"/>
+      <description value="Example condition using data from Kids First."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1060,6 +1125,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-laterality"/>
+      </reference>
+      <name value="Laterality Information"/>
+      <description value="Laterality Information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/condition-laterality-vs"/>
+      </reference>
+      <name value="Laterality Information"/>
+      <description value="Laterality Information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-location"/>
+      </reference>
+      <name value="Location Information"/>
+      <description value="Location Information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/condition-location-vs"/>
+      </reference>
+      <name value="Location Information"/>
+      <description value="Location Information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1144,6 +1253,17 @@
       </reference>
       <name value="NCPI biospecimen definition for non-collected samples"/>
       <description value="NCPI biospecimen definition for non-collected samples"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-condition"/>
+      </reference>
+      <name value="NCPI Conditon"/>
+      <description value="Information about a condition related to a research participant"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1332,6 +1452,17 @@
       <name value="Pediatric Brain Tumor Atlas"/>
       <description value="Pediatric Brain Tumor Atlas"/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-asserter"/>
+      </reference>
+      <name value="Person who recorded assertion about participant"/>
+      <description value="Person who recorded assertion about participant"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1551,6 +1682,17 @@
       </reference>
       <name value="Shared Data Model for Biospecimen Collection"/>
       <description value="Shared Data Model for Biospecimen Collection"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SharedDataModelCondition"/>
+      </reference>
+      <name value="Shared Data Model for Condition"/>
+      <description value="The Shared Data Model for **Condition**"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1804,6 +1946,27 @@
       </reference>
       <name value="The size of the file, e.g., in bytes."/>
       <description value="The size of the file, e.g., in bytes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/condition-type-vs"/>
+      </reference>
+      <name value="Type of Condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/condition-type"/>
+      </reference>
+      <name value="Type of Condition"/>
+      <description value="Code System for type of condition"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
