@@ -161,11 +161,11 @@ Description: "Information about a condition related to a research participant"
 * component[ageAtResolution].value[x] only Quantity or dateTime or CodeableConcept or Range
 * component[ageAtResolution] ^short = "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range."
 /*otherModifiers*/ 
-* component[otherModifiers].code = #ageAtOnset
+* component[otherModifiers].code = #otherModifiers
 * component[otherModifiers].value[x] only CodeableConcept
 * component[otherModifiers] ^short = "Any additional modifiers for this condition, such as severity."
 /*stage*/ 
-* component[stage].code = #ageAtOnset
+* component[stage].code = #stage
 * component[stage].value[x] only CodeableConcept
 * component[stage] ^short = "Cancer staging information"
 /*location*/ 
