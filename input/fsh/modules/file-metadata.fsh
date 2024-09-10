@@ -72,7 +72,9 @@ Id: reference-genome-cs
 Title: "Reference genome examples"
 Description: "Reference genome examples"
 * #GRCh37 "GRCh37"
-* #GRCh38 "GRCh38"
+* #GRCh38 "CRCh38"
+* #GRCh38p13 "GRCh38.p13"
+* #GRCh38p14 "GRCh38.p14"
 
 Profile: NcpiFileMetadata
 Parent: Observation
@@ -83,6 +85,21 @@ Description: "Representation of file metadata for NCPI"
 * ^status = #draft
 * focus 1..1 /*Parent_file*/
 
+Profile: NcpiSpecimenCollection
+Parent: List
+Id: ncpi-specimen-NcpiSpecimenCollection
+Title: "Linkage for related samples"
+Description: "Linkage for related samples"
+* subject 0..1 /*Related_samples*/
+* subject ^short = "Reference to any subjects or other samples related to a subject"
+
+Extension: SpecimenCollection
+Id: specimen-collection
+Title: "Linkage for related samples"
+Description: "Linkage for related samples"
+* insert SetContext(NcpiSpecimenCollection.subject)
+* value[x] only Reference
+* valueReference ^short = "Reference to other samples related to this sample"
 
 Profile: NcpiFASTQ
 Parent: NcpiFileMetadata
@@ -130,6 +147,8 @@ Description: "NCPI FASTQ File"
 * component[workflow_type].value[x] only CodeableConcept
 * component[workflow_tool].code = #WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
+* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
+* extension[specimen-collection] ^short = "Linkage for related samples"
 
 Profile: NcpiBAMCRAM
 Parent: NcpiFileMetadata
@@ -177,6 +196,8 @@ Description: "BAM or CRAM file profile"
 * component[workflow_type].value[x] only CodeableConcept
 * component[workflow_tool].code = #WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
+* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
+* extension[specimen-collection] ^short = "Linkage for related samples"
 
 Profile: NcpiVCF
 Parent: NcpiFileMetadata
@@ -224,6 +245,8 @@ Description: "VCF or gVCF file profile"
 * component[workflow_type].value[x] only CodeableConcept
 * component[workflow_tool].code = #WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
+* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
+* extension[specimen-collection] ^short = "Linkage for related samples"
 
 Profile: NcpiMAF
 Parent: NcpiFileMetadata
@@ -271,6 +294,8 @@ Description: "MAF (Somatic Mutation) file profile"
 * component[workflow_type].value[x] only CodeableConcept
 * component[workflow_tool].code = #WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
+* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
+* extension[specimen-collection] ^short = "Linkage for related samples"
 
 Profile: NcpiGeneFusionOrExpression
 Parent: NcpiFileMetadata
@@ -318,6 +343,8 @@ Description: "Gene fusion or gene expression file profile"
 * component[workflow_type].value[x] only CodeableConcept
 * component[workflow_tool].code = #WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
+* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
+* extension[specimen-collection] ^short = "Linkage for related samples"
 
 Profile: NcpiProteomics
 Parent: NcpiFileMetadata
@@ -365,3 +392,5 @@ Description: "Proteomics file profile"
 * component[workflow_type].value[x] only CodeableConcept
 * component[workflow_tool].code = #WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
+* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
+* extension[specimen-collection] ^short = "Linkage for related samples"
