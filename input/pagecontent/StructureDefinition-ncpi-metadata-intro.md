@@ -1,8 +1,6 @@
 #### Key Guidelines
 The NCPI File Metadata profile is based on the standard resource type, [Observation](https://hl7.org/fhir/r4/observation.html) and is intended to represent information about the file metadata associated with a file.
 
-<img width="100%" src="file_meta_data_example_hierarchy.jpeg" alt="Inheritance style of File Metadata profile" />
-
 ##### Added Profile Restrictions
 In order to ensure that our resources are interoperable across studies, we have employed a number of restrictions that should make consuming Patient resources more consistent.
 
@@ -15,3 +13,4 @@ TDOD: Write Recommended Practices
 The following fields from the shared data model are to be mapped to the NCPI File Metadata as shown below:
 
 | **Logical Model Property** | **Cardinality** | **NCPI FHIR Mapping** | **Usage Guidance** | **Notes**|
+|parent_file|1..1|focus|A Reference to a file to which the metadata is related||
