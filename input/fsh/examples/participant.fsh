@@ -9,10 +9,48 @@ CBTN, PCGC, and eMERGE examples for:
 
 */ 
 
+Instance: GSS123456
+InstanceOf: NcpiParticipant
+Title: "Example patients based on data from GREGoR"
+Usage: #example
+Description: "Example patients based on data from GREGoR."
+// Notice that we can use the DbGaP study ID for easier searching
+* identifier[0]
+  * system = "https://anvil.terra.bio/"
+  * value = "GSS123456"
+* extension[us-core-birth-sex].valueCode = #M "Male"
+* extension[us-core-race]
+  * extension[ombCategory].valueCoding =  $omb-race-eth#2106-3 "White"
+  * extension[text].valueString = "White"
+* extension[us-core-ethnicity]
+  * extension[ombCategory].valueCoding =  $omb-race-eth#2186-5 "Not Hispanic or Latino"
+  * extension[text].valueString = "Not Hispanic or Latino"
+* extension[population].valueString = "English|Scottish"
+
+Instance: gregor-example-person
+InstanceOf: NcpiPerson
+Title: "Example patients based on data from GREGoR"
+Usage: #example
+Description: "Example patients based on data from GREGoR"
+* identifier
+  * system = "https://anvil.terra.bio"
+  * value = "PS_000"
+* link
+  * target = Reference(GSS123456) 
+
+Instance: gregor-example-participantstudy
+InstanceOf: NcpiStudyParticipant
+Title: "Example mappings based on data from GREGoR"
+Usage: #example
+Description: "Example mappings based on data from GREGoR"
+* individual = Reference(GSS123456)  
+* study = Reference(research-study-gregor)
+* status = #candidate
+* consent = Reference(gregor-gru-consent)  
 
 // Example 1
 
-Instance: PT-KZG2CZ95
+/*Instance: PT-KZG2CZ95
 InstanceOf: NcpiParticipant
 Title: "Example patients based on data from CBTN"
 Usage: #example
@@ -72,7 +110,7 @@ Description: "Example patients based on data from CBTN."
       * valueDuration.unit = "d"
 
 
-*/
+
 
 Instance: cbtn-example-person
 InstanceOf: NcpiPerson
@@ -290,4 +328,4 @@ Description: "Example mappings based on data from eMERGE"
 * individual = Reference(6812345)  
 * study = Reference(phv00407460.v2)
 * status = #candidate
-* consent = Reference(GRU) 
+* consent = Reference(GRU) */

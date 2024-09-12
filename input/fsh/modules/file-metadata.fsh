@@ -20,24 +20,28 @@ Id: assay-strategy-cs
 Title: "Assay strategy options"
 Description: "Assay strategy options"
 * #WGS "Whole Genome Sequencing"
+* #unknown "Unknown"
 
 CodeSystem: PlatformInstrumentCS
 Id: platform-instrument-cs
 Title: "Platform instrument options"
 Description: "Platform instrument options"
 * #IlluminaHiSeq2000 "Illumina HiSeq2000"
+* #unknown "Unknown"
 
 CodeSystem: LibraryPrepCS
 Id: library-prep-cs
 Title: "Library prep options"
 Description: "Library prep options"
 * #polyA "polyA"
+* #unknown "Unknown"
 
 CodeSystem: LibrarySelectionCS
 Id: library-selection-cs
 Title: "Library selection options"
 Description: "Library selection options"
 * #PolyTEnrichment "Poly-T Enrichment"
+* #unknown "Unknown"
 
 CodeSystem: StrandednessCS
 Id: strandedness-cs
@@ -45,6 +49,7 @@ Title: "Strandedness options"
 Description: "Strandedness options"
 * #stranded "Stranded"
 * #unstranded "Unstranded"
+* #unknown "Unknown"
 
 CodeSystem: AdaptorTrimmedCS
 Id: adaptor-trimmed-cs
@@ -52,6 +57,7 @@ Title: "Adaptor trimmed options"
 Description: "Adaptor trimmed options"
 * #yes "Yes"
 * #no "No"
+* #unknown "Unknown"
 
 CodeSystem: WorkflowTypeCS
 Id: workflow-type-cs
@@ -59,6 +65,7 @@ Title: "Workflow type options"
 Description: "Workflow type options"
 * #alignment "Alignment"
 * #somatic "Somatic"
+* #unknown "Unknown"
 
 CodeSystem: WorkflowToolCS
 Id: workflow-tool-cs
@@ -66,6 +73,7 @@ Title: "Workflow tool options"
 Description: "Workflow tool options"
 * #bammem "BAM-MEM"
 * #GATKHaplotypeCaller "GATK-Haplotype Caller"
+* #unknown "Unknown"
 
 CodeSystem: ReferenceGenomeCS
 Id: reference-genome-cs
@@ -75,6 +83,7 @@ Description: "Reference genome examples"
 * #GRCh38 "CRCh38"
 * #GRCh38p13 "GRCh38.p13"
 * #GRCh38p14 "GRCh38.p14"
+* #unknown "Unknown"
 
 Profile: NcpiFileMetadata
 Parent: Observation

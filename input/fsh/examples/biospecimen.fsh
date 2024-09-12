@@ -1,5 +1,15 @@
 /*Example for Sample*/
 
+Instance: GSS123456-01-010 /*Collection Event ID can't have underscores*/
+InstanceOf: NCPICollectedSample
+Title: "Example biospecimen based on data from GREGoR"
+Usage: #example
+Description: "Example biospecimen based on data from GREGoR"
+* identifier.value = "GSS123456-s1" /*Sample ID*/
+* subject = Reference(GSS123456) /*Participant ID*/
+* type.text = "DNA" /*Sample Type*/
+* collection.method.text = "DNA"
+
 Instance: SA-000 /*Collection Event ID can't have underscores*/
 InstanceOf: NCPICollectedSample
 Title: "Example biospecimen based on data from CBTN"
@@ -29,3 +39,4 @@ to access this codesystem for now but we defintely need a real ontology for desc
     * url = "offset"
     * valueDuration = 4931 'days'
     * valueDuration.unit = "d"
+ 

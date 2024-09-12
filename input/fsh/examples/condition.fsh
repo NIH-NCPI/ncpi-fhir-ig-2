@@ -1,9 +1,9 @@
 
 Instance: PT-006SP660-condition
 InstanceOf: NcpiCondition
-Title: "Example condition using data from Kids First"
+Title: "Example condition using data from CBTN"
 Usage: #example
-Description: "Example condition using data from Kids First."
+Description: "Example condition using data from CBTN."
 * status = #final
 // had to change reference participant so sushi doesn't get errors
 * subject = Reference(PT-005B7CZ4)
@@ -33,17 +33,18 @@ Description: "Example condition using data from Kids First."
 /* condition type */
 * category = $condition-type#Disease
 
-// /* age at onset */
-// * component = 
-// /* age at resolution */
-// * component =
-// /* other modifiers */
-// * component = 
-// /* stage */
-// * component =
-// /* location */
-// * bodySite =
-// /* assertion source */
-// * method =
-// /* asserter */
-// * extension[condition-asserter].valueCode = $condition-asserter
+Instance: GSS123456-condition
+InstanceOf: NcpiCondition
+Title: "Example condition using data from GREGoR"
+Usage: #example
+Description: "Example condition using data from GREGoR"
+* status = #final
+* subject = Reference(GSS123456)
+* code.coding = $hpo#HP:0006951 /* condition code */
+* code.text = "retrocerebellar cyst" /* condition text */
+* valueCodeableConcept = $condition-assertion#Present /* assertion */
+* category = $condition-type#Disease /* condition type */
+* component.code = #ageAtOnset
+* component[ageAtOnset].valueCodeableConcept = $hpo#HP:0011463 /* age at onset */
+* component.code = #otherModifiers
+* component[otherModifiers].valueCodeableConcept = $hpo#HP:0012832

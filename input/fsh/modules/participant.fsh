@@ -39,7 +39,7 @@ Id: research-population
 Title: "Research Population"
 Description: "Code describing the population (CDC)"
 * insert SetContext(Patient)
-* value[x] only CodeableConcept
+* value[x] only CodeableConcept or string
 // * valueCodeableConcept from research-population-vs
 
 Extension: ResearchDateOfBirthMethod
