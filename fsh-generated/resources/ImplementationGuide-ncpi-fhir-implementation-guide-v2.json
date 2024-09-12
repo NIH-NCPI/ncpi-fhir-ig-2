@@ -63,6 +63,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/adaptor-trimmed-cs"
+        },
+        "name": "Adaptor trimmed options",
+        "description": "Adaptor trimmed options",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/research-age-at-last-vital-status"
         },
         "name": "Age at Last Vital Status Extension",
@@ -111,10 +119,26 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/assay-strategy-cs"
+        },
+        "name": "Assay strategy options",
+        "description": "Assay strategy options",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/aliquot-availability"
         },
         "name": "Availability Status of Aliquot",
         "description": "Availability Status of Aliquot",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-bamcram"
+        },
+        "name": "BAM or CRAM file profile",
+        "description": "BAM or CRAM file profile",
         "exampleBoolean": false
       },
       {
@@ -292,6 +316,30 @@
         "name": "Example file based on CBTN",
         "description": "Use case of file information from CBTN",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
+      },
+      {
+        "reference": {
+          "reference": "Observation/BAM-CRAM-example"
+        },
+        "name": "Example file metadata for a BAM-CRAM file",
+        "description": "Example file metadata for a BAM-CRAM file",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram"
+      },
+      {
+        "reference": {
+          "reference": "Observation/FASTQ-example"
+        },
+        "name": "Example file metadata for a FASTQ file",
+        "description": "Example file metadata for a FASTQ file",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq"
+      },
+      {
+        "reference": {
+          "reference": "Observation/VCF-example"
+        },
+        "name": "Example file metadata for a VCF file",
+        "description": "Example file metadata for a VCF file",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-vcf"
       },
       {
         "reference": {
@@ -479,6 +527,22 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/library-prep-cs"
+        },
+        "name": "Library prep options",
+        "description": "Library prep options",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/library-selection-cs"
+        },
+        "name": "Library selection options",
+        "description": "Library selection options",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mesh-terms"
         },
         "name": "MeSH Terms",
@@ -527,6 +591,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-analysis-file"
+        },
+        "name": "NCPI analysis file",
+        "description": "NCPI analysis file",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-assay-file"
+        },
+        "name": "NCPI Assay File",
+        "description": "Representation of assay file",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncpi-collected-sample"
         },
         "name": "NCPI biospecimen definition for collected samples",
@@ -551,6 +631,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-fastq"
+        },
+        "name": "NCPI FASTQ File",
+        "description": "NCPI FASTQ File",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ncpi"
         },
         "name": "NCPI FHIR Codes",
@@ -567,6 +655,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-file-metadata"
+        },
+        "name": "NCPI File Meta Data",
+        "description": "Representation of file metadata for NCPI",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/metadata-elements"
+        },
+        "name": "NCPI Metadata slices",
+        "description": "NCPI Metadata slices",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncpi-participant"
         },
         "name": "NCPI Participant",
@@ -579,6 +683,14 @@
         },
         "name": "NCPI Person",
         "description": "Person",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-reads-file"
+        },
+        "name": "NCPI reads file",
+        "description": "NCPI reads file",
         "exampleBoolean": false
       },
       {
@@ -611,6 +723,14 @@
         },
         "name": "NCPI Research Study Group",
         "description": "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-sequencing-file"
+        },
+        "name": "NCPI sequencing file",
+        "description": "NCPI sequencing file",
         "exampleBoolean": false
       },
       {
@@ -679,10 +799,26 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/platform-instrument-cs"
+        },
+        "name": "Platform instrument options",
+        "description": "Platform instrument options",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/hash-extension"
         },
         "name": "Provides a list of hashes for confirming file transfers",
         "description": "Provides a list of hashes for confirming file transfers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/reference-genome-cs"
+        },
+        "name": "Reference genome examples",
+        "description": "Reference genome examples",
         "exampleBoolean": false
       },
       {
@@ -935,6 +1071,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/strandedness-cs"
+        },
+        "name": "Strandedness options",
+        "description": "Strandedness options",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/description"
         },
         "name": "Study Family Description",
@@ -1031,10 +1175,34 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-vcf"
+        },
+        "name": "VCF or gVCF file profile",
+        "description": "VCF or gVCF file profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/content-version"
         },
         "name": "Version of the contents of the file",
         "description": "Version of the contents of the file",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/workflow-tool-cs"
+        },
+        "name": "Workflow tool options",
+        "description": "Workflow tool options",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/workflow-type-cs"
+        },
+        "name": "Workflow type options",
+        "description": "Workflow type options",
         "exampleBoolean": false
       }
     ],

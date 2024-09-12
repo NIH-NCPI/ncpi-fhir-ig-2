@@ -1,0 +1,137 @@
+{
+  "resourceType": "Observation",
+  "id": "FASTQ-example",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq"
+    ]
+  },
+  "focus": [
+    {
+      "reference": "PT_006SP660"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "AdaptorTrimmed"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "AssayStrategy"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "WGS"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "PlatformInstrument"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "IlluminaHiSeq2000"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "LibraryPrep"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "polyA"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "LibrarySelection"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "PolyTEnrichment"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "Strandedness"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "unstranded"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "IsPairedEnd"
+          }
+        ]
+      },
+      "valueBoolean": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "AdaptorTrimmed"
+          }
+        ]
+      },
+      "valueBoolean": true
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "format_1930",
+        "system": "http://edamontology.org"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/SA-000"
+  }
+}
