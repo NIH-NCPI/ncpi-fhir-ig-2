@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2024-09-10T18:56:29+00:00"/>
+  <date value="2024-09-12T18:14:21+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -488,6 +488,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/adaptor-trimmed-cs"/>
+      </reference>
+      <name value="Adaptor trimmed options"/>
+      <description value="Adaptor trimmed options"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -565,6 +576,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/assay-strategy-cs"/>
+      </reference>
+      <name value="Assay strategy options"/>
+      <description value="Assay strategy options"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -593,6 +615,17 @@
       </reference>
       <name value="Availability Status of Aliquot"/>
       <description value="Availability Status of Aliquot"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-bamcram"/>
+      </reference>
+      <name value="BAM or CRAM file profile"/>
+      <description value="BAM or CRAM file profile"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -872,6 +905,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BAM-CRAM-example"/>
+      </reference>
+      <name value="Example file metadata for a BAM-CRAM file"/>
+      <description value="Example file metadata for a BAM-CRAM file"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FASTQ-example"/>
+      </reference>
+      <name value="Example file metadata for a FASTQ file"/>
+      <description value="Example file metadata for a FASTQ file"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/VCF-example"/>
+      </reference>
+      <name value="Example file metadata for a VCF file"/>
+      <description value="Example file metadata for a VCF file"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-vcf"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ResearchSubject"/>
       </extension>
       <reference>
@@ -1037,6 +1103,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-gene-fusion-expression"/>
+      </reference>
+      <name value="Gene fusion or gene expression file profile"/>
+      <description value="Gene fusion or gene expression file profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Consent"/>
       </extension>
       <reference>
@@ -1147,6 +1224,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/library-prep-cs"/>
+      </reference>
+      <name value="Library prep options"/>
+      <description value="Library prep options"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/library-selection-cs"/>
+      </reference>
+      <name value="Library selection options"/>
+      <description value="Library selection options"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-specimen-NcpiSpecimenCollection"/>
+      </reference>
+      <name value="Linkage for related samples"/>
+      <description value="Linkage for related samples"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/specimen-collection"/>
+      </reference>
+      <name value="Linkage for related samples"/>
+      <description value="Linkage for related samples"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1165,6 +1286,17 @@
       </reference>
       <name value="Location Information"/>
       <description value="Location Information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-maf"/>
+      </reference>
+      <name value="MAF (Somatic Mutation) file profile"/>
+      <description value="MAF (Somatic Mutation) file profile"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1279,6 +1411,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-fastq"/>
+      </reference>
+      <name value="NCPI FASTQ File"/>
+      <description value="NCPI FASTQ File"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -1297,6 +1440,28 @@
       </reference>
       <name value="NCPI File"/>
       <description value="Information about a file related to a research participant"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-file-metadata"/>
+      </reference>
+      <name value="NCPI File Meta Data"/>
+      <description value="Representation of file metadata for NCPI"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/metadata-elements"/>
+      </reference>
+      <name value="NCPI Metadata slices"/>
+      <description value="NCPI Metadata slices"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1466,6 +1631,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/platform-instrument-cs"/>
+      </reference>
+      <name value="Platform instrument options"/>
+      <description value="Platform instrument options"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-proteomics"/>
+      </reference>
+      <name value="Proteomics file profile"/>
+      <description value="Proteomics file profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1473,6 +1660,17 @@
       </reference>
       <name value="Provides a list of hashes for confirming file transfers"/>
       <description value="Provides a list of hashes for confirming file transfers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/reference-genome-cs"/>
+      </reference>
+      <name value="Reference genome examples"/>
+      <description value="Reference genome examples"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1829,6 +2027,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/strandedness-cs"/>
+      </reference>
+      <name value="Strandedness options"/>
+      <description value="Strandedness options"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1982,6 +2191,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-vcf"/>
+      </reference>
+      <name value="VCF or gVCF file profile"/>
+      <description value="VCF or gVCF file profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1989,6 +2209,28 @@
       </reference>
       <name value="Version of the contents of the file"/>
       <description value="Version of the contents of the file"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/workflow-tool-cs"/>
+      </reference>
+      <name value="Workflow tool options"/>
+      <description value="Workflow tool options"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/workflow-type-cs"/>
+      </reference>
+      <name value="Workflow type options"/>
+      <description value="Workflow type options"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

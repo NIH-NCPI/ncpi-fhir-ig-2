@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-10T18:56:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-12T18:14:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -560,6 +560,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/adaptor-trimmed-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/adaptor-trimmed-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Adaptor trimmed options" ] ;
+       fhir:description [ fhir:v "Adaptor trimmed options" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -656,6 +668,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/assay-strategy-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/assay-strategy-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Assay strategy options" ] ;
+       fhir:description [ fhir:v "Assay strategy options" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -687,6 +711,18 @@
        ] ;
        fhir:name [ fhir:v "Availability Status of Aliquot" ] ;
        fhir:description [ fhir:v "Availability Status of Aliquot" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-bamcram" ]
+       ] ;
+       fhir:name [ fhir:v "BAM or CRAM file profile" ] ;
+       fhir:description [ fhir:v "BAM or CRAM file profile" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1024,6 +1060,51 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/BAM-CRAM-example> ;
+         fhir:reference [ fhir:v "Observation/BAM-CRAM-example" ]
+       ] ;
+       fhir:name [ fhir:v "Example file metadata for a BAM-CRAM file" ] ;
+       fhir:description [ fhir:v "Example file metadata for a BAM-CRAM file" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/FASTQ-example> ;
+         fhir:reference [ fhir:v "Observation/FASTQ-example" ]
+       ] ;
+       fhir:name [ fhir:v "Example file metadata for a FASTQ file" ] ;
+       fhir:description [ fhir:v "Example file metadata for a FASTQ file" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/VCF-example> ;
+         fhir:reference [ fhir:v "Observation/VCF-example" ]
+       ] ;
+       fhir:name [ fhir:v "Example file metadata for a VCF file" ] ;
+       fhir:description [ fhir:v "Example file metadata for a VCF file" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-vcf"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-vcf>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ResearchSubject" ]
        ] ) ;
        fhir:reference [
@@ -1234,6 +1315,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-gene-fusion-expression> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-gene-fusion-expression" ]
+       ] ;
+       fhir:name [ fhir:v "Gene fusion or gene expression file profile" ] ;
+       fhir:description [ fhir:v "Gene fusion or gene expression file profile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Consent" ]
        ] ) ;
        fhir:reference [
@@ -1366,6 +1459,54 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-prep-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/library-prep-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Library prep options" ] ;
+       fhir:description [ fhir:v "Library prep options" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-selection-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/library-selection-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Library selection options" ] ;
+       fhir:description [ fhir:v "Library selection options" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-specimen-NcpiSpecimenCollection> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-specimen-NcpiSpecimenCollection" ]
+       ] ;
+       fhir:name [ fhir:v "Linkage for related samples" ] ;
+       fhir:description [ fhir:v "Linkage for related samples" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/specimen-collection> ;
+         fhir:reference [ fhir:v "StructureDefinition/specimen-collection" ]
+       ] ;
+       fhir:name [ fhir:v "Linkage for related samples" ] ;
+       fhir:description [ fhir:v "Linkage for related samples" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -1386,6 +1527,18 @@
        ] ;
        fhir:name [ fhir:v "Location Information" ] ;
        fhir:description [ fhir:v "Location Information" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-maf> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-maf" ]
+       ] ;
+       fhir:name [ fhir:v "MAF (Somatic Mutation) file profile" ] ;
+       fhir:description [ fhir:v "MAF (Somatic Mutation) file profile" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1525,6 +1678,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-fastq" ]
+       ] ;
+       fhir:name [ fhir:v "NCPI FASTQ File" ] ;
+       fhir:description [ fhir:v "NCPI FASTQ File" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -1545,6 +1710,30 @@
        ] ;
        fhir:name [ fhir:v "NCPI File" ] ;
        fhir:description [ fhir:v "Information about a file related to a research participant" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file-metadata> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-file-metadata" ]
+       ] ;
+       fhir:name [ fhir:v "NCPI File Meta Data" ] ;
+       fhir:description [ fhir:v "Representation of file metadata for NCPI" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements> ;
+         fhir:reference [ fhir:v "CodeSystem/metadata-elements" ]
+       ] ;
+       fhir:name [ fhir:v "NCPI Metadata slices" ] ;
+       fhir:description [ fhir:v "NCPI Metadata slices" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1747,6 +1936,30 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/platform-instrument-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/platform-instrument-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Platform instrument options" ] ;
+       fhir:description [ fhir:v "Platform instrument options" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-proteomics> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-proteomics" ]
+       ] ;
+       fhir:name [ fhir:v "Proteomics file profile" ] ;
+       fhir:description [ fhir:v "Proteomics file profile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -1755,6 +1968,18 @@
        ] ;
        fhir:name [ fhir:v "Provides a list of hashes for confirming file transfers" ] ;
        fhir:description [ fhir:v "Provides a list of hashes for confirming file transfers" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/reference-genome-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Reference genome examples" ] ;
+       fhir:description [ fhir:v "Reference genome examples" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2146,6 +2371,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/strandedness-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/strandedness-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Strandedness options" ] ;
+       fhir:description [ fhir:v "Strandedness options" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -2316,6 +2553,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-vcf> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-vcf" ]
+       ] ;
+       fhir:name [ fhir:v "VCF or gVCF file profile" ] ;
+       fhir:description [ fhir:v "VCF or gVCF file profile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -2324,6 +2573,30 @@
        ] ;
        fhir:name [ fhir:v "Version of the contents of the file" ] ;
        fhir:description [ fhir:v "Version of the contents of the file" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-tool-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/workflow-tool-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Workflow tool options" ] ;
+       fhir:description [ fhir:v "Workflow tool options" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-type-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/workflow-type-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Workflow type options" ] ;
+       fhir:description [ fhir:v "Workflow type options" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

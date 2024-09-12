@@ -1,5 +1,19 @@
 [
   {
+    "id" : "adaptor-trimmed-cs",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/adaptor-trimmed-cs",
+    "version" : "0.1.0",
+    "name" : "AdaptorTrimmedCS"
+  },
+  {
+    "id" : "assay-strategy-cs",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/assay-strategy-cs",
+    "version" : "0.1.0",
+    "name" : "AssayStrategyCS"
+  },
+  {
     "id" : "biospecimen-availability",
     "type" : "CodeSystem",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability",
@@ -42,6 +56,27 @@
     "name" : "HashTypeCS"
   },
   {
+    "id" : "library-prep-cs",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-prep-cs",
+    "version" : "0.1.0",
+    "name" : "LibraryPrepCS"
+  },
+  {
+    "id" : "library-selection-cs",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-selection-cs",
+    "version" : "0.1.0",
+    "name" : "LibrarySelectionCS"
+  },
+  {
+    "id" : "metadata-elements",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+    "version" : "0.1.0",
+    "name" : "MetadataElements"
+  },
+  {
     "id" : "ncpi",
     "type" : "CodeSystem",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi",
@@ -54,6 +89,20 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
     "version" : "0.1.0",
     "name" : "NcpiFamilyTypes"
+  },
+  {
+    "id" : "platform-instrument-cs",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/platform-instrument-cs",
+    "version" : "0.1.0",
+    "name" : "PlatformInstrumentCS"
+  },
+  {
+    "id" : "reference-genome-cs",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs",
+    "version" : "0.1.0",
+    "name" : "ReferenceGenomeCS"
   },
   {
     "id" : "related-file-type-code-system",
@@ -84,6 +133,13 @@
     "name" : "ResearchDataDateOfBirthMethod"
   },
   {
+    "id" : "strandedness-cs",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/strandedness-cs",
+    "version" : "0.1.0",
+    "name" : "StrandednessCS"
+  },
+  {
     "id" : "study-name-type",
     "type" : "CodeSystem",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
@@ -96,6 +152,20 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
     "version" : "0.1.0",
     "name" : "StudyPersonnelRole"
+  },
+  {
+    "id" : "workflow-tool-cs",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-tool-cs",
+    "version" : "0.1.0",
+    "name" : "WorkflowToolCS"
+  },
+  {
+    "id" : "workflow-type-cs",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-type-cs",
+    "version" : "0.1.0",
+    "name" : "WorkflowTypeCS"
   },
   {
     "id" : "ncpi-fhir-implementation-guide-v2",
@@ -371,6 +441,13 @@
     "name" : "NcpiStudyParticipant"
   },
   {
+    "id" : "ncpi-bamcram",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram",
+    "version" : "0.1.0",
+    "name" : "NcpiBAMCRAM"
+  },
+  {
     "id" : "ncpi-collected-sample",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample",
@@ -399,11 +476,39 @@
     "name" : "NcpiFamilyRole"
   },
   {
+    "id" : "ncpi-fastq",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq",
+    "version" : "0.1.0",
+    "name" : "NcpiFASTQ"
+  },
+  {
     "id" : "ncpi-file",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file",
     "version" : "0.1.0",
     "name" : "NcpiFile"
+  },
+  {
+    "id" : "ncpi-file-metadata",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file-metadata",
+    "version" : "0.1.0",
+    "name" : "NcpiFileMetadata"
+  },
+  {
+    "id" : "ncpi-gene-fusion-expression",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-gene-fusion-expression",
+    "version" : "0.1.0",
+    "name" : "NcpiGeneFusionOrExpression"
+  },
+  {
+    "id" : "ncpi-maf",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-maf",
+    "version" : "0.1.0",
+    "name" : "NcpiMAF"
   },
   {
     "id" : "ncpi-non-collected-sample",
@@ -425,6 +530,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person",
     "version" : "0.1.0",
     "name" : "NcpiPerson"
+  },
+  {
+    "id" : "ncpi-proteomics",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-proteomics",
+    "version" : "0.1.0",
+    "name" : "NcpiProteomics"
   },
   {
     "id" : "ncpi-research-access-policy",
@@ -455,11 +567,25 @@
     "name" : "NCPISample"
   },
   {
+    "id" : "ncpi-specimen-NcpiSpecimenCollection",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-specimen-NcpiSpecimenCollection",
+    "version" : "0.1.0",
+    "name" : "NcpiSpecimenCollection"
+  },
+  {
     "id" : "ncpi-study-family",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family",
     "version" : "0.1.0",
     "name" : "NcpiStudyFamily"
+  },
+  {
+    "id" : "ncpi-vcf",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-vcf",
+    "version" : "0.1.0",
+    "name" : "NcpiVCF"
   },
   {
     "id" : "research-age-at-last-vital-status",
@@ -544,6 +670,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
     "version" : "0.1.0",
     "name" : "ResearchWebLink"
+  },
+  {
+    "id" : "specimen-collection",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/specimen-collection",
+    "version" : "0.1.0",
+    "name" : "SpecimenCollection"
   },
   {
     "id" : "study-family",

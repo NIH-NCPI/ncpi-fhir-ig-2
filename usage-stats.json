@@ -446,6 +446,13 @@
       ]
     },
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/specimen-collection",
+      "title": "Linkage for related samples",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family",
       "title": "Study Family Reference",
       "types": [
@@ -467,27 +474,19 @@
         "title": "NCPI Study Participant"
       }
     ],
+    "Observation": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-vcf",
+        "title": "VCF or gVCF file profile"
+      }
+    ],
     "Specimen": [
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample",
         "title": "FHIR Profile for NCPI Sample"
       }
     ],
-    "Observation": [
-      {
-        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition",
-        "title": "NCPI Conditon"
-      },
-      {
-        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship",
-        "title": "Family Relationship"
-      }
-    ],
     "Group": [
-      {
-        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family",
-        "title": "NCPI Study Family"
-      },
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group",
         "title": "NCPI Research Study Group"
@@ -519,8 +518,8 @@
     ],
     "List": [
       {
-        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection",
-        "title": "NCPI Research Collection"
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-specimen-NcpiSpecimenCollection",
+        "title": "Linkage for related samples"
       }
     ],
     "ResearchStudy": [
@@ -695,6 +694,9 @@
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link": [
       "Consent",
       "List"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/specimen-collection": [
+      "Observation"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family": [
       "Group"
