@@ -2,7 +2,6 @@
 
 Examples for:
 * NcpiStudyFamily
-* NcpiFamilyRole
 * NcpiFamilyRelationship
 
 */ 
@@ -23,20 +22,13 @@ Description: "Example patients based on data from CBTN."
 * actual = true // Required by Group
 
 * extension[family-type].valueCodeableConcept = $ncpi-family-types#Trio "Trio"
-// * extension[desctiption].valueMarkdown = "Potential inheritance details"
+// * extension[description].valueMarkdown = "Potential inheritance details"
 // * extension[consanguinity].valueCodeableConcept = $snomedct_us#261665006  "Unknown"
 * extension[study-family-focus].valueCodeableConcept = $mondo#0004992 "Cancer"
-
-Instance: cbtn-family-role-mother
-InstanceOf: NcpiFamilyRole
-Title: "An example family role based on data from CBTN"
-Usage: #example
-Description: "An example family role based on data from CBTN."
-* member.entity = Reference(PT-KZG2CZ95)
-* extension[study-family].valueReference = Reference(FM-00C8Y7DG)
-* extension[family-role].valueCodeableConcept = $family-role-code#MTH "mother"
-* type = #person // Required by Group with required VS
-* actual = true // Required by Group
+* member[0].entity = Reference(PT-KZG2CZ95)
+* member[0].entity.extension[family-role].valueCodeableConcept = $family-role-code#MTH "mother"
+* member[1].entity = Reference(PT-005B7CZ4)
+* member[1].entity.extension[family-role].valueCodeableConcept = $family-role-code#SON "natural son"
 
 Instance: cbtn-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship
@@ -51,18 +43,7 @@ Description: "An example family relationship based on data from CBTN."
 
 // Example 2
 
-// This example uses the Study Family defined above.
 
-Instance: cbtn-family-role-son
-InstanceOf: NcpiFamilyRole
-Title: "An example family role based on data from CBTN"
-Usage: #example
-Description: "An example family role based on data from CBTN."
-* member.entity = Reference(PT-005B7CZ4)
-* extension[study-family].valueReference = Reference(FM-00C8Y7DG)
-* extension[family-role].valueCodeableConcept = $family-role-code#SON "natural son"
-* type = #person // Required by Group with required VS
-* actual = true // Required by Group
 
 Instance: cbtn-family-relationship-son
 InstanceOf: NcpiFamilyRelationship

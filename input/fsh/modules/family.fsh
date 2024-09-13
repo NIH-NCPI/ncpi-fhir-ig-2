@@ -3,7 +3,6 @@ Family Module
 
 Logical models, profiles, extensions and valuesets for:
 * NcpiStudyFamily
-* NcpiFamilyRole
 * NcpiFamilyRelationship
 
 */ 
@@ -20,6 +19,27 @@ Description: "The **Shared Data Model for Study Family**"
 * description 0..1 string "Free text describing the study family, such as potential inheritance or details about consanguinity"
 * consanguinity 0..1 code "Is there known or suspected consanguinity in this study family?"
 * studyFamilyFocus 0..1 code "What is this study family investigating? EG, a specific condition"
+
+// Family Role
+
+Logical: CdmFamilyRole
+Id: SharedDataModelFamilyRole
+Title: "Shared Data Model for Family Role"
+Description: "The **Shared Data Model for Family Role**"
+* participant 1..1 Reference "The participant we are describing"
+* studyFamily 1..1 Reference "The study family this participant is part of"
+* familyRole 0..1 code "The role this individual has in the family, specifically with respect to a proband or index participant"
+
+
+Extension: FamilyRole
+Id: family-role
+Title: "Study Family Focus"
+Description: "Extension containing Family Role"
+
+* insert SetContext(Group.content.extension)
+* value[x] only CodeableConcept 
+* valueCodeableConcept ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
+* valueCodeableConcept from $ncpi-family-member (extensible)
 
 CodeSystem: NcpiFamilyTypes
 Id: ncpi-family-types
@@ -104,17 +124,14 @@ Description: "Study Family"
 * extension[consanguinity] ^short = "Is there known or suspected consanguinity in this study family?"
 * extension contains StudyFamilyFocus named study-family-focus 0..1
 * extension[study-family-focus] ^short = "What is this study family investigating? EG, a specific condition"
+* member 1..*
+* member.entity only Reference(NcpiParticipant)
+* member.entity ^short = "The participant we are describing."
+* member.entity.extension contains FamilyRole named family-role 0..1
+* member.entity.extension[family-role] ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
 
-// Family Role
 
-Logical: CdmFamilyRole
-Id: SharedDataModelFamilyRole
-Title: "Shared Data Model for Family Role"
-Description: "The **Shared Data Model for Family Role**"
-* participant 1..1 Reference "The participant we are describing"
-* studyFamily 1..1 Reference "The study family this participant is part of"
-* familyRole 0..1 code "The role this individual has in the family, specifically with respect to a proband or index participant"
-
+/*
 Extension: StudyFamily
 Id: study-family
 Title: "Study Family Reference"
@@ -123,29 +140,8 @@ Description: "Extension containing Study Family Reference"
 * value[x] only Reference
 * valueReference 1..1
 * valueReference only Reference(NcpiStudyFamily)
+*/
 
-Extension: FamilyRole
-Id: family-role
-Title: "Study Family Focus"
-Description: "Extension containing Family Role"
-* value[x] only CodeableConcept 
-* valueCodeableConcept ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
-* valueCodeableConcept from $ncpi-family-member (extensible)
-
-Profile: NcpiFamilyRole
-Parent: Group
-Id: ncpi-family-role
-Title: "Family Role"
-Description: "Family Role"
-* ^version = "0.1.0"
-* ^status = #draft
-* member.entity 1..1
-* member.entity only Reference(NcpiParticipant)
-* member.entity ^short = "The participant we are describing."
-* extension contains StudyFamily named study-family 1..1
-* extension[study-family] ^short = "The study family this participant is part of"
-* extension contains FamilyRole named family-role 0..1
-* extension[family-role] ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
 
 
 // Family Relationship

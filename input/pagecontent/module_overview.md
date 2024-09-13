@@ -11,7 +11,6 @@ Administrators for these FHIR servers should selectively apply only those module
 |Biospecimen Collection|[Shared Data Model for Biospecimen](StructureDefinition-SharedDataModelBiospecimenCollection.html)|[Biospecimen Profile](StructureDefinition-ncpi-sample.html)|
 |Sample|[Shared Data Model for Sample](StructureDefinition-SharedDataModelSample.html)|[Sample Profile](StructureDefinition-ncpi-sample.html)|
 |Family Relationship|[Shared Data Model for Family Relationship](StructureDefinition-SharedDataModelFamilyRelationship.html)|[Family Relationship Profile](StructureDefinition-ncpi-family-relationship.html)|
-|Family Role|[Shared Data Model for Family Role](StructureDefinition-SharedDataModelFamilyRole.html)|[Family Role Profile](StructureDefinition-ncpi-family-role.html)|
 |File|[Shared Data Model for File](StructureDefinition-SharedDataModelFile.html)|[File Profile](StructureDefinition-ncpi-file.html)|
 |Participant|[Shared Data Model for Participant](StructureDefinition-SharedDataModelResearchParticipant.html)|[Participant Profile](StructureDefinition-ncpi-participant.html)|
 |Person|[Shared Data Model for Person](StructureDefinition-SharedDataModelPerson.html)|[Person Profile](StructureDefinition-ncpi-person.html)|
