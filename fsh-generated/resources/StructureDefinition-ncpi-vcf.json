@@ -11,10 +11,218 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-analysis-file",
+  "baseDefinition": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file-metadata",
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.extension:specimen-collection",
+        "path": "Observation.extension",
+        "sliceName": "specimen-collection",
+        "short": "Linkage for related samples",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/specimen-collection"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice pattern for component.code"
+        },
+        "min": 6
+      },
+      {
+        "id": "Observation.component:assay_strategy",
+        "path": "Observation.component",
+        "sliceName": "assay_strategy",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:assay_strategy.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "AssayStrategy"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:assay_strategy.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:platform_instrument",
+        "path": "Observation.component",
+        "sliceName": "platform_instrument",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:platform_instrument.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "PlatformInstrument"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:platform_instrument.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:library_prep",
+        "path": "Observation.component",
+        "sliceName": "library_prep",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:library_prep.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "LibraryPrep"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:library_prep.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:library_selection",
+        "path": "Observation.component",
+        "sliceName": "library_selection",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:library_selection.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "LibrarySelection"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:library_selection.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:strandedness",
+        "path": "Observation.component",
+        "sliceName": "strandedness",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:strandedness.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "Strandedness"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:strandedness.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:target_region",
+        "path": "Observation.component",
+        "sliceName": "target_region",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:target_region.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "TargetRegion"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:target_region.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
       {
         "id": "Observation.component:is_paired_end",
         "path": "Observation.component",
@@ -46,10 +254,40 @@
         ]
       },
       {
+        "id": "Observation.component:adaptor_trimmed",
+        "path": "Observation.component",
+        "sliceName": "adaptor_trimmed",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:adaptor_trimmed.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "AdaptorTrimmed"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:adaptor_trimmed.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
         "id": "Observation.component:reference_genome",
         "path": "Observation.component",
         "sliceName": "reference_genome",
-        "min": 0,
+        "min": 1,
         "max": "1"
       },
       {
@@ -76,7 +314,7 @@
         "id": "Observation.component:workflow_type",
         "path": "Observation.component",
         "sliceName": "workflow_type",
-        "min": 0,
+        "min": 1,
         "max": "1"
       },
       {
@@ -103,7 +341,7 @@
         "id": "Observation.component:workflow_tool",
         "path": "Observation.component",
         "sliceName": "workflow_tool",
-        "min": 0,
+        "min": 1,
         "max": "1"
       },
       {

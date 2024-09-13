@@ -5,7 +5,7 @@
   "name": "CdmCondition",
   "title": "Shared Data Model for Condition",
   "status": "draft",
-  "description": "The **Shared Data Model for Condition**",
+  "description": "The Shared Data Model for **Condition**",
   "fhirVersion": "4.3.0",
   "kind": "logical",
   "abstract": false,
@@ -18,11 +18,11 @@
         "id": "SharedDataModelCondition",
         "path": "SharedDataModelCondition",
         "short": "Shared Data Model for Condition",
-        "definition": "The **Shared Data Model for Condition**"
+        "definition": "The Shared Data Model for **Condition**"
       },
       {
-        "id": "SharedDataModelCondition.participantID",
-        "path": "SharedDataModelCondition.participantID",
+        "id": "SharedDataModelCondition.participant",
+        "path": "SharedDataModelCondition.participant",
         "short": "The participant we are describing",
         "definition": "The participant we are describing",
         "min": 1,
@@ -65,13 +65,13 @@
       {
         "id": "SharedDataModelCondition.ageAtAssertion",
         "path": "SharedDataModelCondition.ageAtAssertion",
-        "short": "The date or age at which this condition is being asserted. ",
-        "definition": "The date or age at which this condition is being asserted. ",
+        "short": "The date or age at which this condition is being asserted.",
+        "definition": "The date or age at which this condition is being asserted.",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "date"
+            "code": "Quantity"
           }
         ]
       },
@@ -160,6 +160,32 @@
         "definition": "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows.",
         "min": 0,
         "max": "*",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelCondition.locationQualifier",
+        "path": "SharedDataModelCondition.locationQualifier",
+        "short": "Any spatial/location qualifiers",
+        "definition": "Any spatial/location qualifiers",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelCondition.lateralityQualifier",
+        "path": "SharedDataModelCondition.lateralityQualifier",
+        "short": "Any laterality qualifiers",
+        "definition": "Any laterality qualifiers",
+        "min": 0,
+        "max": "1",
         "type": [
           {
             "code": "code"
