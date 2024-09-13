@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchSubject/gregor-example-participantstudy> a fhir:ResearchSubject ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "gregor-example-participantstudy"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ResearchSubject gregor-example-participantstudy</b></p><a name=\"gregor-example-participantstudy\"> </a><a name=\"hcgregor-example-participantstudy\"> </a><a name=\"gregor-example-participantstudy-en-US\"> </a><p><b>status</b>: Candidate</p><p><b>study</b>: <a href=\"ResearchStudy-research-study-gregor.html\">ResearchStudy: identifier = AnVIL_GREGoR_GSS_U08_GRU; status = completed</a></p><p><b>individual</b>: <a href=\"Patient-GSS123456.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>consent</b>: <a href=\"Consent-gregor-gru-consent.html\">Consent: extension = Use of the data is limited only by the terms of the model Data Use Certification.,Controlled; status = draft; scope = Research; category = Research Information Access; policyRule = Common Rule Informed Consent</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "candidate"] ; # 
+  fhir:study [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/research-study-gregor> ;
+     fhir:reference [ fhir:v "ResearchStudy/research-study-gregor" ]
+  ] ; # 
+  fhir:individual [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/GSS123456> ;
+     fhir:reference [ fhir:v "Patient/GSS123456" ]
+  ] ; # 
+  fhir:consent [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/gregor-gru-consent> ;
+     fhir:reference [ fhir:v "Consent/gregor-gru-consent" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

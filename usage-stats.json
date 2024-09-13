@@ -293,6 +293,7 @@
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-population",
       "title": "Research Population",
       "types": [
+        "string",
         "CodeableConcept"
       ]
     },
@@ -532,7 +533,6 @@
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime": [
       "Observation.effectiveDateTime",
-      "Patient.birthDate",
       "Specimen.collection.collectedDateTime"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [

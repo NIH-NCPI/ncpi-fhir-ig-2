@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/gregor-family-relationship-mother> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "gregor-family-relationship-mother"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation gregor-family-relationship-mother</b></p><a name=\"gregor-family-relationship-mother\"> </a><a name=\"hcgregor-family-relationship-mother\"> </a><a name=\"gregor-family-relationship-mother-en-US\"> </a><p><b>status</b>: Registered</p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode CHILD}\">child</span></p><p><b>subject</b>: <a href=\"Patient-GSS123456.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>focus</b>: <a href=\"Patient-GSS654321.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS654321)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "registered"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CHILD" ] ;
+       fhir:display [ fhir:v "child" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/GSS123456> ;
+     fhir:reference [ fhir:v "Patient/GSS123456" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/GSS654321> ;
+     fhir:reference [ fhir:v "Patient/GSS654321" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

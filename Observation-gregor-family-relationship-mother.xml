@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="gregor-family-relationship-mother"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation gregor-family-relationship-mother</b></p><a name="gregor-family-relationship-mother"> </a><a name="hcgregor-family-relationship-mother"> </a><a name="gregor-family-relationship-mother-en-US"> </a><p><b>status</b>: Registered</p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode CHILD}">child</span></p><p><b>subject</b>: <a href="Patient-GSS123456.html">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>focus</b>: <a href="Patient-GSS654321.html">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS654321)</a></p></div>
+  </text>
+  <status value="registered"/>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="CHILD"/>
+      <display value="child"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/GSS123456"/>
+  </subject>
+  <focus>
+    <reference value="Patient/GSS654321"/>
+  </focus>
+</Observation>

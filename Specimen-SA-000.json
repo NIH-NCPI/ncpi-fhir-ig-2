@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen SA-000</b></p><a name=\"SA-000\"> </a><a name=\"hcSA-000\"> </a><a name=\"SA-000-en-US\"> </a><p><b>identifier</b>: SA_RV52EY7S</p><p><b>type</b>: <span title=\"Codes:\">Peripheral Whole Blood</span></p><p><b>subject</b>: <a href=\"PT_006SP660\">PT_006SP660</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>Method</b></td></tr><tr><td style=\"display: none\">*</td><td><code>Relative date time: </code></td><td><span title=\"Codes:{https://loinc.org LP125037-4}\">Blood Draw</span></td></tr></table><h3>Containers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td></tr><tr><td style=\"display: none\">*</td><td>BS_9QM8EXG3</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen SA-000</b></p><a name=\"SA-000\"> </a><a name=\"hcSA-000\"> </a><a name=\"SA-000-en-US\"> </a><p><b>identifier</b>: SA_RV52EY7S</p><p><b>type</b>: <span title=\"Codes:\">Peripheral Whole Blood</span></p><p><b>subject</b>: <a href=\"Patient-PT-006SP660.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://cbtn.org/#C21156)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>Method</b></td></tr><tr><td style=\"display: none\">*</td><td><code>Relative date time: </code></td><td><span title=\"Codes:{https://loinc.org LP125037-4}\">Blood Draw</span></td></tr></table><h3>Containers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td></tr><tr><td style=\"display: none\">*</td><td>BS_9QM8EXG3</td></tr></table></div>"
   },
   "identifier" : [{
     "value" : "SA_RV52EY7S"
@@ -15,7 +15,7 @@
     "text" : "Peripheral Whole Blood"
   },
   "subject" : {
-    "reference" : "PT_006SP660"
+    "reference" : "Patient/PT-006SP660"
   },
   "collection" : {
     "_collectedDateTime" : {
@@ -23,7 +23,7 @@
         "extension" : [{
           "url" : "target",
           "valueReference" : {
-            "reference" : "PT_006SP660"
+            "reference" : "Patient/PT-006SP660"
           }
         },
         {

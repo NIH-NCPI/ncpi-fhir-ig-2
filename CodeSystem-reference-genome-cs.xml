@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="reference-genome-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem reference-genome-cs</b></p><a name="reference-genome-cs"> </a><a name="hcreference-genome-cs"> </a><a name="reference-genome-cs-en-US"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">GRCh37<a name="reference-genome-cs-GRCh37"> </a></td><td>GRCh37</td></tr><tr><td style="white-space:nowrap">GRCh38<a name="reference-genome-cs-GRCh38"> </a></td><td>CRCh38</td></tr><tr><td style="white-space:nowrap">GRCh38p13<a name="reference-genome-cs-GRCh38p13"> </a></td><td>GRCh38.p13</td></tr><tr><td style="white-space:nowrap">GRCh38p14<a name="reference-genome-cs-GRCh38p14"> </a></td><td>GRCh38.p14</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem reference-genome-cs</b></p><a name="reference-genome-cs"> </a><a name="hcreference-genome-cs"> </a><a name="reference-genome-cs-en-US"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">GRCh37<a name="reference-genome-cs-GRCh37"> </a></td><td>GRCh37</td></tr><tr><td style="white-space:nowrap">GRCh38<a name="reference-genome-cs-GRCh38"> </a></td><td>CRCh38</td></tr><tr><td style="white-space:nowrap">GRCh38p13<a name="reference-genome-cs-GRCh38p13"> </a></td><td>GRCh38.p13</td></tr><tr><td style="white-space:nowrap">GRCh38p14<a name="reference-genome-cs-GRCh38p14"> </a></td><td>GRCh38.p14</td></tr><tr><td style="white-space:nowrap">unknown<a name="reference-genome-cs-unknown"> </a></td><td>Unknown</td></tr></table></div>
   </text>
   <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs"/>
   <version value="0.1.0"/>
   <name value="ReferenceGenomeCS"/>
   <title value="Reference genome examples"/>
   <status value="draft"/>
-  <date value="2024-09-12T18:14:21+00:00"/>
+  <date value="2024-09-13T20:57:31+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -25,7 +25,7 @@
   </contact>
   <description value="Reference genome examples"/>
   <content value="complete"/>
-  <count value="4"/>
+  <count value="5"/>
   <concept>
     <code value="GRCh37"/>
     <display value="GRCh37"/>
@@ -41,5 +41,9 @@
   <concept>
     <code value="GRCh38p14"/>
     <display value="GRCh38.p14"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
   </concept>
 </CodeSystem>

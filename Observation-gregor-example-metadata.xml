@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="gregor-example-metadata"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation gregor-example-metadata</b></p><a name="gregor-example-metadata"> </a><a name="hcgregor-example-metadata"> </a><a name="gregor-example-metadata-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://edamontology.org format_2572}">format_2572</span></p><p><b>focus</b>: <a href="Patient-GSS123456.html">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>specimen</b>: <a href="Specimen-GSS123456-01-010.html">Specimen: identifier = GSS123456-s1; type = </a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">WorkflowType</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">AssayStrategy</span></p><p><b>value</b>: <span title="Codes:">unknown</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">PlatformInstrument</span></p><p><b>value</b>: <span title="Codes:">unknown</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">LibraryPrep</span></p><p><b>value</b>: <span title="Codes:">unknown</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">LibrarySelection</span></p><p><b>value</b>: <span title="Codes:">unknown</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">Strandedness</span></p><p><b>value</b>: <span title="Codes:">unknown</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">ReferenceGenome</span></p><p><b>value</b>: <span title="Codes:">GRCh38</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">IsPairedEnd</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">WorkflowTool</span></p><p><b>value</b>: <span title="Codes:">unknown</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">WorkflowType</span></p><p><b>value</b>: <span title="Codes:">alignment</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">TargetRegion</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://edamontology.org"/>
+      <code value="format_2572"/>
+    </coding>
+  </code>
+  <focus>
+    <reference value="Patient/GSS123456"/>
+  </focus>
+  <specimen>
+    <reference value="Specimen/GSS123456-01-010"/>
+  </specimen>
+  <component>
+    <code>
+      <coding>
+        <code value="WorkflowType"/>
+      </coding>
+    </code>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="AssayStrategy"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <code value="unknown"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="PlatformInstrument"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <code value="unknown"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="LibraryPrep"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <code value="unknown"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="LibrarySelection"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <code value="unknown"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="Strandedness"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <code value="unknown"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="ReferenceGenome"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <code value="GRCh38"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="IsPairedEnd"/>
+      </coding>
+    </code>
+    <valueBoolean value="false"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="WorkflowTool"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <code value="unknown"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="WorkflowType"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <code value="alignment"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <code value="TargetRegion"/>
+      </coding>
+    </code>
+  </component>
+</Observation>

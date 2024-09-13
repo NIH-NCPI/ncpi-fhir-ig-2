@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2024-09-12T18:14:21+00:00",
+  "date" : "2024-09-13T20:57:31+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -698,19 +698,7 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/cbtn-family-relationship-mother"
-      },
-      "name" : "An example family relationship based on data from CBTN",
-      "description" : "An example family relationship based on data from CBTN.",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/cbtn-family-relationship-son"
+        "reference" : "Observation/gregor-family-relationship-mother"
       },
       "name" : "An example family relationship based on data from CBTN",
       "description" : "An example family relationship based on data from CBTN.",
@@ -722,19 +710,7 @@
         "valueString" : "Group"
       }],
       "reference" : {
-        "reference" : "Group/cbtn-family-role-mother"
-      },
-      "name" : "An example family role based on data from CBTN",
-      "description" : "An example family role based on data from CBTN.",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Group"
-      }],
-      "reference" : {
-        "reference" : "Group/cbtn-family-role-son"
+        "reference" : "Group/gregor-family-role-child"
       },
       "name" : "An example family role based on data from CBTN",
       "description" : "An example family role based on data from CBTN.",
@@ -1078,14 +1054,50 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/GSS123456-01-010"
+      },
+      "name" : "Example biospecimen based on data from GREGoR",
+      "description" : "Example biospecimen based on data from GREGoR",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
         "reference" : "Observation/PT-006SP660-condition"
       },
-      "name" : "Example condition using data from Kids First",
-      "description" : "Example condition using data from Kids First.",
+      "name" : "Example condition using data from CBTN",
+      "description" : "Example condition using data from CBTN.",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/GSS123456-condition"
+      },
+      "name" : "Example condition using data from GREGoR",
+      "description" : "Example condition using data from GREGoR",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/GSS654321"
+      },
+      "name" : "Example family member based on data from GREGoR",
+      "description" : "Example family member based on data from GREGoR.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
     },
     {
       "extension" : [{
@@ -1093,7 +1105,19 @@
         "valueString" : "DocumentReference"
       }],
       "reference" : {
-        "reference" : "DocumentReference/PT-006SP660"
+        "reference" : "DocumentReference/GF-6BAD9S7D"
+      },
+      "name" : "Example file based on CBTN",
+      "description" : "Use case of file information from CBTN",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/GSS123456-01-010-SG-2"
       },
       "name" : "Example file based on CBTN",
       "description" : "Use case of file information from CBTN",
@@ -1105,10 +1129,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/BAM-CRAM-example"
+        "reference" : "Observation/gregor-example-metadata"
       },
-      "name" : "Example file metadata for a BAM-CRAM file",
-      "description" : "Example file metadata for a BAM-CRAM file",
+      "name" : "Example file metadata for a BAM-CRAM file from GREGoR",
+      "description" : "Example file metadata for a BAM-CRAM file from GREGoR",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram"
     },
     {
@@ -1126,50 +1150,50 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/VCF-example"
-      },
-      "name" : "Example file metadata for a VCF file",
-      "description" : "Example file metadata for a VCF file",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-vcf"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ResearchSubject"
       }],
       "reference" : {
-        "reference" : "ResearchSubject/cbtn-example-participantstudy"
+        "reference" : "ResearchSubject/gregor-example-participantstudy"
       },
-      "name" : "Example mappings based on data from CBTN",
-      "description" : "Example mappings based on data from CBTN",
+      "name" : "Example mappings based on data from GREGoR",
+      "description" : "Example mappings based on data from GREGoR",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchSubject"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "ResearchSubject/emerge-example-participantstudy"
+        "reference" : "Patient/PT-006SP660"
       },
-      "name" : "Example mappings based on data from eMERGE",
-      "description" : "Example mappings based on data from eMERGE",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+      "name" : "Example patients based on data from CBTN",
+      "description" : "Example patients based on data from CBTN.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchSubject"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "ResearchSubject/pcgc-example-participantstudy"
+        "reference" : "Patient/GSS123456"
       },
-      "name" : "Example mappings based on data from PCGC",
-      "description" : "Example mappings based on data from PCGC",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+      "name" : "Example patients based on data from GREGoR",
+      "description" : "Example patients based on data from GREGoR.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Person"
+      }],
+      "reference" : {
+        "reference" : "Person/gregor-example-person"
+      },
+      "name" : "Example patients based on data from GREGoR",
+      "description" : "Example patients based on data from GREGoR",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
     },
     {
       "extension" : [{
@@ -1177,83 +1201,23 @@
         "valueString" : "Group"
       }],
       "reference" : {
-        "reference" : "Group/cbtn-study-family"
+        "reference" : "Group/gregor-study-family"
       },
-      "name" : "Example patients based on data from CBTN",
-      "description" : "Example patients based on data from CBTN.",
+      "name" : "Example patients based on data from GREGoR",
+      "description" : "Example patients based on data from GREGoR.",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
+        "valueString" : "ResearchStudy"
       }],
       "reference" : {
-        "reference" : "Patient/PT-KZG2CZ95"
+        "reference" : "ResearchStudy/research-study-gregor"
       },
-      "name" : "Example patients based on data from CBTN",
-      "description" : "Example patients based on data from CBTN.",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Person"
-      }],
-      "reference" : {
-        "reference" : "Person/cbtn-example-person"
-      },
-      "name" : "Example patients based on data from CBTN",
-      "description" : "Example patients based on data from CBTN",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/6812345"
-      },
-      "name" : "Example patients based on data from eMERGE",
-      "description" : "Example patients based on data from eMERGE",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Person"
-      }],
-      "reference" : {
-        "reference" : "Person/emerge-example-person"
-      },
-      "name" : "Example patients based on data from eMERGE",
-      "description" : "Example patients based on data from eMERGE",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/PT-005B7CZ4"
-      },
-      "name" : "Example patients based on data from PCGC",
-      "description" : "Example patients based on data from PCGC.",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Person"
-      }],
-      "reference" : {
-        "reference" : "Person/pcgc-example-person"
-      },
-      "name" : "Example patients based on data from PCGC",
-      "description" : "Example patients based on data from PCGC",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
+      "name" : "Example study from GREGoR",
+      "description" : "Example study from GREGoR",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
     },
     {
       "extension" : [{
@@ -1337,6 +1301,18 @@
       },
       "name" : "Genomic Summary Results (GSR) Allowed Access",
       "description" : "Genomic Summary Results (GSR) Allowed Access",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/gregor-gru-consent"
+      },
+      "name" : "GREGoR General Research Use (GRU) Consent",
+      "description" : "General Research Use (GRU)",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
     },
     {
@@ -1542,66 +1518,6 @@
       "name" : "MeSH Terms",
       "description" : "Example terms from Medical Subject Headings (MeSH) Ontology",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/GRU"
-      },
-      "name" : "Mock consent based on kf-gru-dac-consent",
-      "description" : "General Research Use (GRU)",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/HMB"
-      },
-      "name" : "Mock consent based on kf-gru-dbgap-consent",
-      "description" : "General Research Use (GRU)",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/SD-BHJXBDQK"
-      },
-      "name" : "Mock study based on kf-research-study-subject-gru-dac",
-      "description" : "GRU data access via DAC",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/SD-PREASA7S"
-      },
-      "name" : "Mock Study based on kf-research-study-subject-gru-dbgap",
-      "description" : "GRU data access via dbGaP",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/phv00407460.v2"
-      },
-      "name" : "Mock study based on kf-research-study-subject-gsr-allowed",
-      "description" : "Genomic Summary Results (GSR) Allowed Access",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
     },
     {
       "extension" : [{
@@ -1862,6 +1778,18 @@
       }],
       "reference" : {
         "reference" : "Group/kf-research-study-cbtn-participants"
+      },
+      "name" : "Participants from the CBTN research study",
+      "description" : "Participants from the CBTN research study",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/gregor-research-study-participants"
       },
       "name" : "Participants from the CBTN research study",
       "description" : "Participants from the CBTN research study",
@@ -2585,38 +2513,13 @@
         "generation" : "markdown"
       },
       {
-        "nameUrl" : "example_assays.html",
-        "title" : "Example Assays",
+        "nameUrl" : "example_cbtn.html",
+        "title" : "Example Cbtn",
         "generation" : "markdown"
       },
       {
-        "nameUrl" : "example_family.html",
-        "title" : "Example Family",
-        "generation" : "markdown"
-      },
-      {
-        "nameUrl" : "example_files.html",
-        "title" : "Example Files",
-        "generation" : "markdown"
-      },
-      {
-        "nameUrl" : "example_participant.html",
-        "title" : "Example Participant",
-        "generation" : "markdown"
-      },
-      {
-        "nameUrl" : "example_phenotype_condition.html",
-        "title" : "Example Phenotype Condition",
-        "generation" : "markdown"
-      },
-      {
-        "nameUrl" : "example_research_study.html",
-        "title" : "Example Research Study",
-        "generation" : "markdown"
-      },
-      {
-        "nameUrl" : "example_specimen.html",
-        "title" : "Example Specimen",
+        "nameUrl" : "example_gregor.html",
+        "title" : "Example Gregor",
         "generation" : "markdown"
       },
       {

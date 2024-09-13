@@ -1,0 +1,69 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "GSS123456-01-010-SG-2",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference GSS123456-01-010-SG-2</b></p><a name=\"GSS123456-01-010-SG-2\"> </a><a name=\"hcGSS123456-01-010-SG-2\"> </a><a name=\"GSS123456-01-010-SG-2-en-US\"> </a><p><b>Version of the contents of the file</b>: V1</p><p><b>The file format used</b>: <span title=\"Codes:{http://edamontology.org format_2572}\">BAM</span></p><p><b>The size of the file, e.g., in bytes.</b>: 1044770380 bytes</p><blockquote><p><b>Provides a list of hashes for confirming file transfers</b></p><ul><li>https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value: 9c2460c4647fdc57261f040042863fa0</li><li>https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type: md5</li></ul></blockquote><p><b>identifier</b>: GSS123456-01-010-SG-2</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://edamontology.org operation_3198}\">Read mapping</span></p><p><b>subject</b>: <a href=\"Patient-GSS123456.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>description</b>: Aligned DNA short read</p><blockquote><p><b>content</b></p><p><b>If present, only those under the specific Access Policy can access the file in this location.</b>: <a href=\"Consent-kf-gru-dac-consent.html\">Consent: extension = Use of the data is limited only by the terms of the model Data Use Certification.,https://redcap.chop.edu/surveys/?s=A7M873HMN8,Controlled; status = draft; scope = Research; category = Research Information Access; policyRule = Common Rule Informed Consent</a></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>gs://fc-secure-a1f0e28d-c9d9-43bb-b4ba-5e0h81784fb1/GSS123456/SR_GS/GSS123456.bam</td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version",
+    "valueString" : "V1"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://edamontology.org",
+        "code" : "format_2572",
+        "display" : "BAM"
+      }]
+    }
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size",
+    "valueQuantity" : {
+      "value" : 1044770380,
+      "unit" : "bytes"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
+      "valueString" : "9c2460c4647fdc57261f040042863fa0"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type",
+      "valueCode" : "md5"
+    }],
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"
+  }],
+  "identifier" : [{
+    "value" : "GSS123456-01-010-SG-2"
+  }],
+  "status" : "current",
+  "type" : {
+    "coding" : [{
+      "system" : "http://edamontology.org",
+      "code" : "operation_3198",
+      "display" : "Read mapping"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/GSS123456"
+  },
+  "description" : "Aligned DNA short read",
+  "content" : [{
+    "extension" : [{
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access",
+      "valueReference" : {
+        "reference" : "Consent/kf-gru-dac-consent"
+      }
+    }],
+    "attachment" : {
+      "url" : "gs://fc-secure-a1f0e28d-c9d9-43bb-b4ba-5e0h81784fb1/GSS123456/SR_GS/GSS123456.bam"
+    }
+  }]
+}

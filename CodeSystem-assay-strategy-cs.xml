@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="assay-strategy-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem assay-strategy-cs</b></p><a name="assay-strategy-cs"> </a><a name="hcassay-strategy-cs"> </a><a name="assay-strategy-cs-en-US"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/assay-strategy-cs</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">WGS<a name="assay-strategy-cs-WGS"> </a></td><td>Whole Genome Sequencing</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem assay-strategy-cs</b></p><a name="assay-strategy-cs"> </a><a name="hcassay-strategy-cs"> </a><a name="assay-strategy-cs-en-US"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/assay-strategy-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">WGS<a name="assay-strategy-cs-WGS"> </a></td><td>Whole Genome Sequencing</td></tr><tr><td style="white-space:nowrap">unknown<a name="assay-strategy-cs-unknown"> </a></td><td>Unknown</td></tr></table></div>
   </text>
   <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/assay-strategy-cs"/>
   <version value="0.1.0"/>
   <name value="AssayStrategyCS"/>
   <title value="Assay strategy options"/>
   <status value="draft"/>
-  <date value="2024-09-12T18:14:21+00:00"/>
+  <date value="2024-09-13T20:57:31+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -25,9 +25,13 @@
   </contact>
   <description value="Assay strategy options"/>
   <content value="complete"/>
-  <count value="1"/>
+  <count value="2"/>
   <concept>
     <code value="WGS"/>
     <display value="Whole Genome Sequencing"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
   </concept>
 </CodeSystem>

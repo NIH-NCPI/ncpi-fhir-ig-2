@@ -1,0 +1,20 @@
+{
+  "resourceType" : "Person",
+  "id" : "gregor-example-person",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Person gregor-example-person</b></p><a name=\"gregor-example-person\"> </a><a name=\"hcgregor-example-person\"> </a><a name=\"gregor-example-person-en-US\"> </a><p><b>identifier</b>: <code>https://anvil.terra.bio</code>/PS_000</p><h3>Links</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Target</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient-GSS123456.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://anvil.terra.bio",
+    "value" : "PS_000"
+  }],
+  "link" : [{
+    "target" : {
+      "reference" : "Patient/GSS123456"
+    }
+  }]
+}

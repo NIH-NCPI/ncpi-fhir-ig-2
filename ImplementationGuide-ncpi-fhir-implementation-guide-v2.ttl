@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-12T18:14:21+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-13T20:57:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -611,23 +611,8 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/cbtn-family-relationship-mother> ;
-         fhir:reference [ fhir:v "Observation/cbtn-family-relationship-mother" ]
-       ] ;
-       fhir:name [ fhir:v "An example family relationship based on data from CBTN" ] ;
-       fhir:description [ fhir:v "An example family relationship based on data from CBTN." ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/cbtn-family-relationship-son> ;
-         fhir:reference [ fhir:v "Observation/cbtn-family-relationship-son" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/gregor-family-relationship-mother> ;
+         fhir:reference [ fhir:v "Observation/gregor-family-relationship-mother" ]
        ] ;
        fhir:name [ fhir:v "An example family relationship based on data from CBTN" ] ;
        fhir:description [ fhir:v "An example family relationship based on data from CBTN." ] ;
@@ -641,23 +626,8 @@
          fhir:value [ fhir:v "Group" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/cbtn-family-role-mother> ;
-         fhir:reference [ fhir:v "Group/cbtn-family-role-mother" ]
-       ] ;
-       fhir:name [ fhir:v "An example family role based on data from CBTN" ] ;
-       fhir:description [ fhir:v "An example family role based on data from CBTN." ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Group" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/cbtn-family-role-son> ;
-         fhir:reference [ fhir:v "Group/cbtn-family-role-son" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/gregor-family-role-child> ;
+         fhir:reference [ fhir:v "Group/gregor-family-role-child" ]
        ] ;
        fhir:name [ fhir:v "An example family role based on data from CBTN" ] ;
        fhir:description [ fhir:v "An example family role based on data from CBTN." ] ;
@@ -1030,14 +1000,29 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Specimen" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Specimen/GSS123456-01-010> ;
+         fhir:reference [ fhir:v "Specimen/GSS123456-01-010" ]
+       ] ;
+       fhir:name [ fhir:v "Example biospecimen based on data from GREGoR" ] ;
+       fhir:description [ fhir:v "Example biospecimen based on data from GREGoR" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/PT-006SP660-condition> ;
          fhir:reference [ fhir:v "Observation/PT-006SP660-condition" ]
        ] ;
-       fhir:name [ fhir:v "Example condition using data from Kids First" ] ;
-       fhir:description [ fhir:v "Example condition using data from Kids First." ] ;
+       fhir:name [ fhir:v "Example condition using data from CBTN" ] ;
+       fhir:description [ fhir:v "Example condition using data from CBTN." ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition>
@@ -1045,11 +1030,56 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/GSS123456-condition> ;
+         fhir:reference [ fhir:v "Observation/GSS123456-condition" ]
+       ] ;
+       fhir:name [ fhir:v "Example condition using data from GREGoR" ] ;
+       fhir:description [ fhir:v "Example condition using data from GREGoR" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/GSS654321> ;
+         fhir:reference [ fhir:v "Patient/GSS654321" ]
+       ] ;
+       fhir:name [ fhir:v "Example family member based on data from GREGoR" ] ;
+       fhir:description [ fhir:v "Example family member based on data from GREGoR." ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "DocumentReference" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/PT-006SP660> ;
-         fhir:reference [ fhir:v "DocumentReference/PT-006SP660" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/GF-6BAD9S7D> ;
+         fhir:reference [ fhir:v "DocumentReference/GF-6BAD9S7D" ]
+       ] ;
+       fhir:name [ fhir:v "Example file based on CBTN" ] ;
+       fhir:description [ fhir:v "Use case of file information from CBTN" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DocumentReference" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/GSS123456-01-010-SG-2> ;
+         fhir:reference [ fhir:v "DocumentReference/GSS123456-01-010-SG-2" ]
        ] ;
        fhir:name [ fhir:v "Example file based on CBTN" ] ;
        fhir:description [ fhir:v "Use case of file information from CBTN" ] ;
@@ -1063,11 +1093,11 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/BAM-CRAM-example> ;
-         fhir:reference [ fhir:v "Observation/BAM-CRAM-example" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/gregor-example-metadata> ;
+         fhir:reference [ fhir:v "Observation/gregor-example-metadata" ]
        ] ;
-       fhir:name [ fhir:v "Example file metadata for a BAM-CRAM file" ] ;
-       fhir:description [ fhir:v "Example file metadata for a BAM-CRAM file" ] ;
+       fhir:name [ fhir:v "Example file metadata for a BAM-CRAM file from GREGoR" ] ;
+       fhir:description [ fhir:v "Example file metadata for a BAM-CRAM file from GREGoR" ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram>
@@ -1090,29 +1120,14 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/VCF-example> ;
-         fhir:reference [ fhir:v "Observation/VCF-example" ]
-       ] ;
-       fhir:name [ fhir:v "Example file metadata for a VCF file" ] ;
-       fhir:description [ fhir:v "Example file metadata for a VCF file" ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-vcf"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-vcf>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ResearchSubject" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchSubject/cbtn-example-participantstudy> ;
-         fhir:reference [ fhir:v "ResearchSubject/cbtn-example-participantstudy" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchSubject/gregor-example-participantstudy> ;
+         fhir:reference [ fhir:v "ResearchSubject/gregor-example-participantstudy" ]
        ] ;
-       fhir:name [ fhir:v "Example mappings based on data from CBTN" ] ;
-       fhir:description [ fhir:v "Example mappings based on data from CBTN" ] ;
+       fhir:name [ fhir:v "Example mappings based on data from GREGoR" ] ;
+       fhir:description [ fhir:v "Example mappings based on data from GREGoR" ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant>
@@ -1120,32 +1135,47 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ResearchSubject" ]
+         fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchSubject/emerge-example-participantstudy> ;
-         fhir:reference [ fhir:v "ResearchSubject/emerge-example-participantstudy" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-006SP660> ;
+         fhir:reference [ fhir:v "Patient/PT-006SP660" ]
        ] ;
-       fhir:name [ fhir:v "Example mappings based on data from eMERGE" ] ;
-       fhir:description [ fhir:v "Example mappings based on data from eMERGE" ] ;
+       fhir:name [ fhir:v "Example patients based on data from CBTN" ] ;
+       fhir:description [ fhir:v "Example patients based on data from CBTN." ] ;
        fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant>
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ResearchSubject" ]
+         fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchSubject/pcgc-example-participantstudy> ;
-         fhir:reference [ fhir:v "ResearchSubject/pcgc-example-participantstudy" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/GSS123456> ;
+         fhir:reference [ fhir:v "Patient/GSS123456" ]
        ] ;
-       fhir:name [ fhir:v "Example mappings based on data from PCGC" ] ;
-       fhir:description [ fhir:v "Example mappings based on data from PCGC" ] ;
+       fhir:name [ fhir:v "Example patients based on data from GREGoR" ] ;
+       fhir:description [ fhir:v "Example patients based on data from GREGoR." ] ;
        fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant>
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Person" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Person/gregor-example-person> ;
+         fhir:reference [ fhir:v "Person/gregor-example-person" ]
+       ] ;
+       fhir:name [ fhir:v "Example patients based on data from GREGoR" ] ;
+       fhir:description [ fhir:v "Example patients based on data from GREGoR" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person>
        ]
      ] [
        fhir:extension ( [
@@ -1153,11 +1183,11 @@
          fhir:value [ fhir:v "Group" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/cbtn-study-family> ;
-         fhir:reference [ fhir:v "Group/cbtn-study-family" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/gregor-study-family> ;
+         fhir:reference [ fhir:v "Group/gregor-study-family" ]
        ] ;
-       fhir:name [ fhir:v "Example patients based on data from CBTN" ] ;
-       fhir:description [ fhir:v "Example patients based on data from CBTN." ] ;
+       fhir:name [ fhir:v "Example patients based on data from GREGoR" ] ;
+       fhir:description [ fhir:v "Example patients based on data from GREGoR." ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family>
@@ -1165,92 +1195,17 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
+         fhir:value [ fhir:v "ResearchStudy" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-KZG2CZ95> ;
-         fhir:reference [ fhir:v "Patient/PT-KZG2CZ95" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/research-study-gregor> ;
+         fhir:reference [ fhir:v "ResearchStudy/research-study-gregor" ]
        ] ;
-       fhir:name [ fhir:v "Example patients based on data from CBTN" ] ;
-       fhir:description [ fhir:v "Example patients based on data from CBTN." ] ;
+       fhir:name [ fhir:v "Example study from GREGoR" ] ;
+       fhir:description [ fhir:v "Example study from GREGoR" ] ;
        fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Person" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Person/cbtn-example-person> ;
-         fhir:reference [ fhir:v "Person/cbtn-example-person" ]
-       ] ;
-       fhir:name [ fhir:v "Example patients based on data from CBTN" ] ;
-       fhir:description [ fhir:v "Example patients based on data from CBTN" ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/6812345> ;
-         fhir:reference [ fhir:v "Patient/6812345" ]
-       ] ;
-       fhir:name [ fhir:v "Example patients based on data from eMERGE" ] ;
-       fhir:description [ fhir:v "Example patients based on data from eMERGE" ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Person" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Person/emerge-example-person> ;
-         fhir:reference [ fhir:v "Person/emerge-example-person" ]
-       ] ;
-       fhir:name [ fhir:v "Example patients based on data from eMERGE" ] ;
-       fhir:description [ fhir:v "Example patients based on data from eMERGE" ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-005B7CZ4> ;
-         fhir:reference [ fhir:v "Patient/PT-005B7CZ4" ]
-       ] ;
-       fhir:name [ fhir:v "Example patients based on data from PCGC" ] ;
-       fhir:description [ fhir:v "Example patients based on data from PCGC." ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Person" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Person/pcgc-example-person> ;
-         fhir:reference [ fhir:v "Person/pcgc-example-person" ]
-       ] ;
-       fhir:name [ fhir:v "Example patients based on data from PCGC" ] ;
-       fhir:description [ fhir:v "Example patients based on data from PCGC" ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person>
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study>
        ]
      ] [
        fhir:extension ( [
@@ -1335,6 +1290,21 @@
        ] ;
        fhir:name [ fhir:v "Genomic Summary Results (GSR) Allowed Access" ] ;
        fhir:description [ fhir:v "Genomic Summary Results (GSR) Allowed Access" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Consent" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/gregor-gru-consent> ;
+         fhir:reference [ fhir:v "Consent/gregor-gru-consent" ]
+       ] ;
+       fhir:name [ fhir:v "GREGoR General Research Use (GRU) Consent" ] ;
+       fhir:description [ fhir:v "General Research Use (GRU)" ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
@@ -1552,81 +1522,6 @@
        fhir:name [ fhir:v "MeSH Terms" ] ;
        fhir:description [ fhir:v "Example terms from Medical Subject Headings (MeSH) Ontology" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Consent" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/GRU> ;
-         fhir:reference [ fhir:v "Consent/GRU" ]
-       ] ;
-       fhir:name [ fhir:v "Mock consent based on kf-gru-dac-consent" ] ;
-       fhir:description [ fhir:v "General Research Use (GRU)" ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Consent" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/HMB> ;
-         fhir:reference [ fhir:v "Consent/HMB" ]
-       ] ;
-       fhir:name [ fhir:v "Mock consent based on kf-gru-dbgap-consent" ] ;
-       fhir:description [ fhir:v "General Research Use (GRU)" ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ResearchStudy" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/SD-BHJXBDQK> ;
-         fhir:reference [ fhir:v "ResearchStudy/SD-BHJXBDQK" ]
-       ] ;
-       fhir:name [ fhir:v "Mock study based on kf-research-study-subject-gru-dac" ] ;
-       fhir:description [ fhir:v "GRU data access via DAC" ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ResearchStudy" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/SD-PREASA7S> ;
-         fhir:reference [ fhir:v "ResearchStudy/SD-PREASA7S" ]
-       ] ;
-       fhir:name [ fhir:v "Mock Study based on kf-research-study-subject-gru-dbgap" ] ;
-       fhir:description [ fhir:v "GRU data access via dbGaP" ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ResearchStudy" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/phv00407460.v2> ;
-         fhir:reference [ fhir:v "ResearchStudy/phv00407460.v2" ]
-       ] ;
-       fhir:name [ fhir:v "Mock study based on kf-research-study-subject-gsr-allowed" ] ;
-       fhir:description [ fhir:v "Genomic Summary Results (GSR) Allowed Access" ] ;
-       fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
-       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1899,6 +1794,21 @@
        fhir:reference [
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/kf-research-study-cbtn-participants> ;
          fhir:reference [ fhir:v "Group/kf-research-study-cbtn-participants" ]
+       ] ;
+       fhir:name [ fhir:v "Participants from the CBTN research study" ] ;
+       fhir:description [ fhir:v "Participants from the CBTN research study" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Group" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/gregor-research-study-participants> ;
+         fhir:reference [ fhir:v "Group/gregor-research-study-participants" ]
        ] ;
        fhir:name [ fhir:v "Participants from the CBTN research study" ] ;
        fhir:description [ fhir:v "Participants from the CBTN research study" ] ;
@@ -2628,32 +2538,12 @@
          fhir:title [ fhir:v "Downloads" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
-         fhir:name [ fhir:v "example_assays.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Example Assays" ] ;
+         fhir:name [ fhir:v "example_cbtn.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Example Cbtn" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
-         fhir:name [ fhir:v "example_family.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Example Family" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:name [ fhir:v "example_files.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Example Files" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:name [ fhir:v "example_participant.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Example Participant" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:name [ fhir:v "example_phenotype_condition.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Example Phenotype Condition" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:name [ fhir:v "example_research_study.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Example Research Study" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:name [ fhir:v "example_specimen.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Example Specimen" ] ;
+         fhir:name [ fhir:v "example_gregor.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Example Gregor" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:name [ fhir:v "FHIR_Basics.html"^^xsd:anyURI ] ;
