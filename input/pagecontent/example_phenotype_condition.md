@@ -1,1 +1,0 @@
-### Phenoptype/Condition Examples
