@@ -4,8 +4,8 @@
     "fshName": "AdaptorTrimmedCS",
     "fshType": "CodeSystem",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 49,
-    "endLine": 54
+    "startLine": 54,
+    "endLine": 60
   },
   {
     "outputFile": "CodeSystem-assay-strategy-cs.json",
@@ -13,7 +13,7 @@
     "fshType": "CodeSystem",
     "fshFile": "modules/file-metadata.fsh",
     "startLine": 18,
-    "endLine": 22
+    "endLine": 23
   },
   {
     "outputFile": "CodeSystem-biospecimen-availability.json",
@@ -68,16 +68,16 @@
     "fshName": "LibraryPrepCS",
     "fshType": "CodeSystem",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 30,
-    "endLine": 34
+    "startLine": 32,
+    "endLine": 37
   },
   {
     "outputFile": "CodeSystem-library-selection-cs.json",
     "fshName": "LibrarySelectionCS",
     "fshType": "CodeSystem",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 36,
-    "endLine": 40
+    "startLine": 39,
+    "endLine": 44
   },
   {
     "outputFile": "CodeSystem-metadata-elements.json",
@@ -108,16 +108,16 @@
     "fshName": "PlatformInstrumentCS",
     "fshType": "CodeSystem",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 24,
-    "endLine": 28
+    "startLine": 25,
+    "endLine": 30
   },
   {
     "outputFile": "CodeSystem-reference-genome-cs.json",
     "fshName": "ReferenceGenomeCS",
     "fshType": "CodeSystem",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 70,
-    "endLine": 77
+    "startLine": 78,
+    "endLine": 86
   },
   {
     "outputFile": "CodeSystem-related-file-type-code-system.json",
@@ -156,8 +156,8 @@
     "fshName": "StrandednessCS",
     "fshType": "CodeSystem",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 42,
-    "endLine": 47
+    "startLine": 46,
+    "endLine": 52
   },
   {
     "outputFile": "CodeSystem-study-name-type.json",
@@ -180,32 +180,24 @@
     "fshName": "WorkflowToolCS",
     "fshType": "CodeSystem",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 63,
-    "endLine": 68
+    "startLine": 70,
+    "endLine": 76
   },
   {
     "outputFile": "CodeSystem-workflow-type-cs.json",
     "fshName": "WorkflowTypeCS",
     "fshType": "CodeSystem",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 56,
-    "endLine": 61
+    "startLine": 62,
+    "endLine": 68
   },
   {
-    "outputFile": "Consent-GRU.json",
-    "fshName": "GRU",
+    "outputFile": "Consent-gregor-gru-consent.json",
+    "fshName": "gregor-gru-consent",
     "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 88,
-    "endLine": 101
-  },
-  {
-    "outputFile": "Consent-HMB.json",
-    "fshName": "HMB",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 178,
-    "endLine": 191
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 25,
+    "endLine": 37
   },
   {
     "outputFile": "Consent-hmb-irb-npu-consent.json",
@@ -227,49 +219,57 @@
     "outputFile": "Consent-kf-gru-dac-consent.json",
     "fshName": "kf-gru-dac-consent",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 105,
-    "endLine": 118
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 103,
+    "endLine": 116
   },
   {
     "outputFile": "Consent-kf-gru-dbgap-consent.json",
     "fshName": "kf-gru-dbgap-consent",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 135,
-    "endLine": 148
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 133,
+    "endLine": 146
   },
   {
     "outputFile": "Consent-kf-gsr-allowed-access.json",
     "fshName": "kf-gsr-allowed-access",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 165,
-    "endLine": 176
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 163,
+    "endLine": 174
   },
   {
     "outputFile": "Consent-kf-registered-allowed-access.json",
     "fshName": "kf-registered-allowed-access",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 193,
-    "endLine": 204
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 191,
+    "endLine": 202
   },
   {
-    "outputFile": "DocumentReference-PT-006SP660.json",
-    "fshName": "PT-006SP660",
+    "outputFile": "DocumentReference-GF-6BAD9S7D.json",
+    "fshName": "GF-6BAD9S7D",
     "fshType": "Instance",
-    "fshFile": "examples/files.fsh",
-    "startLine": 1,
-    "endLine": 22
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 342,
+    "endLine": 363
+  },
+  {
+    "outputFile": "DocumentReference-GSS123456-01-010-SG-2.json",
+    "fshName": "GSS123456-01-010-SG-2",
+    "fshType": "Instance",
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 147,
+    "endLine": 168
   },
   {
     "outputFile": "Group-cbtn-study-family.json",
     "fshName": "FM-00C8Y7DG",
     "fshType": "Instance",
     "fshFile": "examples/family.fsh",
-    "startLine": 12,
-    "endLine": 31
+    "startLine": 11,
+    "endLine": 30
   },
   {
     "outputFile": "Group-cmg-research-study-bhcmg-consent-group-hmb-npu.json",
@@ -288,12 +288,28 @@
     "endLine": 146
   },
   {
+    "outputFile": "Group-gregor-research-study-participants.json",
+    "fshName": "gregor-research-study-participants",
+    "fshType": "Instance",
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 12,
+    "endLine": 23
+  },
+  {
+    "outputFile": "Group-gregor-study-family.json",
+    "fshName": "GSS5555",
+    "fshType": "Instance",
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 91,
+    "endLine": 106
+  },
+  {
     "outputFile": "Group-kf-research-study-cbtn-participants.json",
     "fshName": "kf-research-study-cbtn-participants",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 92,
-    "endLine": 103
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 90,
+    "endLine": 101
   },
   {
     "outputFile": "List-ncpi-research-collection-cmg.json",
@@ -307,161 +323,137 @@
     "outputFile": "List-ncpi-research-collection-kfx01.json",
     "fshName": "ncpi-research-collection-kfx01",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 236,
-    "endLine": 246
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 234,
+    "endLine": 244
   },
   {
     "outputFile": "List-ncpi-research-collection-pbta.json",
     "fshName": "ncpi-research-collection-pbta",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 222,
-    "endLine": 234
-  },
-  {
-    "outputFile": "Observation-BAM-CRAM-example.json",
-    "fshName": "BAM-CRAM-example",
-    "fshType": "Instance",
-    "fshFile": "examples/file-metadata.fsh",
-    "startLine": 29,
-    "endLine": 58
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 220,
+    "endLine": 232
   },
   {
     "outputFile": "Observation-FASTQ-example.json",
     "fshName": "FASTQ-example",
     "fshType": "Instance",
-    "fshFile": "examples/file-metadata.fsh",
-    "startLine": 1,
-    "endLine": 26
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 366,
+    "endLine": 388
+  },
+  {
+    "outputFile": "Observation-GSS123456-condition.json",
+    "fshName": "GSS123456-condition",
+    "fshType": "Instance",
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 119,
+    "endLine": 133
   },
   {
     "outputFile": "Observation-PT-006SP660-condition.json",
     "fshName": "PT-006SP660-condition",
     "fshType": "Instance",
-    "fshFile": "examples/condition.fsh",
-    "startLine": 2,
-    "endLine": 34
-  },
-  {
-    "outputFile": "Observation-VCF-example.json",
-    "fshName": "VCF-example",
-    "fshType": "Instance",
-    "fshFile": "examples/file-metadata.fsh",
-    "startLine": 60,
-    "endLine": 89
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 276,
+    "endLine": 308
   },
   {
     "outputFile": "Observation-cbtn-family-relationship-mother.json",
     "fshName": "cbtn-family-relationship-mother",
     "fshType": "Instance",
     "fshFile": "examples/family.fsh",
-    "startLine": 33,
-    "endLine": 41
+    "startLine": 32,
+    "endLine": 40
   },
   {
     "outputFile": "Observation-cbtn-family-relationship-son.json",
     "fshName": "cbtn-family-relationship-son",
     "fshType": "Instance",
     "fshFile": "examples/family.fsh",
-    "startLine": 48,
-    "endLine": 56
+    "startLine": 47,
+    "endLine": 55
+  },
+  {
+    "outputFile": "Observation-gregor-example-metadata.json",
+    "fshName": "gregor-example-metadata",
+    "fshType": "Instance",
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 171,
+    "endLine": 197
+  },
+  {
+    "outputFile": "Observation-gregor-family-relationship-mother.json",
+    "fshName": "gregor-family-relationship-mother",
+    "fshType": "Instance",
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 108,
+    "endLine": 116
   },
   {
     "outputFile": "Organization-kf-research-study-organization-chop.json",
     "fshName": "kf-research-study-organization-chop",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 4,
-    "endLine": 11
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 2,
+    "endLine": 9
   },
   {
-    "outputFile": "Patient-6812345.json",
-    "fshName": "6812345",
+    "outputFile": "Patient-GSS123456.json",
+    "fshName": "GSS123456",
     "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 222,
-    "endLine": 255
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 50,
+    "endLine": 66
   },
   {
-    "outputFile": "Patient-PT-005B7CZ4.json",
-    "fshName": "PT-005B7CZ4",
+    "outputFile": "Patient-GSS654321.json",
+    "fshName": "GSS654321",
     "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 132,
-    "endLine": 164
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 40,
+    "endLine": 48
   },
   {
-    "outputFile": "Patient-PT-KZG2CZ95.json",
-    "fshName": "PT-KZG2CZ95",
+    "outputFile": "Patient-PT-006SP660.json",
+    "fshName": "PT-006SP660",
     "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 15,
-    "endLine": 54
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 247,
+    "endLine": 271
   },
   {
-    "outputFile": "Person-cbtn-example-person.json",
-    "fshName": "cbtn-example-person",
+    "outputFile": "Person-gregor-example-person.json",
+    "fshName": "gregor-example-person",
     "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 77,
-    "endLine": 86
-  },
-  {
-    "outputFile": "Person-emerge-example-person.json",
-    "fshName": "emerge-example-person",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 257,
-    "endLine": 266
-  },
-  {
-    "outputFile": "Person-pcgc-example-person.json",
-    "fshName": "pcgc-example-person",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 167,
-    "endLine": 176
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 68,
+    "endLine": 77
   },
   {
     "outputFile": "PractitionerRole-kf-research-study-personnel-role-op-lead.json",
     "fshName": "kf-research-study-personnel-role-op-lead",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 29,
-    "endLine": 35
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 27,
+    "endLine": 33
   },
   {
     "outputFile": "PractitionerRole-kf-research-study-personnel-role-pi-x01.json",
     "fshName": "kf-research-study-personnel-role-pi-x01",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 13,
-    "endLine": 19
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 11,
+    "endLine": 17
   },
   {
     "outputFile": "PractitionerRole-kf-research-study-personnel-role-pi.json",
     "fshName": "kf-research-study-personnel-role-pi",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 21,
-    "endLine": 27
-  },
-  {
-    "outputFile": "ResearchStudy-SD-BHJXBDQK.json",
-    "fshName": "SD-BHJXBDQK",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 103,
-    "endLine": 116
-  },
-  {
-    "outputFile": "ResearchStudy-SD-PREASA7S.json",
-    "fshName": "SD-PREASA7S",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 193,
-    "endLine": 206
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 19,
+    "endLine": 25
   },
   {
     "outputFile": "ResearchStudy-cmg-research-study-bhcmg.json",
@@ -491,81 +483,73 @@
     "outputFile": "ResearchStudy-kf-research-study-cbtn.json",
     "fshName": "kf-research-study-cbtn",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 37,
-    "endLine": 88
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 35,
+    "endLine": 86
   },
   {
     "outputFile": "ResearchStudy-kf-research-study-subject-gru-dac.json",
     "fshName": "kf-research-study-subject-gru-dac",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 120,
-    "endLine": 133
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 118,
+    "endLine": 131
   },
   {
     "outputFile": "ResearchStudy-kf-research-study-subject-gru-dbgap.json",
     "fshName": "kf-research-study-subject-gru-dbgap",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 150,
-    "endLine": 163
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 148,
+    "endLine": 161
   },
   {
     "outputFile": "ResearchStudy-kf-research-study-subject-gsr-allowed.json",
     "fshName": "kf-research-study-subject-gsr-allowed",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 178,
-    "endLine": 191
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 176,
+    "endLine": 189
   },
   {
     "outputFile": "ResearchStudy-kf-research-study-subject-registered.json",
     "fshName": "kf-research-study-subject-registered",
     "fshType": "Instance",
-    "fshFile": "examples/ResearchStudy-CBTN.fsh",
-    "startLine": 206,
-    "endLine": 219
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 204,
+    "endLine": 217
   },
   {
-    "outputFile": "ResearchStudy-phv00407460.v2.json",
-    "fshName": "phv00407460.v2",
+    "outputFile": "ResearchStudy-research-study-gregor.json",
+    "fshName": "research-study-gregor",
     "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 270,
-    "endLine": 283
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 2,
+    "endLine": 10
   },
   {
-    "outputFile": "ResearchSubject-cbtn-example-participantstudy.json",
-    "fshName": "cbtn-example-participantstudy",
+    "outputFile": "ResearchSubject-gregor-example-participantstudy.json",
+    "fshName": "gregor-example-participantstudy",
     "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 118,
-    "endLine": 126
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 79,
+    "endLine": 87
   },
   {
-    "outputFile": "ResearchSubject-emerge-example-participantstudy.json",
-    "fshName": "emerge-example-participantstudy",
+    "outputFile": "Specimen-GSS123456-01-010.json",
+    "fshName": "GSS123456-01-010",
     "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 285,
-    "endLine": 293
-  },
-  {
-    "outputFile": "ResearchSubject-pcgc-example-participantstudy.json",
-    "fshName": "pcgc-example-participantstudy",
-    "fshType": "Instance",
-    "fshFile": "examples/participant.fsh",
-    "startLine": 208,
-    "endLine": 216
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 136,
+    "endLine": 144
   },
   {
     "outputFile": "Specimen-SA-000.json",
     "fshName": "SA-000",
     "fshType": "Instance",
-    "fshFile": "examples/biospecimen.fsh",
-    "startLine": 3,
-    "endLine": 31
+    "fshFile": "examples/CBTN_example.fsh",
+    "startLine": 311,
+    "endLine": 339
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelAliquot.json",
@@ -596,8 +580,8 @@
     "fshName": "CdmFamilyRelationship",
     "fshType": "Logical",
     "fshFile": "modules/family.fsh",
-    "startLine": 149,
-    "endLine": 155
+    "startLine": 148,
+    "endLine": 154
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelFamilyRole.json",
@@ -876,8 +860,8 @@
     "fshName": "NcpiBAMCRAM",
     "fshType": "Profile",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 153,
-    "endLine": 200
+    "startLine": 162,
+    "endLine": 209
   },
   {
     "outputFile": "StructureDefinition-ncpi-collected-sample.json",
@@ -900,24 +884,24 @@
     "fshName": "NcpiFamilyRelationship",
     "fshType": "Profile",
     "fshFile": "modules/family.fsh",
-    "startLine": 157,
-    "endLine": 171
+    "startLine": 156,
+    "endLine": 170
   },
   {
     "outputFile": "StructureDefinition-ncpi-fastq.json",
     "fshName": "NcpiFASTQ",
     "fshType": "Profile",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 104,
-    "endLine": 151
+    "startLine": 113,
+    "endLine": 160
   },
   {
     "outputFile": "StructureDefinition-ncpi-file-metadata.json",
     "fshName": "NcpiFileMetadata",
     "fshType": "Profile",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 79,
-    "endLine": 86
+    "startLine": 88,
+    "endLine": 95
   },
   {
     "outputFile": "StructureDefinition-ncpi-file.json",
@@ -932,16 +916,16 @@
     "fshName": "NcpiGeneFusionOrExpression",
     "fshType": "Profile",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 300,
-    "endLine": 347
+    "startLine": 309,
+    "endLine": 356
   },
   {
     "outputFile": "StructureDefinition-ncpi-maf.json",
     "fshName": "NcpiMAF",
     "fshType": "Profile",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 251,
-    "endLine": 298
+    "startLine": 260,
+    "endLine": 307
   },
   {
     "outputFile": "StructureDefinition-ncpi-non-collected-sample.json",
@@ -972,8 +956,8 @@
     "fshName": "NcpiProteomics",
     "fshType": "Profile",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 349,
-    "endLine": 396
+    "startLine": 358,
+    "endLine": 405
   },
   {
     "outputFile": "StructureDefinition-ncpi-research-access-policy.json",
@@ -1012,8 +996,8 @@
     "fshName": "NcpiSpecimenCollection",
     "fshType": "Profile",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 88,
-    "endLine": 94
+    "startLine": 97,
+    "endLine": 103
   },
   {
     "outputFile": "StructureDefinition-ncpi-study-family.json",
@@ -1028,8 +1012,8 @@
     "fshName": "NcpiVCF",
     "fshType": "Profile",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 202,
-    "endLine": 249
+    "startLine": 211,
+    "endLine": 258
   },
   {
     "outputFile": "StructureDefinition-research-age-at-last-vital-status.json",
@@ -1132,8 +1116,8 @@
     "fshName": "SpecimenCollection",
     "fshType": "Extension",
     "fshFile": "modules/file-metadata.fsh",
-    "startLine": 96,
-    "endLine": 102
+    "startLine": 105,
+    "endLine": 111
   },
   {
     "outputFile": "StructureDefinition-study-family-focus.json",

@@ -101,9 +101,9 @@ Description: "Example patients based on data from GREGoR."
 * actual = true // Required by Group
 * extension[family-type].valueCodeableConcept = $ncpi-family-types#Duo "Duo"
 * member[0].entity = Reference(GSS123456)
-* member[0].entity.extension.extension[family-role].valueCodeableConcept = $family-role-code#CHILD "child"
+* member[0].entity.extension[family-role].valueCodeableConcept = $family-role-code#CHILD "child"
 * member[1].entity = Reference(GSS654321)
-* member[1].entity.extension.extension[family-role].valueCodeableConcept = $family-role-code#MTH "mother"
+* member[1].entity.extension[family-role].valueCodeableConcept = $family-role-code#MTH "mother"
 
 Instance: gregor-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship

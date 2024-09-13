@@ -8,7 +8,6 @@ Examples for:
 
 
 // Example 1
-/*
 Instance: FM-00C8Y7DG
 InstanceOf: NcpiStudyFamily
 Title: "Example patients based on data from CBTN"
@@ -53,4 +52,4 @@ Description: "An example family relationship based on data from CBTN."
 * subject = Reference(PT-005B7CZ4)
 * focus = Reference(PT-KZG2CZ95)
 * code = $family-role-code#SON "natural son"
-* status = #registered */
+* status = #registered
