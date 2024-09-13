@@ -1,6 +1,4 @@
-/*
- * CBTN - Children's Brain Tumor Network 
- */
+// NCPI Research Study
 Instance: kf-research-study-organization-chop
 InstanceOf: Organization
 Title: "Children's Hospital of Philadelphia"
@@ -244,3 +242,147 @@ Description: "Kids First X01s"
 * mode = http://hl7.org/fhir/list-mode#snapshot
 * extension[website].valueUrl = "https://cbtn.org/pediatric-brain-tumor-atlas"
 * entry[+].item = Reference(kf-research-study-cbtn)
+
+// NCPI Participant
+Instance: PT-006SP660
+InstanceOf: NcpiParticipant
+Title: "Example patients based on data from CBTN"
+Usage: #example
+Description: "Example patients based on data from CBTN."
+// Notice that we can use the DbGaP study ID for easier searching
+* identifier[0]
+  * system = "https://cbtn.org/"
+  * value = "C21156"
+* identifier[1]
+  * system = "https://data.kidsfirstdrc.org"
+  * value = "PT-006SP660"
+* extension[us-core-birth-sex].valueCode = #F "Female"
+* extension[us-core-race]
+  * extension[ombCategory].valueCoding =  $omb-race-eth#2106-3 "White"
+  * extension[text].valueString = "White"
+* extension[us-core-ethnicity]
+  * extension[ombCategory].valueCoding =  $omb-race-eth#2186-5 "Not Hispanic or Latino"
+  * extension[text].valueString = "Not Hispanic or Latino"
+* extension[dob-method].valueCoding = $ncpi-dob-method#year-only
+* extension[age-at-last-vital-status].valueQuantity
+  * value = 6314
+  * unit = "days"
+  * system = $ucum
+  * code = #d "days"
+
+// NCPI Family -- TBD
+
+// NCPI Condition
+Instance: PT-006SP660-condition
+InstanceOf: NcpiCondition
+Title: "Example condition using data from CBTN"
+Usage: #example
+Description: "Example condition using data from CBTN."
+* status = #final
+// had to change reference participant so sushi doesn't get errors
+* subject = Reference(PT-006SP660)
+/* condition code */
+* code.coding = $mondo#MONDO:0002203
+/* condition text */
+* code.text = "ventricular ectopy"
+/* age at assertion */
+* effectiveDateTime.extension[+]
+  * url = $cqf-relativeDateTime
+  * extension[+]
+    * url = "target"
+// had to change reference participant so sushi doesn't get errors
+    * valueReference = Reference(PT-006SP660)
+  * extension[+]
+    * url = "targetPath"
+    * valueString = "None"
+  * extension[+]
+    * url = "relationship"
+    * valueCode = #after
+  * extension[+]
+    * url = "offset"
+    * valueDuration = 4931 'days'
+    * valueDuration.unit = "d"
+/* assertion */
+* valueCodeableConcept = $condition-assertion#Present
+/* condition type */
+* category = $condition-type#Disease
+
+// NCPI Biospecimen
+Instance: SA-000 /*Collection Event ID can't have underscores*/
+InstanceOf: NCPICollectedSample
+Title: "Example biospecimen based on data from CBTN"
+Usage: #example
+Description: "Example biospecimen based on data from CBTN"
+* identifier.value = "SA_RV52EY7S" /*Sample ID*/
+* subject = Reference(PT-006SP660) /*Participant ID*/
+* type.text = "Peripheral Whole Blood" /*Sample Type*/
+/*There is a SNOMED term for peripheral blood specimen OR 
+https://github.com/include-dcc/include-model-forge/blob/main/input/fsh/codesystems/CodeSystem-SampleTypes.fsh 
+to access this codesystem for now but we defintely need a real ontology for describing things like blood draws etc.*/
+* collection.method.text = "Blood Draw" /*Biospecimen Method*/
+* collection.method.coding = $loinc#LP125037-4 /*Biospecimen Method*/
+* container.identifier.value = "BS_9QM8EXG3" /*Aliquot.AliquotID*/
+* collection.collectedDateTime.extension[+]
+  * url = $cqf-relativeDateTime
+  * extension[+]
+    * url = "target"
+    * valueReference = Reference(PT-006SP660)
+  * extension[+]
+    * url = "targetPath"
+    * valueString = "None"
+  * extension[+]
+    * url = "relationship"
+    * valueCode = #after
+  * extension[+]
+    * url = "offset"
+    * valueDuration = 4931 'days'
+    * valueDuration.unit = "d"
+ 
+// NCPI File
+Instance: GF-6BAD9S7D
+InstanceOf: NcpiFile
+Title: "Example file based on CBTN"
+Usage: #example
+Description: "Use case of file information from CBTN"
+* identifier.value = "GF-6BAD9S7D"
+* subject = Reference(PT-006SP660)
+* description = "Annotated Variant Call"
+* type = $edam#operation_3227 "Variant calling"
+* extension[content-version].valueString = "V1"
+* status = #current
+* content[+]
+  * attachment.url = "s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz"
+  * extension[location-access].valueReference = Reference(kf-gru-dac-consent)
+* extension[file-format].valueCodeableConcept.coding = $edam#format_3016 "VCF"
+* extension[file-size]
+  * valueQuantity
+    * value = 1044770380
+    * unit = "bytes"
+* extension[hash]
+  * extension[hash-value].valueString = "8f107912d862cf91fbfb77bf9c1bab36-4"
+  * extension[hash-type].valueCode = #etag
+
+// NCPI File Metadata
+Instance: FASTQ-example
+InstanceOf: NcpiFASTQ
+Title: "Example file metadata for a FASTQ file"
+Usage: #example
+Description: "Example file metadata for a FASTQ file"
+* focus = Reference(GF-6BAD9S7D)
+* status = #final
+* code = $edam#format_1930
+* specimen = Reference(SA-000) // using specimen is a placeholder for using a slice of component for related samples
+* component.code = #AssayStrategy
+* component[assay_strategy].valueCodeableConcept = #WGS
+* component.code = #PlatformInstrument
+* component[platform_instrument].valueCodeableConcept = #IlluminaHiSeq2000
+* component.code = #LibraryPrep
+* component[library_prep].valueCodeableConcept = #polyA
+* component.code = #LibrarySelection
+* component[library_selection].valueCodeableConcept = #PolyTEnrichment
+* component.code = #Strandedness
+* component[strandedness].valueCodeableConcept = #unstranded
+* component.code = #IsPairedEnd
+* component[is_paired_end].valueBoolean = false
+* component.code = #AdaptorTrimmed
+* component[adaptor_trimmed].valueBoolean = true

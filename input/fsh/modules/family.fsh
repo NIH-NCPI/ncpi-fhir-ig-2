@@ -143,7 +143,6 @@ Description: "Extension containing Study Family Reference"
 */
 
 
-
 // Family Relationship
 
 Logical: CdmFamilyRelationship
