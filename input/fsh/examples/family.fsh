@@ -7,41 +7,6 @@ Examples for:
 
 */ 
 
-Instance: GSS5555
-InstanceOf: NcpiStudyFamily
-Title: "Example patients based on data from GREGoR"
-Usage: #example
-Description: "Example patients based on data from GREGoR."
-* id = "gregor-study-family"
-* identifier[0]
-  * system = "https://anvil.terra.bio/"
-  * value = "GSS5555"
-* type = #person // Required by Group with required VS
-* actual = true // Required by Group
-* extension[family-type].valueCodeableConcept = $ncpi-family-types#Duo "Duo"
-
-Instance: gregor-family-role-child
-InstanceOf: NcpiFamilyRole
-Title: "An example family role based on data from CBTN"
-Usage: #example
-Description: "An example family role based on data from CBTN."
-* member.entity = Reference(GSS123456)
-* extension[study-family].valueReference = Reference(GSS5555)
-* extension[family-role].valueCodeableConcept = $family-role-code#CHILD "child"
-* type = #person // Required by Group with required VS
-* actual = true // Required by Group
-
-Instance: cbtn-family-relationship-mother
-InstanceOf: NcpiFamilyRelationship
-Title: "An example family relationship based on data from CBTN"
-Usage: #example
-Description: "An example family relationship based on data from CBTN."
-* subject = Reference(GSS123456)
-* focus = Reference(GSS654321)
-* code = $family-role-code#CHILD "child"
-* status = #registered
-
-
 
 // Example 1
 /*
