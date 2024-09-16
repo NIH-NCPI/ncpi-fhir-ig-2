@@ -100,17 +100,10 @@ Description: "Example patients based on data from GREGoR."
 * type = #person // Required by Group with required VS
 * actual = true // Required by Group
 * extension[family-type].valueCodeableConcept = $ncpi-family-types#Duo "Duo"
-
-Instance: gregor-family-role-child
-InstanceOf: NcpiFamilyRole
-Title: "An example family role based on data from CBTN"
-Usage: #example
-Description: "An example family role based on data from CBTN."
-* member.entity = Reference(GSS123456)
-//* extension[study-family].valueReference = Reference(GSS5555)
-//* extension[family-role].valueCodeableConcept = $family-role-code#CHILD "child"
-* type = #person // Required by Group with required VS
-* actual = true // Required by Group
+* member[0].entity = Reference(GSS123456)
+* member[0].entity.extension[family-role].valueCodeableConcept = $family-role-code#CHILD "child"
+* member[1].entity = Reference(GSS654321)
+* member[1].entity.extension[family-role].valueCodeableConcept = $family-role-code#MTH "mother"
 
 Instance: gregor-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship

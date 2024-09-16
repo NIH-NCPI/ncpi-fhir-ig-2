@@ -103,6 +103,40 @@
         "id": "Group.identifier",
         "path": "Group.identifier",
         "short": "External IDs for this participant. Requires scoping."
+      },
+      {
+        "id": "Group.member",
+        "path": "Group.member",
+        "min": 1
+      },
+      {
+        "id": "Group.member.entity",
+        "path": "Group.member.entity",
+        "short": "The participant we are describing.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.member.entity.extension:family-role",
+        "path": "Group.member.entity.extension",
+        "sliceName": "family-role",
+        "short": "The role this individual has in the family, specifically with respect to a proband or index participant",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role"
+            ]
+          }
+        ]
       }
     ]
   }
