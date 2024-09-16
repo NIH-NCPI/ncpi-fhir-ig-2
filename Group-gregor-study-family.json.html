@@ -307,7 +307,7 @@
   },
   "<a href="http://hl7.org/fhir/R4B/group.html#Group.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Group gregor-study-family&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;gregor-study-family\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcgregor-study-family\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;gregor-study-family-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Family Type Extension&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types Duo}\&quot;&gt;Duo&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://anvil.terra.bio/&lt;/code&gt;/GSS5555&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Person&lt;/p&gt;&lt;p&gt;&lt;b&gt;actual&lt;/b&gt;: true&lt;/p&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Group gregor-study-family&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;gregor-study-family\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcgregor-study-family\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;gregor-study-family-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Family Type Extension&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types Duo}\&quot;&gt;Duo&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://anvil.terra.bio/&lt;/code&gt;/GSS5555&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Person&lt;/p&gt;&lt;p&gt;&lt;b&gt;actual&lt;/b&gt;: true&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;member&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;entity&lt;/b&gt;: &lt;a href=\&quot;Patient-GSS123456.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;member&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;entity&lt;/b&gt;: &lt;a href=\&quot;Patient-GSS654321.html\&quot;&gt;Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS654321)&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4B/group.html#Group.extension">extension</a>" : [
     {
@@ -330,7 +330,47 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4B/group.html#Group.type">type</a>" : "person",
-  "<a href="http://hl7.org/fhir/R4B/group.html#Group.actual">actual</a>" : true
+  "<a href="http://hl7.org/fhir/R4B/group.html#Group.actual">actual</a>" : true,
+  "<a href="http://hl7.org/fhir/R4B/group.html#Group.member">member</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4B/group.html#Group.member.entity">entity</a>" : {
+        <a href="Patient-GSS123456.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.url">url</a>" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
+            "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+              "<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                  "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a>" : "CHILD",
+                  "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a>" : "child"
+                }
+              ]
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">reference</a>" : "Patient/GSS123456"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4B/group.html#Group.member.entity">entity</a>" : {
+        <a href="Patient-GSS654321.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.url">url</a>" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
+            "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+              "<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                  "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a>" : "MTH",
+                  "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a>" : "mother"
+                }
+              ]
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">reference</a>" : "Patient/GSS654321"
+      }
+    }
+  ]
 }</code></pre>
 
 
@@ -355,7 +395,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, Sep 13, 2024 20:57+0000">2024-09-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Mon, Sep 16, 2024 16:04+0000">2024-09-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

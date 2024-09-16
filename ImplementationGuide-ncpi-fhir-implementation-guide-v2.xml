@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2024-09-13T20:57:31+00:00"/>
+  <date value="2024-09-16T16:04:42+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -543,14 +543,25 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Group"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Group/gregor-family-role-child"/>
+        <reference value="Observation/cbtn-family-relationship-mother"/>
       </reference>
-      <name value="An example family role based on data from CBTN"/>
-      <description value="An example family role based on data from CBTN."/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"/>
+      <name value="An example family relationship based on data from CBTN"/>
+      <description value="An example family relationship based on data from CBTN."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/cbtn-family-relationship-son"/>
+      </reference>
+      <name value="An example family relationship based on data from CBTN"/>
+      <description value="An example family relationship based on data from CBTN."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -971,6 +982,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/cbtn-study-family"/>
+      </reference>
+      <name value="Example patients based on data from CBTN"/>
+      <description value="Example patients based on data from CBTN."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -1022,17 +1044,6 @@
       </reference>
       <name value="Family Relationship"/>
       <description value="Family Relationship"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ncpi-family-role"/>
-      </reference>
-      <name value="Family Role"/>
-      <description value="Family Role"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2001,17 +2012,6 @@
       </reference>
       <name value="Study Family Focus Extension"/>
       <description value="Extension containing Study Family Focus"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/study-family"/>
-      </reference>
-      <name value="Study Family Reference"/>
-      <description value="Extension containing Study Family Reference"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

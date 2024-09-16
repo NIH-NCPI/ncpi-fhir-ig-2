@@ -454,13 +454,6 @@
       ]
     },
     {
-      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family",
-      "title": "Study Family Reference",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus",
       "title": "Study Family Focus Extension",
       "types": [
@@ -485,12 +478,6 @@
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample",
         "title": "FHIR Profile for NCPI Sample"
-      }
-    ],
-    "Group": [
-      {
-        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group",
-        "title": "NCPI Research Study Group"
       }
     ],
     "DocumentReference": [
@@ -527,6 +514,12 @@
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject",
         "title": "Research Study Subject"
+      }
+    ],
+    "Group": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group",
+        "title": "NCPI Research Study Group"
       }
     ]
   },
@@ -637,7 +630,7 @@
       "Group"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role": [
-      "Group"
+      "Group.member.entity"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-type": [
       "Group"
@@ -697,9 +690,6 @@
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/specimen-collection": [
       "Observation"
-    ],
-    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family": [
-      "Group"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus": [
       "Group"

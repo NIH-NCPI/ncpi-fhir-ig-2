@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2024-09-13T20:57:31+00:00",
+  "date" : "2024-09-16T16:04:42+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -707,14 +707,26 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Group"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Group/gregor-family-role-child"
+        "reference" : "Observation/cbtn-family-relationship-mother"
       },
-      "name" : "An example family role based on data from CBTN",
-      "description" : "An example family role based on data from CBTN.",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"
+      "name" : "An example family relationship based on data from CBTN",
+      "description" : "An example family relationship based on data from CBTN.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/cbtn-family-relationship-son"
+      },
+      "name" : "An example family relationship based on data from CBTN",
+      "description" : "An example family relationship based on data from CBTN.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
     },
     {
       "extension" : [{
@@ -1174,6 +1186,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/cbtn-study-family"
+      },
+      "name" : "Example patients based on data from CBTN",
+      "description" : "Example patients based on data from CBTN.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -1229,18 +1253,6 @@
       },
       "name" : "Family Relationship",
       "description" : "Family Relationship",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ncpi-family-role"
-      },
-      "name" : "Family Role",
-      "description" : "Family Role",
       "exampleBoolean" : false
     },
     {
@@ -2297,18 +2309,6 @@
       },
       "name" : "Study Family Focus Extension",
       "description" : "Extension containing Study Family Focus",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/study-family"
-      },
-      "name" : "Study Family Reference",
-      "description" : "Extension containing Study Family Reference",
       "exampleBoolean" : false
     },
     {

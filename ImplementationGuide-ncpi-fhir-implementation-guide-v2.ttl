@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-13T20:57:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-16T16:04:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -623,17 +623,32 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Group" ]
+         fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/gregor-family-role-child> ;
-         fhir:reference [ fhir:v "Group/gregor-family-role-child" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/cbtn-family-relationship-mother> ;
+         fhir:reference [ fhir:v "Observation/cbtn-family-relationship-mother" ]
        ] ;
-       fhir:name [ fhir:v "An example family role based on data from CBTN" ] ;
-       fhir:description [ fhir:v "An example family role based on data from CBTN." ] ;
+       fhir:name [ fhir:v "An example family relationship based on data from CBTN" ] ;
+       fhir:description [ fhir:v "An example family relationship based on data from CBTN." ] ;
        fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role>
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/cbtn-family-relationship-son> ;
+         fhir:reference [ fhir:v "Observation/cbtn-family-relationship-son" ]
+       ] ;
+       fhir:name [ fhir:v "An example family relationship based on data from CBTN" ] ;
+       fhir:description [ fhir:v "An example family relationship based on data from CBTN." ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship>
        ]
      ] [
        fhir:extension ( [
@@ -1150,6 +1165,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Group" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/cbtn-study-family> ;
+         fhir:reference [ fhir:v "Group/cbtn-study-family" ]
+       ] ;
+       fhir:name [ fhir:v "Example patients based on data from CBTN" ] ;
+       fhir:description [ fhir:v "Example patients based on data from CBTN." ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
@@ -1218,18 +1248,6 @@
        ] ;
        fhir:name [ fhir:v "Family Relationship" ] ;
        fhir:description [ fhir:v "Family Relationship" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-role> ;
-         fhir:reference [ fhir:v "StructureDefinition/ncpi-family-role" ]
-       ] ;
-       fhir:name [ fhir:v "Family Role" ] ;
-       fhir:description [ fhir:v "Family Role" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2325,18 +2343,6 @@
        ] ;
        fhir:name [ fhir:v "Study Family Focus Extension" ] ;
        fhir:description [ fhir:v "Extension containing Study Family Focus" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family> ;
-         fhir:reference [ fhir:v "StructureDefinition/study-family" ]
-       ] ;
-       fhir:name [ fhir:v "Study Family Reference" ] ;
-       fhir:description [ fhir:v "Extension containing Study Family Reference" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

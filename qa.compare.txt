@@ -1,10 +1,10 @@
 NCPIFHIRIGv2 : Validation Results
 =========================================
 
-err = 9, warn = 309, info = 32
+err = 25, warn = 311, info = 32
 $--
 Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
- Build Errors : 1 / 6 / 0
+ Build Errors : 7 / 6 / 0
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-adaptor-trimmed-cs : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-assay-strategy-cs : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-biospecimen-availability : 0 / 2 / 2
@@ -38,11 +38,11 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Consent-kf-registered-allowed-access : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/DocumentReference-GF-6BAD9S7D : 0 / 4 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/DocumentReference-GSS123456-01-010-SG-2 : 0 / 4 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cbtn-study-family : 6 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-gregor-family-role-child : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-gregor-research-study-participants : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-gregor-study-family : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-gregor-study-family : 2 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-kf-research-study-cbtn-participants : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-cmg : 0 / 0 / 2
@@ -51,6 +51,8 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-FASTQ-example : 1 / 18 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-GSS123456-condition : 0 / 8 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-PT-006SP660-condition : 0 / 2 / 3
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-cbtn-family-relationship-mother : 4 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-cbtn-family-relationship-son : 4 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-gregor-example-metadata : 1 / 23 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-gregor-family-relationship-mother : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Organization-kf-research-study-organization-chop : 0 / 0 / 1
@@ -101,7 +103,7 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-consanguinity : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-content-version : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-description : 0 / 2 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-family-role : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-family-role : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-family-type : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-file-format : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-file-size : 0 / 0 / 1
@@ -115,7 +117,6 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-collected-sample : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-condition : 0 / 8 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-family-relationship : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-family-role : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-fastq : 0 / 22 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-file : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-file-metadata : 0 / 1 / 1
@@ -145,8 +146,7 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-subject-consent : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-web-Link : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-specimen-collection : 0 / 1 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-study-family : 0 / 1 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-study-family-focus : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-study-family-focus : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-collection-type-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-condition-assertion-vs : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-condition-code-vs : 0 / 2 / 1
@@ -166,6 +166,12 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/condition-assertion-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/condition-type-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/Group-cbtn-study-family.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 298, column 677: The link 'PT-KZG2CZ95' for "PT-KZG2CZ95" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/Group-cbtn-study-family.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 298, column 781: The link 'PT-005B7CZ4' for "PT-005B7CZ4" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/Observation-cbtn-family-relationship-mother.html#/html/body/div/div/div/div/div/div/p/a at Line 298, column 455: The link 'PT-KZG2CZ95' for "PT-KZG2CZ95" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/Observation-cbtn-family-relationship-mother.html#/html/body/div/div/div/div/div/div/p/a at Line 298, column 513: The link 'PT-005B7CZ4' for "PT-005B7CZ4" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/Observation-cbtn-family-relationship-son.html#/html/body/div/div/div/div/div/div/p/a at Line 298, column 448: The link 'PT-005B7CZ4' for "PT-005B7CZ4" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/Observation-cbtn-family-relationship-son.html#/html/body/div/div/div/div/div/div/p/a at Line 298, column 506: The link 'PT-KZG2CZ95' for "PT-KZG2CZ95" cannot be resolved
 ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/StructureDefinition-ncpi-sample.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 424, column 12: The link 'StructureDefinition-SharedDataModelBiospecimenCollection-definitions.html#diff_SharedDataModelBiospecimenCollection.ageAtCondition' for "ageAtCollection" cannot be resolved (valid targets: 41 targets)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
@@ -263,12 +269,22 @@ WARNING: DocumentReference/GSS123456-01-010-SG-2: DocumentReference.extension[1]
 WARNING: DocumentReference/GSS123456-01-010-SG-2: DocumentReference.extension[1].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://edamontology.org' could not be found, so the code cannot be validated
 WARNING: DocumentReference/GSS123456-01-010-SG-2: DocumentReference.type.coding[0]: A definition for CodeSystem 'http://edamontology.org' could not be found, so the code cannot be validated
 WARNING: DocumentReference/GSS123456-01-010-SG-2: DocumentReference.type: Unable to check whether the code is in the value set 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms|0.1.0' because the code system http://edamontology.org was not found
+== fsh-generated/resources/Group-cbtn-study-family.json ==
+WARNING: Group/cbtn-study-family: Group.extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types' could not be found, so the code cannot be validated
+WARNING: Group/cbtn-study-family: Group.extension[1].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://purl.obolibrary.org/obo/mondo.owl' could not be found, so the code cannot be validated
+ERROR: Group/cbtn-study-family: Group.member[0].entity: Unable to resolve resource with reference 'PT-KZG2CZ95'
+ERROR: Group/cbtn-study-family: Group.member[0].entity: The extension https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role is not allowed to be used at this point (allowed = e:Group.content.extension; this element is [Group.member.entity, Reference])
+ERROR: Group/cbtn-study-family: Group.member[1].entity: Unable to resolve resource with reference 'PT-005B7CZ4'
+ERROR: Group/cbtn-study-family: Group.member[1].entity: The extension https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role is not allowed to be used at this point (allowed = e:Group.content.extension; this element is [Group.member.entity, Reference])
+ERROR: Group.text.div: Hyperlink 'PT-KZG2CZ95' at 'div/blockquote/p/a' for 'PT-KZG2CZ95' does not resolve
+ERROR: Group.text.div: Hyperlink 'PT-005B7CZ4' at 'div/blockquote/p/a' for 'PT-005B7CZ4' does not resolve
 == fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-hmb-npu.json ==
 == fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu.json ==
-== fsh-generated/resources/Group-gregor-family-role-child.json ==
 == fsh-generated/resources/Group-gregor-research-study-participants.json ==
 == fsh-generated/resources/Group-gregor-study-family.json ==
 WARNING: Group/gregor-study-family: Group.extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types' could not be found, so the code cannot be validated
+ERROR: Group/gregor-study-family: Group.member[0].entity: The extension https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role is not allowed to be used at this point (allowed = e:Group.content.extension; this element is [Group.member.entity, Reference])
+ERROR: Group/gregor-study-family: Group.member[1].entity: The extension https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role is not allowed to be used at this point (allowed = e:Group.content.extension; this element is [Group.member.entity, Reference])
 == fsh-generated/resources/Group-kf-research-study-cbtn-participants.json ==
 == fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2.json ==
 == fsh-generated/resources/List-ncpi-research-collection-cmg.json ==
@@ -311,6 +327,20 @@ WARNING: Observation/PT-006SP660-condition: Observation.code.coding[0].system: A
 INFORMATION: Observation/PT-006SP660-condition: Observation.effective.ofType(dateTime).extension[0]: The extension http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime|5.1.0 is deprecated
 INFORMATION: Observation/PT-006SP660-condition: Observation.value.ofType(CodeableConcept): Reference to draft CodeSystem https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion|0.1.0
 WARNING: Observation/PT-006SP660-condition: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-cbtn-family-relationship-mother.json ==
+ERROR: Observation/cbtn-family-relationship-mother: Observation.subject: Unable to resolve resource with reference 'PT-KZG2CZ95'
+ERROR: Observation/cbtn-family-relationship-mother: Observation.focus[0]: Unable to resolve resource with reference 'PT-005B7CZ4'
+WARNING: Observation/cbtn-family-relationship-mother: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/cbtn-family-relationship-mother: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+ERROR: Observation.text.div: Hyperlink 'PT-KZG2CZ95' at 'div/p/a' for 'PT-KZG2CZ95' does not resolve
+ERROR: Observation.text.div: Hyperlink 'PT-005B7CZ4' at 'div/p/a' for 'PT-005B7CZ4' does not resolve
+== fsh-generated/resources/Observation-cbtn-family-relationship-son.json ==
+ERROR: Observation/cbtn-family-relationship-son: Observation.subject: Unable to resolve resource with reference 'PT-005B7CZ4'
+ERROR: Observation/cbtn-family-relationship-son: Observation.focus[0]: Unable to resolve resource with reference 'PT-KZG2CZ95'
+WARNING: Observation/cbtn-family-relationship-son: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/cbtn-family-relationship-son: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+ERROR: Observation.text.div: Hyperlink 'PT-005B7CZ4' at 'div/p/a' for 'PT-005B7CZ4' does not resolve
+ERROR: Observation.text.div: Hyperlink 'PT-KZG2CZ95' at 'div/p/a' for 'PT-KZG2CZ95' does not resolve
 == fsh-generated/resources/Observation-gregor-example-metadata.json ==
 ERROR: Observation/gregor-example-metadata: Observation: Observation.component:workflow_type: max allowed = 1, but found 2 (from https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram|0.1.0)
 WARNING: Observation/gregor-example-metadata: Observation.code.coding[0]: A definition for CodeSystem 'http://edamontology.org' could not be found, so the code cannot be validated
@@ -430,8 +460,6 @@ WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-i
 WARNING: StructureDefinition/description: StructureDefinition.context[0]: Review the extension type for description: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/description'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-family-role.json ==
-WARNING: StructureDefinition/family-role: StructureDefinition.context[0]: Review the extension type for family-role: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-family-type.json ==
 WARNING: StructureDefinition/family-type: StructureDefinition.context[0]: Review the extension type for family-type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-file-format.json ==
@@ -476,7 +504,6 @@ WARNING: StructureDefinition/ncpi-condition: StructureDefinition.differential.el
 WARNING: StructureDefinition/ncpi-condition: StructureDefinition.differential.element[22].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/ncpi-condition: StructureDefinition.differential.element[25].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/StructureDefinition-ncpi-family-relationship.json ==
-== fsh-generated/resources/StructureDefinition-ncpi-family-role.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-fastq.json ==
 WARNING: StructureDefinition/ncpi-fastq: StructureDefinition.snapshot.element[55].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: StructureDefinition/ncpi-fastq: StructureDefinition.snapshot.element[64].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -634,11 +661,8 @@ WARNING: StructureDefinition/research-study-subject-consent: StructureDefinition
 == fsh-generated/resources/StructureDefinition-research-web-Link.json ==
 == fsh-generated/resources/StructureDefinition-specimen-collection.json ==
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/specimen-collection'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-study-family.json ==
-WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-study-family-focus.json ==
 WARNING: StructureDefinition/study-family-focus: StructureDefinition.context[0]: Review the extension type for study-family-focus: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/ValueSet-collection-type-vs.json ==
 == fsh-generated/resources/ValueSet-condition-assertion-vs.json ==
 WARNING: ValueSet/condition-assertion-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

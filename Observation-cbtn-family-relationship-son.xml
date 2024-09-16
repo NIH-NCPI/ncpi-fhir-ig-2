@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="cbtn-family-relationship-son"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation cbtn-family-relationship-son</b></p><a name="cbtn-family-relationship-son"> </a><a name="hccbtn-family-relationship-son"> </a><a name="cbtn-family-relationship-son-en-US"> </a><p><b>status</b>: Registered</p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode SON}">natural son</span></p><p><b>subject</b>: <a href="PT-005B7CZ4">PT-005B7CZ4</a></p><p><b>focus</b>: <a href="PT-KZG2CZ95">PT-KZG2CZ95</a></p></div>
+  </text>
+  <status value="registered"/>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="SON"/>
+      <display value="natural son"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="PT-005B7CZ4"/>
+  </subject>
+  <focus>
+    <reference value="PT-KZG2CZ95"/>
+  </focus>
+</Observation>
