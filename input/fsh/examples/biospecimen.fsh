@@ -1,3 +1,0 @@
-/*Example for Sample*/
-
-
