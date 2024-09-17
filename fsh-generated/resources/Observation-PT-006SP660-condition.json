@@ -1,0 +1,72 @@
+{
+  "resourceType": "Observation",
+  "id": "PT-006SP660-condition",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "MONDO:0002203",
+        "system": "http://purl.obolibrary.org/obo/mondo.owl"
+      }
+    ],
+    "text": "ventricular ectopy"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "Disease",
+          "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/PT-006SP660"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "Present",
+        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion"
+      }
+    ]
+  },
+  "_effectiveDateTime": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "target",
+            "valueReference": {
+              "reference": "Patient/PT-006SP660"
+            }
+          },
+          {
+            "url": "targetPath",
+            "valueString": "None"
+          },
+          {
+            "url": "relationship",
+            "valueCode": "after"
+          },
+          {
+            "valueDuration": {
+              "value": 4931,
+              "code": "days",
+              "system": "http://unitsofmeasure.org",
+              "unit": "d"
+            },
+            "url": "offset"
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"
+      }
+    ]
+  }
+}

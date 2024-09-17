@@ -1,0 +1,71 @@
+{
+  "resourceType": "Group",
+  "id": "gregor-study-family",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://anvil.terra.bio/",
+      "value": "GSS5555"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Duo",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
+            "display": "Duo"
+          }
+        ]
+      }
+    }
+  ],
+  "member": [
+    {
+      "entity": {
+        "extension": [
+          {
+            "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CHILD",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                  "display": "child"
+                }
+              ]
+            }
+          }
+        ],
+        "reference": "Patient/GSS123456"
+      }
+    },
+    {
+      "entity": {
+        "extension": [
+          {
+            "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "MTH",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                  "display": "mother"
+                }
+              ]
+            }
+          }
+        ],
+        "reference": "Patient/GSS654321"
+      }
+    }
+  ],
+  "type": "person",
+  "actual": true
+}
