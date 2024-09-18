@@ -432,13 +432,6 @@
       ]
     },
     {
-      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent",
-      "title": "Research Study Subject Consent",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
       "title": "Research Web Link",
       "types": [
@@ -512,8 +505,8 @@
     ],
     "ResearchStudy": [
       {
-        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject",
-        "title": "Research Study Subject"
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study",
+        "title": "NCPI Research Study"
       }
     ],
     "Group": [
@@ -526,6 +519,7 @@
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime": [
       "Observation.effectiveDateTime",
+      "Patient.birthDate",
       "Specimen.collection.collectedDateTime"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -679,9 +673,6 @@
       "ResearchStudy"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result": [
-      "ResearchStudy"
-    ],
-    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent": [
       "ResearchStudy"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link": [

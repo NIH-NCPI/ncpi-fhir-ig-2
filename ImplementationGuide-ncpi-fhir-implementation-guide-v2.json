@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2024-09-16T16:04:42+00:00",
+  "date" : "2024-09-18T19:34:29+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -698,18 +698,6 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/gregor-family-relationship-mother"
-      },
-      "name" : "An example family relationship based on data from CBTN",
-      "description" : "An example family relationship based on data from CBTN.",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
         "reference" : "Observation/cbtn-family-relationship-mother"
       },
       "name" : "An example family relationship based on data from CBTN",
@@ -723,6 +711,18 @@
       }],
       "reference" : {
         "reference" : "Observation/cbtn-family-relationship-son"
+      },
+      "name" : "An example family relationship based on data from CBTN",
+      "description" : "An example family relationship based on data from CBTN.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/gregor-family-relationship-mother"
       },
       "name" : "An example family relationship based on data from CBTN",
       "description" : "An example family relationship based on data from CBTN.",
@@ -790,18 +790,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/cmg-research-study-bhcmg"
-      },
-      "name" : "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
-      "description" : "The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
       }],
       "reference" : {
@@ -826,42 +814,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/kf-research-study-subject-gsr-allowed"
-      },
-      "name" : "CBTN Genomic Summary Results (GSR) Allowed Access",
-      "description" : "Genomic Summary Results (GSR) Allowed Access",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/kf-research-study-subject-gru-dac"
-      },
-      "name" : "CBTN GRU data access via DAC",
-      "description" : "GRU data access via DAC",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/kf-research-study-subject-gru-dbgap"
-      },
-      "name" : "CBTN GRU data access via dbGaP",
-      "description" : "GRU data access via dbGaP",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PractitionerRole"
       }],
       "reference" : {
@@ -870,18 +822,6 @@
       "name" : "CBTN Operations Lead",
       "description" : "CBTN Operations Lead",
       "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/kf-research-study-subject-registered"
-      },
-      "name" : "CBTN Registered Tier Access",
-      "description" : "CBTN Registered Tier Access",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
     },
     {
       "extension" : [{
@@ -1234,6 +1174,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/PT-006SP675"
+      },
+      "name" : "Example patients based on data from PCGC",
+      "description" : "Example patients based on data from PCGC.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Person"
+      }],
+      "reference" : {
+        "reference" : "Person/pcgc-example-person"
+      },
+      "name" : "Example patients based on data from PCGC",
+      "description" : "Example patients based on data from PCGC",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ResearchStudy"
       }],
       "reference" : {
@@ -1338,30 +1302,6 @@
       "name" : "Hash Types Code System",
       "description" : "Algorithm used to calculate the hash (and size, where applicable)",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/hmb-irb-npu-consent"
-      },
-      "name" : "HMB-IRB-NPU Consent",
-      "description" : "Consented with Health/Medical/Biomedical + IRB Required + Not for profit use",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/hmb-npu-consent"
-      },
-      "name" : "HMB-NPU Consent",
-      "description" : "Consented with Health/Medical/Biomedical + Not for profit use",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
     },
     {
       "extension" : [{
@@ -1741,54 +1681,6 @@
         "valueString" : "Group"
       }],
       "reference" : {
-        "reference" : "Group/cmg-research-study-bhcmg-consent-group-hmb-npu"
-      },
-      "name" : "Participants consented under HMB-NPU",
-      "description" : "BH-CMG study's population consented under Health/Medical/Biomedical + Not for profit use",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/cmg-research-study-subject-cmg-hmb-npu"
-      },
-      "name" : "Participants consented under HMB-NPU",
-      "description" : "CMG Consent Group, Health/Medical/Biomedical + Not for profit use",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Group"
-      }],
-      "reference" : {
-        "reference" : "Group/cmg-research-study-bhcmg-consent-group-irb-hmb-npu"
-      },
-      "name" : "Participants consented under IRB-HMB-NPU",
-      "description" : "BH-CMG study's population consented under Health/Medical/Biomedical + IRB Required + Not for profit use",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/cmg-research-study-subject-cmg-irb-hmb-npu"
-      },
-      "name" : "Participants consented under IRB-HMB-NPU",
-      "description" : "BH-CMG Consent Group, Health/Medical/Biomedical + IRB Required + Not for profit use",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Group"
-      }],
-      "reference" : {
         "reference" : "Group/kf-research-study-cbtn-participants"
       },
       "name" : "Participants from the CBTN research study",
@@ -2021,30 +1913,6 @@
       },
       "name" : "Research Study Result",
       "description" : "Link to citations associated with the study's publications.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/research-study-subject"
-      },
-      "name" : "Research Study Subject",
-      "description" : "A ResearchStudySubject is representative of a group of participants whose consent and data use is governed by the same restrictions. This profile is an R4 proxy for the more flexible R5 ResearchSubject.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/research-study-subject-consent"
-      },
-      "name" : "Research Study Subject Consent",
-      "description" : "ResearchStudySubjectConsent provides link to a consent through which participants were enrolled.",
       "exampleBoolean" : false
     },
     {
@@ -2362,18 +2230,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "List"
-      }],
-      "reference" : {
-        "reference" : "List/ncpi-research-collection-cmg"
-      },
-      "name" : "The Centers for Medelian Genetics",
-      "description" : "The Centers for Medelian Genetics",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -2590,11 +2446,6 @@
       {
         "nameUrl" : "research_study_example_cbtn.html",
         "title" : "Research Study Example Cbtn",
-        "generation" : "markdown"
-      },
-      {
-        "nameUrl" : "research_study_example_cmg.html",
-        "title" : "Research Study Example Cmg",
         "generation" : "markdown"
       },
       {

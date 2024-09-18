@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2024-09-16T16:04:42+00:00"/>
+  <date value="2024-09-18T19:34:29+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -535,17 +535,6 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/gregor-family-relationship-mother"/>
-      </reference>
-      <name value="An example family relationship based on data from CBTN"/>
-      <description value="An example family relationship based on data from CBTN."/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
         <reference value="Observation/cbtn-family-relationship-mother"/>
       </reference>
       <name value="An example family relationship based on data from CBTN"/>
@@ -558,6 +547,17 @@
       </extension>
       <reference>
         <reference value="Observation/cbtn-family-relationship-son"/>
+      </reference>
+      <name value="An example family relationship based on data from CBTN"/>
+      <description value="An example family relationship based on data from CBTN."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/gregor-family-relationship-mother"/>
       </reference>
       <name value="An example family relationship based on data from CBTN"/>
       <description value="An example family relationship based on data from CBTN."/>
@@ -619,17 +619,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ResearchStudy"/>
-      </extension>
-      <reference>
-        <reference value="ResearchStudy/cmg-research-study-bhcmg"/>
-      </reference>
-      <name value="Baylor Hopkins Center for Mendelian Genomics (BH CMG)"/>
-      <description value="The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments."/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Consent"/>
       </extension>
       <reference>
@@ -652,39 +641,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ResearchStudy"/>
-      </extension>
-      <reference>
-        <reference value="ResearchStudy/kf-research-study-subject-gsr-allowed"/>
-      </reference>
-      <name value="CBTN Genomic Summary Results (GSR) Allowed Access"/>
-      <description value="Genomic Summary Results (GSR) Allowed Access"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ResearchStudy"/>
-      </extension>
-      <reference>
-        <reference value="ResearchStudy/kf-research-study-subject-gru-dac"/>
-      </reference>
-      <name value="CBTN GRU data access via DAC"/>
-      <description value="GRU data access via DAC"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ResearchStudy"/>
-      </extension>
-      <reference>
-        <reference value="ResearchStudy/kf-research-study-subject-gru-dbgap"/>
-      </reference>
-      <name value="CBTN GRU data access via dbGaP"/>
-      <description value="GRU data access via dbGaP"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
@@ -693,17 +649,6 @@
       <name value="CBTN Operations Lead"/>
       <description value="CBTN Operations Lead"/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ResearchStudy"/>
-      </extension>
-      <reference>
-        <reference value="ResearchStudy/kf-research-study-subject-registered"/>
-      </reference>
-      <name value="CBTN Registered Tier Access"/>
-      <description value="CBTN Registered Tier Access"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1026,6 +971,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PT-006SP675"/>
+      </reference>
+      <name value="Example patients based on data from PCGC"/>
+      <description value="Example patients based on data from PCGC."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Person"/>
+      </extension>
+      <reference>
+        <reference value="Person/pcgc-example-person"/>
+      </reference>
+      <name value="Example patients based on data from PCGC"/>
+      <description value="Example patients based on data from PCGC"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ResearchStudy"/>
       </extension>
       <reference>
@@ -1122,28 +1089,6 @@
       <name value="Hash Types Code System"/>
       <description value="Algorithm used to calculate the hash (and size, where applicable)"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/hmb-irb-npu-consent"/>
-      </reference>
-      <name value="HMB-IRB-NPU Consent"/>
-      <description value="Consented with Health/Medical/Biomedical + IRB Required + Not for profit use"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/hmb-npu-consent"/>
-      </reference>
-      <name value="HMB-NPU Consent"/>
-      <description value="Consented with Health/Medical/Biomedical + Not for profit use"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1491,50 +1436,6 @@
         <valueString value="Group"/>
       </extension>
       <reference>
-        <reference value="Group/cmg-research-study-bhcmg-consent-group-hmb-npu"/>
-      </reference>
-      <name value="Participants consented under HMB-NPU"/>
-      <description value="BH-CMG study's population consented under Health/Medical/Biomedical + Not for profit use"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ResearchStudy"/>
-      </extension>
-      <reference>
-        <reference value="ResearchStudy/cmg-research-study-subject-cmg-hmb-npu"/>
-      </reference>
-      <name value="Participants consented under HMB-NPU"/>
-      <description value="CMG Consent Group, Health/Medical/Biomedical + Not for profit use"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Group"/>
-      </extension>
-      <reference>
-        <reference value="Group/cmg-research-study-bhcmg-consent-group-irb-hmb-npu"/>
-      </reference>
-      <name value="Participants consented under IRB-HMB-NPU"/>
-      <description value="BH-CMG study's population consented under Health/Medical/Biomedical + IRB Required + Not for profit use"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ResearchStudy"/>
-      </extension>
-      <reference>
-        <reference value="ResearchStudy/cmg-research-study-subject-cmg-irb-hmb-npu"/>
-      </reference>
-      <name value="Participants consented under IRB-HMB-NPU"/>
-      <description value="BH-CMG Consent Group, Health/Medical/Biomedical + IRB Required + Not for profit use"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Group"/>
-      </extension>
-      <reference>
         <reference value="Group/kf-research-study-cbtn-participants"/>
       </reference>
       <name value="Participants from the CBTN research study"/>
@@ -1748,28 +1649,6 @@
       </reference>
       <name value="Research Study Result"/>
       <description value="Link to citations associated with the study's publications."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/research-study-subject"/>
-      </reference>
-      <name value="Research Study Subject"/>
-      <description value="A ResearchStudySubject is representative of a group of participants whose consent and data use is governed by the same restrictions. This profile is an R4 proxy for the more flexible R5 ResearchSubject."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/research-study-subject-consent"/>
-      </reference>
-      <name value="Research Study Subject Consent"/>
-      <description value="ResearchStudySubjectConsent provides link to a consent through which participants were enrolled."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2060,17 +1939,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="List"/>
-      </extension>
-      <reference>
-        <reference value="List/ncpi-research-collection-cmg"/>
-      </reference>
-      <name value="The Centers for Medelian Genetics"/>
-      <description value="The Centers for Medelian Genetics"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -2279,11 +2147,6 @@
       <page>
         <nameUrl value="research_study_example_cbtn.html"/>
         <title value="Research Study Example Cbtn"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="research_study_example_cmg.html"/>
-        <title value="Research Study Example Cmg"/>
         <generation value="markdown"/>
       </page>
       <page>

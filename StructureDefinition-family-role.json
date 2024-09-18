@@ -10,7 +10,7 @@
   "name" : "FamilyRole",
   "title" : "Study Family Focus",
   "status" : "draft",
-  "date" : "2024-09-16T16:04:42+00:00",
+  "date" : "2024-09-18T19:34:29+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -34,7 +34,7 @@
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "Group.content.extension"
+    "expression" : "Group.member.entity"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",

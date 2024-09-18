@@ -24,7 +24,7 @@
   <name value="NcpiFile"/>
   <title value="NCPI File"/>
   <status value="draft"/>
-  <date value="2024-09-16T16:04:42+00:00"/>
+  <date value="2024-09-18T19:34:29+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -1995,7 +1995,7 @@
       <path value="DocumentReference.content.attachment.hash"/>
       <short value="Hash of the data (sha-1, base64ed)"/>
       <definition value="The calculated hash of the data using SHA-1. Represented using base64."/>
-      <comment value="The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature."/>
+      <comment value="The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](http://hl7.org/fhir/R4B/provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature."/>
       <requirements value="Included so that applications can verify that the contents of a location have not changed due to technical failures (e.g., storage rot, transport glitch, incorrect version)."/>
       <min value="0"/>
       <max value="1"/>
