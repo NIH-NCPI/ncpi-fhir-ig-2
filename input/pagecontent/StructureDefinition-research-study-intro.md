@@ -130,13 +130,6 @@ Each NCPI Research must have one [Study Group](structuredefinition-study-group) 
 
 Additional Study Groups may be included to describe various aspects of the study’s population.
 
-**Usage:**
-
-
-
-* Derived from this Resource Profile: [Research Study Subject](structuredefinition-research-study-subject)
-* Examples for this Resource Profile: [ResearchStudy/cmg-research-study-bhcmg](researchstudy-cmg-research-study-bhcmg) and [ResearchStudy/ncpi-research-study-01](researchstudy-ncpi-research-study-01)
-
 
 ### Notes:
 

@@ -1,14 +1,14 @@
 {
   "resourceType": "Observation",
-  "id": "FASTQ-example",
+  "id": "gregor-example-metadata",
   "meta": {
     "profile": [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq"
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram"
     ]
   },
   "focus": [
     {
-      "reference": "DocumentReference/GF-6BAD9S7D"
+      "reference": "Patient/GSS123456"
     }
   ],
   "component": [
@@ -77,6 +77,18 @@
       }
     },
     {
+      "valueCodeableConcept": {
+        "text": "Not Applicable"
+      },
+      "code": {
+        "coding": [
+          {
+            "code": "TargetRegion"
+          }
+        ]
+      }
+    },
+    {
       "code": {
         "coding": [
           {
@@ -87,7 +99,23 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "unstranded"
+            "code": "stranded"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "ReferenceGenome"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "GRCh38"
           }
         ]
       }
@@ -106,23 +134,45 @@
       "code": {
         "coding": [
           {
-            "code": "AdaptorTrimmed"
+            "code": "WorkflowTool"
           }
         ]
       },
-      "valueBoolean": true
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "bammem"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "WorkflowType"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "alignment"
+          }
+        ]
+      }
     }
   ],
   "status": "final",
   "code": {
     "coding": [
       {
-        "code": "format_1930",
+        "code": "format_2572",
         "system": "http://edamontology.org"
       }
     ]
   },
   "specimen": {
-    "reference": "Specimen/SA-000"
+    "reference": "Specimen/GSS123456-01-010"
   }
 }

@@ -36,7 +36,7 @@ Id: family-role
 Title: "Study Family Focus"
 Description: "Extension containing Family Role"
 
-* insert SetContext(Group.content.extension)
+* insert SetContext(Group.member.entity)
 * value[x] only CodeableConcept 
 * valueCodeableConcept ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
 * valueCodeableConcept from $ncpi-family-member (extensible)

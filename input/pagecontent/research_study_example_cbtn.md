@@ -19,22 +19,18 @@ time for that, this list should be comprehensive.
 #### CBTN GRU data access access via DAC
 * Consent [GRU via DAC](Consent-kf-gru-dac-consent.html)
 * Participant Group consented under [GRU via DAC](Group-kf-research-study-cbtn-participants.html)
-* Participant Research Subject consented under [GRU via DAC](ResearchStudy-kf-research-study-subject-gru-dac.html)
 
 #### CBTN GRU data access via dbGaP
 * Consent [GRU via dbGaP](Consent-kf-gru-dbgap-consent.html)
 * Participant Group consented under [GRU via dbGaP](Group-kf-research-study-cbtn-participants.html)
-* Participant Research Subject consented under [GRU via dbGaP](ResearchStudy-kf-research-study-subject-gru-dbgap.html)
 
 #### CBTN Genomic Summary Results (GSR) Allowed Access
 * Consent [GSR Allowed](Consent-kf-gsr-allowed-access.html)
 * Participant Group consented under [GSR Allowed](Group-kf-research-study-cbtn-participants.html)
-* Participant Research Subject consented under [GSR Allowed](ResearchStudy-kf-research-study-subject-gsr-allowed.html)
 
 #### CBTN Registered Tier Access
 * Consent [Registered Access](Consent-kf-gsr-allowed-access.html)
 * Participant Group consented under [Registered Access](Group-kf-research-study-cbtn-participants.html)
-* Participant Research Subject consented under [Registered Access](ResearchStudy-kf-research-study-subject-registered.html)
 
 #### Miscellaneous Resources
 * Research Study Role [dbGaP PI, X01](PractitionerRole-kf-research-study-personnel-role-pi-x01.html)

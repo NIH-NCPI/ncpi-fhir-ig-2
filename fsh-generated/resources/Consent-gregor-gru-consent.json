@@ -1,6 +1,6 @@
 {
   "resourceType": "Consent",
-  "id": "hmb-irb-npu-consent",
+  "id": "gregor-gru-consent",
   "meta": {
     "profile": [
       "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
@@ -20,24 +20,18 @@
   "provision": {
     "purpose": [
       {
-        "code": "HMB",
+        "code": "GRU",
         "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-        "display": "Health/Medical/Biomedical"
-      },
-      {
-        "code": "IRB",
-        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-        "display": "IRB approval required"
-      },
-      {
-        "code": "NPU",
-        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-        "display": "Not-for-profit use only"
+        "display": "General Research Use"
       }
     ],
     "type": "permit"
   },
   "extension": [
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description",
+      "valueMarkdown": "Use of the data is limited only by the terms of the model Data Use Certification."
+    },
     {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type",
       "valueCodeableConcept": {
@@ -48,14 +42,6 @@
           }
         ]
       }
-    },
-    {
-      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description",
-      "valueMarkdown": "Health/Medical/Biomedical, IRB Approval Required, Not for profit use"
-    },
-    {
-      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
-      "valueUrl": "https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=DUC&view_pdf&stacc=phs000711.v7.p2"
     }
   ],
   "status": "draft",

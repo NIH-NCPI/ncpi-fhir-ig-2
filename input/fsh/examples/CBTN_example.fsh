@@ -115,6 +115,7 @@ Description: "General Research Use (GRU)"
 * extension[website].valueUrl = "https://redcap.chop.edu/surveys/?s=A7M873HMN8"
 * extension[accessType].valueCodeableConcept = $ncpi-data-access-type#controlled
 
+/*
 Instance: kf-research-study-subject-gru-dac
 InstanceOf: ResearchStudySubject
 Title: "CBTN GRU data access via DAC"
@@ -129,6 +130,7 @@ Description: "GRU data access via DAC"
 * partOf = Reference(kf-research-study-cbtn)
 * extension[consent].valueReference = Reference(kf-gru-dac-consent)
 * enrollment = Reference(kf-research-study-cbtn-participants)
+*/
 
 Instance: kf-gru-dbgap-consent
 InstanceOf: NcpiResearchAccessPolicy
@@ -145,6 +147,7 @@ Description: "General Research Use (GRU)"
 * extension[website].valueUrl = "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002517"
 * extension[accessType].valueCodeableConcept = $ncpi-data-access-type#controlled
 
+/*
 Instance: kf-research-study-subject-gru-dbgap
 InstanceOf: ResearchStudySubject
 Title: "CBTN GRU data access via dbGaP"
@@ -159,6 +162,7 @@ Description: "GRU data access via dbGaP"
 * partOf = Reference(kf-research-study-cbtn)
 * extension[consent].valueReference = Reference(kf-gru-dbgap-consent)
 * enrollment = Reference(kf-research-study-cbtn-participants)
+*/
 
 Instance: kf-gsr-allowed-access
 InstanceOf: NcpiResearchAccessPolicy
@@ -173,6 +177,7 @@ Description: "Genomic Summary Results (GSR) Allowed Access"
 * extension[website].valueUrl = "https://www.genome.gov/about-nhgri/Policies-Guidance/Data-Sharing-Policies-and-Expectations/GSR-update-FAQs"
 * extension[accessType].valueCodeableConcept = $ncpi-data-access-type#gsr-allowed
 
+/*
 Instance: kf-research-study-subject-gsr-allowed
 InstanceOf: ResearchStudySubject
 Title: "CBTN Genomic Summary Results (GSR) Allowed Access"
@@ -187,7 +192,7 @@ Description: "Genomic Summary Results (GSR) Allowed Access"
 * partOf = Reference(kf-research-study-cbtn)
 * extension[consent].valueReference = Reference(kf-gsr-allowed-access)
 * enrollment = Reference(kf-research-study-cbtn-participants)
-
+*/
 Instance: kf-registered-allowed-access
 InstanceOf: NcpiResearchAccessPolicy
 Title: "Registered Tier Access"
@@ -201,6 +206,7 @@ Description: "Registered Tier Access"
 * extension[website].valueUrl = "https://kidsfirstdrc.org/portal/portal-features/#dataAccess"
 * extension[accessType].valueCodeableConcept = $ncpi-data-access-type#registered
 
+/*
 Instance: kf-research-study-subject-registered
 InstanceOf: ResearchStudySubject
 Title: "CBTN Registered Tier Access"
@@ -215,7 +221,7 @@ Description: "CBTN Registered Tier Access"
 * partOf = Reference(kf-research-study-cbtn)
 * extension[consent].valueReference = Reference(kf-gsr-allowed-access)
 * enrollment = Reference(kf-research-study-cbtn-participants)
-
+*/
 
 Instance: ncpi-research-collection-pbta
 InstanceOf: NcpiResearchCollection
@@ -270,7 +276,97 @@ Description: "Example patients based on data from CBTN."
   * system = $ucum
   * code = #d "days"
 
+
+
+Instance: PT-006SP675
+InstanceOf: NcpiParticipant
+Title: "Example patients based on data from PCGC"
+Usage: #example
+Description: "Example patients based on data from PCGC."
+* identifier[0]
+  * system = "http://chdgenes.org/"
+  * value = "20757"
+* identifier[1]
+  * system = "http://chdgenes.org/"
+  * value = "PT_005B7CZ4"
+* birthDate.extension[+]
+  * url = $cqf-relativeDateTime
+  * extension[+]
+    * url = "target"
+    * valueReference = Reference(PT-006SP675)
+  * extension[+]
+    * url = "targetPath"
+    * valueString =  "birthDate"
+  * extension[+]
+    * url = "relationship"
+    * valueCode = #after
+  * extension[+]
+    * url = "offset"
+    * valueDuration = 2006 'days'
+    * valueDuration.unit = "d"
+* extension[us-core-birth-sex].valueCode = #F "Female"
+* extension[us-core-race]
+  * extension[ombCategory].valueCoding =  $omb-race-eth#2106-3 "White"
+  * extension[text].valueString = "White"
+* extension[us-core-ethnicity]
+  * extension[ombCategory].valueCoding =  $omb-race-eth#2135-2 "Hispanic or Latino"
+  * extension[text].valueString = "Hispanic or Latino"
+
+Instance: pcgc-example-person
+InstanceOf: NcpiPerson
+Title: "Example patients based on data from PCGC"
+Usage: #example
+Description: "Example patients based on data from PCGC"
+* identifier
+  * system = "http://chdgenes.org/"
+  * value = "PS_123"
+* link
+  * target = Reference(PT-006SP675) 
 // NCPI Family -- TBD
+
+Instance: FM-00C8Y7DG
+InstanceOf: NcpiStudyFamily
+Title: "Example patients based on data from CBTN"
+Usage: #example
+Description: "Example patients based on data from CBTN."
+* id = "cbtn-study-family"
+* identifier[0]
+  * system = "https://cbtn.org/"
+  * value = "FM-00C8Y7DG"
+* type = #person // Required by Group with required VS
+* actual = true // Required by Group
+
+* extension[family-type].valueCodeableConcept = $ncpi-family-types#Trio "Trio"
+// * extension[description].valueMarkdown = "Potential inheritance details"
+// * extension[consanguinity].valueCodeableConcept = $snomedct_us#261665006  "Unknown"
+* extension[study-family-focus].valueCodeableConcept = $mondo#0004992 "Cancer"
+* member[0].entity = Reference(PT-006SP660)
+* member[0].entity.extension[family-role].valueCodeableConcept = $family-role-code#MTH "mother"
+* member[1].entity = Reference(PT-006SP675)
+* member[1].entity.extension[family-role].valueCodeableConcept = $family-role-code#SON "natural son"
+
+Instance: cbtn-family-relationship-mother
+InstanceOf: NcpiFamilyRelationship
+Title: "An example family relationship based on data from CBTN"
+Usage: #example
+Description: "An example family relationship based on data from CBTN."
+* subject = Reference(PT-006SP660)
+* focus = Reference(PT-006SP675)
+* code = $family-role-code#MTH "mother"
+* status = #registered
+
+
+
+Instance: cbtn-family-relationship-son
+InstanceOf: NcpiFamilyRelationship
+Title: "An example family relationship based on data from CBTN"
+Usage: #example
+Description: "An example family relationship based on data from CBTN."
+* subject = Reference(PT-006SP675)
+* focus = Reference(PT-006SP660)
+* code = $family-role-code#SON "natural son"
+* status = #registered
+
 
 // NCPI Condition
 Instance: PT-006SP660-condition
@@ -372,17 +468,10 @@ Description: "Example file metadata for a FASTQ file"
 * status = #final
 * code = $edam#format_1930
 * specimen = Reference(SA-000) // using specimen is a placeholder for using a slice of component for related samples
-* component.code = #AssayStrategy
 * component[assay_strategy].valueCodeableConcept = #WGS
-* component.code = #PlatformInstrument
 * component[platform_instrument].valueCodeableConcept = #IlluminaHiSeq2000
-* component.code = #LibraryPrep
 * component[library_prep].valueCodeableConcept = #polyA
-* component.code = #LibrarySelection
 * component[library_selection].valueCodeableConcept = #PolyTEnrichment
-* component.code = #Strandedness
 * component[strandedness].valueCodeableConcept = #unstranded
-* component.code = #IsPairedEnd
 * component[is_paired_end].valueBoolean = false
-* component.code = #AdaptorTrimmed
 * component[adaptor_trimmed].valueBoolean = true

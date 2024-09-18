@@ -39,12 +39,6 @@ Each NCPI Research must have one [Study Group](StructureDefinition-research-stud
 
 Additional Study Groups may be included to describe various aspects of the study’s population.
 
-**Usage:**
-
-* Derived from this Resource Profile: [Research Study Subject](StructureDefinition-research-study-subject.html)
-* Examples for this Resource Profile: [ResearchStudy/cmg-research-study-bhcmg](ResearchStudy-cmg-research-study-bhcmg.html)
-
-
 ### Notes:
 As mentioned in the section, “Added Profile Restrictions” above, each NCPI Research must have one NCPI [Study Group](StructureDefinition-research-study-group.html) which must, at the very least, indicate the total number of patients enrolled at the time the data was loaded into FHIR.
 

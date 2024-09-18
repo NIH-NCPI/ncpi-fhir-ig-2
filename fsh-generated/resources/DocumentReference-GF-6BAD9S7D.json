@@ -1,0 +1,81 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "GF-6BAD9S7D",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "GF-6BAD9S7D"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version",
+      "valueString": "V1"
+    },
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "format_3016",
+            "system": "http://edamontology.org",
+            "display": "VCF"
+          }
+        ]
+      },
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format"
+    },
+    {
+      "valueQuantity": {
+        "value": 1044770380,
+        "unit": "bytes"
+      },
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size"
+    },
+    {
+      "extension": [
+        {
+          "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
+          "valueString": "8f107912d862cf91fbfb77bf9c1bab36-4"
+        },
+        {
+          "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type",
+          "valueCode": "etag"
+        }
+      ],
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "url": "s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz"
+      },
+      "extension": [
+        {
+          "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access",
+          "valueReference": {
+            "reference": "Consent/kf-gru-dac-consent"
+          }
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/PT-006SP660"
+  },
+  "description": "Annotated Variant Call",
+  "type": {
+    "coding": [
+      {
+        "code": "operation_3227",
+        "system": "http://edamontology.org",
+        "display": "Variant calling"
+      }
+    ]
+  },
+  "status": "current"
+}

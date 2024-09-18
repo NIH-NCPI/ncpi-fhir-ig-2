@@ -128,7 +128,7 @@ Description: "NCPI FASTQ File"
   library_prep 1..1 and
   library_selection 1..1 and
   strandedness 1..1 and
-  target_region 1..1 and
+  target_region 0..1 and
   is_paired_end 1..1 and
   adaptor_trimmed 1..1 and
   reference_genome 0..1 and  
@@ -177,7 +177,7 @@ Description: "BAM or CRAM file profile"
   library_prep 1..1 and
   library_selection 1..1 and
   strandedness 1..1 and
-  target_region 1..1 and
+  target_region 0..1 and
   is_paired_end 0..1 and
   adaptor_trimmed 0..1 and
   reference_genome 1..1 and  
@@ -226,7 +226,7 @@ Description: "VCF or gVCF file profile"
   library_prep 0..1 and
   library_selection 0..1 and
   strandedness 0..1 and
-  target_region 1..1 and
+  target_region 0..1 and
   is_paired_end 0..1 and
   adaptor_trimmed 0..1 and
   reference_genome 1..1 and  
@@ -275,7 +275,7 @@ Description: "MAF (Somatic Mutation) file profile"
   library_prep 0..1 and
   library_selection 0..1 and
   strandedness 0..1 and
-  target_region 1..1 and
+  target_region 0..1 and
   is_paired_end 0..1 and
   adaptor_trimmed 0..1 and
   reference_genome 1..1 and  

@@ -1,0 +1,306 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncpi-condition",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition",
+  "version": "0.0.1",
+  "name": "NcpiCondition",
+  "title": "NCPI Conditon",
+  "status": "draft",
+  "description": "Information about a condition related to a research participant",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.extension:condition-location",
+        "path": "Observation.extension",
+        "sliceName": "condition-location",
+        "short": "Any location qualifiers",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.extension:condition-laterality",
+        "path": "Observation.extension",
+        "sliceName": "condition-laterality",
+        "short": "Laterality information for the condition site",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-laterality"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.extension:condition-asserter",
+        "path": "Observation.extension",
+        "sliceName": "condition-asserter",
+        "short": "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-asserter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "short": "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "short": "The condition, disease, phenotypic feature, etc that this participant may have."
+      },
+      {
+        "id": "Observation.code.text",
+        "path": "Observation.code.text",
+        "short": "Detailed description / free text about this condition."
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "The participant we are describing",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "The date or age at which this condition is being asserted.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "short": "Does the participant have this condition?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-assertion-vs"
+        }
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "short": "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "short": "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc."
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open",
+          "description": "Slicing logic for observation component",
+          "ordered": false
+        }
+      },
+      {
+        "id": "Observation.component:ageAtOnset",
+        "path": "Observation.component",
+        "sliceName": "ageAtOnset",
+        "short": "The age of onset for this condition. Could be expressed with a term, an age, or an age range.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:ageAtOnset.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "ageAtOnset"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:ageAtOnset.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:ageAtResolution",
+        "path": "Observation.component",
+        "sliceName": "ageAtResolution",
+        "short": "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:ageAtResolution.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "ageAtResolution"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:ageAtResolution.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:otherModifiers",
+        "path": "Observation.component",
+        "sliceName": "otherModifiers",
+        "short": "Any additional modifiers for this condition, such as severity.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Observation.component:otherModifiers.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "otherModifiers"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:otherModifiers.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:stage",
+        "path": "Observation.component",
+        "sliceName": "stage",
+        "short": "Cancer staging information",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:stage.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "stage"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:stage.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

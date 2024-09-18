@@ -95,14 +95,6 @@
       },
       {
         "reference": {
-          "reference": "Observation/gregor-family-relationship-mother"
-        },
-        "name": "An example family relationship based on data from CBTN",
-        "description": "An example family relationship based on data from CBTN.",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
-      },
-      {
-        "reference": {
           "reference": "Observation/cbtn-family-relationship-mother"
         },
         "name": "An example family relationship based on data from CBTN",
@@ -112,6 +104,14 @@
       {
         "reference": {
           "reference": "Observation/cbtn-family-relationship-son"
+        },
+        "name": "An example family relationship based on data from CBTN",
+        "description": "An example family relationship based on data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
+      },
+      {
+        "reference": {
+          "reference": "Observation/gregor-family-relationship-mother"
         },
         "name": "An example family relationship based on data from CBTN",
         "description": "An example family relationship based on data from CBTN.",
@@ -158,14 +158,6 @@
       },
       {
         "reference": {
-          "reference": "ResearchStudy/cmg-research-study-bhcmg"
-        },
-        "name": "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
-        "description": "The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
-      },
-      {
-        "reference": {
           "reference": "Consent/kf-gru-dac-consent"
         },
         "name": "CBTN General Research Use (GRU) Consent DAC",
@@ -182,43 +174,11 @@
       },
       {
         "reference": {
-          "reference": "ResearchStudy/kf-research-study-subject-gsr-allowed"
-        },
-        "name": "CBTN Genomic Summary Results (GSR) Allowed Access",
-        "description": "Genomic Summary Results (GSR) Allowed Access",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/kf-research-study-subject-gru-dac"
-        },
-        "name": "CBTN GRU data access via DAC",
-        "description": "GRU data access via DAC",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/kf-research-study-subject-gru-dbgap"
-        },
-        "name": "CBTN GRU data access via dbGaP",
-        "description": "GRU data access via dbGaP",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-      },
-      {
-        "reference": {
           "reference": "PractitionerRole/kf-research-study-personnel-role-op-lead"
         },
         "name": "CBTN Operations Lead",
         "description": "CBTN Operations Lead",
         "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/kf-research-study-subject-registered"
-        },
-        "name": "CBTN Registered Tier Access",
-        "description": "CBTN Registered Tier Access",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
       },
       {
         "reference": {
@@ -454,6 +414,22 @@
       },
       {
         "reference": {
+          "reference": "Patient/PT-006SP675"
+        },
+        "name": "Example patients based on data from PCGC",
+        "description": "Example patients based on data from PCGC.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+      },
+      {
+        "reference": {
+          "reference": "Person/pcgc-example-person"
+        },
+        "name": "Example patients based on data from PCGC",
+        "description": "Example patients based on data from PCGC",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
+      },
+      {
+        "reference": {
           "reference": "ResearchStudy/research-study-gregor"
         },
         "name": "Example study from GREGoR",
@@ -523,22 +499,6 @@
         "name": "Hash Types Code System",
         "description": "Algorithm used to calculate the hash (and size, where applicable)",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Consent/hmb-irb-npu-consent"
-        },
-        "name": "HMB-IRB-NPU Consent",
-        "description": "Consented with Health/Medical/Biomedical + IRB Required + Not for profit use",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
-      },
-      {
-        "reference": {
-          "reference": "Consent/hmb-npu-consent"
-        },
-        "name": "HMB-NPU Consent",
-        "description": "Consented with Health/Medical/Biomedical + Not for profit use",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
       },
       {
         "reference": {
@@ -790,38 +750,6 @@
       },
       {
         "reference": {
-          "reference": "Group/cmg-research-study-bhcmg-consent-group-hmb-npu"
-        },
-        "name": "Participants consented under HMB-NPU",
-        "description": "BH-CMG study's population consented under Health/Medical/Biomedical + Not for profit use",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/cmg-research-study-subject-cmg-hmb-npu"
-        },
-        "name": "Participants consented under HMB-NPU",
-        "description": "CMG Consent Group, Health/Medical/Biomedical + Not for profit use",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-      },
-      {
-        "reference": {
-          "reference": "Group/cmg-research-study-bhcmg-consent-group-irb-hmb-npu"
-        },
-        "name": "Participants consented under IRB-HMB-NPU",
-        "description": "BH-CMG study's population consented under Health/Medical/Biomedical + IRB Required + Not for profit use",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/cmg-research-study-subject-cmg-irb-hmb-npu"
-        },
-        "name": "Participants consented under IRB-HMB-NPU",
-        "description": "BH-CMG Consent Group, Health/Medical/Biomedical + IRB Required + Not for profit use",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
-      },
-      {
-        "reference": {
           "reference": "Group/kf-research-study-cbtn-participants"
         },
         "name": "Participants from the CBTN research study",
@@ -978,22 +906,6 @@
         },
         "name": "Research Study Result",
         "description": "Link to citations associated with the study's publications.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/research-study-subject"
-        },
-        "name": "Research Study Subject",
-        "description": "A ResearchStudySubject is representative of a group of participants whose consent and data use is governed by the same restrictions. This profile is an R4 proxy for the more flexible R5 ResearchSubject.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/research-study-subject-consent"
-        },
-        "name": "Research Study Subject Consent",
-        "description": "ResearchStudySubjectConsent provides link to a consent through which participants were enrolled.",
         "exampleBoolean": false
       },
       {
@@ -1206,14 +1118,6 @@
       },
       {
         "reference": {
-          "reference": "List/ncpi-research-collection-cmg"
-        },
-        "name": "The Centers for Medelian Genetics",
-        "description": "The Centers for Medelian Genetics",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/file-format"
         },
         "name": "The file format used",
@@ -1397,11 +1301,6 @@
         {
           "nameUrl": "research_study_example_cbtn.html",
           "title": "Research Study Example Cbtn",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "research_study_example_cmg.html",
-          "title": "Research Study Example Cmg",
           "generation": "markdown"
         },
         {
