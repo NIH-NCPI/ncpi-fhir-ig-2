@@ -40,8 +40,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"14"}
-    h3,h4,h5,h6{--heading-prefix:"14"}</style>
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -266,6 +266,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="files">Files</h3>
 
+<p>The file module is used to describe files used for or created by investigative processes.</p>
+
+<h4 id="scope-and-usage">Scope and Usage</h4>
+
+<p>The file entity is used primarily to provide technical information relevant to the management and administration of a file.  Metadata about what is contained in the file or how the content was generated should be described with other etities such as data dictionaries, summaries, or specific file metadata profiles.</p>
+
+<p>File contains basic technical metadata about file location, access, and contents.  Files are typically associated with one or more participants, but files may also be study documents assocaited to the research study in general.</p>
+
+<p>Files may contain multiple file location references, (such as a DRS link and an s3 bucket URL) though the access approaches for those locations should be reasonably apparent through the Access Policy for the file content. For example, if a data file is ONLY accessible through DRS, the underlying bucket location should not be included as no user would be able to access it directly. However, if there are multiple Access Policies that provide routes to access the data through different URIs, those may be included. For example, if a file is accessible both via controlled access release through DRS, and with a consortium access model permitting direct bucket access, the DRS and bucket URI both be stated here to permit consistent reference to the File irrespective of the access mechanism.</p>
+
 
 
 
@@ -285,7 +295,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Sep 18, 2024 19:34+0000">2024-09-18</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Sep 25, 2024 18:09+0000">2024-09-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
