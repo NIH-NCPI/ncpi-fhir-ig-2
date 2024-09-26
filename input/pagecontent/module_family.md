@@ -5,6 +5,8 @@ This module describes family groups and family relationships, often used in geno
 
 This does not include specific methods for managing reports of “family history”. Those elements can either be encoded as specific “Participants” for which data are recorded as assertions and their family relationship to the Participant are recorded OR encoded as assertions from the Participant (eg, “family history of hypertension” or “Maternal history of hypertension”).
 
+We are aware of the extensive work done by GA4GH to model family health history and family relationships via the [Pedigree IG](https://github.com/ga4gh/pedigree-fhir-ig), including their development of the [KIN ontology](https://github.com/ga4gh/pedigree_family_history_terminology).  We are working to align our family, family relationship, and family history modeling as closely as possible with the efforts of the Pedigree IG while still supporting the needs of the NCPI partner groups.
+
 ### Family Study
 Family Study describes a group of Participants that are related. This is not an expression of all individuals in a “family”, but a tool to identify “family members of interest” that were studied. For example, a family trio in a rare disease study does not exclude the existence of other siblings. Family Studies do not require much detail, but there are often attributes of those families that may be of use to researchers.
 
