@@ -266,6 +266,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <p>While interoperability is a primary objective for using FHIR, research data by it's very nature is quite varied. Much of the data requires approval before access is permitted, yet researchers must know the data exists before they can begin the approval process. Because of issues such as these, the IG itself is broken into modules designed to support specific use cases. For a FHIR server hosting a certain dataset, those building the ETL need only concern themselves with the modules that apply to the use cases describing the datasets they are working with.</p>
 
+<div style="text-align: center;">
+    <img style="display: block; margin: 0 auto; margin-bottom: 20px;" width="60%" src="ncpi_modules_relationship_overview.png" alt="Modular IG Design" />
+</div>
+
 <p>Some use cases, such as the Data Dictionary component, may be useful across many or even all of the servers implementing the NCPI FHIR IG while others, such as Family Relationships, apply only to a fraction of those servers. Study summary and meta-data would likely lack traditional restrictions on their accessibility and could be hosted on a public server, while row-level, restricted data would be require some sort of authorization to access.</p>
 
 <p>Administrators for these FHIR servers should selectively apply only those module profiles that apply to the machines expected use cases, providing clear delineation for what sorts of data can be found therein.</p>
@@ -360,7 +364,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Sep 26, 2024 15:36+0000">2024-09-26</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Sep 26, 2024 17:33+0000">2024-09-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
