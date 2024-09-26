@@ -261,11 +261,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h3 id="phenotypecondition">Phenotype/Condition</h3>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#phenotypecondition" id="markdown-toc-phenotypecondition">Phenotype/Condition</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a>        <ul>
+          <li><a href="#condition-assertion" id="markdown-toc-condition-assertion">Condition Assertion</a></li>
+          <li><a href="#condition-asserter" id="markdown-toc-condition-asserter">Condition Asserter</a></li>
+        </ul>
+      </li>
+      <li><a href="#conventions" id="markdown-toc-conventions">Conventions</a></li>
+      <li><a href="#relevant-artifacts" id="markdown-toc-relevant-artifacts">Relevant Artifacts</a></li>
+    </ul>
+  </li>
+</ul>
 
+</div>
+<h1 id="phenotypecondition">Phenotype/Condition</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>The Condition Module is based on the standard FHIR resource type, <a href="https://hl7.org/fhir/r4/observation.html">Observation</a> and is used to represent a condition or phenotype linked to a patient in a study. This means that the patient must have an assertion (status) for the given diagnosis.</p>
+
+<p>The distinction is one of “record of asserted status” and “Details of positively asserted status”. We make these distinctions to support general use cases of “longitudinal, catch all records” and “curated summaries of features”. This distinction is focused on the interoperability utility over the “direct representation of reality”. There is overlap in these data; many assertions about status and onset might be coalesced into a single description of an affected status. In other studies, the “summary” may be derived from a single “assertion” and appear mostly duplicative.</p>
+
+<blockquote>
+  <p>This distinction is similar to those in OMOP and FHIR, though it does not map precisely. Critically in OMOP and FHIR, <code class="language-plaintext highlighter-rouge">Condition_occurrence</code> and <code class="language-plaintext highlighter-rouge">Condition</code> are <strong>ALWAYS</strong> a positive assertion (though they may be wrong). “Assertions of history of disease” are observations in OMOP, eg, ICD9CM V-codes like “Personal history of malignant neoplasm of breast” go in Observation.</p>
+</blockquote>
+
+<h3 id="condition-assertion">Condition Assertion</h3>
+<p>Condition Assertions are records of a present or absent condition status for a participant. They reflect support for ongoing longitudinal records, and enable the ability to make explicit whether a feature was recorded or not for a participant. The assertion may carry with it additional data, such as age of onset, but it’s not required.</p>
+
+<p>Condition Assertions may be contradictory over time- the goal is to represent faithfully what was reported by the study. Consumers of this data should expect to need to aggregate this longitudinal record or reconcile data captured at different granularity. For example, it’s common to capture broad negative categories (No Heart Conditions) but also specific positive assertions (Atrial Septal Defect).</p>
+
+<h3 id="condition-asserter">Condition Asserter</h3>
+<p>Condition Asserter is used to represent the source for the condition/phenotype diagnosis. For example, this field can be used to document whether the condition was pulled from an EHR or found in other clinical documentation.</p>
+
+<h2 id="conventions">Conventions</h2>
+<p>We do not set a distinction in entities here about “Phenotypes” vs “Diseases” as often used in a rare disease setting (eg, in Phenopackets). There is utility in indicating the intent of the submitter where possible, but this is not represented as separate entities.</p>
+
+<h2 id="relevant-artifacts">Relevant Artifacts</h2>
+<ul>
+  <li><a href="StructureDefinition-ncpi-condition.html">NCPI Condition</a></li>
+  <li><a href="ValueSet-condition-assertion-vs.html">Condition Assertion</a></li>
+  <li><a href="StructureDefinition-condition-asserter.html">Condition Asserter</a></li>
+  <li><a href="StructureDefinition-condition-location.html">Condition Location</a></li>
+  <li><a href="StructureDefinition-condition-laterality.html">Condition Laterality</a></li>
+</ul>
 
 
 
@@ -285,7 +326,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Sep 26, 2024 18:25+0000">2024-09-26</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Sep 26, 2024 19:08+0000">2024-09-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

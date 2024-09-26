@@ -261,11 +261,44 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h3 id="family">Family</h3>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#family" id="markdown-toc-family">Family</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a>        <ul>
+          <li><a href="#family-study" id="markdown-toc-family-study">Family Study</a></li>
+          <li><a href="#family-relationship" id="markdown-toc-family-relationship">Family Relationship</a></li>
+        </ul>
+      </li>
+      <li><a href="#relevant-artifacts" id="markdown-toc-relevant-artifacts">Relevant Artifacts</a></li>
+    </ul>
+  </li>
+</ul>
 
+</div>
+<h1 id="family">Family</h1>
+
+<h2 id="overview">Overview</h2>
+<p>This module describes family groups and family relationships, often used in genomic analyses to aid in identification of causal variants. We include several articulations of these: Family Study is an entity that describes a collection of participants in the context of a research study. Family Relationships describe the relationship of two Participants, and should be sufficient for generating a pedigree if the source information is present.</p>
+
+<p>This does not include specific methods for managing reports of “family history”. Those elements can either be encoded as specific “Participants” for which data are recorded as assertions and their family relationship to the Participant are recorded OR encoded as assertions from the Participant (eg, “family history of hypertension” or “Maternal history of hypertension”).</p>
+
+<p>We are aware of the work done by GA4GH to model family health history and family relationships via the <a href="https://github.com/ga4gh/pedigree-fhir-ig">Pedigree IG</a>, including their development of the <a href="https://github.com/ga4gh/pedigree_family_history_terminology">KIN ontology</a>. We are engaging to ensure compatibility and meeting needs our family, family relationship, and family history modeling with the efforts of the Pedigree IG while still supporting the needs of the NCPI partner groups.</p>
+
+<h3 id="family-study">Family Study</h3>
+<p>Family Study describes a group of Participants that are related. This is not an expression of all individuals in a “family”, but a tool to identify “family members of interest” that were studied. For example, a family trio in a rare disease study does not exclude the existence of other siblings. Family Studies do not require much detail, but there are often attributes of those families that may be of use to researchers.</p>
+
+<h3 id="family-relationship">Family Relationship</h3>
+<p>Family Relationships describe the relationship between two Participants. The core use case is to present biological parentage of a participant to support family / pedigree analyses. In this spirit, platforms should seek to provide minimally the information in a “ped” file: if known, a Participant should have a Family Relationship to their biological mother and father. Twins are also a high priority item for reporting. Further extended relationships can be made available using Family Relationship, but may not be as widely supported as they are harder to interpret.</p>
+
+<h2 id="relevant-artifacts">Relevant Artifacts</h2>
+<ul>
+  <li><a href="StructureDefinition-ncpi-study-family.html">NCPI Study Family</a></li>
+  <li><a href="StructureDefinition-ncpi-family-relationship.html">Family Relationship</a></li>
+  <li><a href="StructureDefinition-family-type.html">Family Type</a></li>
+  <li><a href="StructureDefinition-description.html">Study Family Description</a></li>
+  <li><a href="StructureDefinition-consanguinity.html">Consanguinity</a></li>
+  <li><a href="StructureDefinition-study-family-focus.html">Study Family Focus</a></li>
+</ul>
 
 
 
@@ -285,7 +318,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Sep 26, 2024 18:25+0000">2024-09-26</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Sep 26, 2024 19:08+0000">2024-09-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
