@@ -261,10 +261,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#participant" id="markdown-toc-participant">Participant</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a>        <ul>
+          <li><a href="#participant-1" id="markdown-toc-participant-1">Participant</a></li>
+          <li><a href="#person" id="markdown-toc-person">Person</a></li>
+          <li><a href="#study-participation" id="markdown-toc-study-participation">Study Participation</a></li>
+          <li><a href="#study-arm--sub-cohort" id="markdown-toc-study-arm--sub-cohort">Study Arm / Sub-Cohort</a></li>
+        </ul>
+      </li>
+      <li><a href="#conventions" id="markdown-toc-conventions">Conventions</a></li>
+      <li><a href="#relevant-artifacts" id="markdown-toc-relevant-artifacts">Relevant Artifacts</a></li>
+    </ul>
+  </li>
+</ul>
+
 </div>
-<h3 id="participant">Participant</h3>
+<h1 id="participant">Participant</h1>
+
+<h2 id="overview">Overview</h2>
+<h3 id="participant-1">Participant</h3>
+<p>Participants are a scoped entity that represents the anchor for all data for a specific real-world entity. Typically, this is a person involved in a research study and all of their data collected for that study (or set of studies). This entity has direct attributes (eg, demographics), so if two studies that share an identifier space present conflicting information, it may be necessary to have multiple participants.</p>
+
+<p>Participants (ie, data about an entity that is scope constrained) can be linked with a Person.
+Participants can be associated with different substudies (and with different data sharing restrictions) via Study Participation.</p>
+
+<h3 id="person">Person</h3>
+<p>In situations where a person participates in multiple studies that have participant data scoped in an exclusive way within one or more projects, we have a Person entity. It is functionally a “group” of Participants that are all describing one “actual” person. This is especially to support situations where access policies about that participant might be conflicting and cases where the data itself about the participant might conflict but cannot be adjudicated by the repository.</p>
+
+<h3 id="study-participation">Study Participation</h3>
+<p>Study Participation (<a href="https://hl7.org/fhir/researchsubject.html">ResearchSubject</a>) describes the relationship between a specific Participant and a Research Study that collects and is sharing data on that Participant. A single Participant may have this “Study Participation” relationship with multiple Research Studies, and each relationship may have a different sharing restriction. These relationships are primarily illustrative, as the Access Policy details of any given element are documented within that element.</p>
+
+<h3 id="study-arm--sub-cohort">Study Arm / Sub-Cohort</h3>
+<p>Some groups, eg, Immport, use a sub-grouping within a study to describe in more detail the relationship of Participant and Study. This could be a new entity, it could be “just” a sub-Study, or it could be an attribute of the Study Participation.</p>
+
+<h2 id="conventions">Conventions</h2>
+<ul>
+  <li>ResearchSubject provides the linkage between a <a href="https://hl7.org/fhir/R4B/patient.html">Patient</a> and a <a href="https://hl7.org/fhir/researchstudy.html">ResearchStudy</a>.</li>
+  <li>NCPI Participant is based on the standard resource type, Patient and is intended to represent an individual participating in a specific research study.</li>
+  <li>A single NCPI Participant can be a part of more than one NCPI Study group</li>
+  <li>A single person can appear in multiple studies via separate NCPI Participant resources</li>
+</ul>
+
+<h2 id="relevant-artifacts">Relevant Artifacts</h2>
+<p><a href="StructureDefinition-ncpi-participant.html">NCPI Participant</a>
+<a href="StructureDefinition-ncpi-person.html">NCPI Person</a>
+<a href="StructureDefinition-ncpi-Study-Participant.html">NCPI Study Participant</a></p>
 
 
 
@@ -285,7 +328,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Sep 25, 2024 18:09+0000">2024-09-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Thu, Sep 26, 2024 15:36+0000">2024-09-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
