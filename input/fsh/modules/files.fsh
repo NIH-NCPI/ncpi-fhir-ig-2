@@ -111,6 +111,20 @@ Description: "Provides a list of hashes for confirming file transfers"
 * extension contains HashType named hash-type 1..1
 * extension[hash-type] ^short = "Algorithm used to calculate the hash (and size, where applicable)"
 
+Invariant: drs-uri-preferred
+Description: "attachment.url must start with ^drs://. A drs:// hostname-based URI, as defined in the DRS documentation, that tells clients how to access this object. The intent of this field is to make DRS objects self-contained, and therefore easier for clients to store and pass around.  For example, if you arrive at this DRS JSON by resolving a compact identifier-based DRS URI, the `self_uri` presents you with a hostname and properly encoded DRS ID for use in subsequent `access` endpoint calls."
+Expression: "$this.url.matches('^drs://.*')"
+Severity: #warning
+
+Profile: DRSAttachment
+Parent: Attachment
+Id: ncpi-drs-attachment
+Title: "DRS Attachment"
+Description: "A FHIR Attachment with a DRS url."
+* ^version = "0.1.0"
+* ^status = #draft
+* obeys drs-uri-preferred
+
 /** TODO Add Related file to metadata - AH 2024-07-30 */ 
 
 Profile: NcpiFile
@@ -126,8 +140,9 @@ Description: "Information about a file related to a research participant"
 * subject ^short = "The participant(s) for whom this file contains data (i.e., ParticipantID)"
 * extension contains FileFormat named file-format 1..1 /*File Format*/
 * extension[file-format] ^short = "The file format used (EDAM is preferred)"
-* content.attachment.url 1..1 /*Location uri*/
-* content.attachment.url ^short = "The URI at which this data can be accessed"
+* content.attachment only DRSAttachment
+* content.attachment 1..1 /*Location uri*/
+* content.attachment ^short = "The URI at which this data can be accessed"
 * extension contains LocationAccess named location-access 0..* /*Location Access Policy*/
 * extension[location-access] ^short = "If present, only those under the specific Access Policy can access the file in this location."
 * extension contains FileSize named file-size 1..1 /*File Size*/
