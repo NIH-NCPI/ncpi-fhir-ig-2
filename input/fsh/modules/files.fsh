@@ -142,14 +142,6 @@ Description: "Information about a file related to a research participant"
 * extension[file-format] ^short = "The file format used (EDAM is preferred)"
 * content.attachment.url 1..1 /*Location uri*/
 * content.attachment.url ^short = "The URI at which this data can be accessed"
-* content ^slicing.discriminator.type = #pattern
-* content ^slicing.discriminator.path = "code"
-* content ^slicing.rules = #openAtEnd
-* content ^slicing.ordered = false
-* content ^slicing.description = "Slicing pattern to make content.attachment require a DRS file type and allow other file types"
-* content contains
-  AdditionalFile 0..*
-* content[AdditionalFile].attachment only Attachment
 * extension contains LocationAccess named location-access 0..* /*Location Access Policy*/
 * extension[location-access] ^short = "If present, only those under the specific Access Policy can access the file in this location."
 * extension contains FileSize named file-size 1..1 /*File Size*/
@@ -173,12 +165,8 @@ Description: "Information about a DRS file related to a research participant"
 * content ^slicing.discriminator.type = #pattern
 * content ^slicing.discriminator.path = "code"
 * content ^slicing.rules = #openAtEnd
-* content ^slicing.ordered = false
+* content ^slicing.ordered = true
 * content ^slicing.description = "Slicing pattern to make content.attachment require a DRS file type and allow other file types"
 * content contains
-  DRS 1..1 and
-  Other 0..*
+  DRS 1..1 
 * content[DRS].attachment only DRSAttachment
-//* content[DRS].profile only 
-* content[Other].attachment only Attachment
-//* content[Other]. only uri
