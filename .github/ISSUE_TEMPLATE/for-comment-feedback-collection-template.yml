@@ -1,0 +1,58 @@
+name: For Comment Feedback Collection
+description: >
+  Submit feedback for IG profiles during the For Comment phase. 
+title: "For Comment: Feedback for [Profile Name]" 
+assignees: 
+  - JamedFV
+labels: []
+projects: []
+
+body: 
+  - type: input
+    id: platform
+    attributes: 
+      label: Platform
+      description: Which platform are you representing?" 
+      placeholder: "Enter platform name here" 
+    validations: 
+      required: true
+  - type: input
+    id: date_reviewed
+    attributes: 
+      label: Date Reviewed
+      description: "When did you review the profile?" 
+      placeholder: "Enter the review date" 
+    validations: 
+      required: true
+  - type: input
+    id: profile_reviewed
+    attributes: 
+      label: Profile Being Reviewed
+      description: "Which profile are you providing feedback for?" 
+      placeholder: "Enter the profile name" 
+    validations: 
+      required: true
+  - type: input
+    id: link_to_profile
+    attributes: 
+      label: Link to Profile
+      description: "Please provide the link to the profile being reviewed." 
+      placeholder: "Enter the profile URL" 
+    validations: 
+      required: true
+  - type: textarea
+    id: feedback
+    attributes: 
+      label: Feedback Submission
+      description: "Please describe your feedback in detail, including concerns, suggestions, or areas for improvement." 
+      placeholder: "Enter your feedback here"
+    validations:
+      required: true
+  - type: checkboxes
+    id: implementation_blocking
+    attributes: 
+      label: "Is this feedback implementation-blocking?" 
+      description: "Check this boc if the issue would block implementation."
+      options:
+        - label: "Yes, this issue will block implementation." 
+        - label: "No, this issue does not block implementation." 
