@@ -2,7 +2,8 @@ name: For Comment Feedback Collection
 description: >
   Submit feedback for IG profiles during the For Comment phase. 
 title: "For Comment: Feedback for [Profile Name]" 
-assignees: JamedFV
+assignees: 
+  - JamedFV
 labels: []
 projects: []
 
@@ -47,7 +48,7 @@ body:
       placeholder: "Enter your feedback here"
     validations:
       required: true
-  - type: checkbox
+  - type: checkboxes
     id: implementation_blocking
     attributes: 
       label: "Is this feedback implementation-blocking?" 
