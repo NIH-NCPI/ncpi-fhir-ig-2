@@ -9,30 +9,6 @@ projects: []
 
 body: 
   - type: input
-    id: platform
-    attributes: 
-      label: Platform
-      description: Which platform are you representing?" 
-      placeholder: "Enter platform name here" 
-    validations: 
-      required: true
-  - type: input
-    id: date_reviewed
-    attributes: 
-      label: Date Reviewed
-      description: "When did you review the profile?" 
-      placeholder: "Enter the review date" 
-    validations: 
-      required: true
-  - type: input
-    id: profile_reviewed
-    attributes: 
-      label: Profile Being Reviewed
-      description: "Which profile are you providing feedback for?" 
-      placeholder: "Enter the profile name" 
-    validations: 
-      required: true
-  - type: input
     id: link_to_profile
     attributes: 
       label: Link to Profile
