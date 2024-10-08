@@ -2,6 +2,7 @@
 name: General Feedback
 about: Provide general feedback on the FHIR IG modules
 title: "General Feedback - [Short Description of Feedback]"
+assignees: JamedFV
 labels: 'feedback'
 
 ---
