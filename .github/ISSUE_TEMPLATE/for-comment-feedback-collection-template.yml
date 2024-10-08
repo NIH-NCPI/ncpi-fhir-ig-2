@@ -24,11 +24,13 @@ body:
       placeholder: "Enter your feedback here"
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: implementation_blocking
     attributes: 
       label: "Is this feedback implementation-blocking?" 
-      description: "Check this boc if the issue would block implementation."
+      description: "Select whether this issue blocks implementation."
       options:
-        - label: "Yes, this issue will block implementation." 
-        - label: "No, this issue does not block implementation." 
+        - Yes, this issue will block implementation.
+        - No, this issue does not block implementation.
+      validations: 
+        required: true
