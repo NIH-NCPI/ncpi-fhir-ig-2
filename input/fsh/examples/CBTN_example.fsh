@@ -461,9 +461,9 @@ Description: "Use case of file information from CBTN"
 // NCPI File Metadata
 Instance: FASTQ-example
 InstanceOf: NcpiFASTQ
-Title: "Example file metadata for a FASTQ file"
+Title: "Example file metadata from CBTN"
 Usage: #example
-Description: "Example file metadata for a FASTQ file"
+Description: "Example file metadata from CBTN"
 * focus = Reference(GF-6BAD9S7D)
 * status = #final
 * code = $edam#format_1930
