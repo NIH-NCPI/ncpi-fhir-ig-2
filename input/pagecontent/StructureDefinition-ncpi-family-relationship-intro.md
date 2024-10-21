@@ -6,9 +6,8 @@ In order to ensure that our resources are interoperable across studies, we have 
 
 * ID **should** be a globally unique identifier associated with the person. This practice is intended to make constructing queries for the same person compatible across different servers (such as QA vs PROD) but also to make the resource URLs more meaningful. 
 
-
 #### Recommended Practices
-TODO: Write Recommended Practices
+Family relationship profiles can be constructed for each individual to reflect the different directions of relationships. For example, if we have a mother and son enrolled in a given research study, NCPI Family Relationship can be used to define how mother (`subject`) relates to son (`focus`) and what kind of code describes their relationship (`relationship`), in this case, the code "MTH" for mother. Use of multiple NCPI Family Relationship profiles to define relevant parties will as a whole describe interrelationships.
 
 ##### FHIR Mappings
 The following fields from the shared data model are to be mapped into the NCPI Participant as shown below:

@@ -1,6 +1,4 @@
-# CBTN Example
-
-## JSON Representations of CBTN Example
+### JSON Representations of CBTN Example
 
 Below is a table of collected example profiles from the Children's Brain Tumor Network (CBTN). The links will connect you to each [Profile](artifacts.html#structures-resource-profiles) and the JSON representation of the resource in the context of CBTN data.
 
@@ -17,6 +15,6 @@ Below is a table of collected example profiles from the Children's Brain Tumor N
 |File|[Example JSON](DocumentReference-GF-6BAD9S7D.json.html)|
 |File Metadata|[Example JSON for FASTQ File](Observation-FASTQ-example.json.html)|
 
-## Supporting FSH Code for CBTN Example
+### Supporting FSH Code for CBTN Example
 
 The FSH code for the CBTN example can be found in the NCPI FHIR IG 2 repository at *ncpi-fhir-ig-2/input/fsh/examples* or with this [direct link](https://github.com/NIH-NCPI/ncpi-fhir-ig-2/blob/main/input/fsh/examples/CBTN_example.fsh).

@@ -5,12 +5,12 @@ The NCPI Participant profile is based on the standard resource type, [Patient](h
 In order to ensure that our resources are interoperable across studies, we have employed a number of restrictions that should make consuming Patient resources more consistent.
 
 * ID **should** be a globally unique identifier associated with the patient. This practice is intended to make constructing queries for the same patient compatible across different servers (such as QA vs PROD) but also to make the resource URLs more meaningful. 
-* identifier **should** have all appropriate Identifiers with a meaningful system/value pair. Such identifiers may include DbGAP accession IDs, global and external IDs, etc. 
-* race and ethnicity **must** be defined using OMB Categories using the relevant US Core extensions ([us-core-race extension](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-race.html) & [us-core-ethnicity](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-ethnicity.html))
-* Where birth date is known, the extension, [reseearch-date-of-birth-method](StructureDefinition-research-date-of-birth-method.html) **must** be provided to indicate the method used in the construction of that value.  
+* Identifier **should** have all appropriate identifiers with a meaningful system/value pair. Such identifiers may include dbGaP accession IDs, global and external IDs, etc. 
+* Race and ethnicity **must** be defined using OMB Categories using the relevant US Core extensions ([us-core-race extension](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-race.html) & [us-core-ethnicity](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-ethnicity.html))
+* Where birth date is known, the extension, [research-date-of-birth-method](StructureDefinition-research-date-of-birth-method.html) **must** be provided to indicate the method used in the construction of that value.  
 
 #### Recommended Practices
-TDOD: Write Recommended Practices
+While only some of the fields in NCPI Participant are strictly required, it is recommended that users of this IG fill out as much information as they have available for a given participant.
 
 ##### FHIR Mappings
 The following fields from the shared data model are to be mapped into the NCPI Participant as shown below:
@@ -21,13 +21,20 @@ The following fields from the shared data model are to be mapped into the NCPI P
 [population](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.population)|0..*|TBD|Strongly recommended ||
 [ombRace](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.ombRace)|0..*|extension|Required if available |Use the [us-core-race extension](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-race.html)|
 [ombEth](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.ombEth)|0..*|extension|Required if available|Use the [us-core-ethnicity](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-ethnicity.html)|
-[sex](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.sex)|1..1|extension|Required if avaialble|Use the [us-core-birthsex](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-birthsex.html) extension|
+[sex](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.sex)|1..1|extension|Required if available|Use the [us-core-birthsex](https://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-birthsex.html) extension|
 [dateOfBirth](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.dateOfBirth)|0..1|birthDate|Optional||
 [dobMethod](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.dobMethod)|0..1|extension [ResearchDateOfBirthMethod](StructureDefinition-research-date-of-birth-method.html)|Required if dateOfBirth is provided||
 [ageAtLastVitalStatus](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.ageAtLastVitalStatus)|0..1|extension [AgeAtLastVitalStatus](StructureDefinition-research-age-at-last-vital-status.html)|Recommended||
 [vitalStatus](StructureDefinition-SharedDataModelResearchParticipant-definitions.html#diff_SharedDataModelResearchParticipant.vitalStatus)|0..1|deceased|Recommended||
 
 ##### Study Participation
-The conventional FHIR mechanism to link Patient resources to a ResearchStudy is through the use of a ResearchSubject resource. **TODO: Write up details regarding the TBD Profile, NCPI Person, and the NCPI ResearchStudy.**
+The conventional FHIR mechanism to link Patient resources to a ResearchStudy is through the use of a ResearchSubject resource. Let's use GREGoR data as an example: our example NCPI Participant, "GSS123456", is linked to NCPI Person "PS_000" which represents the "actual" person participating in a study. In this case, GSS123456 is connected to PS_000 by `link.target` and if PS_000 participated in another study, their other unique NCPI Participant ID could be similarly linked. NCPI Study Participant connects NCPI Research Study, relevant Access Policies, and an NCPI Participant into a single profile while NCPI Study Group contains a list of Study Participants.
 
-**TBD Write up details about linking a patient to the research study access policy (consent)**
+For further information, see the Participant, Research Study, and Person examples:
+
+|**NCPI Profile**|**Link to GREGoR Example**|
+|Research Study|[Example JSON](ResearchStudy-research-study-gregor.json.html)|
+|Research Study Group|[Example JSON](Group-gregor-research-study-participants.json.html)|
+|Study Participant|[Example JSON](ResearchSubject-gregor-example-participantstudy.json.html)|
+|Participant|[Example JSON GSS123456](Patient-GSS123456.json.html), [Example JSON GSS654321](Patient-GSS654321.json.html)|
+|Person|[Example JSON](Person-gregor-example-person.json.html)|
