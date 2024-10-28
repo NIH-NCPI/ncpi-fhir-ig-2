@@ -19,11 +19,8 @@ Description: "The **Shared Data Model for File**"
 * contentVersion 0..1 string "Version of the file content"
 * description 0..1 string "A description of the file"
 * type 1..1 code "The type of data contained in this file. Should be as detailed as possible, e.g., Whole Exome Variant Calls."
-* relatedFile 0..1 List "Provides a reference to another file that is related to this one"
-* relatedFile.file 0..1 reference "The file to which this related file is related"
-* relatedFile.type 0..1 code "The relationship of the file to the parent file in reference"
 
-/* TODO Add Related file to metadata - AH 2024-07-30 */ 
+/* Removed Related file from logical model and documentation - AH 2024-10-28 */ 
 
 CodeSystem: HashTypeCS
 Id: example-hash-type-code-system
