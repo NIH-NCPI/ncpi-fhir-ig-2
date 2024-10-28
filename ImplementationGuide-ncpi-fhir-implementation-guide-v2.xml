@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2024-10-08T13:48:24+00:00"/>
+  <date value="2024-10-28T19:33:15+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -762,6 +762,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-drs-attachment"/>
+      </reference>
+      <name value="DRS Attachment"/>
+      <description value="A FHIR Attachment with a DRS url."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -1275,6 +1286,17 @@
       </reference>
       <name value="NCPI Conditon"/>
       <description value="Information about a condition related to a research participant"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-drs-file"/>
+      </reference>
+      <name value="NCPI DRS File"/>
+      <description value="Information about a DRS file related to a research participant"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

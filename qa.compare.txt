@@ -1,7 +1,7 @@
 NCPIFHIRIGv2 : Validation Results
 =========================================
 
-err = 6, warn = 487, info = 28
+err = 6, warn = 492, info = 28
 $--
 Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
  Build Errors : 0 / 6 / 0
@@ -106,6 +106,8 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-bamcram : 0 / 41 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-collected-sample : 0 / 4 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-condition : 0 / 20 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-drs-attachment : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-drs-file : 0 / 4 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-family-relationship : 0 / 7 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-fastq : 0 / 41 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-file : 0 / 3 / 1
@@ -490,6 +492,13 @@ WARNING: StructureDefinition/ncpi-condition: StructureDefinition.snapshot.elemen
 WARNING: StructureDefinition/ncpi-condition: StructureDefinition.snapshot.element[71].binding: The definition for the element 'Observation.component.code' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-codes' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/ncpi-condition: StructureDefinition.snapshot.element[80].binding: The definition for the element 'Observation.component.code' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-codes' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/ncpi-condition: StructureDefinition.snapshot.element[89].binding: The definition for the element 'Observation.component.code' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-codes' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-ncpi-drs-attachment.json ==
+WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-drs-attachment'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-ncpi-drs-file.json ==
+WARNING: StructureDefinition/ncpi-drs-file: StructureDefinition.snapshot.element[19].binding: The definition for the element 'DocumentReference.category' binds to the value set 'http://hl7.org/fhir/ValueSet/doc-classcodes' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ncpi-drs-file: StructureDefinition.snapshot.element[72].binding: The definition for the element 'DocumentReference.context.facilityType' binds to the value set 'http://hl7.org/fhir/ValueSet/c80-facilitycodes' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ncpi-drs-file: StructureDefinition.snapshot.element[73].binding: The definition for the element 'DocumentReference.context.practiceSetting' binds to the value set 'http://hl7.org/fhir/ValueSet/c80-practice-codes' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-drs-file'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ncpi-family-relationship.json ==
 WARNING: StructureDefinition/ncpi-family-relationship: StructureDefinition.snapshot.element[12].binding: The definition for the element 'Observation.status' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-status|4.3.0' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/ncpi-family-relationship: StructureDefinition.snapshot.element[13].binding: The definition for the element 'Observation.category' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-category' which is experimental, but this structure is not labeled as experimental
