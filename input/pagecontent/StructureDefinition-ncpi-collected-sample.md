@@ -1,28 +1,20 @@
-### Basic Definition
-The collection element allows for high level organization of objects into various related groups. One common type of collection is a consortium, but other collections can also be established.  Items in a collection can include studies, datasets, or other collections (for example, if consortium A becomes a member of consortium B, the collection that represents consortium A can be added as an item in the collection representing consortium B).  
-
-#### Primary Profile Restrictions and Enhancements
-* title **must** be defined in order for users to understand the purpose of the collection. 
-* code **must** be defined and **should** be one of the codes from the CodeSystem, [CollectionType](CodeSystem-collection-type.html), when possible.
-* note **should** contain a meaningful description whenever possible. 
-* there **must** be one or more entries referencing the "contained" resources. 
-* When possible, a [website](StructureDefinition-research-web-Link.html) should be provided. For Consortium, programs and other entities with formal websites, this should be the one that provides the best overview of the group. For adhoc collections, or those collections that are less formally defined, an online document may be sufficient. 
+### Basic Information
+Collected samples represent biological samples derived from a given participant with information about the 
 
 #### Key Guidelines
-The NCPI Sample profile is based on the standard resource type, [Specimen](https://hl7.org/fhir/R4/specimen.html) and encompasses biospecimen collection, sample information, and aliquot information.
+The NCPI Sample profile is based on the standard resource type, [Specimen](https://hl7.org/fhir/R4/specimen.html) and encompasses biospecimen collection, sample information, and aliquot information. The NCPI Collected Sample is based on the [NCPI Sample](StructureDefinition-ncpi-sample) Profile. The main difference between a collected and non-collected sample involves inclusion or exclusion of container information for a sample as "NCPI Sample" is comprised of Sample, Aliquot, and Biospecimen Collection.
 
 ##### Added Profile Restrictions
 
+* There are **3 Unique Identifiers** in the collected sample profile: one for Biospecimen Collection, Sample, and Aliquot, respectively. These IDs are different than the *participant* from whom this sample was derived.
 
 
 #### Recommended Practices
 
-* The NCPI Sample profile is broken up into "NCPI Collected Sample" and "NCPI Non-collected Sample".
-
-TODO: continue recommended practices
+* The NCPI Sample profile is broken up into "NCPI Collected Sample" and "NCPI Non-collected Sample"; be mindful of selecting the right kind of sample to represent your data
 
 ##### FHIR Mappings
-The following fields from the shared data model are to be mapped into the NCPI Biospecimen as follows:
+The following fields from the shared data model are to be mapped into the NCPI Collected Sample as follows:
 
 **Biospecimen Collection:**
 
@@ -43,8 +35,8 @@ The following fields from the shared data model are to be mapped into the NCPI B
 |[parentSample](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.parentSample)|0..*|parent|The Sample from which this Sample was derived||
 |[type](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.type)|1..1|type|The type of material of which this Sample is comprised||
 |[processing](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.processing)|0..*|processing|Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample||
-|[availablityStatus](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.availabilityStatus)|0..1|status|Can this Sample be requested for further analysis?|URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability|
-|[storageMethod](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.storageMethod)|0..1|collection.method|The approach used to collect the biospecimen|Recommeded to use [Hl7VSSpecimenCondition](https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html)|
+|[availabilityStatus](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.availabilityStatus)|0..1|status|Can this Sample be requested for further analysis?|URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability|
+|[storageMethod](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.storageMethod)|0..1|collection.method|The approach used to collect the biospecimen|Recommended to use [Hl7VSSpecimenCondition](https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html)|
 |[quantity](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.quantity)|0..1|collection.quantity|The total quantity of the specimen||
 
 **Aliquot:**
@@ -52,6 +44,6 @@ The following fields from the shared data model are to be mapped into the NCPI B
 | **Logical Model Property** | **Cardinality** |  **NCPI Sample Mapping** |**Usage Guidance** | **Notes** |
 |[aliquotId](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.aliquotId)|1..1|container.identifier|Unique ID for this aliquot||
 |[sample](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.sample)|1..1|**MISSING**|The sample of which this tube is a part.||
-|[availablityStatus](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.availabilityStatus)|0..1|extension[aliqout-availability]|Can this Sample be requested for further analysis?|URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability|
+|[availabilityStatus](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.availabilityStatus)|0..1|extension[aliquot-availability]|Can this Sample be requested for further analysis?|URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability|
 |[volume](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.volume)|0..1|container.specimenQuantity|What is the volume of the Aliquot?||
 |[concentration](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.concentration)|0..1|extension[aliquot-concentration]|What is the concentration of the analyte in the Aliquot?|URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration|
