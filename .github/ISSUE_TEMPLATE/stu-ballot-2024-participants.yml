@@ -31,17 +31,18 @@ body:
         - [Your comments here. If voting "Negative with Comments," include specific concerns or suggestions.]
         '''
 
-  - type: markdown
+  - type: checkbox
+    id: platform_completion
     attributes: 
-      value: | 
-        ### Platforms Voting Checklist
-        Please check off your platform once you have submitted your vote:
-        - AnVIL
-        - Kids First DRC
-        - ImmPort
-        - Bio Data Catalyst (BDC) 
-        - Cancer Research Data Commons (CRDC)
-        - dbGaP 
+      label: Platforms Voting Checklist
+        description: "Please check off your platform once you have submitted your vote in the comments."
+        options:
+          - AnVIL
+          - Kids First DRC
+          - ImmPort
+          - Bio Data Catalyst (BDC) 
+          - Cancer Research Data Commons (CRDC)
+          - dbGaP 
 
   - type: markdown 
     attributes: 
