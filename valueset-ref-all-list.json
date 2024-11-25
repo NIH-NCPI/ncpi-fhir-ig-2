@@ -27,18 +27,18 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
       "StructureDefinition-ncpi-condition.html" : "NCPI Conditon",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
+      "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -52,8 +52,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -67,8 +67,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/composition-status",
@@ -82,8 +82,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.241"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -246,15 +246,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/doc-classcodes",
@@ -268,8 +268,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
@@ -283,8 +283,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.7"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
@@ -298,8 +298,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.244"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/formatcodes",
@@ -313,8 +313,8 @@
       "sources" : ["1.3.6.1.4.1.19376.1.2.7.1"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/group-type",
@@ -375,31 +375,31 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-person.html" : "NCPI Person",
-      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-ncpi-drs-attachment.html" : "DRS Attachment",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
-      "StructureDefinition-ncpi-study-family.html" : "NCPI Study Family",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
-      "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
-      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
-      "StructureDefinition-ncpi-Study-Participant.html" : "NCPI Study Participant",
       "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-Study-Participant.html" : "NCPI Study Participant",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
+      "StructureDefinition-ncpi-person.html" : "NCPI Person",
+      "StructureDefinition-ncpi-drs-attachment.html" : "DRS Attachment",
+      "StructureDefinition-ncpi-participant.html" : "NCPI Participant",
+      "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File",
       "StructureDefinition-ncpi-condition.html" : "NCPI Conditon",
-      "StructureDefinition-ncpi-participant.html" : "NCPI Participant"
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
+      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-study-family.html" : "NCPI Study Family",
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -427,8 +427,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.322"],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
@@ -445,8 +445,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.316"],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
-      "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples"
+      "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-item-flag",
@@ -460,8 +460,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.320"],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
@@ -476,8 +476,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.318"],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
@@ -492,8 +492,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.324"],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
@@ -508,8 +508,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.326"],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
@@ -541,9 +541,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1024"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
+      "StructureDefinition-ncpi-drs-attachment.html" : "DRS Attachment",
       "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
-      "StructureDefinition-ncpi-drs-attachment.html" : "DRS Attachment"
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -557,15 +557,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -579,15 +579,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -603,15 +603,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -625,15 +625,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -647,15 +647,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -686,15 +686,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -710,15 +710,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-objective-type",
@@ -841,9 +841,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
       "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
@@ -879,9 +879,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.468"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
       "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
@@ -895,9 +895,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.470"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
       "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-processing-procedure",
@@ -911,9 +911,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.469"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
       "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-status",
@@ -927,9 +927,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.471"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
       "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/title-type",
@@ -957,9 +957,9 @@
       "sources" : ["2.16.840.1.113883.21.245"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
       "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0487",
@@ -973,9 +973,9 @@
       "sources" : ["2.16.840.1.113883.21.327"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
       "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
@@ -989,9 +989,9 @@
       "sources" : ["2.16.840.1.113883.21.333"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
       "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0916",
@@ -1005,9 +1005,9 @@
       "sources" : ["2.16.840.1.113883.21.440"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples",
+      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample",
       "StructureDefinition-ncpi-collected-sample.html" : "NCPI biospecimen definition for collected samples",
-      "StructureDefinition-ncpi-sample.html" : "FHIR Profile for NCPI Sample"
+      "StructureDefinition-ncpi-non-collected-sample.html" : "NCPI biospecimen definition for non-collected samples"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
@@ -1019,8 +1019,8 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-FamilyMember",
@@ -1034,8 +1034,8 @@
       "sources" : ["2.16.840.1.113883.1.11.19579"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-family-role.html" : "Study Family Focus"
+      "StructureDefinition-family-role.html" : "Study Family Focus",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
@@ -1049,8 +1049,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection"
+      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-assertion-vs",
@@ -1139,8 +1139,8 @@
       "systems" : ["http://edamontology.org"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms",

@@ -1,0 +1,29 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"SharedDataModelFileMetadata","SharedDataModelFileMetadata","","","",0,*,"","","","null {[]} {[]}
+","Shared data model for File Metadata","The **Shared Data Model for File Metadata**","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"SharedDataModelFileMetadata.parentFile","SharedDataModelFileMetadata.parentFile","","","",1,1,"","","","Reference {[]} {[]}
+","The file which this metadata refers to","The file which this metadata refers to","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.parentFile",1,1,"",""
+"SharedDataModelFileMetadata.assayStrategy","SharedDataModelFileMetadata.assayStrategy","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Assay strategy employed for this file","Assay strategy employed for this file","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.assayStrategy",0,1,"",""
+"SharedDataModelFileMetadata.platformInstrument","SharedDataModelFileMetadata.platformInstrument","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The platform instrument employed for this file","The platform instrument employed for this file","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.platformInstrument",0,1,"",""
+"SharedDataModelFileMetadata.relatedSamples","SharedDataModelFileMetadata.relatedSamples","","","",0,*,"","","","Reference {[]} {[]}
+","Any samples (biospecimen) related to the file","Any samples (biospecimen) related to the file","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.relatedSamples",0,*,"",""
+"SharedDataModelFileMetadata.libraryPrep","SharedDataModelFileMetadata.libraryPrep","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The library preparation employed for this file","The library preparation employed for this file","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.libraryPrep",0,1,"",""
+"SharedDataModelFileMetadata.librarySelection","SharedDataModelFileMetadata.librarySelection","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The library selection employed for this file","The library selection employed for this file","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.librarySelection",0,1,"",""
+"SharedDataModelFileMetadata.strandedness","SharedDataModelFileMetadata.strandedness","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The strandedness of the file","The strandedness of the file","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.strandedness",0,1,"",""
+"SharedDataModelFileMetadata.targetRegion","SharedDataModelFileMetadata.targetRegion","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The target region employed for this file","The target region employed for this file","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.targetRegion",0,1,"",""
+"SharedDataModelFileMetadata.referenceGenome","SharedDataModelFileMetadata.referenceGenome","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The reference genome employed for this file","The reference genome employed for this file","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.referenceGenome",0,1,"",""
+"SharedDataModelFileMetadata.isPairedEnd","SharedDataModelFileMetadata.isPairedEnd","","","",0,1,"","","","boolean {[]} {[]}
+","Does this file represent paired end data?","Does this file represent paired end data?","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.isPairedEnd",0,1,"",""
+"SharedDataModelFileMetadata.workflowType","SharedDataModelFileMetadata.workflowType","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The workflow type employed for this file","The workflow type employed for this file","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.workflowType",0,1,"",""
+"SharedDataModelFileMetadata.workflowTool","SharedDataModelFileMetadata.workflowTool","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The workflow tool employed for this file","The workflow tool employed for this file","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.workflowTool",0,1,"",""
+"SharedDataModelFileMetadata.adaptorTrimmed","SharedDataModelFileMetadata.adaptorTrimmed","","","",0,1,"","","","boolean {[]} {[]}
+","Does this file indicate that an adaptor is trimmed?","Does this file indicate that an adaptor is trimmed?","","","","","","","","","",,,,,"",,,,"SharedDataModelFileMetadata.adaptorTrimmed",0,1,"",""

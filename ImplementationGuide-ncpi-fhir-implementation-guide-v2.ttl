@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-30T18:30:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-25T15:36:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -44,7 +44,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.0.2" ]
+     fhir:version [ fhir:v "6.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -294,7 +294,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools.r4#0.3.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -644,8 +644,8 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/gregor-family-relationship-mother> ;
          fhir:reference [ fhir:v "Observation/gregor-family-relationship-mother" ]
        ] ;
-       fhir:name [ fhir:v "An example family relationship based on data from CBTN" ] ;
-       fhir:description [ fhir:v "An example family relationship based on data from CBTN." ] ;
+       fhir:name [ fhir:v "An example family relationship based on data from GREGoR" ] ;
+       fhir:description [ fhir:v "An example family relationship based on data from GREGoR." ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship>
@@ -1033,8 +1033,8 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/GSS123456-01-010-SG-2> ;
          fhir:reference [ fhir:v "DocumentReference/GSS123456-01-010-SG-2" ]
        ] ;
-       fhir:name [ fhir:v "Example file based on CBTN" ] ;
-       fhir:description [ fhir:v "Use case of file information from CBTN" ] ;
+       fhir:name [ fhir:v "Example file based on GREGoR" ] ;
+       fhir:description [ fhir:v "Use case of file information from GREGor" ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file>
@@ -1063,8 +1063,8 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/FASTQ-example> ;
          fhir:reference [ fhir:v "Observation/FASTQ-example" ]
        ] ;
-       fhir:name [ fhir:v "Example file metadata for a FASTQ file" ] ;
-       fhir:description [ fhir:v "Example file metadata for a FASTQ file" ] ;
+       fhir:name [ fhir:v "Example file metadata from CBTN" ] ;
+       fhir:description [ fhir:v "Example file metadata from CBTN" ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq>
@@ -1717,8 +1717,8 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/gregor-research-study-participants> ;
          fhir:reference [ fhir:v "Group/gregor-research-study-participants" ]
        ] ;
-       fhir:name [ fhir:v "Participants from the CBTN research study" ] ;
-       fhir:description [ fhir:v "Participants from the CBTN research study" ] ;
+       fhir:name [ fhir:v "Participants from the GREGoR research study" ] ;
+       fhir:description [ fhir:v "Participants from the GREGoR research study" ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group>
@@ -2052,6 +2052,18 @@
        ] ;
        fhir:name [ fhir:v "Shared Data Model for File" ] ;
        fhir:description [ fhir:v "The **Shared Data Model for File**" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFileMetadata> ;
+         fhir:reference [ fhir:v "StructureDefinition/SharedDataModelFileMetadata" ]
+       ] ;
+       fhir:name [ fhir:v "Shared data model for File Metadata" ] ;
+       fhir:description [ fhir:v "The **Shared Data Model for File Metadata**" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2394,12 +2406,12 @@
          fhir:title [ fhir:v "Downloads" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
-         fhir:name [ fhir:v "example_cbtn.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Example Cbtn" ] ;
+         fhir:name [ fhir:v "example_CBTN.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Example CBTN" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
-         fhir:name [ fhir:v "example_gregor.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Example Gregor" ] ;
+         fhir:name [ fhir:v "example_GREGoR.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Example GRE Go R" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:name [ fhir:v "FHIR_Basics.html"^^xsd:anyURI ] ;
