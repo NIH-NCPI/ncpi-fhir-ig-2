@@ -7,7 +7,6 @@ In order to ensure that our resources are interoperable across studies, we have 
 
 * ID **should** be a globally unique identifier associated with the person. This practice is intended to make constructing queries for the same person compatible across different servers (such as QA vs PROD) but also to make the resource URLs more meaningful. 
 
-
 #### Recommended Practices
 TODO: Write Recommended Practices
 

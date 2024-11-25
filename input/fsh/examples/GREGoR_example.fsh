@@ -11,9 +11,9 @@ Description: "Example study from GREGoR"
 
 Instance: gregor-research-study-participants
 InstanceOf: ResearchStudyGroup
-Title: "Participants from the CBTN research study"
+Title: "Participants from the GREGoR research study"
 Usage: #example
-Description: "Participants from the CBTN research study"
+Description: "Participants from the GREGoR research study"
 * identifier[0]
   * system = "https://anvil.terra.bio/"
   * value = "GREGoR Participants"
@@ -107,9 +107,9 @@ Description: "Example patients based on data from GREGoR."
 
 Instance: gregor-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship
-Title: "An example family relationship based on data from CBTN"
+Title: "An example family relationship based on data from GREGoR"
 Usage: #example
-Description: "An example family relationship based on data from CBTN."
+Description: "An example family relationship based on data from GREGoR."
 * subject = Reference(GSS123456)
 * focus = Reference(GSS654321)
 * code = $family-role-code#CHILD "child"
@@ -146,9 +146,9 @@ Description: "Example biospecimen based on data from GREGoR"
 // NCPI File
 Instance: GSS123456-01-010-SG-2
 InstanceOf: NcpiFile
-Title: "Example file based on CBTN"
+Title: "Example file based on GREGoR"
 Usage: #example
-Description: "Use case of file information from CBTN"
+Description: "Use case of file information from GREGor"
 * identifier.value = "GSS123456-01-010-SG-2"
 * subject = Reference(GSS123456)
 * description = "Aligned DNA short read"

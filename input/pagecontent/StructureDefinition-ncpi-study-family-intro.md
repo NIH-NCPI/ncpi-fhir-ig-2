@@ -6,18 +6,16 @@ In order to ensure that our resources are interoperable across studies, we have 
 
 * ID **should** be a globally unique identifier associated with the family.
 
-
 #### Recommended Practices
 TODO: Write Recommended Practices
 
 ##### FHIR Mappings
 The following fields from the shared data model are to be mapped into the NCPI Participant as shown below:
 
-| **Logical Model Property** | **Cardinality** |  **NCPI Person Mapping** |**Usage Guidance** | **Notes** |
+| **Logical Model Property** | **Cardinality** |  **NCPI Study Family Mapping** |**Usage Guidance** | **Notes** |
 |FamilyID|1..1|id| Required | It is strongly recommended for the Person ID to be a unique identifier with an appropriate system|
 |externalID|0..*|identifier|||
 |FamilyType|0..1|extension [FamilyType](StructureDefinition-family-type.html)|||
 |Description|0..1|extension [Description](StructureDefinition-description.html)|||
 |Consanguinity|0..1|extension [Consanguinity](StructureDefinition-consanguinity.html)|||
 |StudyFamilyFocus|0..1|extension [StudyFamilyFocus](StructureDefinition-study-family-focus.html)|||
-

@@ -1,3 +1,21 @@
+Logical: CdmFileMetadata
+Id: SharedDataModelFileMetadata
+Title: "Shared data model for File Metadata"
+Description: "The **Shared Data Model for File Metadata**"
+* parentFile 1..1 Reference "The file which this metadata refers to"
+* assayStrategy 0..1 CodeableConcept "Assay strategy employed for this file"
+* platformInstrument 0..1 CodeableConcept "The platform instrument employed for this file"
+* relatedSamples 0..* Reference "Any samples (biospecimen) related to the file"
+* libraryPrep 0..1 CodeableConcept "The library preparation employed for this file"
+* librarySelection 0..1 CodeableConcept "The library selection employed for this file"
+* strandedness 0..1 CodeableConcept "The strandedness of the file"
+* targetRegion 0..1 CodeableConcept "The target region employed for this file"
+* referenceGenome 0..1 CodeableConcept "The reference genome employed for this file"
+* isPairedEnd 0..1 boolean "Does this file represent paired end data?"
+* workflowType 0..1 CodeableConcept "The workflow type employed for this file"
+* workflowTool 0..1 CodeableConcept "The workflow tool employed for this file"
+* adaptorTrimmed 0..1 boolean "Does this file indicate that an adaptor is trimmed?"
+
 CodeSystem: MetadataElements
 Id: metadata-elements
 Title: "NCPI Metadata slices"
