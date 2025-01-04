@@ -1,5 +1,8 @@
 # Family
 
+<div style="text-align: center;">
+    <img style="display: block; margin: 0 auto; margin-bottom: 20px;" width="60%" src="ncpi_family_module_relationships.png" alt="Family Model Diagram" />
+</div>
 ## Overview
 This module describes family groups and family relationships, often used in genomic analyses to aid in identification of causal variants. We include several articulations of these: Family Study is an entity that describes a collection of participants in the context of a research study. Family Relationships describe the relationship of two Participants, and should be sufficient for generating a pedigree if the source information is present.
 

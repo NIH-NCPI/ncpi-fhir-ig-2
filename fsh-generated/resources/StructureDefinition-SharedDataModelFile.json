@@ -194,48 +194,6 @@
             "code": "code"
           }
         ]
-      },
-      {
-        "id": "SharedDataModelFile.relatedFile",
-        "path": "SharedDataModelFile.relatedFile",
-        "short": "Provides a reference to another file that is related to this one",
-        "definition": "Provides a reference to another file that is related to this one",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "List"
-          }
-        ]
-      },
-      {
-        "id": "SharedDataModelFile.relatedFile.file",
-        "path": "SharedDataModelFile.relatedFile.file",
-        "short": "The file to which this related file is related",
-        "definition": "The file to which this related file is related",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/valueset-reference"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "SharedDataModelFile.relatedFile.type",
-        "path": "SharedDataModelFile.relatedFile.type",
-        "short": "The relationship of the file to the parent file in reference",
-        "definition": "The relationship of the file to the parent file in reference",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ]
       }
     ]
   }
