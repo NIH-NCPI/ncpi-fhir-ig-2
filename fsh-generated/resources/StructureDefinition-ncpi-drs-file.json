@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncpi-drs-file",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-drs-file",
+  "version": "0.0.1",
+  "name": "NcpiDRSFile",
+  "title": "NCPI DRS File",
+  "status": "draft",
+  "description": "Information about a DRS file related to a research participant",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference.content",
+        "path": "DocumentReference.content",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "openAtEnd",
+          "ordered": true,
+          "description": "Slicing pattern to make content.attachment require a DRS file type and allow other file types"
+        }
+      },
+      {
+        "id": "DocumentReference.content:DRS",
+        "path": "DocumentReference.content",
+        "sliceName": "DRS",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DocumentReference.content:DRS.attachment",
+        "path": "DocumentReference.content.attachment",
+        "type": [
+          {
+            "code": "Attachment",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-drs-attachment"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

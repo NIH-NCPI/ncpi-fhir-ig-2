@@ -26,6 +26,7 @@
 [ConsanguinityAssertionVS]: ValueSet-consanguinity-assertion-vs.html
 [kf-research-study-personnel-role-pi]: PractitionerRole-kf-research-study-personnel-role-pi.html
 [kf-research-study-personnel-role-pi-x01]: PractitionerRole-kf-research-study-personnel-role-pi-x01.html
+[DRSAttachment]: StructureDefinition-ncpi-drs-attachment.html
 [ComponentElements]: CodeSystem-component-elements.html
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
 [ResearchDataDateOfBirthMethod]: CodeSystem-research-data-date-of-birth-method.html
@@ -73,6 +74,7 @@
 [NCPICollectedSample]: StructureDefinition-ncpi-collected-sample.html
 [NCPINonCollectedSample]: StructureDefinition-ncpi-non-collected-sample.html
 [NcpiCondition]: StructureDefinition-ncpi-condition.html
+[NcpiDRSFile]: StructureDefinition-ncpi-drs-file.html
 [NcpiFamilyTypes]: CodeSystem-ncpi-family-types.html
 [NcpiFASTQ]: StructureDefinition-ncpi-fastq.html
 [Ncpi]: CodeSystem-ncpi.html
@@ -116,6 +118,7 @@
 [CdmFamilyRelationship]: StructureDefinition-SharedDataModelFamilyRelationship.html
 [CdmFamilyRole]: StructureDefinition-SharedDataModelFamilyRole.html
 [CdmFile]: StructureDefinition-SharedDataModelFile.html
+[CdmFileMetadata]: StructureDefinition-SharedDataModelFileMetadata.html
 [CdmResearchCollection]: StructureDefinition-SharedDataModelResearchCollection.html
 [CdmResearchDataAccessPolicy]: StructureDefinition-SharedDataModelResearchDataAccessPolicy.html
 [CdmStudyParticipant]: StructureDefinition-SharedDataModelStudyParticipant.html

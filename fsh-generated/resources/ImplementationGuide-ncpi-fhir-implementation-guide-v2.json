@@ -113,8 +113,8 @@
         "reference": {
           "reference": "Observation/gregor-family-relationship-mother"
         },
-        "name": "An example family relationship based on data from CBTN",
-        "description": "An example family relationship based on data from CBTN.",
+        "name": "An example family relationship based on data from GREGoR",
+        "description": "An example family relationship based on data from GREGoR.",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
       },
       {
@@ -262,6 +262,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-drs-attachment"
+        },
+        "name": "DRS Attachment",
+        "description": "A FHIR Attachment with a DRS url.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/component-elements"
         },
         "name": "Elements of Component",
@@ -344,8 +352,8 @@
         "reference": {
           "reference": "DocumentReference/GSS123456-01-010-SG-2"
         },
-        "name": "Example file based on CBTN",
-        "description": "Use case of file information from CBTN",
+        "name": "Example file based on GREGoR",
+        "description": "Use case of file information from GREGor",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
       },
       {
@@ -360,8 +368,8 @@
         "reference": {
           "reference": "Observation/FASTQ-example"
         },
-        "name": "Example file metadata for a FASTQ file",
-        "description": "Example file metadata for a FASTQ file",
+        "name": "Example file metadata from CBTN",
+        "description": "Example file metadata from CBTN",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq"
       },
       {
@@ -638,6 +646,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-drs-file"
+        },
+        "name": "NCPI DRS File",
+        "description": "Information about a DRS file related to a research participant",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ncpi-family-types"
         },
         "name": "NCPI Family Types CodeSystem",
@@ -760,8 +776,8 @@
         "reference": {
           "reference": "Group/gregor-research-study-participants"
         },
-        "name": "Participants from the CBTN research study",
-        "description": "Participants from the CBTN research study",
+        "name": "Participants from the GREGoR research study",
+        "description": "Participants from the GREGoR research study",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
       },
       {
@@ -978,6 +994,14 @@
         },
         "name": "Shared Data Model for File",
         "description": "The **Shared Data Model for File**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelFileMetadata"
+        },
+        "name": "Shared data model for File Metadata",
+        "description": "The **Shared Data Model for File Metadata**",
         "exampleBoolean": false
       },
       {
@@ -1224,13 +1248,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "example_cbtn.html",
-          "title": "Example Cbtn",
+          "nameUrl": "example_CBTN.html",
+          "title": "Example CBTN",
           "generation": "markdown"
         },
         {
-          "nameUrl": "example_gregor.html",
-          "title": "Example Gregor",
+          "nameUrl": "example_GREGoR.html",
+          "title": "Example GRE Go R",
           "generation": "markdown"
         },
         {
