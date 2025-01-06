@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for NCPIFHIRIGv2</h1>
- <p>Generated Mon Nov 25 15:38:09 UTC 2024, FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2">https://nih-ncpi.github.io/ncpi-fhir-ig-2</a> (<a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">history</a>))</p>
+ <p>Generated Mon Jan 06 15:10:54 UTC 2025, FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2">https://nih-ncpi.github.io/ncpi-fhir-ig-2</a> (<a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -21,6 +21,9 @@
   </li>
 </ul>
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
+<p>
+  <b>Decisions</b>
+</p>
 <table class="grid">
   <tr>
     <td>
@@ -176,20 +179,6 @@
     <td>System not handled by any servers. Using primary server</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
     <td>http://purl.obolibrary.org/obo/mondo.owl</td>
     <td>auth = , candidates=</td>
   </tr>
@@ -198,20 +187,6 @@
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://purl.obolibrary.org/obo/mondo.owl</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
@@ -320,6 +295,48 @@
     <td>auth = , candidates=</td>
   </tr>
   <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/observation-codes|4.3.0</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://tx.fhir.org/r4</td>
     <td></td>
@@ -399,7 +416,7 @@
 </table>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
 <a href="http://tx.fhir.org/r4"></a>
-<p>Use Count: 34. Code Systems used: </p>
+<p>Use Count: 52. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -476,7 +493,7 @@
   <tr>
     <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
     <td>0</td>
-    <td>4</td>
+    <td>2</td>
     <td>
       <a href="CodeSystem-ncpi-family-types.html">NCPI Family Types CodeSystem</a>
     </td>
@@ -488,5 +505,18 @@
     <td></td>
   </tr>
 </table>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>http://edamontology.org</li>
+  <li>
+    <a href="http://tx.fhir.org/r4/ValueSet/practitioner-role">http://hl7.org/fhir/ValueSet/practitioner-role</a>
+  </li>
+  <li>
+    <a href="http://tx.fhir.org/r4/ValueSet/v3-ConfidentialityClassification">http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification</a>
+  </li>
+  <li>https://hl7.org/fhir/valueset-research-study-party-organization-type.html</li>
+  <li>https://hl7.org/fhir/valueset-research-study-party-role.html</li>
+  <li>https://hl7.org/fhir/valueset-study-design.html</li>
+</ul>
 </body>
 </html>
