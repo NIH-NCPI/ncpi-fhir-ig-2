@@ -1,19 +1,29 @@
 
 # 👩‍💻 Contributor's Guide
 
-## 🔁 Software Development Life Cycle
+## Top Level Contributor Guidance
+1) When making a Pull Request (PR), please be sure to link the the issues being addressed inside 
+the PR description so that reviewers can better understand what they should be seeing. 
+2) Branches are currently required for the preview. Creating a PR from a fork will fail during preview deployment
+3) Those wishing to contribute should contact eric.s.torstenson@vumc.org to request membership to the group in order to be permitted to push branches to the respository. 
+
+## IG Contribution Guidance
+For an overview of some best practices, details about the tools required for profile creation and the like, please see our [Contributing Guide](contributing.html)
+
+## Basic Git guidance
+### 🔁 Software Development Life Cycle
 This project uses [Github Flow](https://docs.github.com/en/get-started/using-github/github-flow)
 for its software development lifecycle. Github workflow is a simple workflow 
 that works well for a small project with multiple developers needing to work 
 on the code and review each other's code before merging into the main branch.
 
 
-## 👨🏻‍💻 Develop
+### 👨🏻‍💻 Develop
 
 This assumes you've already setup your development environment. If not, 
 follow the steps in [Setup Dev Environment](#setup-dev-environment)
 
-### 1. 🌴 Create a branch
+#### 1. 🌴 Create a branch
 ```shell
 # Checkout your local main branch
 git checkout main
@@ -26,7 +36,7 @@ git pull
 git checkout -b add-patient-birth-sex 
 ```
 
-### 2. ✏️  Commit the change 
+#### 2. ✏️  Commit the change 
 
 After you've made the change you want on your local machine its time 
 to commit that change to the project repo. 
@@ -49,7 +59,7 @@ $ git add <file path to the file you want to commit>
 $ git commit -m ":sparkles: Add new birthSex extension to Patient" 
 ```
 
-### ⚠️  3. Important! - Rebase
+#### ⚠️  3. Important! - Rebase
 If another developer has merged their code (Pull Request) while you're working
 on your change, you will need to update your branch with those changes before
 you continue developing. 
@@ -75,7 +85,7 @@ git push -f
 If you do this often you will rarely have conflicts.
 
 
-## 📝 4. Pull Request
+### 📝 4. Pull Request
 
 Once you're happy with your changes, its time to [open a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request?tool=webui)
 so that others can review your code and upon their approval you can merge your branch
@@ -88,13 +98,13 @@ For example:
 
 **✨ Add new birthSex field to Patient**
 
-### Description
+#### Description
 When you open a pull request you will notice that the description is populated
 with a **"Motivation"** and **"Approach"** section. Please be sure to fill these out 
 so that reviewers can quickly and easily understand the purpose of the PR and 
 the changes.
 
-## 5. 🔀 Squash and Merge
+### 5. 🔀 Squash and Merge
 Once your PR has been approved you're ready to merge it. Before you merge it,
 you'll want to "squash" all of your commits into 1 commit. This cleans up your 
 branch's commit history and makes the main branch much cleaner as feature 
@@ -142,14 +152,14 @@ Merge pull request #19 from ncpi/add-patient-birth-sex
 :bug: Fix another typo in ValueSet
 ```
 
-## 🔢 Versioning
+### 🔢 Versioning
 As changes are made to the implementation guide (IG), we will want a way to track 
 versions of the IG and tie those versions to snapshots of the project. 
 
 In this project we use [Semantic Versioning](https://semver.org/) to mint 
 version numbers for various types of changes. Please read more at semvar.org. 
 
-## 📦 6. Release
+### 📦 6. Release
 Releases on Github are snapshots of the project at a particular point in time,
 stamped with a versionn number of some kind, in our case, semantic version number.
 A release can be made at any time, although, it is typical to make a release after
@@ -161,13 +171,13 @@ tool:
 ```shell
 $ release build
 ```
-### Create Release PR
+#### Create Release PR
 The build command will create a "Release Pull Request" on Github, which will 
 have an updated Change Log of all the commit messages of the pull requests that 
 were merged since the last release. It will also mint the next release version
 which is used to tag the main branch later.
 
-### Merge Release PR
+#### Merge Release PR
 When this PR is merged, the Github release workflow (already part of the repo)
 will tag the main branch with the release number, create a snapshot of the 
 repo, create the Github release and attach the snapsot to the release.
