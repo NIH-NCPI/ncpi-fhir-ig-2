@@ -57,8 +57,8 @@ jobs:
           enable-commit-comment: false
           enable-commit-status: false
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_NCPI_IG_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_NCPI_IG_SITE_ID }}
 
       - name: 🏷 PR Deploy Preview Comment
         uses: marocchino/sticky-pull-request-comment@v2
