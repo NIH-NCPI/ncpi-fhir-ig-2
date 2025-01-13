@@ -8,7 +8,7 @@ the PR description so that reviewers can better understand what they should be s
 3) Those wishing to contribute should contact eric.s.torstenson@vumc.org to request membership to the group in order to be permitted to push branches to the respository. 
 
 ## IG Contribution Guidance
-For an overview of some best practices, details about the tools required for profile creation and the like, please see our [Contributing Guide](contributing.html)
+For an overview of some best practices, details about the tools required for profile creation and the like, please see our [Contributing Guide](https://nih-ncpi.github.io/ncpi-fhir-ig-2/contributing.html)
 
 ## Basic Git guidance
 ### 🔁 Software Development Life Cycle
