@@ -5,7 +5,7 @@
 1) When making a Pull Request (PR), please be sure to link the the issues being addressed inside 
 the PR description so that reviewers can better understand what they should be seeing. 
 2) Branches are currently required for the preview. Creating a PR from a fork will fail during preview deployment
-3) Those wishing to contribute should contact eric.s.torstenson@vumc.org to request membership to the group in order to be permitted to push branches to the respository. 
+3) Those wishing to contribute should contact the FHIR WG co-chairs (Allison Heath: heathap@chop.edu and Robert Carroll: robert.carroll@vumc.org) to request access to push branches to this respository. 
 
 ## IG Contribution Guidance
 For an overview of some best practices, details about the tools required for profile creation and the like, please see our [Contributing Guide](https://nih-ncpi.github.io/ncpi-fhir-ig-2/contributing.html)
