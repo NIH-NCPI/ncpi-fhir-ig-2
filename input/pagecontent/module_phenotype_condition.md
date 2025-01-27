@@ -1,9 +1,9 @@
 # Phenotype/Condition
 
 <div style="text-align: center;">
-    <img style="display: block; margin: 0 auto; margin-bottom: 20px;" width="60%" src="ncpi_phenotype_condition_module.png" alt="Condition Phenotype Model Diagram" />
+    <img style="display: block; margin: 0 auto; margin-bottom: 20px;" width="80%" src="ncpi_phenotype_condition_module.png" alt="Phenotype/Condition Model Diagram" />
 </div>
-The above diagram highlights key features of the phenotype condition model, focusing on key features. It does not represent the model in its entirety.
+
 
 ## Overview
 
