@@ -1,5 +1,10 @@
 # Phenotype/Condition
 
+<div style="text-align: center;">
+    <img style="display: block; margin: 0 auto; margin-bottom: 20px;" width="100%" src="ncpi_phenotype_condition_module.png" alt="Phenotype/Condition Model Diagram" />
+</div>
+
+
 ## Overview
 
 The Condition Module is based on the standard FHIR resource type, [Observation](https://hl7.org/fhir/r4/observation.html) and is used to represent a condition or phenotype linked to a patient in a study. This means that the patient must have an assertion (status) for the given diagnosis. 
