@@ -1,7 +1,7 @@
 # Phenotype/Condition
 
 <div style="text-align: center;">
-    <img style="display: block; margin: 0 auto; margin-bottom: 20px;" width="80%" src="ncpi_phenotype_condition_module.png" alt="Phenotype/Condition Model Diagram" />
+    <img style="display: block; margin: 0 auto; margin-bottom: 20px;" width="100%" src="ncpi_phenotype_condition_module.png" alt="Phenotype/Condition Model Diagram" />
 </div>
 
 
