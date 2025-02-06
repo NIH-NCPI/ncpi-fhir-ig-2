@@ -32,7 +32,7 @@ ValueSet: ResearchDataDateOfBirthMethodVS
 Id: research-data-date-of-birth-method-vs
 Title: "Enumerations for how DOB was constructed"
 Description: "Enumerations for how DOB was constructed"
-* include codes from system $title-type
+* include codes from system $ncpi-dob-method 
 
 Extension: ResearchPopulation
 Id: research-population
