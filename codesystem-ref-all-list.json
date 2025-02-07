@@ -201,8 +201,8 @@
       "description" : "One of the resource types defined as part of this version of FHIR.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4B/valueset-resource-types.html" : "ResourceType",
-      "http://hl7.org/fhir/R4B/valueset-consent-content-class.html" : "Consent Content Class"
+      "http://hl7.org/fhir/R4B/valueset-consent-content-class.html" : "Consent Content Class",
+      "http://hl7.org/fhir/R4B/valueset-resource-types.html" : "ResourceType"
     },
     {
       "url" : "http://hl7.org/fhir/specimen-status",
@@ -238,10 +238,10 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4B/valueset-consent-content-code.html" : "Consent Content Codes",
-      "http://hl7.org/fhir/R4B/valueset-consent-category.html" : "Consent Category Codes",
       "http://hl7.org/fhir/R4B/valueset-observation-codes.html" : "LOINC Codes",
-      "http://hl7.org/fhir/R4B/valueset-doc-classcodes.html" : "Document Class Value Set"
+      "http://hl7.org/fhir/R4B/valueset-doc-classcodes.html" : "Document Class Value Set",
+      "http://hl7.org/fhir/R4B/valueset-consent-category.html" : "Consent Category Codes",
+      "http://hl7.org/fhir/R4B/valueset-consent-content-code.html" : "Consent Content Codes"
     },
     {
       "url" : "http://purl.obolibrary.org/obo/mondo.owl",
@@ -265,15 +265,15 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4B/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4B/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+      "ValueSet-consanguinity-assertion-vs.html" : "Consanguinity Value Codes",
+      "http://hl7.org/fhir/R4B/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4B/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
       "http://hl7.org/fhir/R4B/valueset-specimen-container-type.html" : "SpecimenContainer",
       "http://hl7.org/fhir/R4B/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "ValueSet-consanguinity-assertion-vs.html" : "Consanguinity Value Codes",
+      "http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+      "http://hl7.org/fhir/R4B/valueset-observation-methods.html" : "Observation Methods",
       "http://hl7.org/fhir/R4B/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4B/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-      "http://hl7.org/fhir/R4B/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes"
+      "http://hl7.org/fhir/R4B/valueset-body-site.html" : "SNOMED CT Body Structures"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/consentaction",
@@ -476,7 +476,6 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1492"],
       "uses" : {
       },
-      "ValueSet-research-data-date-of-birth-method-vs.html" : "Enumerations for how DOB was constructed",
       "http://hl7.org/fhir/R4B/valueset-title-type.html" : "TitleType"
     },
     {
@@ -645,8 +644,8 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.2.0/ValueSet-v3-FamilyMember.html" : "FamilyMember",
-      "http://hl7.org/fhir/R4B/valueset-security-role-type.html" : "SecurityRoleType"
+      "http://hl7.org/fhir/R4B/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://terminology.hl7.org/6.2.0/ValueSet-v3-FamilyMember.html" : "FamilyMember"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
@@ -713,6 +712,17 @@
       "uses" : {
       },
       "ValueSet-research-data-access-type-vs.html" : "Research Data Access Type Codes"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchDataDateOfBirthMethod",
+      "title" : "Enumerations for how DOB was constructed",
+      "description" : "Enumerations for how DOB was constructed",
+      "uses" : {
+      },
+      "ValueSet-research-data-date-of-birth-method-vs.html" : "Enumerations for how DOB was constructed"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
