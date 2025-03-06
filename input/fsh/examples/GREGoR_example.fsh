@@ -134,7 +134,7 @@ Description: "Example condition using data from GREGoR"
 
 //NCPI Biospecimen
 Instance: GSS123456-01-010 /*Collection Event ID can't have underscores*/
-InstanceOf: NCPICollectedSample
+InstanceOf: NCPISample
 Title: "Example biospecimen based on data from GREGoR"
 Usage: #example
 Description: "Example biospecimen based on data from GREGoR"
