@@ -85,8 +85,7 @@ Description: "Concentration of the Aliquot"
 * value[x] only Quantity
 * valueQuantity ^short = "Specify the concentration of the aliquot"
 
-/*Combined Profile*/
-
+/*NCPI Sample Profile*/
 Profile: NCPISample
 Parent: Specimen
 Id: ncpi-sample
@@ -112,8 +111,8 @@ Description: "FHIR Profile for NCPI Sample"
 * collection.collectedDateTime ^short = "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 * collection.quantity 0..1 /*Sample.Quantity*/
 * collection.quantity ^short = "The total quantity of the specimen"
-* collection.method 0..1 /*Biospecimen.StorageMethod*/
-* collection.method ^short = "The approach used to collect the biospecimen"
+* collection.method 1..1 /*Biospecimen.StorageMethod*/
+* collection.method ^short = "The approach used to collect the biospecimen (unknown if not provided)"
 * collection.bodySite 0..1 /*Biospecimen.Site*/
 * collection.bodySite ^short = "The location of the specimen collection"
 * extension contains BiospecimenSpatial named biospecimen-spatial 0..1 /*Biospecimen.Spatial*/
@@ -128,22 +127,3 @@ Description: "FHIR Profile for NCPI Sample"
 * container.specimenQuantity ^short = "What is the volume of the Aliquot?"
 * extension contains AliquotConcentration named aliquot-concentration 0..1 /*Aliquot.Concentration*/
 * extension[aliquot-concentration] ^short = "What is the concentration of the analyte in the Aliquot?"
-
-
-Profile: NCPICollectedSample
-Parent: NCPISample
-Id: ncpi-collected-sample
-Title: "NCPI biospecimen definition for collected samples"
-Description: "NCPI biospecimen definition for collected samples"
-* ^version = "0.1.0"
-* ^status = #draft
-* collection 1..1 
-
-Profile: NCPINonCollectedSample
-Parent: NCPISample
-Id: ncpi-non-collected-sample
-Title: "NCPI biospecimen definition for non-collected samples"
-Description: "NCPI biospecimen definition for non-collected samples"
-* ^version = "0.1.0"
-* ^status = #draft
-* collection 0..0 
