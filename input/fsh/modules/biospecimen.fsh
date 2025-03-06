@@ -85,14 +85,22 @@ Description: "Concentration of the Aliquot"
 * value[x] only Quantity
 * valueQuantity ^short = "Specify the concentration of the aliquot"
 
+
+/* Invariant to require collection for parent samples*/
+Invariant:   collection-parent
+Description: "If collection.method is not unknown, then there should be no parent sample"
+Expression:  "collection.sample = 'unknown' implies parent.empty()"
+Severity:    #error
+
 /*NCPI Sample Profile*/
 Profile: NCPISample
 Parent: Specimen
 Id: ncpi-sample
-Title: "FHIR Profile for NCPI Sample"
+Title: "NCPI Sample"
 Description: "FHIR Profile for NCPI Sample"
 * ^version = "0.1.0"
 * ^status = #draft
+* obeys collection-parent
 * identifier 1..1 /*Sample.SampleID*/
 * identifier ^short = "Unique ID for this sample"
 * subject 1..1 /*Sample.Participant*/
