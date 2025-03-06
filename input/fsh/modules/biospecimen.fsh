@@ -89,7 +89,7 @@ Description: "Concentration of the Aliquot"
 /* Invariant to require collection for parent samples*/
 Invariant:   collection-parent
 Description: "If collection.method is not unknown, then there should be no parent sample"
-Expression:  "collection.sample = 'unknown' implies parent.empty()"
+Expression:  "collection.sample != 'unknown' implies parent.empty()"
 Severity:    #error
 
 /*NCPI Sample Profile*/
