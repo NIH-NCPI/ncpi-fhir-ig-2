@@ -123,15 +123,15 @@ Description: "FHIR Profile for NCPI Sample"
 * collection.method ^short = "The approach used to collect the biospecimen (unknown if not provided)"
 * collection.bodySite 0..1 /*Biospecimen.Site*/
 * collection.bodySite ^short = "The location of the specimen collection"
-* extension contains BiospecimenSpatial named biospecimen-spatial 0..1 /*Biospecimen.Spatial*/
-* extension[biospecimen-spatial] ^short = "Any spatial/location qualifiers"
-* extension contains BiospecimenLaterality named biospecimen-laterality 0..1 /*Biospecimen.Laterality*/
-* extension[biospecimen-laterality] ^short = "Laterality information for the site"
+* collection.extension contains BiospecimenSpatial named biospecimen-spatial 0..1 /*Biospecimen.Spatial*/
+* collection.extension[biospecimen-spatial] ^short = "Any spatial/location qualifiers"
+* collection.extension contains BiospecimenLaterality named biospecimen-laterality 0..1 /*Biospecimen.Laterality*/
+* collection.extension[biospecimen-laterality] ^short = "Laterality information for the site"
 * container.identifier 1..1 /*Aliquot.AliquotID*/
 * container.identifier ^short = "Unique ID for this aliquot"
-* extension contains AliquotAvailability named aliquot-availability 0..1 /*Aliquot.AvailabilityStatus*/
-* extension[aliquot-availability] ^short = "Can this Sample be requested for further analysis?"
+* container.extension contains AliquotAvailability named aliquot-availability 0..1 /*Aliquot.AvailabilityStatus*/
+* container.extension[aliquot-availability] ^short = "Can this Sample be requested for further analysis?"
 * container.specimenQuantity 0..1 /*Aliquot.Volume*/
 * container.specimenQuantity ^short = "What is the volume of the Aliquot?"
-* extension contains AliquotConcentration named aliquot-concentration 0..1 /*Aliquot.Concentration*/
-* extension[aliquot-concentration] ^short = "What is the concentration of the analyte in the Aliquot?"
+* container.extension contains AliquotConcentration named aliquot-concentration 0..1 /*Aliquot.Concentration*/
+* container.extension[aliquot-concentration] ^short = "What is the concentration of the analyte in the Aliquot?"
