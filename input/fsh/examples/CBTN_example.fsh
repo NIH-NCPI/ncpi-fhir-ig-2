@@ -300,10 +300,10 @@ InstanceOf: NcpiFamilyRelationship
 Title: "An example family relationship based on data from CBTN"
 Usage: #example
 Description: "An example family relationship based on data from CBTN."
-* subject = Reference(PT-006SP660)
-* focus = Reference(PT-006SP675)
-* code = $family-role-code#MTH "mother"
-* status = #registered
+* patient = Reference(PT-006SP675)
+* extension[relative].valueReference = Reference(PT-006SP660)
+* relationship = $family-role-code#NCHILD "natural child"
+* status = #completed
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
   * valueReference = Reference(kf-research-study-cbtn)
@@ -315,10 +315,10 @@ InstanceOf: NcpiFamilyRelationship
 Title: "An example family relationship based on data from CBTN"
 Usage: #example
 Description: "An example family relationship based on data from CBTN."
-* subject = Reference(PT-006SP675)
-* focus = Reference(PT-006SP660)
-* code = $family-role-code#SON "natural son"
-* status = #registered
+* patient = Reference(PT-006SP675)
+* extension[relative].valueReference = Reference(PT-006SP660)
+* relationship = $family-role-code#NCHILD "natural child"
+* status = #completed
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
   * valueReference = Reference(kf-research-study-cbtn)
