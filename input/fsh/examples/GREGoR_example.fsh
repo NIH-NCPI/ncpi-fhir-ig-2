@@ -83,7 +83,7 @@ Description: "Example patients based on data from GREGoR"
   * system = "https://anvil.terra.bio"
   * value = "PS_000"
 * link
-  * target = Reference(GSS123456) 
+  * target = Reference(GSS123456)
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
   * valueReference = Reference(research-study-gregor)
@@ -93,7 +93,7 @@ InstanceOf: NcpiStudyParticipant
 Title: "Example mappings based on data from GREGoR"
 Usage: #example
 Description: "Example mappings based on data from GREGoR"
-* individual = Reference(GSS123456)  
+* individual = Reference(GSS123456)
 * study = Reference(research-study-gregor)
 * status = #candidate
 * consent = Reference(gregor-gru-consent)
