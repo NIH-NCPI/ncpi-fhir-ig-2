@@ -5,7 +5,7 @@ Logical models, profiles, extensions and valuesets for:
 * NcpiStudyFamily
 * NcpiFamilyRelationship
 
-*/ 
+*/
 
 // Study Family
 
@@ -37,7 +37,7 @@ Title: "Study Family Focus"
 Description: "Extension containing Family Role"
 
 * insert SetContext(Group.member.entity)
-* value[x] only CodeableConcept 
+* value[x] only CodeableConcept
 * valueCodeableConcept ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
 * valueCodeableConcept from $ncpi-family-member (extensible)
 
@@ -69,7 +69,7 @@ Extension: FamilyType
 Id: family-type
 Title: "Family Type Extension"
 Description: "Extension containing Family Type"
-* value[x] only CodeableConcept 
+* value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Describes the 'type' of study family, eg, trio."
 * valueCodeableConcept from ncpi-family-types-vs (extensible)
 
@@ -77,7 +77,7 @@ Extension: Description
 Id: description
 Title: "Study Family Description"
 Description: "Free text describing the study family, such as potential inheritance or details about consanguinity"
-* value[x] only markdown 
+* value[x] only markdown
 * valueMarkdown 0..1
 
 ValueSet: ConsanguinityAssertionVS
@@ -102,7 +102,7 @@ Extension: StudyFamilyFocus
 Id: study-family-focus
 Title: "Study Family Focus Extension"
 Description: "Extension containing Study Family Focus"
-* value[x] only CodeableConcept 
+* value[x] only CodeableConcept
 * valueCodeableConcept ^short = "What is this study family investigating? EG, a specific condition"
 
 Profile: NcpiStudyFamily
@@ -112,9 +112,9 @@ Title: "NCPI Study Family"
 Description: "Study Family"
 * ^version = "0.1.0"
 * ^status = #draft
-* id 1..1 
+* id 1..1
 * id ^short = "ParticipantID - Unique participant identifier. System identifier used for internal references."
-* identifier 0..* 
+* identifier 0..*
 * identifier ^short = "External IDs for this participant. Requires scoping."
 * extension contains FamilyType named family-type 0..1
 * extension[family-type] ^short = "Describes the 'type' of study family, eg, trio."
@@ -160,10 +160,10 @@ Title: "Family Relationship"
 Description: "Family Relationship"
 * ^version = "0.1.0"
 * ^status = #draft
-* subject 1..1 
+* subject 1..1
 * subject only Reference(NcpiParticipant)
 * subject ^short = "The participant we are describing"
-* focus 1..1 
+* focus 1..1
 * focus only Reference(NcpiParticipant)
 * focus ^short = "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'"
 * code ^short = "The relationship between the subject and the target."
