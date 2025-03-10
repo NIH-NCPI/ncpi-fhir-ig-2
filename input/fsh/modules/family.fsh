@@ -75,8 +75,8 @@ Description: "Extension containing Family Type"
 
 Extension: Description
 Id: description
-Title: "Study Family Description"
-Description: "Free text describing the study family, such as potential inheritance or details about consanguinity"
+Title: "Description"
+Description: "Free text describing containing resource."
 * value[x] only markdown
 * valueMarkdown 0..1
 
