@@ -1,5 +1,5 @@
 
-// US Core Extensions 
+// US Core Extensions
 Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 Alias: $us-core-ethnicity = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
 Alias: $cqf-relativeDateTime = http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime
@@ -35,10 +35,12 @@ Alias: $snomedct_us = http://snomed.info/sct
 Alias: $family-role-code = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $ncpi-family-types = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types
 Alias: $ncpi-family-member = http://terminology.hl7.org/ValueSet/v3-FamilyMember
+Alias: $family-patient-record = http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record
+
 Alias: $mondo = http://purl.obolibrary.org/obo/mondo.owl
 Alias: $edam = http://edamontology.org
 
-Alias: $hpo = http://human-phenotype-ontology.org 
+Alias: $hpo = http://human-phenotype-ontology.org
 Alias: $phenotypic-feature-assertion = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion
 Alias: $condition-type = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type
 Alias: $assay-strategy = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/assay-strategy-cs

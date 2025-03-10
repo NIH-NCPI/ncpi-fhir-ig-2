@@ -7,6 +7,7 @@ Logical models, profiles, extensions and valuesets for:
 
 */
 
+
 // Study Family
 
 Logical: CdmStudyFamily
@@ -126,7 +127,7 @@ Description: "Study Family"
 * extension[studyFamilyFocus] ^short = "What is this study family investigating? EG, a specific condition"
 * member 1..*
 * member.entity only Reference(NcpiParticipant)
-* member.entity ^short = "The participant we are describing."
+* member.entity ^short = "The participant described by this member."
 * member.entity.extension contains FamilyRole named familyRole 0..1
 * member.entity.extension[familyRole] ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
 
@@ -153,18 +154,27 @@ Description: "The **Shared Data Model for Family Relationship**"
 * target 1..1 Reference "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'"
 * relationship 1..1 code "The relationship between the subject and the target."
 
+
 Profile: NcpiFamilyRelationship
-Parent: Observation
+Parent: FamilyMemberHistory
 Id: ncpi-family-relationship
 Title: "Family Relationship"
-Description: "Family Relationship"
-* ^version = "0.1.0"
+Description: "A relationship between individuals in a pedigree or family."
+* ^version = "0.2.0"
 * ^status = #draft
-* subject 1..1
-* subject only Reference(NcpiParticipant)
-* subject ^short = "The participant we are describing"
-* focus 1..1
-* focus only Reference(NcpiParticipant)
-* focus ^short = "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'"
-* code ^short = "The relationship between the subject and the target."
-* code from $ncpi-family-member (extensible)
+* extension contains $family-patient-record named relative 1..1 MS
+* extension[relative] ^short = "The other participant in the relationship. That is, if the relationship is NCHILD (natural child), the \"relative\" is the parent."
+* relationship 1..1 MS
+* relationship from $ncpi-family-member (extensible)
+* relationship ^short = "The relationship between the patient and the relative. For the sake of users, only use NCHILD and ITWIN. All other biological relationships can be expressed with these and dummy individuals. ITWIN should be used for all monozygotic multiples (triplets, quadruplets, etc.) and should be present for all the directions of the relationship. This provides an unambiguous representation of the relationship. Example: A,B,C are triplets. You need A→B, B→A, A→C, C→A, B→C, C→B. If X and Y are twins, you need X→Y and Y→X. If Q is the grandchild of R but Q's parent is outside the dataset, then you need to make a dummy D with unknown sex and age and make Q-(NCHILD)→D and D-(NCHILD)→R. Values like mother and son are redundant with the sex of the participants."
+* patient 1..1 MS
+* patient ^short = "The participant we are describing. That is, if the relationship is NCHILD (natural child), the patient is the child."
+* name 0..0
+* sex 0..0
+* born[x] 0..0
+* age[x] 0..0
+* estimatedAge 0..0
+* deceased[x] 0..0
+* reasonCode 0..0
+* reasonReference 0..0
+* condition 0..0
