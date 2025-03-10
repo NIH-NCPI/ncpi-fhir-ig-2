@@ -110,10 +110,10 @@ InstanceOf: NcpiFamilyRelationship
 Title: "An example family relationship based on data from GREGoR"
 Usage: #example
 Description: "An example family relationship based on data from GREGoR."
-* subject = Reference(GSS123456)
-* focus = Reference(GSS654321)
-* code = $family-role-code#CHILD "child"
-* status = #registered
+* patient = Reference(GSS123456)
+* extension[relative].valueReference = Reference(GSS654321)
+* relationship = $family-role-code#CHILD "child"
+* status = #completed
 
 // NCPI Condition
 Instance: GSS123456-condition
