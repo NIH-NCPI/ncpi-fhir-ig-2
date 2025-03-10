@@ -87,9 +87,15 @@ Description: "Concentration of the Aliquot"
 
 
 /* Invariant to require collection for parent samples*/
-Invariant:   collection-parent
-Description: "If collection.method is not unknown, then there should be no parent sample"
-Expression:  "parent.empty() implies collection.method.exists()"
+Invariant:   collection-no-parent
+Description: "If there is no parent sample, collection information must be present"
+Expression:  "parent.empty() implies collection.exists()"
+Severity:    #error
+
+/* Invariant to require collection for parent samples*/
+Invariant:   parent-no-collection
+Description: "If there is no collection infromation, a parent sample must be present"
+Expression:  "collection.empty() implies parent.exists()"
 Severity:    #error
 
 /*NCPI Sample Profile*/
@@ -100,7 +106,8 @@ Title: "NCPI Sample"
 Description: "FHIR Profile for NCPI Sample"
 * ^version = "0.1.0"
 * ^status = #draft
-* obeys collection-parent
+* obeys collection-no-parent
+* obeys parent-no-collection
 * identifier 1..1 /*Sample.SampleID*/
 * identifier ^short = "Unique ID for this sample"
 * subject 1..1 /*Sample.Participant*/
