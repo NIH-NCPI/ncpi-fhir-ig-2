@@ -1,7 +1,7 @@
 ### Basic Information
 
 #### Key Guidelines
-The NCPI Sample profile is based on the standard resource type, [Specimen](https://hl7.org/fhir/R4/specimen.html) and encompasses biospecimen collection, sample information, and aliquot information. Biospecimen collection information can be excluded if unavailable. 
+The NCPI Sample profile is based on the standard resource type, [Specimen](https://hl7.org/fhir/R4/specimen.html) and encompasses biospecimen collection, sample information, and aliquot information. Biospecimen collection information can be excluded if unavailable. However, if there is no parent sample, collection information must be included, even if the value is `unknown`.
 
 ##### Added Profile Restrictions
 

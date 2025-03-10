@@ -89,7 +89,7 @@ Description: "Concentration of the Aliquot"
 /* Invariant to require collection for parent samples*/
 Invariant:   collection-parent
 Description: "If collection.method is not unknown, then there should be no parent sample"
-Expression:  "collection.sample != 'unknown' implies parent.empty()"
+Expression:  "parent.empty() implies collection.method.exists()"
 Severity:    #error
 
 /*NCPI Sample Profile*/
@@ -115,6 +115,7 @@ Description: "FHIR Profile for NCPI Sample"
 * status ^short = "Can this Sample be requested for further analysis?"
 * condition 0..* /*Sample.StorageMethod*/
 * condition ^short = "How is the Sample stored, eg, Frozen or with additives"
+* collection ^short = "Some descriptive text explaining when you must use a collection (maybe including the collection.method can equal unknown if it isn't known...etc. ). "
 * collection.collected[x] only dateTime /*Age at collection*/
 * collection.collectedDateTime ^short = "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 * collection.quantity 0..1 /*Sample.Quantity*/
