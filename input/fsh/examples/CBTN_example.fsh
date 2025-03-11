@@ -405,7 +405,7 @@ Description: "Example condition using data from CBTN."
 
 // NCPI Biospecimen
 Instance: SA-000 /*Collection Event ID can't have underscores*/
-InstanceOf: NCPICollectedSample
+InstanceOf: NCPISample
 Title: "Example biospecimen based on data from CBTN"
 Usage: #example
 Description: "Example biospecimen based on data from CBTN"

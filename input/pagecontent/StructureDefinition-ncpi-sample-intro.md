@@ -1,8 +1,7 @@
 ### Basic Information
-Collected samples represent biological samples derived from a given participant with information about the 
 
 #### Key Guidelines
-The NCPI Sample profile is based on the standard resource type, [Specimen](https://hl7.org/fhir/R4/specimen.html) and encompasses biospecimen collection, sample information, and aliquot information. The NCPI Collected Sample is based on the [NCPI Sample](StructureDefinition-ncpi-sample) Profile. The main difference between a collected and non-collected sample involves inclusion or exclusion of container information for a sample as "NCPI Sample" is comprised of Sample, Aliquot, and Biospecimen Collection.
+The NCPI Sample profile is based on the standard resource type, [Specimen](https://hl7.org/fhir/R4/specimen.html) and encompasses biospecimen collection, sample information, and aliquot information. Biospecimen collection information can be excluded if unavailable. However, if there is no parent sample, collection information must be included, even if the value is `unknown`.
 
 ##### Added Profile Restrictions
 
@@ -11,7 +10,7 @@ The NCPI Sample profile is based on the standard resource type, [Specimen](https
 
 #### Recommended Practices
 
-* The NCPI Sample profile is broken up into "NCPI Collected Sample" and "NCPI Non-collected Sample"; be mindful of selecting the right kind of sample to represent your data
+* The NCPI Sample profile includes collection information. If this data is unavailable, you should set collection method to "unknown".
 
 ##### FHIR Mappings
 The following fields from the shared data model are to be mapped into the NCPI Collected Sample as follows:

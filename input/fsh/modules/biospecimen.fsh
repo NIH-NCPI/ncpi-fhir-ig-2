@@ -85,15 +85,29 @@ Description: "Concentration of the Aliquot"
 * value[x] only Quantity
 * valueQuantity ^short = "Specify the concentration of the aliquot"
 
-/*Combined Profile*/
 
+/* Invariant to require collection for parent samples*/
+Invariant:   collection-no-parent
+Description: "If there is no parent sample, collection information must be present. If there is collection information present, there should be no parent sample."
+Expression:  "parent.empty() implies collection.exists() and collection.exists() implies parent.empty()"
+Severity:    #error
+
+/* Invariant to require collection for parent samples*/
+Invariant:   parent-no-collection
+Description: "If there is no collection information, a parent sample must be present. If there is a parent sample present, there should be no collection information."
+Expression:  "collection.empty() implies parent.exists() and parent.exists() implies collection.empty()"
+Severity:    #error
+
+/*NCPI Sample Profile*/
 Profile: NCPISample
 Parent: Specimen
 Id: ncpi-sample
-Title: "FHIR Profile for NCPI Sample"
+Title: "NCPI Sample"
 Description: "FHIR Profile for NCPI Sample"
 * ^version = "0.1.0"
 * ^status = #draft
+* obeys collection-no-parent
+* obeys parent-no-collection
 * identifier 1..1 /*Sample.SampleID*/
 * identifier ^short = "Unique ID for this sample"
 * subject 1..1 /*Sample.Participant*/
@@ -108,42 +122,24 @@ Description: "FHIR Profile for NCPI Sample"
 * status ^short = "Can this Sample be requested for further analysis?"
 * condition 0..* /*Sample.StorageMethod*/
 * condition ^short = "How is the Sample stored, eg, Frozen or with additives"
+* collection ^short = "Information about how the biospecimen was collected. Collection information may be unknown, but must be included when there is no parent sample "
 * collection.collected[x] only dateTime /*Age at collection*/
 * collection.collectedDateTime ^short = "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 * collection.quantity 0..1 /*Sample.Quantity*/
 * collection.quantity ^short = "The total quantity of the specimen"
-* collection.method 0..1 /*Biospecimen.StorageMethod*/
-* collection.method ^short = "The approach used to collect the biospecimen"
+* collection.method 1..1 /*Biospecimen.StorageMethod*/
+* collection.method ^short = "The approach used to collect the biospecimen (unknown if not provided)"
 * collection.bodySite 0..1 /*Biospecimen.Site*/
 * collection.bodySite ^short = "The location of the specimen collection"
-* extension contains BiospecimenSpatial named biospecimen-spatial 0..1 /*Biospecimen.Spatial*/
-* extension[biospecimen-spatial] ^short = "Any spatial/location qualifiers"
-* extension contains BiospecimenLaterality named biospecimen-laterality 0..1 /*Biospecimen.Laterality*/
-* extension[biospecimen-laterality] ^short = "Laterality information for the site"
+* collection.extension contains BiospecimenSpatial named biospecimen-spatial 0..1 /*Biospecimen.Spatial*/
+* collection.extension[biospecimen-spatial] ^short = "Any spatial/location qualifiers"
+* collection.extension contains BiospecimenLaterality named biospecimen-laterality 0..1 /*Biospecimen.Laterality*/
+* collection.extension[biospecimen-laterality] ^short = "Laterality information for the site"
 * container.identifier 1..1 /*Aliquot.AliquotID*/
 * container.identifier ^short = "Unique ID for this aliquot"
-* extension contains AliquotAvailability named aliquot-availability 0..1 /*Aliquot.AvailabilityStatus*/
-* extension[aliquot-availability] ^short = "Can this Sample be requested for further analysis?"
+* container.extension contains AliquotAvailability named aliquot-availability 0..1 /*Aliquot.AvailabilityStatus*/
+* container.extension[aliquot-availability] ^short = "Can this Sample be requested for further analysis?"
 * container.specimenQuantity 0..1 /*Aliquot.Volume*/
 * container.specimenQuantity ^short = "What is the volume of the Aliquot?"
-* extension contains AliquotConcentration named aliquot-concentration 0..1 /*Aliquot.Concentration*/
-* extension[aliquot-concentration] ^short = "What is the concentration of the analyte in the Aliquot?"
-
-
-Profile: NCPICollectedSample
-Parent: NCPISample
-Id: ncpi-collected-sample
-Title: "NCPI biospecimen definition for collected samples"
-Description: "NCPI biospecimen definition for collected samples"
-* ^version = "0.1.0"
-* ^status = #draft
-* collection 1..1 
-
-Profile: NCPINonCollectedSample
-Parent: NCPISample
-Id: ncpi-non-collected-sample
-Title: "NCPI biospecimen definition for non-collected samples"
-Description: "NCPI biospecimen definition for non-collected samples"
-* ^version = "0.1.0"
-* ^status = #draft
-* collection 0..0 
+* container.extension contains AliquotConcentration named aliquot-concentration 0..1 /*Aliquot.Concentration*/
+* container.extension[aliquot-concentration] ^short = "What is the concentration of the analyte in the Aliquot?"
