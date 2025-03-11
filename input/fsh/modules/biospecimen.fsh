@@ -88,14 +88,14 @@ Description: "Concentration of the Aliquot"
 
 /* Invariant to require collection for parent samples*/
 Invariant:   collection-no-parent
-Description: "If there is no parent sample, collection information must be present"
-Expression:  "parent.empty() implies collection.exists()"
+Description: "If there is no parent sample, collection information must be present. If there is collection information present, there should be no parent sample."
+Expression:  "parent.empty() implies collection.exists() and collection.exists() implies parent.empty()"
 Severity:    #error
 
 /* Invariant to require collection for parent samples*/
 Invariant:   parent-no-collection
-Description: "If there is no collection infromation, a parent sample must be present"
-Expression:  "collection.empty() implies parent.exists()"
+Description: "If there is no collection information, a parent sample must be present. If there is a parent sample present, there should be no collection information."
+Expression:  "collection.empty() implies parent.exists() and parent.exists() implies collection.empty()"
 Severity:    #error
 
 /*NCPI Sample Profile*/
