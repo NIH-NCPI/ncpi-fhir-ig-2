@@ -3,9 +3,9 @@
   "id": "description",
   "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/description",
   "name": "Description",
-  "title": "Study Family Description",
+  "title": "Description",
   "status": "draft",
-  "description": "Free text describing the study family, such as potential inheritance or details about consanguinity",
+  "description": "Free text describing containing resource.",
   "fhirVersion": "4.3.0",
   "kind": "complex-type",
   "abstract": false,
@@ -23,8 +23,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Study Family Description",
-        "definition": "Free text describing the study family, such as potential inheritance or details about consanguinity"
+        "short": "Description",
+        "definition": "Free text describing containing resource."
       },
       {
         "id": "Extension.extension",

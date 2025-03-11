@@ -95,7 +95,7 @@
       },
       {
         "reference": {
-          "reference": "Observation/cbtn-family-relationship-mother"
+          "reference": "FamilyMemberHistory/cbtn-family-relationship-mother"
         },
         "name": "An example family relationship based on data from CBTN",
         "description": "An example family relationship based on data from CBTN.",
@@ -103,7 +103,7 @@
       },
       {
         "reference": {
-          "reference": "Observation/cbtn-family-relationship-son"
+          "reference": "FamilyMemberHistory/cbtn-family-relationship-son"
         },
         "name": "An example family relationship based on data from CBTN",
         "description": "An example family relationship based on data from CBTN.",
@@ -111,7 +111,7 @@
       },
       {
         "reference": {
-          "reference": "Observation/gregor-family-relationship-mother"
+          "reference": "FamilyMemberHistory/gregor-family-relationship-mother"
         },
         "name": "An example family relationship based on data from GREGoR",
         "description": "An example family relationship based on data from GREGoR.",
@@ -259,6 +259,14 @@
         "name": "dbGaP PI, X01 FY 2021",
         "description": "dbGaP PI, X01 FY 2021",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/description"
+        },
+        "name": "Description",
+        "description": "Free text describing containing resource.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -449,7 +457,7 @@
           "reference": "StructureDefinition/ncpi-family-relationship"
         },
         "name": "Family Relationship",
-        "description": "Family Relationship",
+        "description": "A relationship between individuals in a pedigree or family.",
         "exampleBoolean": false
       },
       {
@@ -1082,14 +1090,6 @@
         },
         "name": "Strandedness options",
         "description": "Strandedness options",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/description"
-        },
-        "name": "Study Family Description",
-        "description": "Free text describing the study family, such as potential inheritance or details about consanguinity",
         "exampleBoolean": false
       },
       {

@@ -67,7 +67,7 @@ Description: "Brain tumors are the most common form of cancer in children aged 0
   * label = "enrollmentCriteria"
   * display = "Pediatric and AYA patients diagnosed with a central nervous system tumor, solid tumor, or hematologic malignancy."
 * relatedArtifact[+]
-  * type = #citation 
+  * type = #citation
   * label = "Publication"
   * url = "https://cbtn.org/publications"
 * status = #completed
@@ -230,7 +230,7 @@ Description: "Pediatric Brain Tumor Atlas"
 * title = "Pediatric Brain Tumor Atlas"
 * code = $ncpi-collection-type#consortium "Consortium"
 * note[0].text = "The Pediatric Brain Tumor Atlas (PBTA) is a collaborative effort to accelerate discoveries for therapeutic intervention for children diagnosed with a brain tumor. The first PBTA dataset release occurred in September of 2018 and includes data from tumor types including matched tumor/normal, whole genome data (WGS), RNAseq, proteomics, longitudinal clinical data, imaging data including MRIs and radiology reports, histology slide images and pathology reports. Funding for this initiative was provided by more than 50 foundation sponsors"
-* status = http://hl7.org/fhir/list-status#current 
+* status = http://hl7.org/fhir/list-status#current
 * mode = http://hl7.org/fhir/list-mode#snapshot
 * extension[website].valueUrl = "https://cbtn.org/pediatric-brain-tumor-atlas"
 * extension[label][0].extension[type].valueCodeableConcept = $title-type#acronym
@@ -244,7 +244,7 @@ Description: "Kids First X01s"
 * title = "Kids First X01s"
 * code = $ncpi-collection-type#program "Program"
 * note[0].text = "Through its Data Resource Center and NIH X01 grant mechanism, Kids First supports data generation and data sharing in the cloud. To date, the program has supported the public release of data from 30 projects and made available nearly 30,000 genomes, representing structural birth defects and childhood cancer patients and families through the Kids First Data Resource Portal"
-* status = http://hl7.org/fhir/list-status#current 
+* status = http://hl7.org/fhir/list-status#current
 * mode = http://hl7.org/fhir/list-mode#snapshot
 * extension[website].valueUrl = "https://cbtn.org/pediatric-brain-tumor-atlas"
 * entry[+].item = Reference(kf-research-study-cbtn)
@@ -321,7 +321,7 @@ Description: "Example patients based on data from PCGC"
   * system = "http://chdgenes.org/"
   * value = "PS_123"
 * link
-  * target = Reference(PT-006SP675) 
+  * target = Reference(PT-006SP675)
 // NCPI Family -- TBD
 
 Instance: FM-00C8Y7DG
@@ -350,10 +350,10 @@ InstanceOf: NcpiFamilyRelationship
 Title: "An example family relationship based on data from CBTN"
 Usage: #example
 Description: "An example family relationship based on data from CBTN."
-* subject = Reference(PT-006SP660)
-* focus = Reference(PT-006SP675)
-* code = $family-role-code#MTH "mother"
-* status = #registered
+* patient = Reference(PT-006SP675)
+* extension[relative].valueReference = Reference(PT-006SP660)
+* relationship = $family-role-code#NCHILD "natural child"
+* status = #completed
 
 
 
@@ -362,10 +362,10 @@ InstanceOf: NcpiFamilyRelationship
 Title: "An example family relationship based on data from CBTN"
 Usage: #example
 Description: "An example family relationship based on data from CBTN."
-* subject = Reference(PT-006SP675)
-* focus = Reference(PT-006SP660)
-* code = $family-role-code#SON "natural son"
-* status = #registered
+* patient = Reference(PT-006SP675)
+* extension[relative].valueReference = Reference(PT-006SP660)
+* relationship = $family-role-code#NCHILD "natural child"
+* status = #completed
 
 
 // NCPI Condition
@@ -412,8 +412,8 @@ Description: "Example biospecimen based on data from CBTN"
 * identifier.value = "SA_RV52EY7S" /*Sample ID*/
 * subject = Reference(PT-006SP660) /*Participant ID*/
 * type.text = "Peripheral Whole Blood" /*Sample Type*/
-/*There is a SNOMED term for peripheral blood specimen OR 
-https://github.com/include-dcc/include-model-forge/blob/main/input/fsh/codesystems/CodeSystem-SampleTypes.fsh 
+/*There is a SNOMED term for peripheral blood specimen OR
+https://github.com/include-dcc/include-model-forge/blob/main/input/fsh/codesystems/CodeSystem-SampleTypes.fsh
 to access this codesystem for now but we defintely need a real ontology for describing things like blood draws etc.*/
 * collection.method.text = "Blood Draw" /*Biospecimen Method*/
 * collection.method.coding = $loinc#LP125037-4 /*Biospecimen Method*/
@@ -433,7 +433,7 @@ to access this codesystem for now but we defintely need a real ontology for desc
     * url = "offset"
     * valueDuration = 4931 'days'
     * valueDuration.unit = "d"
- 
+
 // NCPI File
 Instance: GF-6BAD9S7D
 InstanceOf: NcpiFile

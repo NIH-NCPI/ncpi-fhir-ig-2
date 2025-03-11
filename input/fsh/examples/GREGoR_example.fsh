@@ -74,14 +74,14 @@ Description: "Example patients based on data from GREGoR"
   * system = "https://anvil.terra.bio"
   * value = "PS_000"
 * link
-  * target = Reference(GSS123456) 
+  * target = Reference(GSS123456)
 
 Instance: gregor-example-participantstudy
 InstanceOf: NcpiStudyParticipant
 Title: "Example mappings based on data from GREGoR"
 Usage: #example
 Description: "Example mappings based on data from GREGoR"
-* individual = Reference(GSS123456)  
+* individual = Reference(GSS123456)
 * study = Reference(research-study-gregor)
 * status = #candidate
 * consent = Reference(gregor-gru-consent)
@@ -110,10 +110,10 @@ InstanceOf: NcpiFamilyRelationship
 Title: "An example family relationship based on data from GREGoR"
 Usage: #example
 Description: "An example family relationship based on data from GREGoR."
-* subject = Reference(GSS123456)
-* focus = Reference(GSS654321)
-* code = $family-role-code#CHILD "child"
-* status = #registered
+* patient = Reference(GSS123456)
+* extension[relative].valueReference = Reference(GSS654321)
+* relationship = $family-role-code#NCHILD "natural child"
+* status = #completed
 
 // NCPI Condition
 Instance: GSS123456-condition

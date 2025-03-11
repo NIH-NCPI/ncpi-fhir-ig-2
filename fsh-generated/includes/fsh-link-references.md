@@ -5,9 +5,9 @@
 [AgeAtAssertion]: StructureDefinition-age-at-assertion.html
 [AgeAtLastVitalStatus]: StructureDefinition-research-age-at-last-vital-status.html
 [HashType]: StructureDefinition-hash-type.html
-[cbtn-family-relationship-mother]: Observation-cbtn-family-relationship-mother.html
-[cbtn-family-relationship-son]: Observation-cbtn-family-relationship-son.html
-[gregor-family-relationship-mother]: Observation-gregor-family-relationship-mother.html
+[cbtn-family-relationship-mother]: FamilyMemberHistory-cbtn-family-relationship-mother.html
+[cbtn-family-relationship-son]: FamilyMemberHistory-cbtn-family-relationship-son.html
+[gregor-family-relationship-mother]: FamilyMemberHistory-gregor-family-relationship-mother.html
 [AssayStrategyCS]: CodeSystem-assay-strategy-cs.html
 [ConditionAssertionVS]: ValueSet-condition-assertion-vs.html
 [ConditionAssertion]: CodeSystem-condition-assertion.html
@@ -26,6 +26,7 @@
 [ConsanguinityAssertionVS]: ValueSet-consanguinity-assertion-vs.html
 [kf-research-study-personnel-role-pi]: PractitionerRole-kf-research-study-personnel-role-pi.html
 [kf-research-study-personnel-role-pi-x01]: PractitionerRole-kf-research-study-personnel-role-pi-x01.html
+[Description]: StructureDefinition-description.html
 [DRSAttachment]: StructureDefinition-ncpi-drs-attachment.html
 [ComponentElements]: CodeSystem-component-elements.html
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
@@ -129,7 +130,6 @@
 [CdmStudyFamily]: StructureDefinition-SharedDataModelStudyFamily.html
 [BiospecimenSpatial]: StructureDefinition-biospecimen-spatial.html
 [StrandednessCS]: CodeSystem-strandedness-cs.html
-[Description]: StructureDefinition-description.html
 [FamilyRole]: StructureDefinition-family-role.html
 [StudyFamilyFocus]: StructureDefinition-study-family-focus.html
 [StudyNameTypeVS]: ValueSet-study-name-type-vs.html

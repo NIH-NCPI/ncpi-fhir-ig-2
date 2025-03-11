@@ -2,56 +2,111 @@
   "resourceType": "StructureDefinition",
   "id": "ncpi-family-relationship",
   "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "NcpiFamilyRelationship",
   "title": "Family Relationship",
   "status": "draft",
-  "description": "Family Relationship",
+  "description": "A relationship between individuals in a pedigree or family.",
   "fhirVersion": "4.3.0",
   "kind": "resource",
   "abstract": false,
-  "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "type": "FamilyMemberHistory",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "short": "The relationship between the subject and the target.",
+        "id": "FamilyMemberHistory.extension",
+        "path": "FamilyMemberHistory.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "FamilyMemberHistory.extension:relative",
+        "path": "FamilyMemberHistory.extension",
+        "sliceName": "relative",
+        "short": "The other participant in the relationship. That is, if the relationship is NCHILD (natural child), the \"relative\" is the parent.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.patient",
+        "path": "FamilyMemberHistory.patient",
+        "short": "The participant we are describing. That is, if the relationship is NCHILD (natural child), the patient is the child.",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.name",
+        "path": "FamilyMemberHistory.name",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.relationship",
+        "path": "FamilyMemberHistory.relationship",
+        "short": "The relationship between the patient and the relative. For the sake of users, only use NCHILD and ITWIN. All other biological relationships can be expressed with these and dummy individuals. ITWIN should be used for all monozygotic multiples (triplets, quadruplets, etc.) and should be present for all the directions of the relationship. This provides an unambiguous representation of the relationship. Example: A,B,C are triplets. You need A→B, B→A, A→C, C→A, B→C, C→B. If X and Y are twins, you need X→Y and Y→X. If Q is the grandchild of R but Q's parent is outside the dataset, then you need to make a dummy D with unknown sex and age and make Q-(NCHILD)→D and D-(NCHILD)→R. Values like mother and son are redundant with the sex of the participants.",
+        "mustSupport": true,
         "binding": {
           "strength": "extensible",
           "valueSet": "http://terminology.hl7.org/ValueSet/v3-FamilyMember"
         }
       },
       {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "short": "The participant we are describing",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-            ]
-          }
-        ]
+        "id": "FamilyMemberHistory.sex",
+        "path": "FamilyMemberHistory.sex",
+        "max": "0"
       },
       {
-        "id": "Observation.focus",
-        "path": "Observation.focus",
-        "short": "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-            ]
-          }
-        ]
+        "id": "FamilyMemberHistory.born[x]",
+        "path": "FamilyMemberHistory.born[x]",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.age[x]",
+        "path": "FamilyMemberHistory.age[x]",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.estimatedAge",
+        "path": "FamilyMemberHistory.estimatedAge",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.deceased[x]",
+        "path": "FamilyMemberHistory.deceased[x]",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.reasonCode",
+        "path": "FamilyMemberHistory.reasonCode",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.reasonReference",
+        "path": "FamilyMemberHistory.reasonReference",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.condition",
+        "path": "FamilyMemberHistory.condition",
+        "max": "0"
       }
     ]
   }
