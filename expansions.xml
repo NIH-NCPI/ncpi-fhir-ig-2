@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ade1605a-a270-42de-9718-f94b39e47d80"/>
+  <id value="b9c7c04d-91da-4009-ab6c-fd279462abf2"/>
   <meta>
-    <lastUpdated value="2025-02-07T15:45:47.593+00:00"/>
+    <lastUpdated value="2025-03-11T16:55:45.754+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,9 +14,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-collection-type.html">codesystem Collection Type v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -29,7 +29,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -38,7 +38,7 @@
                   <a href="CodeSystem-collection-type.html#collection-type-consortium">consortium</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td>
-                <td>Consortium</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -46,7 +46,7 @@
                   <a href="CodeSystem-collection-type.html#collection-type-program">program</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td>
-                <td>Program</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -54,7 +54,7 @@
                   <a href="CodeSystem-collection-type.html#collection-type-user-defined">user-defined</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td>
-                <td>User Defined</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -65,12 +65,16 @@
         <title value="Collection Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-02-07T15:45:47+00:00"/>
+        <date value="2025-03-11T16:55:01+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9288850a-f663-42d8-82b4-8e6c167b95a4"/>
-          <timestamp value="2025-02-07T15:46:55+00:00"/>
+          <identifier value="urn:uuid:4cf38b8c-d2da-4c52-b368-8b92badc5f94"/>
+          <timestamp value="2025-03-11T16:56:34+00:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -90,17 +94,14 @@
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type"/>
             <code value="consortium"/>
-            <display value="Consortium"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type"/>
             <code value="program"/>
-            <display value="Program"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type"/>
             <code value="user-defined"/>
-            <display value="User Defined"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -114,9 +115,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-condition-assertion.html">codesystem Assertion of Condition Codes v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -129,7 +130,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -138,7 +139,7 @@
                   <a href="CodeSystem-condition-assertion.html#condition-assertion-Present">Present</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td>
-                <td>Present</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -146,7 +147,7 @@
                   <a href="CodeSystem-condition-assertion.html#condition-assertion-Absent">Absent</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td>
-                <td>Absent</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -154,7 +155,7 @@
                   <a href="CodeSystem-condition-assertion.html#condition-assertion-Unknown">Unknown</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td>
-                <td>Unknown</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -164,12 +165,16 @@
         <name value="ConditionAssertionVS"/>
         <title value="Assertion of Condition Codes"/>
         <status value="draft"/>
-        <date value="2025-02-07T15:45:47+00:00"/>
+        <date value="2025-03-11T16:55:01+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:50b770ac-27a0-4815-b1eb-5bbc55f9478f"/>
-          <timestamp value="2025-02-07T15:46:55+00:00"/>
+          <identifier value="urn:uuid:0d262dc4-f203-4326-9103-12b29c6dfde0"/>
+          <timestamp value="2025-03-11T16:56:34+00:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -189,17 +194,14 @@
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion"/>
             <code value="Present"/>
-            <display value="Present"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion"/>
             <code value="Absent"/>
-            <display value="Absent"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion"/>
             <code value="Unknown"/>
-            <display value="Unknown"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -213,9 +215,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-condition-type.html">codesystem Type of Condition v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 6 concepts</p>
@@ -228,7 +230,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -237,7 +239,7 @@
                   <a href="CodeSystem-condition-type.html#condition-type-Phenotypic-Feature">Phenotypic-Feature</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
-                <td>Phenotypic Feature</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -245,7 +247,7 @@
                   <a href="CodeSystem-condition-type.html#condition-type-Disease">Disease</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
-                <td>Disease</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -253,7 +255,7 @@
                   <a href="CodeSystem-condition-type.html#condition-type-Comorbidity">Comorbidity</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
-                <td>Comorbidity</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -261,7 +263,7 @@
                   <a href="CodeSystem-condition-type.html#condition-type-Histology">Histology</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
-                <td>Histology</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -269,7 +271,7 @@
                   <a href="CodeSystem-condition-type.html#condition-type-Clinical-Finding">Clinical-Finding</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
-                <td>Clinical Finding</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -277,7 +279,7 @@
                   <a href="CodeSystem-condition-type.html#condition-type-EHR-Condition-Code">EHR-Condition-Code</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td>
-                <td>EHR Condition Code</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -287,12 +289,16 @@
         <name value="ConditionTypeVS"/>
         <title value="Type of Condition"/>
         <status value="draft"/>
-        <date value="2025-02-07T15:45:47+00:00"/>
+        <date value="2025-03-11T16:55:01+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4e95c366-3c18-45ba-a96b-f55d3faf28fc"/>
-          <timestamp value="2025-02-07T15:46:56+00:00"/>
+          <identifier value="urn:uuid:05cbfc48-b413-4757-b0b5-c939544cf4ce"/>
+          <timestamp value="2025-03-11T16:56:35+00:00"/>
           <total value="6"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -312,32 +318,26 @@
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
             <code value="Phenotypic-Feature"/>
-            <display value="Phenotypic Feature"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
             <code value="Disease"/>
-            <display value="Disease"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
             <code value="Comorbidity"/>
-            <display value="Comorbidity"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
             <code value="Histology"/>
-            <display value="Histology"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
             <code value="Clinical-Finding"/>
-            <display value="Clinical Finding"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"/>
             <code value="EHR-Condition-Code"/>
-            <display value="EHR Condition Code"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -351,9 +351,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Aug 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb 2025</p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
               <tr>
@@ -364,7 +364,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -408,12 +408,16 @@
         <title value="Consanguinity Value Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-02-07T15:45:47+00:00"/>
+        <date value="2025-03-11T16:55:01+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:795a7d48-3587-4195-b19c-c617baa7ef3e"/>
-          <timestamp value="2025-02-07T15:46:56+00:00"/>
+          <identifier value="urn:uuid:8e7e04ef-b267-442f-93e4-f50332257112"/>
+          <timestamp value="2025-03-11T16:56:35+00:00"/>
           <total value="4"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -432,11 +436,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -470,12 +474,12 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment 
               <a href="CodeSystem-ncpi-family-types.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types NCPI Family Types CodeSystem v0.1.0 (CodeSystem)</a>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-ncpi-family-types.html">codesystem NCPI Family Types CodeSystem v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains at least 6 concepts</p>
@@ -488,7 +492,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -497,7 +501,7 @@
                   <a href="CodeSystem-ncpi-family-types.html#ncpi-family-types-Control-only">Control-only</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
-                <td>Control Only</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -505,7 +509,7 @@
                   <a href="CodeSystem-ncpi-family-types.html#ncpi-family-types-Duo">Duo</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
-                <td>Duo</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -513,7 +517,7 @@
                   <a href="CodeSystem-ncpi-family-types.html#ncpi-family-types-Other">Other</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
-                <td>Other</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -521,7 +525,7 @@
                   <a href="CodeSystem-ncpi-family-types.html#ncpi-family-types-Proband-only">Proband-only</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
-                <td>Proband Only</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -529,7 +533,7 @@
                   <a href="CodeSystem-ncpi-family-types.html#ncpi-family-types-Trio">Trio</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
-                <td>Trio</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -537,7 +541,7 @@
                   <a href="CodeSystem-ncpi-family-types.html#ncpi-family-types-Trio.43">Trio+</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
-                <td>Trio+</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -547,12 +551,16 @@
         <name value="NcpiFamilyTypesVS"/>
         <title value="Family Types Codes"/>
         <status value="active"/>
-        <date value="2025-02-07T15:45:47+00:00"/>
+        <date value="2025-03-11T16:55:01+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:37c4d839-5125-4dd6-98e9-c874039b2025"/>
-          <timestamp value="2025-02-07T15:46:57+00:00"/>
+          <identifier value="urn:uuid:b836f2a7-12bd-496f-a0a1-74aecaa6679c"/>
+          <timestamp value="2025-03-11T16:56:36+00:00"/>
           <total value="6"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -576,32 +584,26 @@
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types"/>
             <code value="Control-only"/>
-            <display value="Control Only"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types"/>
             <code value="Duo"/>
-            <display value="Duo"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types"/>
             <code value="Other"/>
-            <display value="Other"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types"/>
             <code value="Proband-only"/>
-            <display value="Proband Only"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types"/>
             <code value="Trio"/>
-            <display value="Trio"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types"/>
             <code value="Trio+"/>
-            <display value="Trio+"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -615,9 +617,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-research-data-access-code.html">codesystem Research Data Access Codes v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 10 concepts</p>
@@ -630,7 +632,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -639,7 +641,7 @@
                   <a href="CodeSystem-research-data-access-code.html#research-data-access-code-GRU">GRU</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
-                <td>General Research Use</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -647,7 +649,7 @@
                   <a href="CodeSystem-research-data-access-code.html#research-data-access-code-HMB">HMB</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
-                <td>Health/Medical/Biomedical</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -655,7 +657,7 @@
                   <a href="CodeSystem-research-data-access-code.html#research-data-access-code-DS">DS</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
-                <td>Disease-Specific (Disease/Trait/Exposure)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -663,7 +665,7 @@
                   <a href="CodeSystem-research-data-access-code.html#research-data-access-code-IRB">IRB</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
-                <td>IRB approval required</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -671,7 +673,7 @@
                   <a href="CodeSystem-research-data-access-code.html#research-data-access-code-PUB">PUB</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
-                <td>Publication required</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -679,7 +681,7 @@
                   <a href="CodeSystem-research-data-access-code.html#research-data-access-code-COL">COL</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
-                <td>Collaboration Required</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -687,7 +689,7 @@
                   <a href="CodeSystem-research-data-access-code.html#research-data-access-code-NPU">NPU</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
-                <td>Not-for-profit use only</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -695,7 +697,7 @@
                   <a href="CodeSystem-research-data-access-code.html#research-data-access-code-MDS">MDS</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
-                <td>Methods</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -703,7 +705,7 @@
                   <a href="CodeSystem-research-data-access-code.html#research-data-access-code-GSO">GSO</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
-                <td>Genetic studies only</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -711,7 +713,7 @@
                   <a href="CodeSystem-research-data-access-code.html#research-data-access-code-GSR">GSR</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
-                <td>Genomic Summary Results</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -722,12 +724,16 @@
         <title value="Research Data Access Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-02-07T15:45:47+00:00"/>
+        <date value="2025-03-11T16:55:01+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4fd0ec3d-2f88-4d74-af78-0dc7a6bc87bb"/>
-          <timestamp value="2025-02-07T15:46:57+00:00"/>
+          <identifier value="urn:uuid:990138c6-9270-4b32-8c5e-b485c5150047"/>
+          <timestamp value="2025-03-11T16:56:36+00:00"/>
           <total value="10"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -747,52 +753,42 @@
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
             <code value="GRU"/>
-            <display value="General Research Use"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
             <code value="HMB"/>
-            <display value="Health/Medical/Biomedical"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
             <code value="DS"/>
-            <display value="Disease-Specific (Disease/Trait/Exposure)"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
             <code value="IRB"/>
-            <display value="IRB approval required"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
             <code value="PUB"/>
-            <display value="Publication required"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
             <code value="COL"/>
-            <display value="Collaboration Required"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
             <code value="NPU"/>
-            <display value="Not-for-profit use only"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
             <code value="MDS"/>
-            <display value="Methods"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
             <code value="GSO"/>
-            <display value="Genetic studies only"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
             <code value="GSR"/>
-            <display value="Genomic Summary Results"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -806,9 +802,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-research-data-access-type.html">codesystem Research Data Access Type Codes v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -821,7 +817,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -830,7 +826,7 @@
                   <a href="CodeSystem-research-data-access-type.html#research-data-access-type-open">open</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
-                <td>Open Access</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -838,7 +834,7 @@
                   <a href="CodeSystem-research-data-access-type.html#research-data-access-type-registered">registered</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
-                <td>Registered Access</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -846,7 +842,7 @@
                   <a href="CodeSystem-research-data-access-type.html#research-data-access-type-controlled">controlled</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
-                <td>Controlled</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -854,7 +850,7 @@
                   <a href="CodeSystem-research-data-access-type.html#research-data-access-type-gsr-restricted">gsr-restricted</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
-                <td>GSR Restricted</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -862,7 +858,7 @@
                   <a href="CodeSystem-research-data-access-type.html#research-data-access-type-gsr-allowed">gsr-allowed</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
-                <td>GSR Allowed</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -873,12 +869,16 @@
         <title value="Research Data Access Type Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-02-07T15:45:47+00:00"/>
+        <date value="2025-03-11T16:55:01+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a16b71ed-0ff3-4534-b1d5-915aaa8d86c1"/>
-          <timestamp value="2025-02-07T15:46:57+00:00"/>
+          <identifier value="urn:uuid:0e350aca-86bc-4825-9a11-67a7ef305d19"/>
+          <timestamp value="2025-03-11T16:56:36+00:00"/>
           <total value="5"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -898,27 +898,22 @@
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
             <code value="open"/>
-            <display value="Open Access"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
             <code value="registered"/>
-            <display value="Registered Access"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
             <code value="controlled"/>
-            <display value="Controlled"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
             <code value="gsr-restricted"/>
-            <display value="GSR Restricted"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
             <code value="gsr-allowed"/>
-            <display value="GSR Allowed"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -932,9 +927,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-research-data-date-of-birth-method.html">codesystem Enumerations for how DOB was constructed v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -947,7 +942,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -956,7 +951,7 @@
                   <a href="CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-exact">exact</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td>
-                <td>Exact</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -964,7 +959,7 @@
                   <a href="CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-year-only">year-only</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td>
-                <td>Year Only</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -972,7 +967,7 @@
                   <a href="CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-shifted">shifted</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td>
-                <td>Shifted</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -980,7 +975,7 @@
                   <a href="CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-decade-only">decade-only</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td>
-                <td>Decade Only</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -988,7 +983,7 @@
                   <a href="CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-other">other</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td>
-                <td>Other</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -998,12 +993,16 @@
         <name value="ResearchDataDateOfBirthMethodVS"/>
         <title value="Enumerations for how DOB was constructed"/>
         <status value="draft"/>
-        <date value="2025-02-07T15:45:47+00:00"/>
+        <date value="2025-03-11T16:55:01+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1f2f8071-632c-47d5-a996-2716bfec1ec9"/>
-          <timestamp value="2025-02-07T15:46:58+00:00"/>
+          <identifier value="urn:uuid:5e7d870a-c179-473f-a586-e8249e306554"/>
+          <timestamp value="2025-03-11T16:56:36+00:00"/>
           <total value="5"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1023,27 +1022,22 @@
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method"/>
             <code value="exact"/>
-            <display value="Exact"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method"/>
             <code value="year-only"/>
-            <display value="Year Only"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method"/>
             <code value="shifted"/>
-            <display value="Shifted"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method"/>
             <code value="decade-only"/>
-            <display value="Decade Only"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method"/>
             <code value="other"/>
-            <display value="Other"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1057,9 +1051,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-study-name-type.html">codesystem Study Name Type v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -1072,7 +1066,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -1081,7 +1075,7 @@
                   <a href="CodeSystem-study-name-type.html#study-name-type-formal-title">formal-title</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td>
-                <td>Formal Title</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -1089,7 +1083,7 @@
                   <a href="CodeSystem-study-name-type.html#study-name-type-internal-name">internal-name</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td>
-                <td>Internal Name</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -1097,7 +1091,7 @@
                   <a href="CodeSystem-study-name-type.html#study-name-type-familiar-ame">familiar-ame</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td>
-                <td>Familiar Name (Nickname)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -1105,7 +1099,7 @@
                   <a href="CodeSystem-study-name-type.html#study-name-type-acronym">acronym</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td>
-                <td>Acronym</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -1113,7 +1107,7 @@
                   <a href="CodeSystem-study-name-type.html#study-name-type-alternative-name">alternative-name</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td>
-                <td>Alternative Name</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -1124,12 +1118,16 @@
         <title value="Study Name Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-02-07T15:45:47+00:00"/>
+        <date value="2025-03-11T16:55:01+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:eb185c4e-49e2-49da-bd6c-93475bd59392"/>
-          <timestamp value="2025-02-07T15:46:58+00:00"/>
+          <identifier value="urn:uuid:7e0c230a-fdbb-4374-9787-cd9ff4be93a3"/>
+          <timestamp value="2025-03-11T16:56:36+00:00"/>
           <total value="5"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1149,27 +1147,22 @@
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type"/>
             <code value="formal-title"/>
-            <display value="Formal Title"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type"/>
             <code value="internal-name"/>
-            <display value="Internal Name"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type"/>
             <code value="familiar-ame"/>
-            <display value="Familiar Name (Nickname)"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type"/>
             <code value="acronym"/>
-            <display value="Acronym"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type"/>
             <code value="alternative-name"/>
-            <display value="Alternative Name"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1183,9 +1176,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-study-personnel-role.html">codesystem Study Personnel Role v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -1198,7 +1191,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
@@ -1207,7 +1200,7 @@
                   <a href="CodeSystem-study-personnel-role.html#study-personnel-role-primary-investigator">primary-investigator</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td>
-                <td>Primary Investigator</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -1215,7 +1208,7 @@
                   <a href="CodeSystem-study-personnel-role.html#study-personnel-role-administrator">administrator</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td>
-                <td>Administrator</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -1223,7 +1216,7 @@
                   <a href="CodeSystem-study-personnel-role.html#study-personnel-role-collaborator">collaborator</a>
                 </td>
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td>
-                <td>Collaborator</td>
+                <td/>
               </tr>
             </table>
           </div>
@@ -1234,12 +1227,16 @@
         <title value="Study Personnel Role"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-02-07T15:45:47+00:00"/>
+        <date value="2025-03-11T16:55:01+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8541e7bb-053d-4b7e-955a-7c3b1efe62cc"/>
-          <timestamp value="2025-02-07T15:46:58+00:00"/>
+          <identifier value="urn:uuid:5659fcc3-213c-4a8a-b6c9-4a23ef2368fb"/>
+          <timestamp value="2025-03-11T16:56:36+00:00"/>
           <total value="3"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1259,17 +1256,14 @@
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role"/>
             <code value="primary-investigator"/>
-            <display value="Primary Investigator"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role"/>
             <code value="administrator"/>
-            <display value="Administrator"/>
           </contains>
           <contains>
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role"/>
             <code value="collaborator"/>
-            <display value="Collaborator"/>
           </contains>
         </expansion>
       </ValueSet>

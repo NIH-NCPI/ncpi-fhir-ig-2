@@ -11,7 +11,7 @@
   <name value="DRSAttachment"/>
   <title value="DRS Attachment"/>
   <status value="draft"/>
-  <date value="2025-02-07T15:45:47+00:00"/>
+  <date value="2025-03-11T16:55:01+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -42,6 +42,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Attachment"/>
   <derivation value="constraint"/>
   <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.3.0"/>
+    </extension>
     <element id="Attachment">
       <path value="Attachment"/>
       <short value="Content in a format defined elsewhere"/>

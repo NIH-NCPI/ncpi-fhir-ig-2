@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,14 +11,14 @@
   fhir:id [ fhir:v "condition-laterality-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet condition-laterality-vs</b></p><a name=\"condition-laterality-vs\"> </a><a name=\"hccondition-laterality-vs\"> </a><a name=\"condition-laterality-vs-en-US\"> </a><ul><li>Include all codes defined in <code>http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs</code></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet condition-laterality-vs</b></p><a name=\"condition-laterality-vs\"> </a><a name=\"hccondition-laterality-vs\"> </a><a name=\"condition-laterality-vs-en-US\"> </a><ul><li>Include all codes defined in <code>http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs</code></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-laterality-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "LateralityQualifierVS"] ; # 
   fhir:title [ fhir:v "Laterality Information"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-07T15:45:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-11T16:55:01+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;

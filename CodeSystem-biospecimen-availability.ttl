@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,14 +11,14 @@
   fhir:id [ fhir:v "biospecimen-availability"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem biospecimen-availability</b></p><a name=\"biospecimen-availability\"> </a><a name=\"hcbiospecimen-availability\"> </a><a name=\"biospecimen-availability-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">available<a name=\"biospecimen-availability-available\"> </a></td><td>Available</td></tr><tr><td style=\"white-space:nowrap\">unavailable<a name=\"biospecimen-availability-unavailable\"> </a></td><td>Unavailable</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem biospecimen-availability</b></p><a name=\"biospecimen-availability\"> </a><a name=\"hcbiospecimen-availability\"> </a><a name=\"biospecimen-availability-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">available<a name=\"biospecimen-availability-available\"> </a></td><td>Available</td></tr><tr><td style=\"white-space:nowrap\">unavailable<a name=\"biospecimen-availability-unavailable\"> </a></td><td>Unavailable</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "BiospecimenAvailability"] ; # 
   fhir:title [ fhir:v "Sample availability for Sample and Aliquot modules"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-07T15:45:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-11T16:55:01+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;

@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"25.143"}
-    h3,h4,h5,h6{--heading-prefix:"25.143"}</style>
+    <style type="text/css">h2{--heading-prefix:"25.141"}
+    h3,h4,h5,h6{--heading-prefix:"25.141"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -299,6 +299,7 @@
   <pre style="white-space: pre; overflow: hidden" class="rdf"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
@@ -314,11 +315,13 @@
   ] ; # 
   <a href="http://hl7.org/fhir/R4B/list.html#List.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> "generated" ] ;
-fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: List ncpi-research-collection-kfx01&lt;/b&gt;&lt;/p&gt;&lt;a name=\"ncpi-research-collection-kfx01\"&gt; &lt;/a&gt;&lt;a name=\"hcncpi-research-collection-kfx01\"&gt; &lt;/a&gt;&lt;a name=\"ncpi-research-collection-kfx01-en-US\"&gt; &lt;/a&gt;&lt;h2&gt;Kids First X01s&lt;/h2&gt;&lt;table class=\"clstu\"&gt;&lt;tr&gt;&lt;td&gt;Mode: Snapshot List &lt;/td&gt;&lt;td&gt;Status: Current &lt;/td&gt;&lt;td&gt;Code: Program &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;Through its Data Resource Center and NIH X01 grant mechanism, Kids First supports data generation and data sharing in the cloud. To date, the program has supported the public release of data from 30 projects and made available nearly 30,000 genomes, representing structural birth defects and childhood cancer patients and families through the Kids First Data Resource Portal&lt;table class=\"grid\"&gt;&lt;tr style=\"backgound-color: #eeeeee\"&gt;&lt;td&gt;&lt;b&gt;Items&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"ResearchStudy-kf-research-study-cbtn.html\"&gt;ResearchStudy Children's Brain Tumor Network (CBTN)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: List ncpi-research-collection-kfx01&lt;/b&gt;&lt;/p&gt;&lt;a name=\"ncpi-research-collection-kfx01\"&gt; &lt;/a&gt;&lt;a name=\"hcncpi-research-collection-kfx01\"&gt; &lt;/a&gt;&lt;a name=\"ncpi-research-collection-kfx01-en-US\"&gt; &lt;/a&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"/&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-ncpi-research-collection.html\"&gt;NCPI Research Collection&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;Kids First X01s&lt;/h2&gt;&lt;table class=\"clstu\"&gt;&lt;tr&gt;&lt;td&gt;Mode: Snapshot List &lt;/td&gt;&lt;td&gt;Status: Current &lt;/td&gt;&lt;td&gt;Code: Program &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;Through its Data Resource Center and NIH X01 grant mechanism, Kids First supports data generation and data sharing in the cloud. To date, the program has supported the public release of data from 30 projects and made available nearly 30,000 genomes, representing structural birth defects and childhood cancer patients and families through the Kids First Data Resource Portal&lt;table class=\"grid\"&gt;&lt;tr style=\"backgound-color: #eeeeee\"&gt;&lt;td&gt;&lt;b&gt;Items&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"ResearchStudy-kf-research-study-cbtn.html\"&gt;ResearchStudy Children's Brain Tumor Network (CBTN)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"^^rdf:XMLLiteral
   ] ; # 
   <a href="http://hl7.org/fhir/R4B/list.html#List.extension">fhir:extension</a> ( [
 <a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">fhir:v</a> "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link"^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#url">fhir:v</a> "https://cbtn.org/pediatric-brain-tumor-atlas"^^xsd:anyURI ]
+<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4B/datatypes.html#url">a</a> fhir:url ;
+<a href="http://hl7.org/fhir/R4B/datatypes.html#url">fhir:v</a> "https://cbtn.org/pediatric-brain-tumor-atlas"^^xsd:anyURI     ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4B/list.html#List.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> "current"] ; # 
   <a href="http://hl7.org/fhir/R4B/list.html#List.mode">fhir:mode</a> [ <a href="http://hl7.org/fhir/R4B/datatypes.html#code">fhir:v</a> "snapshot"] ; # 
@@ -362,7 +365,7 @@ fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-he
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, Feb 7, 2025 15:45+0000">2025-02-07</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Tue, Mar 11, 2025 16:55+0000">2025-03-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

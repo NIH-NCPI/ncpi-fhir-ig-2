@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "ade1605a-a270-42de-9718-f94b39e47d80",
+  "id" : "b9c7c04d-91da-4009-ab6c-fd279462abf2",
   "meta" : {
-    "lastUpdated" : "2025-02-07T15:45:47.593+00:00"
+    "lastUpdated" : "2025-03-11T16:55:45.754+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,7 +11,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-collection-type.html\">codesystem Collection Type v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type-consortium\"> </a>\u00a0\u00a0<a href=\"CodeSystem-collection-type.html#collection-type-consortium\">consortium</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td><td>Consortium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type-program\"> </a>\u00a0\u00a0<a href=\"CodeSystem-collection-type.html#collection-type-program\">program</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td><td>Program</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type-user-defined\"> </a>\u00a0\u00a0<a href=\"CodeSystem-collection-type.html#collection-type-user-defined\">user-defined</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td><td>User Defined</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-collection-type.html\">codesystem Collection Type v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type-consortium\"> </a>\u00a0\u00a0<a href=\"CodeSystem-collection-type.html#collection-type-consortium\">consortium</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type-program\"> </a>\u00a0\u00a0<a href=\"CodeSystem-collection-type.html#collection-type-program\">program</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type-user-defined\"> </a>\u00a0\u00a0<a href=\"CodeSystem-collection-type.html#collection-type-user-defined\">user-defined</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</td><td/></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
       "version" : "0.1.0",
@@ -19,13 +19,17 @@
       "title" : "Collection Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-02-07T15:45:47+00:00",
+      "date" : "2025-03-11T16:55:01+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:9288850a-f663-42d8-82b4-8e6c167b95a4",
-        "timestamp" : "2025-02-07T15:46:55+00:00",
+        "identifier" : "urn:uuid:4cf38b8c-d2da-4c52-b368-8b92badc5f94",
+        "timestamp" : "2025-03-11T16:56:34+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -43,18 +47,15 @@
         }],
         "contains" : [{
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
-          "code" : "consortium",
-          "display" : "Consortium"
+          "code" : "consortium"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
-          "code" : "program",
-          "display" : "Program"
+          "code" : "program"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
-          "code" : "user-defined",
-          "display" : "User Defined"
+          "code" : "user-defined"
         }]
       }
     }
@@ -65,20 +66,24 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-condition-assertion.html\">codesystem Assertion of Condition Codes v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Present\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-assertion.html#condition-assertion-Present\">Present</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td><td>Present</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Absent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-assertion.html#condition-assertion-Absent\">Absent</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td><td>Absent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Unknown\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-assertion.html#condition-assertion-Unknown\">Unknown</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td><td>Unknown</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-condition-assertion.html\">codesystem Assertion of Condition Codes v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Present\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-assertion.html#condition-assertion-Present\">Present</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Absent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-assertion.html#condition-assertion-Absent\">Absent</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion-Unknown\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-assertion.html#condition-assertion-Unknown\">Unknown</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion</td><td/></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-assertion-vs",
       "version" : "0.1.0",
       "name" : "ConditionAssertionVS",
       "title" : "Assertion of Condition Codes",
       "status" : "draft",
-      "date" : "2025-02-07T15:45:47+00:00",
+      "date" : "2025-03-11T16:55:01+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:50b770ac-27a0-4815-b1eb-5bbc55f9478f",
-        "timestamp" : "2025-02-07T15:46:55+00:00",
+        "identifier" : "urn:uuid:0d262dc4-f203-4326-9103-12b29c6dfde0",
+        "timestamp" : "2025-03-11T16:56:34+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -96,18 +101,15 @@
         }],
         "contains" : [{
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion",
-          "code" : "Present",
-          "display" : "Present"
+          "code" : "Present"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion",
-          "code" : "Absent",
-          "display" : "Absent"
+          "code" : "Absent"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion",
-          "code" : "Unknown",
-          "display" : "Unknown"
+          "code" : "Unknown"
         }]
       }
     }
@@ -118,20 +120,24 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-condition-type.html\">codesystem Type of Condition v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Phenotypic-Feature\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Phenotypic-Feature\">Phenotypic-Feature</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>Phenotypic Feature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Disease\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Disease\">Disease</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>Disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Comorbidity\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Comorbidity\">Comorbidity</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>Comorbidity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Histology\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Histology\">Histology</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>Histology</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Clinical-Finding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Clinical-Finding\">Clinical-Finding</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>Clinical Finding</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-EHR-Condition-Code\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-EHR-Condition-Code\">EHR-Condition-Code</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td>EHR Condition Code</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-condition-type.html\">codesystem Type of Condition v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Phenotypic-Feature\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Phenotypic-Feature\">Phenotypic-Feature</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Disease\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Disease\">Disease</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Comorbidity\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Comorbidity\">Comorbidity</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Histology\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Histology\">Histology</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-Clinical-Finding\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-Clinical-Finding\">Clinical-Finding</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type-EHR-Condition-Code\"> </a>\u00a0\u00a0<a href=\"CodeSystem-condition-type.html#condition-type-EHR-Condition-Code\">EHR-Condition-Code</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</td><td/></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs",
       "version" : "0.1.0",
       "name" : "ConditionTypeVS",
       "title" : "Type of Condition",
       "status" : "draft",
-      "date" : "2025-02-07T15:45:47+00:00",
+      "date" : "2025-03-11T16:55:01+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:4e95c366-3c18-45ba-a96b-f55d3faf28fc",
-        "timestamp" : "2025-02-07T15:46:56+00:00",
+        "identifier" : "urn:uuid:05cbfc48-b413-4757-b0b5-c939544cf4ce",
+        "timestamp" : "2025-03-11T16:56:35+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -149,33 +155,27 @@
         }],
         "contains" : [{
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-          "code" : "Phenotypic-Feature",
-          "display" : "Phenotypic Feature"
+          "code" : "Phenotypic-Feature"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-          "code" : "Disease",
-          "display" : "Disease"
+          "code" : "Disease"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-          "code" : "Comorbidity",
-          "display" : "Comorbidity"
+          "code" : "Comorbidity"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-          "code" : "Histology",
-          "display" : "Histology"
+          "code" : "Histology"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-          "code" : "Clinical-Finding",
-          "display" : "Clinical Finding"
+          "code" : "Clinical-Finding"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-          "code" : "EHR-Condition-Code",
-          "display" : "EHR Condition Code"
+          "code" : "EHR-Condition-Code"
         }]
       }
     }
@@ -186,7 +186,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Aug 2024</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-428263003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/428263003\">428263003</a></td><td>http://snomed.info/sct</td><td>NOT suspected (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-415684004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/415684004\">415684004</a></td><td>http://snomed.info/sct</td><td>Suspected (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-410515003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/410515003\">410515003</a></td><td>http://snomed.info/sct</td><td>Known present (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-261665006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb 2025</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-428263003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/428263003\">428263003</a></td><td>http://snomed.info/sct</td><td>NOT suspected (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-415684004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/415684004\">415684004</a></td><td>http://snomed.info/sct</td><td>Suspected (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-410515003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/410515003\">410515003</a></td><td>http://snomed.info/sct</td><td>Known present (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-261665006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown</td></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/consanguinity-assertion-vs",
       "version" : "0.1.0",
@@ -194,13 +194,17 @@
       "title" : "Consanguinity Value Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-02-07T15:45:47+00:00",
+      "date" : "2025-03-11T16:55:01+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:795a7d48-3587-4195-b19c-c617baa7ef3e",
-        "timestamp" : "2025-02-07T15:46:56+00:00",
+        "identifier" : "urn:uuid:8e7e04ef-b267-442f-93e4-f50332257112",
+        "timestamp" : "2025-03-11T16:56:35+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -218,11 +222,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -253,20 +257,24 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px\">Expansion based on code system fragment <a href=\"CodeSystem-ncpi-family-types.html\">https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types NCPI Family Types CodeSystem v0.1.0 (CodeSystem)</a></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-ncpi-family-types.html\">codesystem NCPI Family Types CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains at least 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Control-only\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Control-only\">Control-only</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td>Control Only</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Duo\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Duo\">Duo</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td>Duo</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Other\">Other</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Proband-only\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Proband-only\">Proband-only</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td>Proband Only</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Trio\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Trio\">Trio</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td>Trio</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Trio+\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Trio.43\">Trio+</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td>Trio+</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px\">Expansion based on code system fragment <a href=\"CodeSystem-ncpi-family-types.html\">https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types NCPI Family Types CodeSystem v0.1.0 (CodeSystem)</a></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-ncpi-family-types.html\">codesystem NCPI Family Types CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains at least 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Control-only\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Control-only\">Control-only</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Duo\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Duo\">Duo</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Other\">Other</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Proband-only\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Proband-only\">Proband-only</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Trio\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Trio\">Trio</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types-Trio+\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ncpi-family-types.html#ncpi-family-types-Trio.43\">Trio+</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td><td/></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/ncpi-family-types-vs",
       "version" : "0.1.0",
       "name" : "NcpiFamilyTypesVS",
       "title" : "Family Types Codes",
       "status" : "active",
-      "date" : "2025-02-07T15:45:47+00:00",
+      "date" : "2025-03-11T16:55:01+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:37c4d839-5125-4dd6-98e9-c874039b2025",
-        "timestamp" : "2025-02-07T15:46:57+00:00",
+        "identifier" : "urn:uuid:b836f2a7-12bd-496f-a0a1-74aecaa6679c",
+        "timestamp" : "2025-03-11T16:56:36+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -288,33 +296,27 @@
         }],
         "contains" : [{
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
-          "code" : "Control-only",
-          "display" : "Control Only"
+          "code" : "Control-only"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
-          "code" : "Duo",
-          "display" : "Duo"
+          "code" : "Duo"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
-          "code" : "Other",
-          "display" : "Other"
+          "code" : "Other"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
-          "code" : "Proband-only",
-          "display" : "Proband Only"
+          "code" : "Proband-only"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
-          "code" : "Trio",
-          "display" : "Trio"
+          "code" : "Trio"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
-          "code" : "Trio+",
-          "display" : "Trio+"
+          "code" : "Trio+"
         }]
       }
     }
@@ -325,7 +327,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-research-data-access-code.html\">codesystem Research Data Access Codes v0.1.0 (CodeSystem)</a></p><p>This value set contains 10 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-GRU\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-GRU\">GRU</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td>General Research Use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-HMB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-HMB\">HMB</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td>Health/Medical/Biomedical</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-DS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-DS\">DS</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td>Disease-Specific (Disease/Trait/Exposure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-IRB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-IRB\">IRB</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td>IRB approval required</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-PUB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-PUB\">PUB</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td>Publication required</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-COL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-COL\">COL</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td>Collaboration Required</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-NPU\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-NPU\">NPU</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td>Not-for-profit use only</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-MDS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-MDS\">MDS</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td>Methods</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-GSO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-GSO\">GSO</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td>Genetic studies only</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-GSR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-GSR\">GSR</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td>Genomic Summary Results</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-research-data-access-code.html\">codesystem Research Data Access Codes v0.1.0 (CodeSystem)</a></p><p>This value set contains 10 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-GRU\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-GRU\">GRU</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-HMB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-HMB\">HMB</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-DS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-DS\">DS</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-IRB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-IRB\">IRB</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-PUB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-PUB\">PUB</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-COL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-COL\">COL</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-NPU\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-NPU\">NPU</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-MDS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-MDS\">MDS</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-GSO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-GSO\">GSO</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code-GSR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-code.html#research-data-access-code-GSR\">GSR</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td><td/></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs",
       "version" : "0.1.0",
@@ -333,13 +335,17 @@
       "title" : "Research Data Access Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-02-07T15:45:47+00:00",
+      "date" : "2025-03-11T16:55:01+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:4fd0ec3d-2f88-4d74-af78-0dc7a6bc87bb",
-        "timestamp" : "2025-02-07T15:46:57+00:00",
+        "identifier" : "urn:uuid:990138c6-9270-4b32-8c5e-b485c5150047",
+        "timestamp" : "2025-03-11T16:56:36+00:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -357,53 +363,43 @@
         }],
         "contains" : [{
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-          "code" : "GRU",
-          "display" : "General Research Use"
+          "code" : "GRU"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-          "code" : "HMB",
-          "display" : "Health/Medical/Biomedical"
+          "code" : "HMB"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-          "code" : "DS",
-          "display" : "Disease-Specific (Disease/Trait/Exposure)"
+          "code" : "DS"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-          "code" : "IRB",
-          "display" : "IRB approval required"
+          "code" : "IRB"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-          "code" : "PUB",
-          "display" : "Publication required"
+          "code" : "PUB"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-          "code" : "COL",
-          "display" : "Collaboration Required"
+          "code" : "COL"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-          "code" : "NPU",
-          "display" : "Not-for-profit use only"
+          "code" : "NPU"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-          "code" : "MDS",
-          "display" : "Methods"
+          "code" : "MDS"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-          "code" : "GSO",
-          "display" : "Genetic studies only"
+          "code" : "GSO"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-          "code" : "GSR",
-          "display" : "Genomic Summary Results"
+          "code" : "GSR"
         }]
       }
     }
@@ -414,7 +410,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-research-data-access-type.html\">codesystem Research Data Access Type Codes v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type-open\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-type.html#research-data-access-type-open\">open</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td><td>Open Access</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type-registered\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-type.html#research-data-access-type-registered\">registered</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td><td>Registered Access</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type-controlled\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-type.html#research-data-access-type-controlled\">controlled</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td><td>Controlled</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type-gsr-restricted\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-type.html#research-data-access-type-gsr-restricted\">gsr-restricted</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td><td>GSR Restricted</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type-gsr-allowed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-type.html#research-data-access-type-gsr-allowed\">gsr-allowed</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td><td>GSR Allowed</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-research-data-access-type.html\">codesystem Research Data Access Type Codes v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type-open\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-type.html#research-data-access-type-open\">open</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type-registered\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-type.html#research-data-access-type-registered\">registered</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type-controlled\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-type.html#research-data-access-type-controlled\">controlled</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type-gsr-restricted\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-type.html#research-data-access-type-gsr-restricted\">gsr-restricted</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type-gsr-allowed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-access-type.html#research-data-access-type-gsr-allowed\">gsr-allowed</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td><td/></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs",
       "version" : "0.1.0",
@@ -422,13 +418,17 @@
       "title" : "Research Data Access Type Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-02-07T15:45:47+00:00",
+      "date" : "2025-03-11T16:55:01+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a16b71ed-0ff3-4534-b1d5-915aaa8d86c1",
-        "timestamp" : "2025-02-07T15:46:57+00:00",
+        "identifier" : "urn:uuid:0e350aca-86bc-4825-9a11-67a7ef305d19",
+        "timestamp" : "2025-03-11T16:56:36+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -446,28 +446,23 @@
         }],
         "contains" : [{
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
-          "code" : "open",
-          "display" : "Open Access"
+          "code" : "open"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
-          "code" : "registered",
-          "display" : "Registered Access"
+          "code" : "registered"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
-          "code" : "controlled",
-          "display" : "Controlled"
+          "code" : "controlled"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
-          "code" : "gsr-restricted",
-          "display" : "GSR Restricted"
+          "code" : "gsr-restricted"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
-          "code" : "gsr-allowed",
-          "display" : "GSR Allowed"
+          "code" : "gsr-allowed"
         }]
       }
     }
@@ -478,20 +473,24 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-research-data-date-of-birth-method.html\">codesystem Enumerations for how DOB was constructed v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method-exact\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-exact\">exact</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td><td>Exact</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method-year-only\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-year-only\">year-only</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td><td>Year Only</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method-shifted\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-shifted\">shifted</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td><td>Shifted</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method-decade-only\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-decade-only\">decade-only</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td><td>Decade Only</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method-other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-other\">other</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td><td>Other</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-research-data-date-of-birth-method.html\">codesystem Enumerations for how DOB was constructed v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method-exact\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-exact\">exact</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method-year-only\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-year-only\">year-only</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method-shifted\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-shifted\">shifted</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method-decade-only\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-decade-only\">decade-only</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method-other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-research-data-date-of-birth-method.html#research-data-date-of-birth-method-other\">other</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</td><td/></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-date-of-birth-method-vs",
       "version" : "0.1.0",
       "name" : "ResearchDataDateOfBirthMethodVS",
       "title" : "Enumerations for how DOB was constructed",
       "status" : "draft",
-      "date" : "2025-02-07T15:45:47+00:00",
+      "date" : "2025-03-11T16:55:01+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:1f2f8071-632c-47d5-a996-2716bfec1ec9",
-        "timestamp" : "2025-02-07T15:46:58+00:00",
+        "identifier" : "urn:uuid:5e7d870a-c179-473f-a586-e8249e306554",
+        "timestamp" : "2025-03-11T16:56:36+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -509,28 +508,23 @@
         }],
         "contains" : [{
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
-          "code" : "exact",
-          "display" : "Exact"
+          "code" : "exact"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
-          "code" : "year-only",
-          "display" : "Year Only"
+          "code" : "year-only"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
-          "code" : "shifted",
-          "display" : "Shifted"
+          "code" : "shifted"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
-          "code" : "decade-only",
-          "display" : "Decade Only"
+          "code" : "decade-only"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
-          "code" : "other",
-          "display" : "Other"
+          "code" : "other"
         }]
       }
     }
@@ -541,7 +535,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-study-name-type.html\">codesystem Study Name Type v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type-formal-title\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-formal-title\">formal-title</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td>Formal Title</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type-internal-name\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-internal-name\">internal-name</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td>Internal Name</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type-familiar-ame\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-familiar-ame\">familiar-ame</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td>Familiar Name (Nickname)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type-acronym\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-acronym\">acronym</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td>Acronym</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type-alternative-name\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-alternative-name\">alternative-name</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td>Alternative Name</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-study-name-type.html\">codesystem Study Name Type v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type-formal-title\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-formal-title\">formal-title</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type-internal-name\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-internal-name\">internal-name</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type-familiar-ame\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-familiar-ame\">familiar-ame</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type-acronym\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-acronym\">acronym</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type-alternative-name\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-alternative-name\">alternative-name</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td/></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",
       "version" : "0.1.0",
@@ -549,13 +543,17 @@
       "title" : "Study Name Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-02-07T15:45:47+00:00",
+      "date" : "2025-03-11T16:55:01+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:eb185c4e-49e2-49da-bd6c-93475bd59392",
-        "timestamp" : "2025-02-07T15:46:58+00:00",
+        "identifier" : "urn:uuid:7e0c230a-fdbb-4374-9787-cd9ff4be93a3",
+        "timestamp" : "2025-03-11T16:56:36+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -573,28 +571,23 @@
         }],
         "contains" : [{
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
-          "code" : "formal-title",
-          "display" : "Formal Title"
+          "code" : "formal-title"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
-          "code" : "internal-name",
-          "display" : "Internal Name"
+          "code" : "internal-name"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
-          "code" : "familiar-ame",
-          "display" : "Familiar Name (Nickname)"
+          "code" : "familiar-ame"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
-          "code" : "acronym",
-          "display" : "Acronym"
+          "code" : "acronym"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
-          "code" : "alternative-name",
-          "display" : "Alternative Name"
+          "code" : "alternative-name"
         }]
       }
     }
@@ -605,7 +598,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-study-personnel-role.html\">codesystem Study Personnel Role v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role-primary-investigator\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-personnel-role.html#study-personnel-role-primary-investigator\">primary-investigator</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td><td>Primary Investigator</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role-administrator\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-personnel-role.html#study-personnel-role-administrator\">administrator</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td><td>Administrator</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role-collaborator\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-personnel-role.html#study-personnel-role-collaborator\">collaborator</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td><td>Collaborator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-study-personnel-role.html\">codesystem Study Personnel Role v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role-primary-investigator\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-personnel-role.html#study-personnel-role-primary-investigator\">primary-investigator</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role-administrator\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-personnel-role.html#study-personnel-role-administrator\">administrator</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role-collaborator\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-personnel-role.html#study-personnel-role-collaborator\">collaborator</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td><td/></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs",
       "version" : "0.1.0",
@@ -613,13 +606,17 @@
       "title" : "Study Personnel Role",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-02-07T15:45:47+00:00",
+      "date" : "2025-03-11T16:55:01+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:8541e7bb-053d-4b7e-955a-7c3b1efe62cc",
-        "timestamp" : "2025-02-07T15:46:58+00:00",
+        "identifier" : "urn:uuid:5659fcc3-213c-4a8a-b6c9-4a23ef2368fb",
+        "timestamp" : "2025-03-11T16:56:36+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
           "name" : "count",
           "valueInteger" : 1000
         },
@@ -637,18 +634,15 @@
         }],
         "contains" : [{
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
-          "code" : "primary-investigator",
-          "display" : "Primary Investigator"
+          "code" : "primary-investigator"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
-          "code" : "administrator",
-          "display" : "Administrator"
+          "code" : "administrator"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
-          "code" : "collaborator",
-          "display" : "Collaborator"
+          "code" : "collaborator"
         }]
       }
     }

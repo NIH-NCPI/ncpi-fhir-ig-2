@@ -10,7 +10,7 @@
   "name" : "NcpiDRSFile",
   "title" : "NCPI DRS File",
   "status" : "draft",
-  "date" : "2025-02-07T15:45:47+00:00",
+  "date" : "2025-03-11T16:55:01+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -66,6 +66,10 @@
   "baseDefinition" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file",
   "derivation" : "constraint",
   "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "0.1.0"
+    }],
     "element" : [{
       "id" : "DocumentReference",
       "path" : "DocumentReference",

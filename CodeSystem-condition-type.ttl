@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,15 +11,15 @@
   fhir:id [ fhir:v "condition-type"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem condition-type</b></p><a name=\"condition-type\"> </a><a name=\"hccondition-type\"> </a><a name=\"condition-type-en-US\"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Phenotypic-Feature<a name=\"condition-type-Phenotypic-Feature\"> </a></td><td>Phenotypic Feature</td></tr><tr><td style=\"white-space:nowrap\">Disease<a name=\"condition-type-Disease\"> </a></td><td>Disease</td></tr><tr><td style=\"white-space:nowrap\">Comorbidity<a name=\"condition-type-Comorbidity\"> </a></td><td>Comorbidity</td></tr><tr><td style=\"white-space:nowrap\">Histology<a name=\"condition-type-Histology\"> </a></td><td>Histology</td></tr><tr><td style=\"white-space:nowrap\">Clinical-Finding<a name=\"condition-type-Clinical-Finding\"> </a></td><td>Clinical Finding</td></tr><tr><td style=\"white-space:nowrap\">EHR-Condition-Code<a name=\"condition-type-EHR-Condition-Code\"> </a></td><td>EHR Condition Code</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem condition-type</b></p><a name=\"condition-type\"> </a><a name=\"hccondition-type\"> </a><a name=\"condition-type-en-US\"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Phenotypic-Feature<a name=\"condition-type-Phenotypic-Feature\"> </a></td><td>Phenotypic Feature</td></tr><tr><td style=\"white-space:nowrap\">Disease<a name=\"condition-type-Disease\"> </a></td><td>Disease</td></tr><tr><td style=\"white-space:nowrap\">Comorbidity<a name=\"condition-type-Comorbidity\"> </a></td><td>Comorbidity</td></tr><tr><td style=\"white-space:nowrap\">Histology<a name=\"condition-type-Histology\"> </a></td><td>Histology</td></tr><tr><td style=\"white-space:nowrap\">Clinical-Finding<a name=\"condition-type-Clinical-Finding\"> </a></td><td>Clinical Finding</td></tr><tr><td style=\"white-space:nowrap\">EHR-Condition-Code<a name=\"condition-type-EHR-Condition-Code\"> </a></td><td>EHR Condition Code</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ConditionType"] ; # 
   fhir:title [ fhir:v "Type of Condition"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-02-07T15:45:47+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-03-11T16:55:01+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -31,7 +32,7 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Code System for type of condition"] ; # 
-  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [

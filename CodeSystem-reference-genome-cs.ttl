@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,14 +11,14 @@
   fhir:id [ fhir:v "reference-genome-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem reference-genome-cs</b></p><a name=\"reference-genome-cs\"> </a><a name=\"hcreference-genome-cs\"> </a><a name=\"reference-genome-cs-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">GRCh37<a name=\"reference-genome-cs-GRCh37\"> </a></td><td>GRCh37</td></tr><tr><td style=\"white-space:nowrap\">GRCh38<a name=\"reference-genome-cs-GRCh38\"> </a></td><td>CRCh38</td></tr><tr><td style=\"white-space:nowrap\">GRCh38p13<a name=\"reference-genome-cs-GRCh38p13\"> </a></td><td>GRCh38.p13</td></tr><tr><td style=\"white-space:nowrap\">GRCh38p14<a name=\"reference-genome-cs-GRCh38p14\"> </a></td><td>GRCh38.p14</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"reference-genome-cs-unknown\"> </a></td><td>Unknown</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem reference-genome-cs</b></p><a name=\"reference-genome-cs\"> </a><a name=\"hcreference-genome-cs\"> </a><a name=\"reference-genome-cs-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">GRCh37<a name=\"reference-genome-cs-GRCh37\"> </a></td><td>GRCh37</td></tr><tr><td style=\"white-space:nowrap\">GRCh38<a name=\"reference-genome-cs-GRCh38\"> </a></td><td>CRCh38</td></tr><tr><td style=\"white-space:nowrap\">GRCh38p13<a name=\"reference-genome-cs-GRCh38p13\"> </a></td><td>GRCh38.p13</td></tr><tr><td style=\"white-space:nowrap\">GRCh38p14<a name=\"reference-genome-cs-GRCh38p14\"> </a></td><td>GRCh38.p14</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"reference-genome-cs-unknown\"> </a></td><td>Unknown</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ReferenceGenomeCS"] ; # 
   fhir:title [ fhir:v "Reference genome examples"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-07T15:45:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-11T16:55:01+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;

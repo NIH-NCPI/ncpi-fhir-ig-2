@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,14 +11,14 @@
   fhir:id [ fhir:v "adaptor-trimmed-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem adaptor-trimmed-cs</b></p><a name=\"adaptor-trimmed-cs\"> </a><a name=\"hcadaptor-trimmed-cs\"> </a><a name=\"adaptor-trimmed-cs-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/adaptor-trimmed-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">yes<a name=\"adaptor-trimmed-cs-yes\"> </a></td><td>Yes</td></tr><tr><td style=\"white-space:nowrap\">no<a name=\"adaptor-trimmed-cs-no\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"adaptor-trimmed-cs-unknown\"> </a></td><td>Unknown</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem adaptor-trimmed-cs</b></p><a name=\"adaptor-trimmed-cs\"> </a><a name=\"hcadaptor-trimmed-cs\"> </a><a name=\"adaptor-trimmed-cs-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/adaptor-trimmed-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">yes<a name=\"adaptor-trimmed-cs-yes\"> </a></td><td>Yes</td></tr><tr><td style=\"white-space:nowrap\">no<a name=\"adaptor-trimmed-cs-no\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"adaptor-trimmed-cs-unknown\"> </a></td><td>Unknown</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/adaptor-trimmed-cs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "AdaptorTrimmedCS"] ; # 
   fhir:title [ fhir:v "Adaptor trimmed options"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-07T15:45:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-11T16:55:01+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;

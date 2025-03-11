@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -16,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FASTQ-example</b></p><a name=\"FASTQ-example\"> </a><a name=\"hcFASTQ-example\"> </a><a name=\"FASTQ-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://edamontology.org format_1930}\">format_1930</span></p><p><b>focus</b>: <a href=\"DocumentReference-GF-6BAD9S7D.html\">DocumentReference: extension = V1,VCF,1044770380 bytes,; identifier = GF-6BAD9S7D; status = current; type = Variant calling; description = Annotated Variant Call</a></p><p><b>specimen</b>: <a href=\"Specimen-SA-000.html\">Specimen: identifier = SA_RV52EY7S; type = </a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">AssayStrategy</span></p><p><b>value</b>: <span title=\"Codes:\">WGS</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">PlatformInstrument</span></p><p><b>value</b>: <span title=\"Codes:\">IlluminaHiSeq2000</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">LibraryPrep</span></p><p><b>value</b>: <span title=\"Codes:\">polyA</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">LibrarySelection</span></p><p><b>value</b>: <span title=\"Codes:\">PolyTEnrichment</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Strandedness</span></p><p><b>value</b>: <span title=\"Codes:\">unstranded</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">IsPairedEnd</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">AdaptorTrimmed</span></p><p><b>value</b>: true</p></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FASTQ-example</b></p><a name=\"FASTQ-example\"> </a><a name=\"hcFASTQ-example\"> </a><a name=\"FASTQ-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-fastq.html\">NCPI FASTQ File</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://edamontology.org format_1930}\">format_1930</span></p><p><b>focus</b>: <a href=\"DocumentReference-GF-6BAD9S7D.html\">DocumentReference: extension = V1,VCF,1044770380 bytes,; identifier = GF-6BAD9S7D; status = current; type = Variant calling; description = Annotated Variant Call</a></p><p><b>specimen</b>: <a href=\"Specimen-SA-000.html\">Specimen: identifier = SA_RV52EY7S; type = </a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">AssayStrategy</span></p><p><b>value</b>: <span title=\"Codes:\">WGS</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">PlatformInstrument</span></p><p><b>value</b>: <span title=\"Codes:\">IlluminaHiSeq2000</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">LibraryPrep</span></p><p><b>value</b>: <span title=\"Codes:\">polyA</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">LibrarySelection</span></p><p><b>value</b>: <span title=\"Codes:\">PolyTEnrichment</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Strandedness</span></p><p><b>value</b>: <span title=\"Codes:\">unstranded</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">IsPairedEnd</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">AdaptorTrimmed</span></p><p><b>value</b>: true</p></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -99,14 +100,20 @@
          fhir:code [ fhir:v "IsPairedEnd" ]
        ] )
      ] ;
-     fhir:value [ fhir:v "false"^^xsd:boolean ]
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v false
+     ]
   ] [
      fhir:code [
        fhir:coding ( [
          fhir:code [ fhir:v "AdaptorTrimmed" ]
        ] )
      ] ;
-     fhir:value [ fhir:v "true"^^xsd:boolean ]
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,15 +11,15 @@
   fhir:id [ fhir:v "consanguinity-assertion-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet consanguinity-assertion-vs</b></p><a name=\"consanguinity-assertion-vs\"> </a><a name=\"hcconsanguinity-assertion-vs\"> </a><a name=\"consanguinity-assertion-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/428263003\">428263003</a></td><td>NOT suspected</td></tr><tr><td><a href=\"http://snomed.info/id/415684004\">415684004</a></td><td>Suspected</td></tr><tr><td><a href=\"http://snomed.info/id/410515003\">410515003</a></td><td>Known present</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet consanguinity-assertion-vs</b></p><a name=\"consanguinity-assertion-vs\"> </a><a name=\"hcconsanguinity-assertion-vs\"> </a><a name=\"consanguinity-assertion-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/428263003\">428263003</a></td><td>NOT suspected</td></tr><tr><td><a href=\"http://snomed.info/id/415684004\">415684004</a></td><td>Suspected</td></tr><tr><td><a href=\"http://snomed.info/id/410515003\">410515003</a></td><td>Known present</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/consanguinity-assertion-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ConsanguinityAssertionVS"] ; # 
   fhir:title [ fhir:v "Consanguinity Value Codes"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-02-07T15:45:47+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-03-11T16:55:01+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;

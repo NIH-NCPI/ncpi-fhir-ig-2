@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,15 +11,15 @@
   fhir:id [ fhir:v "mesh-terms"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mesh-terms</b></p><a name=\"mesh-terms\"> </a><a name=\"hcmesh-terms\"> </a><a name=\"mesh-terms-en-US\"> </a><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.113883.6.177</code></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mesh-terms</b></p><a name=\"mesh-terms\"> </a><a name=\"hcmesh-terms\"> </a><a name=\"mesh-terms-en-US\"> </a><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.113883.6.177</code></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MeshTerms"] ; # 
   fhir:title [ fhir:v "MeSH Terms"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-02-07T15:45:47+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-03-11T16:55:01+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;

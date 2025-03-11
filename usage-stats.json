@@ -467,12 +467,6 @@
         "title": "VCF or gVCF file profile"
       }
     ],
-    "Specimen": [
-      {
-        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample",
-        "title": "FHIR Profile for NCPI Sample"
-      }
-    ],
     "DocumentReference": [
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file",
@@ -507,6 +501,12 @@
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study",
         "title": "NCPI Research Study"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample",
+        "title": "NCPI Sample"
       }
     ],
     "Group": [
@@ -574,6 +574,9 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
       "Patient"
     ],
@@ -593,16 +596,16 @@
       "Consent"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability": [
-      "Specimen"
+      "Specimen.container"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration": [
-      "Specimen"
+      "Specimen.container"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality": [
-      "Specimen"
+      "Specimen.collection"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial": [
-      "Specimen"
+      "Specimen.collection"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-asserter": [
       "Observation"
