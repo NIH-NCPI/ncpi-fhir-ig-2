@@ -26,8 +26,8 @@ Description: "Laterality Information"
 * insert SetContext(Specimen.collection)
 * value[x] only code
 
-/*For spatial and laterality information, there are proposed codes in the $body-location-qualifer and
-$laterality-qualifer URLs in the Alias.fsh file for this project. We may want to revisit which set of terms
+/*For spatial and laterality information, there are proposed codes in the $body-location-qualifier and
+$laterality-qualifier URLs in the Alias.fsh file for this project. We may want to revisit which set of terms
 we use for both of these extensions
 AH 08 August 2024*/
 
@@ -46,7 +46,7 @@ Description: "Shared Data Model for Sample"
 * storageMethod 0..* code "How is the Sample stored, eg, Frozen or with additives"
 * quantity 0..1 Quantity "The total quantity of the specimen"
 
-/*Regarding sample processing method, we need a codesystem that will describe the method of processing
+/*Regarding sample processing method, we need a CodeSystem that will describe the method of processing
 applied to the sample from which a user can select.
 AH 08 August 2024*/
 
@@ -55,7 +55,7 @@ Id: biospecimen-availability
 Title: "Sample availability for Sample and Aliquot modules"
 Description: "Sample availability for Sample and Aliquot modules"
 * #available "Available"
-* #unavailable "Unavailable" 
+* #unavailable "Unavailable"
 
 /*Aliquot Module*/
 
@@ -137,7 +137,7 @@ Title: "NCPI biospecimen definition for collected samples"
 Description: "NCPI biospecimen definition for collected samples"
 * ^version = "0.1.0"
 * ^status = #draft
-* collection 1..1 
+* collection 1..1
 
 Profile: NCPINonCollectedSample
 Parent: NCPISample
@@ -146,4 +146,4 @@ Title: "NCPI biospecimen definition for non-collected samples"
 Description: "NCPI biospecimen definition for non-collected samples"
 * ^version = "0.1.0"
 * ^status = #draft
-* collection 0..0 
+* collection 0..0
