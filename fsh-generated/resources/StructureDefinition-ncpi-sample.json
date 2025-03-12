@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ncpi-sample",
   "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "NCPISample",
   "title": "NCPI Sample",
   "status": "draft",
@@ -36,11 +36,15 @@
         ]
       },
       {
+        "id": "Specimen.id",
+        "path": "Specimen.id",
+        "short": "Unique internal ID for this sample",
+        "min": 1
+      },
+      {
         "id": "Specimen.identifier",
         "path": "Specimen.identifier",
-        "short": "Unique ID for this sample",
-        "min": 1,
-        "max": "1"
+        "short": "Various identifiers used for the sample"
       },
       {
         "id": "Specimen.status",
@@ -67,7 +71,7 @@
       {
         "id": "Specimen.collection",
         "path": "Specimen.collection",
-        "short": "Information about how the biospecimen was collected. Collection information may be unknown, but must be included when there is no parent sample "
+        "short": "Information about how the biospecimen was collected. Collection information may be unknown, but must be included when there is no parent sample"
       },
       {
         "id": "Specimen.collection.extension",
