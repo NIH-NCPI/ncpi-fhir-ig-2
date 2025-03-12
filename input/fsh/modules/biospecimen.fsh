@@ -104,12 +104,14 @@ Parent: Specimen
 Id: ncpi-sample
 Title: "NCPI Sample"
 Description: "FHIR Profile for NCPI Sample"
-* ^version = "0.1.0"
+* ^version = "0.1.1"
 * ^status = #draft
 * obeys collection-no-parent
 * obeys parent-no-collection
-* identifier 1..1 /*Sample.SampleID*/
-* identifier ^short = "Unique ID for this sample"
+* id 1..1 /*Sample.SampleID*/
+* id ^short = "Unique internal ID for this sample"
+* identifier 0..*
+* identifier ^short = "Various identifiers used for the sample"
 * subject 1..1 /*Sample.Participant*/
 * subject ^short = "The participant from whom the biospecimen was taken"
 * parent 0..* /*Sample.ParentSample*/
@@ -122,7 +124,7 @@ Description: "FHIR Profile for NCPI Sample"
 * status ^short = "Can this Sample be requested for further analysis?"
 * condition 0..* /*Sample.StorageMethod*/
 * condition ^short = "How is the Sample stored, eg, Frozen or with additives"
-* collection ^short = "Information about how the biospecimen was collected. Collection information may be unknown, but must be included when there is no parent sample "
+* collection ^short = "Information about how the biospecimen was collected. Collection information may be unknown, but must be included when there is no parent sample"
 * collection.collected[x] only dateTime /*Age at collection*/
 * collection.collectedDateTime ^short = "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 * collection.quantity 0..1 /*Sample.Quantity*/

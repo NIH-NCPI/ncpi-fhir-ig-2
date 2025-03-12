@@ -306,7 +306,7 @@
         },
         "name": "Example biospecimen based on data from CBTN",
         "description": "Example biospecimen based on data from CBTN",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
       },
       {
         "reference": {
@@ -314,7 +314,7 @@
         },
         "name": "Example biospecimen based on data from GREGoR",
         "description": "Example biospecimen based on data from GREGoR",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
       },
       {
         "reference": {
@@ -470,14 +470,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-sample"
-        },
-        "name": "FHIR Profile for NCPI Sample",
-        "description": "FHIR Profile for NCPI Sample",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ncpi-gene-fusion-expression"
         },
         "name": "Gene fusion or gene expression file profile",
@@ -622,22 +614,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-collected-sample"
-        },
-        "name": "NCPI biospecimen definition for collected samples",
-        "description": "NCPI biospecimen definition for collected samples",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncpi-non-collected-sample"
-        },
-        "name": "NCPI biospecimen definition for non-collected samples",
-        "description": "NCPI biospecimen definition for non-collected samples",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ncpi-condition"
         },
         "name": "NCPI Conditon",
@@ -746,6 +722,14 @@
         },
         "name": "NCPI Research Study Group",
         "description": "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-sample"
+        },
+        "name": "NCPI Sample",
+        "description": "FHIR Profile for NCPI Sample",
         "exampleBoolean": false
       },
       {
