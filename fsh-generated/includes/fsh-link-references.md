@@ -52,7 +52,6 @@
 [NcpiFamilyRelationship]: StructureDefinition-ncpi-family-relationship.html
 [FamilyType]: StructureDefinition-family-type.html
 [NcpiFamilyTypesVS]: ValueSet-ncpi-family-types-vs.html
-[NCPISample]: StructureDefinition-ncpi-sample.html
 [NcpiGeneFusionOrExpression]: StructureDefinition-ncpi-gene-fusion-expression.html
 [kf-gsr-allowed-access]: Consent-kf-gsr-allowed-access.html
 [gregor-gru-consent]: Consent-gregor-gru-consent.html
@@ -71,8 +70,6 @@
 [BodyLocationQualifierVS]: ValueSet-condition-location-vs.html
 [NcpiMAF]: StructureDefinition-ncpi-maf.html
 [MeshTerms]: ValueSet-mesh-terms.html
-[NCPICollectedSample]: StructureDefinition-ncpi-collected-sample.html
-[NCPINonCollectedSample]: StructureDefinition-ncpi-non-collected-sample.html
 [NcpiCondition]: StructureDefinition-ncpi-condition.html
 [NcpiDRSFile]: StructureDefinition-ncpi-drs-file.html
 [NcpiFamilyTypes]: CodeSystem-ncpi-family-types.html
@@ -87,6 +84,7 @@
 [NcpiResearchCollection]: StructureDefinition-ncpi-research-collection.html
 [NcpiResearchStudy]: StructureDefinition-ncpi-research-study.html
 [ResearchStudyGroup]: StructureDefinition-research-study-group.html
+[NCPISample]: StructureDefinition-ncpi-sample.html
 [NcpiStudyFamily]: StructureDefinition-ncpi-study-family.html
 [NcpiStudyParticipant]: StructureDefinition-ncpi-Study-Participant.html
 [kf-research-study-cbtn-participants]: Group-kf-research-study-cbtn-participants.html
