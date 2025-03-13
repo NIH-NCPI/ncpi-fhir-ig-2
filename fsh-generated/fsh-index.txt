@@ -30,8 +30,8 @@ Consent-kf-gsr-allowed-access.json                                kf-gsr-allowed
 Consent-kf-registered-allowed-access.json                         kf-registered-allowed-access              Instance    examples/CBTN_example.fsh            196 - 207
 DocumentReference-GF-6BAD9S7D.json                                GF-6BAD9S7D                               Instance    examples/CBTN_example.fsh            438 - 459
 DocumentReference-GSS123456-01-010-SG-2.json                      GSS123456-01-010-SG-2                     Instance    examples/GREGoR_example.fsh          147 - 168
+FamilyMemberHistory-cbtn-family-relationship-daughter.json        cbtn-family-relationship-daughter         Instance    examples/CBTN_example.fsh            360 - 368
 FamilyMemberHistory-cbtn-family-relationship-mother.json          cbtn-family-relationship-mother           Instance    examples/CBTN_example.fsh            348 - 356
-FamilyMemberHistory-cbtn-family-relationship-son.json             cbtn-family-relationship-son              Instance    examples/CBTN_example.fsh            360 - 368
 FamilyMemberHistory-gregor-family-relationship-mother.json        gregor-family-relationship-mother         Instance    examples/GREGoR_example.fsh          108 - 116
 Group-cbtn-study-family.json                                      FM-00C8Y7DG                               Instance    examples/CBTN_example.fsh            327 - 346
 Group-gregor-research-study-participants.json                     gregor-research-study-participants        Instance    examples/GREGoR_example.fsh          12 - 23
@@ -101,7 +101,7 @@ StructureDefinition-ncpi-bamcram.json                             NcpiBAMCRAM   
 StructureDefinition-ncpi-condition.json                           NcpiCondition                             Profile     modules/condition.fsh                123 - 181
 StructureDefinition-ncpi-drs-attachment.json                      DRSAttachment                             Profile     modules/files.fsh                    116 - 123
 StructureDefinition-ncpi-drs-file.json                            NcpiDRSFile                               Profile     modules/files.fsh                    155 - 169
-StructureDefinition-ncpi-family-relationship.json                 NcpiFamilyRelationship                    Profile     modules/family.fsh                   158 - 180
+StructureDefinition-ncpi-family-relationship.json                 NcpiFamilyRelationship                    Profile     modules/family.fsh                   172 - 194
 StructureDefinition-ncpi-fastq.json                               NcpiFASTQ                                 Profile     modules/file-metadata.fsh            131 - 178
 StructureDefinition-ncpi-file-metadata.json                       NcpiFileMetadata                          Profile     modules/file-metadata.fsh            106 - 113
 StructureDefinition-ncpi-file.json                                NcpiFile                                  Profile     modules/files.fsh                    127 - 153
@@ -137,6 +137,7 @@ ValueSet-condition-location-vs.json                               BodyLocationQu
 ValueSet-condition-type-vs.json                                   ConditionTypeVS                           ValueSet    modules/condition.fsh                45 - 48
 ValueSet-consanguinity-assertion-vs.json                          ConsanguinityAssertionVS                  ValueSet    modules/family.fsh                   84 - 92
 ValueSet-edam-ontology-terms.json                                 EDAMOntologyTerms                         ValueSet    modules/files.fsh                    47 - 51
+ValueSet-family-biological-relationship-vs.json                   FamilyBiologicalRelationshipVS            ValueSet    modules/family.fsh                   158 - 166
 ValueSet-mesh-terms.json                                          MeshTerms                                 ValueSet    modules/research-accesss-policy.fsh  54 - 60
 ValueSet-ncpi-family-types-vs.json                                NcpiFamilyTypesVS                         ValueSet    modules/family.fsh                   61 - 67
 ValueSet-research-data-access-code-vs.json                        ResearchDataAccessCodeVS                  ValueSet    modules/research-accesss-policy.fsh  25 - 30

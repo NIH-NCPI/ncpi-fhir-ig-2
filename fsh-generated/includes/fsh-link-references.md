@@ -6,13 +6,14 @@
 [AgeAtLastVitalStatus]: StructureDefinition-research-age-at-last-vital-status.html
 [HashType]: StructureDefinition-hash-type.html
 [cbtn-family-relationship-mother]: FamilyMemberHistory-cbtn-family-relationship-mother.html
-[cbtn-family-relationship-son]: FamilyMemberHistory-cbtn-family-relationship-son.html
+[cbtn-family-relationship-daughter]: FamilyMemberHistory-cbtn-family-relationship-daughter.html
 [gregor-family-relationship-mother]: FamilyMemberHistory-gregor-family-relationship-mother.html
 [AssayStrategyCS]: CodeSystem-assay-strategy-cs.html
 [ConditionAssertionVS]: ValueSet-condition-assertion-vs.html
 [ConditionAssertion]: CodeSystem-condition-assertion.html
 [AliquotAvailability]: StructureDefinition-aliquot-availability.html
 [NcpiBAMCRAM]: StructureDefinition-ncpi-bamcram.html
+[FamilyBiologicalRelationshipVS]: ValueSet-family-biological-relationship-vs.html
 [kf-gru-dac-consent]: Consent-kf-gru-dac-consent.html
 [kf-gru-dbgap-consent]: Consent-kf-gru-dbgap-consent.html
 [kf-research-study-personnel-role-op-lead]: PractitionerRole-kf-research-study-personnel-role-op-lead.html

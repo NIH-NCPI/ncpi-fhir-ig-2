@@ -103,10 +103,10 @@
       },
       {
         "reference": {
-          "reference": "FamilyMemberHistory/cbtn-family-relationship-son"
+          "reference": "FamilyMemberHistory/cbtn-family-relationship-daughter"
         },
         "name": "An example family relationship based on data from CBTN",
-        "description": "An example family relationship based on data from CBTN.",
+        "description": "An example family relationship based on data from CBTN. This demonstrates using the extensibility to express the reverse of the unambiguous relationship convention.",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
       },
       {
@@ -154,6 +154,14 @@
         },
         "name": "BAM or CRAM file profile",
         "description": "BAM or CRAM file profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/family-biological-relationship-vs"
+        },
+        "name": "Biological Relationship Codes",
+        "description": "List of codes indicating the biological relationship between two individuals in a family. It is restrictive to encourage a standardized representation.",
         "exampleBoolean": false
       },
       {

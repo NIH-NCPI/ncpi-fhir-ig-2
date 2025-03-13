@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "FamilyBiologicalRelationshipVS",
+  "id": "family-biological-relationship-vs",
+  "title": "Biological Relationship Codes",
+  "description": "List of codes indicating the biological relationship between two individuals in a family. It is restrictive to encourage a standardized representation.",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/family-biological-relationship-vs",
+  "version": "0.1.0",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "version": "4.3.0",
+        "concept": [
+          {
+            "code": "NPRN",
+            "display": "Natural Parent"
+          },
+          {
+            "code": "ITWIN",
+            "display": "Identical Twin"
+          }
+        ]
+      },
+      {
+        "system": "http://purl.org/ga4gh/kin.fhir",
+        "version": "0.1.0",
+        "concept": [
+          {
+            "code": "KIN:005",
+            "display": "isGestationalCarrier"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -34,14 +34,14 @@
         "id": "FamilyMemberHistory.extension:relative",
         "path": "FamilyMemberHistory.extension",
         "sliceName": "relative",
-        "short": "The other participant in the relationship. That is, if the relationship is NCHILD (natural child), the \"relative\" is the parent.",
+        "short": "The other participant in the relationship. This participant is the player of the role listed in the relationship field. That is, if the relationship is NPRN (natural parent), the \"relative\" is the parent.",
         "min": 1,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record"
+              "http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record|4.3.0"
             ]
           }
         ],
@@ -50,7 +50,7 @@
       {
         "id": "FamilyMemberHistory.patient",
         "path": "FamilyMemberHistory.patient",
-        "short": "The participant we are describing. That is, if the relationship is NCHILD (natural child), the patient is the child.",
+        "short": "The participant we are describing. That is, if the relationship is NPRN (natural parent), the patient is the child.",
         "mustSupport": true
       },
       {
@@ -61,11 +61,11 @@
       {
         "id": "FamilyMemberHistory.relationship",
         "path": "FamilyMemberHistory.relationship",
-        "short": "The relationship between the patient and the relative. For the sake of users, only use NCHILD and ITWIN. All other biological relationships can be expressed with these and dummy individuals. ITWIN should be used for all monozygotic multiples (triplets, quadruplets, etc.) and should be present for all the directions of the relationship. This provides an unambiguous representation of the relationship. Example: A,B,C are triplets. You need A→B, B→A, A→C, C→A, B→C, C→B. If X and Y are twins, you need X→Y and Y→X. If Q is the grandchild of R but Q's parent is outside the dataset, then you need to make a dummy D with unknown sex and age and make Q-(NCHILD)→D and D-(NCHILD)→R. Values like mother and son are redundant with the sex of the participants.",
+        "short": "The family role the relative fills with respect to the patient for this relationship. For the sake of users, prefer to exclusively use NPRN and ITWIN for genetic relationships. All other genetic relationships can be expressed with these and dummy individuals. ITWIN should be used for all monozygotic multiples (triplets, quadruplets, etc.) and should be present for all the directions of the relationship. This provides an unambiguous representation of the relationship. Example: A,B,C are triplets. You need A→B, B→A, A→C, C→A, B→C, C→B. If X and Y are twins, you need X→Y and Y→X. If Q is the grandchild of R but Q's parent is outside the dataset, then you need to make a dummy D with unknown sex and age and make Q-(NCHILD)→D and D-(NCHILD)→R. Values like mother and son are redundant with the sex of the participants and unnecessarily reductive.",
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://terminology.hl7.org/ValueSet/v3-FamilyMember"
+          "valueSet": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/family-biological-relationship-vs"
         }
       },
       {
