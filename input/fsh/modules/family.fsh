@@ -155,6 +155,20 @@ Description: "The **Shared Data Model for Family Relationship**"
 * relationship 1..1 code "The relationship between the subject and the target."
 
 
+ValueSet: FamilyBiologicalRelationshipVS
+Id: family-biological-relationship-vs
+Title: "Biological Relationship Codes"
+Description: "List of codes indicating the biological relationship between two individuals in a family. It is restrictive to encourage a standardized representation."
+* ^version = "0.1.0"
+* ^experimental = false
+* include $family-role-code#NPRN  "Natural Parent"
+* include $family-role-code#ITWIN  "Identical Twin"
+* include $ga4gh-kin#KIN:005 "isGestationalCarrier"
+// If we were using version 5, we could add the rest of the
+// codes from $ncpi-family-member as additional bindings
+// to guide users when not using one of the main bindings.
+
+
 Profile: NcpiFamilyRelationship
 Parent: FamilyMemberHistory
 Id: ncpi-family-relationship
@@ -163,12 +177,12 @@ Description: "A relationship between individuals in a pedigree or family."
 * ^version = "0.2.0"
 * ^status = #draft
 * extension contains $family-patient-record named relative 1..1 MS
-* extension[relative] ^short = "The other participant in the relationship. That is, if the relationship is NCHILD (natural child), the \"relative\" is the parent."
+* extension[relative] ^short = "The other participant in the relationship. This participant is the player of the role listed in the relationship field. That is, if the relationship is NPRN (natural parent), the \"relative\" is the parent."
 * relationship 1..1 MS
-* relationship from $ncpi-family-member (extensible)
-* relationship ^short = "The relationship between the patient and the relative. For the sake of users, only use NCHILD and ITWIN. All other biological relationships can be expressed with these and dummy individuals. ITWIN should be used for all monozygotic multiples (triplets, quadruplets, etc.) and should be present for all the directions of the relationship. This provides an unambiguous representation of the relationship. Example: A,B,C are triplets. You need A→B, B→A, A→C, C→A, B→C, C→B. If X and Y are twins, you need X→Y and Y→X. If Q is the grandchild of R but Q's parent is outside the dataset, then you need to make a dummy D with unknown sex and age and make Q-(NCHILD)→D and D-(NCHILD)→R. Values like mother and son are redundant with the sex of the participants."
+* relationship from FamilyBiologicalRelationshipVS (extensible)
+* relationship ^short = "The family role the relative fills with respect to the patient for this relationship. For the sake of users, prefer to exclusively use NPRN and ITWIN for genetic relationships. All other genetic relationships can be expressed with these and dummy individuals. ITWIN should be used for all monozygotic multiples (triplets, quadruplets, etc.) and should be present for all the directions of the relationship. This provides an unambiguous representation of the relationship. Example: A,B,C are triplets. You need A→B, B→A, A→C, C→A, B→C, C→B. If X and Y are twins, you need X→Y and Y→X. If Q is the grandchild of R but Q's parent is outside the dataset, then you need to make a dummy D with unknown sex and age and make Q-(NCHILD)→D and D-(NCHILD)→R. Values like mother and son are redundant with the sex of the participants and unnecessarily reductive."
 * patient 1..1 MS
-* patient ^short = "The participant we are describing. That is, if the relationship is NCHILD (natural child), the patient is the child."
+* patient ^short = "The participant we are describing. That is, if the relationship is NPRN (natural parent), the patient is the child."
 * name 0..0
 * sex 0..0
 * born[x] 0..0
