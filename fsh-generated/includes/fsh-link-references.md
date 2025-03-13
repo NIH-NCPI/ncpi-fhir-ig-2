@@ -5,14 +5,15 @@
 [AgeAtAssertion]: StructureDefinition-age-at-assertion.html
 [AgeAtLastVitalStatus]: StructureDefinition-research-age-at-last-vital-status.html
 [HashType]: StructureDefinition-hash-type.html
-[cbtn-family-relationship-mother]: Observation-cbtn-family-relationship-mother.html
-[cbtn-family-relationship-son]: Observation-cbtn-family-relationship-son.html
-[gregor-family-relationship-mother]: Observation-gregor-family-relationship-mother.html
+[cbtn-family-relationship-mother]: FamilyMemberHistory-cbtn-family-relationship-mother.html
+[cbtn-family-relationship-daughter]: FamilyMemberHistory-cbtn-family-relationship-daughter.html
+[gregor-family-relationship-mother]: FamilyMemberHistory-gregor-family-relationship-mother.html
 [AssayStrategyCS]: CodeSystem-assay-strategy-cs.html
 [ConditionAssertionVS]: ValueSet-condition-assertion-vs.html
 [ConditionAssertion]: CodeSystem-condition-assertion.html
 [AliquotAvailability]: StructureDefinition-aliquot-availability.html
 [NcpiBAMCRAM]: StructureDefinition-ncpi-bamcram.html
+[FamilyBiologicalRelationshipVS]: ValueSet-family-biological-relationship-vs.html
 [kf-gru-dac-consent]: Consent-kf-gru-dac-consent.html
 [kf-gru-dbgap-consent]: Consent-kf-gru-dbgap-consent.html
 [kf-research-study-personnel-role-op-lead]: PractitionerRole-kf-research-study-personnel-role-op-lead.html
@@ -26,6 +27,7 @@
 [ConsanguinityAssertionVS]: ValueSet-consanguinity-assertion-vs.html
 [kf-research-study-personnel-role-pi]: PractitionerRole-kf-research-study-personnel-role-pi.html
 [kf-research-study-personnel-role-pi-x01]: PractitionerRole-kf-research-study-personnel-role-pi-x01.html
+[Description]: StructureDefinition-description.html
 [DRSAttachment]: StructureDefinition-ncpi-drs-attachment.html
 [ComponentElements]: CodeSystem-component-elements.html
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
@@ -52,7 +54,6 @@
 [NcpiFamilyRelationship]: StructureDefinition-ncpi-family-relationship.html
 [FamilyType]: StructureDefinition-family-type.html
 [NcpiFamilyTypesVS]: ValueSet-ncpi-family-types-vs.html
-[NCPISample]: StructureDefinition-ncpi-sample.html
 [NcpiGeneFusionOrExpression]: StructureDefinition-ncpi-gene-fusion-expression.html
 [kf-gsr-allowed-access]: Consent-kf-gsr-allowed-access.html
 [gregor-gru-consent]: Consent-gregor-gru-consent.html
@@ -71,8 +72,6 @@
 [BodyLocationQualifierVS]: ValueSet-condition-location-vs.html
 [NcpiMAF]: StructureDefinition-ncpi-maf.html
 [MeshTerms]: ValueSet-mesh-terms.html
-[NCPICollectedSample]: StructureDefinition-ncpi-collected-sample.html
-[NCPINonCollectedSample]: StructureDefinition-ncpi-non-collected-sample.html
 [NcpiCondition]: StructureDefinition-ncpi-condition.html
 [NcpiDRSFile]: StructureDefinition-ncpi-drs-file.html
 [NcpiFamilyTypes]: CodeSystem-ncpi-family-types.html
@@ -87,6 +86,7 @@
 [NcpiResearchCollection]: StructureDefinition-ncpi-research-collection.html
 [NcpiResearchStudy]: StructureDefinition-ncpi-research-study.html
 [ResearchStudyGroup]: StructureDefinition-research-study-group.html
+[NCPISample]: StructureDefinition-ncpi-sample.html
 [NcpiStudyFamily]: StructureDefinition-ncpi-study-family.html
 [NcpiStudyParticipant]: StructureDefinition-ncpi-Study-Participant.html
 [kf-research-study-cbtn-participants]: Group-kf-research-study-cbtn-participants.html
@@ -129,7 +129,6 @@
 [CdmStudyFamily]: StructureDefinition-SharedDataModelStudyFamily.html
 [BiospecimenSpatial]: StructureDefinition-biospecimen-spatial.html
 [StrandednessCS]: CodeSystem-strandedness-cs.html
-[Description]: StructureDefinition-description.html
 [FamilyRole]: StructureDefinition-family-role.html
 [StudyFamilyFocus]: StructureDefinition-study-family-focus.html
 [StudyNameTypeVS]: ValueSet-study-name-type-vs.html

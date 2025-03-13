@@ -95,7 +95,7 @@
       },
       {
         "reference": {
-          "reference": "Observation/cbtn-family-relationship-mother"
+          "reference": "FamilyMemberHistory/cbtn-family-relationship-mother"
         },
         "name": "An example family relationship based on data from CBTN",
         "description": "An example family relationship based on data from CBTN.",
@@ -103,15 +103,15 @@
       },
       {
         "reference": {
-          "reference": "Observation/cbtn-family-relationship-son"
+          "reference": "FamilyMemberHistory/cbtn-family-relationship-daughter"
         },
         "name": "An example family relationship based on data from CBTN",
-        "description": "An example family relationship based on data from CBTN.",
+        "description": "An example family relationship based on data from CBTN. This demonstrates using the extensibility to express the reverse of the unambiguous relationship convention.",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
       },
       {
         "reference": {
-          "reference": "Observation/gregor-family-relationship-mother"
+          "reference": "FamilyMemberHistory/gregor-family-relationship-mother"
         },
         "name": "An example family relationship based on data from GREGoR",
         "description": "An example family relationship based on data from GREGoR.",
@@ -154,6 +154,14 @@
         },
         "name": "BAM or CRAM file profile",
         "description": "BAM or CRAM file profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/family-biological-relationship-vs"
+        },
+        "name": "Biological Relationship Codes",
+        "description": "List of codes indicating the biological relationship between two individuals in a family. It is restrictive to encourage a standardized representation.",
         "exampleBoolean": false
       },
       {
@@ -262,6 +270,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/description"
+        },
+        "name": "Description",
+        "description": "Free text describing containing resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncpi-drs-attachment"
         },
         "name": "DRS Attachment",
@@ -306,7 +322,7 @@
         },
         "name": "Example biospecimen based on data from CBTN",
         "description": "Example biospecimen based on data from CBTN",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
       },
       {
         "reference": {
@@ -314,7 +330,7 @@
         },
         "name": "Example biospecimen based on data from GREGoR",
         "description": "Example biospecimen based on data from GREGoR",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
       },
       {
         "reference": {
@@ -449,7 +465,7 @@
           "reference": "StructureDefinition/ncpi-family-relationship"
         },
         "name": "Family Relationship",
-        "description": "Family Relationship",
+        "description": "A relationship between individuals in a pedigree or family.",
         "exampleBoolean": false
       },
       {
@@ -466,14 +482,6 @@
         },
         "name": "Family Types Codes",
         "description": "A value set with all codes used for the expected family types.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncpi-sample"
-        },
-        "name": "FHIR Profile for NCPI Sample",
-        "description": "FHIR Profile for NCPI Sample",
         "exampleBoolean": false
       },
       {
@@ -622,22 +630,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-collected-sample"
-        },
-        "name": "NCPI biospecimen definition for collected samples",
-        "description": "NCPI biospecimen definition for collected samples",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncpi-non-collected-sample"
-        },
-        "name": "NCPI biospecimen definition for non-collected samples",
-        "description": "NCPI biospecimen definition for non-collected samples",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ncpi-condition"
         },
         "name": "NCPI Conditon",
@@ -746,6 +738,14 @@
         },
         "name": "NCPI Research Study Group",
         "description": "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-sample"
+        },
+        "name": "NCPI Sample",
+        "description": "FHIR Profile for NCPI Sample",
         "exampleBoolean": false
       },
       {
@@ -1082,14 +1082,6 @@
         },
         "name": "Strandedness options",
         "description": "Strandedness options",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/description"
-        },
-        "name": "Study Family Description",
-        "description": "Free text describing the study family, such as potential inheritance or details about consanguinity",
         "exampleBoolean": false
       },
       {
