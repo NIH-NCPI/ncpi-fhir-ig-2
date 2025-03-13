@@ -130,7 +130,7 @@ Usage: #example
 Description: "An example family relationship based on data from GREGoR."
 * patient = Reference(GSS123456)
 * extension[relative].valueReference = Reference(GSS654321)
-* relationship = $family-role-code#NCHILD "natural child"
+* relationship = $family-role-code#NPRN "natural parent"
 * status = #completed
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
