@@ -35,25 +35,25 @@
     "outputFile": "CodeSystem-component-elements.json",
     "fshName": "ComponentElements",
     "fshType": "CodeSystem",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 114,
-    "endLine": 121
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 130,
+    "endLine": 139
   },
   {
     "outputFile": "CodeSystem-condition-assertion.json",
     "fshName": "ConditionAssertion",
     "fshType": "CodeSystem",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 50,
-    "endLine": 59
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 66,
+    "endLine": 75
   },
   {
     "outputFile": "CodeSystem-condition-type.json",
     "fshName": "ConditionType",
     "fshType": "CodeSystem",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 31,
-    "endLine": 43
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 47,
+    "endLine": 59
   },
   {
     "outputFile": "CodeSystem-example-hash-type-code-system.json",
@@ -244,8 +244,8 @@
     "fshName": "GSS123456-01-010-SG-2",
     "fshType": "Instance",
     "fshFile": "examples/GREGoR_example.fsh",
-    "startLine": 147,
-    "endLine": 168
+    "startLine": 170,
+    "endLine": 191
   },
   {
     "outputFile": "Group-cbtn-study-family.json",
@@ -304,6 +304,14 @@
     "endLine": 477
   },
   {
+    "outputFile": "Observation-GSS123456-assertion.json",
+    "fshName": "GSS123456-assertion",
+    "fshType": "Instance",
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 136,
+    "endLine": 156
+  },
+  {
     "outputFile": "Observation-GSS123456-condition.json",
     "fshName": "GSS123456-condition",
     "fshType": "Instance",
@@ -340,8 +348,8 @@
     "fshName": "gregor-example-metadata",
     "fshType": "Instance",
     "fshFile": "examples/GREGoR_example.fsh",
-    "startLine": 171,
-    "endLine": 189
+    "startLine": 194,
+    "endLine": 212
   },
   {
     "outputFile": "Observation-gregor-family-relationship-mother.json",
@@ -460,8 +468,8 @@
     "fshName": "GSS123456-01-010",
     "fshType": "Instance",
     "fshFile": "examples/GREGoR_example.fsh",
-    "startLine": 136,
-    "endLine": 144
+    "startLine": 159,
+    "endLine": 167
   },
   {
     "outputFile": "Specimen-SA-000.json",
@@ -491,9 +499,9 @@
     "outputFile": "StructureDefinition-SharedDataModelCondition.json",
     "fshName": "CdmCondition",
     "fshType": "Logical",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 3,
-    "endLine": 21
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 19,
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelFamilyRelationship.json",
@@ -526,6 +534,14 @@
     "fshFile": "modules/file-metadata.fsh",
     "startLine": 1,
     "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-SharedDataModelParticipantAssertion.json",
+    "fshName": "CdmParticipantAssertion",
+    "fshType": "Logical",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 3,
+    "endLine": 16
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelPerson.json",
@@ -619,9 +635,9 @@
     "outputFile": "StructureDefinition-age-at-assertion.json",
     "fshName": "AgeAtAssertion",
     "fshType": "Extension",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 78,
-    "endLine": 85
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 94,
+    "endLine": 101
   },
   {
     "outputFile": "StructureDefinition-aliquot-availability.json",
@@ -656,28 +672,20 @@
     "endLine": 20
   },
   {
-    "outputFile": "StructureDefinition-condition-asserter.json",
-    "fshName": "ConditionAsserter",
-    "fshType": "Extension",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 88,
-    "endLine": 94
-  },
-  {
     "outputFile": "StructureDefinition-condition-laterality.json",
     "fshName": "ConditionLaterality",
     "fshType": "Extension",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 105,
-    "endLine": 111
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 121,
+    "endLine": 127
   },
   {
     "outputFile": "StructureDefinition-condition-location.json",
     "fshName": "ConditionLocation",
     "fshType": "Extension",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 97,
-    "endLine": 103
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 113,
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-consanguinity.json",
@@ -702,6 +710,14 @@
     "fshFile": "modules/family.fsh",
     "startLine": 76,
     "endLine": 81
+  },
+  {
+    "outputFile": "StructureDefinition-entity-asserter.json",
+    "fshName": "EntityAsserter",
+    "fshType": "Extension",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 104,
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-family-role.json",
@@ -792,20 +808,12 @@
     "endLine": 227
   },
   {
-    "outputFile": "StructureDefinition-ncpi-collected-sample.json",
-    "fshName": "NCPICollectedSample",
-    "fshType": "Profile",
-    "fshFile": "modules/biospecimen.fsh",
-    "startLine": 133,
-    "endLine": 140
-  },
-  {
     "outputFile": "StructureDefinition-ncpi-condition.json",
     "fshName": "NcpiCondition",
     "fshType": "Profile",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 123,
-    "endLine": 181
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 191,
+    "endLine": 241
   },
   {
     "outputFile": "StructureDefinition-ncpi-drs-attachment.json",
@@ -872,12 +880,12 @@
     "endLine": 325
   },
   {
-    "outputFile": "StructureDefinition-ncpi-non-collected-sample.json",
-    "fshName": "NCPINonCollectedSample",
+    "outputFile": "StructureDefinition-ncpi-participant-assertion.json",
+    "fshName": "NcpiParticipantAssertion",
     "fshType": "Profile",
-    "fshFile": "modules/biospecimen.fsh",
-    "startLine": 142,
-    "endLine": 149
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 141,
+    "endLine": 188
   },
   {
     "outputFile": "StructureDefinition-ncpi-participant.json",
@@ -932,8 +940,8 @@
     "fshName": "NCPISample",
     "fshType": "Profile",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 90,
-    "endLine": 130
+    "startLine": 102,
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.json",
@@ -1067,41 +1075,41 @@
     "outputFile": "ValueSet-condition-assertion-vs.json",
     "fshName": "ConditionAssertionVS",
     "fshType": "ValueSet",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 61,
-    "endLine": 64
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 77,
+    "endLine": 80
   },
   {
     "outputFile": "ValueSet-condition-code-vs.json",
     "fshName": "ConditionCodeVS",
     "fshType": "ValueSet",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 24,
-    "endLine": 29
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 40,
+    "endLine": 45
   },
   {
     "outputFile": "ValueSet-condition-laterality-vs.json",
     "fshName": "LateralityQualifierVS",
     "fshType": "ValueSet",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 72,
-    "endLine": 76
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 88,
+    "endLine": 92
   },
   {
     "outputFile": "ValueSet-condition-location-vs.json",
     "fshName": "BodyLocationQualifierVS",
     "fshType": "ValueSet",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 66,
-    "endLine": 70
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 82,
+    "endLine": 86
   },
   {
     "outputFile": "ValueSet-condition-type-vs.json",
     "fshName": "ConditionTypeVS",
     "fshType": "ValueSet",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 45,
-    "endLine": 48
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 61,
+    "endLine": 64
   },
   {
     "outputFile": "ValueSet-consanguinity-assertion-vs.json",

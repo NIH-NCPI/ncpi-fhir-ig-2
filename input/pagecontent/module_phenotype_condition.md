@@ -18,8 +18,8 @@ Condition Assertions are records of a present or absent condition status for a p
 
 Condition Assertions may be contradictory over time- the goal is to represent faithfully what was reported by the study. Consumers of this data should expect to need to aggregate this longitudinal record or reconcile data captured at different granularity. For example, it’s common to capture broad negative categories (No Heart Conditions) but also specific positive assertions (Atrial Septal Defect).
 
-### Condition Asserter
-Condition Asserter is used to represent the source for the condition/phenotype diagnosis. For example, this field can be used to document whether the condition was pulled from an EHR or found in other clinical documentation. 
+### Entity Asserter
+Entity Asserter is used to represent the source for the condition/phenotype diagnosis. For example, this field can be used to document whether the condition was pulled from an EHR or found in other clinical documentation. 
 
 ## Conventions
 We do not set a distinction in entities here about “Phenotypes” vs “Diseases” as often used in a rare disease setting (eg, in Phenopackets). There is utility in indicating the intent of the submitter where possible, but this is not represented as separate entities.
@@ -27,6 +27,6 @@ We do not set a distinction in entities here about “Phenotypes” vs “Diseas
 ## Relevant Artifacts
 - [NCPI Condition](StructureDefinition-ncpi-condition.html)
 - [Condition Assertion](ValueSet-condition-assertion-vs.html)
-- [Condition Asserter](StructureDefinition-condition-asserter.html)
+- [Entity Asserter](StructureDefinition-entity-asserter.html)
 - [Condition Location](StructureDefinition-condition-location.html)
 - [Condition Laterality](StructureDefinition-condition-laterality.html)

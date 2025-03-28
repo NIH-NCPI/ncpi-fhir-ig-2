@@ -11,24 +11,10 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Observation.extension",
-        "path": "Observation.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
       {
         "id": "Observation.extension:condition-location",
         "path": "Observation.extension",
@@ -62,22 +48,6 @@
         ]
       },
       {
-        "id": "Observation.extension:condition-asserter",
-        "path": "Observation.extension",
-        "sliceName": "condition-asserter",
-        "short": "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-asserter"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Observation.category",
         "path": "Observation.category",
         "short": "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
@@ -93,27 +63,9 @@
         "short": "Detailed description / free text about this condition."
       },
       {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "short": "The participant we are describing",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "The date or age at which this condition is being asserted.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
+        "short": "The date or age at which this condition is being asserted.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
       },
       {
         "id": "Observation.value[x]",
@@ -150,26 +102,6 @@
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
         "short": "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
-      },
-      {
-        "id": "Observation.method",
-        "path": "Observation.method",
-        "short": "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc."
-      },
-      {
-        "id": "Observation.component",
-        "path": "Observation.component",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "rules": "open",
-          "description": "Slicing logic for observation component",
-          "ordered": false
-        }
       },
       {
         "id": "Observation.component:ageAtOnset",
@@ -242,34 +174,6 @@
           },
           {
             "code": "dateTime"
-          }
-        ]
-      },
-      {
-        "id": "Observation.component:otherModifiers",
-        "path": "Observation.component",
-        "sliceName": "otherModifiers",
-        "short": "Any additional modifiers for this condition, such as severity.",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "Observation.component:otherModifiers.code",
-        "path": "Observation.component.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "otherModifiers"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Observation.component:otherModifiers.value[x]",
-        "path": "Observation.component.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
           }
         ]
       },

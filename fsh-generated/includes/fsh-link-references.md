@@ -31,6 +31,7 @@
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
 [ResearchDataDateOfBirthMethod]: CodeSystem-research-data-date-of-birth-method.html
 [EDAMOntologyTerms]: ValueSet-edam-ontology-terms.html
+[GSS123456-assertion]: Observation-GSS123456-assertion.html
 [SA-000]: Specimen-SA-000.html
 [GSS123456-01-010]: Specimen-GSS123456-01-010.html
 [PT-006SP660-condition]: Observation-PT-006SP660-condition.html
@@ -52,7 +53,6 @@
 [NcpiFamilyRelationship]: StructureDefinition-ncpi-family-relationship.html
 [FamilyType]: StructureDefinition-family-type.html
 [NcpiFamilyTypesVS]: ValueSet-ncpi-family-types-vs.html
-[NCPISample]: StructureDefinition-ncpi-sample.html
 [NcpiGeneFusionOrExpression]: StructureDefinition-ncpi-gene-fusion-expression.html
 [kf-gsr-allowed-access]: Consent-kf-gsr-allowed-access.html
 [gregor-gru-consent]: Consent-gregor-gru-consent.html
@@ -71,8 +71,6 @@
 [BodyLocationQualifierVS]: ValueSet-condition-location-vs.html
 [NcpiMAF]: StructureDefinition-ncpi-maf.html
 [MeshTerms]: ValueSet-mesh-terms.html
-[NCPICollectedSample]: StructureDefinition-ncpi-collected-sample.html
-[NCPINonCollectedSample]: StructureDefinition-ncpi-non-collected-sample.html
 [NcpiCondition]: StructureDefinition-ncpi-condition.html
 [NcpiDRSFile]: StructureDefinition-ncpi-drs-file.html
 [NcpiFamilyTypes]: CodeSystem-ncpi-family-types.html
@@ -82,17 +80,19 @@
 [NcpiFileMetadata]: StructureDefinition-ncpi-file-metadata.html
 [MetadataElements]: CodeSystem-metadata-elements.html
 [NcpiParticipant]: StructureDefinition-ncpi-participant.html
+[NcpiParticipantAssertion]: StructureDefinition-ncpi-participant-assertion.html
 [NcpiPerson]: StructureDefinition-ncpi-person.html
 [NcpiResearchAccessPolicy]: StructureDefinition-ncpi-research-access-policy.html
 [NcpiResearchCollection]: StructureDefinition-ncpi-research-collection.html
 [NcpiResearchStudy]: StructureDefinition-ncpi-research-study.html
 [ResearchStudyGroup]: StructureDefinition-research-study-group.html
+[NCPISample]: StructureDefinition-ncpi-sample.html
 [NcpiStudyFamily]: StructureDefinition-ncpi-study-family.html
 [NcpiStudyParticipant]: StructureDefinition-ncpi-Study-Participant.html
 [kf-research-study-cbtn-participants]: Group-kf-research-study-cbtn-participants.html
 [gregor-research-study-participants]: Group-gregor-research-study-participants.html
 [ncpi-research-collection-pbta]: List-ncpi-research-collection-pbta.html
-[ConditionAsserter]: StructureDefinition-condition-asserter.html
+[EntityAsserter]: StructureDefinition-entity-asserter.html
 [PlatformInstrumentCS]: CodeSystem-platform-instrument-cs.html
 [NcpiProteomics]: StructureDefinition-ncpi-proteomics.html
 [HashExtension]: StructureDefinition-hash-extension.html
@@ -119,6 +119,7 @@
 [CdmFamilyRole]: StructureDefinition-SharedDataModelFamilyRole.html
 [CdmFile]: StructureDefinition-SharedDataModelFile.html
 [CdmFileMetadata]: StructureDefinition-SharedDataModelFileMetadata.html
+[CdmParticipantAssertion]: StructureDefinition-SharedDataModelParticipantAssertion.html
 [CdmResearchCollection]: StructureDefinition-SharedDataModelResearchCollection.html
 [CdmResearchDataAccessPolicy]: StructureDefinition-SharedDataModelResearchDataAccessPolicy.html
 [CdmStudyParticipant]: StructureDefinition-SharedDataModelStudyParticipant.html
