@@ -31,6 +31,7 @@
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
 [ResearchDataDateOfBirthMethod]: CodeSystem-research-data-date-of-birth-method.html
 [EDAMOntologyTerms]: ValueSet-edam-ontology-terms.html
+[GSS123456-assertion]: Observation-GSS123456-assertion.html
 [SA-000]: Specimen-SA-000.html
 [GSS123456-01-010]: Specimen-GSS123456-01-010.html
 [PT-006SP660-condition]: Observation-PT-006SP660-condition.html
@@ -79,6 +80,7 @@
 [NcpiFileMetadata]: StructureDefinition-ncpi-file-metadata.html
 [MetadataElements]: CodeSystem-metadata-elements.html
 [NcpiParticipant]: StructureDefinition-ncpi-participant.html
+[NcpiParticipantAssertion]: StructureDefinition-ncpi-participant-assertion.html
 [NcpiPerson]: StructureDefinition-ncpi-person.html
 [NcpiResearchAccessPolicy]: StructureDefinition-ncpi-research-access-policy.html
 [NcpiResearchCollection]: StructureDefinition-ncpi-research-collection.html
@@ -90,7 +92,7 @@
 [kf-research-study-cbtn-participants]: Group-kf-research-study-cbtn-participants.html
 [gregor-research-study-participants]: Group-gregor-research-study-participants.html
 [ncpi-research-collection-pbta]: List-ncpi-research-collection-pbta.html
-[ConditionAsserter]: StructureDefinition-condition-asserter.html
+[EntityAsserter]: StructureDefinition-entity-asserter.html
 [PlatformInstrumentCS]: CodeSystem-platform-instrument-cs.html
 [NcpiProteomics]: StructureDefinition-ncpi-proteomics.html
 [HashExtension]: StructureDefinition-hash-extension.html
@@ -117,6 +119,7 @@
 [CdmFamilyRole]: StructureDefinition-SharedDataModelFamilyRole.html
 [CdmFile]: StructureDefinition-SharedDataModelFile.html
 [CdmFileMetadata]: StructureDefinition-SharedDataModelFileMetadata.html
+[CdmParticipantAssertion]: StructureDefinition-SharedDataModelParticipantAssertion.html
 [CdmResearchCollection]: StructureDefinition-SharedDataModelResearchCollection.html
 [CdmResearchDataAccessPolicy]: StructureDefinition-SharedDataModelResearchDataAccessPolicy.html
 [CdmStudyParticipant]: StructureDefinition-SharedDataModelStudyParticipant.html

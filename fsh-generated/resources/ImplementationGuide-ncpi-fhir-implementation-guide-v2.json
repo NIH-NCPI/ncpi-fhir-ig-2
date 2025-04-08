@@ -30,7 +30,7 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.us.core",
-      "version": "3.1.1",
+      "version": "6.1.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
     }
@@ -299,6 +299,14 @@
         "name": "Enumerations for the EDAM ontology",
         "description": "Enumerations for the EDAM ontology",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/GSS123456-assertion"
+        },
+        "name": "Example assertion using data from GREGoR",
+        "description": "Example assertion using data from GREGoR",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"
       },
       {
         "reference": {
@@ -686,6 +694,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-participant-assertion"
+        },
+        "name": "NCPI Participant Assertion",
+        "description": "Assertion about a particular Participant. May include Conditions, Measurements, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncpi-person"
         },
         "name": "NCPI Person",
@@ -774,7 +790,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/condition-asserter"
+          "reference": "StructureDefinition/entity-asserter"
         },
         "name": "Person who recorded assertion about participant",
         "description": "Person who recorded assertion about participant",
@@ -986,6 +1002,14 @@
         },
         "name": "Shared data model for File Metadata",
         "description": "The **Shared Data Model for File Metadata**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelParticipantAssertion"
+        },
+        "name": "Shared Data Model for Participant Assertion",
+        "description": "The Shared Data Model for **Participant Assertion**",
         "exampleBoolean": false
       },
       {
@@ -1232,13 +1256,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "example_CBTN.html",
-          "title": "Example CBTN",
+          "nameUrl": "example_cbtn.html",
+          "title": "Example Cbtn",
           "generation": "markdown"
         },
         {
-          "nameUrl": "example_GREGoR.html",
-          "title": "Example GRE Go R",
+          "nameUrl": "example_gregor.html",
+          "title": "Example Gregor",
           "generation": "markdown"
         },
         {

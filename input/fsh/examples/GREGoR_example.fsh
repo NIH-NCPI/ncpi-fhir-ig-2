@@ -132,6 +132,29 @@ Description: "Example condition using data from GREGoR"
 * component.code = #otherModifiers
 * component[otherModifiers].valueCodeableConcept = $hpo#HP:0012832
 
+// NCPI Participant Assertion
+Instance: GSS123456-assertion
+InstanceOf: NcpiParticipantAssertion
+Title: "Example assertion using data from GREGoR"
+Usage: #example
+Description: "Example assertion using data from GREGoR"
+* status = #final
+* subject = Reference(GSS123456)
+* code.coding = $snomedct_us#271603002 /* assertion code */
+* code.text = "Height / growth measure" /* assertion description */
+* valueQuantity
+  * value = 66 
+  * unit = "inches"
+  * code = $ucum#[in_us]
+  * system = $ucum
+* category = $condition-type#Clinical-Finding /* assertion type */
+* component.code = #ageAtAssertion
+* component[ageAtAssertion].valueQuantity 
+  * value = 38
+  * unit = "year"
+  * code = $ucum#a
+  * system = $ucum
+
 //NCPI Biospecimen
 Instance: GSS123456-01-010 /*Collection Event ID can't have underscores*/
 InstanceOf: NCPISample
