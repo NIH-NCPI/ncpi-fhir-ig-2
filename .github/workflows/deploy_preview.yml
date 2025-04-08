@@ -37,7 +37,7 @@ jobs:
         run: |
           sudo apt-get -y install iputils-ping
           chmod +x ./_updatePublisher.sh
-          ./_updatePublisher.sh -y
+          echo y\nn | ./_updatePublisher.sh
 
       - name: 🚦 Validate IG
         run: |
