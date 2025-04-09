@@ -38,7 +38,7 @@ List-ncpi-research-collection-kfx01.json                          ncpi-research-
 List-ncpi-research-collection-pbta.json                           ncpi-research-collection-pbta             Instance    examples/CBTN_example.fsh            226 - 238
 Observation-FASTQ-example.json                                    FASTQ-example                             Instance    examples/CBTN_example.fsh            462 - 477
 Observation-GSS123456-assertion.json                              GSS123456-assertion                       Instance    examples/GREGoR_example.fsh          136 - 156
-Observation-GSS123456-condition.json                              GSS123456-condition                       Instance    examples/GREGoR_example.fsh          119 - 133
+Observation-GSS123456-condition-assertion.json                    GSS123456-condition-assertion             Instance    examples/GREGoR_example.fsh          119 - 133
 Observation-PT-006SP660-condition.json                            PT-006SP660-condition                     Instance    examples/CBTN_example.fsh            372 - 404
 Observation-cbtn-family-relationship-mother.json                  cbtn-family-relationship-mother           Instance    examples/CBTN_example.fsh            348 - 356
 Observation-cbtn-family-relationship-son.json                     cbtn-family-relationship-son              Instance    examples/CBTN_example.fsh            360 - 368
@@ -61,7 +61,7 @@ Specimen-GSS123456-01-010.json                                    GSS123456-01-0
 Specimen-SA-000.json                                              SA-000                                    Instance    examples/CBTN_example.fsh            407 - 435
 StructureDefinition-SharedDataModelAliquot.json                   CmdAliquot                                Logical     modules/biospecimen.fsh              62 - 70
 StructureDefinition-SharedDataModelBiospecimenCollection.json     CdmBiospecimenCollection                  Logical     modules/biospecimen.fsh              3 - 13
-StructureDefinition-SharedDataModelCondition.json                 CdmCondition                              Logical     modules/participant_assertion.fsh    19 - 37
+StructureDefinition-SharedDataModelCondition.json                 CdmConditionAssertion                     Logical     modules/participant_assertion.fsh    19 - 37
 StructureDefinition-SharedDataModelFamilyRelationship.json        CdmFamilyRelationship                     Logical     modules/family.fsh                   148 - 154
 StructureDefinition-SharedDataModelFamilyRole.json                CdmFamilyRole                             Logical     modules/family.fsh                   25 - 31
 StructureDefinition-SharedDataModelFile.json                      CdmFile                                   Logical     modules/files.fsh                    5 - 21
@@ -100,7 +100,7 @@ StructureDefinition-label-extension.json                          Label         
 StructureDefinition-location-access.json                          LocationAccess                            Extension   modules/files.fsh                    61 - 67
 StructureDefinition-ncpi-Study-Participant.json                   NcpiStudyParticipant                      Profile     modules/participant.fsh              133 - 145
 StructureDefinition-ncpi-bamcram.json                             NcpiBAMCRAM                               Profile     modules/file-metadata.fsh            180 - 227
-StructureDefinition-ncpi-condition.json                           NcpiCondition                             Profile     modules/participant_assertion.fsh    191 - 241
+StructureDefinition-ncpi-condition-assertion.json                 NcpiConditionAssertion                    Profile     modules/participant_assertion.fsh    191 - 241
 StructureDefinition-ncpi-drs-attachment.json                      DRSAttachment                             Profile     modules/files.fsh                    116 - 123
 StructureDefinition-ncpi-drs-file.json                            NcpiDRSFile                               Profile     modules/files.fsh                    155 - 169
 StructureDefinition-ncpi-family-relationship.json                 NcpiFamilyRelationship                    Profile     modules/family.fsh                   156 - 170

@@ -116,11 +116,11 @@ Description: "An example family relationship based on data from GREGoR."
 * status = #registered
 
 // NCPI Condition
-Instance: GSS123456-condition
-InstanceOf: NcpiCondition
-Title: "Example condition using data from GREGoR"
+Instance: GSS123456-condition-assertion
+InstanceOf: NcpiConditionAssertion
+Title: "Example condition assertion using data from GREGoR"
 Usage: #example
-Description: "Example condition using data from GREGoR"
+Description: "Example condition assertion using data from GREGoR"
 * status = #final
 * subject = Reference(GSS123456)
 * code.coding = $hpo#HP:0006951 /* condition code */

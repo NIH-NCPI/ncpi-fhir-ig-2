@@ -25,7 +25,7 @@ Entity Asserter is used to represent the source for the condition/phenotype diag
 We do not set a distinction in entities here about “Phenotypes” vs “Diseases” as often used in a rare disease setting (eg, in Phenopackets). There is utility in indicating the intent of the submitter where possible, but this is not represented as separate entities.
 
 ## Relevant Artifacts
-- [NCPI Condition](StructureDefinition-ncpi-condition.html)
+- [NCPI Condition Assertion](StructureDefinition-ncpi-condition-assertion.html)
 - [Condition Assertion](ValueSet-condition-assertion-vs.html)
 - [Entity Asserter](StructureDefinition-entity-asserter.html)
 - [Condition Location](StructureDefinition-condition-location.html)

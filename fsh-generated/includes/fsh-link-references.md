@@ -35,7 +35,7 @@
 [SA-000]: Specimen-SA-000.html
 [GSS123456-01-010]: Specimen-GSS123456-01-010.html
 [PT-006SP660-condition]: Observation-PT-006SP660-condition.html
-[GSS123456-condition]: Observation-GSS123456-condition.html
+[GSS123456-condition-assertion]: Observation-GSS123456-condition-assertion.html
 [GSS654321]: Patient-GSS654321.html
 [GF-6BAD9S7D]: DocumentReference-GF-6BAD9S7D.html
 [GSS123456-01-010-SG-2]: DocumentReference-GSS123456-01-010-SG-2.html
@@ -71,7 +71,7 @@
 [BodyLocationQualifierVS]: ValueSet-condition-location-vs.html
 [NcpiMAF]: StructureDefinition-ncpi-maf.html
 [MeshTerms]: ValueSet-mesh-terms.html
-[NcpiCondition]: StructureDefinition-ncpi-condition.html
+[NcpiConditionAssertion]: StructureDefinition-ncpi-condition-assertion.html
 [NcpiDRSFile]: StructureDefinition-ncpi-drs-file.html
 [NcpiFamilyTypes]: CodeSystem-ncpi-family-types.html
 [NcpiFASTQ]: StructureDefinition-ncpi-fastq.html
@@ -114,7 +114,7 @@
 [BiospecimenAvailability]: CodeSystem-biospecimen-availability.html
 [CmdAliquot]: StructureDefinition-SharedDataModelAliquot.html
 [CdmBiospecimenCollection]: StructureDefinition-SharedDataModelBiospecimenCollection.html
-[CdmCondition]: StructureDefinition-SharedDataModelCondition.html
+[CdmConditionAssertion]: StructureDefinition-SharedDataModelCondition.html
 [CdmFamilyRelationship]: StructureDefinition-SharedDataModelFamilyRelationship.html
 [CdmFamilyRole]: StructureDefinition-SharedDataModelFamilyRole.html
 [CdmFile]: StructureDefinition-SharedDataModelFile.html

@@ -1,4 +1,4 @@
-/* Logical Model and Profiles for Condition Module */
+/* Logical Model and Profiles for Participant Assertion Module */
 
 Logical: CdmParticipantAssertion
 Id: SharedDataModelParticipantAssertion
@@ -16,10 +16,10 @@ Description: "The Shared Data Model for **Participant Assertion**"
 * asserter 0..1 code "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
 
 
-Logical: CdmCondition
+Logical: CdmConditionAssertion
 Id: SharedDataModelCondition
-Title: "Shared Data Model for Condition"
-Description: "The Shared Data Model for **Condition**"
+Title: "Shared Data Model for Condition Assertions"
+Description: "The Shared Data Model for **Condition Assertions**"
 * participant 1..1 reference "The participant we are describing"
 * condition 0..* code "The condition, disease, phenotypic feature, etc that this participant may have."
 * conditonText 1..1 string "Detailed description / free text about this condition."
@@ -188,10 +188,10 @@ Description: "Assertion about a particular Participant. May include Conditions, 
 * extension[entity-asserter] ^short = "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
 
 
-Profile: NcpiCondition
+Profile: NcpiConditionAssertion
 Parent: NcpiParticipantAssertion
-Id: ncpi-condition 
-Title: "NCPI Conditon"
+Id: ncpi-condition-assertion
+Title: "NCPI Conditon Assertion"
 Description: "Information about a condition related to a research participant"
 * ^version = "0.0.1"
 * ^status = #draft
