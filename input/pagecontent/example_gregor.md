@@ -11,7 +11,8 @@ Below is a table of collected example profiles from GREGoR. The links will conne
 |Study Participant|[Example JSON](ResearchSubject-gregor-example-participantstudy.json.html)|
 |Study Family|[Example JSON](Group-gregor-study-family.json.html)|
 |Family Relationship|[Example JSON](Observation-gregor-family-relationship-mother.json.html)|
-|Condition|[Example JSON](Observation-GSS123456-condition.json.html)|
+|Subject Assertion|[Example JSON](Observation-GSS123456-assertion.json.html)|
+|Condition|[Example JSON](Observation-GSS123456-condition-assertion.json.html)|
 |Biospecimen|[Example JSON](Specimen-GSS123456-01-010.json.html)|
 |File|[Example JSON](DocumentReference-GSS123456-01-010-SG-2.json.html)|
 |File Metadata|[Example JSON for BAM/CRAM File](Observation-gregor-example-metadata.json.html)|
