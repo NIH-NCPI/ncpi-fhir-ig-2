@@ -92,6 +92,13 @@ Description: "Age at Assertion Extension"
 * value[x] only Quantity
 * valueQuantity ^short = "Indicate age via relative date time extension or official date of when condition was asserted."
 
+Extension: OtherConditionModifiers 
+Id: other-condition-modifiers 
+Title: "Any additional modifiers for this condition, such as severity."
+Description: "Any additional modifiers for this condition, such as severity."
+* insert SetContext(Condition)
+* value[x] only CodeableConcept 
+* valueCodeableConcept ^short = "Any additional modifiers for this condition, such as severity."
 
 Extension: EntityAsserter
 Id: entity-asserter
@@ -276,3 +283,6 @@ Description: "Information about a condition related to a research participant"
 /*asserter*/
 * extension contains EntityAsserter named entity-asserter 0..1
 * extension[entity-asserter] ^short = "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
+
+* extension contains OtherConditionModifiers named other-condition-modifiers 0..* 
+* extension[other-condition-modifiers] ^short = "Any additional modifiers for this condition, such as severity."

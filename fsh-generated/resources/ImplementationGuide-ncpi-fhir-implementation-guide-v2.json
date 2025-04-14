@@ -133,6 +133,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/other-condition-modifiers"
+        },
+        "name": "Any additional modifiers for this condition, such as severity.",
+        "description": "Any additional modifiers for this condition, such as severity.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/assay-strategy-cs"
         },
         "name": "Assay strategy options",
@@ -353,6 +361,14 @@
         "name": "Example condition assertion using data from GREGoR",
         "description": "Example condition assertion using data from GREGoR",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"
+      },
+      {
+        "reference": {
+          "reference": "Condition/GSS123456-condition-summary"
+        },
+        "name": "Example condition summary using data from GREGoR",
+        "description": "Example condition summary using data from GREGoR",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition-summary"
       },
       {
         "reference": {

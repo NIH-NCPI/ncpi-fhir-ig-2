@@ -115,7 +115,7 @@ Description: "An example family relationship based on data from GREGoR."
 * code = $family-role-code#CHILD "child"
 * status = #registered
 
-// NCPI Condition
+// NCPI Condition as an assertion
 Instance: GSS123456-condition-assertion
 InstanceOf: NcpiParticipantAssertion
 Title: "Example condition assertion using data from GREGoR"
@@ -128,9 +128,30 @@ Description: "Example condition assertion using data from GREGoR"
 * valueCodeableConcept = $condition-assertion#Present /* assertion */
 * category = $condition-type#Disease /* condition type */
 * component.code = #ageAtOnset
-* component[ageAtOnset].valueCodeableConcept = $hpo#HP:0011463 /* age at onset */
+* component[ageAtOnset].valueQuantity 
+  * value = 64
+  * unit = "years"
+  * system = $ucum
+  * code = #a  
 * component.code = #otherModifiers
 * component[otherModifiers].valueCodeableConcept = $hpo#HP:0012832
+
+// NCPI Condition as a condition summary
+Instance: GSS123456-condition-summary
+InstanceOf: NcpiConditionSummary
+Title: "Example condition summary using data from GREGoR"
+Usage: #example
+Description: "Example condition summary using data from GREGoR"
+* subject = Reference(GSS123456)
+* code.coding = $hpo#HP:0006951 /* condition code */
+* code.text = "retrocerebellar cyst" /* condition text */
+* category = $condition-type#Disease /* condition type */
+* onsetAge
+  * value = 64
+  * unit = "years"
+  * system = $ucum
+  * code = #a  
+* extension[other-condition-modifiers].valueCodeableConcept = $hpo#HP:0012832
 
 // NCPI Participant Assertion
 Instance: GSS123456-assertion

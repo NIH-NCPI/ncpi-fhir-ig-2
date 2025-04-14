@@ -9,6 +9,7 @@
 [cbtn-family-relationship-mother]: Observation-cbtn-family-relationship-mother.html
 [cbtn-family-relationship-son]: Observation-cbtn-family-relationship-son.html
 [gregor-family-relationship-mother]: Observation-gregor-family-relationship-mother.html
+[OtherConditionModifiers]: StructureDefinition-other-condition-modifiers.html
 [AssayStrategyCS]: CodeSystem-assay-strategy-cs.html
 [ConditionAssertionVS]: ValueSet-condition-assertion-vs.html
 [ConditionAssertion]: CodeSystem-condition-assertion.html
@@ -37,6 +38,7 @@
 [GSS123456-01-010]: Specimen-GSS123456-01-010.html
 [PT-006SP660-condition]: Observation-PT-006SP660-condition.html
 [GSS123456-condition-assertion]: Observation-GSS123456-condition-assertion.html
+[GSS123456-condition-summary]: Condition-GSS123456-condition-summary.html
 [GSS654321]: Patient-GSS654321.html
 [GF-6BAD9S7D]: DocumentReference-GF-6BAD9S7D.html
 [GSS123456-01-010-SG-2]: DocumentReference-GSS123456-01-010-SG-2.html

@@ -62,6 +62,22 @@
         ]
       },
       {
+        "id": "Condition.extension:other-condition-modifiers",
+        "path": "Condition.extension",
+        "sliceName": "other-condition-modifiers",
+        "short": "Any additional modifiers for this condition, such as severity.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Condition.category",
         "path": "Condition.category",
         "short": "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
