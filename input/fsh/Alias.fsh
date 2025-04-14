@@ -13,7 +13,13 @@ Alias: $ncpi-collection-type = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSys
 Alias: $ncpi-data-access-code = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code
 Alias: $ncpi-data-access-type = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type
 Alias: $title-type = http://terminology.hl7.org/CodeSystem/title-type
+
+// EST 2025-04-09 - This causes an error in the QA report. However, we have 
+// been using that system for a while now, and DbGAP was using it as well, 
+// at least at some point in the past. 
 Alias: $mesh = urn:oid:2.16.840.1.113883.6.177
+// Alias: $mesh = http://id.nlm.nih.gov/mesh/
+
 Alias: $ncpi-dob-method = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method
 
 Alias: $ncit = http://purl.obolibrary.org/obo/ncit.owl

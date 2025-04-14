@@ -2,10 +2,10 @@
   "resourceType": "StructureDefinition",
   "id": "SharedDataModelCondition",
   "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelCondition",
-  "name": "CdmCondition",
-  "title": "Shared Data Model for Condition",
+  "name": "CdmConditionAssertion",
+  "title": "Shared Data Model for Condition Assertions",
   "status": "draft",
-  "description": "The Shared Data Model for **Condition**",
+  "description": "The Shared Data Model for **Condition Assertions**",
   "fhirVersion": "4.3.0",
   "kind": "logical",
   "abstract": false,
@@ -17,8 +17,8 @@
       {
         "id": "SharedDataModelCondition",
         "path": "SharedDataModelCondition",
-        "short": "Shared Data Model for Condition",
-        "definition": "The Shared Data Model for **Condition**"
+        "short": "Shared Data Model for Condition Assertions",
+        "definition": "The Shared Data Model for **Condition Assertions**"
       },
       {
         "id": "SharedDataModelCondition.participant",
@@ -149,7 +149,7 @@
         "max": "1",
         "type": [
           {
-            "code": "date"
+            "code": "code"
           }
         ]
       },
