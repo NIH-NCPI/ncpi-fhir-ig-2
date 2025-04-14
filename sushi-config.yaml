@@ -9,7 +9,7 @@ name: NCPI FHIR IG v2
 title: NCPI FHIR Implementation Guide v2
 description: "FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI)."
 status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: 0.2.0
 fhirVersion: 4.3.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -26,11 +26,12 @@ publisher:
 #
 dependencies:
   hl7.fhir.us.core: 6.1.0
+  # Can't upgrade to 7 due to memory issues in GH Actions. 
   # hl7.fhir.us.core: 7.0.0
-#   hl7.fhir.us.mcode:
-#     id: mcode
-#     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
+  hl7.fhir.us.mcode:
+    id: mcode
+    uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
+    version: 4.0.0
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
