@@ -3,6 +3,7 @@
 [AccessType]: StructureDefinition-access-type.html
 [AdaptorTrimmedCS]: CodeSystem-adaptor-trimmed-cs.html
 [AgeAtAssertion]: StructureDefinition-age-at-assertion.html
+[AgeAtEvent]: StructureDefinition-age-at-event.html
 [AgeAtLastVitalStatus]: StructureDefinition-research-age-at-last-vital-status.html
 [HashType]: StructureDefinition-hash-type.html
 [cbtn-family-relationship-mother]: Observation-cbtn-family-relationship-mother.html
@@ -62,16 +63,14 @@
 [Label]: StructureDefinition-label-extension.html
 [BiospecimenLaterality]: StructureDefinition-biospecimen-laterality.html
 [ConditionLaterality]: StructureDefinition-condition-laterality.html
-[LateralityQualifierVS]: ValueSet-condition-laterality-vs.html
 [LibraryPrepCS]: CodeSystem-library-prep-cs.html
 [LibrarySelectionCS]: CodeSystem-library-selection-cs.html
 [NcpiSpecimenCollection]: StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html
 [SpecimenCollection]: StructureDefinition-specimen-collection.html
 [ConditionLocation]: StructureDefinition-condition-location.html
-[BodyLocationQualifierVS]: ValueSet-condition-location-vs.html
 [NcpiMAF]: StructureDefinition-ncpi-maf.html
 [MeshTerms]: ValueSet-mesh-terms.html
-[NcpiConditionAssertion]: StructureDefinition-ncpi-condition-assertion.html
+[NcpiConditionSummary]: StructureDefinition-ncpi-condition-summary.html
 [NcpiDRSFile]: StructureDefinition-ncpi-drs-file.html
 [NcpiFamilyTypes]: CodeSystem-ncpi-family-types.html
 [NcpiFASTQ]: StructureDefinition-ncpi-fastq.html

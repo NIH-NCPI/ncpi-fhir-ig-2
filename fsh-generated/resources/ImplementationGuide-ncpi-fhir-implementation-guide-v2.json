@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "ncpi-fhir-implementation-guide-v2",
   "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "NCPIFHIRIGv2",
   "title": "NCPI FHIR Implementation Guide v2",
   "status": "draft",
@@ -33,6 +33,12 @@
       "version": "6.1.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
+    },
+    {
+      "id": "mcode",
+      "packageId": "hl7.fhir.us.mcode",
+      "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
+      "version": "4.0.0"
     }
   ],
   "definition": {
@@ -75,6 +81,14 @@
         },
         "name": "Age at Assertion",
         "description": "Age at Assertion Extension",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/age-at-event"
+        },
+        "name": "Age at Event",
+        "description": "Age at Event Extension",
         "exampleBoolean": false
       },
       {
@@ -330,7 +344,7 @@
         },
         "name": "Example condition assertion using data from CBTN",
         "description": "Example condition assertion using data from CBTN.",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition-assertion"
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"
       },
       {
         "reference": {
@@ -338,7 +352,7 @@
         },
         "name": "Example condition assertion using data from GREGoR",
         "description": "Example condition assertion using data from GREGoR",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition-assertion"
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"
       },
       {
         "reference": {
@@ -550,14 +564,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/condition-laterality-vs"
-        },
-        "name": "Laterality Information",
-        "description": "Laterality Information",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/library-prep-cs"
         },
         "name": "Library prep options",
@@ -598,14 +604,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/condition-location-vs"
-        },
-        "name": "Location Information",
-        "description": "Location Information",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ncpi-maf"
         },
         "name": "MAF (Somatic Mutation) file profile",
@@ -622,9 +620,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-condition-assertion"
+          "reference": "StructureDefinition/ncpi-condition-summary"
         },
-        "name": "NCPI Conditon Assertion",
+        "name": "NCPI Conditon Summary",
         "description": "Information about a condition related to a research participant",
         "exampleBoolean": false
       },

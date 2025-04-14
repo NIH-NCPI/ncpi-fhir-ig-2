@@ -36,24 +36,24 @@
     "fshName": "ComponentElements",
     "fshType": "CodeSystem",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 130,
-    "endLine": 139
+    "startLine": 122,
+    "endLine": 131
   },
   {
     "outputFile": "CodeSystem-condition-assertion.json",
     "fshName": "ConditionAssertion",
     "fshType": "CodeSystem",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 66,
-    "endLine": 75
+    "startLine": 45,
+    "endLine": 54
   },
   {
     "outputFile": "CodeSystem-condition-type.json",
     "fshName": "ConditionType",
     "fshType": "CodeSystem",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 47,
-    "endLine": 59
+    "startLine": 26,
+    "endLine": 38
   },
   {
     "outputFile": "CodeSystem-example-hash-type-code-system.json",
@@ -500,8 +500,8 @@
     "fshName": "CdmConditionAssertion",
     "fshType": "Logical",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 19,
-    "endLine": 37
+    "startLine": 213,
+    "endLine": 231
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelFamilyRelationship.json",
@@ -636,8 +636,16 @@
     "fshName": "AgeAtAssertion",
     "fshType": "Extension",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 94,
-    "endLine": 101
+    "startLine": 86,
+    "endLine": 93
+  },
+  {
+    "outputFile": "StructureDefinition-age-at-event.json",
+    "fshName": "AgeAtEvent",
+    "fshType": "Extension",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 75,
+    "endLine": 84
   },
   {
     "outputFile": "StructureDefinition-aliquot-availability.json",
@@ -676,16 +684,16 @@
     "fshName": "ConditionLaterality",
     "fshType": "Extension",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 121,
-    "endLine": 127
+    "startLine": 113,
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-condition-location.json",
     "fshName": "ConditionLocation",
     "fshType": "Extension",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 113,
-    "endLine": 119
+    "startLine": 105,
+    "endLine": 111
   },
   {
     "outputFile": "StructureDefinition-consanguinity.json",
@@ -716,8 +724,8 @@
     "fshName": "EntityAsserter",
     "fshType": "Extension",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 104,
-    "endLine": 110
+    "startLine": 96,
+    "endLine": 102
   },
   {
     "outputFile": "StructureDefinition-family-role.json",
@@ -808,12 +816,12 @@
     "endLine": 227
   },
   {
-    "outputFile": "StructureDefinition-ncpi-condition-assertion.json",
-    "fshName": "NcpiConditionAssertion",
+    "outputFile": "StructureDefinition-ncpi-condition-summary.json",
+    "fshName": "NcpiConditionSummary",
     "fshType": "Profile",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 191,
-    "endLine": 241
+    "startLine": 234,
+    "endLine": 278
   },
   {
     "outputFile": "StructureDefinition-ncpi-drs-attachment.json",
@@ -884,8 +892,8 @@
     "fshName": "NcpiParticipantAssertion",
     "fshType": "Profile",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 141,
-    "endLine": 188
+    "startLine": 133,
+    "endLine": 202
   },
   {
     "outputFile": "StructureDefinition-ncpi-participant.json",
@@ -1076,40 +1084,24 @@
     "fshName": "ConditionAssertionVS",
     "fshType": "ValueSet",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 77,
-    "endLine": 80
+    "startLine": 56,
+    "endLine": 59
   },
   {
     "outputFile": "ValueSet-condition-code-vs.json",
     "fshName": "ConditionCodeVS",
     "fshType": "ValueSet",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 40,
-    "endLine": 45
-  },
-  {
-    "outputFile": "ValueSet-condition-laterality-vs.json",
-    "fshName": "LateralityQualifierVS",
-    "fshType": "ValueSet",
-    "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 88,
-    "endLine": 92
-  },
-  {
-    "outputFile": "ValueSet-condition-location-vs.json",
-    "fshName": "BodyLocationQualifierVS",
-    "fshType": "ValueSet",
-    "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 82,
-    "endLine": 86
+    "startLine": 19,
+    "endLine": 24
   },
   {
     "outputFile": "ValueSet-condition-type-vs.json",
     "fshName": "ConditionTypeVS",
     "fshType": "ValueSet",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 61,
-    "endLine": 64
+    "startLine": 40,
+    "endLine": 43
   },
   {
     "outputFile": "ValueSet-consanguinity-assertion-vs.json",

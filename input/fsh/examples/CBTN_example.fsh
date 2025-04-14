@@ -370,7 +370,7 @@ Description: "An example family relationship based on data from CBTN."
 
 // NCPI Condition Assertion
 Instance: PT-006SP660-condition
-InstanceOf: NcpiConditionAssertion
+InstanceOf: NcpiParticipantAssertion
 Title: "Example condition assertion using data from CBTN"
 Usage: #example
 Description: "Example condition assertion using data from CBTN."

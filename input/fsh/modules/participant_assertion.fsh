@@ -16,27 +16,6 @@ Description: "The Shared Data Model for **Participant Assertion**"
 * asserter 0..1 code "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
 
 
-Logical: CdmConditionAssertion
-Id: SharedDataModelCondition
-Title: "Shared Data Model for Condition Assertions"
-Description: "The Shared Data Model for **Condition Assertions**"
-* participant 1..1 reference "The participant we are describing"
-* condition 0..* code "The condition, disease, phenotypic feature, etc that this participant may have."
-* conditonText 1..1 string "Detailed description / free text about this condition."
-* ageAtAssertion 0..1 Quantity "The date or age at which this condition is being asserted."
-* assertion 1..1 code "Does the participant have this condition?"
-* conditionType 0..1 code "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
-* ageAtOnset 0..1 code "The age of onset for this condition. Could be expressed with a term, an age, or an age range."
-* ageAtResolution 0..1 date "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range."
-* otherModifiers 0..* code "Any additional modifiers for this condition, such as severity."
-* stage 0..1 date "Cancer staging information"
-* location 0..* code "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
-* locationQualifier 0..1 code "Any spatial/location qualifiers"
-* lateralityQualifier 0..1 code "Any laterality qualifiers"
-* assertionSource 0..1 code "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc."
-* asserter 0..1 code "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
-
-
 ValueSet: ConditionCodeVS
 Id: condition-code-vs
 Title: "Conditon Codes"
@@ -79,6 +58,7 @@ Id: condition-assertion-vs
 Title: "Assertion of Condition Codes"
 * include codes from system condition-assertion
 
+/*
 ValueSet: BodyLocationQualifierVS
 Id: condition-location-vs
 Title: "Location Information"
@@ -90,6 +70,18 @@ Id: condition-laterality-vs
 Title: "Laterality Information"
 Description: "Laterality Information"
 * include codes from system $laterality-qualifier
+*/
+
+Extension: AgeAtEvent
+Id: age-at-event
+Title: "Age at Event"
+Description: "Age at Event Extension"
+* insert SetContext(NcpiParticipantAssertion.component)
+* insert SetContext(NcpiConditionSummary.extension)
+//* insert SetContext(extension)
+// * value[x] only date
+* value[x] only dateTime
+* valueDateTime ^short = "Indicate age via relative date time extension or official date of when condition was asserted."
 
 Extension: AgeAtAssertion
 Id: age-at-assertion
@@ -116,7 +108,7 @@ Title: "Location Information"
 Description: "Location Information"
 * insert SetContext(Observation.bodySite)
 * value[x] only code 
-* value[x] from BodyLocationQualifierVS 
+* value[x] from http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs 
 
 Extension: ConditionLaterality
 Id: condition-laterality
@@ -124,7 +116,7 @@ Title: "Laterality Information"
 Description: "Laterality Information"
 * insert SetContext(Observation)
 * value[x] only code
-* value[x] from LateralityQualifierVS
+* value[x] from http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs
 
 
 CodeSystem: ComponentElements
@@ -169,10 +161,22 @@ Description: "Assertion about a particular Participant. May include Conditions, 
 * component contains 
   ageAtEvent 0..* and 
   ageAtAssertion 0..* and 
+  ageAtOnset 0..1 and
+  ageAtResolution 0..1 and
+  stage 0..* and 
   otherModifiers 0..* 
+/**ageAtAssertion*/
 * component[ageAtEvent].code = #ageAtEvent
 * component[ageAtEvent].value[x] only Quantity or dateTime or CodeableConcept or Range
 * component[ageAtEvent] ^short = "The age of the Subject when the assertion was made.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
+/**ageAtOnset*/
+* component[ageAtOnset].code = #ageAtOnset
+* component[ageAtOnset].value[x] only Quantity or dateTime or CodeableConcept or Range
+* component[ageAtOnset] ^short = "The age of onset for this condition. Could be expressed with a term, an age, or an age range."
+/*ageAtResolution*/ 
+* component[ageAtResolution].code = #ageAtResolution
+* component[ageAtResolution].value[x] only Quantity or dateTime or CodeableConcept or Range
+* component[ageAtResolution] ^short = "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range."
 /*ageAtResolution*/ 
 * component[ageAtAssertion].code = #ageAtAssertion
 * component[ageAtAssertion].value[x] only Quantity or dateTime or CodeableConcept or Range
@@ -181,50 +185,6 @@ Description: "Assertion about a particular Participant. May include Conditions, 
 * component[otherModifiers].code = #otherModifiers
 * component[otherModifiers].value[x] only CodeableConcept
 * component[otherModifiers] ^short = "Any additional modifiers for this condition, such as severity."
-/*assertionSource*/ 
-* method ^short = "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc."
-/*asserter*/
-* extension contains EntityAsserter named entity-asserter 0..1
-* extension[entity-asserter] ^short = "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
-
-
-Profile: NcpiConditionAssertion
-Parent: NcpiParticipantAssertion
-Id: ncpi-condition-assertion
-Title: "NCPI Conditon Assertion"
-Description: "Information about a condition related to a research participant"
-* ^version = "0.0.1"
-* ^status = #draft
-/*participant*/
-* subject ^short = "The participant we are describing"
-/* condition */
-* code.coding ^short = "The condition, disease, phenotypic feature, etc that this participant may have."
-/*conditionText*/
-* code.text ^short = "Detailed description / free text about this condition."
-/*ageAtAssertion*/
-* effectiveDateTime ^short = "The date or age at which this condition is being asserted.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
-/*assertion*/
-* valueCodeableConcept from condition-assertion-vs
-* valueCodeableConcept ^short = "Does the participant have this condition?"
-/*conditionType*/ 
-* category ^short = "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
-/*ageAtOnset*/ 
-* component ^slicing.discriminator.type = #value
-* component ^slicing.discriminator.path = "code"
-* component ^slicing.rules = #open
-* component ^slicing.description = "Slicing logic for observation component"
-* component ^slicing.ordered = false
-* component contains
-  ageAtOnset 0..1 and
-  ageAtResolution 0..1 and
-  stage 0..1
-* component[ageAtOnset].code = #ageAtOnset
-* component[ageAtOnset].value[x] only Quantity or dateTime or CodeableConcept or Range
-* component[ageAtOnset] ^short = "The age of onset for this condition. Could be expressed with a term, an age, or an age range."
-/*ageAtResolution*/ 
-* component[ageAtResolution].code = #ageAtResolution
-* component[ageAtResolution].value[x] only Quantity or dateTime or CodeableConcept or Range
-* component[ageAtResolution] ^short = "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range."
 /*stage*/ 
 * component[stage].code = #stage
 * component[stage].value[x] only CodeableConcept
@@ -238,4 +198,81 @@ Description: "Information about a condition related to a research participant"
 /*assertionSource*/ 
 * method ^short = "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc."
 /*asserter*/
+* extension contains EntityAsserter named entity-asserter 0..1
+* extension[entity-asserter] ^short = "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
+
+
+/*
+ * For situations where there is evidence of a participant having a particular
+ * condition, we recommend using NCPI Condition, which is based on the HL7
+ * Condition Resource. It is still expected that a positive assertion be added
+ * using ParticipantAssertions to enable basic queries to capture both positive
+ * and negative assertions together. 
+*/
+
+Logical: CdmConditionAssertion
+Id: SharedDataModelCondition
+Title: "Shared Data Model for Condition Assertions"
+Description: "The Shared Data Model for **Condition Assertions**"
+* participant 1..1 reference "The participant we are describing"
+* condition 0..* code "The condition, disease, phenotypic feature, etc that this participant may have."
+* conditonText 1..1 string "Detailed description / free text about this condition."
+* ageAtAssertion 0..1 Quantity "The date or age at which this condition is being asserted."
+* assertion 1..1 code "Does the participant have this condition?"
+* conditionType 0..1 code "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
+* ageAtOnset 0..1 code "The age of onset for this condition. Could be expressed with a term, an age, or an age range."
+* ageAtResolution 0..1 date "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range."
+* otherModifiers 0..* code "Any additional modifiers for this condition, such as severity."
+* stage 0..1 code "Cancer staging information"
+* location 0..* code "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
+* locationQualifier 0..1 code "Any spatial/location qualifiers"
+* lateralityQualifier 0..1 code "Any laterality qualifiers"
+* assertionSource 0..1 code "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc."
+* asserter 0..1 code "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
+
+
+Profile: NcpiConditionSummary
+Parent: Condition
+Id: ncpi-condition-summary
+Title: "NCPI Conditon Summary"
+Description: "Information about a condition related to a research participant"
+* ^version = "0.0.1"
+* ^status = #draft
+/*participant*/
+* subject ^short = "The participant we are describing"
+/* condition */
+* code.coding ^short = "The condition, disease, phenotypic feature, etc that this participant may have."
+/*conditionText*/
+* code.text ^short = "Detailed description / free text about this condition."
+
+/**
+ * EST - 2025-4-14 I'm leaving these open to enable ranges and strings, but we
+ *                 can definitely restrict these to onsetAge and abatementAge.
+ */
+/*ageAtOnset*/
+* onset[x] ^short = "The age of onset for this condition. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
+
+/*ageAtResolution*/ 
+* abatement[x] ^short = "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range."
+
+/*conditionType*/
+* category ^short = "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
+
+/*stage*/ 
+* stage.summary ^short = "Cancer staging information. Example ValueSet, [condition-stage](https://hl7.org/fhir/R4B/valueset-condition-stage.html)"
+/*location*/ 
+* bodySite ^short = "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
+
+* bodySite.extension contains BodyLocationQualifier named mcode-body-location-qualifier 0..1 /*Condition.LocationQualifieri*/
+* bodySite.extension[mcode-body-location-qualifier] ^short = "Any location qualifiers"
+* bodySite.extension contains LateralityQualifier named mcode-laterality-qualifier 0..1 /*Condition.LateralityQualifier*/
+* bodySite.extension[mcode-laterality-qualifier] ^short = "Laterality information for the condition site"
+
+/*ageAtAssertion*/
+* extension contains AgeAtEvent named age-at-assertion 0..1 /*ageAtAssertion*/
+* extension[age-at-assertion] ^short = "The age in decimal years of the Subject at the time point which the assertion.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
+
+* asserter ^short = "Reference to the individual responsible for the assertion, if this information is known (participant's Patient resource, if it is self reported, etc.)"
+/*asserter*/
+* extension contains EntityAsserter named entity-asserter 0..1
 * extension[entity-asserter] ^short = "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."

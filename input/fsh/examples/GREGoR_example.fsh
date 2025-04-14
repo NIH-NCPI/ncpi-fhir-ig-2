@@ -117,7 +117,7 @@ Description: "An example family relationship based on data from GREGoR."
 
 // NCPI Condition
 Instance: GSS123456-condition-assertion
-InstanceOf: NcpiConditionAssertion
+InstanceOf: NcpiParticipantAssertion
 Title: "Example condition assertion using data from GREGoR"
 Usage: #example
 Description: "Example condition assertion using data from GREGoR"
