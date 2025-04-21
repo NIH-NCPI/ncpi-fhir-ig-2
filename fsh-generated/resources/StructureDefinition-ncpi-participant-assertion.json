@@ -30,38 +30,6 @@
         }
       },
       {
-        "id": "Observation.extension:condition-location",
-        "path": "Observation.extension",
-        "sliceName": "condition-location",
-        "short": "Any location qualifiers",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-location"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.extension:condition-laterality",
-        "path": "Observation.extension",
-        "sliceName": "condition-laterality",
-        "short": "Laterality information for the condition site",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-laterality"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Observation.extension:entity-asserter",
         "path": "Observation.extension",
         "sliceName": "entity-asserter",
@@ -152,7 +120,39 @@
       {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
-        "short": "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
+        "short": "Location information for the observation, including site, laterality, and other qualifiers as appropriate. Multiple observations may be required if the same assertion is made in many locations, or complete location details can be provided in an NCPI Condition Summary."
+      },
+      {
+        "id": "Observation.bodySite.extension:mcode-body-location-qualifier",
+        "path": "Observation.bodySite.extension",
+        "sliceName": "mcode-body-location-qualifier",
+        "short": "Any location qualifiers",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.bodySite.extension:mcode-laterality-qualifier",
+        "path": "Observation.bodySite.extension",
+        "sliceName": "mcode-laterality-qualifier",
+        "short": "Laterality information for the condition site",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.method",

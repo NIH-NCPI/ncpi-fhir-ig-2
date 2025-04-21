@@ -197,11 +197,12 @@ Description: "Assertion about a particular Participant. May include Conditions, 
 * component[stage].value[x] only CodeableConcept
 * component[stage] ^short = "Cancer staging information"
 /*location*/ 
-* bodySite ^short = "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
-* extension contains ConditionLocation named condition-location 0..1 /*Condition.LocationQualifieri*/
-* extension[condition-location] ^short = "Any location qualifiers"
-* extension contains ConditionLaterality named condition-laterality 0..1 /*Condition.LateralityQualifier*/
-* extension[condition-laterality] ^short = "Laterality information for the condition site"
+* bodySite ^short = "Location information for the observation, including site, laterality, and other qualifiers as appropriate. Multiple observations may be required if the same assertion is made in many locations, or complete location details can be provided in an NCPI Condition Summary."
+* bodySite.extension contains BodyLocationQualifier named mcode-body-location-qualifier 0..1 /*Condition.LocationQualifieri*/
+* bodySite.extension[mcode-body-location-qualifier] ^short = "Any location qualifiers"
+* bodySite.extension contains LateralityQualifier named mcode-laterality-qualifier 0..1 /*Condition.LateralityQualifier*/
+* bodySite.extension[mcode-laterality-qualifier] ^short = "Laterality information for the condition site"
+
 /*assertionSource*/ 
 * method ^short = "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc."
 /*asserter*/
@@ -268,8 +269,7 @@ Description: "Information about a condition related to a research participant"
 /*stage*/ 
 * stage.summary ^short = "Cancer staging information. Example ValueSet, [condition-stage](https://hl7.org/fhir/R4B/valueset-condition-stage.html)"
 /*location*/ 
-* bodySite ^short = "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows."
-
+* bodySite ^short = "Location information for the condition, including site, laterality, and other qualifiers as appropriate."
 * bodySite.extension contains BodyLocationQualifier named mcode-body-location-qualifier 0..1 /*Condition.LocationQualifieri*/
 * bodySite.extension[mcode-body-location-qualifier] ^short = "Any location qualifiers"
 * bodySite.extension contains LateralityQualifier named mcode-laterality-qualifier 0..1 /*Condition.LateralityQualifier*/
