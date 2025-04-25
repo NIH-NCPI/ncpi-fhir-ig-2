@@ -189,7 +189,7 @@ Description: "Assertion about a particular Participant. May include Conditions, 
 */
 
 Profile: NcpiPhenotypicFeatureAssertion 
-Parent: Observation 
+Parent: NcpiParticipantAssertion 
 Id: ncpi-phenotypic-feature-assertion 
 Title: "NCPI Phenotypic Feature Assertion"
 Description: "Assertion about a phenotypic feature's presence or absence given a particular participant."
