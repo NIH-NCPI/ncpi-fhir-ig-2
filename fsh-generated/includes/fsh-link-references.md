@@ -11,8 +11,8 @@
 [gregor-family-relationship-mother]: Observation-gregor-family-relationship-mother.html
 [OtherConditionModifiers]: StructureDefinition-other-condition-modifiers.html
 [AssayStrategyCS]: CodeSystem-assay-strategy-cs.html
-[ConditionAssertionVS]: ValueSet-condition-assertion-vs.html
-[ConditionAssertion]: CodeSystem-condition-assertion.html
+[PhenotypicFeatureAssertionVS]: ValueSet-phenotypic-feature-assertion-vs.html
+[PhenotypicFeatureAssertion]: CodeSystem-phenotypic-feature-assertion.html
 [AliquotAvailability]: StructureDefinition-aliquot-availability.html
 [NcpiBAMCRAM]: StructureDefinition-ncpi-bamcram.html
 [kf-gru-dac-consent]: Consent-kf-gru-dac-consent.html
@@ -64,12 +64,10 @@
 [ncpi-research-collection-kfx01]: List-ncpi-research-collection-kfx01.html
 [Label]: StructureDefinition-label-extension.html
 [BiospecimenLaterality]: StructureDefinition-biospecimen-laterality.html
-[ConditionLaterality]: StructureDefinition-condition-laterality.html
 [LibraryPrepCS]: CodeSystem-library-prep-cs.html
 [LibrarySelectionCS]: CodeSystem-library-selection-cs.html
 [NcpiSpecimenCollection]: StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html
 [SpecimenCollection]: StructureDefinition-specimen-collection.html
-[ConditionLocation]: StructureDefinition-condition-location.html
 [NcpiMAF]: StructureDefinition-ncpi-maf.html
 [MeshTerms]: ValueSet-mesh-terms.html
 [NcpiConditionSummary]: StructureDefinition-ncpi-condition-summary.html
@@ -83,6 +81,7 @@
 [NcpiParticipant]: StructureDefinition-ncpi-participant.html
 [NcpiParticipantAssertion]: StructureDefinition-ncpi-participant-assertion.html
 [NcpiPerson]: StructureDefinition-ncpi-person.html
+[NcpiPhenotypicFeatureAssertion]: StructureDefinition-ncpi-phenotypic-feature-assertion.html
 [NcpiResearchAccessPolicy]: StructureDefinition-ncpi-research-access-policy.html
 [NcpiResearchCollection]: StructureDefinition-ncpi-research-collection.html
 [NcpiResearchStudy]: StructureDefinition-ncpi-research-study.html

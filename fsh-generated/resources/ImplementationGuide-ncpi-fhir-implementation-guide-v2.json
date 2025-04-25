@@ -149,17 +149,17 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/condition-assertion-vs"
+          "reference": "ValueSet/phenotypic-feature-assertion-vs"
         },
-        "name": "Assertion of Condition Codes",
+        "name": "Assertion of Phenotypic Feature Codes",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CodeSystem/condition-assertion"
+          "reference": "CodeSystem/phenotypic-feature-assertion"
         },
-        "name": "Assertion of Condition Codes",
-        "description": "Code System for assertion of condition presence",
+        "name": "Assertion of Phenotypic Feature Codes",
+        "description": "Code System for assertion of phenotypic feature presence",
         "exampleBoolean": false
       },
       {
@@ -572,14 +572,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/condition-laterality"
-        },
-        "name": "Laterality Information",
-        "description": "Laterality Information",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/library-prep-cs"
         },
         "name": "Library prep options",
@@ -608,14 +600,6 @@
         },
         "name": "Linkage for related samples",
         "description": "Linkage for related samples",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/condition-location"
-        },
-        "name": "Location Information",
-        "description": "Location Information",
         "exampleBoolean": false
       },
       {
@@ -720,6 +704,14 @@
         },
         "name": "NCPI Person",
         "description": "Person",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-phenotypic-feature-assertion"
+        },
+        "name": "NCPI Phenotypic Feature Assertion",
+        "description": "Assertion about a phenotypic feature's presence or absence given a particular participant.",
         "exampleBoolean": false
       },
       {

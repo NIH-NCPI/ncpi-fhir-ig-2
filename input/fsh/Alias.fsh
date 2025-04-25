@@ -39,5 +39,5 @@ Alias: $mondo = http://purl.obolibrary.org/obo/mondo.owl
 Alias: $edam = http://edamontology.org
 
 Alias: $hpo = http://human-phenotype-ontology.org 
-Alias: $condition-assertion = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion
+Alias: $phenotypic-feature-assertion = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion
 Alias: $condition-type = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type

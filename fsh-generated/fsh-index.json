@@ -36,16 +36,8 @@
     "fshName": "ComponentElements",
     "fshType": "CodeSystem",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 129,
-    "endLine": 138
-  },
-  {
-    "outputFile": "CodeSystem-condition-assertion.json",
-    "fshName": "ConditionAssertion",
-    "fshType": "CodeSystem",
-    "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 45,
-    "endLine": 54
+    "startLine": 99,
+    "endLine": 108
   },
   {
     "outputFile": "CodeSystem-condition-type.json",
@@ -102,6 +94,14 @@
     "fshFile": "terminologies/ncpi.fsh",
     "startLine": 6,
     "endLine": 34
+  },
+  {
+    "outputFile": "CodeSystem-phenotypic-feature-assertion.json",
+    "fshName": "PhenotypicFeatureAssertion",
+    "fshType": "CodeSystem",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 45,
+    "endLine": 54
   },
   {
     "outputFile": "CodeSystem-platform-instrument-cs.json",
@@ -508,8 +508,8 @@
     "fshName": "CdmConditionAssertion",
     "fshType": "Logical",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 221,
-    "endLine": 239
+    "startLine": 199,
+    "endLine": 217
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelFamilyRelationship.json",
@@ -644,16 +644,16 @@
     "fshName": "AgeAtAssertion",
     "fshType": "Extension",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 86,
-    "endLine": 93
+    "startLine": 72,
+    "endLine": 79
   },
   {
     "outputFile": "StructureDefinition-age-at-event.json",
     "fshName": "AgeAtEvent",
     "fshType": "Extension",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 75,
-    "endLine": 84
+    "startLine": 61,
+    "endLine": 70
   },
   {
     "outputFile": "StructureDefinition-aliquot-availability.json",
@@ -688,22 +688,6 @@
     "endLine": 20
   },
   {
-    "outputFile": "StructureDefinition-condition-laterality.json",
-    "fshName": "ConditionLaterality",
-    "fshType": "Extension",
-    "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 120,
-    "endLine": 126
-  },
-  {
-    "outputFile": "StructureDefinition-condition-location.json",
-    "fshName": "ConditionLocation",
-    "fshType": "Extension",
-    "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 112,
-    "endLine": 118
-  },
-  {
     "outputFile": "StructureDefinition-consanguinity.json",
     "fshName": "Consanguinity",
     "fshType": "Extension",
@@ -732,8 +716,8 @@
     "fshName": "EntityAsserter",
     "fshType": "Extension",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 103,
-    "endLine": 109
+    "startLine": 89,
+    "endLine": 95
   },
   {
     "outputFile": "StructureDefinition-family-role.json",
@@ -828,8 +812,8 @@
     "fshName": "NcpiConditionSummary",
     "fshType": "Profile",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 242,
-    "endLine": 288
+    "startLine": 220,
+    "endLine": 266
   },
   {
     "outputFile": "StructureDefinition-ncpi-drs-attachment.json",
@@ -900,8 +884,8 @@
     "fshName": "NcpiParticipantAssertion",
     "fshType": "Profile",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 140,
-    "endLine": 210
+    "startLine": 110,
+    "endLine": 180
   },
   {
     "outputFile": "StructureDefinition-ncpi-participant.json",
@@ -918,6 +902,14 @@
     "fshFile": "modules/participant.fsh",
     "startLine": 101,
     "endLine": 112
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-phenotypic-feature-assertion.json",
+    "fshName": "NcpiPhenotypicFeatureAssertion",
+    "fshType": "Profile",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 191,
+    "endLine": 197
   },
   {
     "outputFile": "StructureDefinition-ncpi-proteomics.json",
@@ -988,8 +980,8 @@
     "fshName": "OtherConditionModifiers",
     "fshType": "Extension",
     "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 95,
-    "endLine": 101
+    "startLine": 81,
+    "endLine": 87
   },
   {
     "outputFile": "StructureDefinition-research-age-at-last-vital-status.json",
@@ -1096,14 +1088,6 @@
     "endLine": 18
   },
   {
-    "outputFile": "ValueSet-condition-assertion-vs.json",
-    "fshName": "ConditionAssertionVS",
-    "fshType": "ValueSet",
-    "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 56,
-    "endLine": 59
-  },
-  {
     "outputFile": "ValueSet-condition-code-vs.json",
     "fshName": "ConditionCodeVS",
     "fshType": "ValueSet",
@@ -1150,6 +1134,14 @@
     "fshFile": "modules/family.fsh",
     "startLine": 60,
     "endLine": 66
+  },
+  {
+    "outputFile": "ValueSet-phenotypic-feature-assertion-vs.json",
+    "fshName": "PhenotypicFeatureAssertionVS",
+    "fshType": "ValueSet",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 56,
+    "endLine": 59
   },
   {
     "outputFile": "ValueSet-research-data-access-code-vs.json",

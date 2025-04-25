@@ -1,0 +1,32 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncpi-phenotypic-feature-assertion",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-phenotypic-feature-assertion",
+  "name": "NcpiPhenotypicFeatureAssertion",
+  "title": "NCPI Phenotypic Feature Assertion",
+  "status": "draft",
+  "description": "Assertion about a phenotypic feature's presence or absence given a particular participant.",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-assertion-vs"
+        }
+      }
+    ]
+  }
+}

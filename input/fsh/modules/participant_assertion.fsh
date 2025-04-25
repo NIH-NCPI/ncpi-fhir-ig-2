@@ -42,35 +42,21 @@ Id: condition-type-vs
 Title: "Type of Condition"
 * include codes from system condition-type
 
-CodeSystem: ConditionAssertion
-Id: condition-assertion
-Title: "Assertion of Condition Codes"
-Description: "Code System for assertion of condition presence"
-* ^url = $condition-assertion
+CodeSystem: PhenotypicFeatureAssertion
+Id: phenotypic-feature-assertion
+Title: "Assertion of Phenotypic Feature Codes"
+Description: "Code System for assertion of phenotypic feature presence"
+* ^url = $phenotypic-feature-assertion
 * ^experimental = false
 * ^caseSensitive = true
 * #Present "Present"
 * #Absent "Absent"
 * #Unknown "Unknown"
 
-ValueSet: ConditionAssertionVS
-Id: condition-assertion-vs
-Title: "Assertion of Condition Codes"
-* include codes from system condition-assertion
-
-/*
-ValueSet: BodyLocationQualifierVS
-Id: condition-location-vs
-Title: "Location Information"
-Description: "Location Information"
-* include codes from system $body-location-qualifier
-
-ValueSet: LateralityQualifierVS
-Id: condition-laterality-vs
-Title: "Laterality Information"
-Description: "Laterality Information"
-* include codes from system $laterality-qualifier
-*/
+ValueSet: PhenotypicFeatureAssertionVS
+Id: phenotypic-feature-assertion-vs
+Title: "Assertion of Phenotypic Feature Codes"
+* include codes from system phenotypic-feature-assertion
 
 Extension: AgeAtEvent
 Id: age-at-event
@@ -108,22 +94,6 @@ Description: "Person who recorded assertion about participant"
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
 
-
-Extension: ConditionLocation
-Id: condition-location
-Title: "Location Information"
-Description: "Location Information"
-* insert SetContext(Observation.bodySite)
-* value[x] only code 
-* value[x] from http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs 
-
-Extension: ConditionLaterality
-Id: condition-laterality
-Title: "Laterality Information"
-Description: "Laterality Information"
-* insert SetContext(Observation)
-* value[x] only code
-* value[x] from http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs
 
 
 CodeSystem: ComponentElements
@@ -217,6 +187,14 @@ Description: "Assertion about a particular Participant. May include Conditions, 
  * using ParticipantAssertions to enable basic queries to capture both positive
  * and negative assertions together. 
 */
+
+Profile: NcpiPhenotypicFeatureAssertion 
+Parent: Observation 
+Id: ncpi-phenotypic-feature-assertion 
+Title: "NCPI Phenotypic Feature Assertion"
+Description: "Assertion about a phenotypic feature's presence or absence given a particular participant."
+* value[x] only CodeableConcept
+* valueCodeableConcept from https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-assertion-vs (required)
 
 Logical: CdmConditionAssertion
 Id: SharedDataModelCondition

@@ -125,7 +125,7 @@ Description: "Example condition assertion using data from GREGoR"
 * subject = Reference(GSS123456)
 * code.coding = $hpo#HP:0006951 /* condition code */
 * code.text = "retrocerebellar cyst" /* condition text */
-* valueCodeableConcept = $condition-assertion#Present /* assertion */
+* valueCodeableConcept = $phenotypic-feature-assertion#Present /* assertion */
 * category = $condition-type#Disease /* condition type */
 * component.code = #ageAtOnset
 * component[ageAtOnset].valueQuantity 

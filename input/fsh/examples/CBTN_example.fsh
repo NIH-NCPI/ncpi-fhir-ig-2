@@ -399,7 +399,7 @@ Description: "Example condition assertion using data from CBTN."
     * valueDuration = 4931 'days'
     * valueDuration.unit = "d"
 /* assertion */
-* valueCodeableConcept = $condition-assertion#Present
+* valueCodeableConcept = $phenotypic-feature-assertion#Present
 /* condition type */
 * category = $condition-type#Disease
 
