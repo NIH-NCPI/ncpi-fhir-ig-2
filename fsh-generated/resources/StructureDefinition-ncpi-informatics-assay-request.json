@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ncpi-informatics-assay-request",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-informatics-assay-request",
+  "name": "NcpiAssay",
+  "title": "NCPI Informatics Assay Request",
+  "status": "draft",
+  "description": "Profile to represent informatics assay requests within NCPI, such as WGS, RNA-seq, etc.",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.intent",
+        "path": "ServiceRequest.intent",
+        "patternCode": "order"
+      },
+      {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://loinc.org"
+        }
+      },
+      {
+        "id": "ServiceRequest.reasonCode",
+        "path": "ServiceRequest.reasonCode",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.supportingInfo",
+        "path": "ServiceRequest.supportingInfo",
+        "mustSupport": true
+      }
+    ]
+  }
+}
