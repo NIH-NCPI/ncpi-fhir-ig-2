@@ -1,0 +1,172 @@
+{
+  "resourceType": "Task",
+  "id": "t2",
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/a2"
+    }
+  ],
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "fastq-format",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "FASTQ Format"
+          }
+        ]
+      },
+      "valueString": "Phred+33"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "read-length",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Read Length"
+          }
+        ]
+      },
+      "valueInteger": 150
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "paired-end",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Paired End"
+          }
+        ]
+      },
+      "valueBoolean": true
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "adapter-sequence",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Adapter Sequence"
+          }
+        ]
+      },
+      "valueString": "AGATCGGAAGAGC"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "min-base-quality",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Minimum Base Quality"
+          }
+        ]
+      },
+      "valueInteger": 20
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "reference-genome",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Reference Genome"
+          }
+        ]
+      },
+      "valueString": "GRCh38"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "mark-duplicates",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Mark Duplicates"
+          }
+        ]
+      },
+      "valueBoolean": true
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "variant-caller",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Variant Caller"
+          }
+        ]
+      },
+      "valueString": "GATK HaplotypeCaller"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "variant-caller-mode",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Variant Caller Mode"
+          }
+        ]
+      },
+      "valueString": "gVCF"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "ploidy",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Ploidy"
+          }
+        ]
+      },
+      "valueInteger": 2
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "population-database",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Population Database"
+          }
+        ]
+      },
+      "valueString": "gnomAD v3"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "annotation-tool",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Annotation Tool"
+          }
+        ]
+      },
+      "valueString": "Ensembl VEP"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "target-region",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+            "display": "Target Region"
+          }
+        ]
+      },
+      "valueString": "Whole genome"
+    }
+  ],
+  "status": "requested",
+  "intent": "order",
+  "focus": {
+    "reference": "Group/rs1-g1"
+  }
+}

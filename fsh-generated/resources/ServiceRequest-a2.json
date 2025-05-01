@@ -1,0 +1,37 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "a2",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-informatics-assay-request"
+    ]
+  },
+  "specimen": [
+    {
+      "reference": "Specimen/s1"
+    },
+    {
+      "reference": "Specimen/s2"
+    }
+  ],
+  "reasonCode": [
+    {
+      "text": "Investigating suspected hereditary condition"
+    }
+  ],
+  "intent": "order",
+  "status": "active",
+  "code": {
+    "coding": [
+      {
+        "code": "86206-0",
+        "system": "http://loinc.org",
+        "display": "Whole genome sequencing analysis"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Group/rs1-g1"
+  },
+  "authoredOn": "2025-04-30T09:00:00Z"
+}

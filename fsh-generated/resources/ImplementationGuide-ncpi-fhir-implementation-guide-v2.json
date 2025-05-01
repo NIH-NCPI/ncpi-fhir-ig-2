@@ -302,11 +302,41 @@
       },
       {
         "reference": {
+          "reference": "ServiceRequest/a2"
+        },
+        "name": "Example assay association of with Group of participants and set of specimens",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-informatics-assay-request"
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/a1"
+        },
+        "name": "Example assay simple association of Patient and Specimen",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-informatics-assay-request"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/s1"
+        },
+        "name": "Example biospecimen",
+        "description": "Example biospecimen",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/s2"
+        },
+        "name": "Example biospecimen",
+        "description": "Example biospecimen",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
+      },
+      {
+        "reference": {
           "reference": "Specimen/SA-000"
         },
         "name": "Example biospecimen based on data from CBTN",
         "description": "Example biospecimen based on data from CBTN",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
       },
       {
         "reference": {
@@ -314,7 +344,7 @@
         },
         "name": "Example biospecimen based on data from GREGoR",
         "description": "Example biospecimen based on data from GREGoR",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-collected-sample"
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
       },
       {
         "reference": {
@@ -358,6 +388,22 @@
       },
       {
         "reference": {
+          "reference": "DocumentReference/f1"
+        },
+        "name": "Example file created by assay a1",
+        "description": "Example file created by assay a1",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/f2"
+        },
+        "name": "Example file created by assay a2",
+        "description": "Example file created by assay a2, associated with a group",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
+      },
+      {
+        "reference": {
           "reference": "Observation/gregor-example-metadata"
         },
         "name": "Example file metadata for a BAM-CRAM file from GREGoR",
@@ -379,6 +425,22 @@
         "name": "Example mappings based on data from GREGoR",
         "description": "Example mappings based on data from GREGoR",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
+      },
+      {
+        "reference": {
+          "reference": "Patient/p1"
+        },
+        "name": "Example patient",
+        "description": "Example patient",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
+      },
+      {
+        "reference": {
+          "reference": "Patient/p2"
+        },
+        "name": "Example patient",
+        "description": "Example patient",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
       },
       {
         "reference": {
@@ -438,11 +500,43 @@
       },
       {
         "reference": {
+          "reference": "ResearchStudy/rs1"
+        },
+        "name": "Example study",
+        "description": "Example study",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
+      },
+      {
+        "reference": {
           "reference": "ResearchStudy/research-study-gregor"
         },
         "name": "Example study from GREGoR",
         "description": "Example study from GREGoR",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
+      },
+      {
+        "reference": {
+          "reference": "Group/rs1-g1"
+        },
+        "name": "Example study group",
+        "description": "Example study group",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
+      },
+      {
+        "reference": {
+          "reference": "Task/t1"
+        },
+        "name": "Example Task based on assay a1",
+        "description": "Detailed provenance referencing assay a1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/t2"
+        },
+        "name": "Example Task based on assay a2",
+        "description": "Detailed provenance referencing assay a2 with example inputs",
+        "exampleBoolean": true
       },
       {
         "reference": {
@@ -466,14 +560,6 @@
         },
         "name": "Family Types Codes",
         "description": "A value set with all codes used for the expected family types.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncpi-sample"
-        },
-        "name": "FHIR Profile for NCPI Sample",
-        "description": "FHIR Profile for NCPI Sample",
         "exampleBoolean": false
       },
       {
@@ -622,22 +708,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-collected-sample"
-        },
-        "name": "NCPI biospecimen definition for collected samples",
-        "description": "NCPI biospecimen definition for collected samples",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ncpi-non-collected-sample"
-        },
-        "name": "NCPI biospecimen definition for non-collected samples",
-        "description": "NCPI biospecimen definition for non-collected samples",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ncpi-condition"
         },
         "name": "NCPI Conditon",
@@ -694,6 +764,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-informatics-assay-request"
+        },
+        "name": "NCPI Informatics Assay Request",
+        "description": "Profile to represent informatics assay requests within NCPI, such as WGS, RNA-seq, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/metadata-elements"
         },
         "name": "NCPI Metadata slices",
@@ -746,6 +824,14 @@
         },
         "name": "NCPI Research Study Group",
         "description": "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-sample"
+        },
+        "name": "NCPI Sample",
+        "description": "FHIR Profile for NCPI Sample",
         "exampleBoolean": false
       },
       {
@@ -1193,6 +1279,14 @@
         },
         "name": "Version of the contents of the file",
         "description": "Version of the contents of the file",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/wgs-parameters"
+        },
+        "name": "WGS Task Input Parameters",
+        "description": "Parameters for WGS Task Input example",
         "exampleBoolean": false
       },
       {

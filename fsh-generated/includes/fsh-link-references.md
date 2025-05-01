@@ -31,6 +31,10 @@
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
 [ResearchDataDateOfBirthMethod]: CodeSystem-research-data-date-of-birth-method.html
 [EDAMOntologyTerms]: ValueSet-edam-ontology-terms.html
+[a2]: ServiceRequest-a2.html
+[a1]: ServiceRequest-a1.html
+[s1]: Specimen-s1.html
+[s2]: Specimen-s2.html
 [SA-000]: Specimen-SA-000.html
 [GSS123456-01-010]: Specimen-GSS123456-01-010.html
 [PT-006SP660-condition]: Observation-PT-006SP660-condition.html
@@ -38,9 +42,13 @@
 [GSS654321]: Patient-GSS654321.html
 [GF-6BAD9S7D]: DocumentReference-GF-6BAD9S7D.html
 [GSS123456-01-010-SG-2]: DocumentReference-GSS123456-01-010-SG-2.html
+[f1]: DocumentReference-f1.html
+[f2]: DocumentReference-f2.html
 [gregor-example-metadata]: Observation-gregor-example-metadata.html
 [FASTQ-example]: Observation-FASTQ-example.html
 [gregor-example-participantstudy]: ResearchSubject-gregor-example-participantstudy.html
+[p1]: Patient-p1.html
+[p2]: Patient-p2.html
 [PT-006SP660]: Patient-PT-006SP660.html
 [cbtn-study-family]: Group-cbtn-study-family.html
 [GSS123456]: Patient-GSS123456.html
@@ -48,11 +56,14 @@
 [gregor-study-family]: Group-gregor-study-family.html
 [PT-006SP675]: Patient-PT-006SP675.html
 [pcgc-example-person]: Person-pcgc-example-person.html
+[rs1]: ResearchStudy-rs1.html
 [research-study-gregor]: ResearchStudy-research-study-gregor.html
+[rs1-g1]: Group-rs1-g1.html
+[t1]: Task-t1.html
+[t2]: Task-t2.html
 [NcpiFamilyRelationship]: StructureDefinition-ncpi-family-relationship.html
 [FamilyType]: StructureDefinition-family-type.html
 [NcpiFamilyTypesVS]: ValueSet-ncpi-family-types-vs.html
-[NCPISample]: StructureDefinition-ncpi-sample.html
 [NcpiGeneFusionOrExpression]: StructureDefinition-ncpi-gene-fusion-expression.html
 [kf-gsr-allowed-access]: Consent-kf-gsr-allowed-access.html
 [gregor-gru-consent]: Consent-gregor-gru-consent.html
@@ -71,8 +82,6 @@
 [BodyLocationQualifierVS]: ValueSet-condition-location-vs.html
 [NcpiMAF]: StructureDefinition-ncpi-maf.html
 [MeshTerms]: ValueSet-mesh-terms.html
-[NCPICollectedSample]: StructureDefinition-ncpi-collected-sample.html
-[NCPINonCollectedSample]: StructureDefinition-ncpi-non-collected-sample.html
 [NcpiCondition]: StructureDefinition-ncpi-condition.html
 [NcpiDRSFile]: StructureDefinition-ncpi-drs-file.html
 [NcpiFamilyTypes]: CodeSystem-ncpi-family-types.html
@@ -80,6 +89,7 @@
 [Ncpi]: CodeSystem-ncpi.html
 [NcpiFile]: StructureDefinition-ncpi-file.html
 [NcpiFileMetadata]: StructureDefinition-ncpi-file-metadata.html
+[NcpiAssay]: StructureDefinition-ncpi-informatics-assay-request.html
 [MetadataElements]: CodeSystem-metadata-elements.html
 [NcpiParticipant]: StructureDefinition-ncpi-participant.html
 [NcpiPerson]: StructureDefinition-ncpi-person.html
@@ -87,6 +97,7 @@
 [NcpiResearchCollection]: StructureDefinition-ncpi-research-collection.html
 [NcpiResearchStudy]: StructureDefinition-ncpi-research-study.html
 [ResearchStudyGroup]: StructureDefinition-research-study-group.html
+[NCPISample]: StructureDefinition-ncpi-sample.html
 [NcpiStudyFamily]: StructureDefinition-ncpi-study-family.html
 [NcpiStudyParticipant]: StructureDefinition-ncpi-Study-Participant.html
 [kf-research-study-cbtn-participants]: Group-kf-research-study-cbtn-participants.html
@@ -143,5 +154,6 @@
 [HashValue]: StructureDefinition-hash-value.html
 [NcpiVCF]: StructureDefinition-ncpi-vcf.html
 [ContentVersion]: StructureDefinition-content-version.html
+[WGSParameters]: CodeSystem-wgs-parameters.html
 [WorkflowToolCS]: CodeSystem-workflow-tool-cs.html
 [WorkflowTypeCS]: CodeSystem-workflow-type-cs.html

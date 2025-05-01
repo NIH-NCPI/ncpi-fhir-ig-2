@@ -4,7 +4,7 @@
   "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample",
   "version": "0.1.0",
   "name": "NCPISample",
-  "title": "FHIR Profile for NCPI Sample",
+  "title": "NCPI Sample",
   "status": "draft",
   "description": "FHIR Profile for NCPI Sample",
   "fhirVersion": "4.3.0",
@@ -16,80 +16,22 @@
   "differential": {
     "element": [
       {
-        "id": "Specimen.extension",
-        "path": "Specimen.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Specimen.extension:biospecimen-spatial",
-        "path": "Specimen.extension",
-        "sliceName": "biospecimen-spatial",
-        "short": "Any spatial/location qualifiers",
-        "min": 0,
-        "max": "1",
-        "type": [
+        "id": "Specimen",
+        "path": "Specimen",
+        "constraint": [
           {
-            "code": "Extension",
-            "profile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Specimen.extension:biospecimen-laterality",
-        "path": "Specimen.extension",
-        "sliceName": "biospecimen-laterality",
-        "short": "Laterality information for the site",
-        "min": 0,
-        "max": "1",
-        "type": [
+            "key": "collection-no-parent",
+            "severity": "error",
+            "human": "If there is no parent sample, collection information must be present. If there is collection information present, there should be no parent sample.",
+            "expression": "parent.empty() implies collection.exists() and collection.exists() implies parent.empty()",
+            "source": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Specimen.extension:aliquot-availability",
-        "path": "Specimen.extension",
-        "sliceName": "aliquot-availability",
-        "short": "Can this Sample be requested for further analysis?",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Specimen.extension:aliquot-concentration",
-        "path": "Specimen.extension",
-        "sliceName": "aliquot-concentration",
-        "short": "What is the concentration of the analyte in the Aliquot?",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration"
-            ]
+            "key": "parent-no-collection",
+            "severity": "error",
+            "human": "If there is no collection information, a parent sample must be present. If there is a parent sample present, there should be no collection information.",
+            "expression": "collection.empty() implies parent.exists() and parent.exists() implies collection.empty()",
+            "source": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
           }
         ]
       },
@@ -123,6 +65,57 @@
         "short": "The Sample from which this Sample was derived"
       },
       {
+        "id": "Specimen.collection",
+        "path": "Specimen.collection",
+        "short": "Information about how the biospecimen was collected. Collection information may be unknown, but must be included when there is no parent sample "
+      },
+      {
+        "id": "Specimen.collection.extension",
+        "path": "Specimen.collection.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Specimen.collection.extension:biospecimen-spatial",
+        "path": "Specimen.collection.extension",
+        "sliceName": "biospecimen-spatial",
+        "short": "Any spatial/location qualifiers",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.extension:biospecimen-laterality",
+        "path": "Specimen.collection.extension",
+        "sliceName": "biospecimen-laterality",
+        "short": "Laterality information for the site",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Specimen.collection.collected[x]",
         "path": "Specimen.collection.collected[x]",
         "short": "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)",
@@ -140,7 +133,8 @@
       {
         "id": "Specimen.collection.method",
         "path": "Specimen.collection.method",
-        "short": "The approach used to collect the biospecimen"
+        "short": "The approach used to collect the biospecimen (unknown if not provided)",
+        "min": 1
       },
       {
         "id": "Specimen.collection.bodySite",
@@ -152,6 +146,52 @@
         "path": "Specimen.processing.procedure",
         "short": "Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample",
         "min": 1
+      },
+      {
+        "id": "Specimen.container.extension",
+        "path": "Specimen.container.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Specimen.container.extension:aliquot-availability",
+        "path": "Specimen.container.extension",
+        "sliceName": "aliquot-availability",
+        "short": "Can this Sample be requested for further analysis?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.extension:aliquot-concentration",
+        "path": "Specimen.container.extension",
+        "sliceName": "aliquot-concentration",
+        "short": "What is the concentration of the analyte in the Aliquot?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration"
+            ]
+          }
+        ]
       },
       {
         "id": "Specimen.container.identifier",
