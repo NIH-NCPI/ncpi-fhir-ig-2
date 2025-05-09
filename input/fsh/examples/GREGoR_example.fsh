@@ -115,22 +115,66 @@ Description: "An example family relationship based on data from GREGoR."
 * code = $family-role-code#CHILD "child"
 * status = #registered
 
-// NCPI Condition
-Instance: GSS123456-condition
-InstanceOf: NcpiCondition
-Title: "Example condition using data from GREGoR"
+// NCPI Condition as an assertion
+Instance: GSS123456-condition-assertion
+InstanceOf: NcpiParticipantAssertion
+Title: "Example condition assertion using data from GREGoR"
 Usage: #example
-Description: "Example condition using data from GREGoR"
+Description: "Example condition assertion using data from GREGoR"
 * status = #final
 * subject = Reference(GSS123456)
 * code.coding = $hpo#HP:0006951 /* condition code */
 * code.text = "retrocerebellar cyst" /* condition text */
-* valueCodeableConcept = $condition-assertion#Present /* assertion */
+* valueCodeableConcept = $phenotypic-feature-assertion#Present /* assertion */
 * category = $condition-type#Disease /* condition type */
 * component.code = #ageAtOnset
-* component[ageAtOnset].valueCodeableConcept = $hpo#HP:0011463 /* age at onset */
+* component[ageAtOnset].valueQuantity 
+  * value = 64
+  * unit = "years"
+  * system = $ucum
+  * code = #a  
 * component.code = #otherModifiers
 * component[otherModifiers].valueCodeableConcept = $hpo#HP:0012832
+
+// NCPI Condition as a condition summary
+Instance: GSS123456-condition-summary
+InstanceOf: NcpiConditionSummary
+Title: "Example condition summary using data from GREGoR"
+Usage: #example
+Description: "Example condition summary using data from GREGoR"
+* subject = Reference(GSS123456)
+* code.coding = $hpo#HP:0006951 /* condition code */
+* code.text = "retrocerebellar cyst" /* condition text */
+* category = $condition-type#Disease /* condition type */
+* onsetAge
+  * value = 64
+  * unit = "years"
+  * system = $ucum
+  * code = #a  
+* extension[other-condition-modifiers].valueCodeableConcept = $hpo#HP:0012832
+
+// NCPI Participant Assertion
+Instance: GSS123456-assertion
+InstanceOf: NcpiParticipantAssertion
+Title: "Example assertion using data from GREGoR"
+Usage: #example
+Description: "Example assertion using data from GREGoR"
+* status = #final
+* subject = Reference(GSS123456)
+* code.coding = $snomedct_us#271603002 /* assertion code */
+* code.text = "Height / growth measure" /* assertion description */
+* valueQuantity
+  * value = 66 
+  * unit = "inches"
+  * code = $ucum#[in_us]
+  * system = $ucum
+* category = $condition-type#Clinical-Finding /* assertion type */
+* component.code = #ageAtAssertion
+* component[ageAtAssertion].valueQuantity 
+  * value = 38
+  * unit = "year"
+  * code = $ucum#a
+  * system = $ucum
 
 //NCPI Biospecimen
 Instance: GSS123456-01-010 /*Collection Event ID can't have underscores*/

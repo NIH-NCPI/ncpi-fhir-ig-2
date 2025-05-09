@@ -368,12 +368,12 @@ Description: "An example family relationship based on data from CBTN."
 * status = #registered
 
 
-// NCPI Condition
+// NCPI Condition Assertion
 Instance: PT-006SP660-condition
-InstanceOf: NcpiCondition
-Title: "Example condition using data from CBTN"
+InstanceOf: NcpiParticipantAssertion
+Title: "Example condition assertion using data from CBTN"
 Usage: #example
-Description: "Example condition using data from CBTN."
+Description: "Example condition assertion using data from CBTN."
 * status = #final
 // had to change reference participant so sushi doesn't get errors
 * subject = Reference(PT-006SP660)
@@ -399,7 +399,7 @@ Description: "Example condition using data from CBTN."
     * valueDuration = 4931 'days'
     * valueDuration.unit = "d"
 /* assertion */
-* valueCodeableConcept = $condition-assertion#Present
+* valueCodeableConcept = $phenotypic-feature-assertion#Present
 /* condition type */
 * category = $condition-type#Disease
 
