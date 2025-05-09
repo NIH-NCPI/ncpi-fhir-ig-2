@@ -61,7 +61,7 @@ Title: "Assertion of Phenotypic Feature Codes"
 ValueSet: PhenotypicFeatureCodeVS
 Id: phenotypic-feature-code-vs
 Title: "Phenotypic Feature Codes"
-Description: "Includes all codes from **HPO**
+Description: "Includes all codes from **HPO** "
 * include codes from system $hpo 
 
 Extension: AgeAtEvent

@@ -93,6 +93,7 @@
 [gregor-research-study-participants]: Group-gregor-research-study-participants.html
 [ncpi-research-collection-pbta]: List-ncpi-research-collection-pbta.html
 [EntityAsserter]: StructureDefinition-entity-asserter.html
+[PhenotypicFeatureCodeVS]: ValueSet-phenotypic-feature-code-vs.html
 [PlatformInstrumentCS]: CodeSystem-platform-instrument-cs.html
 [NcpiProteomics]: StructureDefinition-ncpi-proteomics.html
 [HashExtension]: StructureDefinition-hash-extension.html
