@@ -18,7 +18,7 @@ Description: "The Shared Data Model for **Participant Assertion**"
 
 ValueSet: ConditionCodeVS
 Id: condition-code-vs
-Title: "Conditon Codes"
+Title: "Condition Codes"
 Description: "Includes all codes from **HPO** and **MONDO**"
 * include codes from system $hpo 
 * include codes from system $mondo 
@@ -57,6 +57,12 @@ ValueSet: PhenotypicFeatureAssertionVS
 Id: phenotypic-feature-assertion-vs
 Title: "Assertion of Phenotypic Feature Codes"
 * include codes from system phenotypic-feature-assertion
+
+ValueSet: PhenotypicFeatureCodeVS
+Id: phenotypic-feature-code-vs
+Title: "Phenotypic Feature Codes"
+Description: "Includes all codes from **HPO**
+* include codes from system $hpo 
 
 Extension: AgeAtEvent
 Id: age-at-event
@@ -193,6 +199,7 @@ Parent: NcpiParticipantAssertion
 Id: ncpi-phenotypic-feature-assertion 
 Title: "NCPI Phenotypic Feature Assertion"
 Description: "Assertion about a phenotypic feature's presence or absence given a particular participant."
+* code from https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-code-vs (extensible)
 * value[x] only CodeableConcept
 * valueCodeableConcept from https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-assertion-vs (required)
 
