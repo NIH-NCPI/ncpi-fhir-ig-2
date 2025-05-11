@@ -1,6 +1,6 @@
 {
   "package": "ncpi-fhir-implementation-guide-v2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "fhirVersion": "4.3.0",
   "extensions": [
     {
@@ -32,6 +32,13 @@
       ]
     },
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-event",
+      "title": "Age at Event",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability",
       "title": "Availability Status of Aliquot",
       "types": [
@@ -60,27 +67,6 @@
       ]
     },
     {
-      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-asserter",
-      "title": "Person who recorded assertion about participant",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-laterality",
-      "title": "Laterality Information",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-location",
-      "title": "Location Information",
-      "types": [
-        "code"
-      ]
-    },
-    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/consanguinity",
       "title": "Consanguinity Extension",
       "types": [
@@ -99,6 +85,13 @@
       "title": "Study Family Description",
       "types": [
         "markdown"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter",
+      "title": "Person who recorded assertion about participant",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -264,6 +257,13 @@
       "title": "If present, only those under the specific Access Policy can access the file in this location.",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers",
+      "title": "Any additional modifiers for this condition, such as severity.",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -467,6 +467,12 @@
         "title": "VCF or gVCF file profile"
       }
     ],
+    "Condition": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition-summary",
+        "title": "NCPI Conditon Summary"
+      }
+    ],
     "DocumentReference": [
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file",
@@ -555,6 +561,7 @@
       "SharedDataModelCondition",
       "SharedDataModelFile",
       "SharedDataModelFile.location",
+      "SharedDataModelParticipantAssertion",
       "SharedDataModelPerson",
       "SharedDataModelSample",
       "SharedDataModelStudyParticipant"
@@ -586,6 +593,14 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
     ],
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier": [
+      "Condition.bodySite",
+      "Observation.bodySite"
+    ],
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier": [
+      "Condition.bodySite",
+      "Observation.bodySite"
+    ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy": [
       "ResearchSubject"
     ],
@@ -594,6 +609,9 @@
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type": [
       "Consent"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-event": [
+      "Condition"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability": [
       "Specimen.container"
@@ -607,15 +625,6 @@
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial": [
       "Specimen.collection"
     ],
-    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-asserter": [
-      "Observation"
-    ],
-    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-laterality": [
-      "Observation"
-    ],
-    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/condition-location": [
-      "Observation"
-    ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/consanguinity": [
       "Group"
     ],
@@ -624,6 +633,10 @@
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/description": [
       "Group"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter": [
+      "Condition",
+      "Observation"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role": [
       "Group.member.entity"
@@ -652,6 +665,9 @@
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access": [
       "DocumentReference",
       "DocumentReference.content"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers": [
+      "Condition"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status": [
       "Patient"

@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/GSS123456-assertion> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "GSS123456-assertion"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation GSS123456-assertion</b></p><a name=\"GSS123456-assertion\"> </a><a name=\"hcGSS123456-assertion\"> </a><a name=\"GSS123456-assertion-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-participant-assertion.html\">NCPI Participant Assertion</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type Clinical-Finding}\">Clinical Finding</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271603002}\">Height / growth measure</span></p><p><b>subject</b>: <a href=\"Patient-GSS123456.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>value</b>: 66 inches<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code[in_us] = '[in_us]')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">ageAtAssertion</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">ageAtAssertion</span></p><p><b>value</b>: 38 year<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Clinical-Finding" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:271603002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "271603002" ]
+     ] ) ;
+     fhir:text [ fhir:v "Height / growth measure" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/GSS123456> ;
+     fhir:reference [ fhir:v "Patient/GSS123456" ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "66"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "inches" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "[in_us]" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "ageAtAssertion" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "ageAtAssertion" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "38"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "year" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "a" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

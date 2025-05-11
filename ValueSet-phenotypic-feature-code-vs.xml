@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="phenotypic-feature-code-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet phenotypic-feature-code-vs</b></p><a name="phenotypic-feature-code-vs"> </a><a name="hcphenotypic-feature-code-vs"> </a><a name="phenotypic-feature-code-vs-en-US"> </a><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/6.2.0/CodeSystem-HPO.html"><code>http://human-phenotype-ontology.org</code></a></li></ul></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-code-vs"/>
+  <version value="0.2.0"/>
+  <name value="PhenotypicFeatureCodeVS"/>
+  <title value="Phenotypic Feature Codes"/>
+  <status value="draft"/>
+  <date value="2025-05-11T16:39:55+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Includes all codes from **HPO** "/>
+  <compose>
+    <include>
+      <system value="http://human-phenotype-ontology.org"/>
+    </include>
+  </compose>
+</ValueSet>

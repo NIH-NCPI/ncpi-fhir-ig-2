@@ -10,7 +10,8 @@
       "oids" : ["2.16.840.1.113883.6.339"],
       "uses" : {
       },
-      "ValueSet-condition-code-vs.html" : "Conditon Codes"
+      "ValueSet-condition-code-vs.html" : "Condition Codes",
+      "ValueSet-phenotypic-feature-code-vs.html" : "Phenotypic Feature Codes"
     },
     {
       "url" : "http://purl.obolibrary.org/obo/mondo.owl",
@@ -22,7 +23,7 @@
       "oids" : ["2.16.840.1.113883.3.9216"],
       "uses" : {
       },
-      "ValueSet-condition-code-vs.html" : "Conditon Codes"
+      "ValueSet-condition-code-vs.html" : "Condition Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -38,12 +39,11 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/title-type",
-      "version" : "4.3.0",
-      "status" : "draft",
+      "version" : "1.0.0",
+      "status" : "active",
       "name" : "TitleType",
-      "title" : "TitleType",
+      "title" : "Title Type",
       "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1492"],
       "uses" : {
       },
       "http://hl7.org/fhir/R4B/valueset-title-type.html" : "TitleType"
@@ -62,7 +62,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "CollectionType",
       "title" : "Collection Type",
@@ -72,19 +72,8 @@
       "ValueSet-collection-type-vs.html" : "Collection Type"
     },
     {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ConditionAssertion",
-      "title" : "Assertion of Condition Codes",
-      "description" : "Code System for assertion of condition presence",
-      "uses" : {
-      },
-      "ValueSet-condition-assertion-vs.html" : "Assertion of Condition Codes"
-    },
-    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ConditionType",
       "title" : "Type of Condition",
@@ -95,7 +84,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "NcpiFamilyTypes",
       "title" : "NCPI Family Types CodeSystem",
@@ -105,8 +94,19 @@
       "ValueSet-ncpi-family-types-vs.html" : "Family Types Codes"
     },
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "PhenotypicFeatureAssertion",
+      "title" : "Assertion of Phenotypic Feature Codes",
+      "description" : "Code System for assertion of phenotypic feature presence",
+      "uses" : {
+      },
+      "ValueSet-phenotypic-feature-assertion-vs.html" : "Assertion of Phenotypic Feature Codes"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ResearchDataAccessCode",
       "title" : "Research Data Access Codes",
@@ -117,7 +117,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ResearchDataAccessType",
       "title" : "Research Data Access Type Codes",
@@ -128,7 +128,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ResearchDataDateOfBirthMethod",
       "title" : "Enumerations for how DOB was constructed",
@@ -139,7 +139,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "StudyNameType",
       "title" : "Study Name Type",
@@ -150,7 +150,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "StudyPersonnelRole",
       "title" : "Study Personnel Role",

@@ -1,6 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "SharedDataModelCondition","SharedDataModelCondition","","","",0,*,"","","","null {[]} {[]}
-","Shared Data Model for Condition","The Shared Data Model for **Condition**","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Shared Data Model for Condition Assertions","The Shared Data Model for **Condition Assertions**","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "SharedDataModelCondition.participant","SharedDataModelCondition.participant","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/valueset-reference]]} {[]}
 ","The participant we are describing","The participant we are describing","","","","","","","","","",,,,,"",,,,"SharedDataModelCondition.participant",1,1,"",""
 "SharedDataModelCondition.condition","SharedDataModelCondition.condition","","","",0,*,"","","","code {[]} {[]}
@@ -19,7 +19,7 @@
 ","The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range.","The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range.","","","","","","","","","",,,,,"",,,,"SharedDataModelCondition.ageAtResolution",0,1,"",""
 "SharedDataModelCondition.otherModifiers","SharedDataModelCondition.otherModifiers","","","",0,*,"","","","code {[]} {[]}
 ","Any additional modifiers for this condition, such as severity.","Any additional modifiers for this condition, such as severity.","","","","","","","","","",,,,,"",,,,"SharedDataModelCondition.otherModifiers",0,*,"",""
-"SharedDataModelCondition.stage","SharedDataModelCondition.stage","","","",0,1,"","","","date {[]} {[]}
+"SharedDataModelCondition.stage","SharedDataModelCondition.stage","","","",0,1,"","","","code {[]} {[]}
 ","Cancer staging information","Cancer staging information","","","","","","","","","",,,,,"",,,,"SharedDataModelCondition.stage",0,1,"",""
 "SharedDataModelCondition.location","SharedDataModelCondition.location","","","",0,*,"","","","code {[]} {[]}
 ","Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as ""right lung"" and ""left kidney"" may require multiple condition rows.","Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as ""right lung"" and ""left kidney"" may require multiple condition rows.","","","","","","","","","",,,,,"",,,,"SharedDataModelCondition.location",0,*,"",""

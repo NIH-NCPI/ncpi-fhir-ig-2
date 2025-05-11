@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2025-03-24T15:08:47+00:00"/>
+  <date value="2025-05-11T16:39:55+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -34,7 +34,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.2.0"/>
+    <version value="6.3.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -47,7 +47,12 @@
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="3.1.1"/>
+    <version value="6.1.0"/>
+  </dependsOn>
+  <dependsOn id="mcode">
+    <uri value="http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"/>
+    <packageId value="hl7.fhir.us.mcode"/>
+    <version value="4.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -251,7 +256,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.4.1"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -513,6 +518,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/age-at-event"/>
+      </reference>
+      <name value="Age at Event"/>
+      <description value="Age at Event Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/research-age-at-last-vital-status"/>
       </reference>
       <name value="Age at Last Vital Status Extension"/>
@@ -565,6 +581,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/other-condition-modifiers"/>
+      </reference>
+      <name value="Any additional modifiers for this condition, such as severity."/>
+      <description value="Any additional modifiers for this condition, such as severity."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -579,9 +606,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/condition-assertion-vs"/>
+        <reference value="ValueSet/phenotypic-feature-assertion-vs"/>
       </reference>
-      <name value="Assertion of Condition Codes"/>
+      <name value="Assertion of Phenotypic Feature Codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -589,10 +616,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/condition-assertion"/>
+        <reference value="CodeSystem/phenotypic-feature-assertion"/>
       </reference>
-      <name value="Assertion of Condition Codes"/>
-      <description value="Code System for assertion of condition presence"/>
+      <name value="Assertion of Phenotypic Feature Codes"/>
+      <description value="Code System for assertion of phenotypic feature presence"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -712,7 +739,7 @@
       <reference>
         <reference value="ValueSet/condition-code-vs"/>
       </reference>
-      <name value="Conditon Codes"/>
+      <name value="Condition Codes"/>
       <description value="Includes all codes from **HPO** and **MONDO**"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -817,6 +844,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/GSS123456-assertion"/>
+      </reference>
+      <name value="Example assertion using data from GREGoR"/>
+      <description value="Example assertion using data from GREGoR"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Specimen"/>
       </extension>
       <reference>
@@ -844,20 +882,31 @@
       <reference>
         <reference value="Observation/PT-006SP660-condition"/>
       </reference>
-      <name value="Example condition using data from CBTN"/>
-      <description value="Example condition using data from CBTN."/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"/>
+      <name value="Example condition assertion using data from CBTN"/>
+      <description value="Example condition assertion using data from CBTN."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/GSS123456-condition"/>
+        <reference value="Observation/GSS123456-condition-assertion"/>
       </reference>
-      <name value="Example condition using data from GREGoR"/>
-      <description value="Example condition using data from GREGoR"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"/>
+      <name value="Example condition assertion using data from GREGoR"/>
+      <description value="Example condition assertion using data from GREGoR"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/GSS123456-condition-summary"/>
+      </reference>
+      <name value="Example condition summary using data from GREGoR"/>
+      <description value="Example condition summary using data from GREGoR"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition-summary"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1136,28 +1185,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/condition-laterality"/>
-      </reference>
-      <name value="Laterality Information"/>
-      <description value="Laterality Information"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/condition-laterality-vs"/>
-      </reference>
-      <name value="Laterality Information"/>
-      <description value="Laterality Information"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -1202,28 +1229,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/condition-location"/>
-      </reference>
-      <name value="Location Information"/>
-      <description value="Location Information"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/condition-location-vs"/>
-      </reference>
-      <name value="Location Information"/>
-      <description value="Location Information"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1249,9 +1254,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ncpi-condition"/>
+        <reference value="StructureDefinition/ncpi-condition-summary"/>
       </reference>
-      <name value="NCPI Conditon"/>
+      <name value="NCPI Conditon Summary"/>
       <description value="Information about a condition related to a research participant"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1348,10 +1353,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ncpi-participant-assertion"/>
+      </reference>
+      <name value="NCPI Participant Assertion"/>
+      <description value="Assertion about a particular Participant. May include Conditions, Measurements, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ncpi-person"/>
       </reference>
       <name value="NCPI Person"/>
       <description value="Person"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-phenotypic-feature-assertion"/>
+      </reference>
+      <name value="NCPI Phenotypic Feature Assertion"/>
+      <description value="Assertion about a phenotypic feature's presence or absence given a particular participant."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1469,10 +1496,21 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/condition-asserter"/>
+        <reference value="StructureDefinition/entity-asserter"/>
       </reference>
       <name value="Person who recorded assertion about participant"/>
       <description value="Person who recorded assertion about participant"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/phenotypic-feature-code-vs"/>
+      </reference>
+      <name value="Phenotypic Feature Codes"/>
+      <description value="Includes all codes from **HPO**"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1713,8 +1751,8 @@
       <reference>
         <reference value="StructureDefinition/SharedDataModelCondition"/>
       </reference>
-      <name value="Shared Data Model for Condition"/>
-      <description value="The Shared Data Model for **Condition**"/>
+      <name value="Shared Data Model for Condition Assertions"/>
+      <description value="The Shared Data Model for **Condition Assertions**"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1759,6 +1797,17 @@
       </reference>
       <name value="Shared data model for File Metadata"/>
       <description value="The **Shared Data Model for File Metadata**"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SharedDataModelParticipantAssertion"/>
+      </reference>
+      <name value="Shared Data Model for Participant Assertion"/>
+      <description value="The Shared Data Model for **Participant Assertion**"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2081,13 +2130,13 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="example_CBTN.html"/>
-        <title value="Example CBTN"/>
+        <nameUrl value="example_cbtn.html"/>
+        <title value="Example Cbtn"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="example_GREGoR.html"/>
-        <title value="Example GRE Go R"/>
+        <nameUrl value="example_gregor.html"/>
+        <title value="Example Gregor"/>
         <generation value="markdown"/>
       </page>
       <page>

@@ -26,12 +26,12 @@
       "sources" : ["2.16.840.1.113883.1.11.19579"],
       "uses" : {
       },
-      "StructureDefinition-family-role.html" : "Study Family Focus",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship"
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-family-role.html" : "Study Family Focus"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "CollectionTypeVS",
       "title" : "Collection Type",
@@ -45,25 +45,11 @@
       "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-assertion-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ConditionAssertionVS",
-      "title" : "Assertion of Condition Codes",
-      "description" : null,
-      "systems" : [
-        "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ncpi-condition.html" : "NCPI Conditon"
-    },
-    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ConditionCodeVS",
-      "title" : "Conditon Codes",
+      "title" : "Condition Codes",
       "description" : "Includes all codes from **HPO** and **MONDO**",
       "systems" : [
         "http://human-phenotype-ontology.org",
@@ -71,36 +57,8 @@
       ]
     },
     {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-laterality-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "LateralityQualifierVS",
-      "title" : "Laterality Information",
-      "description" : "Laterality Information",
-      "systems" : [
-        "http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-condition-laterality.html" : "Laterality Information"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-location-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "BodyLocationQualifierVS",
-      "title" : "Location Information",
-      "description" : "Location Information",
-      "systems" : [
-        "http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-condition-location.html" : "Location Information"
-    },
-    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ConditionTypeVS",
       "title" : "Type of Condition",
@@ -111,7 +69,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/consanguinity-assertion-vs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ConsanguinityAssertionVS",
       "title" : "Consanguinity Value Codes",
@@ -123,7 +81,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "EDAMOntologyTerms",
       "title" : "Enumerations for the EDAM ontology",
@@ -135,7 +93,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "MeshTerms",
       "title" : "MeSH Terms",
@@ -147,7 +105,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/ncpi-family-types-vs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "NcpiFamilyTypesVS",
       "title" : "Family Types Codes",
@@ -160,8 +118,34 @@
       "StructureDefinition-family-type.html" : "Family Type Extension"
     },
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-assertion-vs",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "PhenotypicFeatureAssertionVS",
+      "title" : "Assertion of Phenotypic Feature Codes",
+      "description" : null,
+      "systems" : [
+        "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-code-vs",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "PhenotypicFeatureCodeVS",
+      "title" : "Phenotypic Feature Codes",
+      "description" : "Includes all codes from **HPO** ",
+      "systems" : ["http://human-phenotype-ontology.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ResearchDataAccessCodeVS",
       "title" : "Research Data Access Codes",
@@ -171,12 +155,12 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy",
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
+      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ResearchDataAccessTypeVS",
       "title" : "Research Data Access Type Codes",
@@ -190,7 +174,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-date-of-birth-method-vs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ResearchDataDateOfBirthMethodVS",
       "title" : "Enumerations for how DOB was constructed",
@@ -204,7 +188,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "StudyNameTypeVS",
       "title" : "Study Name Type",
@@ -218,7 +202,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "StudyPersonnelRoleVS",
       "title" : "Study Personnel Role",

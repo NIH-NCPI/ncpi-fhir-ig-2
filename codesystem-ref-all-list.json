@@ -226,7 +226,8 @@
       "oids" : ["2.16.840.1.113883.6.339"],
       "uses" : {
       },
-      "ValueSet-condition-code-vs.html" : "Conditon Codes"
+      "ValueSet-condition-code-vs.html" : "Condition Codes",
+      "ValueSet-phenotypic-feature-code-vs.html" : "Phenotypic Feature Codes"
     },
     {
       "url" : "http://loinc.org",
@@ -238,10 +239,10 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4B/valueset-consent-category.html" : "Consent Category Codes",
-      "http://hl7.org/fhir/R4B/valueset-consent-content-code.html" : "Consent Content Codes",
       "http://hl7.org/fhir/R4B/valueset-doc-classcodes.html" : "Document Class Value Set",
-      "http://hl7.org/fhir/R4B/valueset-observation-codes.html" : "LOINC Codes"
+      "http://hl7.org/fhir/R4B/valueset-consent-category.html" : "Consent Category Codes",
+      "http://hl7.org/fhir/R4B/valueset-observation-codes.html" : "LOINC Codes",
+      "http://hl7.org/fhir/R4B/valueset-consent-content-code.html" : "Consent Content Codes"
     },
     {
       "url" : "http://purl.obolibrary.org/obo/mondo.owl",
@@ -253,7 +254,7 @@
       "oids" : ["2.16.840.1.113883.3.9216"],
       "uses" : {
       },
-      "ValueSet-condition-code-vs.html" : "Conditon Codes"
+      "ValueSet-condition-code-vs.html" : "Condition Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -265,15 +266,55 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-consanguinity-assertion-vs.html" : "Consanguinity Value Codes",
-      "http://hl7.org/fhir/R4B/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-      "http://hl7.org/fhir/R4B/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4B/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4B/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4B/valueset-condition-stage-type.html" : "Condition Stage Type",
       "http://hl7.org/fhir/R4B/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4B/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+      "http://hl7.org/fhir/R4B/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
       "http://hl7.org/fhir/R4B/valueset-observation-methods.html" : "Observation Methods",
       "http://hl7.org/fhir/R4B/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4B/valueset-specimen-container-type.html" : "SpecimenContainer",
-      "http://hl7.org/fhir/R4B/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method"
+      "http://hl7.org/fhir/R4B/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4B/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-consanguinity-assertion-vs.html" : "Consanguinity Value Codes",
+      "http://hl7.org/fhir/R4B/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1073"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-condition-category.html" : "Condition Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1074"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-condition-clinical.html" : "Condition Clinical Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1075"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/consentaction",
@@ -468,19 +509,18 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/title-type",
-      "version" : "4.3.0",
-      "status" : "draft",
+      "version" : "1.0.0",
+      "status" : "active",
       "name" : "TitleType",
-      "title" : "TitleType",
+      "title" : "Title Type",
       "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1492"],
       "uses" : {
       },
       "http://hl7.org/fhir/R4B/valueset-title-type.html" : "TitleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
-      "version" : "2.0.0",
+      "version" : "2.1.0",
       "status" : "active",
       "name" : "ContactRole2",
       "title" : "contactRole2",
@@ -492,7 +532,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0371",
-      "version" : "2.0.0",
+      "version" : "2.1.0",
       "status" : "active",
       "name" : "AdditivePreservative",
       "title" : "additivePreservative",
@@ -504,7 +544,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
-      "version" : "2.0.0",
+      "version" : "2.1.0",
       "status" : "active",
       "name" : "Treatment",
       "title" : "treatment",
@@ -516,7 +556,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0487",
-      "version" : "2.0.0",
+      "version" : "2.3.0",
       "status" : "active",
       "name" : "SpecimenType",
       "title" : "specimenType",
@@ -528,7 +568,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0493",
-      "version" : "2.0.0",
+      "version" : "2.2.0",
       "status" : "active",
       "name" : "SpecimenCondition",
       "title" : "specimenCondition",
@@ -540,7 +580,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
-      "version" : "2.0.0",
+      "version" : "2.2.0",
       "status" : "active",
       "name" : "RelevantClincialInformation",
       "title" : "relevantClincialInformation",
@@ -649,7 +689,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "CollectionType",
       "title" : "Collection Type",
@@ -659,19 +699,8 @@
       "ValueSet-collection-type-vs.html" : "Collection Type"
     },
     {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ConditionAssertion",
-      "title" : "Assertion of Condition Codes",
-      "description" : "Code System for assertion of condition presence",
-      "uses" : {
-      },
-      "ValueSet-condition-assertion-vs.html" : "Assertion of Condition Codes"
-    },
-    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ConditionType",
       "title" : "Type of Condition",
@@ -682,7 +711,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "NcpiFamilyTypes",
       "title" : "NCPI Family Types CodeSystem",
@@ -692,8 +721,19 @@
       "ValueSet-ncpi-family-types-vs.html" : "Family Types Codes"
     },
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "PhenotypicFeatureAssertion",
+      "title" : "Assertion of Phenotypic Feature Codes",
+      "description" : "Code System for assertion of phenotypic feature presence",
+      "uses" : {
+      },
+      "ValueSet-phenotypic-feature-assertion-vs.html" : "Assertion of Phenotypic Feature Codes"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ResearchDataAccessCode",
       "title" : "Research Data Access Codes",
@@ -704,7 +744,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ResearchDataAccessType",
       "title" : "Research Data Access Type Codes",
@@ -715,7 +755,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "ResearchDataDateOfBirthMethod",
       "title" : "Enumerations for how DOB was constructed",
@@ -726,7 +766,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "StudyNameType",
       "title" : "Study Name Type",
@@ -737,7 +777,7 @@
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "StudyPersonnelRole",
       "title" : "Study Personnel Role",
