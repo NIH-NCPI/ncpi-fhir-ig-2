@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "GSS123456-condition",
+  "id": "GSS123456-condition-assertion",
   "meta": {
     "profile": [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"
     ]
   },
   "code": {
@@ -36,18 +36,16 @@
       }
     },
     {
+      "valueQuantity": {
+        "value": 64,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+      },
       "code": {
         "coding": [
           {
             "code": "ageAtOnset"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "HP:0011463",
-            "system": "http://human-phenotype-ontology.org"
           }
         ]
       }
@@ -78,7 +76,7 @@
     "coding": [
       {
         "code": "Present",
-        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-assertion"
+        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion"
       }
     ]
   }

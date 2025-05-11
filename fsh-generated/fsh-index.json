@@ -35,25 +35,17 @@
     "outputFile": "CodeSystem-component-elements.json",
     "fshName": "ComponentElements",
     "fshType": "CodeSystem",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 114,
-    "endLine": 121
-  },
-  {
-    "outputFile": "CodeSystem-condition-assertion.json",
-    "fshName": "ConditionAssertion",
-    "fshType": "CodeSystem",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 50,
-    "endLine": 59
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 105,
+    "endLine": 114
   },
   {
     "outputFile": "CodeSystem-condition-type.json",
     "fshName": "ConditionType",
     "fshType": "CodeSystem",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 31,
-    "endLine": 43
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 26,
+    "endLine": 38
   },
   {
     "outputFile": "CodeSystem-example-hash-type-code-system.json",
@@ -102,6 +94,14 @@
     "fshFile": "terminologies/ncpi.fsh",
     "startLine": 6,
     "endLine": 34
+  },
+  {
+    "outputFile": "CodeSystem-phenotypic-feature-assertion.json",
+    "fshName": "PhenotypicFeatureAssertion",
+    "fshType": "CodeSystem",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 45,
+    "endLine": 54
   },
   {
     "outputFile": "CodeSystem-platform-instrument-cs.json",
@@ -192,6 +192,14 @@
     "endLine": 86
   },
   {
+    "outputFile": "Condition-GSS123456-condition-summary.json",
+    "fshName": "GSS123456-condition-summary",
+    "fshType": "Instance",
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 140,
+    "endLine": 154
+  },
+  {
     "outputFile": "Consent-gregor-gru-consent.json",
     "fshName": "gregor-gru-consent",
     "fshType": "Instance",
@@ -244,8 +252,8 @@
     "fshName": "GSS123456-01-010-SG-2",
     "fshType": "Instance",
     "fshFile": "examples/GREGoR_example.fsh",
-    "startLine": 147,
-    "endLine": 168
+    "startLine": 191,
+    "endLine": 212
   },
   {
     "outputFile": "Group-cbtn-study-family.json",
@@ -304,12 +312,20 @@
     "endLine": 477
   },
   {
-    "outputFile": "Observation-GSS123456-condition.json",
-    "fshName": "GSS123456-condition",
+    "outputFile": "Observation-GSS123456-assertion.json",
+    "fshName": "GSS123456-assertion",
+    "fshType": "Instance",
+    "fshFile": "examples/GREGoR_example.fsh",
+    "startLine": 157,
+    "endLine": 177
+  },
+  {
+    "outputFile": "Observation-GSS123456-condition-assertion.json",
+    "fshName": "GSS123456-condition-assertion",
     "fshType": "Instance",
     "fshFile": "examples/GREGoR_example.fsh",
     "startLine": 119,
-    "endLine": 133
+    "endLine": 137
   },
   {
     "outputFile": "Observation-PT-006SP660-condition.json",
@@ -340,8 +356,8 @@
     "fshName": "gregor-example-metadata",
     "fshType": "Instance",
     "fshFile": "examples/GREGoR_example.fsh",
-    "startLine": 171,
-    "endLine": 189
+    "startLine": 215,
+    "endLine": 233
   },
   {
     "outputFile": "Observation-gregor-family-relationship-mother.json",
@@ -460,8 +476,8 @@
     "fshName": "GSS123456-01-010",
     "fshType": "Instance",
     "fshFile": "examples/GREGoR_example.fsh",
-    "startLine": 136,
-    "endLine": 144
+    "startLine": 180,
+    "endLine": 188
   },
   {
     "outputFile": "Specimen-SA-000.json",
@@ -489,11 +505,11 @@
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelCondition.json",
-    "fshName": "CdmCondition",
+    "fshName": "CdmConditionAssertion",
     "fshType": "Logical",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 3,
-    "endLine": 21
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 206,
+    "endLine": 224
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelFamilyRelationship.json",
@@ -526,6 +542,14 @@
     "fshFile": "modules/file-metadata.fsh",
     "startLine": 1,
     "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-SharedDataModelParticipantAssertion.json",
+    "fshName": "CdmParticipantAssertion",
+    "fshType": "Logical",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 3,
+    "endLine": 16
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelPerson.json",
@@ -619,9 +643,17 @@
     "outputFile": "StructureDefinition-age-at-assertion.json",
     "fshName": "AgeAtAssertion",
     "fshType": "Extension",
-    "fshFile": "modules/condition.fsh",
+    "fshFile": "modules/participant_assertion.fsh",
     "startLine": 78,
     "endLine": 85
+  },
+  {
+    "outputFile": "StructureDefinition-age-at-event.json",
+    "fshName": "AgeAtEvent",
+    "fshType": "Extension",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 67,
+    "endLine": 76
   },
   {
     "outputFile": "StructureDefinition-aliquot-availability.json",
@@ -656,30 +688,6 @@
     "endLine": 20
   },
   {
-    "outputFile": "StructureDefinition-condition-asserter.json",
-    "fshName": "ConditionAsserter",
-    "fshType": "Extension",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 88,
-    "endLine": 94
-  },
-  {
-    "outputFile": "StructureDefinition-condition-laterality.json",
-    "fshName": "ConditionLaterality",
-    "fshType": "Extension",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 105,
-    "endLine": 111
-  },
-  {
-    "outputFile": "StructureDefinition-condition-location.json",
-    "fshName": "ConditionLocation",
-    "fshType": "Extension",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 97,
-    "endLine": 103
-  },
-  {
     "outputFile": "StructureDefinition-consanguinity.json",
     "fshName": "Consanguinity",
     "fshType": "Extension",
@@ -702,6 +710,14 @@
     "fshFile": "modules/family.fsh",
     "startLine": 76,
     "endLine": 81
+  },
+  {
+    "outputFile": "StructureDefinition-entity-asserter.json",
+    "fshName": "EntityAsserter",
+    "fshType": "Extension",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 95,
+    "endLine": 101
   },
   {
     "outputFile": "StructureDefinition-family-role.json",
@@ -792,20 +808,12 @@
     "endLine": 227
   },
   {
-    "outputFile": "StructureDefinition-ncpi-collected-sample.json",
-    "fshName": "NCPICollectedSample",
+    "outputFile": "StructureDefinition-ncpi-condition-summary.json",
+    "fshName": "NcpiConditionSummary",
     "fshType": "Profile",
-    "fshFile": "modules/biospecimen.fsh",
-    "startLine": 133,
-    "endLine": 140
-  },
-  {
-    "outputFile": "StructureDefinition-ncpi-condition.json",
-    "fshName": "NcpiCondition",
-    "fshType": "Profile",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 123,
-    "endLine": 181
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 227,
+    "endLine": 273
   },
   {
     "outputFile": "StructureDefinition-ncpi-drs-attachment.json",
@@ -872,12 +880,12 @@
     "endLine": 325
   },
   {
-    "outputFile": "StructureDefinition-ncpi-non-collected-sample.json",
-    "fshName": "NCPINonCollectedSample",
+    "outputFile": "StructureDefinition-ncpi-participant-assertion.json",
+    "fshName": "NcpiParticipantAssertion",
     "fshType": "Profile",
-    "fshFile": "modules/biospecimen.fsh",
-    "startLine": 142,
-    "endLine": 149
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 116,
+    "endLine": 186
   },
   {
     "outputFile": "StructureDefinition-ncpi-participant.json",
@@ -894,6 +902,14 @@
     "fshFile": "modules/participant.fsh",
     "startLine": 101,
     "endLine": 112
+  },
+  {
+    "outputFile": "StructureDefinition-ncpi-phenotypic-feature-assertion.json",
+    "fshName": "NcpiPhenotypicFeatureAssertion",
+    "fshType": "Profile",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 197,
+    "endLine": 204
   },
   {
     "outputFile": "StructureDefinition-ncpi-proteomics.json",
@@ -932,8 +948,8 @@
     "fshName": "NCPISample",
     "fshType": "Profile",
     "fshFile": "modules/biospecimen.fsh",
-    "startLine": 90,
-    "endLine": 130
+    "startLine": 102,
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.json",
@@ -958,6 +974,14 @@
     "fshFile": "modules/file-metadata.fsh",
     "startLine": 229,
     "endLine": 276
+  },
+  {
+    "outputFile": "StructureDefinition-other-condition-modifiers.json",
+    "fshName": "OtherConditionModifiers",
+    "fshType": "Extension",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 87,
+    "endLine": 93
   },
   {
     "outputFile": "StructureDefinition-research-age-at-last-vital-status.json",
@@ -1064,44 +1088,20 @@
     "endLine": 18
   },
   {
-    "outputFile": "ValueSet-condition-assertion-vs.json",
-    "fshName": "ConditionAssertionVS",
-    "fshType": "ValueSet",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 61,
-    "endLine": 64
-  },
-  {
     "outputFile": "ValueSet-condition-code-vs.json",
     "fshName": "ConditionCodeVS",
     "fshType": "ValueSet",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 24,
-    "endLine": 29
-  },
-  {
-    "outputFile": "ValueSet-condition-laterality-vs.json",
-    "fshName": "LateralityQualifierVS",
-    "fshType": "ValueSet",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 72,
-    "endLine": 76
-  },
-  {
-    "outputFile": "ValueSet-condition-location-vs.json",
-    "fshName": "BodyLocationQualifierVS",
-    "fshType": "ValueSet",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 66,
-    "endLine": 70
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 19,
+    "endLine": 24
   },
   {
     "outputFile": "ValueSet-condition-type-vs.json",
     "fshName": "ConditionTypeVS",
     "fshType": "ValueSet",
-    "fshFile": "modules/condition.fsh",
-    "startLine": 45,
-    "endLine": 48
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 40,
+    "endLine": 43
   },
   {
     "outputFile": "ValueSet-consanguinity-assertion-vs.json",
@@ -1134,6 +1134,22 @@
     "fshFile": "modules/family.fsh",
     "startLine": 60,
     "endLine": 66
+  },
+  {
+    "outputFile": "ValueSet-phenotypic-feature-assertion-vs.json",
+    "fshName": "PhenotypicFeatureAssertionVS",
+    "fshType": "ValueSet",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 56,
+    "endLine": 59
+  },
+  {
+    "outputFile": "ValueSet-phenotypic-feature-code-vs.json",
+    "fshName": "PhenotypicFeatureCodeVS",
+    "fshType": "ValueSet",
+    "fshFile": "modules/participant_assertion.fsh",
+    "startLine": 61,
+    "endLine": 65
   },
   {
     "outputFile": "ValueSet-research-data-access-code-vs.json",
