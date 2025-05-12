@@ -196,7 +196,7 @@ Description: "Example file created by assay a1"
 * subject = Reference(Patient/p1)
 * status = #current
 * context
-  * related = Reference(Assay/a1)
+  * related = Reference(ServiceRequest/a1)
 * content[+]
   * attachment.url = "s3://foobar/example.bam"
 * extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
@@ -219,7 +219,7 @@ Description: "Example file created by assay a2, associated with a group"
 * subject = Reference(Group/rs1-g1)
 * status = #current
 * context
-  * related = Reference(Assay/a2)
+  * related = Reference(ServiceRequest/a2)
 * content[+]
   * attachment.url = "s3://foobar/example2.bam"
 * extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
