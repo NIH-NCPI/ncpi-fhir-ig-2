@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "ncpi-fhir-implementation-guide-v2",
   "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "NCPIFHIRIGv2",
   "title": "NCPI FHIR Implementation Guide v2",
   "status": "draft",
@@ -30,9 +30,15 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.us.core",
-      "version": "3.1.1",
+      "version": "6.1.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
+    },
+    {
+      "id": "mcode",
+      "packageId": "hl7.fhir.us.mcode",
+      "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
+      "version": "4.0.0"
     }
   ],
   "definition": {
@@ -79,6 +85,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/age-at-event"
+        },
+        "name": "Age at Event",
+        "description": "Age at Event Extension",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/research-age-at-last-vital-status"
         },
         "name": "Age at Last Vital Status Extension",
@@ -119,6 +133,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/other-condition-modifiers"
+        },
+        "name": "Any additional modifiers for this condition, such as severity.",
+        "description": "Any additional modifiers for this condition, such as severity.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/assay-strategy-cs"
         },
         "name": "Assay strategy options",
@@ -127,17 +149,17 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/condition-assertion-vs"
+          "reference": "ValueSet/phenotypic-feature-assertion-vs"
         },
-        "name": "Assertion of Condition Codes",
+        "name": "Assertion of Phenotypic Feature Codes",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CodeSystem/condition-assertion"
+          "reference": "CodeSystem/phenotypic-feature-assertion"
         },
-        "name": "Assertion of Condition Codes",
-        "description": "Code System for assertion of condition presence",
+        "name": "Assertion of Phenotypic Feature Codes",
+        "description": "Code System for assertion of phenotypic feature presence",
         "exampleBoolean": false
       },
       {
@@ -224,7 +246,7 @@
         "reference": {
           "reference": "ValueSet/condition-code-vs"
         },
-        "name": "Conditon Codes",
+        "name": "Condition Codes",
         "description": "Includes all codes from **HPO** and **MONDO**",
         "exampleBoolean": false
       },
@@ -330,6 +352,14 @@
         "description": "Example biospecimen",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
       },
+      { 
+          "reference": {
+            "reference": "Observation/GSS123456-assertion"
+        },
+        "name": "Example assertion using data from GREGoR",
+        "description": "Example assertion using data from GREGoR",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"
+      },
       {
         "reference": {
           "reference": "Specimen/SA-000"
@@ -350,17 +380,25 @@
         "reference": {
           "reference": "Observation/PT-006SP660-condition"
         },
-        "name": "Example condition using data from CBTN",
-        "description": "Example condition using data from CBTN.",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"
+        "name": "Example condition assertion using data from CBTN",
+        "description": "Example condition assertion using data from CBTN.",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"
       },
       {
         "reference": {
-          "reference": "Observation/GSS123456-condition"
+          "reference": "Observation/GSS123456-condition-assertion"
         },
-        "name": "Example condition using data from GREGoR",
-        "description": "Example condition using data from GREGoR",
-        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition"
+        "name": "Example condition assertion using data from GREGoR",
+        "description": "Example condition assertion using data from GREGoR",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"
+      },
+      {
+        "reference": {
+          "reference": "Condition/GSS123456-condition-summary"
+        },
+        "name": "Example condition summary using data from GREGoR",
+        "description": "Example condition summary using data from GREGoR",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition-summary"
       },
       {
         "reference": {
@@ -628,22 +666,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/condition-laterality"
-        },
-        "name": "Laterality Information",
-        "description": "Laterality Information",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/condition-laterality-vs"
-        },
-        "name": "Laterality Information",
-        "description": "Laterality Information",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/library-prep-cs"
         },
         "name": "Library prep options",
@@ -676,22 +698,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/condition-location"
-        },
-        "name": "Location Information",
-        "description": "Location Information",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/condition-location-vs"
-        },
-        "name": "Location Information",
-        "description": "Location Information",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ncpi-maf"
         },
         "name": "MAF (Somatic Mutation) file profile",
@@ -708,9 +714,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ncpi-condition"
+          "reference": "StructureDefinition/ncpi-condition-summary"
         },
-        "name": "NCPI Conditon",
+        "name": "NCPI Conditon Summary",
         "description": "Information about a condition related to a research participant",
         "exampleBoolean": false
       },
@@ -788,10 +794,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ncpi-participant-assertion"
+        },
+        "name": "NCPI Participant Assertion",
+        "description": "Assertion about a particular Participant. May include Conditions, Measurements, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ncpi-person"
         },
         "name": "NCPI Person",
         "description": "Person",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ncpi-phenotypic-feature-assertion"
+        },
+        "name": "NCPI Phenotypic Feature Assertion",
+        "description": "Assertion about a phenotypic feature's presence or absence given a particular participant.",
         "exampleBoolean": false
       },
       {
@@ -876,10 +898,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/condition-asserter"
+          "reference": "StructureDefinition/entity-asserter"
         },
         "name": "Person who recorded assertion about participant",
         "description": "Person who recorded assertion about participant",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/phenotypic-feature-code-vs"
+        },
+        "name": "Phenotypic Feature Codes",
+        "description": "Includes all codes from **HPO** ",
         "exampleBoolean": false
       },
       {
@@ -1054,8 +1084,8 @@
         "reference": {
           "reference": "StructureDefinition/SharedDataModelCondition"
         },
-        "name": "Shared Data Model for Condition",
-        "description": "The Shared Data Model for **Condition**",
+        "name": "Shared Data Model for Condition Assertions",
+        "description": "The Shared Data Model for **Condition Assertions**",
         "exampleBoolean": false
       },
       {
@@ -1088,6 +1118,14 @@
         },
         "name": "Shared data model for File Metadata",
         "description": "The **Shared Data Model for File Metadata**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SharedDataModelParticipantAssertion"
+        },
+        "name": "Shared Data Model for Participant Assertion",
+        "description": "The Shared Data Model for **Participant Assertion**",
         "exampleBoolean": false
       },
       {
@@ -1342,13 +1380,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "example_CBTN.html",
-          "title": "Example CBTN",
+          "nameUrl": "example_cbtn.html",
+          "title": "Example Cbtn",
           "generation": "markdown"
         },
         {
-          "nameUrl": "example_GREGoR.html",
-          "title": "Example GRE Go R",
+          "nameUrl": "example_gregor.html",
+          "title": "Example Gregor",
           "generation": "markdown"
         },
         {
