@@ -21,6 +21,7 @@ CodeSystem-research-data-date-of-birth-method.json                ResearchDataDa
 CodeSystem-strandedness-cs.json                                   StrandednessCS                            CodeSystem  modules/file-metadata.fsh            64 - 70
 CodeSystem-study-name-type.json                                   StudyNameType                             CodeSystem  modules/research-study.fsh           99 - 110
 CodeSystem-study-personnel-role.json                              StudyPersonnelRole                        CodeSystem  modules/research-study.fsh           120 - 129
+CodeSystem-wgs-parameters.json                                    WGSParameters                             CodeSystem  examples/assay-example.fsh           106 - 122
 CodeSystem-workflow-tool-cs.json                                  WorkflowToolCS                            CodeSystem  modules/file-metadata.fsh            88 - 94
 CodeSystem-workflow-type-cs.json                                  WorkflowTypeCS                            CodeSystem  modules/file-metadata.fsh            80 - 86
 Condition-GSS123456-condition-summary.json                        GSS123456-condition-summary               Instance    examples/GREGoR_example.fsh          140 - 154
@@ -30,11 +31,14 @@ Consent-kf-gru-dbgap-consent.json                                 kf-gru-dbgap-c
 Consent-kf-gsr-allowed-access.json                                kf-gsr-allowed-access                     Instance    examples/CBTN_example.fsh            167 - 178
 Consent-kf-registered-allowed-access.json                         kf-registered-allowed-access              Instance    examples/CBTN_example.fsh            196 - 207
 DocumentReference-GF-6BAD9S7D.json                                GF-6BAD9S7D                               Instance    examples/CBTN_example.fsh            438 - 459
-DocumentReference-GSS123456-01-010-SG-2.json                      GSS123456-01-010-SG-2                     Instance    examples/GREGoR_example.fsh          191 - 212
+DocumentReference-GSS123456-01-010-SG-2.json                      GSS123456-01-010-SG-2                     Instance    examples/GREGoR_example.fsh          147 - 168
+DocumentReference-f1.json                                         f1                                        Instance    examples/assay-example.fsh           190 - 209
+DocumentReference-f2.json                                         f2                                        Instance    examples/assay-example.fsh           213 - 232
 Group-cbtn-study-family.json                                      FM-00C8Y7DG                               Instance    examples/CBTN_example.fsh            327 - 346
 Group-gregor-research-study-participants.json                     gregor-research-study-participants        Instance    examples/GREGoR_example.fsh          12 - 23
 Group-gregor-study-family.json                                    GSS5555                                   Instance    examples/GREGoR_example.fsh          91 - 106
 Group-kf-research-study-cbtn-participants.json                    kf-research-study-cbtn-participants       Instance    examples/CBTN_example.fsh            90 - 101
+Group-rs1-g1.json                                                 rs1-g1                                    Instance    examples/assay-example.fsh           59 - 74
 List-ncpi-research-collection-kfx01.json                          ncpi-research-collection-kfx01            Instance    examples/CBTN_example.fsh            240 - 250
 List-ncpi-research-collection-pbta.json                           ncpi-research-collection-pbta             Instance    examples/CBTN_example.fsh            226 - 238
 Observation-FASTQ-example.json                                    FASTQ-example                             Instance    examples/CBTN_example.fsh            462 - 477
@@ -50,6 +54,8 @@ Patient-GSS123456.json                                            GSS123456     
 Patient-GSS654321.json                                            GSS654321                                 Instance    examples/GREGoR_example.fsh          40 - 48
 Patient-PT-006SP660.json                                          PT-006SP660                               Instance    examples/CBTN_example.fsh            253 - 277
 Patient-PT-006SP675.json                                          PT-006SP675                               Instance    examples/CBTN_example.fsh            281 - 313
+Patient-p1.json                                                   p1                                        Instance    examples/assay-example.fsh           14 - 21
+Patient-p2.json                                                   p2                                        Instance    examples/assay-example.fsh           24 - 31
 Person-gregor-example-person.json                                 gregor-example-person                     Instance    examples/GREGoR_example.fsh          68 - 77
 Person-pcgc-example-person.json                                   pcgc-example-person                       Instance    examples/CBTN_example.fsh            315 - 324
 PractitionerRole-kf-research-study-personnel-role-op-lead.json    kf-research-study-personnel-role-op-lead  Instance    examples/CBTN_example.fsh            27 - 33
@@ -57,9 +63,14 @@ PractitionerRole-kf-research-study-personnel-role-pi-x01.json     kf-research-st
 PractitionerRole-kf-research-study-personnel-role-pi.json         kf-research-study-personnel-role-pi       Instance    examples/CBTN_example.fsh            19 - 25
 ResearchStudy-kf-research-study-cbtn.json                         kf-research-study-cbtn                    Instance    examples/CBTN_example.fsh            35 - 86
 ResearchStudy-research-study-gregor.json                          research-study-gregor                     Instance    examples/GREGoR_example.fsh          2 - 10
+ResearchStudy-rs1.json                                            rs1                                       Instance    examples/assay-example.fsh           2 - 10
 ResearchSubject-gregor-example-participantstudy.json              gregor-example-participantstudy           Instance    examples/GREGoR_example.fsh          79 - 87
-Specimen-GSS123456-01-010.json                                    GSS123456-01-010                          Instance    examples/GREGoR_example.fsh          180 - 188
+ServiceRequest-a1.json                                            a1                                        Instance    examples/assay-example.fsh           78 - 88
+ServiceRequest-a2.json                                            a2                                        Instance    examples/assay-example.fsh           92 - 103
+Specimen-GSS123456-01-010.json                                    GSS123456-01-010                          Instance    examples/GREGoR_example.fsh          136 - 144
 Specimen-SA-000.json                                              SA-000                                    Instance    examples/CBTN_example.fsh            407 - 435
+Specimen-s1.json                                                  s1                                        Instance    examples/assay-example.fsh           34 - 43
+Specimen-s2.json                                                  s2                                        Instance    examples/assay-example.fsh           46 - 55
 StructureDefinition-SharedDataModelAliquot.json                   CmdAliquot                                Logical     modules/biospecimen.fsh              62 - 70
 StructureDefinition-SharedDataModelBiospecimenCollection.json     CdmBiospecimenCollection                  Logical     modules/biospecimen.fsh              3 - 13
 StructureDefinition-SharedDataModelCondition.json                 CdmConditionAssertion                     Logical     modules/participant_assertion.fsh    206 - 224
@@ -108,6 +119,7 @@ StructureDefinition-ncpi-fastq.json                               NcpiFASTQ     
 StructureDefinition-ncpi-file-metadata.json                       NcpiFileMetadata                          Profile     modules/file-metadata.fsh            106 - 113
 StructureDefinition-ncpi-file.json                                NcpiFile                                  Profile     modules/files.fsh                    127 - 153
 StructureDefinition-ncpi-gene-fusion-expression.json              NcpiGeneFusionOrExpression                Profile     modules/file-metadata.fsh            327 - 374
+StructureDefinition-ncpi-informatics-assay-request.json           NcpiAssay                                 Profile     modules/assay.fsh                    1 - 16
 StructureDefinition-ncpi-maf.json                                 NcpiMAF                                   Profile     modules/file-metadata.fsh            278 - 325
 StructureDefinition-ncpi-participant-assertion.json               NcpiParticipantAssertion                  Profile     modules/participant_assertion.fsh    116 - 186
 StructureDefinition-ncpi-participant.json                         NcpiParticipant                           Profile     modules/participant.fsh              62 - 87
@@ -134,6 +146,8 @@ StructureDefinition-research-study-result.json                    ResearchStudyR
 StructureDefinition-research-web-Link.json                        ResearchWebLink                           Extension   extensions/ResearchWebLink.fsh       2 - 9
 StructureDefinition-specimen-collection.json                      SpecimenCollection                        Extension   modules/file-metadata.fsh            123 - 129
 StructureDefinition-study-family-focus.json                       StudyFamilyFocus                          Extension   modules/family.fsh                   101 - 106
+Task-t1.json                                                      t1                                        Instance    examples/assay-example.fsh           128 - 136
+Task-t2.json                                                      t2                                        Instance    examples/assay-example.fsh           139 - 186
 ValueSet-collection-type-vs.json                                  CollectionTypeVS                          ValueSet    modules/research-collection.fsh      13 - 18
 ValueSet-condition-code-vs.json                                   ConditionCodeVS                           ValueSet    modules/participant_assertion.fsh    19 - 24
 ValueSet-condition-type-vs.json                                   ConditionTypeVS                           ValueSet    modules/participant_assertion.fsh    40 - 43

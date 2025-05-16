@@ -1,0 +1,14 @@
+{
+  "resourceType": "Task",
+  "id": "t1",
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/a1"
+    }
+  ],
+  "status": "requested",
+  "intent": "order",
+  "focus": {
+    "reference": "Patient/p1"
+  }
+}
