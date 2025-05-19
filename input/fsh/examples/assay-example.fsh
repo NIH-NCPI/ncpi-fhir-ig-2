@@ -84,6 +84,7 @@ Title: "Example assay simple association of Patient and Specimen"
 * code = $loinc#86206-0 "Whole genome sequence analysis in Blood or Tissue by Molecular genetics method"
 * subject = Reference(Patient/p1)
 * specimen[+] = Reference(Specimen/s1)
+// A shifted datetime
 * authoredOn = "2025-04-30T09:00:00Z"
 * reasonCode.text = "Investigating suspected hereditary condition"
 
@@ -99,9 +100,10 @@ Title: "Example assay association of with Group of participants and set of speci
 * subject = Reference(Group/rs1-g1)
 * specimen[+] = Reference(Specimen/s1)
 * specimen[+] = Reference(Specimen/s2)
-* authoredOn = "2025-04-30T09:00:00Z"
+* authoredOn = "2025-04-30T10:00:00Z"
 * reasonCode.text = "Investigating suspected hereditary condition"
-
+// 3 hours past a reference time
+* extension[ageAtAssertion].valueAge = 3 'h'
 
 CodeSystem: WGSParameters
 Description: "Parameters for WGS Task Input example"
