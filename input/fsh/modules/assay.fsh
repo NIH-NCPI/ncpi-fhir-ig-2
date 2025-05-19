@@ -1,3 +1,4 @@
+
 Profile: NcpiAssay
 Parent: ServiceRequest
 Id: ncpi-informatics-assay-request
@@ -13,3 +14,4 @@ Description: "Profile to represent informatics assay requests within NCPI, such 
 * code from $ncit (preferred)
 * reasonCode MS
 * supportingInfo MS
+* extension contains AgeAtAssertion named ageAtAssertion  0..1
