@@ -7,10 +7,9 @@ Description: "Profile to represent informatics assay requests within NCPI, such 
 * status 1..1
 * intent = #order
 * code 1..1 MS
+// $loinc (preferred): This keeps the existing binding to LOINC as the preferred code system.
+// $ncit: Adds NCIT as an another code system, allowing codes from NCIT to be used in addition.
 * code from $loinc (preferred)
-// * subject only Reference(Patient)
-// * specimen 1..* MS
-// * specimen only Reference(Specimen)
-// * requester only Reference(Practitioner or PractitionerRole or Organization)
+* code from $ncit (preferred)
 * reasonCode MS
 * supportingInfo MS
