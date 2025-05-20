@@ -43,6 +43,9 @@ jobs:
         run: |
           chmod +x ./_genonce.sh
           ./_genonce.sh
+      - name: Capture FSH-Generated
+        run: |
+          cp -r fsh-generated output
 
       - name: 🚀 Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
