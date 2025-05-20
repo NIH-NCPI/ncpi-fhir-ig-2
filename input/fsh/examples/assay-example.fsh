@@ -87,6 +87,8 @@ Title: "Example assay simple association of Patient and Specimen"
 // A shifted datetime
 * authoredOn = "2025-04-30T09:00:00Z"
 * reasonCode.text = "Investigating suspected hereditary condition"
+// 3 ms past a reference time
+* extension[ageAtAssertion].valueAge = 3 'ms'
 
 
 // NCPI Assay
@@ -102,8 +104,8 @@ Title: "Example assay association of with Group of participants and set of speci
 * specimen[+] = Reference(Specimen/s2)
 * authoredOn = "2025-04-30T10:00:00Z"
 * reasonCode.text = "Investigating suspected hereditary condition"
-// 3 hours past a reference time
-* extension[ageAtAssertion].valueAge = 3 'h'
+// 3.5 years past a reference time
+* extension[ageAtAssertion].valueAge = 3.5 'yr'
 
 CodeSystem: WGSParameters
 Description: "Parameters for WGS Task Input example"
