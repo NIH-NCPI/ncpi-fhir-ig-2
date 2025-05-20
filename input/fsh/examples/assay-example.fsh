@@ -40,7 +40,7 @@ Description: "Example biospecimen"
   * system = "https://example.org/"
   * value = "specimen-001"
 * subject = Reference(Patient/p1)
-* type = #blood
+* type = #BLD
 
 // NCPI Biospecimen
 Instance: s2
@@ -52,7 +52,7 @@ Description: "Example biospecimen"
   * system = "https://example.org/"
   * value = "specimen-002"
 * subject = Reference(Patient/p2)
-* type = #blood
+* type = #BLD
 
 
 // Group
@@ -65,7 +65,7 @@ Description: "Example study group"
   * system = "https://example.org/"
   * value = "study-group-001"
 * name = "Participants from the Example research study"
-* quantity = 1
+* quantity = 2
 * actual = true
 * type = #person
 * member[+]
@@ -81,9 +81,10 @@ Usage: #example
 Title: "Example assay simple association of Patient and Specimen"
 * status = #active
 * intent = #order
-* code = http://loinc.org#86206-0 "Whole genome sequencing analysis"
+* code = $loinc#86206-0 "Whole genome sequence analysis in Blood or Tissue by Molecular genetics method"
 * subject = Reference(Patient/p1)
 * specimen[+] = Reference(Specimen/s1)
+// A shifted datetime
 * authoredOn = "2025-04-30T09:00:00Z"
 * reasonCode.text = "Investigating suspected hereditary condition"
 
@@ -95,13 +96,14 @@ Usage: #example
 Title: "Example assay association of with Group of participants and set of specimens"
 * status = #active
 * intent = #order
-* code = http://loinc.org#86206-0 "Whole genome sequencing analysis"
+* code = $ncit#C188689 "Single Nucleotide Variant Genotyping"
 * subject = Reference(Group/rs1-g1)
 * specimen[+] = Reference(Specimen/s1)
 * specimen[+] = Reference(Specimen/s2)
-* authoredOn = "2025-04-30T09:00:00Z"
+* authoredOn = "2025-04-30T10:00:00Z"
 * reasonCode.text = "Investigating suspected hereditary condition"
-
+// 3 hours past a reference time
+* extension[ageAtAssertion].valueAge = 3 'h'
 
 CodeSystem: WGSParameters
 Description: "Parameters for WGS Task Input example"
@@ -196,7 +198,7 @@ Description: "Example file created by assay a1"
 * subject = Reference(Patient/p1)
 * status = #current
 * context
-  * related = Reference(Assay/a1)
+  * related = Reference(ServiceRequest/a1)
 * content[+]
   * attachment.url = "s3://foobar/example.bam"
 * extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
@@ -219,7 +221,7 @@ Description: "Example file created by assay a2, associated with a group"
 * subject = Reference(Group/rs1-g1)
 * status = #current
 * context
-  * related = Reference(Assay/a2)
+  * related = Reference(ServiceRequest/a2)
 * content[+]
   * attachment.url = "s3://foobar/example2.bam"
 * extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
