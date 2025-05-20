@@ -45,7 +45,7 @@ jobs:
           ./_genonce.sh
       - name: Capture FSH-Generated
         run: |
-          cp -r fsh-generated output
+          ./_build_fgen_index.rb
 
       - name: 🚀 Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2

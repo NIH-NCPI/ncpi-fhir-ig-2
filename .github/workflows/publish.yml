@@ -53,7 +53,7 @@ jobs:
 
       - name: Capture FSH-Generated
         run: |
-          cp -r fsh-generated output
+          ./_build_fgen_index.rb
 
       - name: Publish IG
         uses: JamesIves/github-pages-deploy-action@4.1.1
