@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ResearchStudyPartyRoleVS",
+  "id": "research-study-party-role-vs",
+  "title": "Family Types Codes",
+  "description": "A value set with all codes used for the expected family types.",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-study-party-role-vs",
+  "version": "0.1.0",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/research-study-party-role"
+      }
+    ]
+  }
+}
