@@ -18,7 +18,7 @@ Some groups, eg, Immport, use a sub-grouping within a study to describe in more 
 
 
 ## Conventions
-- ResearchSubject provides the linkage between a [Patient](https://hl7.org/fhir/R4B/patient.html) and a [ResearchStudy](https://hl7.org/fhir/researchstudy.html).
+- ResearchSubject provides the linkage between a [Patient](https://hl7.org/fhir/R4/patient.html) and a [ResearchStudy](https://hl7.org/fhir/researchstudy.html).
 - NCPI Participant is based on the standard resource type, Patient and is intended to represent an individual participating in a specific research study.
 - A single NCPI Participant can be a part of more than one NCPI Study group
 - A single person can appear in multiple studies via separate NCPI Participant resources

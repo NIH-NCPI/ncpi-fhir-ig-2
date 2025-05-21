@@ -261,7 +261,7 @@ Description: "Information about a condition related to a research participant"
 * category ^short = "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
 
 /*stage*/ 
-* stage.summary ^short = "Cancer staging information. Example ValueSet, [condition-stage](https://hl7.org/fhir/R4B/valueset-condition-stage.html)"
+* stage.summary ^short = "Cancer staging information. Example ValueSet, [condition-stage](https://hl7.org/fhir/R4/valueset-condition-stage.html)"
 /*location*/ 
 * bodySite ^short = "Location information for the condition, including site, laterality, and other qualifiers as appropriate."
 * bodySite.extension contains BodyLocationQualifier named mcode-body-location-qualifier 0..1 /*Condition.LocationQualifieri*/
