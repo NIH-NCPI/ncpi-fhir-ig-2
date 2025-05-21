@@ -176,6 +176,14 @@
     "endLine": 129
   },
   {
+    "outputFile": "CodeSystem-wgs-parameters.json",
+    "fshName": "WGSParameters",
+    "fshType": "CodeSystem",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 110,
+    "endLine": 126
+  },
+  {
     "outputFile": "CodeSystem-workflow-tool-cs.json",
     "fshName": "WorkflowToolCS",
     "fshType": "CodeSystem",
@@ -256,6 +264,22 @@
     "endLine": 212
   },
   {
+    "outputFile": "DocumentReference-f1.json",
+    "fshName": "f1",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 194,
+    "endLine": 213
+  },
+  {
+    "outputFile": "DocumentReference-f2.json",
+    "fshName": "f2",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 217,
+    "endLine": 236
+  },
+  {
     "outputFile": "Group-cbtn-study-family.json",
     "fshName": "FM-00C8Y7DG",
     "fshType": "Instance",
@@ -286,6 +310,14 @@
     "fshFile": "examples/CBTN_example.fsh",
     "startLine": 90,
     "endLine": 101
+  },
+  {
+    "outputFile": "Group-rs1-g1.json",
+    "fshName": "rs1-g1",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 59,
+    "endLine": 74
   },
   {
     "outputFile": "List-ncpi-research-collection-kfx01.json",
@@ -408,6 +440,22 @@
     "endLine": 313
   },
   {
+    "outputFile": "Patient-p1.json",
+    "fshName": "p1",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 14,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Patient-p2.json",
+    "fshName": "p2",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 24,
+    "endLine": 31
+  },
+  {
     "outputFile": "Person-gregor-example-person.json",
     "fshName": "gregor-example-person",
     "fshType": "Instance",
@@ -464,12 +512,36 @@
     "endLine": 10
   },
   {
+    "outputFile": "ResearchStudy-rs1.json",
+    "fshName": "rs1",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 2,
+    "endLine": 10
+  },
+  {
     "outputFile": "ResearchSubject-gregor-example-participantstudy.json",
     "fshName": "gregor-example-participantstudy",
     "fshType": "Instance",
     "fshFile": "examples/GREGoR_example.fsh",
     "startLine": 79,
     "endLine": 87
+  },
+  {
+    "outputFile": "ServiceRequest-a1.json",
+    "fshName": "a1",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 78,
+    "endLine": 91
+  },
+  {
+    "outputFile": "ServiceRequest-a2.json",
+    "fshName": "a2",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 95,
+    "endLine": 108
   },
   {
     "outputFile": "Specimen-GSS123456-01-010.json",
@@ -486,6 +558,22 @@
     "fshFile": "examples/CBTN_example.fsh",
     "startLine": 407,
     "endLine": 435
+  },
+  {
+    "outputFile": "Specimen-s1.json",
+    "fshName": "s1",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 34,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Specimen-s2.json",
+    "fshName": "s2",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 46,
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-SharedDataModelAliquot.json",
@@ -643,9 +731,9 @@
     "outputFile": "StructureDefinition-age-at-assertion.json",
     "fshName": "AgeAtAssertion",
     "fshType": "Extension",
-    "fshFile": "modules/participant_assertion.fsh",
-    "startLine": 78,
-    "endLine": 85
+    "fshFile": "extensions/AgeAtAssertion.fsh",
+    "startLine": 1,
+    "endLine": 6
   },
   {
     "outputFile": "StructureDefinition-age-at-event.json",
@@ -872,6 +960,14 @@
     "endLine": 374
   },
   {
+    "outputFile": "StructureDefinition-ncpi-informatics-assay-request.json",
+    "fshName": "NcpiAssay",
+    "fshType": "Profile",
+    "fshFile": "modules/assay.fsh",
+    "startLine": 2,
+    "endLine": 17
+  },
+  {
     "outputFile": "StructureDefinition-ncpi-maf.json",
     "fshName": "NcpiMAF",
     "fshType": "Profile",
@@ -1078,6 +1174,22 @@
     "fshFile": "modules/family.fsh",
     "startLine": 101,
     "endLine": 106
+  },
+  {
+    "outputFile": "Task-t1.json",
+    "fshName": "t1",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 132,
+    "endLine": 140
+  },
+  {
+    "outputFile": "Task-t2.json",
+    "fshName": "t2",
+    "fshType": "Instance",
+    "fshFile": "examples/assay-example.fsh",
+    "startLine": 143,
+    "endLine": 190
   },
   {
     "outputFile": "ValueSet-collection-type-vs.json",

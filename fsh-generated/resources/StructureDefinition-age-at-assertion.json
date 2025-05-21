@@ -12,7 +12,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "effectiveDateTime"
+      "expression": "Element"
     }
   ],
   "type": "Extension",
@@ -39,10 +39,10 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "short": "Indicate age via relative date time extension or official date of when condition was asserted.",
+        "short": "Indicate temporal order via Age extension",
         "type": [
           {
-            "code": "Quantity"
+            "code": "Age"
           }
         ]
       }
