@@ -1,6 +1,5 @@
 Alias: $ncpi-study-name-type = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type
 Alias: $ncpi-study-personnel-role = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role
-Alias: $research-study-party-role = https://hl7.org/fhir/valueset-research-study-party-role.html
 Alias: $research-study-party-organization-type = https://hl7.org/fhir/valueset-research-study-party-organization-type.html
 
 
@@ -12,12 +11,15 @@ Description: "Codes categorizing the type of study such as investigational vs. o
 * value[x] only CodeableConcept 
 * valueCodeableConcept from https://hl7.org/fhir/valueset-study-design.html (example)
 
+/*
+ * For now, we are not using this extension because it depends on R4B, which we are moving away from
 Extension: ResearchStudyResult
 Id: research-study-result
 Title: "Research Study Result"
 Description: "Link to citations associated with the study's publications."
 * insert SetContext(ResearchStudy) 
 * valueReference only Reference(Citation)
+*/
 
 Extension: ResearchStudyAcknowledgement
 Id: research-study-acknowledgement
@@ -44,7 +46,7 @@ Description: "Sponsors, collaborators, and other parties affiliated with a resea
 * extension[role] ^short = "sponsor | lead-sponsor | sponsor-investigator | primary-investigator | collaborator | funding-source | general-contact | recruitment-contact | sub-investigator | study-director | study-chair
 Binding: Research Study Party Role (Extensible)"
 * extension[role].value[x] only CodeableConcept 
-* extension[role].valueCodeableConcept from  $research-study-party-role
+* extension[role].valueCodeableConcept from  https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-study-party-role-vs
 * extension[period] ^short = "When active in the role"
 * extension[period].value[x] only Period
 * extension[period].valuePeriod 
@@ -78,11 +80,13 @@ Description: "The NCPI Research Study FHIR resource represents an individual res
 * condition ^comment = "Disease and phenotype codes identified in the CDM study's 'focus'."
 * extension contains 
     ResearchStudyDesign named studyDesign 0..* and
-    ResearchStudyResult named result 0..* and
     ResearchStudyAssociatedParty named associatedParty 0..* and
     ResearchStudyAcknowledgement named acknowledgement 0..*
+    // Removing this for now, since we are migrating back to R4 which doesn't have the Citation resource
+    // ResearchStudyResult named result 0..* and
+    
 * extension[studyDesign] ^short = "Study Design and Study Type"
-* extension[result] ^short = "Link to results generated during the study."
+// * extension[result] ^short = "Link to results generated during the study."
 * extension[acknowledgement] ^short = "URL describing the policy restrictions in detail."
 
 // These are TBD for after we have completed digging into what access control 

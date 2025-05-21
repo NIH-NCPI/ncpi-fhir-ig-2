@@ -15,7 +15,7 @@ Title: "Shared Data Model for Study Family"
 Description: "The **Shared Data Model for Study Family**"
 * familyID 1..1 string "Unique study family identifier. System identifier used for internal references."
 * externalID 0..* string "Study family identifier. System identifier used for external references."
-* familyType 0..1 code "Describes the 'type' of study family, eg, trio. "
+* familyType 0..1 code "Describes the 'type' of study family, eg, trio."
 * description 0..1 string "Free text describing the study family, such as potential inheritance or details about consanguinity"
 * consanguinity 0..1 code "Is there known or suspected consanguinity in this study family?"
 * studyFamilyFocus 0..1 code "What is this study family investigating? EG, a specific condition"
@@ -48,6 +48,7 @@ Description: "CodeSystem for Types of Families"
 * ^url = $ncpi-family-types
 * ^status = #active
 * ^experimental = false
+* ^caseSensitive = true
 * ^publisher = "NCPI FHIR Works"
 * ^content = #fragment
 * #Control-only "Control Only"
@@ -61,6 +62,7 @@ ValueSet: NcpiFamilyTypesVS
 Id: ncpi-family-types-vs
 Title: "Family Types Codes"
 Description: "A value set with all codes used for the expected family types."
+* ^experimental = false
 * ^version = "0.1.0"
 * ^status = #active
 * include codes from system $ncpi-family-types
