@@ -1,0 +1,178 @@
+{
+  "resourceType": "Observation",
+  "id": "gregor-example-metadata",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram"
+    ]
+  },
+  "focus": [
+    {
+      "reference": "Patient/GSS123456"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "AssayStrategy"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "WGS"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "PlatformInstrument"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "IlluminaHiSeq2000"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "LibraryPrep"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "polyA"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "LibrarySelection"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "PolyTEnrichment"
+          }
+        ]
+      }
+    },
+    {
+      "valueCodeableConcept": {
+        "text": "Not Applicable"
+      },
+      "code": {
+        "coding": [
+          {
+            "code": "TargetRegion"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "Strandedness"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "stranded"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "ReferenceGenome"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "GRCh38"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "IsPairedEnd"
+          }
+        ]
+      },
+      "valueBoolean": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "WorkflowTool"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "bammem"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "WorkflowType"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "alignment"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "format_2572",
+        "system": "http://edamontology.org"
+      }
+    ]
+  },
+  "specimen": {
+    "reference": "Specimen/GSS123456-01-010"
+  }
+}

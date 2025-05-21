@@ -1,0 +1,83 @@
+{
+  "resourceType": "Group",
+  "id": "cbtn-study-family",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://cbtn.org/",
+      "value": "FM-00C8Y7DG"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Trio",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
+            "display": "Trio"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "0004992",
+            "system": "http://purl.obolibrary.org/obo/mondo.owl",
+            "display": "Cancer"
+          }
+        ]
+      }
+    }
+  ],
+  "member": [
+    {
+      "entity": {
+        "extension": [
+          {
+            "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "MTH",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                  "display": "mother"
+                }
+              ]
+            }
+          }
+        ],
+        "reference": "Patient/PT-006SP660"
+      }
+    },
+    {
+      "entity": {
+        "extension": [
+          {
+            "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "SON",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                  "display": "natural son"
+                }
+              ]
+            }
+          }
+        ],
+        "reference": "Patient/PT-006SP675"
+      }
+    }
+  ],
+  "type": "person",
+  "actual": true
+}

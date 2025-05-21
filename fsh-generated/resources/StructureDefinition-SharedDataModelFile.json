@@ -1,0 +1,200 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SharedDataModelFile",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFile",
+  "name": "CdmFile",
+  "title": "Shared Data Model for File",
+  "status": "draft",
+  "description": "The **Shared Data Model for File**",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFile",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "SharedDataModelFile",
+        "path": "SharedDataModelFile",
+        "short": "Shared Data Model for File",
+        "definition": "The **Shared Data Model for File**"
+      },
+      {
+        "id": "SharedDataModelFile.participantID",
+        "path": "SharedDataModelFile.participantID",
+        "short": "The participant(s) for whom this file contains data",
+        "definition": "The participant(s) for whom this file contains data",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/valueset-reference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.fileExternalID",
+        "path": "SharedDataModelFile.fileExternalID",
+        "short": "A related identifier of this file",
+        "definition": "A related identifier of this file",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.format",
+        "path": "SharedDataModelFile.format",
+        "short": "The file format used",
+        "definition": "The file format used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.location",
+        "path": "SharedDataModelFile.location",
+        "short": "List of locations where this data can be accessed",
+        "definition": "List of locations where this data can be accessed",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "List"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.location.uri",
+        "path": "SharedDataModelFile.location.uri",
+        "short": "The URI at which this data can be accessed",
+        "definition": "The URI at which this data can be accessed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.location.accessPolicy",
+        "path": "SharedDataModelFile.location.accessPolicy",
+        "short": "If present, only those under the specific Access Policy can access the file in this location.",
+        "definition": "If present, only those under the specific Access Policy can access the file in this location.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/valueset-reference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.fileSize",
+        "path": "SharedDataModelFile.fileSize",
+        "short": "The size of the file, e.g., in bytes.",
+        "definition": "The size of the file, e.g., in bytes.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.hash",
+        "path": "SharedDataModelFile.hash",
+        "short": "Provides a list of hashes for confirming file transfers",
+        "definition": "Provides a list of hashes for confirming file transfers",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "List"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.hash.type",
+        "path": "SharedDataModelFile.hash.type",
+        "short": "Algorithm used to calculate the hash (and size, where applicable)",
+        "definition": "Algorithm used to calculate the hash (and size, where applicable)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.hash.value",
+        "path": "SharedDataModelFile.hash.value",
+        "short": "Value of hashing the file",
+        "definition": "Value of hashing the file",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.contentVersion",
+        "path": "SharedDataModelFile.contentVersion",
+        "short": "Version of the file content",
+        "definition": "Version of the file content",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.description",
+        "path": "SharedDataModelFile.description",
+        "short": "A description of the file",
+        "definition": "A description of the file",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "SharedDataModelFile.type",
+        "path": "SharedDataModelFile.type",
+        "short": "The type of data contained in this file. Should be as detailed as possible, e.g., Whole Exome Variant Calls.",
+        "definition": "The type of data contained in this file. Should be as detailed as possible, e.g., Whole Exome Variant Calls.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      }
+    ]
+  }
+}

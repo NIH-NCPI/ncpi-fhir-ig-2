@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "research-study-design",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design",
+  "name": "ResearchStudyDesign",
+  "title": "Research Study Design",
+  "status": "draft",
+  "description": "Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Research Study Design",
+        "definition": "Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://hl7.org/fhir/valueset-study-design.html"
+        }
+      }
+    ]
+  }
+}

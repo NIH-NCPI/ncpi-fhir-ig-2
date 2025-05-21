@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "research-population",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-population",
+  "name": "ResearchPopulation",
+  "title": "Research Population",
+  "status": "draft",
+  "description": "Code describing the population (CDC)",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Research Population",
+        "definition": "Code describing the population (CDC)"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-population"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

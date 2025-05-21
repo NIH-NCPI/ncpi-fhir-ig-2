@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "access-policy",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy",
+  "name": "AccessPolicy",
+  "title": "Access policy",
+  "status": "draft",
+  "description": "Access Policy Extension",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchSubject"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Access policy",
+        "definition": "Access Policy Extension"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
