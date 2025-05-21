@@ -20,6 +20,7 @@ ValueSet: ConditionCodeVS
 Id: condition-code-vs
 Title: "Condition Codes"
 Description: "Includes all codes from **HPO** and **MONDO**"
+* ^experimental = false
 * include codes from system $hpo 
 * include codes from system $mondo 
 
@@ -30,6 +31,7 @@ Description: "Code System for type of condition"
 * ^url = $condition-type
 * ^experimental = false
 * ^caseSensitive = true
+* ^status = #active
 * #Phenotypic-Feature "Phenotypic Feature"
 * #Disease "Disease"
 * #Comorbidity "Comorbidity"
@@ -40,6 +42,8 @@ Description: "Code System for type of condition"
 ValueSet: ConditionTypeVS
 Id: condition-type-vs
 Title: "Type of Condition"
+Description: "Type of Condition"
+* ^experimental = false
 * include codes from system condition-type
 
 CodeSystem: PhenotypicFeatureAssertion
@@ -56,12 +60,15 @@ Description: "Code System for assertion of phenotypic feature presence"
 ValueSet: PhenotypicFeatureAssertionVS
 Id: phenotypic-feature-assertion-vs
 Title: "Assertion of Phenotypic Feature Codes"
+Description: "Assertion of Phenotypic Feature Codes"
+* ^experimental = false
 * include codes from system phenotypic-feature-assertion
 
 ValueSet: PhenotypicFeatureCodeVS
 Id: phenotypic-feature-code-vs
 Title: "Phenotypic Feature Codes"
 Description: "Includes all codes from **HPO** "
+* ^experimental = false
 * include codes from system $hpo 
 
 Extension: AgeAtEvent
@@ -106,6 +113,8 @@ CodeSystem: ComponentElements
 Id: component-elements
 Title: "Elements of Component"
 Description: "Slicing for elements of component"
+* ^experimental = false
+* ^caseSensitive = true
 * #ageAtEvent "Age at Event"
 * #ageAtAssertion "Age at Assertion"
 * #ageAtOnset "Age at Onset"
