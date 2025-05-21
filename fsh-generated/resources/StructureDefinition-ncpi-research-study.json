@@ -7,7 +7,7 @@
   "title": "NCPI Research Study",
   "status": "draft",
   "description": "The NCPI Research Study FHIR resource represents an individual research effort and acts as a grouper or “container” for that effort’s study participants and their related data files.",
-  "fhirVersion": "4.3.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "ResearchStudy",
@@ -41,22 +41,6 @@
             "code": "Extension",
             "profile": [
               "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ResearchStudy.extension:result",
-        "path": "ResearchStudy.extension",
-        "sliceName": "result",
-        "short": "Link to results generated during the study.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result"
             ]
           }
         ]

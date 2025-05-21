@@ -7,7 +7,7 @@
   "title": "Proteomics file profile",
   "status": "draft",
   "description": "Proteomics file profile",
-  "fhirVersion": "4.3.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -30,9 +30,9 @@
         }
       },
       {
-        "id": "Observation.extension:specimen-collection",
+        "id": "Observation.extension:collection",
         "path": "Observation.extension",
-        "sliceName": "specimen-collection",
+        "sliceName": "collection",
         "short": "Linkage for related samples",
         "min": 0,
         "max": "*",

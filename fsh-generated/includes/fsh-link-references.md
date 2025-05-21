@@ -32,7 +32,7 @@
 [ComponentElements]: CodeSystem-component-elements.html
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
 [ResearchDataDateOfBirthMethod]: CodeSystem-research-data-date-of-birth-method.html
-[EDAMOntologyTerms]: ValueSet-edam-ontology-terms.html
+[EDAMOntologyTerms]: ValueSet-edam-ontology-terms-vs.html
 [GSS123456-assertion]: Observation-GSS123456-assertion.html
 [SA-000]: Specimen-SA-000.html
 [GSS123456-01-010]: Specimen-GSS123456-01-010.html
@@ -56,6 +56,7 @@
 [NcpiFamilyRelationship]: StructureDefinition-ncpi-family-relationship.html
 [FamilyType]: StructureDefinition-family-type.html
 [NcpiFamilyTypesVS]: ValueSet-ncpi-family-types-vs.html
+[ResearchStudyPartyRoleVS]: ValueSet-research-study-party-role-vs.html
 [NcpiGeneFusionOrExpression]: StructureDefinition-ncpi-gene-fusion-expression.html
 [kf-gsr-allowed-access]: Consent-kf-gsr-allowed-access.html
 [gregor-gru-consent]: Consent-gregor-gru-consent.html
@@ -109,7 +110,7 @@
 [ResearchStudyAcknowledgement]: StructureDefinition-research-study-acknowledgement.html
 [ResearchStudyAssociatedParty]: StructureDefinition-research-study-associated-party.html
 [ResearchStudyDesign]: StructureDefinition-research-study-design.html
-[ResearchStudyResult]: StructureDefinition-research-study-result.html
+[ResearchStudyPartyRole]: CodeSystem-research-study-party-role.html
 [ResearchDiseaseUseLimitation]: StructureDefinition-research-disease-use-limitation.html
 [ResearchWebLink]: StructureDefinition-research-web-Link.html
 [BiospecimenAvailability]: CodeSystem-biospecimen-availability.html
@@ -140,6 +141,8 @@
 [StudyPersonnelRole]: CodeSystem-study-personnel-role.html
 [FileFormat]: StructureDefinition-file-format.html
 [FileSize]: StructureDefinition-file-size.html
+[TitleTypeVS]: ValueSet-title-type-vs.html
+[TitleType]: CodeSystem-title-type.html
 [ConditionTypeVS]: ValueSet-condition-type-vs.html
 [ConditionType]: CodeSystem-condition-type.html
 [HashValue]: StructureDefinition-hash-value.html

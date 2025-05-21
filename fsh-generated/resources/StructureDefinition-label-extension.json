@@ -6,7 +6,7 @@
   "title": "Label",
   "status": "draft",
   "description": "A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)",
-  "fhirVersion": "4.3.0",
+  "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [
@@ -55,7 +55,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/title-type"
+          "valueSet": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/title-type"
         }
       },
       {

@@ -7,7 +7,7 @@
   "title": "NCPI FASTQ File",
   "status": "draft",
   "description": "NCPI FASTQ File",
-  "fhirVersion": "4.3.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -30,9 +30,9 @@
         }
       },
       {
-        "id": "Observation.extension:specimen-collection",
+        "id": "Observation.extension:collection",
         "path": "Observation.extension",
-        "sliceName": "specimen-collection",
+        "sliceName": "collection",
         "short": "Linkage for related samples",
         "min": 0,
         "max": "*",
@@ -74,7 +74,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "AssayStrategy"
+              "code": "AssayStrategy",
+              "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"
             }
           ]
         }
@@ -101,7 +102,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "PlatformInstrument"
+              "code": "PlatformInstrument",
+              "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"
             }
           ]
         }
@@ -128,7 +130,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "LibraryPrep"
+              "code": "LibraryPrep",
+              "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"
             }
           ]
         }
@@ -155,7 +158,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "LibrarySelection"
+              "code": "LibrarySelection",
+              "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"
             }
           ]
         }
@@ -182,7 +186,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "Strandedness"
+              "code": "Strandedness",
+              "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"
             }
           ]
         }
@@ -209,7 +214,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "TargetRegion"
+              "code": "TargetRegion",
+              "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"
             }
           ]
         }
@@ -236,7 +242,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "IsPairedEnd"
+              "code": "IsPairedEnd",
+              "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"
             }
           ]
         }
@@ -266,7 +273,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "AdaptorTrimmed"
+              "code": "AdaptorTrimmed",
+              "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"
             }
           ]
         }
@@ -296,7 +304,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "ReferenceGenome"
+              "code": "ReferenceGenome",
+              "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"
             }
           ]
         }
@@ -323,7 +332,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "WorkflowType"
+              "code": "WorkflowType",
+              "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"
             }
           ]
         }
@@ -350,7 +360,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "WorkflowTool"
+              "code": "WorkflowTool",
+              "system": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"
             }
           ]
         }

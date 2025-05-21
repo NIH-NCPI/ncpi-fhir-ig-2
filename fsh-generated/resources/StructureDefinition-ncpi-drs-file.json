@@ -7,7 +7,7 @@
   "title": "NCPI DRS File",
   "status": "draft",
   "description": "Information about a DRS file related to a research participant",
-  "fhirVersion": "4.3.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "DocumentReference",
@@ -22,7 +22,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code"
+              "path": "attachment.url"
             }
           ],
           "rules": "openAtEnd",
