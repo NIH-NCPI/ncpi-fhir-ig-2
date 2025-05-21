@@ -19,21 +19,6 @@ To ensure consistency across all NCPI research studies represented in FHIR, ther
 ### Recommended Practices
 To ensure consistency across all NCPI research studies represented in FHIR, there are some additional elements which should be included if applicable to your study. A recommended element is one that is important and will likely have value for those trying to understand the study’s purpose and usefulness but not essential for validation against the profile. Those elements labeled as optional are not central to the fundamental understanding of the study’s content but may play a key role in a study being _findable_.
 
-#### Shared Data Elements
-
-| NCPI Shared Data Elements | HL7 FHIR (R4) Element | Recommended or Optional | Notes |
-| ------------------------- | --------------------- | ----------------------- | ----- |
-| Study description | description | Recommended | |
-| Disease/focus | condition | Recommended | Should also have one or more Codings provided, indicating the disease or phenotypes that were interrogated during the study’s execution | |
-| Attribution | relatedArtifact | Recommended | This can include, but not limited to; principal investigators, grant numbers, etc. | |
-| Study weblinks | relatedArtifact | Optional | These elements fall under the StudyDescription element located in the [Added Profile Restrictions](#added-profile-restrictions) section of this document. | |
-| Study design | [studyDesign](StructureDefinition-research-study-design.html) | Optional | These elements fall under the StudyDescription element located in the [Added Profile Restrictions](#added-profile-restrictions) section of this document. |
-| Study type | [studyDesign](StructureDefinition-research-study-design.html) | Optional | These elements fall under the StudyDescription element located in the [Added Profile Restrictions](#added-profile-restrictions) section of this document. |
-| Citation | relatedArtifact | Optional | |
-| Study documents | relatedArtifact | Optional | | 
-
-For a more detailed view of these elements as well as the recommended FHIR mappings please see the research study documentation.
-
 #### Population Details
 Each NCPI Research must have one [Study Group](StructureDefinition-research-study-group.html) which must, at the very least, indicate the total number of patients enrolled at the time the data was loaded into FHIR.
 
@@ -69,11 +54,12 @@ The following represents the mapping from the Logical Research Study model to th
 | [parentStudy](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.parentStudy) | partOf | |
 | [name](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.name) | title | The "Formal Title" will be stored as title |
 | or [name](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.name) | relatedArtifact | All other names will be recorded as relatedArtifacts |
-| [description]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.description) | description | |
-| [website]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.website) | relatedArtifact.url | relatedArtifact.type = 'documentation' and url will record the actual website URL |
-| [studyFocus]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.studyFocus) | focus | |
-| [additionalDocumentation]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.additionalDocumentation) | relatedArtifact | There should be some sort of guidance about how to designate the different possible documents listed here |
-| [consortium]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.consortium) | extension[associatedParty] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
-| [acknowledgements]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.acknowledgements) | extension[associatedParty] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
-| [personnel]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.personnel) | extension[associatedPart] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
+| [description](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.description) | description | |
+| [website](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.website) | relatedArtifact.url | relatedArtifact.type = 'documentation' and url will record the actual website URL |
+| resulting publications | relatedArtifact.url | relatedArtifact.type = 'citation' with a link to the publication |
+| [studyFocus](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.studyFocus) | focus | |
+| [additionalDocumentation](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.additionalDocumentation) | relatedArtifact | There should be some sort of guidance about how to designate the different possible documents listed here |
+| [consortium](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.consortium) | extension[associatedParty] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
+| [acknowledgements](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.acknowledgements) | extension[associatedParty] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
+| [personnel](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.personnel) | extension[associatedPart] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
 
