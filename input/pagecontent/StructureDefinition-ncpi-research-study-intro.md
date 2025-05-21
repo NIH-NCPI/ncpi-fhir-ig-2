@@ -65,15 +65,15 @@ The [Identifier datatype](https://hl7.org/fhir/datatypes.html#Identifier) provid
 The following represents the mapping from the Logical Research Study model to this NCPI Research Study FHIR profile. 
 
 | NCPI Shared Data Elements | FHIR Resource Mapping | Note |
-| [persistentIdentifier](StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.persistentIdentifier) | identifier | System should be provided for each identifier which clearly indicates the identifier's origin |
-| [parentStudy](StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.parentStudy) | partOf | |
-| [name](StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.name) | title | The "Formal Title" will be stored as title |
-| or [name](StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.name) | relatedArtifact | All other names will be recorded as relatedArtifacts |
-| [description](StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.description) | description | |
-| [website](StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.website) | relatedArtifact.url | relatedArtifact.type = 'documentation' and url will record the actual website URL |
-| [studyFocus](StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.studyFocus) | focus | |
-| [additionalDocumentation](StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.additionalDocumentation) | relatedArtifact | There should be some sort of guidance about how to designate the different possible documents listed here |
-| [consortium](StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.consortium) | extension[associatedParty] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
-| [acknowledgements](StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.acknowledgements) | extension[associatedParty] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
-| [personnel](StructureDefinition-common-data-model-research-study-definitions.html#diff_common-data-model-research-study.personnel) | extension[associatedPart] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
+| [persistentIdentifier](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.persistentIdentifier) | identifier | System should be provided for each identifier which clearly indicates the identifier's origin |
+| [parentStudy](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.parentStudy) | partOf | |
+| [name](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.name) | title | The "Formal Title" will be stored as title |
+| or [name](StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.name) | relatedArtifact | All other names will be recorded as relatedArtifacts |
+| [description]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.description) | description | |
+| [website]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.website) | relatedArtifact.url | relatedArtifact.type = 'documentation' and url will record the actual website URL |
+| [studyFocus]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.studyFocus) | focus | |
+| [additionalDocumentation]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.additionalDocumentation) | relatedArtifact | There should be some sort of guidance about how to designate the different possible documents listed here |
+| [consortium]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.consortium) | extension[associatedParty] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
+| [acknowledgements]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.acknowledgements) | extension[associatedParty] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
+| [personnel]((StructureDefinition-SharedDataModelResearchStudy-definitions.html#SharedDataModelResearchStudy.personnel) | extension[associatedPart] | R5 provides a more inclusive option for sponsor, investigators, collaborators etcs. I recommend using an extension to emulate the new approach |
 
