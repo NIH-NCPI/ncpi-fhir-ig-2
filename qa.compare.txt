@@ -1,7 +1,7 @@
 NCPIFHIRIGv2 : Validation Results
 =========================================
 
-err = 9, warn = 437, info = 36
+err = 9, warn = 438, info = 36
 $--
 Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
  Build Errors : 17 / 7 / 0
@@ -41,7 +41,7 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-gregor-research-study-participants : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-gregor-study-family : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-kf-research-study-cbtn-participants : 0 / 1 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2 : 1 / 4 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2 : 1 / 5 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-kfx01 : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-pbta : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-FASTQ-example : 0 / 17 / 1
@@ -299,6 +299,7 @@ ERROR: ImplementationGuide/ncpi-fhir-implementation-guide-v2: ImplementationGuid
 WARNING: ImplementationGuide/ncpi-fhir-implementation-guide-v2: ImplementationGuide.dependsOn[2]: The ImplementationGuide is based on FHIR version 4.3.0 but package hl7.fhir.us.core#6.1.0 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
 WARNING: ImplementationGuide/ncpi-fhir-implementation-guide-v2: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 7.0.0. This reference is getting old and the more recent version should be considered
 WARNING: ImplementationGuide/ncpi-fhir-implementation-guide-v2: ImplementationGuide.dependsOn[3]: The ImplementationGuide is based on FHIR version 4.3.0 but package hl7.fhir.us.mcode#4.0.0 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
+WARNING: ImplementationGuide/ncpi-fhir-implementation-guide-v2: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.us.mcode#4.0.0 released on 2025-02-16, but the most recent appropriate version is 3.0.0. This reference is getting old and the more recent version should be considered
 == fsh-generated/resources/List-ncpi-research-collection-kfx01.json ==
 WARNING: List/ncpi-research-collection-kfx01: List.extension[0].value.ofType(url): URL value 'https://cbtn.org/pediatric-brain-tumor-atlas' does not resolve
 == fsh-generated/resources/List-ncpi-research-collection-pbta.json ==
