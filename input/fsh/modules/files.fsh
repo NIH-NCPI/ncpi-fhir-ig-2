@@ -26,6 +26,8 @@ CodeSystem: HashTypeCS
 Id: example-hash-type-code-system
 Title: "Hash Types Code System"
 Description: "Algorithm used to calculate the hash (and size, where applicable)"
+* ^experimental = false
+* ^caseSensitive = true
 * #md5 "md5 hash type"
 * #sha256 "sha256 hash type"
 * #sha512 "sha512 hash type"
@@ -38,6 +40,8 @@ CodeSystem: RelatedFileTypeCS
 Id: related-file-type-code-system
 Title: "Related File Type Code System"
 Description: "Explains the relationship of this file to the file of reference"
+* ^experimental = false
+* ^caseSensitive = true
 * #index_of "Index of"
 * #has_index "Has index"
 * #data_dictionary_of "Data dictionary of"
@@ -45,9 +49,10 @@ Description: "Explains the relationship of this file to the file of reference"
 * #plink-type-associated-files "Plink-type associated files"
 
 ValueSet: EDAMOntologyTerms
-Id: edam-ontology-terms
+Id: edam-ontology-terms-vs
 Title: "Enumerations for the EDAM ontology"
 Description: "Enumerations for the EDAM ontology"
+* ^experimental = false
 * include codes from system $edam
 
 Extension: FileFormat
@@ -56,7 +61,7 @@ Title: "The file format used"
 Description: "The file format used"
 * insert SetContext(DocumentReference)
 * value[x] only CodeableConcept
-* valueCodeableConcept from $edam (extensible)
+* valueCodeableConcept from  edam-ontology-terms-vs (extensible)
 
 Extension: LocationAccess
 Id: location-access
@@ -149,7 +154,7 @@ Description: "Information about a file related to a research participant"
 * description 0..1 /*Description*/
 * description ^short = "A description of the file"
 * type 0..1 /*File Type*/
-* type from edam-ontology-terms (extensible) 
+* type from edam-ontology-terms-vs (extensible) 
 * type ^short = "The type of data contained in this file."
 
 Profile: NcpiDRSFile
@@ -160,7 +165,7 @@ Description: "Information about a DRS file related to a research participant"
 * ^version = "0.0.1"
 * ^status = #draft
 * content ^slicing.discriminator.type = #pattern
-* content ^slicing.discriminator.path = "code"
+* content ^slicing.discriminator.path = "attachment.url"
 * content ^slicing.rules = #openAtEnd
 * content ^slicing.ordered = true
 * content ^slicing.description = "Slicing pattern to make content.attachment require a DRS file type and allow other file types"

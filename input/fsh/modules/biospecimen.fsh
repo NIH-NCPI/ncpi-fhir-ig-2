@@ -54,6 +54,9 @@ CodeSystem: BiospecimenAvailability
 Id: biospecimen-availability
 Title: "Sample availability for Sample and Aliquot modules"
 Description: "Sample availability for Sample and Aliquot modules"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
 * #available "Available"
 * #unavailable "Unavailable" 
 
@@ -122,7 +125,7 @@ Description: "FHIR Profile for NCPI Sample"
 * status ^short = "Can this Sample be requested for further analysis?"
 * condition 0..* /*Sample.StorageMethod*/
 * condition ^short = "How is the Sample stored, eg, Frozen or with additives"
-* collection ^short = "Information about how the biospecimen was collected. Collection information may be unknown, but must be included when there is no parent sample "
+* collection ^short = "Information about how the biospecimen was collected. Collection information may be unknown, but must be included when there is no parent sample"
 * collection.collected[x] only dateTime /*Age at collection*/
 * collection.collectedDateTime ^short = "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 * collection.quantity 0..1 /*Sample.Quantity*/

@@ -1,0 +1,122 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ResearchStudyPartyRole",
+  "id": "research-study-party-role",
+  "title": "Research Study Party Role",
+  "description": "This is a ResearchStudy's party role.",
+  "url": "http://hl7.org/fhir/research-study-party-role",
+  "concept": [
+    {
+      "code": "sponsor",
+      "display": "sponsor",
+      "definition": "sponsor"
+    },
+    {
+      "code": "lead-sponsor",
+      "display": "lead-sponsor",
+      "definition": "lead-sponsor"
+    },
+    {
+      "code": "sponsor-investigator",
+      "display": "sponsor-investigator",
+      "definition": "sponsor-investigator"
+    },
+    {
+      "code": "primary-investigator",
+      "display": "primary-investigator",
+      "definition": "primary-investigator"
+    },
+    {
+      "code": "collaborator",
+      "display": "collaborator",
+      "definition": "collaborator"
+    },
+    {
+      "code": "funding-source",
+      "display": "funding-source",
+      "definition": "funding-source"
+    },
+    {
+      "code": "general-contact",
+      "display": "general-contact",
+      "definition": "general-contact"
+    },
+    {
+      "code": "recruitment-contact",
+      "display": "recruitment-contact",
+      "definition": "recruitment-contact"
+    },
+    {
+      "code": "sub-investigator",
+      "display": "sub-investigator",
+      "definition": "sub-investigator"
+    },
+    {
+      "code": "study-director",
+      "display": "study-director",
+      "definition": "study-director"
+    },
+    {
+      "code": "study-chair",
+      "display": "study-chair",
+      "definition": "study-chair"
+    },
+    {
+      "code": "irb",
+      "display": "Institutional Review Board"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.1968"
+    }
+  ],
+  "version": "4.0.1",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "count": 12
+}

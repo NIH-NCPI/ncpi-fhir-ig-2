@@ -10,6 +10,7 @@ Description: "Enumerated list of access codes such as dbGaP consent codes among 
 * ^url = $ncpi-data-access-code
 * ^experimental = false
 * ^caseSensitive = true
+* ^status = #active
 * #GRU "General Research Use"
 * #HMB "Health/Medical/Biomedical"
 * #DS "Disease-Specific (Disease/Trait/Exposure)"
@@ -37,6 +38,7 @@ Description: "Enumerated list of access type codes such as 'Open Access', 'Regis
 * ^url = $ncpi-data-access-type
 * ^experimental = false
 * ^caseSensitive = true
+* ^status = #active
 * #open "Open Access"
 * #registered "Registered Access"
 * #controlled "Controlled"
@@ -95,7 +97,6 @@ Id: ncpi-research-access-policy
 Title: "NCPI Research Access Policy"
 Description: "Limitations and/or requirements that define how a user may gain access to a particular set of data."
 * ^version = "0.1.0"
-* ^status = #draft
 * category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research "Research Information Access" 
 * provision.purpose from research-data-access-code-vs (extensible)
 * provision.extension contains ResearchDiseaseUseLimitation named diseaseUseLimitation 0..1
