@@ -20,6 +20,9 @@ CodeSystem: MetadataElements
 Id: metadata-elements
 Title: "NCPI Metadata slices"
 Description: "NCPI Metadata slices"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
 * #AssayStrategy "Assay strategy"
 * #PlatformInstrument "Platform instrument"
 * #RelatedSamples "Related samples"
@@ -37,6 +40,9 @@ CodeSystem: AssayStrategyCS
 Id: assay-strategy-cs
 Title: "Assay strategy options"
 Description: "Assay strategy options"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
 * #WGS "Whole Genome Sequencing"
 * #unknown "Unknown"
 
@@ -44,6 +50,9 @@ CodeSystem: PlatformInstrumentCS
 Id: platform-instrument-cs
 Title: "Platform instrument options"
 Description: "Platform instrument options"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
 * #IlluminaHiSeq2000 "Illumina HiSeq2000"
 * #unknown "Unknown"
 
@@ -51,6 +60,9 @@ CodeSystem: LibraryPrepCS
 Id: library-prep-cs
 Title: "Library prep options"
 Description: "Library prep options"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
 * #polyA "polyA"
 * #unknown "Unknown"
 
@@ -58,6 +70,9 @@ CodeSystem: LibrarySelectionCS
 Id: library-selection-cs
 Title: "Library selection options"
 Description: "Library selection options"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
 * #PolyTEnrichment "Poly-T Enrichment"
 * #unknown "Unknown"
 
@@ -65,6 +80,9 @@ CodeSystem: StrandednessCS
 Id: strandedness-cs
 Title: "Strandedness options"
 Description: "Strandedness options"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
 * #stranded "Stranded"
 * #unstranded "Unstranded"
 * #unknown "Unknown"
@@ -73,6 +91,9 @@ CodeSystem: AdaptorTrimmedCS
 Id: adaptor-trimmed-cs
 Title: "Adaptor trimmed options"
 Description: "Adaptor trimmed options"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
 * #yes "Yes"
 * #no "No"
 * #unknown "Unknown"
@@ -81,6 +102,9 @@ CodeSystem: WorkflowTypeCS
 Id: workflow-type-cs
 Title: "Workflow type options"
 Description: "Workflow type options"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
 * #alignment "Alignment"
 * #somatic "Somatic"
 * #unknown "Unknown"
@@ -89,6 +113,9 @@ CodeSystem: WorkflowToolCS
 Id: workflow-tool-cs
 Title: "Workflow tool options"
 Description: "Workflow tool options"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
 * #bammem "BAM-MEM"
 * #GATKHaplotypeCaller "GATK-Haplotype Caller"
 * #unknown "Unknown"
@@ -97,6 +124,9 @@ CodeSystem: ReferenceGenomeCS
 Id: reference-genome-cs
 Title: "Reference genome examples"
 Description: "Reference genome examples"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
 * #GRCh37 "GRCh37"
 * #GRCh38 "CRCh38"
 * #GRCh38p13 "GRCh38.p13"
@@ -152,30 +182,30 @@ Description: "NCPI FASTQ File"
   reference_genome 0..1 and  
   workflow_type 0..1 and
   workflow_tool 0..1
-* component[assay_strategy].code = #AssayStrategy
+* component[assay_strategy].code = $meta-data-elements#AssayStrategy
 * component[assay_strategy].value[x] only CodeableConcept
-* component[platform_instrument].code = #PlatformInstrument
+* component[platform_instrument].code = $meta-data-elements#PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
-* component[library_prep].code = #LibraryPrep
+* component[library_prep].code = $meta-data-elements#LibraryPrep
 * component[library_prep].value[x] only CodeableConcept
-* component[library_selection].code = #LibrarySelection
+* component[library_selection].code = $meta-data-elements#LibrarySelection
 * component[library_selection].value[x] only CodeableConcept
-* component[strandedness].code = #Strandedness
+* component[strandedness].code = $meta-data-elements#Strandedness
 * component[strandedness].value[x] only CodeableConcept
-* component[target_region].code = #TargetRegion
+* component[target_region].code = $meta-data-elements#TargetRegion
 * component[target_region].value[x] only CodeableConcept
-* component[is_paired_end].code = #IsPairedEnd
+* component[is_paired_end].code = $meta-data-elements#IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
-* component[adaptor_trimmed].code = #AdaptorTrimmed
+* component[adaptor_trimmed].code = $meta-data-elements#AdaptorTrimmed
 * component[adaptor_trimmed].value[x] only CodeableConcept or boolean
-* component[reference_genome].code = #ReferenceGenome
+* component[reference_genome].code = $meta-data-elements#ReferenceGenome
 * component[reference_genome].value[x] only CodeableConcept
-* component[workflow_type].code = #WorkflowType
+* component[workflow_type].code = $meta-data-elements#WorkflowType
 * component[workflow_type].value[x] only CodeableConcept
-* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].code = $meta-data-elements#WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
-* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
-* extension[specimen-collection] ^short = "Linkage for related samples"
+* extension contains SpecimenCollection named collection 0..* /*realated_samples*/
+* extension[collection] ^short = "Linkage for related samples"
 
 Profile: NcpiBAMCRAM
 Parent: NcpiFileMetadata
@@ -201,30 +231,30 @@ Description: "BAM or CRAM file profile"
   reference_genome 1..1 and  
   workflow_type 1..1 and
   workflow_tool 1..1
-* component[assay_strategy].code = #AssayStrategy
+* component[assay_strategy].code = $meta-data-elements#AssayStrategy
 * component[assay_strategy].value[x] only CodeableConcept
-* component[platform_instrument].code = #PlatformInstrument
+* component[platform_instrument].code = $meta-data-elements#PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
-* component[library_prep].code = #LibraryPrep
+* component[library_prep].code = $meta-data-elements#LibraryPrep
 * component[library_prep].value[x] only CodeableConcept
-* component[library_selection].code = #LibrarySelection
+* component[library_selection].code = $meta-data-elements#LibrarySelection
 * component[library_selection].value[x] only CodeableConcept
-* component[strandedness].code = #Strandedness
+* component[strandedness].code = $meta-data-elements#Strandedness
 * component[strandedness].value[x] only CodeableConcept
-* component[target_region].code = #TargetRegion
+* component[target_region].code = $meta-data-elements#TargetRegion
 * component[target_region].value[x] only CodeableConcept
-* component[is_paired_end].code = #IsPairedEnd
+* component[is_paired_end].code = $meta-data-elements#IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
-* component[adaptor_trimmed].code = #AdaptorTrimmed
+* component[adaptor_trimmed].code = $meta-data-elements#AdaptorTrimmed
 * component[adaptor_trimmed].value[x] only CodeableConcept or boolean
-* component[reference_genome].code = #ReferenceGenome
+* component[reference_genome].code = $meta-data-elements#ReferenceGenome
 * component[reference_genome].value[x] only CodeableConcept
-* component[workflow_type].code = #WorkflowType
+* component[workflow_type].code = $meta-data-elements#WorkflowType
 * component[workflow_type].value[x] only CodeableConcept
-* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].code = $meta-data-elements#WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
-* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
-* extension[specimen-collection] ^short = "Linkage for related samples"
+* extension contains SpecimenCollection named collection 0..* /*realated_samples*/
+* extension[collection] ^short = "Linkage for related samples"
 
 Profile: NcpiVCF
 Parent: NcpiFileMetadata
@@ -250,30 +280,30 @@ Description: "VCF or gVCF file profile"
   reference_genome 1..1 and  
   workflow_type 1..1 and
   workflow_tool 1..1
-* component[assay_strategy].code = #AssayStrategy
+* component[assay_strategy].code = $meta-data-elements#AssayStrategy
 * component[assay_strategy].value[x] only CodeableConcept
-* component[platform_instrument].code = #PlatformInstrument
+* component[platform_instrument].code = $meta-data-elements#PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
-* component[library_prep].code = #LibraryPrep
+* component[library_prep].code = $meta-data-elements#LibraryPrep
 * component[library_prep].value[x] only CodeableConcept
-* component[library_selection].code = #LibrarySelection
+* component[library_selection].code = $meta-data-elements#LibrarySelection
 * component[library_selection].value[x] only CodeableConcept
-* component[strandedness].code = #Strandedness
+* component[strandedness].code = $meta-data-elements#Strandedness
 * component[strandedness].value[x] only CodeableConcept
-* component[target_region].code = #TargetRegion
+* component[target_region].code = $meta-data-elements#TargetRegion
 * component[target_region].value[x] only CodeableConcept
-* component[is_paired_end].code = #IsPairedEnd
+* component[is_paired_end].code = $meta-data-elements#IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
-* component[adaptor_trimmed].code = #AdaptorTrimmed
+* component[adaptor_trimmed].code = $meta-data-elements#AdaptorTrimmed
 * component[adaptor_trimmed].value[x] only CodeableConcept or boolean
-* component[reference_genome].code = #ReferenceGenome
+* component[reference_genome].code = $meta-data-elements#ReferenceGenome
 * component[reference_genome].value[x] only CodeableConcept
-* component[workflow_type].code = #WorkflowType
+* component[workflow_type].code = $meta-data-elements#WorkflowType
 * component[workflow_type].value[x] only CodeableConcept
-* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].code = $meta-data-elements#WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
-* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
-* extension[specimen-collection] ^short = "Linkage for related samples"
+* extension contains SpecimenCollection named collection 0..* /*realated_samples*/
+* extension[collection] ^short = "Linkage for related samples"
 
 Profile: NcpiMAF
 Parent: NcpiFileMetadata
@@ -299,30 +329,30 @@ Description: "MAF (Somatic Mutation) file profile"
   reference_genome 1..1 and  
   workflow_type 1..1 and
   workflow_tool 1..1
-* component[assay_strategy].code = #AssayStrategy
+* component[assay_strategy].code = $meta-data-elements#AssayStrategy
 * component[assay_strategy].value[x] only CodeableConcept
-* component[platform_instrument].code = #PlatformInstrument
+* component[platform_instrument].code = $meta-data-elements#PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
-* component[library_prep].code = #LibraryPrep
+* component[library_prep].code = $meta-data-elements#LibraryPrep
 * component[library_prep].value[x] only CodeableConcept
-* component[library_selection].code = #LibrarySelection
+* component[library_selection].code = $meta-data-elements#LibrarySelection
 * component[library_selection].value[x] only CodeableConcept
-* component[strandedness].code = #Strandedness
+* component[strandedness].code = $meta-data-elements#Strandedness
 * component[strandedness].value[x] only CodeableConcept
-* component[target_region].code = #TargetRegion
+* component[target_region].code = $meta-data-elements#TargetRegion
 * component[target_region].value[x] only CodeableConcept
-* component[is_paired_end].code = #IsPairedEnd
+* component[is_paired_end].code = $meta-data-elements#IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
-* component[adaptor_trimmed].code = #AdaptorTrimmed
+* component[adaptor_trimmed].code = $meta-data-elements#AdaptorTrimmed
 * component[adaptor_trimmed].value[x] only CodeableConcept or boolean
-* component[reference_genome].code = #ReferenceGenome
+* component[reference_genome].code = $meta-data-elements#ReferenceGenome
 * component[reference_genome].value[x] only CodeableConcept
-* component[workflow_type].code = #WorkflowType
+* component[workflow_type].code = $meta-data-elements#WorkflowType
 * component[workflow_type].value[x] only CodeableConcept
-* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].code = $meta-data-elements#WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
-* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
-* extension[specimen-collection] ^short = "Linkage for related samples"
+* extension contains SpecimenCollection named collection 0..* /*realated_samples*/
+* extension[collection] ^short = "Linkage for related samples"
 
 Profile: NcpiGeneFusionOrExpression
 Parent: NcpiFileMetadata
@@ -348,30 +378,30 @@ Description: "Gene fusion or gene expression file profile"
   reference_genome 1..1 and  
   workflow_type 1..1 and
   workflow_tool 1..1
-* component[assay_strategy].code = #AssayStrategy
+* component[assay_strategy].code = $meta-data-elements#AssayStrategy
 * component[assay_strategy].value[x] only CodeableConcept
-* component[platform_instrument].code = #PlatformInstrument
+* component[platform_instrument].code = $meta-data-elements#PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
-* component[library_prep].code = #LibraryPrep
+* component[library_prep].code = $meta-data-elements#LibraryPrep
 * component[library_prep].value[x] only CodeableConcept
-* component[library_selection].code = #LibrarySelection
+* component[library_selection].code = $meta-data-elements#LibrarySelection
 * component[library_selection].value[x] only CodeableConcept
-* component[strandedness].code = #Strandedness
+* component[strandedness].code = $meta-data-elements#Strandedness
 * component[strandedness].value[x] only CodeableConcept
-* component[target_region].code = #TargetRegion
+* component[target_region].code = $meta-data-elements#TargetRegion
 * component[target_region].value[x] only CodeableConcept
-* component[is_paired_end].code = #IsPairedEnd
+* component[is_paired_end].code = $meta-data-elements#IsPairedEnd
 * component[is_paired_end].value[x] only CodeableConcept or boolean
-* component[adaptor_trimmed].code = #AdaptorTrimmed
+* component[adaptor_trimmed].code = $meta-data-elements#AdaptorTrimmed
 * component[adaptor_trimmed].value[x] only CodeableConcept or boolean
-* component[reference_genome].code = #ReferenceGenome
+* component[reference_genome].code = $meta-data-elements#ReferenceGenome
 * component[reference_genome].value[x] only CodeableConcept
-* component[workflow_type].code = #WorkflowType
+* component[workflow_type].code = $meta-data-elements#WorkflowType
 * component[workflow_type].value[x] only CodeableConcept
-* component[workflow_tool].code = #WorkflowTool
+* component[workflow_tool].code = $meta-data-elements#WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
-* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
-* extension[specimen-collection] ^short = "Linkage for related samples"
+* extension contains SpecimenCollection named collection 0..* /*realated_samples*/
+* extension[collection] ^short = "Linkage for related samples"
 
 Profile: NcpiProteomics
 Parent: NcpiFileMetadata
@@ -419,5 +449,5 @@ Description: "Proteomics file profile"
 * component[workflow_type].value[x] only CodeableConcept
 * component[workflow_tool].code = #WorkflowTool
 * component[workflow_tool].value[x] only CodeableConcept
-* extension contains SpecimenCollection named specimen-collection 0..* /*realated_samples*/
-* extension[specimen-collection] ^short = "Linkage for related samples"
+* extension contains SpecimenCollection named collection 0..* /*realated_samples*/
+* extension[collection] ^short = "Linkage for related samples"
