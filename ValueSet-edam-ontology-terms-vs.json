@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "edam-ontology-terms-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet edam-ontology-terms-vs</b></p><a name=\"edam-ontology-terms-vs\"> </a><a name=\"hcedam-ontology-terms-vs\"> </a><a name=\"edam-ontology-terms-vs-en-US\"> </a><ul><li>Include all codes defined in <code>http://edamontology.org</code></li></ul></div>"
+  },
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms-vs",
+  "version" : "0.2.0",
+  "name" : "EDAMOntologyTerms",
+  "title" : "Enumerations for the EDAM ontology",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-06-13T15:45:04+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
+  "description" : "Enumerations for the EDAM ontology",
+  "compose" : {
+    "include" : [{
+      "system" : "http://edamontology.org"
+    }]
+  }
+}

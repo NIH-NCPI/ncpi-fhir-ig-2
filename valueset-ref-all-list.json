@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "AdministrativeGender",
       "title" : "AdministrativeGender",
@@ -17,7 +17,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "SNOMEDCTBodyStructures",
       "title" : "SNOMED CT Body Structures",
@@ -28,21 +28,21 @@
       "uses" : {
       },
       "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
-      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-condition-summary.html" : "NCPI Conditon Summary",
-      "StructureDefinition-ncpi-sample.html" : "NCPI Sample"
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
+      "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-sample.html" : "NCPI Sample",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "FacilityTypeCodeValueSet",
       "title" : "Facility Type Code Value Set",
@@ -52,12 +52,12 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "PracticeSettingCodeValueSet",
       "title" : "Practice Setting Code Value Set",
@@ -67,12 +67,12 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/composition-status",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "CompositionStatus",
       "title" : "CompositionStatus",
@@ -82,12 +82,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.241"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConditionCategoryCodes",
       "title" : "Condition Category Codes",
@@ -101,7 +101,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConditionClinicalStatusCodes",
       "title" : "Condition Clinical Status Codes",
@@ -115,7 +115,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "Condition/Problem/DiagnosisCodes",
       "title" : "Condition/Problem/Diagnosis Codes",
@@ -130,7 +130,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "Condition/DiagnosisSeverity",
       "title" : "Condition/Diagnosis Severity",
@@ -144,7 +144,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConditionStage",
       "title" : "Condition Stage",
@@ -158,7 +158,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConditionStageType",
       "title" : "Condition Stage Type",
@@ -172,7 +172,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConditionVerificationStatus",
       "title" : "ConditionVerificationStatus",
@@ -186,7 +186,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-action",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConsentActionCodes",
       "title" : "Consent Action Codes",
@@ -200,7 +200,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-category",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConsentCategoryCodes",
       "title" : "Consent Category Codes",
@@ -218,7 +218,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-content-class",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConsentContentClass",
       "title" : "Consent Content Class",
@@ -237,7 +237,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-content-code",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConsentContentCodes",
       "title" : "Consent Content Codes",
@@ -251,7 +251,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-data-meaning",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConsentDataMeaning",
       "title" : "ConsentDataMeaning",
@@ -265,7 +265,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-policy",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConsentPolicyRuleCodes",
       "title" : "Consent PolicyRule Codes",
@@ -279,7 +279,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-provision-type",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConsentProvisionType",
       "title" : "ConsentProvisionType",
@@ -293,7 +293,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-scope",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConsentScopeCodes",
       "title" : "Consent Scope Codes",
@@ -307,7 +307,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-state-codes",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ConsentState",
       "title" : "ConsentState",
@@ -321,7 +321,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "DataAbsentReason",
       "title" : "DataAbsentReason",
@@ -332,19 +332,19 @@
       "uses" : {
       },
       "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
-      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile"
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/doc-classcodes",
-      "version" : "4.3.0",
+      "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "DocumentClassValueSet",
       "title" : "Document Class Value Set",
@@ -354,12 +354,12 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "DocumentReferenceStatus",
       "title" : "DocumentReferenceStatus",
@@ -369,12 +369,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.7"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "DocumentRelationshipType",
       "title" : "DocumentRelationshipType",
@@ -384,12 +384,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.244"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/formatcodes",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "DocumentReferenceFormatCodeSet",
       "title" : "DocumentReference Format Code Set",
@@ -399,12 +399,12 @@
       "sources" : ["1.3.6.1.4.1.19376.1.2.7.1"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/group-type",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "GroupType",
       "title" : "GroupType",
@@ -419,7 +419,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identity-assuranceLevel",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "IdentityAssuranceLevel",
       "title" : "IdentityAssuranceLevel",
@@ -433,7 +433,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "Jurisdiction ValueSet",
       "title" : "Jurisdiction",
@@ -451,7 +451,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "CommonLanguages",
       "title" : "Common Languages",
@@ -461,35 +461,35 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
-      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
-      "StructureDefinition-ncpi-Study-Participant.html" : "NCPI Study Participant",
-      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
-      "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
-      "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-condition-summary.html" : "NCPI Conditon Summary",
-      "StructureDefinition-ncpi-participant.html" : "NCPI Participant",
-      "StructureDefinition-ncpi-sample.html" : "NCPI Sample",
-      "StructureDefinition-ncpi-study-family.html" : "NCPI Study Family",
-      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
-      "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
       "StructureDefinition-ncpi-person.html" : "NCPI Person",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
+      "StructureDefinition-ncpi-participant.html" : "NCPI Participant",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-study-family.html" : "NCPI Study Family",
       "StructureDefinition-ncpi-drs-attachment.html" : "DRS Attachment",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
+      "StructureDefinition-ncpi-Study-Participant.html" : "NCPI Study Participant",
+      "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
+      "StructureDefinition-ncpi-condition-summary.html" : "NCPI Conditon Summary",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-sample.html" : "NCPI Sample",
+      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
+      "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
+      "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "LinkType",
       "title" : "LinkType",
@@ -503,7 +503,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ListEmptyReasons",
       "title" : "List Empty Reasons",
@@ -513,13 +513,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.322"],
       "uses" : {
       },
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-example-codes",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ExampleUseCodesForList",
       "title" : "Example Use Codes for List",
@@ -531,12 +531,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.316"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
+      "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-item-flag",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "PatientMedicineChangeTypes",
       "title" : "Patient Medicine Change Types",
@@ -546,13 +546,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.320"],
       "uses" : {
       },
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-mode",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ListMode",
       "title" : "ListMode",
@@ -562,13 +562,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.318"],
       "uses" : {
       },
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-order",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ListOrderCodes",
       "title" : "List Order Codes",
@@ -578,13 +578,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.324"],
       "uses" : {
       },
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-status",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ListStatus",
       "title" : "ListStatus",
@@ -594,13 +594,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.326"],
       "uses" : {
       },
+      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File",
       "StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.html" : "Linkage for related samples",
-      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-SharedDataModelFile.html" : "Shared Data Model for File"
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ManifestationAndSymptomCodes",
       "title" : "Manifestation and Symptom Codes",
@@ -614,7 +614,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "Marital Status Codes",
       "title" : "MaritalStatus",
@@ -631,7 +631,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "Mime Types",
       "title" : "MimeType",
@@ -641,13 +641,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1024"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
+      "StructureDefinition-ncpi-drs-attachment.html" : "DRS Attachment",
       "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
-      "StructureDefinition-ncpi-drs-attachment.html" : "DRS Attachment"
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ObservationCategoryCodes",
       "title" : "Observation Category Codes",
@@ -658,19 +658,19 @@
       "uses" : {
       },
       "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
-      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile"
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "LOINCCodes",
       "title" : "LOINC Codes",
@@ -681,19 +681,19 @@
       "uses" : {
       },
       "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
-      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile"
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "ObservationInterpretationCodes",
       "title" : "Observation Interpretation Codes",
@@ -706,19 +706,19 @@
       "uses" : {
       },
       "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
-      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile"
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ObservationMethods",
       "title" : "Observation Methods",
@@ -729,19 +729,19 @@
       "uses" : {
       },
       "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
-      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile"
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "ObservationStatus",
       "title" : "ObservationStatus",
@@ -752,22 +752,22 @@
       "uses" : {
       },
       "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
-      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile"
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "PatientContactRelationship",
-      "title" : "Patient Contact Relationship",
+      "title" : "Patient Contact Relationship ",
       "description" : "The nature of the relationship between the patient and the contact person.",
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
       "oids" : ["2.16.840.1.113883.4.642.3.1130"],
@@ -778,7 +778,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ObservationReferenceRangeAppliesToCodes",
       "title" : "Observation Reference Range Applies To Codes",
@@ -792,19 +792,19 @@
       "uses" : {
       },
       "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
-      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile"
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ObservationReferenceRangeMeaningCodes",
       "title" : "Observation Reference Range Meaning Codes",
@@ -817,19 +817,19 @@
       "uses" : {
       },
       "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
-      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
-      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
-      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
-      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
-      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile",
       "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-participant-assertion.html" : "NCPI Participant Assertion",
+      "StructureDefinition-ncpi-family-relationship.html" : "Family Relationship",
       "StructureDefinition-ncpi-file-metadata.html" : "NCPI File Meta Data",
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion",
       "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
-      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile"
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-objective-type",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ResearchStudyObjectiveType",
       "title" : "ResearchStudyObjectiveType",
@@ -845,7 +845,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-phase",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ResearchStudyPhase",
       "title" : "ResearchStudyPhase",
@@ -859,7 +859,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ResearchStudyPrimaryPurposeType",
       "title" : "ResearchStudyPrimaryPurposeType",
@@ -875,7 +875,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-reason-stopped",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ResearchStudyReasonStopped",
       "title" : "ResearchStudyReasonStopped",
@@ -891,7 +891,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-status",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ResearchStudyStatus",
       "title" : "ResearchStudyStatus",
@@ -905,7 +905,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-subject-status",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "ResearchSubjectStatus",
       "title" : "ResearchSubjectStatus",
@@ -919,7 +919,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "ResourceType",
       "title" : "ResourceType",
@@ -933,7 +933,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "All Security Labels",
       "title" : "SecurityLabels",
@@ -949,13 +949,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
       "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "SecurityRoleType",
       "title" : "SecurityRoleType",
@@ -977,7 +977,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "FHIRSpecimenCollectionMethod",
       "title" : "FHIR Specimen Collection Method",
@@ -991,11 +991,11 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
-      "name" : "SpecimenContainer",
-      "title" : null,
-      "description" : "Containers which may hold specimens or specimen containers. Include codes  SNOMED CT(http://snomed.info/sct) where concept is-a 434711009 (Specimen container (physical object))",
+      "name" : "SpecimenContainerType",
+      "title" : "Specimen Container Type",
+      "description" : "Checks on the patient prior specimen collection. All SNOMED CT concepts descendants of 706041008 |Device for body fluid and tissue collection/transfer/processing (physical object)|",
       "systems" : ["http://snomed.info/sct"],
       "oids" : ["2.16.840.1.113883.4.642.3.470"],
       "sources" : ["2.16.840.1.113883.4.642.3.470"],
@@ -1005,10 +1005,10 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-processing-procedure",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "SpecimenProcessingProcedure",
-      "title" : null,
+      "title" : "Specimen processing procedure",
       "description" : "The technique that is used to perform the process or preserve the specimen.",
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0373"],
       "oids" : ["2.16.840.1.113883.4.642.3.469"],
@@ -1019,7 +1019,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/specimen-status",
-      "version" : "4.3.0",
+      "version" : "4.0.1",
       "status" : "draft",
       "name" : "SpecimenStatus",
       "title" : "SpecimenStatus",
@@ -1030,20 +1030,6 @@
       "uses" : {
       },
       "StructureDefinition-ncpi-sample.html" : "NCPI Sample"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/title-type",
-      "version" : "4.3.0",
-      "status" : "draft",
-      "name" : "TitleType",
-      "title" : "TitleType",
-      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/title-type"],
-      "oids" : ["2.16.840.1.113883.4.642.3.1492"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1492"],
-      "uses" : {
-      },
-      "StructureDefinition-label-extension.html" : "Label"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
@@ -1111,8 +1097,8 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-FamilyMember",
@@ -1162,7 +1148,7 @@
       "status" : "draft",
       "name" : "ConditionTypeVS",
       "title" : "Type of Condition",
-      "description" : null,
+      "description" : "Type of Condition",
       "systems" : [
         "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"
       ]
@@ -1180,7 +1166,7 @@
       "StructureDefinition-consanguinity.html" : "Consanguinity Extension"
     },
     {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms",
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms-vs",
       "version" : "0.2.0",
       "status" : "draft",
       "name" : "EDAMOntologyTerms",
@@ -1189,8 +1175,9 @@
       "systems" : ["http://edamontology.org"],
       "uses" : {
       },
-      "StructureDefinition-ncpi-file.html" : "NCPI File",
-      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File"
+      "StructureDefinition-file-format.html" : "The file format used",
+      "StructureDefinition-ncpi-drs-file.html" : "NCPI DRS File",
+      "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms",
@@ -1199,7 +1186,7 @@
       "name" : "MeshTerms",
       "title" : "MeSH Terms",
       "description" : "Example terms from Medical Subject Headings (MeSH) Ontology",
-      "systems" : ["urn:oid:2.16.840.1.113883.6.177"],
+      "systems" : ["http://terminology.hl7.org/CodeSystem/MSH"],
       "uses" : {
       },
       "StructureDefinition-research-disease-use-limitation.html" : "Research Usage Limitation Disease Code"
@@ -1224,7 +1211,7 @@
       "status" : "draft",
       "name" : "PhenotypicFeatureAssertionVS",
       "title" : "Assertion of Phenotypic Feature Codes",
-      "description" : null,
+      "description" : "Assertion of Phenotypic Feature Codes",
       "systems" : [
         "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion"
       ],
@@ -1288,6 +1275,18 @@
       "StructureDefinition-research-date-of-birth-method.html" : "Research Date of Birth Method"
     },
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-study-party-role-vs",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "ResearchStudyPartyRoleVS",
+      "title" : "Family Types Codes",
+      "description" : "A value set with all codes used for the expected family types.",
+      "systems" : ["http://hl7.org/fhir/research-study-party-role"],
+      "uses" : {
+      },
+      "StructureDefinition-research-study-associated-party.html" : "Research Study Associated Party"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",
       "version" : "0.2.0",
       "status" : "draft",
@@ -1314,6 +1313,20 @@
       "uses" : {
       },
       "StructureDefinition-SharedDataModelResearchStudy.html" : "Shared Data Model for Research Study"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/title-type",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "TitleTypeVS",
+      "title" : "Title Type",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "systems" : ["http://hl7.org/fhir/title-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2974"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2974"],
+      "uses" : {
+      },
+      "StructureDefinition-label-extension.html" : "Label"
     }
   ]
 }

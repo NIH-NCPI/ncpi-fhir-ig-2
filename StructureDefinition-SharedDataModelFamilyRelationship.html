@@ -1,56 +1,52 @@
-<!-- get modelType -->
-
-
-
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>Shared Data Model for Family Relationship - NCPI FHIR Implementation Guide v2 v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/project.css" rel="stylesheet"/>
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
     <style type="text/css">h2{--heading-prefix:"25.4"}
     h3,h4,h5,h6{--heading-prefix:"25.4"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
-      <div class="container">  <!-- container -->
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
 
-        <!-- Placeholder for child template header declarations -->
+          <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
@@ -62,27 +58,27 @@
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-          <!--status-bar-->
+            <!-- status-bar -->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
+                <!-- menu.xml -->
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+<ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -217,34 +213,37 @@
       <li>
         <a href="downloads.html">Downloads</a>
       </li>
+      <li><a name="l387">​</a>
+        <a href="fsh-generated/index.html">Sushi Artififacts</a>
+      </li>
     </ul>
   </li>
 </ul>
-            </div>  <!-- /.nav-collapse -->
-          </div>  <!-- /.container -->
-        </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-navbar -->
-    <!--status-bar-->
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Shared Data Model for Family Relationship</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Shared Data Model for Family Relationship</b></li>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">NCPI FHIR Implementation Guide v2 - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+    <!-- ReleaseHeader --><p id="publish-box">NCPI FHIR Implementation Guide v2 - Local Development build (v0.2.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -321,10 +320,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRelationship<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRelationship"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRelationship<button data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRelationship" title="Click to copy URL" class="btn-copy"></button></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRelationship|0.2.0"/></span>
+      <span class="copy-text">0.2.0<button data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRelationship|0.2.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
       </td>
     </tr>
 
@@ -340,7 +339,7 @@
         
           Draft
           
-            as of 2025-05-21
+            as of 2025-06-13
           
         
       </td>
@@ -362,18 +361,18 @@
 
 
 
-<!-- insert intro if present -->
+  <!-- insert intro if present -->
 
 
 
 
-<p><b>Usage:</b></p>
+<p><b>Usages:</b></p>
 <ul>
- <li>This Logical Model Profile is not used by any profiles in this Implementation Guide</li>
+ <li>This Logical Model is not used by any profiles in this Implementation Guide</li>
 </ul>
 
 
-  <!-- no uri -->
+    <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">Formal Views of Profile Content</h3>
   <p>
@@ -391,19 +390,19 @@
         <a href="#tabs-snap">Snapshot Table</a>
       </li>
 
-<!--      <li>
+  <!-- <li>
         <a href="#tabs-xml">Pseudo-XML</a>
-      </li>-->
+      </li> -->
 
 
-<!--      <li>
+  <!-- <li>
         <a href="#tabs-json">Pseudo-JSON</a>
-      </li>-->
+      </li> -->
 
 
-      <!--<li>
+        <!-- <li>
         <a href="#tabs-ttl">Pseudo-TTL</a>
-      </li>-->
+      </li> -->
 
       <li>
         <a href="#tabs-summ">Statistics/References</a>
@@ -416,37 +415,40 @@
     <div id="tabs-key">
       <div id="tbl-key">
         <div id="tbl-key-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationships" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="k-SharedDataModelFamilyRelationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship<br/></td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="k-SharedDataModelFamilyRelationship.subject"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="k-SharedDataModelFamilyRelationship.target"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="k-SharedDataModelFamilyRelationship.relationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
-
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
-          <!--Terminology Bindings heading in the fragment -->
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationshipK" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SharedDataModelFamilyRelationshipK'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SharedDataModelFamilyRelationshipK'), document.getElementById('ppSharedDataModelFamilyRelationshipK'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSharedDataModelFamilyRelationshipK">Bindings <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipK'), 'binding',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipK'))" size="1" name="binding" checked="true" id="cbSharedDataModelFamilyRelationshipK-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipK'), 'constraint',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipK'))" size="1" name="constraint" checked="true" id="cbSharedDataModelFamilyRelationshipK-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipK'), 'obligation',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipK'))" size="1" name="obligation" checked="true" id="cbSharedDataModelFamilyRelationshipK-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="k-SharedDataModelFamilyRelationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="k-SharedDataModelFamilyRelationship.subject"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="k-SharedDataModelFamilyRelationship.target"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="k-SharedDataModelFamilyRelationship.relationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+document.getElementById('cbSharedDataModelFamilyRelationshipK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipK'), 'binding', document.getElementById('cbSharedDataModelFamilyRelationshipK-binding').checked, document.getElementById('ppSharedDataModelFamilyRelationshipK'));
+document.getElementById('cbSharedDataModelFamilyRelationshipK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipK'), 'constraint', document.getElementById('cbSharedDataModelFamilyRelationshipK-constraint').checked, document.getElementById('ppSharedDataModelFamilyRelationshipK'));
+document.getElementById('cbSharedDataModelFamilyRelationshipK-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipK'), 'obligation', document.getElementById('cbSharedDataModelFamilyRelationshipK-obligation').checked, document.getElementById('ppSharedDataModelFamilyRelationshipK'));
+</script></table>
+            <!-- Terminology Bindings heading in the fragment -->
           
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -457,38 +459,41 @@
         <p>This structure is derived from <a href="http://build.fhir.org/types.html#Base">Base</a>
         </p>
         <div id="tbl-diff-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationshipd" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="d-SharedDataModelFamilyRelationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="d-SharedDataModelFamilyRelationship.subject"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="d-SharedDataModelFamilyRelationship.target"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="d-SharedDataModelFamilyRelationship.relationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
-
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationshipD" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SharedDataModelFamilyRelationshipD'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SharedDataModelFamilyRelationshipD'), document.getElementById('ppSharedDataModelFamilyRelationshipD'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSharedDataModelFamilyRelationshipD">Bindings <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipD'), 'binding',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipD'))" size="1" name="binding" checked="true" id="cbSharedDataModelFamilyRelationshipD-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipD'), 'constraint',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipD'))" size="1" name="constraint" checked="true" id="cbSharedDataModelFamilyRelationshipD-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipD'), 'obligation',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipD'))" size="1" name="obligation" checked="true" id="cbSharedDataModelFamilyRelationshipD-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="SharedDataModelFamilyRelationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="SharedDataModelFamilyRelationship.subject"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="SharedDataModelFamilyRelationship.target"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="SharedDataModelFamilyRelationship.relationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+document.getElementById('cbSharedDataModelFamilyRelationshipD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipD'), 'binding', document.getElementById('cbSharedDataModelFamilyRelationshipD-binding').checked, document.getElementById('ppSharedDataModelFamilyRelationshipD'));
+document.getElementById('cbSharedDataModelFamilyRelationshipD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipD'), 'constraint', document.getElementById('cbSharedDataModelFamilyRelationshipD-constraint').checked, document.getElementById('ppSharedDataModelFamilyRelationshipD'));
+document.getElementById('cbSharedDataModelFamilyRelationshipD-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipD'), 'obligation', document.getElementById('cbSharedDataModelFamilyRelationshipD-obligation').checked, document.getElementById('ppSharedDataModelFamilyRelationshipD'));
+</script></table>
           <a name="tx"> </a>
-          <!--Terminology Bindings heading in the fragment -->
+            <!-- Terminology Bindings heading in the fragment -->
           
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -497,43 +502,46 @@
     <div id="tabs-snap">
       <div id="tbl-snap">
         <div id="tbl-snap-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationships" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="SharedDataModelFamilyRelationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship<br/></td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="SharedDataModelFamilyRelationship.subject"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="SharedDataModelFamilyRelationship.target"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="SharedDataModelFamilyRelationship.relationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
-
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
-          <!--Terminology Bindings heading in the fragment -->
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationshipS" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SharedDataModelFamilyRelationshipS'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SharedDataModelFamilyRelationshipS'), document.getElementById('ppSharedDataModelFamilyRelationshipS'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSharedDataModelFamilyRelationshipS">Bindings <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipS'), 'binding',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipS'))" size="1" name="binding" checked="true" id="cbSharedDataModelFamilyRelationshipS-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipS'), 'constraint',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipS'))" size="1" name="constraint" checked="true" id="cbSharedDataModelFamilyRelationshipS-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipS'), 'obligation',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipS'))" size="1" name="obligation" checked="true" id="cbSharedDataModelFamilyRelationshipS-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="s-SharedDataModelFamilyRelationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="s-SharedDataModelFamilyRelationship.subject"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="s-SharedDataModelFamilyRelationship.target"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="s-SharedDataModelFamilyRelationship.relationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+document.getElementById('cbSharedDataModelFamilyRelationshipS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipS'), 'binding', document.getElementById('cbSharedDataModelFamilyRelationshipS-binding').checked, document.getElementById('ppSharedDataModelFamilyRelationshipS'));
+document.getElementById('cbSharedDataModelFamilyRelationshipS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipS'), 'constraint', document.getElementById('cbSharedDataModelFamilyRelationshipS-constraint').checked, document.getElementById('ppSharedDataModelFamilyRelationshipS'));
+document.getElementById('cbSharedDataModelFamilyRelationshipS-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipS'), 'obligation', document.getElementById('cbSharedDataModelFamilyRelationshipS-obligation').checked, document.getElementById('ppSharedDataModelFamilyRelationshipS'));
+</script></table>
+            <!-- Terminology Bindings heading in the fragment -->
           
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
         </div>
       </div>
     </div>
 
-<!--    <a name="tabs-xml"> </a>
+  <!-- <a name="tabs-xml"> </a>
     <div id="tabs-xml">
       <div id="xml">
         <div id="xml-inner">
@@ -541,27 +549,27 @@
 
         </div>
       </div>
-    </div>-->
+    </div> -->
 
 
-<!--    <a name="tabs-json"> </a>
+  <!-- <a name="tabs-json"> </a>
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
            // <span style="color: navy; opacity: 0.8">Shared Data Model for Family Relationship</span>
  {
-  // from Element: <a href="http://hl7.org/fhir/R4B/extensibility.html">extension</a>
-    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The participant we are describing</span>
-    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" class="dict"><span style="text-decoration: underline">target</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</span>
-    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target" class="dict"><span style="text-decoration: underline">relationship</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The relationship between the subject and the target.</span>
+// from Element: <a href="http://hl7.org/fhir/R4/extensibility.html">extension</a>
+    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The participant we are describing</span>
+    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" class="dict"><span style="text-decoration: underline">target</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</span>
+    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target" class="dict"><span style="text-decoration: underline">relationship</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The relationship between the subject and the target.</span>
   }
 
         </div>
       </div>
-    </div>-->
+    </div> -->
 
 
-    <!--<a name="tabs-ttl"> </a>
+      <!-- <a name="tabs-ttl"> </a>
     <div id="tabs-ttl">
       <div id="ttl">
         <div id="ttl-inner">
@@ -569,7 +577,7 @@
 
         </div>
       </div>
-    </div>-->
+    </div> -->
 
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
@@ -593,37 +601,40 @@ Summary
           <b>Key Elements View</b>
         </p>
         <div id="all-tbl-key-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationships" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="ka-SharedDataModelFamilyRelationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship<br/></td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="ka-SharedDataModelFamilyRelationship.subject"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="ka-SharedDataModelFamilyRelationship.target"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="ka-SharedDataModelFamilyRelationship.relationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
-
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
-          <!--Terminology Bindings heading in the fragment -->
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationshipKA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SharedDataModelFamilyRelationshipKA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SharedDataModelFamilyRelationshipKA'), document.getElementById('ppSharedDataModelFamilyRelationshipKA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSharedDataModelFamilyRelationshipKA">Bindings <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipKA'), 'binding',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipKA'))" size="1" name="binding" checked="true" id="cbSharedDataModelFamilyRelationshipKA-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipKA'), 'constraint',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipKA'))" size="1" name="constraint" checked="true" id="cbSharedDataModelFamilyRelationshipKA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipKA'), 'obligation',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipKA'))" size="1" name="obligation" checked="true" id="cbSharedDataModelFamilyRelationshipKA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="ka-SharedDataModelFamilyRelationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="ka-SharedDataModelFamilyRelationship.subject"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="ka-SharedDataModelFamilyRelationship.target"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="ka-SharedDataModelFamilyRelationship.relationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+document.getElementById('cbSharedDataModelFamilyRelationshipKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipKA'), 'binding', document.getElementById('cbSharedDataModelFamilyRelationshipKA-binding').checked, document.getElementById('ppSharedDataModelFamilyRelationshipKA'));
+document.getElementById('cbSharedDataModelFamilyRelationshipKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipKA'), 'constraint', document.getElementById('cbSharedDataModelFamilyRelationshipKA-constraint').checked, document.getElementById('ppSharedDataModelFamilyRelationshipKA'));
+document.getElementById('cbSharedDataModelFamilyRelationshipKA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipKA'), 'obligation', document.getElementById('cbSharedDataModelFamilyRelationshipKA-obligation').checked, document.getElementById('ppSharedDataModelFamilyRelationshipKA'));
+</script></table>
+            <!-- Terminology Bindings heading in the fragment -->
           
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -634,37 +645,40 @@ Summary
         <p>This structure is derived from <a href="http://build.fhir.org/types.html#Base">Base</a>
         </p>
         <div id="all-tbl-diff-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationshipd" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="da-SharedDataModelFamilyRelationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="da-SharedDataModelFamilyRelationship.subject"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="da-SharedDataModelFamilyRelationship.target"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="da-SharedDataModelFamilyRelationship.relationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
-
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
-          <!--Terminology Bindings heading in the fragment -->
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationshipDA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SharedDataModelFamilyRelationshipDA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SharedDataModelFamilyRelationshipDA'), document.getElementById('ppSharedDataModelFamilyRelationshipDA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSharedDataModelFamilyRelationshipDA">Bindings <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipDA'), 'binding',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipDA'))" size="1" name="binding" checked="true" id="cbSharedDataModelFamilyRelationshipDA-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipDA'), 'constraint',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipDA'))" size="1" name="constraint" checked="true" id="cbSharedDataModelFamilyRelationshipDA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipDA'), 'obligation',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipDA'))" size="1" name="obligation" checked="true" id="cbSharedDataModelFamilyRelationshipDA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="a-SharedDataModelFamilyRelationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="a-SharedDataModelFamilyRelationship.subject"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="a-SharedDataModelFamilyRelationship.target"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="a-SharedDataModelFamilyRelationship.relationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+document.getElementById('cbSharedDataModelFamilyRelationshipDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipDA'), 'binding', document.getElementById('cbSharedDataModelFamilyRelationshipDA-binding').checked, document.getElementById('ppSharedDataModelFamilyRelationshipDA'));
+document.getElementById('cbSharedDataModelFamilyRelationshipDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipDA'), 'constraint', document.getElementById('cbSharedDataModelFamilyRelationshipDA-constraint').checked, document.getElementById('ppSharedDataModelFamilyRelationshipDA'));
+document.getElementById('cbSharedDataModelFamilyRelationshipDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipDA'), 'obligation', document.getElementById('cbSharedDataModelFamilyRelationshipDA-obligation').checked, document.getElementById('ppSharedDataModelFamilyRelationshipDA'));
+</script></table>
+            <!-- Terminology Bindings heading in the fragment -->
           
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -673,42 +687,45 @@ Summary
           <b>Snapshot View</b>
         </p>
         <div id="all-tbl-snap-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationships" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="sa-SharedDataModelFamilyRelationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship<br/></td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="sa-SharedDataModelFamilyRelationship.subject"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="sa-SharedDataModelFamilyRelationship.target"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/references.html">Reference</a>()</td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
-
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="sa-SharedDataModelFamilyRelationship.relationship"> </a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
-
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4B/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
-          <!--Terminology Bindings heading in the fragment -->
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SharedDataModelFamilyRelationshipSA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element" data-no-external="true">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description &amp; Constraints</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SharedDataModelFamilyRelationshipSA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SharedDataModelFamilyRelationshipSA'), document.getElementById('ppSharedDataModelFamilyRelationshipSA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSharedDataModelFamilyRelationshipSA">Bindings <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipSA'), 'binding',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipSA'))" size="1" name="binding" checked="true" id="cbSharedDataModelFamilyRelationshipSA-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipSA'), 'constraint',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipSA'))" size="1" name="constraint" checked="true" id="cbSharedDataModelFamilyRelationshipSA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SharedDataModelFamilyRelationshipSA'), 'obligation',event.target.checked, document.getElementById('ppSharedDataModelFamilyRelationshipSA'))" size="1" name="obligation" checked="true" id="cbSharedDataModelFamilyRelationshipSA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship" title="The **Shared Data Model for Family Relationship**" data-no-external="true">SharedDataModelFamilyRelationship</a><a name="sa-SharedDataModelFamilyRelationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shared Data Model for Family Relationship<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" data-no-external="true">subject</a><a name="sa-SharedDataModelFamilyRelationship.subject"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant we are describing</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" data-no-external="true">target</a><a name="sa-SharedDataModelFamilyRelationship.target"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target." data-no-external="true">relationship</a><a name="sa-SharedDataModelFamilyRelationship.relationship"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The relationship between the subject and the target.</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+document.getElementById('cbSharedDataModelFamilyRelationshipSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipSA'), 'binding', document.getElementById('cbSharedDataModelFamilyRelationshipSA-binding').checked, document.getElementById('ppSharedDataModelFamilyRelationshipSA'));
+document.getElementById('cbSharedDataModelFamilyRelationshipSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipSA'), 'constraint', document.getElementById('cbSharedDataModelFamilyRelationshipSA-constraint').checked, document.getElementById('ppSharedDataModelFamilyRelationshipSA'));
+document.getElementById('cbSharedDataModelFamilyRelationshipSA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('SharedDataModelFamilyRelationshipSA'), 'obligation', document.getElementById('cbSharedDataModelFamilyRelationshipSA-obligation').checked, document.getElementById('ppSharedDataModelFamilyRelationshipSA'));
+</script></table>
+            <!-- Terminology Bindings heading in the fragment -->
           
         
           
-          <!-- 218 is size of empty table -->
+            <!-- 218 is size of empty table -->
           
         </div>
       </div>
 
-      <!--<div id="all-xml">
+        <!-- <div id="all-xml">
         <p>
           <b>XML Template</b>
         </p>
@@ -716,27 +733,27 @@ Summary
           <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
 
         </div>
-      </div>-->
+      </div> -->
 
 
-      <!--<div id="all-json">
+        <!-- <div id="all-json">
         <p>
           <b>JSON Template</b>
         </p>
         <div id="all-json-inner">
            // <span style="color: navy; opacity: 0.8">Shared Data Model for Family Relationship</span>
  {
-  // from Element: <a href="http://hl7.org/fhir/R4B/extensibility.html">extension</a>
-    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The participant we are describing</span>
-    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" class="dict"><span style="text-decoration: underline">target</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/references.html#Reference">Reference</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</span>
-    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target" class="dict"><span style="text-decoration: underline">relationship</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4B/datatypes.html#code">code</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The relationship between the subject and the target.</span>
+// from Element: <a href="http://hl7.org/fhir/R4/extensibility.html">extension</a>
+    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.subject" title="The participant we are describing" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The participant we are describing</span>
+    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.target" title="The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'" class="dict"><span style="text-decoration: underline">target</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'</span>
+    "<a href="StructureDefinition-SharedDataModelFamilyRelationship.html#SharedDataModelFamilyRelationship.relationship" title="The relationship between the subject and the target" class="dict"><span style="text-decoration: underline">relationship</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The relationship between the subject and the target.</span>
   }
 
         </div>
-      </div>-->
+      </div> -->
 
 
-      <!--<div id="all-ttl">
+        <!-- <div id="all-ttl">
         <p>
           <b>TTL Template</b>
         </p>
@@ -744,7 +761,7 @@ Summary
           <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
 
         </div>
-      </div>-->
+      </div> -->
 
       <div id="all-summ">
         <p>This structure is derived from <a href="http://build.fhir.org/types.html#Base">Base</a>
@@ -759,37 +776,37 @@ Summary
       </div>
     </div>
   </div>
-  <p>&#160;</p>
+  <p>&nbsp;</p>
   <p>Other representations of profile: <a href="StructureDefinition-SharedDataModelFamilyRelationship.csv">CSV</a>, <a href="StructureDefinition-SharedDataModelFamilyRelationship.xlsx">Excel</a> 
   </p>
 
   
 
-<!-- insert notes if present -->
+  <!-- insert notes if present -->
 
 
 
 
 </div>
 
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
+  <script src="assets/js/tabs.js" type="text/javascript"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
   <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, May 21, 2025 14:24+0000">2025-05-21</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 13, 2025 15:46+0000">2025-06-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -798,27 +815,26 @@ Summary
                 
           </span>
         </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
 
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  <!-- Analytics Below
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
-

@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "edam-ontology-terms-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet edam-ontology-terms-vs</b></p><a name=\"edam-ontology-terms-vs\"> </a><a name=\"hcedam-ontology-terms-vs\"> </a><a name=\"edam-ontology-terms-vs-en-US\"> </a><ul><li>Include all codes defined in <code>http://edamontology.org</code></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "EDAMOntologyTerms"] ; # 
+  fhir:title [ fhir:v "Enumerations for the EDAM ontology"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-06-13T15:45:04+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Enumerations for the EDAM ontology"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://edamontology.org"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

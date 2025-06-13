@@ -1,20 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/ValueSet/title-type",
-      "version" : "4.3.0",
-      "status" : "draft",
-      "name" : "TitleType",
-      "title" : "TitleType",
-      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/title-type"],
-      "oids" : ["2.16.840.1.113883.4.642.3.1492"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1492"],
-      "uses" : {
-      },
-      "StructureDefinition-label-extension.html" : "Label"
-    },
-    {
       "url" : "http://terminology.hl7.org/ValueSet/v3-FamilyMember",
       "version" : "3.0.0",
       "status" : "active",
@@ -62,7 +48,7 @@
       "status" : "draft",
       "name" : "ConditionTypeVS",
       "title" : "Type of Condition",
-      "description" : null,
+      "description" : "Type of Condition",
       "systems" : [
         "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"
       ]
@@ -80,7 +66,7 @@
       "StructureDefinition-consanguinity.html" : "Consanguinity Extension"
     },
     {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms",
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms-vs",
       "version" : "0.2.0",
       "status" : "draft",
       "name" : "EDAMOntologyTerms",
@@ -89,6 +75,7 @@
       "systems" : ["http://edamontology.org"],
       "uses" : {
       },
+      "StructureDefinition-file-format.html" : "The file format used",
       "StructureDefinition-ncpi-file.html" : "NCPI File"
     },
     {
@@ -98,7 +85,7 @@
       "name" : "MeshTerms",
       "title" : "MeSH Terms",
       "description" : "Example terms from Medical Subject Headings (MeSH) Ontology",
-      "systems" : ["urn:oid:2.16.840.1.113883.6.177"],
+      "systems" : ["http://terminology.hl7.org/CodeSystem/MSH"],
       "uses" : {
       },
       "StructureDefinition-research-disease-use-limitation.html" : "Research Usage Limitation Disease Code"
@@ -123,7 +110,7 @@
       "status" : "draft",
       "name" : "PhenotypicFeatureAssertionVS",
       "title" : "Assertion of Phenotypic Feature Codes",
-      "description" : null,
+      "description" : "Assertion of Phenotypic Feature Codes",
       "systems" : [
         "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion"
       ],
@@ -187,6 +174,18 @@
       "StructureDefinition-research-date-of-birth-method.html" : "Research Date of Birth Method"
     },
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-study-party-role-vs",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "ResearchStudyPartyRoleVS",
+      "title" : "Family Types Codes",
+      "description" : "A value set with all codes used for the expected family types.",
+      "systems" : ["http://hl7.org/fhir/research-study-party-role"],
+      "uses" : {
+      },
+      "StructureDefinition-research-study-associated-party.html" : "Research Study Associated Party"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",
       "version" : "0.2.0",
       "status" : "draft",
@@ -213,6 +212,20 @@
       "uses" : {
       },
       "StructureDefinition-SharedDataModelResearchStudy.html" : "Shared Data Model for Research Study"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/title-type",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "TitleTypeVS",
+      "title" : "Title Type",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "systems" : ["http://hl7.org/fhir/title-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.2974"],
+      "sources" : ["2.16.840.1.113883.4.642.3.2974"],
+      "uses" : {
+      },
+      "StructureDefinition-label-extension.html" : "Label"
     }
   ]
 }

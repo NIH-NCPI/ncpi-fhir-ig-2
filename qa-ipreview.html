@@ -20,12 +20,20 @@
 <code>https://loinc.org</code>        </a>
       </li>
       <li>
+        <a href="Observation-gregor-example-metadata.html">
+<code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/assay-strategy-cs</code>        </a>
+      </li>
+      <li>
         <a href="List-ncpi-research-collection-pbta.html">
 <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type</code>        </a>
       </li>
       <li>
         <a href="Observation-PT-006SP660-condition.html">
 <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type</code>        </a>
+      </li>
+      <li>
+        <a href="StructureDefinition-ncpi-vcf.html">
+<code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements</code>        </a>
       </li>
       <li>
         <a href="StructureDefinition-ncpi-research-study.html">
@@ -50,10 +58,6 @@
       <li>
         <a href="Patient-PT-006SP660.html">
 <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method</code>        </a>
-      </li>
-      <li>
-        <a href="ResearchStudy-kf-research-study-cbtn.html">
-<code>urn:oid:2.16.840.1.113883.6.177</code>        </a>
       </li>
     </ul>
     <h2>Copyright Fragment</h2>
@@ -203,7 +207,7 @@ This material contains content that is copyright of SNOMED International. Implem
             <ul>
 
               <li>
-                <a href="http://hl7.org/fhir/R4B/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>
+                <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>
 :                 <a href="StructureDefinition-consanguinity.html">Consanguinity</a>
 ,                 <a href="ValueSet-consanguinity-assertion-vs.html">ConsanguinityAssertionVS</a>
  and                 <a href="Observation-GSS123456-assertion.html">Observation/GSS123456-assertion</a>
@@ -286,7 +290,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2023+ NCPI FHIR Working Group.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on FHIR 4.3.0. Generated 2025-05-21 
+          IG &copy; 2023+ NCPI FHIR Working Group.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on FHIR 4.0.1. Generated 2025-06-13 
           
           
                       Links: Table of Contents |
@@ -371,40 +375,6 @@ NCPI FHIR Implementation Guide v2 - Local Development build (v0.2.0) built by th
       </tr>
       <tr>
         <td>
-          <a href="StructureDefinition-file-format.html">web</a>
-        </td>
-        <td>
-          <a href="http://edamontology.org">edamontology.org</a>
-        </td>
-        <td>
-          <span style="opacity: 0.5">Value of extension</span>
-          <br/>
-          <span style="font-weight:bold">Binding: </span>
-          <a href="http://edamontology.org">http://edamontology.org</a>
- (          <a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>
-)
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="StructureDefinition-ncpi-file.html">web</a>
-        </td>
-        <td>
-          <a href="http://edamontology.org">edamontology.org</a>
-        </td>
-        <td>
-The file format used (EDAM is preferred)          <br/>
-          <span style="font-weight:bold">URL: </span>
-          <a href="StructureDefinition-file-format.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format</a>
-          <br/>
-          <span style="font-weight:bold">Binding: </span>
-          <a href="http://edamontology.org">http://edamontology.org</a>
- (          <a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>
-)
-        </td>
-      </tr>
-      <tr>
-        <td>
           <a href="ValueSet-consanguinity-assertion-vs.html">web</a>
         </td>
         <td>
@@ -457,8 +427,8 @@ The file format used (EDAM is preferred)          <br/>
         <td>
 
           IG &copy; 2023+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>
-.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>
-. Generated           <span title="Wed, May 21, 2025 14:24+0000">2025-05-21</span>
+.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Fri, Jun 13, 2025 15:46+0000">2025-06-13</span>
 
                     <br/>
 
@@ -495,91 +465,6 @@ The file format used (EDAM is preferred)          <br/>
         </td>
         <td>
           <a href="https://fhir-drills.github.io/index.html">FHIR Drills</a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="StructureDefinition-file-format-definitions.html">web</a>
-        </td>
-        <td>
-          <a href="http://edamontology.org">edamontology.org</a>
-        </td>
-        <td>
-Unless not suitable, these codes SHALL be taken from           <span style="color:DarkGray;text-decoration:line-through">For codes, see </span>
-           <a href="http://edamontology.org">http://edamontology.org</a>
-          <br/>
-(          <a href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a>
- to           <span class="copy-text-inline">
-<code>http://edamontology.org</code><button data-clipboard-text="http://edamontology.org" title="Click to Copy URL" class="btn-copy"></button>          </span>
-)
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="StructureDefinition-file-format-definitions.html">web</a>
-        </td>
-        <td>
-          <a href="http://edamontology.org">edamontology.org</a>
-        </td>
-        <td>
-Unless not suitable, these codes SHALL be taken from            <a href="http://edamontology.org">http://edamontology.org</a>
-          <br/>
-(          <a href="http://hl7.org/fhir/R4B/terminologies.html#extensible">extensible</a>
- to           <span class="copy-text-inline">
-<code>http://edamontology.org</code><button data-clipboard-text="http://edamontology.org" title="Click to Copy URL" class="btn-copy"></button>          </span>
-)
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="StructureDefinition-file-format.html">web</a>
-        </td>
-        <td>
-          <a href="http://edamontology.org">edamontology.org</a>
-        </td>
-        <td>
-Value of extension          <br/>
-          <span style="font-weight:bold">Binding: </span>
-          <a href="http://edamontology.org">http://edamontology.org</a>
- (          <a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>
-)
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="StructureDefinition-file-format.html">web</a>
-        </td>
-        <td>
-          <a href="http://edamontology.org">edamontology.org</a>
-        </td>
-        <td>
-          <a style="opacity: 1.0" href="http://edamontology.org">http://edamontology.org</a>
-          <div>
-            <code>http://edamontology.org</code>
-            <button data-clipboard-text="http://edamontology.org" title="Click to copy URL" class="btn-copy"></button>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="StructureDefinition-ncpi-drs-file.html">web</a>
-        </td>
-        <td>
-          <a href="http://edamontology.org">edamontology.org</a>
-        </td>
-        <td>
-The file format used (EDAM is preferred)          <br/>
-          <span style="font-weight:bold">URL: </span>
-          <a href="StructureDefinition-file-format.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format</a>
-          <br/>
-          <span style="font-weight:bold">Binding: </span>
-          <a href="http://edamontology.org">http://edamontology.org</a>
- (          <a href="http://hl7.org/fhir/R4B/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>
-)          <br/>
-          <span style="font-weight:bold">ele-1: </span>
-All FHIR elements must have a @value or children unless an empty Parameters resource          <br/>
-          <span style="font-weight:bold">ext-1: </span>
-Must have either extensions or value[x], not both          <br/>
         </td>
       </tr>
       <tr>
@@ -965,6 +850,12 @@ ncpi_phenotype_condition_module.png          <br/>
         <td>
 research-study-structure.png          <br/>
           <img src="research-study-structure.png" alt="research-study-structure.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+tree-filter.png          <br/>
+          <img src="tree-filter.png" alt="tree-filter.png" width="600px" height="auto"/>
         </td>
       </tr>
     </table>

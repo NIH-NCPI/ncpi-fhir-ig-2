@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/title-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "title-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem title-type</b></p><a name=\"title-type\"> </a><a name=\"hctitle-type\"> </a><a name=\"title-type-en-US\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/title-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">primary<a name=\"title-type-primary\"> </a></td><td>Primary title</td><td>Main title for common use. The primary title used for representation if multiple titles exist.</td></tr><tr><td style=\"white-space:nowrap\">official<a name=\"title-type-official\"> </a></td><td>Official title</td><td>The official or authoritative title.</td></tr><tr><td style=\"white-space:nowrap\">scientific<a name=\"title-type-scientific\"> </a></td><td>Scientific title</td><td>Title using scientific terminology.</td></tr><tr><td style=\"white-space:nowrap\">plain-language<a name=\"title-type-plain-language\"> </a></td><td>Plain language title</td><td>Title using language common to lay public discourse.</td></tr><tr><td style=\"white-space:nowrap\">subtitle<a name=\"title-type-subtitle\"> </a></td><td>Subtitle</td><td>Subtitle or secondary title.</td></tr><tr><td style=\"white-space:nowrap\">short-title<a name=\"title-type-short-title\"> </a></td><td>Short title</td><td>Brief title (e.g. 'running title' or title used in page headers)</td></tr><tr><td style=\"white-space:nowrap\">acronym<a name=\"title-type-acronym\"> </a></td><td>Acronym</td><td>Abbreviation used as title</td></tr><tr><td style=\"white-space:nowrap\">earlier-title<a name=\"title-type-earlier-title\"> </a></td><td>Different text in an earlier version</td><td>Alternative form of title in an earlier version such as epub ahead of print.</td></tr><tr><td style=\"white-space:nowrap\">language<a name=\"title-type-language\"> </a></td><td>Different language</td><td>Additional form of title in a different language.</td></tr><tr><td style=\"white-space:nowrap\">autotranslated<a name=\"title-type-autotranslated\"> </a></td><td>Different language derived from autotranslation</td><td>Machine translated form of title in a different language, language element codes the language into which it was translated by machine.</td></tr><tr><td style=\"white-space:nowrap\">human-use<a name=\"title-type-human-use\"> </a></td><td>Human use</td><td>Human-friendly title</td></tr><tr><td style=\"white-space:nowrap\">machine-use<a name=\"title-type-machine-use\"> </a></td><td>Machine use</td><td>Machine-friendly title</td></tr><tr><td style=\"white-space:nowrap\">duplicate-uid<a name=\"title-type-duplicate-uid\"> </a></td><td>Different text for the same object with a different identifier</td><td>An alternative form of the title in two or more entries, e.g. in multiple medline entries</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 0
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/title-type"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1492" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "TitleType"] ; # 
+  fhir:title [ fhir:v "TitleType"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-06-13T15:45:04+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Used to express the reason and specific aspect for the variant title, such as language and specific language."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "13"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "primary" ] ;
+     fhir:display [ fhir:v "Primary title" ] ;
+     fhir:definition [ fhir:v "Main title for common use. The primary title used for representation if multiple titles exist." ]
+  ] [
+     fhir:code [ fhir:v "official" ] ;
+     fhir:display [ fhir:v "Official title" ] ;
+     fhir:definition [ fhir:v "The official or authoritative title." ]
+  ] [
+     fhir:code [ fhir:v "scientific" ] ;
+     fhir:display [ fhir:v "Scientific title" ] ;
+     fhir:definition [ fhir:v "Title using scientific terminology." ]
+  ] [
+     fhir:code [ fhir:v "plain-language" ] ;
+     fhir:display [ fhir:v "Plain language title" ] ;
+     fhir:definition [ fhir:v "Title using language common to lay public discourse." ]
+  ] [
+     fhir:code [ fhir:v "subtitle" ] ;
+     fhir:display [ fhir:v "Subtitle" ] ;
+     fhir:definition [ fhir:v "Subtitle or secondary title." ]
+  ] [
+     fhir:code [ fhir:v "short-title" ] ;
+     fhir:display [ fhir:v "Short title" ] ;
+     fhir:definition [ fhir:v "Brief title (e.g. 'running title' or title used in page headers)" ]
+  ] [
+     fhir:code [ fhir:v "acronym" ] ;
+     fhir:display [ fhir:v "Acronym" ] ;
+     fhir:definition [ fhir:v "Abbreviation used as title" ]
+  ] [
+     fhir:code [ fhir:v "earlier-title" ] ;
+     fhir:display [ fhir:v "Different text in an earlier version" ] ;
+     fhir:definition [ fhir:v "Alternative form of title in an earlier version such as epub ahead of print." ]
+  ] [
+     fhir:code [ fhir:v "language" ] ;
+     fhir:display [ fhir:v "Different language" ] ;
+     fhir:definition [ fhir:v "Additional form of title in a different language." ]
+  ] [
+     fhir:code [ fhir:v "autotranslated" ] ;
+     fhir:display [ fhir:v "Different language derived from autotranslation" ] ;
+     fhir:definition [ fhir:v "Machine translated form of title in a different language, language element codes the language into which it was translated by machine." ]
+  ] [
+     fhir:code [ fhir:v "human-use" ] ;
+     fhir:display [ fhir:v "Human use" ] ;
+     fhir:definition [ fhir:v "Human-friendly title" ]
+  ] [
+     fhir:code [ fhir:v "machine-use" ] ;
+     fhir:display [ fhir:v "Machine use" ] ;
+     fhir:definition [ fhir:v "Machine-friendly title" ]
+  ] [
+     fhir:code [ fhir:v "duplicate-uid" ] ;
+     fhir:display [ fhir:v "Different text for the same object with a different identifier" ] ;
+     fhir:definition [ fhir:v "An alternative form of the title in two or more entries, e.g. in multiple medline entries" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

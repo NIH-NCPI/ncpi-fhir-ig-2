@@ -1,9 +1,27 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/research-study-party-role",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "ResearchStudyPartyRole",
+      "title" : "Research Study Party Role",
+      "description" : "This is a ResearchStudy's party role.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1968"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/title-type",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "TitleType",
+      "title" : "TitleType",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1492"]
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/adaptor-trimmed-cs",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "AdaptorTrimmedCS",
       "title" : "Adaptor trimmed options",
       "description" : "Adaptor trimmed options"
@@ -11,7 +29,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/assay-strategy-cs",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "AssayStrategyCS",
       "title" : "Assay strategy options",
       "description" : "Assay strategy options"
@@ -19,7 +37,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "BiospecimenAvailability",
       "title" : "Sample availability for Sample and Aliquot modules",
       "description" : "Sample availability for Sample and Aliquot modules"
@@ -43,7 +61,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "ConditionType",
       "title" : "Type of Condition",
       "description" : "Code System for type of condition"
@@ -59,7 +77,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-prep-cs",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "LibraryPrepCS",
       "title" : "Library prep options",
       "description" : "Library prep options"
@@ -67,7 +85,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-selection-cs",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "LibrarySelectionCS",
       "title" : "Library selection options",
       "description" : "Library selection options"
@@ -75,7 +93,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "MetadataElements",
       "title" : "NCPI Metadata slices",
       "description" : "NCPI Metadata slices"
@@ -107,7 +125,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/platform-instrument-cs",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "PlatformInstrumentCS",
       "title" : "Platform instrument options",
       "description" : "Platform instrument options"
@@ -115,7 +133,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "ReferenceGenomeCS",
       "title" : "Reference genome examples",
       "description" : "Reference genome examples"
@@ -131,7 +149,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "ResearchDataAccessCode",
       "title" : "Research Data Access Codes",
       "description" : "Enumerated list of access codes such as dbGaP consent codes among others."
@@ -139,7 +157,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "ResearchDataAccessType",
       "title" : "Research Data Access Type Codes",
       "description" : "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'"
@@ -147,7 +165,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "ResearchDataDateOfBirthMethod",
       "title" : "Enumerations for how DOB was constructed",
       "description" : "Enumerations for how DOB was constructed"
@@ -155,7 +173,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/strandedness-cs",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "StrandednessCS",
       "title" : "Strandedness options",
       "description" : "Strandedness options"
@@ -179,7 +197,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-tool-cs",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "WorkflowToolCS",
       "title" : "Workflow tool options",
       "description" : "Workflow tool options"
@@ -187,7 +205,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-type-cs",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "WorkflowTypeCS",
       "title" : "Workflow type options",
       "description" : "Workflow type options"

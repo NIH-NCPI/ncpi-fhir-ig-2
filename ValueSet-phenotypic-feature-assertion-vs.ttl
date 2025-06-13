@@ -18,7 +18,8 @@
   fhir:name [ fhir:v "PhenotypicFeatureAssertionVS"] ; # 
   fhir:title [ fhir:v "Assertion of Phenotypic Feature Codes"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-21T14:22:51+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-06-13T15:45:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -30,6 +31,7 @@
        fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "Assertion of Phenotypic Feature Codes"] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion"^^xsd:anyURI ]

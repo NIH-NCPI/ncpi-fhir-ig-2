@@ -3,14 +3,15 @@
   "id" : "example-hash-type-code-system",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem example-hash-type-code-system</b></p><a name=\"example-hash-type-code-system\"> </a><a name=\"hcexample-hash-type-code-system\"> </a><a name=\"example-hash-type-code-system-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">md5<a name=\"example-hash-type-code-system-md5\"> </a></td><td>md5 hash type</td></tr><tr><td style=\"white-space:nowrap\">sha256<a name=\"example-hash-type-code-system-sha256\"> </a></td><td>sha256 hash type</td></tr><tr><td style=\"white-space:nowrap\">sha512<a name=\"example-hash-type-code-system-sha512\"> </a></td><td>sha512 hash type</td></tr><tr><td style=\"white-space:nowrap\">sha1<a name=\"example-hash-type-code-system-sha1\"> </a></td><td>sha1 hash type</td></tr><tr><td style=\"white-space:nowrap\">crc32<a name=\"example-hash-type-code-system-crc32\"> </a></td><td>crc32 hash type</td></tr><tr><td style=\"white-space:nowrap\">crc32c<a name=\"example-hash-type-code-system-crc32c\"> </a></td><td>crc32c hash type</td></tr><tr><td style=\"white-space:nowrap\">etag<a name=\"example-hash-type-code-system-etag\"> </a></td><td>etag hash type</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem example-hash-type-code-system</b></p><a name=\"example-hash-type-code-system\"> </a><a name=\"hcexample-hash-type-code-system\"> </a><a name=\"example-hash-type-code-system-en-US\"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">md5<a name=\"example-hash-type-code-system-md5\"> </a></td><td>md5 hash type</td></tr><tr><td style=\"white-space:nowrap\">sha256<a name=\"example-hash-type-code-system-sha256\"> </a></td><td>sha256 hash type</td></tr><tr><td style=\"white-space:nowrap\">sha512<a name=\"example-hash-type-code-system-sha512\"> </a></td><td>sha512 hash type</td></tr><tr><td style=\"white-space:nowrap\">sha1<a name=\"example-hash-type-code-system-sha1\"> </a></td><td>sha1 hash type</td></tr><tr><td style=\"white-space:nowrap\">crc32<a name=\"example-hash-type-code-system-crc32\"> </a></td><td>crc32 hash type</td></tr><tr><td style=\"white-space:nowrap\">crc32c<a name=\"example-hash-type-code-system-crc32c\"> </a></td><td>crc32c hash type</td></tr><tr><td style=\"white-space:nowrap\">etag<a name=\"example-hash-type-code-system-etag\"> </a></td><td>etag hash type</td></tr></table></div>"
   },
   "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system",
   "version" : "0.2.0",
   "name" : "HashTypeCS",
   "title" : "Hash Types Code System",
   "status" : "draft",
-  "date" : "2025-05-21T14:22:51+00:00",
+  "experimental" : false,
+  "date" : "2025-06-13T15:45:04+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -24,6 +25,7 @@
     }]
   }],
   "description" : "Algorithm used to calculate the hash (and size, where applicable)",
+  "caseSensitive" : true,
   "content" : "complete",
   "count" : 7,
   "concept" : [{

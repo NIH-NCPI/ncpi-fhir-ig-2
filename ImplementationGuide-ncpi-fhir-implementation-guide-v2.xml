@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2025-05-21T14:22:51+00:00"/>
+  <date value="2025-06-13T15:45:04+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -27,14 +27,14 @@
   <description value="FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI)."/>
   <packageId value="ncpi-fhir-implementation-guide-v2"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.3.0"/>
+  <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
       <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.3.0"/>
+    <version value="6.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -609,6 +609,7 @@
         <reference value="ValueSet/phenotypic-feature-assertion-vs"/>
       </reference>
       <name value="Assertion of Phenotypic Feature Codes"/>
+      <description value="Assertion of Phenotypic Feature Codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -836,7 +837,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/edam-ontology-terms"/>
+        <reference value="ValueSet/edam-ontology-terms-vs"/>
       </reference>
       <name value="Enumerations for the EDAM ontology"/>
       <description value="Enumerations for the EDAM ontology"/>
@@ -1090,6 +1091,17 @@
       </extension>
       <reference>
         <reference value="ValueSet/ncpi-family-types-vs"/>
+      </reference>
+      <name value="Family Types Codes"/>
+      <description value="A value set with all codes used for the expected family types."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/research-study-party-role-vs"/>
       </reference>
       <name value="Family Types Codes"/>
       <description value="A value set with all codes used for the expected family types."/>
@@ -1680,13 +1692,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/research-study-result"/>
+        <reference value="CodeSystem/research-study-party-role"/>
       </reference>
-      <name value="Research Study Result"/>
-      <description value="Link to citations associated with the study's publications."/>
+      <name value="Research Study Party Role"/>
+      <description value="This is a ResearchStudy's party role."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2024,9 +2036,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/title-type-vs"/>
+      </reference>
+      <name value="Title Type"/>
+      <description value="Used to express the reason and specific aspect for the variant title, such as language and specific language."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/title-type"/>
+      </reference>
+      <name value="TitleType"/>
+      <description value="Used to express the reason and specific aspect for the variant title, such as language and specific language."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/condition-type-vs"/>
       </reference>
       <name value="Type of Condition"/>
+      <description value="Type of Condition"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2096,125 +2131,200 @@
       <exampleBoolean value="false"/>
     </resource>
     <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="authors.html"/>
+        </extension>
         <nameUrl value="authors.html"/>
         <title value="Authors"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="conformance.html"/>
+        </extension>
         <nameUrl value="conformance.html"/>
         <title value="Conformance"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="contact.html"/>
+        </extension>
         <nameUrl value="contact.html"/>
         <title value="Contact"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="contributing.html"/>
+        </extension>
         <nameUrl value="contributing.html"/>
         <title value="Contributing"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="example_cbtn.html"/>
+        </extension>
         <nameUrl value="example_cbtn.html"/>
         <title value="Example Cbtn"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="example_gregor.html"/>
+        </extension>
         <nameUrl value="example_gregor.html"/>
         <title value="Example Gregor"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="FHIR_Basics.html"/>
+        </extension>
         <nameUrl value="FHIR_Basics.html"/>
         <title value="FHIR Basics"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="fhir_version.html"/>
+        </extension>
         <nameUrl value="fhir_version.html"/>
         <title value="Fhir Version"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="IG_Versioning.html"/>
+        </extension>
         <nameUrl value="IG_Versioning.html"/>
         <title value="IG Versioning"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="module_assays.html"/>
+        </extension>
         <nameUrl value="module_assays.html"/>
         <title value="Module Assays"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="module_family.html"/>
+        </extension>
         <nameUrl value="module_family.html"/>
         <title value="Module Family"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="module_filemetadata.html"/>
+        </extension>
         <nameUrl value="module_filemetadata.html"/>
         <title value="Module Filemetadata"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="module_files.html"/>
+        </extension>
         <nameUrl value="module_files.html"/>
         <title value="Module Files"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="module_overview.html"/>
+        </extension>
         <nameUrl value="module_overview.html"/>
         <title value="Module Overview"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="module_participant.html"/>
+        </extension>
         <nameUrl value="module_participant.html"/>
         <title value="Module Participant"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="module_phenotype_condition.html"/>
+        </extension>
         <nameUrl value="module_phenotype_condition.html"/>
         <title value="Module Phenotype Condition"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="module_research_study.html"/>
+        </extension>
         <nameUrl value="module_research_study.html"/>
         <title value="Module Research Study"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="module_specimen.html"/>
+        </extension>
         <nameUrl value="module_specimen.html"/>
         <title value="Module Specimen"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="must_support.html"/>
+        </extension>
         <nameUrl value="must_support.html"/>
         <title value="Must Support"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ncpi.html"/>
+        </extension>
         <nameUrl value="ncpi.html"/>
         <title value="Ncpi"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="research_study_example_cbtn.html"/>
+        </extension>
         <nameUrl value="research_study_example_cbtn.html"/>
         <title value="Research Study Example Cbtn"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="use_case_tbd.html"/>
+        </extension>
         <nameUrl value="use_case_tbd.html"/>
         <title value="Use Case Tbd"/>
         <generation value="markdown"/>

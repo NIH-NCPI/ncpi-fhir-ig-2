@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="title-type-vs"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet title-type-vs</b></p><a name="title-type-vs"> </a><a name="hctitle-type-vs"> </a><a name="title-type-vs-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include all codes defined in <a href="CodeSystem-title-type.html"><code>http://hl7.org/fhir/title-type</code></a></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/title-type"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.3.2974"/>
+  </identifier>
+  <version value="0.2.0"/>
+  <name value="TitleTypeVS"/>
+  <title value="Title Type"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-06-13T15:45:04+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Used to express the reason and specific aspect for the variant title, such as language and specific language."/>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/title-type"/>
+    </include>
+  </compose>
+</ValueSet>

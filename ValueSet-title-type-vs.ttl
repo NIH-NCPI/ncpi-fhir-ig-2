@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/title-type-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "title-type-vs"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet title-type-vs</b></p><a name=\"title-type-vs\"> </a><a name=\"hctitle-type-vs\"> </a><a name=\"title-type-vs-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-title-type.html\"><code>http://hl7.org/fhir/title-type</code></a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 1
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/title-type"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.3.2974" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "TitleTypeVS"] ; # 
+  fhir:title [ fhir:v "Title Type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-06-13T15:45:04+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Used to express the reason and specific aspect for the variant title, such as language and specific language."] ; # 
+  fhir:immutable [ fhir:v true] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/title-type"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

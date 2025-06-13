@@ -11,14 +11,15 @@
   fhir:id [ fhir:v "library-prep-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem library-prep-cs</b></p><a name=\"library-prep-cs\"> </a><a name=\"hclibrary-prep-cs\"> </a><a name=\"library-prep-cs-en-US\"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-prep-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">polyA<a name=\"library-prep-cs-polyA\"> </a></td><td>polyA</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"library-prep-cs-unknown\"> </a></td><td>Unknown</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem library-prep-cs</b></p><a name=\"library-prep-cs\"> </a><a name=\"hclibrary-prep-cs\"> </a><a name=\"library-prep-cs-en-US\"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-prep-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">polyA<a name=\"library-prep-cs-polyA\"> </a></td><td>polyA</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"library-prep-cs-unknown\"> </a></td><td>Unknown</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-prep-cs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "LibraryPrepCS"] ; # 
   fhir:title [ fhir:v "Library prep options"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-21T14:22:51+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-06-13T15:45:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -31,6 +32,7 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Library prep options"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [

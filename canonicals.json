@@ -1,5 +1,21 @@
 [
   {
+    "id" : "research-study-party-role",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/research-study-party-role",
+    "version" : "0.2.0",
+    "name" : "ResearchStudyPartyRole",
+    "oids" : ["2.16.840.1.113883.4.642.4.1968"]
+  },
+  {
+    "id" : "title-type",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/title-type",
+    "version" : "0.2.0",
+    "name" : "TitleType",
+    "oids" : ["2.16.840.1.113883.4.642.1.1492"]
+  },
+  {
     "id" : "adaptor-trimmed-cs",
     "type" : "CodeSystem",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/adaptor-trimmed-cs",
@@ -665,13 +681,6 @@
     "name" : "ResearchStudyGroup"
   },
   {
-    "id" : "research-study-result",
-    "type" : "StructureDefinition",
-    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result",
-    "version" : "0.2.0",
-    "name" : "ResearchStudyResult"
-  },
-  {
     "id" : "research-web-Link",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
@@ -721,9 +730,9 @@
     "name" : "ConsanguinityAssertionVS"
   },
   {
-    "id" : "edam-ontology-terms",
+    "id" : "edam-ontology-terms-vs",
     "type" : "ValueSet",
-    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms-vs",
     "version" : "0.2.0",
     "name" : "EDAMOntologyTerms"
   },
@@ -777,6 +786,13 @@
     "name" : "ResearchDataDateOfBirthMethodVS"
   },
   {
+    "id" : "research-study-party-role-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-study-party-role-vs",
+    "version" : "0.2.0",
+    "name" : "ResearchStudyPartyRoleVS"
+  },
+  {
     "id" : "study-name-type-vs",
     "type" : "ValueSet",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",
@@ -789,5 +805,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs",
     "version" : "0.2.0",
     "name" : "StudyPersonnelRoleVS"
+  },
+  {
+    "id" : "title-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/title-type",
+    "version" : "0.2.0",
+    "name" : "TitleTypeVS",
+    "oids" : ["2.16.840.1.113883.4.642.3.2974"]
   }
 ]

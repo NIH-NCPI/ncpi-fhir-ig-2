@@ -1,6 +1,30 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/research-study-party-role",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "ResearchStudyPartyRole",
+      "title" : "Research Study Party Role",
+      "description" : "This is a ResearchStudy's party role.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1968"],
+      "uses" : {
+      },
+      "ValueSet-research-study-party-role-vs.html" : "Family Types Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/title-type",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "TitleType",
+      "title" : "TitleType",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1492"],
+      "uses" : {
+      },
+      "ValueSet-title-type-vs.html" : "Title Type"
+    },
+    {
       "url" : "http://human-phenotype-ontology.org",
       "version" : "1.0.0",
       "status" : "active",
@@ -38,17 +62,6 @@
       "ValueSet-consanguinity-assertion-vs.html" : "Consanguinity Value Codes"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/title-type",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "TitleType",
-      "title" : "Title Type",
-      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4B/valueset-title-type.html" : "TitleType"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
       "version" : "3.0.0",
       "status" : "active",
@@ -74,7 +87,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "ConditionType",
       "title" : "Type of Condition",
       "description" : "Code System for type of condition",
@@ -107,7 +120,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "ResearchDataAccessCode",
       "title" : "Research Data Access Codes",
       "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
@@ -118,7 +131,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "ResearchDataAccessType",
       "title" : "Research Data Access Type Codes",
       "description" : "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'",
@@ -129,7 +142,7 @@
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
       "version" : "0.2.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "ResearchDataDateOfBirthMethod",
       "title" : "Enumerations for how DOB was constructed",
       "description" : "Enumerations for how DOB was constructed",

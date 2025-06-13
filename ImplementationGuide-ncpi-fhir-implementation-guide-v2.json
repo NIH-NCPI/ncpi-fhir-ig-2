@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2025-05-21T14:22:51+00:00",
+  "date" : "2025-06-13T15:45:04+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -26,7 +26,7 @@
   "description" : "FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI).",
   "packageId" : "ncpi-fhir-implementation-guide-v2",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["4.3.0"],
+  "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
     "id" : "hl7tx",
     "extension" : [{
@@ -35,7 +35,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.3.0"
+    "version" : "6.4.0"
   },
   {
     "id" : "hl7ext",
@@ -779,6 +779,7 @@
         "reference" : "ValueSet/phenotypic-feature-assertion-vs"
       },
       "name" : "Assertion of Phenotypic Feature Codes",
+      "description" : "Assertion of Phenotypic Feature Codes",
       "exampleBoolean" : false
     },
     {
@@ -1027,7 +1028,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/edam-ontology-terms"
+        "reference" : "ValueSet/edam-ontology-terms-vs"
       },
       "name" : "Enumerations for the EDAM ontology",
       "description" : "Enumerations for the EDAM ontology",
@@ -1304,6 +1305,18 @@
       }],
       "reference" : {
         "reference" : "ValueSet/ncpi-family-types-vs"
+      },
+      "name" : "Family Types Codes",
+      "description" : "A value set with all codes used for the expected family types.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/research-study-party-role-vs"
       },
       "name" : "Family Types Codes",
       "description" : "A value set with all codes used for the expected family types.",
@@ -1948,13 +1961,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/research-study-result"
+        "reference" : "CodeSystem/research-study-party-role"
       },
-      "name" : "Research Study Result",
-      "description" : "Link to citations associated with the study's publications.",
+      "name" : "Research Study Party Role",
+      "description" : "This is a ResearchStudy's party role.",
       "exampleBoolean" : false
     },
     {
@@ -2323,9 +2336,34 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/title-type-vs"
+      },
+      "name" : "Title Type",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/title-type"
+      },
+      "name" : "TitleType",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/condition-type-vs"
       },
       "name" : "Type of Condition",
+      "description" : "Type of Condition",
       "exampleBoolean" : false
     },
     {
@@ -2401,125 +2439,225 @@
       "exampleBoolean" : false
     }],
     "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
       "nameUrl" : "toc.html",
       "title" : "Table of Contents",
       "generation" : "html",
       "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
         "nameUrl" : "index.html",
         "title" : "Home",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "authors.html"
+        }],
         "nameUrl" : "authors.html",
         "title" : "Authors",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "conformance.html"
+        }],
         "nameUrl" : "conformance.html",
         "title" : "Conformance",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "contact.html"
+        }],
         "nameUrl" : "contact.html",
         "title" : "Contact",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "contributing.html"
+        }],
         "nameUrl" : "contributing.html",
         "title" : "Contributing",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
         "nameUrl" : "downloads.html",
         "title" : "Downloads",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "example_cbtn.html"
+        }],
         "nameUrl" : "example_cbtn.html",
         "title" : "Example Cbtn",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "example_gregor.html"
+        }],
         "nameUrl" : "example_gregor.html",
         "title" : "Example Gregor",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "FHIR_Basics.html"
+        }],
         "nameUrl" : "FHIR_Basics.html",
         "title" : "FHIR Basics",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "fhir_version.html"
+        }],
         "nameUrl" : "fhir_version.html",
         "title" : "Fhir Version",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "IG_Versioning.html"
+        }],
         "nameUrl" : "IG_Versioning.html",
         "title" : "IG Versioning",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "module_assays.html"
+        }],
         "nameUrl" : "module_assays.html",
         "title" : "Module Assays",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "module_family.html"
+        }],
         "nameUrl" : "module_family.html",
         "title" : "Module Family",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "module_filemetadata.html"
+        }],
         "nameUrl" : "module_filemetadata.html",
         "title" : "Module Filemetadata",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "module_files.html"
+        }],
         "nameUrl" : "module_files.html",
         "title" : "Module Files",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "module_overview.html"
+        }],
         "nameUrl" : "module_overview.html",
         "title" : "Module Overview",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "module_participant.html"
+        }],
         "nameUrl" : "module_participant.html",
         "title" : "Module Participant",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "module_phenotype_condition.html"
+        }],
         "nameUrl" : "module_phenotype_condition.html",
         "title" : "Module Phenotype Condition",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "module_research_study.html"
+        }],
         "nameUrl" : "module_research_study.html",
         "title" : "Module Research Study",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "module_specimen.html"
+        }],
         "nameUrl" : "module_specimen.html",
         "title" : "Module Specimen",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "must_support.html"
+        }],
         "nameUrl" : "must_support.html",
         "title" : "Must Support",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "ncpi.html"
+        }],
         "nameUrl" : "ncpi.html",
         "title" : "Ncpi",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "research_study_example_cbtn.html"
+        }],
         "nameUrl" : "research_study_example_cbtn.html",
         "title" : "Research Study Example Cbtn",
         "generation" : "markdown"
       },
       {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "use_case_tbd.html"
+        }],
         "nameUrl" : "use_case_tbd.html",
         "title" : "Use Case Tbd",
         "generation" : "markdown"

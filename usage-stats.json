@@ -1,7 +1,7 @@
 {
   "package": "ncpi-fhir-implementation-guide-v2",
   "version": "0.2.0",
-  "fhirVersion": "4.3.0",
+  "fhirVersion": "4.0.1",
   "extensions": [
     {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy",
@@ -150,7 +150,6 @@
         "Annotation",
         "Attachment",
         "CodeableConcept",
-        "CodeableReference",
         "Coding",
         "ContactPoint",
         "Count",
@@ -163,7 +162,6 @@
         "Quantity",
         "Range",
         "Ratio",
-        "RatioRange",
         "Reference",
         "SampledData",
         "Signature",
@@ -176,7 +174,8 @@
         "RelatedArtifact",
         "TriggerDefinition",
         "UsageContext",
-        "Dosage"
+        "Dosage",
+        "Meta"
       ]
     },
     {
@@ -223,7 +222,6 @@
         "Annotation",
         "Attachment",
         "CodeableConcept",
-        "CodeableReference",
         "Coding",
         "ContactPoint",
         "Count",
@@ -236,7 +234,6 @@
         "Quantity",
         "Range",
         "Ratio",
-        "RatioRange",
         "Reference",
         "SampledData",
         "Signature",
@@ -249,7 +246,8 @@
         "RelatedArtifact",
         "TriggerDefinition",
         "UsageContext",
-        "Dosage"
+        "Dosage",
+        "Meta"
       ]
     },
     {
@@ -337,7 +335,6 @@
         "Annotation",
         "Attachment",
         "CodeableConcept",
-        "CodeableReference",
         "Coding",
         "ContactPoint",
         "Count",
@@ -350,71 +347,6 @@
         "Quantity",
         "Range",
         "Ratio",
-        "RatioRange",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage"
-      ]
-    },
-    {
-      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design",
-      "title": "Research Study Design",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result",
-      "title": "Research Study Result",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "CodeableReference",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "RatioRange",
         "Reference",
         "SampledData",
         "Signature",
@@ -428,7 +360,14 @@
         "TriggerDefinition",
         "UsageContext",
         "Dosage",
-        "Reference"
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design",
+      "title": "Research Study Design",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -552,8 +491,16 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "CodeSystem",
+      "ValueSet"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "CodeSystem",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/valueset-reference": [
       "SharedDataModelAliquot",
@@ -566,11 +513,12 @@
       "SharedDataModelSample",
       "SharedDataModelStudyParticipant"
     ],
-    "http://hl7.org/fhir/build/StructureDefinition/binding-definition": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
@@ -587,10 +535,19 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
       "Patient"
     ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex|6.1.0": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
       "Patient"
     ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity|6.1.0": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|6.1.0": [
       "Patient"
     ],
     "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier": [
@@ -688,9 +645,6 @@
       "ResearchStudy"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design": [
-      "ResearchStudy"
-    ],
-    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result": [
       "ResearchStudy"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link": [

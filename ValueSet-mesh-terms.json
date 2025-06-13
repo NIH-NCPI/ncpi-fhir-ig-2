@@ -3,7 +3,7 @@
   "id" : "mesh-terms",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mesh-terms</b></p><a name=\"mesh-terms\"> </a><a name=\"hcmesh-terms\"> </a><a name=\"mesh-terms-en-US\"> </a><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.113883.6.177</code></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mesh-terms</b></p><a name=\"mesh-terms\"> </a><a name=\"hcmesh-terms\"> </a><a name=\"mesh-terms-en-US\"> </a><ul><li>Include all codes defined in <code>http://terminology.hl7.org/CodeSystem/MSH</code></li></ul></div>"
   },
   "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms",
   "version" : "0.2.0",
@@ -11,7 +11,7 @@
   "title" : "MeSH Terms",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-05-21T14:22:51+00:00",
+  "date" : "2025-06-13T15:45:04+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -27,7 +27,7 @@
   "description" : "Example terms from Medical Subject Headings (MeSH) Ontology",
   "compose" : {
     "include" : [{
-      "system" : "urn:oid:2.16.840.1.113883.6.177"
+      "system" : "http://terminology.hl7.org/CodeSystem/MSH"
     }]
   }
 }
