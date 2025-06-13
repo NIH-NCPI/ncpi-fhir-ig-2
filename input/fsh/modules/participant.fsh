@@ -22,6 +22,7 @@ Description: "Enumerations for how DOB was constructed"
 * ^url = $ncpi-dob-method 
 * ^experimental = false
 * ^caseSensitive = true
+* ^status = #active
 * #exact "Exact"
 * #year-only "Year Only"
 * #shifted "Shifted"
@@ -32,6 +33,7 @@ ValueSet: ResearchDataDateOfBirthMethodVS
 Id: research-data-date-of-birth-method-vs
 Title: "Enumerations for how DOB was constructed"
 Description: "Enumerations for how DOB was constructed"
+* ^experimental = false
 * include codes from system $ncpi-dob-method 
 
 Extension: ResearchPopulation
@@ -73,11 +75,11 @@ Description: "Research oriented patient"
 * birthDate ^short = "Date of Birth of the participant. Details of privacy method should be included in DOBMethod"
 * deceased[x] ^short = "Implementers can provide relativeDateTime or actual date or T/F, depending on data available."
 
-* extension contains USCoreBirthSexExtension named us-core-birth-sex 0..1
+* extension contains USCoreBirthSexExtension|6.1.0 named us-core-birth-sex 0..1
 * extension[us-core-birth-sex] ^short = "Sex assigned at birth (or pre-natal observed sex)"
-* extension contains USCoreRaceExtension named us-core-race 0..1
+* extension contains USCoreRaceExtension|6.1.0 named us-core-race 0..1
 * extension[us-core-race] ^short = "US Core Race"
-* extension contains USCoreEthnicityExtension named us-core-ethnicity 0..1
+* extension contains USCoreEthnicityExtension|6.1.0 named us-core-ethnicity 0..1
 * extension[us-core-ethnicity] ^short = "US Core Ethnicity"
 * extension contains ResearchPopulation named population 0..1
 * extension[population] ^short = "Population, Race, and/or Ethnicity information."
