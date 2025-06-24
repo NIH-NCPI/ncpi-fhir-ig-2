@@ -94,6 +94,7 @@ Logical: CdmPerson
 Id: SharedDataModelPerson
 Title: "Shared Data Model for Research Persons"
 Description: "The **Shared data model for Person**"
+* identifier 1..1 string "Unique Person identifier."
 * participant 1..1 reference "The participant we are describing"
 
 
