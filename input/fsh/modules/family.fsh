@@ -211,16 +211,16 @@ Profile: NcpiFamilyRelationship
 Parent: FamilyMemberHistory
 Id: ncpi-family-relationship
 Title: "Family Relationship"
-Description: "A relationship between individuals in a pedigree or family."
+Description: "A relationship between individuals in a pedigree or family. We chose the direction of the relationship to match PED files, which go from the individual to the mother and father."
 * ^version = "0.2.0"
 * ^status = #draft
 * extension contains $family-patient-record named relative 1..1 MS
-* extension[relative] ^short = "The other participant in the relationship. This participant is the player of the role listed in the relationship field. That is, if the relationship is NPRN (natural parent), the \"relative\" is the parent."
+* extension[relative] ^short = "The other participant in the relationship who plays the role named by the relationship. That is, if the relationship is C96572 (Biological Father), the \"relative\" is the father."
 * relationship 1..1 MS
 * relationship from FamilyBiologicalRelationshipVS (extensible)
-* relationship ^short = "The family role the relative fills with respect to the patient for this relationship. For the sake of users, prefer to exclusively use NPRN and ITWIN for genetic relationships. All other genetic relationships can be expressed with these and dummy individuals. ITWIN should be used for all monozygotic multiples (triplets, quadruplets, etc.) and should be present for all the directions of the relationship. This provides an unambiguous representation of the relationship. Example: A,B,C are triplets. You need A→B, B→A, A→C, C→A, B→C, C→B. If X and Y are twins, you need X→Y and Y→X. If Q is the grandchild of R but Q's parent is outside the dataset, then you need to make a dummy D with unknown sex and age and make Q-(NCHILD)→D and D-(NCHILD)→R. Values like mother and son are redundant with the sex of the participants and unnecessarily reductive."
+* relationship ^short = "The family role the relative fills with respect to the patient for this relationship.  [relative] is [relationship] to [patient]. For the sake of users, prefer to exclusively use C96572, C96580, and ITWIN for genetic relationships. All other genetic relationships can be expressed with these and dummy individuals. ITWIN should be used for all monozygotic multiples (triplets, quadruplets, etc.) and should be present for all the directions of the relationship. This provides an unambiguous representation of the relationship. Example: A,B,C are triplets. You need A→B, B→A, A→C, C→A, B→C, C→B. If X and Y are twins, you need X→Y and Y→X. If Q is the maternal grandchild of the female R but Q's parent is outside the dataset, then you need to make a dummy D and make D-(Biological Mother)→Q and R-(Biological Mother)→D."
 * patient 1..1 MS
-* patient ^short = "The participant we are describing. That is, if the relationship is NPRN (natural parent), the patient is the child."
+* patient ^short = "The participant we are describing. That is, if the relationship is C96572 (Biological Father), the patient is the child."
 * name 0..0
 * sex 0..0
 * born[x] 0..0

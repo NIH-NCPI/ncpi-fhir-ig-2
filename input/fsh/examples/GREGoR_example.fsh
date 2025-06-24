@@ -112,7 +112,7 @@ Usage: #example
 Description: "An example family relationship based on data from GREGoR."
 * patient = Reference(GSS123456)
 * extension[relative].valueReference = Reference(GSS654321)
-* relationship = $family-role-code#NPRN "natural parent"
+* relationship = $nci-thesaurus#C96580 "Biological Mother"
 * status = #completed
 
 // NCPI Condition as an assertion

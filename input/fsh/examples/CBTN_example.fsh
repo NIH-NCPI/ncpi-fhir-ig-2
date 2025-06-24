@@ -345,26 +345,27 @@ Description: "Example patients based on data from CBTN."
 * member[1].entity = Reference(PT-006SP675)
 * member[1].entity.extension[familyRole].valueCodeableConcept = $family-role-code#SON "natural son"
 
-Instance: cbtn-family-relationship-mother
+Instance: cbtn-family-relationship-daughter
 InstanceOf: NcpiFamilyRelationship
 Title: "An example family relationship based on data from CBTN"
 Usage: #example
 Description: "An example family relationship based on data from CBTN."
 * patient = Reference(PT-006SP660)
 * extension[relative].valueReference = Reference(PT-006SP675)
-* relationship = $family-role-code#NPRN "natural parent"
+// Extensibility to express the reverse of the unambiguous relationship convention
+* relationship = $family-role-code#DAU "natural daughter"
 * status = #completed
 
 // PT-006SP675 is female and 5 years old, the daughter of PT-006SP660 who is female and 17 years old
 
-Instance: cbtn-family-relationship-daughter
+Instance: cbtn-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship
 Title: "An example family relationship based on data from CBTN"
 Usage: #example
 Description: "An example family relationship based on data from CBTN. This demonstrates using the extensibility to express the reverse of the unambiguous relationship convention."
 * patient = Reference(PT-006SP675)
 * extension[relative].valueReference = Reference(PT-006SP660)
-* relationship = $family-role-code#DAU "natural daughter"
+* relationship = $nci-thesaurus#C96580 "Biological Mother"
 * status = #completed
 
 
