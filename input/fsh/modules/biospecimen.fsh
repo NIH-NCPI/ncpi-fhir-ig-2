@@ -96,8 +96,6 @@ Title: "NCPI Sample"
 Description: "FHIR Profile for NCPI Sample"
 * ^version = "0.1.0"
 * ^status = #draft
-* obeys collection-no-parent
-* obeys parent-no-collection
 * identifier 1..1 /*Sample.SampleID*/
 * identifier ^short = "Unique ID for this sample"
 * subject 1..1 /*Sample.Participant*/
