@@ -161,9 +161,47 @@ Title: "Biological Relationship Codes"
 Description: "List of codes indicating the biological relationship between two individuals in a family. It is restrictive to encourage a standardized representation."
 * ^version = "0.1.0"
 * ^experimental = false
-* include $family-role-code#NPRN  "Natural Parent"
-* include $family-role-code#ITWIN  "Identical Twin"
-* include $ga4gh-kin#KIN:005 "isGestationalCarrier"
+// We use the NCI Thesaurus here for the mother and father because its
+// definitions are more precise.
+//
+// C96572 ("Biological Father") is:
+//    A male who contributes to the genetic makeup of his offspring through
+//    the fertilization of an ovum by his sperm.
+// C96580 ("Biological Mother") is:
+//    A female who contributes to the genetic makeup of her offspring
+//    from the fertilization of her ovum.
+//
+// Whereas the parental family-role's codes are less refined:
+//
+// NMTH ("natural mother") is
+//    The player of the role is a female who conceives
+//    or gives birth to the scoping entity (child).
+// NFTH ("natural father") is
+//    The player of the role is a male who begets the
+//    scoping entity (child).
+//
+// In particular, "Biological Mother" excludes surrogates but
+// NMTH is ambiguous and "Biological Father" specifies
+// fertilization of an ovum by sperm. Whereas NFTH uses the
+// ambiguous term "begets," which could include other
+// mechanisms.
+* include $nci-thesaurus#C96580 "Biological Mother"
+* include $nci-thesaurus#C96572 "Biological Father"
+// For Twin,
+//
+// C73429 ("Identical Twin") is:
+//    Either of the two offspring resulting from a shared ovum.
+//
+// ITWIN ("Identical Twin") is:
+//    The scoper and player are offspring of the same egg-sperm
+//    pair.
+//
+// Though being "offspring" of the same fertilized egg is
+// questionable wording, we use ITWIN because it also allows
+// other multiples (triplets, quadruplets, etc.) to be
+// represented with the same code whereas C73429 is only for
+// twins.
+* include $family-role-code#ITWIN "identical twin"
 // If we were using version 5, we could add the rest of the
 // codes from $ncpi-family-member as additional bindings
 // to guide users when not using one of the main bindings.
