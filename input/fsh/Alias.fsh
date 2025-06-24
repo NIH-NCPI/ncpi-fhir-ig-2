@@ -34,7 +34,7 @@ Alias: $spec = https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html
 Alias: $snomedct_us = http://snomed.info/sct
 Alias: $family-role-code = http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0
 Alias: $ncpi-family-types = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types
-Alias: $ncpi-family-member = http://terminology.hl7.org/ValueSet/v3-FamilyMember|4.0.1
+Alias: $ncpi-family-member = http://terminology.hl7.org/ValueSet/v3-FamilyMember
 // The purl URL for the kin ontology does not work, though it is the official URL.
 // You can find the description of the ontology on GitHub:
 // https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html
