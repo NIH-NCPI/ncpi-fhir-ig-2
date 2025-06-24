@@ -10,7 +10,7 @@ Below is a table of collected example profiles from GREGoR. The links will conne
 |Person|[Example JSON](Person-gregor-example-person.json.html)|
 |Study Participant|[Example JSON](ResearchSubject-gregor-example-participantstudy.json.html)|
 |Study Family|[Example JSON](Group-gregor-study-family.json.html)|
-|Family Relationship|[Example JSON](Observation-gregor-family-relationship-mother.json.html)|
+|Family Relationship|[Example JSON](FamilyMemberHistory-gregor-family-relationship-mother.json.html)|
 |Subject Assertion|[Example JSON](Observation-GSS123456-assertion.json.html)|
 |Condition|[Example JSON](Observation-GSS123456-condition-assertion.json.html)|
 |Biospecimen|[Example JSON](Specimen-GSS123456-01-010.json.html)|
