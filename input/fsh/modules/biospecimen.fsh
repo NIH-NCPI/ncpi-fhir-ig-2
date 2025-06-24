@@ -137,7 +137,6 @@ Description: "FHIR Profile for NCPI Sample"
 * collection.extension[biospecimen-spatial] ^short = "Any spatial/location qualifiers"
 * collection.extension contains BiospecimenLaterality named biospecimen-laterality 0..1 /*Biospecimen.Laterality*/
 * collection.extension[biospecimen-laterality] ^short = "Laterality information for the site"
-* container.identifier 1..1 /*Aliquot.AliquotID*/
 * container.identifier ^short = "Unique ID for this aliquot"
 * container.extension contains AliquotAvailability named aliquot-availability 0..1 /*Aliquot.AvailabilityStatus*/
 * container.extension[aliquot-availability] ^short = "Can this Sample be requested for further analysis?"
