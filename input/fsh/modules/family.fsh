@@ -114,9 +114,7 @@ Title: "NCPI Study Family"
 Description: "Study Family"
 * ^version = "0.1.0"
 * ^status = #draft
-* id 1..1 
 * id ^short = "ParticipantID - Unique participant identifier. System identifier used for internal references."
-* identifier 0..* 
 * identifier ^short = "External IDs for this participant. Requires scoping."
 * extension contains FamilyType named family-type 0..1
 * extension[family-type] ^short = "Describes the 'type' of study family, eg, trio."

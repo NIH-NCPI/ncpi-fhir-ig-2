@@ -111,7 +111,6 @@ Description: "FHIR Profile for NCPI Sample"
 * ^status = #draft
 * obeys collection-no-parent
 * obeys parent-no-collection
-* identifier 1..1 /*Sample.SampleID*/
 * identifier ^short = "Unique ID for this sample"
 * subject 1..1 /*Sample.Participant*/
 * subject ^short = "The participant from whom the biospecimen was taken"

@@ -67,7 +67,6 @@ Description: "The NCPI Research Study FHIR resource represents an individual res
 * ^description = "The NCPI Research Study FHIR resource represents an individual research effort and acts as a grouper or “container” for that effort’s study participants and their related data files."
 * ^version = "0.0.1"
 * ^status = #draft
-* identifier 1..*
 * identifier ^short = "External facing, globally unique identifiers. When providing more than one identifier, researchers should indicate the 'official' identifier by assigning 'official' to that identifier's use property."
 * title ^short = "Study's formal title."
 * description ^short = "Study Description (Recommended)"
