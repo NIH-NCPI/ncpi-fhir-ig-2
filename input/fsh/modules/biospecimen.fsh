@@ -88,19 +88,6 @@ Description: "Concentration of the Aliquot"
 * value[x] only Quantity
 * valueQuantity ^short = "Specify the concentration of the aliquot"
 
-
-/* Invariant to require collection for parent samples*/
-Invariant:   collection-no-parent
-Description: "If there is no parent sample, collection information must be present. If there is collection information present, there should be no parent sample."
-Expression:  "parent.empty() implies collection.exists() and collection.exists() implies parent.empty()"
-Severity:    #error
-
-/* Invariant to require collection for parent samples*/
-Invariant:   parent-no-collection
-Description: "If there is no collection information, a parent sample must be present. If there is a parent sample present, there should be no collection information."
-Expression:  "collection.empty() implies parent.exists() and parent.exists() implies collection.empty()"
-Severity:    #error
-
 /*NCPI Sample Profile*/
 Profile: NCPISample
 Parent: Specimen
@@ -130,7 +117,6 @@ Description: "FHIR Profile for NCPI Sample"
 * collection.collectedDateTime ^short = "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 * collection.quantity 0..1 /*Sample.Quantity*/
 * collection.quantity ^short = "The total quantity of the specimen"
-* collection.method 1..1 /*Biospecimen.StorageMethod*/
 * collection.method ^short = "The approach used to collect the biospecimen (unknown if not provided)"
 * collection.bodySite 0..1 /*Biospecimen.Site*/
 * collection.bodySite ^short = "The location of the specimen collection"
