@@ -10,17 +10,17 @@ File.open("output/fshgenidx.html", 'w') { |outf|
 
   <head>
     <title>FSH Generated Artificts</title>
-    <link rel="stylesheet" type="text/css" href="../fhir.css">
+    <link rel="stylesheet" type="text/css" href="fhir.css">
 
     <!-- Bootstrap core CSS -->
-    <link href="../assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
     <!-- Project extras -->
-    <link href="../assets/css/project.css" rel="stylesheet"/>
-    <link href="../assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="../assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="../assets/css/prism.css" rel="stylesheet" />
-  	<link href="../assets/css/cqf.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -32,11 +32,11 @@ File.open("output/fshgenidx.html", 'w') { |outf|
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="../assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="../assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="../assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="../assets/ico/icon-fhir-57.png"/>
-    <link rel="shortcut icon" href="../assets/ico/favicon.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body style="font-size: 100%;">
 
@@ -44,7 +44,7 @@ File.open("output/fshgenidx.html", 'w') { |outf|
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='../index.html'><b>Home</b></a></li>
+          <li><a href='index.html'><b>Home</b></a></li>
 
         </ul>
       </div>  <!-- /container -->
