@@ -3,7 +3,7 @@
 # Just a simple script to copy the fsh-generated files over to output and build a very simple index.html file linking to the various files inside the resources directory. 
 
 system("cp -r fsh-generated output")
-File.open("output/fsh-generated/index.html", 'w') { |outf|
+File.open("output/fshgenidx.html", 'w') { |outf|
   outf.write(%Q|<!DOCTYPE html>  
 <html>
 
