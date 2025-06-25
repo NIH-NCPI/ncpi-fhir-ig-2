@@ -1,52 +1,56 @@
-﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
+<!-- get modelType -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>NCPI File Meta Data - NCPI FHIR Implementation Guide v2 v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-  	<link rel="stylesheet" href="assets/css/cqf.css"/>
-      <!-- Placeholder for child template CSS declarations -->
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script src="assets/js/mermaid.js" type="text/javascript"></script>
-    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"25.26"}
-    h3,h4,h5,h6{--heading-prefix:"25.26"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"26.26"}
+    h3,h4,h5,h6{--heading-prefix:"26.26"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
 
-          <!-- Placeholder for child template header declarations -->
+        <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
@@ -58,27 +62,27 @@
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -213,37 +217,37 @@
       <li>
         <a href="downloads.html">Downloads</a>
       </li>
-      <li><a name="l387">​</a>
-        <a href="fsh-generated/index.html">Sushi Artififacts</a>
+      <li>
+        <a href="fshgenidx.html">Sushi Artififacts</a>
       </li>
     </ul>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>NCPI File Meta Data</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NCPI File Meta Data</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">NCPI FHIR Implementation Guide v2 - Local Development build (v0.2.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">NCPI FHIR Implementation Guide v2 - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -320,10 +324,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file-metadata<button data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file-metadata" title="Click to copy URL" class="btn-copy"></button></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file-metadata<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file-metadata"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.2.0<button data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file-metadata|0.2.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file-metadata|0.2.0"/></span>
       </td>
     </tr>
 
@@ -339,7 +343,7 @@
         
           Draft
           
-            as of 2025-06-13
+            as of 2025-06-25
           
         
       </td>
@@ -361,12 +365,12 @@
 
 
 
-  <!-- insert intro if present -->
+<!-- insert intro if present -->
 
 
 
 
-<div markdown="1" style="display:inline-block">
+<div style="display:inline-block" markdown="1">
 
 <h4 id="key-guidelines">Key Guidelines</h4>
 <p>The NCPI File Metadata profile is based on the standard resource type, <a href="https://hl7.org/fhir/r4/observation.html">Observation</a> and is intended to represent information about the file metadata associated with a file.</p>
@@ -396,91 +400,91 @@
       <td>1..1</td>
       <td>focus</td>
       <td>A Reference to a file to which the metadata is related</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>assay_strategy</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#Observation.component:assay_strategy">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#Observation.component:assay_strategy">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#Observation.component:assay_strategy">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#Observation.component:assay_strategy">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#Observation.component:assay_strategy">VCF</a></td>
       <td>Observation.component</td>
       <td>e.g., Whole Genome Sequencing</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>platform_instrument</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#Observation.component:platform_instrument">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#Observation.component:platform_instrument">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#Observation.component:platform_instrument">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#Observation.component:platform_instrument">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#Observation.component:platform_instrument">VCF</a></td>
       <td>Observation.component</td>
       <td>e.g., Illumina HiSeq2000</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>library_prep</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#Observation.component:library_prep">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#Observation.component:library_prep">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#Observation.component:library_prep">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#Observation.component:library_prep">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#Observation.component:library_prep">VCF</a></td>
       <td>Observation.component</td>
       <td>e.g., polyA</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>library_selection</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#Observation.component:library_selection">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#Observation.component:library_selection">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#Observation.component:library_selection">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#Observation.component:library_selection">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#Observation.component:library_selection">VCF</a></td>
       <td>Observation.component</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
       <td>strandedness</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#Observation.component:strandedness">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#Observation.component:strandedness">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#Observation.component:strandedness">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#Observation.component:strandedness">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#Observation.component:strandedness">VCF</a></td>
       <td>Observation.component</td>
       <td>stranded, unstranded</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>target_region</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#Observation.component:target_region">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#Observation.component:target_region">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#Observation.component:target_region">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#Observation.component:target_region">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#Observation.component:target_region">VCF</a></td>
       <td>Observation.component</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
       <td>is_paired_end</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#Observation.component:is_paired_end">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#Observation.component:is_paired_end">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#Observation.component:is_paired_end">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#Observation.component:is_paired_end">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#Observation.component:is_paired_end">VCF</a></td>
       <td>Observation.component</td>
       <td>True, False</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>adaptor_trimmed</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#Observation.component:adaptor_trimmed">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#Observation.component:adaptor_trimmed">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#Observation.component:adaptor_trimmed">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#Observation.component:adaptor_trimmed">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#Observation.component:adaptor_trimmed">VCF</a></td>
       <td>Observation.component</td>
       <td>True, False</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>reference_genome</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#Observation.component:reference_genome">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#Observation.component:reference_genome">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#Observation.component:reference_genome">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#Observation.component:reference_genome">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#Observation.component:reference_genome">VCF</a></td>
       <td>Observation.component</td>
       <td>GRCh37, GRCh38</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>workflow_type</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#Observation.component:workflow_type">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#Observation.component:workflow_type">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#Observation.component:workflow_type">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#Observation.component:workflow_type">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#Observation.component:workflow_type">VCF</a></td>
       <td>Observation.component</td>
       <td>e.g., alignment, somatic</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>workflow_tool</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#Observation.component:workflow_tool">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#Observation.component:workflow_tool">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#Observation.component:workflow_tool">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#Observation.component:workflow_tool">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#Observation.component:workflow_tool">VCF</a></td>
       <td>Observation.component</td>
       <td>e.g., BAM-MEM, GATK-Haplotype Caller</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
     <tr>
       <td>specimen_collection</td>
       <td><a href="StructureDefinition-ncpi-bamcram-definitions.html#key_Observation.extension:collection">BAM/CRAM</a>, <a href="StructureDefinition-ncpi-fastq-definitions.html#key_Observation.extension:collection">FASTQ</a>, <a href="StructureDefinition-ncpi-maf-definitions.html#key_Observation.extension:collection">MAF</a>, <a href="StructureDefinition-ncpi-proteomics-definitions.html#key_Observation.extension:collection">Proteomics</a>, <a href="StructureDefinition-ncpi-vcf-definitions.html#key_Observation.extension:collection">VCF</a></td>
       <td>Extension Reference(Any)</td>
       <td>e.g., Reference(Participant_ID)</td>
-      <td>&nbsp;</td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
@@ -492,11 +496,11 @@
 
 <p><b>Usages:</b></p>
 <ul>
- <li>Derived from this Profile: <a href="StructureDefinition-ncpi-bamcram.html">BAM or CRAM file profile</a>, <a href="StructureDefinition-ncpi-fastq.html">NCPI FASTQ File</a>, <a href="StructureDefinition-ncpi-gene-fusion-expression.html">Gene fusion or gene expression file profile</a>, <a href="StructureDefinition-ncpi-maf.html">MAF (Somatic Mutation) file profile</a><span onClick="document.getElementById('rr_base').innerHTML = document.getElementById('rr2_base').innerHTML" id="rr_base">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 2 more</span></span><span style="display: none" id="rr2_base">, <a href="StructureDefinition-ncpi-proteomics.html">Proteomics file profile</a> and <a href="StructureDefinition-ncpi-vcf.html">VCF or gVCF file profile</a></span></li>
+ <li>Derived from this Profile: <a href="StructureDefinition-ncpi-bamcram.html">BAM or CRAM file profile</a>, <a href="StructureDefinition-ncpi-fastq.html">NCPI FASTQ File</a>, <a href="StructureDefinition-ncpi-gene-fusion-expression.html">Gene fusion or gene expression file profile</a>, <a href="StructureDefinition-ncpi-maf.html">MAF (Somatic Mutation) file profile</a><span id="rr_base" onClick="document.getElementById('rr_base').innerHTML = document.getElementById('rr2_base').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 2 more</span></span><span id="rr2_base" style="display: none">, <a href="StructureDefinition-ncpi-proteomics.html">Proteomics file profile</a> and <a href="StructureDefinition-ncpi-vcf.html">VCF or gVCF file profile</a></span></li>
 </ul>
 
 
-    <!-- no uri -->
+  <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">Formal Views of Profile Content</h3>
   <p>
@@ -514,19 +518,19 @@
         <a href="#tabs-snap">Snapshot Table</a>
       </li>
 
-  <!-- <li>
+<!--      <li>
         <a href="#tabs-xml">Pseudo-XML</a>
-      </li> -->
+      </li>-->
 
 
-  <!-- <li>
+<!--      <li>
         <a href="#tabs-json">Pseudo-JSON</a>
-      </li> -->
+      </li>-->
 
 
-        <!-- <li>
+      <!--<li>
         <a href="#tabs-ttl">Pseudo-TTL</a>
-      </li> -->
+      </li>-->
 
       <li>
         <a href="#tabs-summ">Statistics/References</a>
@@ -572,7 +576,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/resource.html">Resource</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What the observation is about, when it is not about the subject of record<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf94bac4-0e68-4ace-90e4-d8b7fdb74411
 document.getElementById('cbncpi-file-metadataK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-file-metadataK'), 'binding', document.getElementById('cbncpi-file-metadataK-binding').checked, document.getElementById('ppncpi-file-metadataK'));
 document.getElementById('cbncpi-file-metadataK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -580,20 +584,20 @@ filterDesc(document.getElementById('ncpi-file-metadataK'), 'constraint', documen
 document.getElementById('cbncpi-file-metadataK-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('ncpi-file-metadataK'), 'obligation', document.getElementById('cbncpi-file-metadataK-obligation').checked, document.getElementById('ppncpi-file-metadataK'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a><div><code>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-status|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a><div><code>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-status|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes"></button></div><div>From the FHIR Standard</div></td></tr>
 </table>
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-key"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
@@ -629,7 +633,7 @@ filterDesc(document.getElementById('ncpi-file-metadataK'), 'obligation', documen
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/resource.html">Resource</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">What the observation is about, when it is not about the subject of record</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf94bac4-0e68-4ace-90e4-d8b7fdb74411
 document.getElementById('cbncpi-file-metadataD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-file-metadataD'), 'binding', document.getElementById('cbncpi-file-metadataD-binding').checked, document.getElementById('ppncpi-file-metadataD'));
 document.getElementById('cbncpi-file-metadataD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -638,11 +642,11 @@ document.getElementById('cbncpi-file-metadataD-obligation').checked = 'false' !=
 filterDesc(document.getElementById('ncpi-file-metadataD'), 'obligation', document.getElementById('cbncpi-file-metadataD-obligation').checked, document.getElementById('ppncpi-file-metadataD'));
 </script></table>
           <a name="tx"> </a>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -684,7 +688,7 @@ filterDesc(document.getElementById('ncpi-file-metadataD'), 'obligation', documen
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Narrative">Narrative</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text summary of the resource, for human interpretation</td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text summary of the resource, for human interpretation<br/><span style="font-weight:bold">This profile does not constrain the narrative in regard to content, language, or traceability to data elements</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a5." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-metadata-definitions.html#Observation.contained" title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope." data-no-external="true">contained</a><a name="s-Observation.contained"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -1041,7 +1045,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf94bac4-0e68-4ace-90e4-d8b7fdb74411
 document.getElementById('cbncpi-file-metadataS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-file-metadataS'), 'binding', document.getElementById('cbncpi-file-metadataS-binding').checked, document.getElementById('ppncpi-file-metadataS'));
 document.getElementById('cbncpi-file-metadataS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1049,11 +1053,11 @@ filterDesc(document.getElementById('ncpi-file-metadataS'), 'constraint', documen
 document.getElementById('cbncpi-file-metadataS-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('ncpi-file-metadataS'), 'obligation', document.getElementById('cbncpi-file-metadataS-obligation').checked, document.getElementById('ppncpi-file-metadataS'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Observation.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div><table class="grid">
+<tr><td>Observation.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
   <tr>
     <td style="font-size: 11px">
       <b>Additional Bindings</b>
@@ -1070,26 +1074,26 @@ filterDesc(document.getElementById('ncpi-file-metadataS'), 'obligation', documen
   </tr>
 </table>
 </td></tr>
-<tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a><div><code>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-status|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Codes for high level observation categories."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-category</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-category" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.dataAbsentReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes specifying why the result (`Observation.value[x]`) is missing."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a><div><code>http://hl7.org/fhir/ValueSet/data-absent-reason</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/data-absent-reason" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes identifying interpretations of observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-interpretation</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-interpretation" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes describing anatomical locations. May include laterality."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a><div><code>http://hl7.org/fhir/ValueSet/body-site</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/body-site" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Methods for simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a><div><code>http://hl7.org/fhir/ValueSet/observation-methods</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-methods" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.referenceRange.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Code for the meaning of a reference range."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a><div><code>http://hl7.org/fhir/ValueSet/referencerange-meaning</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/referencerange-meaning" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.referenceRange.appliesTo</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying the population the reference range applies to."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a><div><code>http://hl7.org/fhir/ValueSet/referencerange-appliesto</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/referencerange-appliesto" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.component.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.component.dataAbsentReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes specifying why the result (`Observation.value[x]`) is missing."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a><div><code>http://hl7.org/fhir/ValueSet/data-absent-reason</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/data-absent-reason" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.component.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes identifying interpretations of observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-interpretation</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-interpretation" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a><div><code>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-status|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Codes for high level observation categories."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-category</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-category"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.dataAbsentReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes specifying why the result (`Observation.value[x]`) is missing."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a><div><code>http://hl7.org/fhir/ValueSet/data-absent-reason</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/data-absent-reason"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes identifying interpretations of observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-interpretation</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-interpretation"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes describing anatomical locations. May include laterality."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a><div><code>http://hl7.org/fhir/ValueSet/body-site</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/body-site"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Methods for simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a><div><code>http://hl7.org/fhir/ValueSet/observation-methods</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-methods"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.referenceRange.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Code for the meaning of a reference range."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a><div><code>http://hl7.org/fhir/ValueSet/referencerange-meaning</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/referencerange-meaning"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.referenceRange.appliesTo</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying the population the reference range applies to."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a><div><code>http://hl7.org/fhir/ValueSet/referencerange-appliesto</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/referencerange-appliesto"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.component.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.component.dataAbsentReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes specifying why the result (`Observation.value[x]`) is missing."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a><div><code>http://hl7.org/fhir/ValueSet/data-absent-reason</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/data-absent-reason"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.component.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes identifying interpretations of observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-interpretation</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-interpretation"></button></div><div>From the FHIR Standard</div></td></tr>
 </table>
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-snap"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
@@ -1110,7 +1114,7 @@ filterDesc(document.getElementById('ncpi-file-metadataS'), 'obligation', documen
       </div>
     </div>
 
-  <!-- <a name="tabs-xml"> </a>
+<!--    <a name="tabs-xml"> </a>
     <div id="tabs-xml">
       <div id="xml">
         <div id="xml-inner">
@@ -1118,10 +1122,10 @@ filterDesc(document.getElementById('ncpi-file-metadataS'), 'obligation', documen
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
 
-  <!-- <a name="tabs-json"> </a>
+<!--    <a name="tabs-json"> </a>
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
@@ -1207,10 +1211,10 @@ filterDesc(document.getElementById('ncpi-file-metadataS'), 'obligation', documen
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
 
-      <!-- <a name="tabs-ttl"> </a>
+    <!--<a name="tabs-ttl"> </a>
     <div id="tabs-ttl">
       <div id="ttl">
         <div id="ttl-inner">
@@ -1218,7 +1222,7 @@ filterDesc(document.getElementById('ncpi-file-metadataS'), 'obligation', documen
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
@@ -1275,7 +1279,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/resource.html">Resource</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What the observation is about, when it is not about the subject of record<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf94bac4-0e68-4ace-90e4-d8b7fdb74411
 document.getElementById('cbncpi-file-metadataKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-file-metadataKA'), 'binding', document.getElementById('cbncpi-file-metadataKA-binding').checked, document.getElementById('ppncpi-file-metadataKA'));
 document.getElementById('cbncpi-file-metadataKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1283,20 +1287,20 @@ filterDesc(document.getElementById('ncpi-file-metadataKA'), 'constraint', docume
 document.getElementById('cbncpi-file-metadataKA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('ncpi-file-metadataKA'), 'obligation', document.getElementById('cbncpi-file-metadataKA-obligation').checked, document.getElementById('ppncpi-file-metadataKA'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a><div><code>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-status|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a><div><code>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-status|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes"></button></div><div>From the FHIR Standard</div></td></tr>
 </table>
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-all-key"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
@@ -1332,7 +1336,7 @@ filterDesc(document.getElementById('ncpi-file-metadataKA'), 'obligation', docume
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/resource.html">Resource</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">What the observation is about, when it is not about the subject of record</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf94bac4-0e68-4ace-90e4-d8b7fdb74411
 document.getElementById('cbncpi-file-metadataDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-file-metadataDA'), 'binding', document.getElementById('cbncpi-file-metadataDA-binding').checked, document.getElementById('ppncpi-file-metadataDA'));
 document.getElementById('cbncpi-file-metadataDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1340,11 +1344,11 @@ filterDesc(document.getElementById('ncpi-file-metadataDA'), 'constraint', docume
 document.getElementById('cbncpi-file-metadataDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('ncpi-file-metadataDA'), 'obligation', document.getElementById('cbncpi-file-metadataDA-obligation').checked, document.getElementById('ppncpi-file-metadataDA'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -1386,7 +1390,7 @@ filterDesc(document.getElementById('ncpi-file-metadataDA'), 'obligation', docume
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Narrative">Narrative</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text summary of the resource, for human interpretation</td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text summary of the resource, for human interpretation<br/><span style="font-weight:bold">This profile does not constrain the narrative in regard to content, language, or traceability to data elements</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a5." data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ncpi-file-metadata-definitions.html#Observation.contained" title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope." data-no-external="true">contained</a><a name="sa-Observation.contained"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -1743,7 +1747,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 6ef939a1-ec0d-43ce-9a51-cd7da7722c57
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // cf94bac4-0e68-4ace-90e4-d8b7fdb74411
 document.getElementById('cbncpi-file-metadataSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-file-metadataSA'), 'binding', document.getElementById('cbncpi-file-metadataSA-binding').checked, document.getElementById('ppncpi-file-metadataSA'));
 document.getElementById('cbncpi-file-metadataSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1751,11 +1755,11 @@ filterDesc(document.getElementById('ncpi-file-metadataSA'), 'constraint', docume
 document.getElementById('cbncpi-file-metadataSA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('ncpi-file-metadataSA'), 'obligation', document.getElementById('cbncpi-file-metadataSA-obligation').checked, document.getElementById('ppncpi-file-metadataSA'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Observation.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div><table class="grid">
+<tr><td>Observation.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
   <tr>
     <td style="font-size: 11px">
       <b>Additional Bindings</b>
@@ -1772,26 +1776,26 @@ filterDesc(document.getElementById('ncpi-file-metadataSA'), 'obligation', docume
   </tr>
 </table>
 </td></tr>
-<tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a><div><code>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-status|4.0.1" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Codes for high level observation categories."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-category</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-category" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.dataAbsentReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes specifying why the result (`Observation.value[x]`) is missing."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a><div><code>http://hl7.org/fhir/ValueSet/data-absent-reason</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/data-absent-reason" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes identifying interpretations of observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-interpretation</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-interpretation" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes describing anatomical locations. May include laterality."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a><div><code>http://hl7.org/fhir/ValueSet/body-site</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/body-site" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Methods for simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a><div><code>http://hl7.org/fhir/ValueSet/observation-methods</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-methods" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.referenceRange.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Code for the meaning of a reference range."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a><div><code>http://hl7.org/fhir/ValueSet/referencerange-meaning</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/referencerange-meaning" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.referenceRange.appliesTo</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying the population the reference range applies to."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a><div><code>http://hl7.org/fhir/ValueSet/referencerange-appliesto</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/referencerange-appliesto" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.component.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.component.dataAbsentReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes specifying why the result (`Observation.value[x]`) is missing."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a><div><code>http://hl7.org/fhir/ValueSet/data-absent-reason</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/data-absent-reason" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Observation.component.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes identifying interpretations of observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-interpretation</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-interpretation" title="Click to copy URL" class="btn-copy"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-status.html">ObservationStatus</a><div><code>http://hl7.org/fhir/ValueSet/observation-status|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-status|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Codes for high level observation categories."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-category</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-category"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.dataAbsentReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes specifying why the result (`Observation.value[x]`) is missing."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a><div><code>http://hl7.org/fhir/ValueSet/data-absent-reason</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/data-absent-reason"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes identifying interpretations of observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-interpretation</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-interpretation"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes describing anatomical locations. May include laterality."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a><div><code>http://hl7.org/fhir/ValueSet/body-site</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/body-site"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Methods for simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a><div><code>http://hl7.org/fhir/ValueSet/observation-methods</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-methods"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.referenceRange.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Code for the meaning of a reference range."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a><div><code>http://hl7.org/fhir/ValueSet/referencerange-meaning</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/referencerange-meaning"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.referenceRange.appliesTo</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying the population the reference range applies to."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a><div><code>http://hl7.org/fhir/ValueSet/referencerange-appliesto</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/referencerange-appliesto"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.component.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes identifying names of simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/observation-codes</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-codes"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.component.dataAbsentReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes specifying why the result (`Observation.value[x]`) is missing."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a><div><code>http://hl7.org/fhir/ValueSet/data-absent-reason</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/data-absent-reason"></button></div><div>From the FHIR Standard</div></td></tr>
+<tr><td>Observation.component.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes identifying interpretations of observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-interpretation.html">ObservationInterpretationCodes</a><div><code>http://hl7.org/fhir/ValueSet/observation-interpretation</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/observation-interpretation"></button></div><div>From the FHIR Standard</div></td></tr>
 </table>
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-all-snap"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
@@ -1811,7 +1815,7 @@ filterDesc(document.getElementById('ncpi-file-metadataSA'), 'obligation', docume
         </div>
       </div>
 
-        <!-- <div id="all-xml">
+      <!--<div id="all-xml">
         <p>
           <b>XML Template</b>
         </p>
@@ -1819,10 +1823,10 @@ filterDesc(document.getElementById('ncpi-file-metadataSA'), 'obligation', docume
           <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
 
         </div>
-      </div> -->
+      </div>-->
 
 
-        <!-- <div id="all-json">
+      <!--<div id="all-json">
         <p>
           <b>JSON Template</b>
         </p>
@@ -1908,10 +1912,10 @@ filterDesc(document.getElementById('ncpi-file-metadataSA'), 'obligation', docume
   }
 
         </div>
-      </div> -->
+      </div>-->
 
 
-        <!-- <div id="all-ttl">
+      <!--<div id="all-ttl">
         <p>
           <b>TTL Template</b>
         </p>
@@ -1919,7 +1923,7 @@ filterDesc(document.getElementById('ncpi-file-metadataSA'), 'obligation', docume
           <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
 
         </div>
-      </div> -->
+      </div>-->
 
       <div id="all-summ">
         <p>This structure is derived from <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -1934,38 +1938,38 @@ Summary
       </div>
     </div>
   </div>
-  <p>&nbsp;</p>
+  <p>&#160;</p>
   <p>Other representations of profile: <a href="StructureDefinition-ncpi-file-metadata.csv">CSV</a>, <a href="StructureDefinition-ncpi-file-metadata.xlsx">Excel</a>, <a href="StructureDefinition-ncpi-file-metadata.sch">Schematron</a>
  
   </p>
 
   
 
-  <!-- insert notes if present -->
+<!-- insert notes if present -->
 
 
 
 
 </div>
 
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script src="assets/js/tabs.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
-  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 13, 2025 15:46+0000">2025-06-13</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 25, 2025 19:45+0000">2025-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -1974,26 +1978,27 @@ Summary
                 
           </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
 
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-    <!-- Analytics Below
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+
