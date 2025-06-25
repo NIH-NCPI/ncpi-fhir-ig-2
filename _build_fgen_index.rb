@@ -87,7 +87,7 @@ ValueSet".split("\n").each { |rtype|
     outf.write("\n    <h2>#{rtype}</h2>\n    <ul style='list-style-type: none;'>\n")
 
     Dir.glob("fsh-generated/resources/#{rtype}-*.json") do |fn|
-      outf.write("      <li><a href='#{fn.sub 'fsh-generated/', ''}'>#{fn.sub 'fsh-generated/resources/', ''}</a></li>\n")
+      outf.write("      <li><a href='#{fn}'>#{fn.sub 'fsh-generated/resources/', ''}</a></li>\n")
     end
     
     outf.write(    "</ul>\n")
