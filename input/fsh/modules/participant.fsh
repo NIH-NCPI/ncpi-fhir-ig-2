@@ -68,9 +68,7 @@ Title: "NCPI Participant"
 Description: "Research oriented patient"
 * ^version = "0.1.0"
 * ^status = #draft
-* id 1..1 
 * id ^short = "ParticipantID - Unique participant identifier. System identifier used for internal references."
-* identifier 0..* 
 * identifier ^short = "External IDs for this participant. Requires scoping."
 * birthDate ^short = "Date of Birth of the participant. Details of privacy method should be included in DOBMethod"
 * deceased[x] ^short = "Implementers can provide relativeDateTime or actual date or T/F, depending on data available."
@@ -107,7 +105,6 @@ Title: "NCPI Person"
 Description: "Person"
 * ^version = "0.1.0"
 * ^status = #draft
-* id 1..1 
 * id ^short = "Unique participant identifier"
 * link 1..*
 * link.target only Reference(NcpiParticipant)
