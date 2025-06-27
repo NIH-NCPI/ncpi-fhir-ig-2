@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NcpiDRSFile"] ; # 
   fhir:title [ fhir:v "NCPI DRS File"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-25T19:44:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-27T14:40:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -732,7 +732,7 @@
        fhir:path [ fhir:v "DocumentReference.identifier" ] ;
        fhir:short [ fhir:v "A related external file ID" ] ;
        fhir:definition [ fhir:v "Other identifiers associated with the document, including version independent identifiers." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "DocumentReference.identifier" ] ;

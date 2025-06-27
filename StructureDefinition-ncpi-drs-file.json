@@ -10,7 +10,7 @@
   "name" : "NcpiDRSFile",
   "title" : "NCPI DRS File",
   "status" : "draft",
-  "date" : "2025-06-25T19:44:14+00:00",
+  "date" : "2025-06-27T14:40:47+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -663,7 +663,7 @@
       "path" : "DocumentReference.identifier",
       "short" : "A related external file ID",
       "definition" : "Other identifiers associated with the document, including version independent identifiers.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "base" : {
         "path" : "DocumentReference.identifier",

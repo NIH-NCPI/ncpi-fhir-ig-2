@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:Person</sch:title>
     <sch:rule context="f:Person">
-      <sch:assert test="count(f:id) &gt;= 1">id: minimum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:link) &gt;= 1">link: minimum cardinality of 'link' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
