@@ -91,7 +91,7 @@ Description: "Concentration of the Aliquot"
 /* Invariant to expect only collection or parent information */
 Invariant:   collection-xor-parent
 Description: "If there is a parent sample, there should be no collection information. If there is collection information present, there should be no parent sample."
-Expression:  "parent.exists() implies collection.empty() and collection.exists() implies parent.empty()"
+Expression: "parent.exists().not() or collection.exists().not()" 
 Severity:    #warning
 
 /*NCPI Sample Profile*/
