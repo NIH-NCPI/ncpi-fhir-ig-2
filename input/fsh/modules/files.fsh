@@ -108,10 +108,10 @@ Id: hash-extension
 Title: "Provides a list of hashes for confirming file transfers"
 Description: "Provides a list of hashes for confirming file transfers"
 * insert SetContext(DocumentReference)
-* extension contains HashValue named hash-value 1..1
-* extension[hash-value] ^short = "Value of hashing the file"
-* extension contains HashType named hash-type 1..1
-* extension[hash-type] ^short = "Algorithm used to calculate the hash (and size, where applicable)"
+* extension contains HashValue named hashValue 1..1
+* extension[hashValue] ^short = "Value of hashing the file"
+* extension contains HashType named hashType 1..1
+* extension[hashType] ^short = "Algorithm used to calculate the hash (and size, where applicable)"
 
 Invariant: must-be-drs-uri
 Description: "attachment.url must start with ^drs://. A drs:// hostname-based URI, as defined in the DRS documentation, that tells clients how to access this object. The intent of this field is to make DRS objects self-contained, and therefore easier for clients to store and pass around.  For example, if you arrive at this DRS JSON by resolving a compact identifier-based DRS URI, the `self_uri` presents you with a hostname and properly encoded DRS ID for use in subsequent `access` endpoint calls."
@@ -139,17 +139,17 @@ Description: "Information about a file related to a research participant"
 * identifier ^short = "A related external file ID"
 * subject 1..1 /*Participant*/
 * subject ^short = "The participant(s) for whom this file contains data (i.e., ParticipantID)"
-* extension contains FileFormat named file-format 1..1 /*File Format*/
-* extension[file-format] ^short = "The file format used (EDAM is preferred)"
+* extension contains FileFormat named fileFormat 1..1 /*File Format*/
+* extension[fileFormat] ^short = "The file format used (EDAM is preferred)"
 * content.attachment.url 1..1 /*Location uri*/
 * content.attachment.url ^short = "The URI at which this data can be accessed"
-* extension contains LocationAccess named location-access 0..* /*Location Access Policy*/
-* extension[location-access] ^short = "If present, only those under the specific Access Policy can access the file in this location."
-* extension contains FileSize named file-size 1..1 /*File Size*/
-* extension[file-size] ^short = "Indicate the size of the file in reference"
+* content.extension contains LocationAccess named locationAccess 0..* /*Location Access Policy*/
+* content.extension[locationAccess] ^short = "If present, only those under the specific Access Policy can access the file in this location."
+* extension contains FileSize named fileSize 1..1 /*File Size*/
+* extension[fileSize] ^short = "Indicate the size of the file in reference"
 * extension contains HashExtension named hash 0..* /*Hash (contains type and value)*/
-* extension contains ContentVersion named content-version 0..1 /*Content Version*/
-* extension[content-version] ^short = "The version of the content in the file"
+* extension contains ContentVersion named contentVersion 0..1 /*Content Version*/
+* extension[contentVersion] ^short = "The version of the content in the file"
 * description 0..1 /*Description*/
 * description ^short = "A description of the file"
 * type 0..1 /*File Type*/
