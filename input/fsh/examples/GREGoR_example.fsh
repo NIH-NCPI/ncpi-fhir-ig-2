@@ -56,11 +56,11 @@ Description: "Example patients based on data from GREGoR."
 * identifier[0]
   * system = "https://anvil.terra.bio/"
   * value = "GSS123456"
-* extension[us-core-birth-sex].valueCode = #M "Male"
-* extension[us-core-race]
+* extension[usCoreBirthSex].valueCode = #M "Male"
+* extension[usCoreRace]
   * extension[ombCategory].valueCoding =  $omb-race-eth#2106-3 "White"
   * extension[text].valueString = "White"
-* extension[us-core-ethnicity]
+* extension[usCoreEthnicity]
   * extension[ombCategory].valueCoding =  $omb-race-eth#2186-5 "Not Hispanic or Latino"
   * extension[text].valueString = "Not Hispanic or Latino"
 * extension[population].valueString = "English|Scottish"
@@ -99,11 +99,11 @@ Description: "Example patients based on data from GREGoR."
   * value = "GSS5555"
 * type = #person // Required by Group with required VS
 * actual = true // Required by Group
-* extension[family-type].valueCodeableConcept = $ncpi-family-types#Duo "Duo"
+* extension[familyType].valueCodeableConcept = $ncpi-family-types#Duo "Duo"
 * member[0].entity = Reference(GSS123456)
-* member[0].entity.extension[family-role].valueCodeableConcept = $family-role-code#CHILD "child"
+* member[0].entity.extension[familyRole].valueCodeableConcept = $family-role-code#CHILD "child"
 * member[1].entity = Reference(GSS654321)
-* member[1].entity.extension[family-role].valueCodeableConcept = $family-role-code#MTH "mother"
+* member[1].entity.extension[familyRole].valueCodeableConcept = $family-role-code#MTH "mother"
 
 Instance: gregor-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship
@@ -151,7 +151,7 @@ Description: "Example condition summary using data from GREGoR"
   * unit = "years"
   * system = $ucum
   * code = #a  
-* extension[other-condition-modifiers].valueCodeableConcept = $hpo#HP:0012832
+* extension[otherConditionModifiers].valueCodeableConcept = $hpo#HP:0012832
 
 // NCPI Participant Assertion
 Instance: GSS123456-assertion
@@ -224,15 +224,15 @@ Description: "Use case of file information from GREGor"
 * status = #current
 * content[+]
   * attachment.url = "gs://fc-secure-a1f0e28d-c9d9-43bb-b4ba-5e0h81784fb1/GSS123456/SR_GS/GSS123456.bam"
-  * extension[location-access].valueReference = Reference(kf-gru-dac-consent)
-* extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
-* extension[file-size]
+  * extension[locationAccess].valueReference = Reference(kf-gru-dac-consent)
+* extension[fileFormat].valueCodeableConcept.coding = $edam#format_2572 "BAM"
+* extension[fileSize]
   * valueQuantity
     * value = 1044770380
     * unit = "bytes"
 * extension[hash]
-  * extension[hash-value].valueString = "9c2460c4647fdc57261f040042863fa0"
-  * extension[hash-type].valueCode = #md5
+  * extension[hashValue].valueString = "9c2460c4647fdc57261f040042863fa0"
+  * extension[hashType].valueCode = #md5
 
 // NCPI File Metadata
 Instance: gregor-example-metadata

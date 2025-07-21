@@ -116,19 +116,19 @@ Description: "Study Family"
 * ^status = #draft
 * id ^short = "ParticipantID - Unique participant identifier. System identifier used for internal references."
 * identifier ^short = "External IDs for this participant. Requires scoping."
-* extension contains FamilyType named family-type 0..1
-* extension[family-type] ^short = "Describes the 'type' of study family, eg, trio."
+* extension contains FamilyType named familyType 0..1
+* extension[familyType] ^short = "Describes the 'type' of study family, eg, trio."
 * extension contains Description named description 0..1
 * extension[description] ^short = "Free text describing the study family, such as potential inheritance or details about consanguinity"
 * extension contains Consanguinity named consanguinity 0..1
 * extension[consanguinity] ^short = "Is there known or suspected consanguinity in this study family?"
-* extension contains StudyFamilyFocus named study-family-focus 0..1
-* extension[study-family-focus] ^short = "What is this study family investigating? EG, a specific condition"
+* extension contains StudyFamilyFocus named studyFamilyFocus 0..1
+* extension[studyFamilyFocus] ^short = "What is this study family investigating? EG, a specific condition"
 * member 1..*
 * member.entity only Reference(NcpiParticipant)
 * member.entity ^short = "The participant we are describing."
-* member.entity.extension contains FamilyRole named family-role 0..1
-* member.entity.extension[family-role] ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
+* member.entity.extension contains FamilyRole named familyRole 0..1
+* member.entity.extension[familyRole] ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
 
 
 /*
