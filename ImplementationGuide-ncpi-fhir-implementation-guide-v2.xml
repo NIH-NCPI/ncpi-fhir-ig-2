@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2025-06-27T14:40:47+00:00"/>
+  <date value="2025-07-21T16:00:02+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -34,7 +34,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.4.0"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -256,7 +256,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.7.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -870,10 +870,32 @@
         <valueString value="Specimen"/>
       </extension>
       <reference>
+        <reference value="Specimen/GSS123456-01-010p"/>
+      </reference>
+      <name value="Example biospecimen based on data from GREGoR"/>
+      <description value="Example biospecimen based on data from GREGoR"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
         <reference value="Specimen/GSS123456-01-010"/>
       </reference>
       <name value="Example biospecimen based on data from GREGoR"/>
       <description value="Example biospecimen based on data from GREGoR"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/GSS123456-01-010x"/>
+      </reference>
+      <name value="Example biospecimen based on data from GREGoR, intentionally breaking the no parent and collection together rule. This should generate a warning."/>
+      <description value="Example biospecimen based on data from GREGoR that will generate a warning"/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"/>
     </resource>
     <resource>

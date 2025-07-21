@@ -21,7 +21,6 @@
     <sch:rule context="f:Specimen/f:collection">
       <sch:assert test="count(f:extension[@url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial']) &lt;= 1">extension with URL = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality']) &lt;= 1">extension with URL = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:method) &gt;= 1">method: minimum cardinality of 'method' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

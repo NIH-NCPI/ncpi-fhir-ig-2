@@ -341,10 +341,26 @@
       },
       {
         "reference": {
+          "reference": "Specimen/GSS123456-01-010p"
+        },
+        "name": "Example biospecimen based on data from GREGoR",
+        "description": "Example biospecimen based on data from GREGoR",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
+      },
+      {
+        "reference": {
           "reference": "Specimen/GSS123456-01-010"
         },
         "name": "Example biospecimen based on data from GREGoR",
         "description": "Example biospecimen based on data from GREGoR",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/GSS123456-01-010x"
+        },
+        "name": "Example biospecimen based on data from GREGoR, intentionally breaking the no parent and collection together rule. This should generate a warning.",
+        "description": "Example biospecimen based on data from GREGoR that will generate a warning",
         "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
       },
       {

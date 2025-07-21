@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for NCPIFHIRIGv2</h1>
- <p>Generated Fri Jun 27 14:44:59 UTC 2025, FHIR version 4.0.1 for ncpi-fhir-implementation-guide-v2#0.2.0 (canonical = <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2">https://nih-ncpi.github.io/ncpi-fhir-ig-2</a> (<a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">history</a>))</p>
+ <p>Generated Mon Jul 21 16:04:24 UTC 2025, FHIR version 4.0.1 for ncpi-fhir-implementation-guide-v2#0.2.0 (canonical = <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2">https://nih-ncpi.github.io/ncpi-fhir-ig-2</a> (<a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -132,6 +132,41 @@
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
   </tr>
   <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://human-phenotype-ontology.org</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://human-phenotype-ontology.org</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://purl.obolibrary.org/obo/mondo.owl</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://purl.obolibrary.org/obo/mondo.owl</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
@@ -212,6 +247,20 @@
     <td>System not handled by any servers. Using primary server</td>
     <td>https://tx.fhir.org/r4</td>
     <td>null</td>
+    <td>http://edamontology.org</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://edamontology.org</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
     <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types</td>
     <td>auth = , candidates=</td>
   </tr>
@@ -256,6 +305,13 @@
     <td>null</td>
     <td>http://snomed.info/sct</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://nzhts.digital.health.nz/fhir</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -456,7 +512,7 @@
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 31. Code Systems used: </p>
+<p>Use Count: 52. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -475,21 +531,29 @@
   <tr>
     <td>http://edamontology.org</td>
     <td>2</td>
-    <td>3</td>
+    <td>4</td>
     <td></td>
   </tr>
   <tr>
     <td>http://human-phenotype-ontology.org</td>
     <td>5</td>
-    <td>4</td>
+    <td>5</td>
     <td>
       <a href="http://terminology.hl7.org/6.2.0/CodeSystem-HPO.html">Human Phenotype Ontology</a>
     </td>
   </tr>
   <tr>
+    <td>http://loinc.org</td>
+    <td>2</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+    </td>
+  </tr>
+  <tr>
     <td>http://purl.obolibrary.org/obo/mondo.owl</td>
     <td>1</td>
-    <td>2</td>
+    <td>3</td>
     <td>
       <a href="http://terminology.hl7.org/6.2.0/CodeSystem-MONDO.html">Mondo Disease Ontology</a>
     </td>
@@ -501,10 +565,34 @@
     <td></td>
   </tr>
   <tr>
+    <td>http://snomed.info/sct</td>
+    <td>9</td>
+    <td>4</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
+    </td>
+  </tr>
+  <tr>
     <td>http://terminology.hl7.org/CodeSystem/MSH</td>
     <td>2</td>
     <td>1</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+    <td>0</td>
+    <td>3</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-NullFlavor.html">NullFlavor</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://unitsofmeasure.org</td>
+    <td>0</td>
+    <td>4</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
+    </td>
   </tr>
   <tr>
     <td>https://loinc.org</td>
@@ -520,64 +608,6 @@
       <a href="CodeSystem-ncpi-family-types.html">NCPI Family Types CodeSystem</a>
     </td>
   </tr>
-</table>
-<p>ValueSets fetched:</p>
-<ul>
-  <li>http://edamontology.org|null</li>
-  <li>http://terminology.hl7.org/CodeSystem/MSH|null</li>
-  <li>https://hl7.org/fhir/valueset-research-study-party-organization-type.html</li>
-  <li>https://hl7.org/fhir/valueset-study-design.html</li>
-</ul>
-<h2>Server: https://tx.fhir.org/r4</h2>
-<a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 21. Code Systems used: </p>
-<table class="grid">
-  <tr>
-    <th>
-      <b>System</b>
-    </th>
-    <th>
-      <b>#Exp.</b>
-    </th>
-    <th>
-      <b>#Val.</b>
-    </th>
-    <th>
-      <b>Details</b>
-    </th>
-  </tr>
-  <tr>
-    <td>http://loinc.org</td>
-    <td>2</td>
-    <td>1</td>
-    <td>
-      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://snomed.info/sct</td>
-    <td>9</td>
-    <td>3</td>
-    <td>
-      <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
-    <td>0</td>
-    <td>3</td>
-    <td>
-      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-NullFlavor.html">NullFlavor</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://unitsofmeasure.org</td>
-    <td>0</td>
-    <td>3</td>
-    <td>
-      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
-    </td>
-  </tr>
   <tr>
     <td>urn:oid:2.16.840.1.113883.6.238</td>
     <td>0</td>
@@ -587,5 +617,12 @@
     </td>
   </tr>
 </table>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>http://edamontology.org|null</li>
+  <li>http://terminology.hl7.org/CodeSystem/MSH|null</li>
+  <li>https://hl7.org/fhir/valueset-research-study-party-organization-type.html</li>
+  <li>https://hl7.org/fhir/valueset-study-design.html</li>
+</ul>
 </body>
 </html>

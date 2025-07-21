@@ -20,17 +20,10 @@
         "path": "Specimen",
         "constraint": [
           {
-            "key": "collection-no-parent",
-            "severity": "error",
-            "human": "If there is no parent sample, collection information must be present. If there is collection information present, there should be no parent sample.",
-            "expression": "parent.empty() implies collection.exists() and collection.exists() implies parent.empty()",
-            "source": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
-          },
-          {
-            "key": "parent-no-collection",
-            "severity": "error",
-            "human": "If there is no collection information, a parent sample must be present. If there is a parent sample present, there should be no collection information.",
-            "expression": "collection.empty() implies parent.exists() and parent.exists() implies collection.empty()",
+            "key": "collection-xor-parent",
+            "severity": "warning",
+            "human": "If there is a parent sample, there should be no collection information. If there is collection information present, there should be no parent sample.",
+            "expression": "parent.exists().not() or collection.exists().not()",
             "source": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
           }
         ]
@@ -131,8 +124,7 @@
       {
         "id": "Specimen.collection.method",
         "path": "Specimen.collection.method",
-        "short": "The approach used to collect the biospecimen (unknown if not provided)",
-        "min": 1
+        "short": "The approach used to collect the biospecimen (unknown if not provided)"
       },
       {
         "id": "Specimen.collection.bodySite",

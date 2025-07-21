@@ -35,7 +35,9 @@
 [EDAMOntologyTerms]: ValueSet-edam-ontology-terms-vs.html
 [GSS123456-assertion]: Observation-GSS123456-assertion.html
 [SA-000]: Specimen-SA-000.html
+[GSS123456-01-010p]: Specimen-GSS123456-01-010p.html
 [GSS123456-01-010]: Specimen-GSS123456-01-010.html
+[GSS123456-01-010x]: Specimen-GSS123456-01-010x.html
 [PT-006SP660-condition]: Observation-PT-006SP660-condition.html
 [GSS123456-condition-assertion]: Observation-GSS123456-condition-assertion.html
 [GSS123456-condition-summary]: Condition-GSS123456-condition-summary.html

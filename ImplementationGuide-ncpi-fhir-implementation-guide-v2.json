@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2025-06-27T14:40:47+00:00",
+  "date" : "2025-07-21T16:00:02+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -35,7 +35,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.4.0"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -337,7 +337,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.7.0"
     },
     {
       "extension" : [{
@@ -1064,10 +1064,34 @@
         "valueString" : "Specimen"
       }],
       "reference" : {
+        "reference" : "Specimen/GSS123456-01-010p"
+      },
+      "name" : "Example biospecimen based on data from GREGoR",
+      "description" : "Example biospecimen based on data from GREGoR",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
         "reference" : "Specimen/GSS123456-01-010"
       },
       "name" : "Example biospecimen based on data from GREGoR",
       "description" : "Example biospecimen based on data from GREGoR",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/GSS123456-01-010x"
+      },
+      "name" : "Example biospecimen based on data from GREGoR, intentionally breaking the no parent and collection together rule. This should generate a warning.",
+      "description" : "Example biospecimen based on data from GREGoR that will generate a warning",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
     },
     {
