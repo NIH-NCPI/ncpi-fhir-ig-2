@@ -262,15 +262,15 @@ Description: "Example patients based on data from CBTN."
 * identifier[1]
   * system = "https://data.kidsfirstdrc.org"
   * value = "PT-006SP660"
-* extension[us-core-birth-sex].valueCode = #F "Female"
-* extension[us-core-race]
+* extension[usCoreBirthSex].valueCode = #F "Female"
+* extension[usCoreRace]
   * extension[ombCategory].valueCoding =  $omb-race-eth#2106-3 "White"
   * extension[text].valueString = "White"
-* extension[us-core-ethnicity]
+* extension[usCoreEthnicity]
   * extension[ombCategory].valueCoding =  $omb-race-eth#2186-5 "Not Hispanic or Latino"
   * extension[text].valueString = "Not Hispanic or Latino"
-* extension[dob-method].valueCoding = $ncpi-dob-method#year-only
-* extension[age-at-last-vital-status].valueQuantity
+* extension[dobMethod].valueCoding = $ncpi-dob-method#year-only
+* extension[ageAtLastVitalStatus].valueQuantity
   * value = 6314
   * unit = "days"
   * system = $ucum
@@ -304,11 +304,11 @@ Description: "Example patients based on data from PCGC."
     * url = "offset"
     * valueDuration = 2006 'days'
     * valueDuration.unit = "d"
-* extension[us-core-birth-sex].valueCode = #F "Female"
-* extension[us-core-race]
+* extension[usCoreBirthSex].valueCode = #F "Female"
+* extension[usCoreRace]
   * extension[ombCategory].valueCoding =  $omb-race-eth#2106-3 "White"
   * extension[text].valueString = "White"
-* extension[us-core-ethnicity]
+* extension[usCoreEthnicity]
   * extension[ombCategory].valueCoding =  $omb-race-eth#2135-2 "Hispanic or Latino"
   * extension[text].valueString = "Hispanic or Latino"
 
@@ -336,14 +336,14 @@ Description: "Example patients based on data from CBTN."
 * type = #person // Required by Group with required VS
 * actual = true // Required by Group
 
-* extension[family-type].valueCodeableConcept = $ncpi-family-types#Trio "Trio"
+* extension[familyType].valueCodeableConcept = $ncpi-family-types#Trio "Trio"
 // * extension[description].valueMarkdown = "Potential inheritance details"
 // * extension[consanguinity].valueCodeableConcept = $snomedct_us#261665006  "Unknown"
-* extension[study-family-focus].valueCodeableConcept = $mondo#0004992 "Cancer"
+* extension[studyFamilyFocus].valueCodeableConcept = $mondo#0004992 "Cancer"
 * member[0].entity = Reference(PT-006SP660)
-* member[0].entity.extension[family-role].valueCodeableConcept = $family-role-code#MTH "mother"
+* member[0].entity.extension[familyRole].valueCodeableConcept = $family-role-code#MTH "mother"
 * member[1].entity = Reference(PT-006SP675)
-* member[1].entity.extension[family-role].valueCodeableConcept = $family-role-code#SON "natural son"
+* member[1].entity.extension[familyRole].valueCodeableConcept = $family-role-code#SON "natural son"
 
 Instance: cbtn-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship
@@ -444,19 +444,19 @@ Description: "Use case of file information from CBTN"
 * subject = Reference(PT-006SP660)
 * description = "Annotated Variant Call"
 * type = $edam#operation_3227 "Variant calling"
-* extension[content-version].valueString = "V1"
+* extension[contentVersion].valueString = "V1"
 * status = #current
 * content[+]
   * attachment.url = "s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz"
-  * extension[location-access].valueReference = Reference(kf-gru-dac-consent)
-* extension[file-format].valueCodeableConcept.coding = $edam#format_3016 "VCF"
-* extension[file-size]
+  * extension[locationAccess].valueReference = Reference(kf-gru-dac-consent)
+* extension[fileFormat].valueCodeableConcept.coding = $edam#format_3016 "VCF"
+* extension[fileSize]
   * valueQuantity
     * value = 1044770380
     * unit = "bytes"
 * extension[hash]
-  * extension[hash-value].valueString = "8f107912d862cf91fbfb77bf9c1bab36-4"
-  * extension[hash-type].valueCode = #etag
+  * extension[hashValue].valueString = "8f107912d862cf91fbfb77bf9c1bab36-4"
+  * extension[hashType].valueCode = #etag
 
 // NCPI File Metadata
 Instance: FASTQ-example

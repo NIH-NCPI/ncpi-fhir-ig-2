@@ -183,16 +183,16 @@ Description: "Assertion about a particular Participant. May include Conditions, 
 * component[stage] ^short = "Cancer staging information"
 /*location*/ 
 * bodySite ^short = "Location information for the observation, including site, laterality, and other qualifiers as appropriate. Multiple observations may be required if the same assertion is made in many locations, or complete location details can be provided in an NCPI Condition Summary."
-* bodySite.extension contains BodyLocationQualifier named mcode-body-location-qualifier 0..1 /*Condition.LocationQualifieri*/
-* bodySite.extension[mcode-body-location-qualifier] ^short = "Any location qualifiers"
-* bodySite.extension contains LateralityQualifier named mcode-laterality-qualifier 0..1 /*Condition.LateralityQualifier*/
-* bodySite.extension[mcode-laterality-qualifier] ^short = "Laterality information for the condition site"
+* bodySite.extension contains BodyLocationQualifier named mcodeBodyLocationQualifier 0..1 /*Condition.LocationQualifieri*/
+* bodySite.extension[mcodeBodyLocationQualifier] ^short = "Any location qualifiers"
+* bodySite.extension contains LateralityQualifier named mcodeLateralityQualifier 0..1 /*Condition.LateralityQualifier*/
+* bodySite.extension[mcodeLateralityQualifier] ^short = "Laterality information for the condition site"
 
 /*assertionSource*/ 
 * method ^short = "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc."
 /*asserter*/
-* extension contains EntityAsserter named entity-asserter 0..1
-* extension[entity-asserter] ^short = "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
+* extension contains EntityAsserter named entityAsserter 0..1
+* extension[entityAsserter] ^short = "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
 
 
 /*
@@ -264,19 +264,19 @@ Description: "Information about a condition related to a research participant"
 * stage.summary ^short = "Cancer staging information. Example ValueSet, [condition-stage](https://hl7.org/fhir/R4/valueset-condition-stage.html)"
 /*location*/ 
 * bodySite ^short = "Location information for the condition, including site, laterality, and other qualifiers as appropriate."
-* bodySite.extension contains BodyLocationQualifier named mcode-body-location-qualifier 0..1 /*Condition.LocationQualifieri*/
-* bodySite.extension[mcode-body-location-qualifier] ^short = "Any location qualifiers"
-* bodySite.extension contains LateralityQualifier named mcode-laterality-qualifier 0..1 /*Condition.LateralityQualifier*/
-* bodySite.extension[mcode-laterality-qualifier] ^short = "Laterality information for the condition site"
+* bodySite.extension contains BodyLocationQualifier named mcodeBodyLocationQualifier 0..1 /*Condition.LocationQualifieri*/
+* bodySite.extension[mcodeBodyLocationQualifier] ^short = "Any location qualifiers"
+* bodySite.extension contains LateralityQualifier named mcodeLateralityQualifier 0..1 /*Condition.LateralityQualifier*/
+* bodySite.extension[mcodeLateralityQualifier] ^short = "Laterality information for the condition site"
 
 /*ageAtAssertion*/
-* extension contains AgeAtEvent named age-at-assertion 0..1 /*ageAtAssertion*/
-* extension[age-at-assertion] ^short = "The age in decimal years of the Subject at the time point which the assertion.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
+* extension contains AgeAtEvent named ageAtAssertion 0..1 /*ageAtAssertion*/
+* extension[ageAtAssertion] ^short = "The age in decimal years of the Subject at the time point which the assertion.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 
 * asserter ^short = "Reference to the individual responsible for the assertion, if this information is known (participant's Patient resource, if it is self reported, etc.)"
 /*asserter*/
-* extension contains EntityAsserter named entity-asserter 0..1
-* extension[entity-asserter] ^short = "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
+* extension contains EntityAsserter named entityAsserter 0..1
+* extension[entityAsserter] ^short = "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."
 
-* extension contains OtherConditionModifiers named other-condition-modifiers 0..* 
-* extension[other-condition-modifiers] ^short = "Any additional modifiers for this condition, such as severity."
+* extension contains OtherConditionModifiers named otherConditionModifiers 0..* 
+* extension[otherConditionModifiers] ^short = "Any additional modifiers for this condition, such as severity."
