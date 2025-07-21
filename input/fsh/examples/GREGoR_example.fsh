@@ -177,6 +177,17 @@ Description: "Example assertion using data from GREGoR"
   * system = $ucum
 
 //NCPI Biospecimen
+Instance: GSS123456-01-010p /*Collection Event ID can't have underscores*/
+InstanceOf: NCPISample
+Title: "Example biospecimen based on data from GREGoR"
+Usage: #example
+Description: "Example biospecimen based on data from GREGoR"
+* identifier.value = "GSS123456-s1" /*Sample ID*/
+* subject = Reference(GSS123456) /*Participant ID*/
+* type.text = "Blood Draw" /*Sample Type*/
+* collection.method.text = "Blood"
+
+//NCPI Biospecimen
 Instance: GSS123456-01-010 /*Collection Event ID can't have underscores*/
 InstanceOf: NCPISample
 Title: "Example biospecimen based on data from GREGoR"
@@ -185,7 +196,19 @@ Description: "Example biospecimen based on data from GREGoR"
 * identifier.value = "GSS123456-s1" /*Sample ID*/
 * subject = Reference(GSS123456) /*Participant ID*/
 * type.text = "DNA" /*Sample Type*/
+* parent = Reference(GSS123456-01-010p)
+
+//NCPI Biospecimen
+Instance: GSS123456-01-010x /*Collection Event ID can't have underscores*/
+InstanceOf: NCPISample
+Title: "Example biospecimen based on data from GREGoR, intentionally breaking the no parent and collection together rule. This should generate a warning."
+Usage: #example
+Description: "Example biospecimen based on data from GREGoR that will generate a warning"
+* identifier.value = "GSS123456-s1" /*Sample ID*/
+* subject = Reference(GSS123456) /*Participant ID*/
+* type.text = "DNA" /*Sample Type*/
 * collection.method.text = "DNA"
+* parent = Reference(GSS123456-01-010p)
 
 // NCPI File
 Instance: GSS123456-01-010-SG-2
