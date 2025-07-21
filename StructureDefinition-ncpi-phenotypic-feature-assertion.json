@@ -10,7 +10,7 @@
   "name" : "NcpiPhenotypicFeatureAssertion",
   "title" : "NCPI Phenotypic Feature Assertion",
   "status" : "draft",
-  "date" : "2025-07-21T16:00:02+00:00",
+  "date" : "2025-07-21T16:06:27+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -390,9 +390,9 @@
       "isSummary" : false
     },
     {
-      "id" : "Observation.extension:entity-asserter",
+      "id" : "Observation.extension:entityAsserter",
       "path" : "Observation.extension",
-      "sliceName" : "entity-asserter",
+      "sliceName" : "entityAsserter",
       "short" : "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.",
       "definition" : "Person who recorded assertion about participant",
       "min" : 0,
@@ -1514,9 +1514,9 @@
       }]
     },
     {
-      "id" : "Observation.bodySite.extension:mcode-body-location-qualifier",
+      "id" : "Observation.bodySite.extension:mcodeBodyLocationQualifier",
       "path" : "Observation.bodySite.extension",
-      "sliceName" : "mcode-body-location-qualifier",
+      "sliceName" : "mcodeBodyLocationQualifier",
       "short" : "Any location qualifiers",
       "definition" : "Qualifier to refine an body location. These include qualifiers for relative location, directionality, number, and plane, and exclude qualifiers for laterality.",
       "min" : 0,
@@ -1550,9 +1550,9 @@
       "isSummary" : false
     },
     {
-      "id" : "Observation.bodySite.extension:mcode-laterality-qualifier",
+      "id" : "Observation.bodySite.extension:mcodeLateralityQualifier",
       "path" : "Observation.bodySite.extension",
-      "sliceName" : "mcode-laterality-qualifier",
+      "sliceName" : "mcodeLateralityQualifier",
       "short" : "Laterality information for the condition site",
       "definition" : "Qualifier to specify laterality.",
       "min" : 0,

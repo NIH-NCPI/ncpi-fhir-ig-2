@@ -31,9 +31,9 @@
         "min": 2
       },
       {
-        "id": "DocumentReference.extension:file-format",
+        "id": "DocumentReference.extension:fileFormat",
         "path": "DocumentReference.extension",
-        "sliceName": "file-format",
+        "sliceName": "fileFormat",
         "short": "The file format used (EDAM is preferred)",
         "min": 1,
         "max": "1",
@@ -47,25 +47,9 @@
         ]
       },
       {
-        "id": "DocumentReference.extension:location-access",
+        "id": "DocumentReference.extension:fileSize",
         "path": "DocumentReference.extension",
-        "sliceName": "location-access",
-        "short": "If present, only those under the specific Access Policy can access the file in this location.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "DocumentReference.extension:file-size",
-        "path": "DocumentReference.extension",
-        "sliceName": "file-size",
+        "sliceName": "fileSize",
         "short": "Indicate the size of the file in reference",
         "min": 1,
         "max": "1",
@@ -94,9 +78,9 @@
         ]
       },
       {
-        "id": "DocumentReference.extension:content-version",
+        "id": "DocumentReference.extension:contentVersion",
         "path": "DocumentReference.extension",
-        "sliceName": "content-version",
+        "sliceName": "contentVersion",
         "short": "The version of the content in the file",
         "min": 0,
         "max": "1",
@@ -133,6 +117,36 @@
         "id": "DocumentReference.description",
         "path": "DocumentReference.description",
         "short": "A description of the file"
+      },
+      {
+        "id": "DocumentReference.content.extension",
+        "path": "DocumentReference.content.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DocumentReference.content.extension:locationAccess",
+        "path": "DocumentReference.content.extension",
+        "sliceName": "locationAccess",
+        "short": "If present, only those under the specific Access Policy can access the file in this location.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access"
+            ]
+          }
+        ]
       },
       {
         "id": "DocumentReference.content.attachment.url",

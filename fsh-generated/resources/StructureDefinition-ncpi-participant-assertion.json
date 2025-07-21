@@ -30,9 +30,9 @@
         }
       },
       {
-        "id": "Observation.extension:entity-asserter",
+        "id": "Observation.extension:entityAsserter",
         "path": "Observation.extension",
-        "sliceName": "entity-asserter",
+        "sliceName": "entityAsserter",
         "short": "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.",
         "min": 0,
         "max": "1",
@@ -123,9 +123,9 @@
         "short": "Location information for the observation, including site, laterality, and other qualifiers as appropriate. Multiple observations may be required if the same assertion is made in many locations, or complete location details can be provided in an NCPI Condition Summary."
       },
       {
-        "id": "Observation.bodySite.extension:mcode-body-location-qualifier",
+        "id": "Observation.bodySite.extension:mcodeBodyLocationQualifier",
         "path": "Observation.bodySite.extension",
-        "sliceName": "mcode-body-location-qualifier",
+        "sliceName": "mcodeBodyLocationQualifier",
         "short": "Any location qualifiers",
         "min": 0,
         "max": "1",
@@ -139,9 +139,9 @@
         ]
       },
       {
-        "id": "Observation.bodySite.extension:mcode-laterality-qualifier",
+        "id": "Observation.bodySite.extension:mcodeLateralityQualifier",
         "path": "Observation.bodySite.extension",
-        "sliceName": "mcode-laterality-qualifier",
+        "sliceName": "mcodeLateralityQualifier",
         "short": "Laterality information for the condition site",
         "min": 0,
         "max": "1",

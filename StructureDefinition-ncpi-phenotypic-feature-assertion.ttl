@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NcpiPhenotypicFeatureAssertion"] ; # 
   fhir:title [ fhir:v "NCPI Phenotypic Feature Assertion"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-21T16:00:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-21T16:06:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -427,9 +427,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ]
      ] [
-       fhir:id [ fhir:v "Observation.extension:entity-asserter" ] ;
+       fhir:id [ fhir:v "Observation.extension:entityAsserter" ] ;
        fhir:path [ fhir:v "Observation.extension" ] ;
-       fhir:sliceName [ fhir:v "entity-asserter" ] ;
+       fhir:sliceName [ fhir:v "entityAsserter" ] ;
        fhir:short [ fhir:v "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff." ] ;
        fhir:definition [ fhir:v "Person who recorded assertion about participant" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -1649,9 +1649,9 @@
          fhir:map [ fhir:v "n/a" ]
        ] )
      ] [
-       fhir:id [ fhir:v "Observation.bodySite.extension:mcode-body-location-qualifier" ] ;
+       fhir:id [ fhir:v "Observation.bodySite.extension:mcodeBodyLocationQualifier" ] ;
        fhir:path [ fhir:v "Observation.bodySite.extension" ] ;
-       fhir:sliceName [ fhir:v "mcode-body-location-qualifier" ] ;
+       fhir:sliceName [ fhir:v "mcodeBodyLocationQualifier" ] ;
        fhir:short [ fhir:v "Any location qualifiers" ] ;
        fhir:definition [ fhir:v "Qualifier to refine an body location. These include qualifiers for relative location, directionality, number, and plane, and exclude qualifiers for laterality." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -1692,9 +1692,9 @@
        fhir:isModifier [ fhir:v false ] ;
        fhir:isSummary [ fhir:v false ]
      ] [
-       fhir:id [ fhir:v "Observation.bodySite.extension:mcode-laterality-qualifier" ] ;
+       fhir:id [ fhir:v "Observation.bodySite.extension:mcodeLateralityQualifier" ] ;
        fhir:path [ fhir:v "Observation.bodySite.extension" ] ;
-       fhir:sliceName [ fhir:v "mcode-laterality-qualifier" ] ;
+       fhir:sliceName [ fhir:v "mcodeLateralityQualifier" ] ;
        fhir:short [ fhir:v "Laterality information for the condition site" ] ;
        fhir:definition [ fhir:v "Qualifier to specify laterality." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;

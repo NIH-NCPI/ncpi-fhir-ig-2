@@ -804,10 +804,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"hash-extension","Extension.extension:hash-value","Extension.extension","hash-value","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value]]} {[]}
+"hash-extension","Extension.extension:hashValue","Extension.extension","hashValue","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value]]} {[]}
 ","Value of hashing the file","Value of hashing the file","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"hash-extension","Extension.extension:hash-type","Extension.extension","hash-type","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type]]} {[]}
+"hash-extension","Extension.extension:hashType","Extension.extension","hashType","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type]]} {[]}
 ","Algorithm used to calculate the hash (and size, where applicable)","Algorithm used to calculate the hash (and size, where applicable)","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "hash-extension","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
@@ -930,7 +930,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-Study-Participant","ResearchSubject.extension:access-policy","ResearchSubject.extension","access-policy","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy]]} {[]}
+"ncpi-Study-Participant","ResearchSubject.extension:accessPolicy","ResearchSubject.extension","accessPolicy","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy]]} {[]}
 ","The Access Policy that may apply to this participant's data from this study. Not canonical, ie, one must rely on the row level AP.","Access Policy Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -1603,15 +1603,15 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-condition-summary","Condition.extension:age-at-assertion","Condition.extension","age-at-assertion","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-event]]} {[]}
+"ncpi-condition-summary","Condition.extension:ageAtAssertion","Condition.extension","ageAtAssertion","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-event]]} {[]}
 ","The age in decimal years of the Subject at the time point which the assertion.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)","Age at Event Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-condition-summary","Condition.extension:entity-asserter","Condition.extension","entity-asserter","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter]]} {[]}
+"ncpi-condition-summary","Condition.extension:entityAsserter","Condition.extension","entityAsserter","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter]]} {[]}
 ","Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.","Person who recorded assertion about participant","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-condition-summary","Condition.extension:other-condition-modifiers","Condition.extension","other-condition-modifiers","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers]]} {[]}
+"ncpi-condition-summary","Condition.extension:otherConditionModifiers","Condition.extension","otherConditionModifiers","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers]]} {[]}
 ","Any additional modifiers for this condition, such as severity.","Any additional modifiers for this condition, such as severity.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -1666,10 +1666,10 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-condition-summary","Condition.bodySite.extension:mcode-body-location-qualifier","Condition.bodySite.extension","mcode-body-location-qualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier]]} {[]}
+"ncpi-condition-summary","Condition.bodySite.extension:mcodeBodyLocationQualifier","Condition.bodySite.extension","mcodeBodyLocationQualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier]]} {[]}
 ","Any location qualifiers","Qualifier to refine an body location. These include qualifiers for relative location, directionality, number, and plane, and exclude qualifiers for laterality.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-condition-summary","Condition.bodySite.extension:mcode-laterality-qualifier","Condition.bodySite.extension","mcode-laterality-qualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier]]} {[]}
+"ncpi-condition-summary","Condition.bodySite.extension:mcodeLateralityQualifier","Condition.bodySite.extension","mcodeLateralityQualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier]]} {[]}
 ","Laterality information for the condition site","Qualifier to specify laterality.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ncpi-condition-summary","Condition.bodySite.coding","Condition.bodySite.coding","","","",0,*,"","","Y","Coding {[]} {[]}
@@ -1813,15 +1813,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-drs-file","DocumentReference.extension:file-format","DocumentReference.extension","file-format","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format]]} {[]}
+"ncpi-drs-file","DocumentReference.extension:fileFormat","DocumentReference.extension","fileFormat","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format]]} {[]}
 ","The file format used (EDAM is preferred)","The file format used","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-drs-file","DocumentReference.extension:location-access","DocumentReference.extension","location-access","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access]]} {[]}
-","If present, only those under the specific Access Policy can access the file in this location.","If present, only those under the specific Access Policy can access the file in this location.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-drs-file","DocumentReference.extension:file-size","DocumentReference.extension","file-size","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size]]} {[]}
+"ncpi-drs-file","DocumentReference.extension:fileSize","DocumentReference.extension","fileSize","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size]]} {[]}
 ","Indicate the size of the file in reference","The size of the file, e.g., in bytes.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -1829,7 +1825,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Provides a list of hashes for confirming file transfers","Provides a list of hashes for confirming file transfers","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-drs-file","DocumentReference.extension:content-version","DocumentReference.extension","content-version","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version]]} {[]}
+"ncpi-drs-file","DocumentReference.extension:contentVersion","DocumentReference.extension","contentVersion","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version]]} {[]}
 ","The version of the content in the file","Version of the contents of the file","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -1911,9 +1907,13 @@ In the HL7 Healthcare Privacy and Security Classification (HCS) there are code s
 "
 "ncpi-drs-file","DocumentReference.content.id","DocumentReference.content.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"ncpi-drs-file","DocumentReference.content.extension","DocumentReference.content.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"ncpi-drs-file","DocumentReference.content.extension","DocumentReference.content.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ncpi-drs-file","DocumentReference.content.extension:locationAccess","DocumentReference.content.extension","locationAccess","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access]]} {[]}
+","If present, only those under the specific Access Policy can access the file in this location.","If present, only those under the specific Access Policy can access the file in this location.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ncpi-drs-file","DocumentReference.content.modifierExtension","DocumentReference.content.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -1963,9 +1963,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "ncpi-drs-file","DocumentReference.content:DRS.id","DocumentReference.content.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"ncpi-drs-file","DocumentReference.content:DRS.extension","DocumentReference.content.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"ncpi-drs-file","DocumentReference.content:DRS.extension","DocumentReference.content.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ncpi-drs-file","DocumentReference.content:DRS.extension:locationAccess","DocumentReference.content.extension","locationAccess","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access]]} {[]}
+","If present, only those under the specific Access Policy can access the file in this location.","If present, only those under the specific Access Policy can access the file in this location.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ncpi-drs-file","DocumentReference.content:DRS.modifierExtension","DocumentReference.content.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -3042,15 +3046,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-file","DocumentReference.extension:file-format","DocumentReference.extension","file-format","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format]]} {[]}
+"ncpi-file","DocumentReference.extension:fileFormat","DocumentReference.extension","fileFormat","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format]]} {[]}
 ","The file format used (EDAM is preferred)","The file format used","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-file","DocumentReference.extension:location-access","DocumentReference.extension","location-access","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access]]} {[]}
-","If present, only those under the specific Access Policy can access the file in this location.","If present, only those under the specific Access Policy can access the file in this location.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-file","DocumentReference.extension:file-size","DocumentReference.extension","file-size","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size]]} {[]}
+"ncpi-file","DocumentReference.extension:fileSize","DocumentReference.extension","fileSize","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size]]} {[]}
 ","Indicate the size of the file in reference","The size of the file, e.g., in bytes.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -3058,7 +3058,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Provides a list of hashes for confirming file transfers","Provides a list of hashes for confirming file transfers","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-file","DocumentReference.extension:content-version","DocumentReference.extension","content-version","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version]]} {[]}
+"ncpi-file","DocumentReference.extension:contentVersion","DocumentReference.extension","contentVersion","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version]]} {[]}
 ","The version of the content in the file","Version of the contents of the file","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -3139,9 +3139,13 @@ In the HL7 Healthcare Privacy and Security Classification (HCS) there are code s
 "
 "ncpi-file","DocumentReference.content.id","DocumentReference.content.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"ncpi-file","DocumentReference.content.extension","DocumentReference.content.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"ncpi-file","DocumentReference.content.extension","DocumentReference.content.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ncpi-file","DocumentReference.content.extension:locationAccess","DocumentReference.content.extension","locationAccess","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access]]} {[]}
+","If present, only those under the specific Access Policy can access the file in this location.","If present, only those under the specific Access Policy can access the file in this location.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ncpi-file","DocumentReference.content.modifierExtension","DocumentReference.content.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -4474,7 +4478,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-participant-assertion","Observation.extension:entity-asserter","Observation.extension","entity-asserter","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter]]} {[]}
+"ncpi-participant-assertion","Observation.extension:entityAsserter","Observation.extension","entityAsserter","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter]]} {[]}
 ","Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.","Person who recorded assertion about participant","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -4567,10 +4571,10 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-participant-assertion","Observation.bodySite.extension:mcode-body-location-qualifier","Observation.bodySite.extension","mcode-body-location-qualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier]]} {[]}
+"ncpi-participant-assertion","Observation.bodySite.extension:mcodeBodyLocationQualifier","Observation.bodySite.extension","mcodeBodyLocationQualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier]]} {[]}
 ","Any location qualifiers","Qualifier to refine an body location. These include qualifiers for relative location, directionality, number, and plane, and exclude qualifiers for laterality.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-participant-assertion","Observation.bodySite.extension:mcode-laterality-qualifier","Observation.bodySite.extension","mcode-laterality-qualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier]]} {[]}
+"ncpi-participant-assertion","Observation.bodySite.extension:mcodeLateralityQualifier","Observation.bodySite.extension","mcodeLateralityQualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier]]} {[]}
 ","Laterality information for the condition site","Qualifier to specify laterality.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ncpi-participant-assertion","Observation.bodySite.coding","Observation.bodySite.coding","","","",0,*,"","","Y","Coding {[]} {[]}
@@ -4918,11 +4922,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-participant","Patient.extension:us-core-birth-sex","Patient.extension","us-core-birth-sex","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex|6.1.0]]} {[]}
+"ncpi-participant","Patient.extension:usCoreBirthSex","Patient.extension","usCoreBirthSex","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex|6.1.0]]} {[]}
 ","Sex assigned at birth (or pre-natal observed sex)","A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc).","The codes required are intended to present birth sex (i.e., the sex recorded on the patient's birth certificate) and not gender identity or reassigned sex.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-participant","Patient.extension:us-core-race","Patient.extension","us-core-race","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|6.1.0]]} {[]}
+"ncpi-participant","Patient.extension:usCoreRace","Patient.extension","usCoreRace","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|6.1.0]]} {[]}
 ","US Core Race","Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
 
    - American Indian or Alaska Native
@@ -4932,7 +4936,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
    - White.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-participant","Patient.extension:us-core-ethnicity","Patient.extension","us-core-ethnicity","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity|6.1.0]]} {[]}
+"ncpi-participant","Patient.extension:usCoreEthnicity","Patient.extension","usCoreEthnicity","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity|6.1.0]]} {[]}
 ","US Core Ethnicity","Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -4940,11 +4944,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Population, Race, and/or Ethnicity information.","Code describing the population (CDC)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-participant","Patient.extension:dob-method","Patient.extension","dob-method","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method]]} {[]}
+"ncpi-participant","Patient.extension:dobMethod","Patient.extension","dobMethod","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method]]} {[]}
 ","Specifies method used to alter DOB for research sharing. Details should be available in the study protocols.","Code indicating method of the DOB construction","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-participant","Patient.extension:age-at-last-vital-status","Patient.extension","age-at-last-vital-status","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status]]} {[]}
+"ncpi-participant","Patient.extension:ageAtLastVitalStatus","Patient.extension","ageAtLastVitalStatus","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status]]} {[]}
 ","Age or date of last vital status","Age at Last Vital Status Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -5192,7 +5196,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-phenotypic-feature-assertion","Observation.extension:entity-asserter","Observation.extension","entity-asserter","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter]]} {[]}
+"ncpi-phenotypic-feature-assertion","Observation.extension:entityAsserter","Observation.extension","entityAsserter","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter]]} {[]}
 ","Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.","Person who recorded assertion about participant","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -5285,10 +5289,10 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-phenotypic-feature-assertion","Observation.bodySite.extension:mcode-body-location-qualifier","Observation.bodySite.extension","mcode-body-location-qualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier]]} {[]}
+"ncpi-phenotypic-feature-assertion","Observation.bodySite.extension:mcodeBodyLocationQualifier","Observation.bodySite.extension","mcodeBodyLocationQualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier]]} {[]}
 ","Any location qualifiers","Qualifier to refine an body location. These include qualifiers for relative location, directionality, number, and plane, and exclude qualifiers for laterality.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-phenotypic-feature-assertion","Observation.bodySite.extension:mcode-laterality-qualifier","Observation.bodySite.extension","mcode-laterality-qualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier]]} {[]}
+"ncpi-phenotypic-feature-assertion","Observation.bodySite.extension:mcodeLateralityQualifier","Observation.bodySite.extension","mcodeLateralityQualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier]]} {[]}
 ","Laterality information for the condition site","Qualifier to specify laterality.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ncpi-phenotypic-feature-assertion","Observation.bodySite.coding","Observation.bodySite.coding","","","",0,*,"","","Y","Coding {[]} {[]}
@@ -6778,11 +6782,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-sample","Specimen.collection.extension:biospecimen-spatial","Specimen.collection.extension","biospecimen-spatial","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial]]} {[]}
+"ncpi-sample","Specimen.collection.extension:biospecimenSpatial","Specimen.collection.extension","biospecimenSpatial","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-spatial]]} {[]}
 ","Any spatial/location qualifiers","Spatial Information","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-sample","Specimen.collection.extension:biospecimen-laterality","Specimen.collection.extension","biospecimen-laterality","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality]]} {[]}
+"ncpi-sample","Specimen.collection.extension:biospecimenLaterality","Specimen.collection.extension","biospecimenLaterality","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/biospecimen-laterality]]} {[]}
 ","Laterality information for the site","Laterality Information","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -6849,11 +6853,11 @@ Period {[]} {[]}","Date and time of specimen processing","A record of the time o
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-sample","Specimen.container.extension:aliquot-availability","Specimen.container.extension","aliquot-availability","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability]]} {[]}
+"ncpi-sample","Specimen.container.extension:biospecimenAvailability","Specimen.container.extension","biospecimenAvailability","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability]]} {[]}
 ","Can this Sample be requested for further analysis?","Availability Status of Aliquot","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-sample","Specimen.container.extension:aliquot-concentration","Specimen.container.extension","aliquot-concentration","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration]]} {[]}
+"ncpi-sample","Specimen.container.extension:aliquotConcentration","Specimen.container.extension","aliquotConcentration","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration]]} {[]}
 ","What is the concentration of the analyte in the Aliquot?","Concentration of the Aliquot","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -7011,7 +7015,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-study-family","Group.extension:family-type","Group.extension","family-type","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-type]]} {[]}
+"ncpi-study-family","Group.extension:familyType","Group.extension","familyType","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-type]]} {[]}
 ","Describes the 'type' of study family, eg, trio.","Extension containing Family Type","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -7023,7 +7027,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Is there known or suspected consanguinity in this study family?","Extension containing Consanguinity","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-study-family","Group.extension:study-family-focus","Group.extension","study-family-focus","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus]]} {[]}
+"ncpi-study-family","Group.extension:studyFamilyFocus","Group.extension","studyFamilyFocus","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus]]} {[]}
 ","What is this study family investigating? EG, a specific condition","Extension containing Study Family Focus","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -7111,7 +7115,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ncpi-study-family","Group.member.entity.extension:family-role","Group.member.entity.extension","family-role","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role]]} {[]}
+"ncpi-study-family","Group.member.entity.extension:familyRole","Group.member.entity.extension","familyRole","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role]]} {[]}
 ","The role this individual has in the family, specifically with respect to a proband or index participant","Extension containing Family Role","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ncpi-study-family","Group.member.entity.reference","Group.member.entity.reference","","","",0,1,"","","Y","string {[]} {[]}

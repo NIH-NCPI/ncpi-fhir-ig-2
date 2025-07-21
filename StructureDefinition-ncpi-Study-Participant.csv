@@ -25,7 +25,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ResearchSubject.extension:access-policy","ResearchSubject.extension","access-policy","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy]]} {[]}
+"ResearchSubject.extension:accessPolicy","ResearchSubject.extension","accessPolicy","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy]]} {[]}
 ","The Access Policy that may apply to this participant's data from this study. Not canonical, ie, one must rely on the row level AP.","Access Policy Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

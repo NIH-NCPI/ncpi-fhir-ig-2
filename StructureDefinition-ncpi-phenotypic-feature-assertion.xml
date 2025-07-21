@@ -13,7 +13,7 @@
   <name value="NcpiPhenotypicFeatureAssertion"/>
   <title value="NCPI Phenotypic Feature Assertion"/>
   <status value="draft"/>
-  <date value="2025-07-21T16:00:02+00:00"/>
+  <date value="2025-07-21T16:06:27+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -378,9 +378,9 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Observation.extension:entity-asserter">
+    <element id="Observation.extension:entityAsserter">
       <path value="Observation.extension"/>
-      <sliceName value="entity-asserter"/>
+      <sliceName value="entityAsserter"/>
       <short value="Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff."/>
       <definition value="Person who recorded assertion about participant"/>
       <min value="0"/>
@@ -1468,9 +1468,9 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Observation.bodySite.extension:mcode-body-location-qualifier">
+    <element id="Observation.bodySite.extension:mcodeBodyLocationQualifier">
       <path value="Observation.bodySite.extension"/>
-      <sliceName value="mcode-body-location-qualifier"/>
+      <sliceName value="mcodeBodyLocationQualifier"/>
       <short value="Any location qualifiers"/>
       <definition value="Qualifier to refine an body location. These include qualifiers for relative location, directionality, number, and plane, and exclude qualifiers for laterality."/>
       <min value="0"/>
@@ -1503,9 +1503,9 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Observation.bodySite.extension:mcode-laterality-qualifier">
+    <element id="Observation.bodySite.extension:mcodeLateralityQualifier">
       <path value="Observation.bodySite.extension"/>
-      <sliceName value="mcode-laterality-qualifier"/>
+      <sliceName value="mcodeLateralityQualifier"/>
       <short value="Laterality information for the condition site"/>
       <definition value="Qualifier to specify laterality."/>
       <min value="0"/>

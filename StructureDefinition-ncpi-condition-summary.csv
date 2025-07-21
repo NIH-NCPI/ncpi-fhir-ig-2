@@ -24,15 +24,15 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.extension:age-at-assertion","Condition.extension","age-at-assertion","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-event]]} {[]}
+"Condition.extension:ageAtAssertion","Condition.extension","ageAtAssertion","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-event]]} {[]}
 ","The age in decimal years of the Subject at the time point which the assertion.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)","Age at Event Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.extension:entity-asserter","Condition.extension","entity-asserter","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter]]} {[]}
+"Condition.extension:entityAsserter","Condition.extension","entityAsserter","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter]]} {[]}
 ","Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.","Person who recorded assertion about participant","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.extension:other-condition-modifiers","Condition.extension","other-condition-modifiers","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers]]} {[]}
+"Condition.extension:otherConditionModifiers","Condition.extension","otherConditionModifiers","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers]]} {[]}
 ","Any additional modifiers for this condition, such as severity.","Any additional modifiers for this condition, such as severity.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -98,10 +98,10 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Condition.bodySite.extension:mcode-body-location-qualifier","Condition.bodySite.extension","mcode-body-location-qualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier]]} {[]}
+"Condition.bodySite.extension:mcodeBodyLocationQualifier","Condition.bodySite.extension","mcodeBodyLocationQualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier]]} {[]}
 ","Any location qualifiers","Qualifier to refine an body location. These include qualifiers for relative location, directionality, number, and plane, and exclude qualifiers for laterality.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.bodySite.extension:mcode-laterality-qualifier","Condition.bodySite.extension","mcode-laterality-qualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier]]} {[]}
+"Condition.bodySite.extension:mcodeLateralityQualifier","Condition.bodySite.extension","mcodeLateralityQualifier","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier]]} {[]}
 ","Laterality information for the condition site","Qualifier to specify laterality.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Condition.bodySite.coding","Condition.bodySite.coding","","","",0,*,"","","Y","Coding {[]} {[]}

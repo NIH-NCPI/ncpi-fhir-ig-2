@@ -9,10 +9,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Extension.extension:hash-value","Extension.extension","hash-value","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value]]} {[]}
+"Extension.extension:hashValue","Extension.extension","hashValue","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value]]} {[]}
 ","Value of hashing the file","Value of hashing the file","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Extension.extension:hash-type","Extension.extension","hash-type","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type]]} {[]}
+"Extension.extension:hashType","Extension.extension","hashType","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type]]} {[]}
 ","Algorithm used to calculate the hash (and size, where applicable)","Algorithm used to calculate the hash (and size, where applicable)","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}

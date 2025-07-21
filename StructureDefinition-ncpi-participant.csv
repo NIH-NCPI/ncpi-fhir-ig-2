@@ -25,11 +25,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:us-core-birth-sex","Patient.extension","us-core-birth-sex","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex|6.1.0]]} {[]}
+"Patient.extension:usCoreBirthSex","Patient.extension","usCoreBirthSex","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex|6.1.0]]} {[]}
 ","Sex assigned at birth (or pre-natal observed sex)","A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc).","The codes required are intended to present birth sex (i.e., the sex recorded on the patient's birth certificate) and not gender identity or reassigned sex.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender"
-"Patient.extension:us-core-race","Patient.extension","us-core-race","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|6.1.0]]} {[]}
+"Patient.extension:usCoreRace","Patient.extension","usCoreRace","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|6.1.0]]} {[]}
 ","US Core Race","Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
 
    - American Indian or Alaska Native
@@ -39,7 +39,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
    - White.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:us-core-ethnicity","Patient.extension","us-core-ethnicity","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity|6.1.0]]} {[]}
+"Patient.extension:usCoreEthnicity","Patient.extension","usCoreEthnicity","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity|6.1.0]]} {[]}
 ","US Core Ethnicity","Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -47,11 +47,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Population, Race, and/or Ethnicity information.","Code describing the population (CDC)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:dob-method","Patient.extension","dob-method","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method]]} {[]}
+"Patient.extension:dobMethod","Patient.extension","dobMethod","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method]]} {[]}
 ","Specifies method used to alter DOB for research sharing. Details should be available in the study protocols.","Code indicating method of the DOB construction","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:age-at-last-vital-status","Patient.extension","age-at-last-vital-status","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status]]} {[]}
+"Patient.extension:ageAtLastVitalStatus","Patient.extension","ageAtLastVitalStatus","","",0,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status]]} {[]}
 ","Age or date of last vital status","Age at Last Vital Status Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
