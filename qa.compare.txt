@@ -1,7 +1,7 @@
 NCPIFHIRIGv2 : Validation Results
 =========================================
 
-err = 9, warn = 200, info = 18
+err = 9, warn = 203, info = 16
 $--
 Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
  Build Errors : 0 / 4 / 0
@@ -17,7 +17,6 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-metadata-elements : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-ncpi : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-ncpi-family-types : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-phenotypic-feature-assertion : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-platform-instrument-cs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-reference-genome-cs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-related-file-type-code-system : 0 / 0 / 1
@@ -46,8 +45,8 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-pbta : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-FASTQ-example : 0 / 9 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-GSS123456-assertion : 0 / 4 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-GSS123456-condition-assertion : 0 / 7 / 2
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-PT-006SP660-condition : 0 / 2 / 3
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-GSS123456-condition-assertion : 0 / 8 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-PT-006SP660-condition : 0 / 3 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-cbtn-family-relationship-mother : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-cbtn-family-relationship-son : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Observation-gregor-example-metadata : 0 / 11 / 1
@@ -149,7 +148,7 @@ Generated $--. FHIR version $-- for ncpi-fhir-implementation-guide-v2#$-- (canon
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-edam-ontology-terms-vs : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-mesh-terms : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-ncpi-family-types-vs : 0 / 0 / 2
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-phenotypic-feature-assertion-vs : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-phenotypic-feature-assertion-vs : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-phenotypic-feature-code-vs : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-research-data-access-code-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-research-data-access-type-vs : 0 / 0 / 1
@@ -178,7 +177,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/CodeSystem-metadata-elements.json ==
 == fsh-generated/resources/CodeSystem-ncpi.json ==
 == fsh-generated/resources/CodeSystem-ncpi-family-types.json ==
-== fsh-generated/resources/CodeSystem-phenotypic-feature-assertion.json ==
 == fsh-generated/resources/CodeSystem-platform-instrument-cs.json ==
 == fsh-generated/resources/CodeSystem-reference-genome-cs.json ==
 == fsh-generated/resources/CodeSystem-related-file-type-code-system.json ==
@@ -249,7 +247,7 @@ WARNING: Observation/GSS123456-assertion: Observation: Best Practice Recommendat
 WARNING: Observation/GSS123456-assertion: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-GSS123456-condition-assertion.json ==
 WARNING: Observation/GSS123456-condition-assertion: Observation.code.coding[0].system: A definition for CodeSystem 'http://human-phenotype-ontology.org' could not be found, so the code cannot be validated
-INFORMATION: Observation/GSS123456-condition-assertion: Observation.value.ofType(CodeableConcept): Reference to draft CodeSystem https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion|0.2.0
+WARNING: Observation/GSS123456-condition-assertion: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion' could not be found, so the code cannot be validated
 WARNING: Observation/GSS123456-condition-assertion: Observation.component[0].code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: Observation/GSS123456-condition-assertion: Observation.component[1].code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: Observation/GSS123456-condition-assertion: Observation.component[2].code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -259,7 +257,7 @@ WARNING: Observation/GSS123456-condition-assertion: Observation: Best Practice R
 == fsh-generated/resources/Observation-PT-006SP660-condition.json ==
 WARNING: Observation/PT-006SP660-condition: Observation.code.coding[0].system: A definition for CodeSystem 'http://purl.obolibrary.org/obo/mondo.owl' could not be found, so the code cannot be validated
 INFORMATION: Observation/PT-006SP660-condition: Observation.effective.ofType(dateTime).extension[0]: The extension http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime|5.2.0 is deprecated
-INFORMATION: Observation/PT-006SP660-condition: Observation.value.ofType(CodeableConcept): Reference to draft CodeSystem https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion|0.2.0
+WARNING: Observation/PT-006SP660-condition: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion' could not be found, so the code cannot be validated
 WARNING: Observation/PT-006SP660-condition: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-cbtn-family-relationship-mother.json ==
 WARNING: Observation/cbtn-family-relationship-mother: Observation: Best Practice Recommendation: In general, all observations should have a performer
@@ -520,6 +518,7 @@ WARNING: ValueSet.where(id = 'mesh-terms'): Error from https://tx.fhir.org/r4: U
 == fsh-generated/resources/ValueSet-ncpi-family-types-vs.json ==
 INFORMATION: ValueSet/ncpi-family-types-vs: ValueSet.compose.include[0]: The value set references CodeSystem 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types' which has status 'fragment'
 == fsh-generated/resources/ValueSet-phenotypic-feature-assertion-vs.json ==
+WARNING: ValueSet/phenotypic-feature-assertion-vs: ValueSet.compose.include[1].valueSet[0]: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-NullFlavor'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-NullFlavor' to 'http://terminology.hl7.org/ValueSet/v3-NullFlavor|3.0.0'
 == fsh-generated/resources/ValueSet-phenotypic-feature-code-vs.json ==
 WARNING: ValueSet.where(id = 'phenotypic-feature-code-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://human-phenotype-ontology.org
 == fsh-generated/resources/ValueSet-research-data-access-code-vs.json ==

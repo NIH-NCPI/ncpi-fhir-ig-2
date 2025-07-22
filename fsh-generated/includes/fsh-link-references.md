@@ -12,7 +12,6 @@
 [OtherConditionModifiers]: StructureDefinition-other-condition-modifiers.html
 [AssayStrategyCS]: CodeSystem-assay-strategy-cs.html
 [PhenotypicFeatureAssertionVS]: ValueSet-phenotypic-feature-assertion-vs.html
-[PhenotypicFeatureAssertion]: CodeSystem-phenotypic-feature-assertion.html
 [AliquotAvailability]: StructureDefinition-aliquot-availability.html
 [NcpiBAMCRAM]: StructureDefinition-ncpi-bamcram.html
 [kf-gru-dac-consent]: Consent-kf-gru-dac-consent.html
