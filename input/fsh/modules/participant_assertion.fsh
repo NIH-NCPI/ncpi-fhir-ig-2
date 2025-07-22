@@ -52,7 +52,7 @@ Title: "Assertion of Phenotypic Feature Codes"
 Description: "Assertion of Phenotypic Feature Codes"
 * ^experimental = false
 * include codes from valueset http://terminology.hl7.org/ValueSet/v3-NullFlavor
-* include codes from valueset https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3950-4
+* include codes from valueset https://fhir.loinc.org/ValueSet/LL3950-4
 
 ValueSet: PhenotypicFeatureCodeVS
 Id: phenotypic-feature-code-vs
