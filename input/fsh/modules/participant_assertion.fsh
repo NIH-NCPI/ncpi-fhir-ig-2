@@ -51,8 +51,9 @@ Id: phenotypic-feature-assertion-vs
 Title: "Assertion of Phenotypic Feature Codes"
 Description: "Assertion of Phenotypic Feature Codes"
 * ^experimental = false
+* include http://loinc.org/#LA9633-4 "Present"
+* include http://loinc.org/#LA9634-2 "Absent"
 * include codes from valueset http://terminology.hl7.org/ValueSet/v3-NullFlavor
-* include codes from valueset https://fhir.loinc.org/ValueSet/LL3950-4
 
 ValueSet: PhenotypicFeatureCodeVS
 Id: phenotypic-feature-code-vs
