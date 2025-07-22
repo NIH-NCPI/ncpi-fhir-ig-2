@@ -46,23 +46,13 @@ Description: "Type of Condition"
 * ^experimental = false
 * include codes from system condition-type
 
-CodeSystem: PhenotypicFeatureAssertion
-Id: phenotypic-feature-assertion
-Title: "Assertion of Phenotypic Feature Codes"
-Description: "Code System for assertion of phenotypic feature presence"
-* ^url = $phenotypic-feature-assertion
-* ^experimental = false
-* ^caseSensitive = true
-* #Present "Present"
-* #Absent "Absent"
-* #Unknown "Unknown"
-
 ValueSet: PhenotypicFeatureAssertionVS
 Id: phenotypic-feature-assertion-vs
 Title: "Assertion of Phenotypic Feature Codes"
 Description: "Assertion of Phenotypic Feature Codes"
 * ^experimental = false
-* include codes from system phenotypic-feature-assertion
+* include codes from valueset http://terminology.hl7.org/ValueSet/v3-NullFlavor
+* include codes from valueset https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL3950-4
 
 ValueSet: PhenotypicFeatureCodeVS
 Id: phenotypic-feature-code-vs
