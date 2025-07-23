@@ -73,6 +73,154 @@ Description: "Example study group"
 * member[+]
   * entity = Reference(Patient/p2)
 
+// Software "Devices" See:
+// * https://build.fhir.org/definition.html#8.18.1.12
+// * https://hl7.org/fhir/R4/device-DeviceDefinitions.html#Device.version
+
+// ========= 1. BWA Identified by DOI =========
+Instance: BWA-DOI-DeviceDefinition
+InstanceOf: DeviceDefinition
+Title: "BWA definition by DOI"
+Description: "BWA software tool defined using Zenodo DOI"
+Usage: #example
+
+* manufacturerString = "Heng Li"
+* deviceName[0].name = "BWA"
+* deviceName[0].type = #registered-name
+* type = $snomedct_us#706689003 "Application program software (physical object)"
+* version[0].value = "0.7.17"
+* identifier[0].system = "https://doi.org"
+* identifier[0].value = "10.5281/zenodo.593251"
+
+Instance: BWA-DOI-Device
+InstanceOf: Device
+Title: "BWA Device by DOI"
+Description: "A Device instance of the BWA software tool (DOI)"
+Usage: #example
+
+* definition = Reference(BWA-DOI-DeviceDefinition)
+
+
+// ========= 2. BWA Identified by RRID =========
+Instance: BWA-RRID-DeviceDefinition
+InstanceOf: DeviceDefinition
+Title: "BWA definition by RRID"
+Description: "BWA software tool defined using RRID"
+Usage: #example
+
+* manufacturerString = "Heng Li"
+* deviceName[0].name = "BWA"
+* deviceName[0].type = #registered-name
+* type = $snomedct_us#706689003 "Application program software (physical object)"
+* version[0].value = "0.7.17"
+* identifier[0].system = "https://scicrunch.org/resolver"
+* identifier[0].value = "RRID:SCR_003070"
+
+Instance: BWA-RRID-Device
+InstanceOf: Device
+Title: "BWA Device by RRID"
+Description: "A Device instance of the BWA software tool (RRID)"
+Usage: #example
+
+* definition = Reference(BWA-RRID-DeviceDefinition)
+
+
+// ========= 3. BWA Identified by bio.tools =========
+Instance: BWA-BioTools-DeviceDefinition
+InstanceOf: DeviceDefinition
+Title: "BWA definition by bio.tools"
+Description: "BWA software tool from bio.tools registry"
+Usage: #example
+
+* manufacturerString = "Heng Li"
+* deviceName[0].name = "BWA"
+* deviceName[0].type = #registered-name
+* type = $snomedct_us#706689003 "Application program software (physical object)"
+* version[0].value = "0.7.17"
+* identifier[0].system = "https://bio.tools"
+* identifier[0].value = "bwa"
+
+Instance: BWA-BioTools-Device
+InstanceOf: Device
+Title: "BWA Device by bio.tools"
+Description: "A Device instance of the BWA software tool (bio.tools)"
+Usage: #example
+
+* definition = Reference(BWA-BioTools-DeviceDefinition)
+
+
+// ========= 4. GATK Identified by GitHub Commit =========
+Instance: GATK-GitHub-DeviceDefinition
+InstanceOf: DeviceDefinition
+Title: "GATK definition by GitHub"
+Description: "GATK defined using GitHub repo and commit hash"
+Usage: #example
+
+* manufacturerString = "Broad Institute"
+* deviceName[0].name = "GATK"
+* deviceName[0].type = #registered-name
+* type = $snomedct_us#706689003 "Application program software (physical object)"
+* version[0].value = "4.3.0.0"
+* identifier[0].system = "https://github.com/broadinstitute/gatk"
+* identifier[0].value = "commit:d7ef2341ab39ac54e2d9d5aa2b9c985f3a37d9c1"
+
+Instance: GATK-GitHub-Device
+InstanceOf: Device
+Title: "GATK Device by GitHub"
+Description: "A Device instance of GATK software (GitHub)"
+Usage: #example
+
+* definition = Reference(GATK-GitHub-DeviceDefinition)
+
+
+// ========= 5. BWA from Bioconda =========
+Instance: BWA-Bioconda-DeviceDefinition
+InstanceOf: DeviceDefinition
+Title: "BWA definition from Bioconda"
+Description: "BWA packaged in Bioconda"
+Usage: #example
+
+* manufacturerString = "Bioconda"
+* deviceName[0].name = "BWA"
+* deviceName[0].type = #registered-name
+* type = $snomedct_us#706689003 "Application program software (physical object)"
+* version[0].value = "0.7.17"
+* identifier[0].system = "https://anaconda.org/bioconda/bwa"
+* identifier[0].value = "bioconda::bwa=0.7.17"
+
+Instance: BWA-Bioconda-Device
+InstanceOf: Device
+Title: "BWA Device from Bioconda"
+Description: "A Device instance of BWA (Bioconda)"
+Usage: #example
+
+* definition = Reference(BWA-Bioconda-DeviceDefinition)
+
+
+// ========= 6. GATK from DockerHub =========
+Instance: GATK-Docker-DeviceDefinition
+InstanceOf: DeviceDefinition
+Title: "GATK definition from DockerHub"
+Description: "GATK packaged as a Docker container"
+Usage: #example
+
+* manufacturerString = "Broad Institute"
+* deviceName[0].name = "GATK"
+* deviceName[0].type = #registered-name
+* type = $snomedct_us#706689003 "Application program software (physical object)"
+* version[0].value = "4.3.0.0"
+* identifier[0].system = "https://hub.docker.com/r/broadinstitute/gatk"
+* identifier[0].value = "broadinstitute/gatk:4.3.0.0"
+
+Instance: GATK-Docker-Device
+InstanceOf: Device
+Title: "GATK Device from DockerHub"
+Description: "A Device instance of GATK (DockerHub)"
+Usage: #example
+
+* definition = Reference(GATK-Docker-DeviceDefinition)
+
+
 
 // NCPI Assay
 Instance: a1
@@ -81,7 +229,7 @@ Usage: #example
 Title: "Example assay simple association of Patient and Specimen"
 * status = #active
 * intent = #order
-* code = $loinc#86206-0 "Whole genome sequence analysis in Blood or Tissue by Molecular genetics method"
+* performer[+] = Reference(BWA-DOI-Device)
 * subject = Reference(Patient/p1)
 * specimen[+] = Reference(Specimen/s1)
 // A shifted datetime
@@ -96,7 +244,7 @@ Usage: #example
 Title: "Example assay association of with Group of participants and set of specimens"
 * status = #active
 * intent = #order
-* code = $ncit#C188689 "Single Nucleotide Variant Genotyping"
+* performer[+] = Reference(Device/BWA-BioTools-Device)
 * subject = Reference(Group/rs1-g1)
 * specimen[+] = Reference(Specimen/s1)
 * specimen[+] = Reference(Specimen/s2)
@@ -104,6 +252,23 @@ Title: "Example assay association of with Group of participants and set of speci
 * reasonCode.text = "Investigating suspected hereditary condition"
 // 3 hours past a reference time
 * extension[AgeAtAssertion].valueAge = 3 'h'
+
+// NCPI Assay
+Instance: a3
+InstanceOf: NcpiAssay
+Usage: #example
+Title: "Example assay association of with Group of participants and set of specimens, provenance"
+* status = #active
+* intent = #order
+* performer[+] = Reference(Device/GATK-Docker-Device)
+* subject = Reference(Group/rs1-g1)
+* specimen[+] = Reference(Specimen/s1)
+* specimen[+] = Reference(Specimen/s2)
+* authoredOn = "2025-04-30T10:00:00Z"
+* reasonCode.text = "Identify single nucleotide changes (SNPs), insertions, deletions (indels), and larger structural variations"
+// 3 hours past a reference time
+* extension[AgeAtAssertion].valueAge = 3 'h'
+
 
 CodeSystem: WGSParameters
 Description: "Parameters for WGS Task Input example"
