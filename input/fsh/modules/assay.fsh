@@ -6,7 +6,6 @@ Description: "Profile to represent informatics assay requests within NCPI, such 
 
 * status 1..1
 * intent = #order
-* code 1..1 MS
-* code from $loinc (preferred)
+* performer 1..* MS
 * reasonCode MS
 * supportingInfo MS
