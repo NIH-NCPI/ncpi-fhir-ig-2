@@ -86,9 +86,9 @@ Usage: #example
 
 * manufacturerString = "Heng Li"
 * deviceName[0].name = "BWA"
-* deviceName[0].type = #registered-name
+* deviceName[0].type = #model-name
 * type = $snomedct_us#706689003 "Application program software (physical object)"
-* version[0].value = "0.7.17"
+* version = "0.7.17"
 * identifier[0].system = "https://doi.org"
 * identifier[0].value = "10.5281/zenodo.593251"
 
@@ -110,9 +110,9 @@ Usage: #example
 
 * manufacturerString = "Heng Li"
 * deviceName[0].name = "BWA"
-* deviceName[0].type = #registered-name
+* deviceName[0].type = #model-name
 * type = $snomedct_us#706689003 "Application program software (physical object)"
-* version[0].value = "0.7.17"
+* version = "0.7.17"
 * identifier[0].system = "https://scicrunch.org/resolver"
 * identifier[0].value = "RRID:SCR_003070"
 
@@ -134,9 +134,9 @@ Usage: #example
 
 * manufacturerString = "Heng Li"
 * deviceName[0].name = "BWA"
-* deviceName[0].type = #registered-name
+* deviceName[0].type = #model-name
 * type = $snomedct_us#706689003 "Application program software (physical object)"
-* version[0].value = "0.7.17"
+* version = "0.7.17"
 * identifier[0].system = "https://bio.tools"
 * identifier[0].value = "bwa"
 
@@ -158,9 +158,9 @@ Usage: #example
 
 * manufacturerString = "Broad Institute"
 * deviceName[0].name = "GATK"
-* deviceName[0].type = #registered-name
+* deviceName[0].type = #model-name
 * type = $snomedct_us#706689003 "Application program software (physical object)"
-* version[0].value = "4.3.0.0"
+* version = "4.3.0.0"
 * identifier[0].system = "https://github.com/broadinstitute/gatk"
 * identifier[0].value = "commit:d7ef2341ab39ac54e2d9d5aa2b9c985f3a37d9c1"
 
@@ -182,9 +182,9 @@ Usage: #example
 
 * manufacturerString = "Bioconda"
 * deviceName[0].name = "BWA"
-* deviceName[0].type = #registered-name
+* deviceName[0].type = #model-name
 * type = $snomedct_us#706689003 "Application program software (physical object)"
-* version[0].value = "0.7.17"
+* version = "0.7.17"
 * identifier[0].system = "https://anaconda.org/bioconda/bwa"
 * identifier[0].value = "bioconda::bwa=0.7.17"
 
@@ -206,9 +206,9 @@ Usage: #example
 
 * manufacturerString = "Broad Institute"
 * deviceName[0].name = "GATK"
-* deviceName[0].type = #registered-name
+* deviceName[0].type = #model-name
 * type = $snomedct_us#706689003 "Application program software (physical object)"
-* version[0].value = "4.3.0.0"
+* version = "4.3.0.0"
 * identifier[0].system = "https://hub.docker.com/r/broadinstitute/gatk"
 * identifier[0].value = "broadinstitute/gatk:4.3.0.0"
 
