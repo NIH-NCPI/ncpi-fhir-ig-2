@@ -73,163 +73,46 @@ Description: "Example study group"
 * member[+]
   * entity = Reference(Patient/p2)
 
-// Software "Devices" See:
+// Software "ActivityDefinition" See:
 // * https://build.fhir.org/definition.html#8.18.1.12
 // * https://hl7.org/fhir/R4/device-DeviceDefinitions.html#Device.version
 
-// ========= 1. BWA Identified by DOI =========
-Instance: BWA-DOI-DeviceDefinition
-InstanceOf: DeviceDefinition
-Title: "BWA definition by DOI"
-Description: "BWA software tool defined using Zenodo DOI"
+// ========= 1. BWA Identified by GIT =========
+Instance: BWA-GIT-ActivityDefinition
+InstanceOf: ActivityDefinition
+Title: "BWA definition by GIT"
+Description: "BWA software tool defined using GIT repository"
 Usage: #example
+* url = "https://github.com/lh3/bwa"
+* status = #active
+* code = $snomedct_us#461571000124105 "Whole genome sequencing"
+* version = "0.7.19"
+* identifier[0].system = "https://github.com"
+* identifier[0].value = "lh3/bwa"
 
-* manufacturerString = "Heng Li"
-* deviceName[0].name = "BWA"
-* deviceName[0].type = #model-name
-* type = $snomedct_us#706689003 "Application program software (physical object)"
-* version = "0.7.17"
-* identifier[0].system = "https://doi.org"
-* identifier[0].value = "10.5281/zenodo.593251"
-
-Instance: BWA-DOI-Device
-InstanceOf: Device
-Title: "BWA Device by DOI"
-Description: "A Device instance of the BWA software tool (DOI)"
+// ========= 2. Submitted Data =========
+Instance: Submitted-Data-ActivityDefinition
+InstanceOf: ActivityDefinition
+Title: "Data uploaded as part of Research Study"
+Description: "A priori data uploaded as part of Research Study"
 Usage: #example
-
-* definition = Reference(BWA-DOI-DeviceDefinition)
-
-
-// ========= 2. BWA Identified by RRID =========
-Instance: BWA-RRID-DeviceDefinition
-InstanceOf: DeviceDefinition
-Title: "BWA definition by RRID"
-Description: "BWA software tool defined using RRID"
-Usage: #example
-
-* manufacturerString = "Heng Li"
-* deviceName[0].name = "BWA"
-* deviceName[0].type = #model-name
-* type = $snomedct_us#706689003 "Application program software (physical object)"
-* version = "0.7.17"
-* identifier[0].system = "https://scicrunch.org/resolver"
-* identifier[0].value = "RRID:SCR_003070"
-
-Instance: BWA-RRID-Device
-InstanceOf: Device
-Title: "BWA Device by RRID"
-Description: "A Device instance of the BWA software tool (RRID)"
-Usage: #example
-
-* definition = Reference(BWA-RRID-DeviceDefinition)
-
-
-// ========= 3. BWA Identified by bio.tools =========
-Instance: BWA-BioTools-DeviceDefinition
-InstanceOf: DeviceDefinition
-Title: "BWA definition by bio.tools"
-Description: "BWA software tool from bio.tools registry"
-Usage: #example
-
-* manufacturerString = "Heng Li"
-* deviceName[0].name = "BWA"
-* deviceName[0].type = #model-name
-* type = $snomedct_us#706689003 "Application program software (physical object)"
-* version = "0.7.17"
-* identifier[0].system = "https://bio.tools"
-* identifier[0].value = "bwa"
-
-Instance: BWA-BioTools-Device
-InstanceOf: Device
-Title: "BWA Device by bio.tools"
-Description: "A Device instance of the BWA software tool (bio.tools)"
-Usage: #example
-
-* definition = Reference(BWA-BioTools-DeviceDefinition)
-
-
-// ========= 4. GATK Identified by GitHub Commit =========
-Instance: GATK-GitHub-DeviceDefinition
-InstanceOf: DeviceDefinition
-Title: "GATK definition by GitHub"
-Description: "GATK defined using GitHub repo and commit hash"
-Usage: #example
-
-* manufacturerString = "Broad Institute"
-* deviceName[0].name = "GATK"
-* deviceName[0].type = #model-name
-* type = $snomedct_us#706689003 "Application program software (physical object)"
-* version = "4.3.0.0"
-* identifier[0].system = "https://github.com/broadinstitute/gatk"
-* identifier[0].value = "commit:d7ef2341ab39ac54e2d9d5aa2b9c985f3a37d9c1"
-
-Instance: GATK-GitHub-Device
-InstanceOf: Device
-Title: "GATK Device by GitHub"
-Description: "A Device instance of GATK software (GitHub)"
-Usage: #example
-
-* definition = Reference(GATK-GitHub-DeviceDefinition)
-
-
-// ========= 5. BWA from Bioconda =========
-Instance: BWA-Bioconda-DeviceDefinition
-InstanceOf: DeviceDefinition
-Title: "BWA definition from Bioconda"
-Description: "BWA packaged in Bioconda"
-Usage: #example
-
-* manufacturerString = "Bioconda"
-* deviceName[0].name = "BWA"
-* deviceName[0].type = #model-name
-* type = $snomedct_us#706689003 "Application program software (physical object)"
-* version = "0.7.17"
-* identifier[0].system = "https://anaconda.org/bioconda/bwa"
-* identifier[0].value = "bioconda::bwa=0.7.17"
-
-Instance: BWA-Bioconda-Device
-InstanceOf: Device
-Title: "BWA Device from Bioconda"
-Description: "A Device instance of BWA (Bioconda)"
-Usage: #example
-
-* definition = Reference(BWA-Bioconda-DeviceDefinition)
-
-
-// ========= 6. GATK from DockerHub =========
-Instance: GATK-Docker-DeviceDefinition
-InstanceOf: DeviceDefinition
-Title: "GATK definition from DockerHub"
-Description: "GATK packaged as a Docker container"
-Usage: #example
-
-* manufacturerString = "Broad Institute"
-* deviceName[0].name = "GATK"
-* deviceName[0].type = #model-name
-* type = $snomedct_us#706689003 "Application program software (physical object)"
-* version = "4.3.0.0"
-* identifier[0].system = "https://hub.docker.com/r/broadinstitute/gatk"
-* identifier[0].value = "broadinstitute/gatk:4.3.0.0"
-
-Instance: GATK-Docker-Device
-InstanceOf: Device
-Title: "GATK Device from DockerHub"
-Description: "A Device instance of GATK (DockerHub)"
-Usage: #example
-
-* definition = Reference(GATK-Docker-DeviceDefinition)
-
+* status = #active
+* url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ActivityDefinition/Submitted-Data-ActivityDefinition"
+// https://loinc.org/74735-2/ Health data repository
+// https://loinc.org/100924-0 "Safe and secure healthcare data"
+* code = $loinc#77544-5 "Data collected"
+* identifier[0].system = "https://loinc.org"
+* identifier[0].value = "77544-5"
 
 
 // NCPI Assay
 Instance: a1
 InstanceOf: NcpiAssay
 Usage: #example
-Title: "Example assay simple association of Patient and Specimen"
+Title: "Example assay simple association of Patient and Specimen, WGS performed by BWA"
 * status = #active
 * intent = #order
-* performer[+] = Reference(BWA-DOI-Device)
+* instantiatesUri[+] = "https://github.com/lh3/bwa"
 * subject = Reference(Patient/p1)
 * specimen[+] = Reference(Specimen/s1)
 // A shifted datetime
@@ -244,7 +127,7 @@ Usage: #example
 Title: "Example assay association of with Group of participants and set of specimens"
 * status = #active
 * intent = #order
-* performer[+] = Reference(Device/BWA-BioTools-Device)
+* instantiatesUri[+] = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ActivityDefinition/Submitted-Data-ActivityDefinition"
 * subject = Reference(Group/rs1-g1)
 * specimen[+] = Reference(Specimen/s1)
 * specimen[+] = Reference(Specimen/s2)
@@ -260,7 +143,7 @@ Usage: #example
 Title: "Example assay association of with Group of participants and set of specimens, provenance"
 * status = #active
 * intent = #order
-* performer[+] = Reference(Device/GATK-Docker-Device)
+* instantiatesUri[+] = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ActivityDefinition/Submitted-Data-ActivityDefinition"
 * subject = Reference(Group/rs1-g1)
 * specimen[+] = Reference(Specimen/s1)
 * specimen[+] = Reference(Specimen/s2)
@@ -291,15 +174,14 @@ Id: wgs-parameters
 Alias: $wgs-parameters = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters
 
 
-
 Instance: t1
 InstanceOf: Task
 Title: "Example Task based on assay a1"
 Usage: #example
-Description: "Detailed provenance referencing assay a1"
+Description: "Optional, detailed provenance referencing assay a1"
 * status = #requested
 * intent = #order
-* basedOn = Reference(ServiceRequest/a1)
+* basedOn = Reference(ServiceRequest/a2)
 * focus = Reference(Patient/p1)
 
 
@@ -307,10 +189,10 @@ Instance: t2
 InstanceOf: Task
 Title: "Example Task based on assay a2"
 Usage: #example
-Description: "Detailed provenance referencing assay a2 with example inputs"
+Description: "Optional, detailed provenance referencing assay a2 with example inputs"
 * status = #requested
 * intent = #order
-* basedOn = Reference(ServiceRequest/a2)
+* basedOn = Reference(ServiceRequest/a1)
 * focus = Reference(Group/rs1-g1)
 
 * input[0].type = $wgs-parameters#fastq-format "FASTQ Format"
@@ -362,8 +244,11 @@ Description: "Example file created by assay a1"
 * identifier.value = "f1"
 * subject = Reference(Patient/p1)
 * status = #current
+// R4
 * context
   * related = Reference(ServiceRequest/a1)
+// R5,R6
+// * basedOn = Reference(ServiceRequest/a1)
 * content[+]
   * attachment.url = "s3://foobar/example.bam"
 * extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
@@ -385,8 +270,11 @@ Description: "Example file created by assay a2, associated with a group"
 * identifier.value = "f2"
 * subject = Reference(Group/rs1-g1)
 * status = #current
+// R4
 * context
   * related = Reference(ServiceRequest/a2)
+// R5,R6
+// * basedOn = Reference(ServiceRequest/a1)
 * content[+]
   * attachment.url = "s3://foobar/example2.bam"
 * extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
@@ -397,3 +285,29 @@ Description: "Example file created by assay a2, associated with a group"
 * extension[hash]
   * extension[hash-value].valueString = "9c2460c4647fdc57261f040042863fa2"
   * extension[hash-type].valueCode = #md5
+
+
+// DiagnosticReport
+Instance: dr1
+InstanceOf: DiagnosticReport
+Title: "Example Diagnostic Report for assay a1"
+Usage: #example
+Description: "Example Diagnostic Report for assay a1"
+* basedOn = Reference(ServiceRequest/a1)
+* status = #final
+* code = $loinc#47045-0 "Study report"
+* subject = Reference(Patient/p1)
+* media[+]
+  * link = Reference(NcpiFile/f1)
+
+Instance:  dr2
+InstanceOf: DiagnosticReport
+Title: "Example Diagnostic Report for assay a2"
+Usage: #example
+Description: "Example Diagnostic Report for assay a2"
+* basedOn = Reference(ServiceRequest/a2)
+* status = #final
+* code = $loinc#47045-0 "Study report"
+* subject = Reference(Group/rs1-g1)
+* media[+]
+  * link = Reference(NcpiFile/f2)
