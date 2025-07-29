@@ -46,23 +46,14 @@ Description: "Type of Condition"
 * ^experimental = false
 * include codes from system condition-type
 
-CodeSystem: PhenotypicFeatureAssertion
-Id: phenotypic-feature-assertion
-Title: "Assertion of Phenotypic Feature Codes"
-Description: "Code System for assertion of phenotypic feature presence"
-* ^url = $phenotypic-feature-assertion
-* ^experimental = false
-* ^caseSensitive = true
-* #Present "Present"
-* #Absent "Absent"
-* #Unknown "Unknown"
-
 ValueSet: PhenotypicFeatureAssertionVS
 Id: phenotypic-feature-assertion-vs
 Title: "Assertion of Phenotypic Feature Codes"
 Description: "Assertion of Phenotypic Feature Codes"
 * ^experimental = false
-* include codes from system phenotypic-feature-assertion
+* include http://loinc.org#LA9633-4 "Present"
+* include http://loinc.org#LA9634-2 "Absent"
+* include codes from valueset http://terminology.hl7.org/ValueSet/v3-NullFlavor
 
 ValueSet: PhenotypicFeatureCodeVS
 Id: phenotypic-feature-code-vs
@@ -82,14 +73,14 @@ Description: "Age at Event Extension"
 * value[x] only dateTime
 * valueDateTime ^short = "Indicate age via relative date time extension or official date of when condition was asserted."
 
-// Moved to input/fsh/extensions/AgeAtAssertion.fsh
-// Extension: AgeAtAssertion
-// Id: age-at-assertion
-// Title: "Age at Assertion"
-// Description: "Age at Assertion Extension"
-// * insert SetContext(effectiveDateTime)
-// * value[x] only Quantity
-// * valueQuantity ^short = "Indicate age via relative date time extension or official date of when condition was asserted."
+Extension: AgeAtAssertion
+Id: age-at-assertion
+Title: "Age at Assertion"
+Description: "Age at Assertion Extension"
+* insert SetContext(effectiveDateTime)
+// * value[x] only date
+* value[x] only Quantity
+* valueQuantity ^short = "Indicate age via relative date time extension or official date of when condition was asserted."
 
 Extension: OtherConditionModifiers 
 Id: other-condition-modifiers 
