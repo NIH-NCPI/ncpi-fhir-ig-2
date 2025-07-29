@@ -101,6 +101,46 @@ Links like `basedOn`, `result`, and `subject` enable full traceability across th
 
 ## 🔍 Search & Chaining Examples
 
+### Query IG example resources
+
+If the submitter has not provided any `Assay` resources, you can query the "core" resources directly. For example:
+
+```
+GET '/Patient?_id=p1&_revinclude=Specimen:subject&_revinclude=DocumentReference:subject' | jq '.entry[] | .fullUrl'
+"http://localhost:8080/fhir/Patient/p1"
+"http://localhost:8080/fhir/Specimen/s1"
+"http://localhost:8080/fhir/DocumentReference/f1"
+
+```
+
+
+To retrieve all resources associated with a specific Diagnostic Report provided in examples:
+
+```
+GET /DiagnosticReport?_id=dr1&_include=DiagnosticReport:based-on&_include=DiagnosticReport:subject&_revinclude:iterate=DocumentReference:related  | jq '.entry[] | .fullUrl'
+```
+Will return:
+```
+
+"http://localhost:8080/fhir/DiagnosticReport/dr1"
+"http://localhost:8080/fhir/Patient/p1"
+"http://localhost:8080/fhir/ServiceRequest/a1"
+"http://localhost:8080/fhir/DocumentReference/f1"
+
+```
+
+To find all `ServiceRequest` resources that instantiate a specific `ActivityDefinition` and are associated with a given `Patient`, you can use the following query:
+```
+GET '/fhir/ServiceRequest?instantiates-uri=https://github.com/lh3/bwa&subject=Patient/p1&_revinclude:iterate=DocumentReference:related&_revinclude:iterate=DiagnosticReport:based-on'  | jq '.entry[] | .fullUrl'
+"http://localhost:8080/fhir/ServiceRequest/a1"
+"http://localhost:8080/fhir/DiagnosticReport/dr1"
+"http://localhost:8080/fhir/DocumentReference/f1"
+
+```
+
+
+### General FHIR Search
+
 FHIR search allows powerful, relationship-based querying:
 
 
