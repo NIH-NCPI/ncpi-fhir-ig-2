@@ -37,6 +37,22 @@ Represents a cohort of patients or specimens. Useful for studies involving multi
 
 ### `ActivityDefinition`
 Defines what an assay *is*: specimen requirements, outputs, performers. Reusable, protocol-based template.
+The `ActivityDefinition.code` value should be a SNOMED CT code that describes the assay type. Examples include:
+
+* measure "anything"
+```
+* code = $snomedct_us#122869004 "Measurement procedure (procedure)"
+```
+
+* measure "any substance"
+```
+* code = $snomedct_us#430925007 "Measurement of substance (procedure)"
+```
+* measure "Nucleic acid"
+```x
+* code = $snomedct_us#398545005 "Nucleic acid assay (procedure)"
+```
+
 
 ### `ServiceRequest`
 Instantiates a request for an assay, linking `Patient`, `Specimen`, and `ActivityDefinition`.

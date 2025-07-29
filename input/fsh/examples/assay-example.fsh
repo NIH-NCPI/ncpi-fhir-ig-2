@@ -85,7 +85,17 @@ Description: "BWA software tool defined using GIT repository"
 Usage: #example
 * url = "https://github.com/lh3/bwa"
 * status = #active
-* code = $snomedct_us#461571000124105 "Whole genome sequencing"
+// produces: 	Unknown code from in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201
+// * code = $snomedct_us#461571000124105 "Whole genome sequencing"
+// * code = $snomedct_us#731000124108 "Nucleic acid sequencing"
+
+// measure "anything"
+* code = $snomedct_us#122869004 "Measurement procedure (procedure)"
+// measure "substance"
+// * code = $snomedct_us#430925007 "Measurement of substance (procedure)"
+// measure "Nucleic acid"
+// * code = $snomedct_us#398545005 "Nucleic acid assay (procedure)"
+
 * version = "0.7.19"
 * identifier[0].system = "https://github.com"
 * identifier[0].value = "lh3/bwa"
@@ -101,8 +111,8 @@ Usage: #example
 // https://loinc.org/74735-2/ Health data repository
 // https://loinc.org/100924-0 "Safe and secure healthcare data"
 * code = $loinc#77544-5 "Data collected"
-* identifier[0].system = "https://loinc.org"
-* identifier[0].value = "77544-5"
+// * identifier[0].system = "https://loinc.org"
+// * identifier[0].value = "77544-5"
 
 
 // NCPI Assay
@@ -246,7 +256,8 @@ Description: "Example file created by assay a1"
 * status = #current
 // R4
 * context
-  * related = Reference(ServiceRequest/a1)
+  * related[+] = Reference(ServiceRequest/a1)
+  * related[+] = Reference(DiagnosticReport/dr1)
 // R5,R6
 // * basedOn = Reference(ServiceRequest/a1)
 * content[+]
@@ -272,7 +283,8 @@ Description: "Example file created by assay a2, associated with a group"
 * status = #current
 // R4
 * context
-  * related = Reference(ServiceRequest/a2)
+  * related[+] = Reference(ServiceRequest/a2)
+  * related[+] = Reference(DiagnosticReport/dr2)
 // R5,R6
 // * basedOn = Reference(ServiceRequest/a1)
 * content[+]
@@ -297,8 +309,9 @@ Description: "Example Diagnostic Report for assay a1"
 * status = #final
 * code = $loinc#47045-0 "Study report"
 * subject = Reference(Patient/p1)
-* media[+]
-  * link = Reference(NcpiFile/f1)
+// R5, R6
+// * media[+]
+//  * link = Reference(DocumentReference/f1)
 
 Instance:  dr2
 InstanceOf: DiagnosticReport
@@ -309,5 +322,8 @@ Description: "Example Diagnostic Report for assay a2"
 * status = #final
 * code = $loinc#47045-0 "Study report"
 * subject = Reference(Group/rs1-g1)
-* media[+]
-  * link = Reference(NcpiFile/f2)
+// R5, R6
+// * media[+]
+//  * link = Reference(DocumentReference/f2)
+
+// R4 back link from DocumentReference.context to DiagnosticReport
