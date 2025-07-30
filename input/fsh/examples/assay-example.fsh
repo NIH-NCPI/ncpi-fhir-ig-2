@@ -141,10 +141,10 @@ Title: "Example assay association of with Group of participants and set of speci
 * subject = Reference(Group/rs1-g1)
 * specimen[+] = Reference(Specimen/s1)
 * specimen[+] = Reference(Specimen/s2)
-* authoredOn = "2025-04-30T10:00:00Z"
 * reasonCode.text = "Investigating suspected hereditary condition"
+* authoredOn = "2025-04-30T10:00:00Z"
 // 3 hours past a reference time
-* extension[AgeAtAssertion].valueAge = 3 'h'
+* extension[age].valueAge = 3 'h'
 
 // NCPI Assay
 Instance: a3
@@ -157,10 +157,10 @@ Title: "Example assay association of with Group of participants and set of speci
 * subject = Reference(Group/rs1-g1)
 * specimen[+] = Reference(Specimen/s1)
 * specimen[+] = Reference(Specimen/s2)
-* authoredOn = "2025-04-30T10:00:00Z"
 * reasonCode.text = "Identify single nucleotide changes (SNPs), insertions, deletions (indels), and larger structural variations"
+* authoredOn = "2025-04-30T10:00:00Z"
 // 3 hours past a reference time
-* extension[AgeAtAssertion].valueAge = 3 'h'
+* extension[age].valueAge = 3 'h'
 
 
 CodeSystem: WGSParameters
