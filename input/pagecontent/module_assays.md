@@ -1,7 +1,13 @@
 # Informatics Assay Requests
 
-The `NcpiAssay` profile is based on the `ServiceRequest` resource and is used to represent informatics assay orders such as whole genome sequencing or RNA-seq. It enables traceability and linkages to specimens, patients, and supporting evidence.
-
+* The `NcpiAssayRequest` profile is based on the `ServiceRequest` resource and is used to represent informatics assay orders such as whole genome sequencing or RNA-seq. It enables traceability and linkages to specimens, patients, and supporting evidence.
+* Each assay request must be associated with a url that defines the assay. The url MAY point to a `NcpiAssay` profile based on the `ActivityDefinition` resource, which provides a reusable template for the assay definition.
+  * The `url` of the `NcpiAssay` profile captures the specific assay definition.
+  * The `code` of the `NcpiAssay` profile captures the assay type, such as "Whole Genome Sequencing" or "RNA Sequencing" - ideally specified by the [EDAM ontology](https://edamontology.github.io/edam-browser/). 
+* Assay results are captured in the `DiagnosticReport` resource, which summarizes the findings and MAY include links to structured results in the `Observation` resource.
+  * Temporal ordering of assay results is captured in the `DiagnosticReport.extension.age`property, which is an `Age` type.
+  * For R4 implementations, the `DocumentReference.context` resource is used to the DiagnosticReport and ServiceRequest. 
+  * In R5+ implementations, links to the DocumentReference are captured in the `DiagnosticReport.media`field
 
 ## 🧬 Modeling Assays in FHIR - Key Features of `NcpiAssay`
 

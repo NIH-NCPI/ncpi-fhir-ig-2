@@ -79,45 +79,43 @@ Description: "Example study group"
 
 // ========= 1. BWA Identified by GIT =========
 Instance: BWA-GIT-ActivityDefinition
-InstanceOf: ActivityDefinition
+InstanceOf: NcpiAssay
 Title: "BWA definition by GIT"
 Description: "BWA software tool defined using GIT repository"
 Usage: #example
+* text
+  * div = "<div>BWA software tool defined using GIT repository</div>"
+  * status = #additional
 * url = "https://github.com/lh3/bwa"
 * status = #active
-// produces: 	Unknown code from in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201
-// * code = $snomedct_us#461571000124105 "Whole genome sequencing"
-// * code = $snomedct_us#731000124108 "Nucleic acid sequencing"
 
 // measure "anything"
-* code = $snomedct_us#122869004 "Measurement procedure (procedure)"
+// * code = $snomedct_us#122869004 "Measurement procedure (procedure)"
 // measure "substance"
 // * code = $snomedct_us#430925007 "Measurement of substance (procedure)"
 // measure "Nucleic acid"
 // * code = $snomedct_us#398545005 "Nucleic acid assay (procedure)"
 
+* code = $edam#operation_3182 "Genome alignment"
 * version = "0.7.19"
-* identifier[0].system = "https://github.com"
-* identifier[0].value = "lh3/bwa"
 
 // ========= 2. Submitted Data =========
 Instance: Submitted-Data-ActivityDefinition
-InstanceOf: ActivityDefinition
-Title: "Data uploaded as part of Research Study"
+InstanceOf: NcpiAssay
+Title: "Data submission"
 Description: "A priori data uploaded as part of Research Study"
 Usage: #example
+* text
+  * div = "<div>Data uploaded as part of Research Study submission</div>"
+  * status = #additional
 * status = #active
-* url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ActivityDefinition/Submitted-Data-ActivityDefinition"
-// https://loinc.org/74735-2/ Health data repository
-// https://loinc.org/100924-0 "Safe and secure healthcare data"
-* code = $loinc#77544-5 "Data collected"
-// * identifier[0].system = "https://loinc.org"
-// * identifier[0].value = "77544-5"
+* url = Canonical(Submitted-Data-ActivityDefinition)
+* code = $edam#topic_0219 "Data submission, annotation and curation"
 
 
-// NCPI Assay
+// NCPI Assay Request
 Instance: a1
-InstanceOf: NcpiAssay
+InstanceOf: NcpiAssayRequest
 Usage: #example
 Title: "Example assay simple association of Patient and Specimen, WGS performed by BWA"
 * status = #active
@@ -125,42 +123,37 @@ Title: "Example assay simple association of Patient and Specimen, WGS performed 
 * instantiatesUri[+] = "https://github.com/lh3/bwa"
 * subject = Reference(Patient/p1)
 * specimen[+] = Reference(Specimen/s1)
-// A shifted datetime
 * authoredOn = "2025-04-30T09:00:00Z"
 * reasonCode.text = "Investigating suspected hereditary condition"
 
 
 // NCPI Assay
 Instance: a2
-InstanceOf: NcpiAssay
+InstanceOf: NcpiAssayRequest
 Usage: #example
 Title: "Example assay association of with Group of participants and set of specimens"
 * status = #active
 * intent = #order
-* instantiatesUri[+] = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ActivityDefinition/Submitted-Data-ActivityDefinition"
+* instantiatesUri[+] = Canonical(Submitted-Data-ActivityDefinition)
 * subject = Reference(Group/rs1-g1)
 * specimen[+] = Reference(Specimen/s1)
 * specimen[+] = Reference(Specimen/s2)
 * reasonCode.text = "Investigating suspected hereditary condition"
 * authoredOn = "2025-04-30T10:00:00Z"
-// 3 hours past a reference time
-* extension[age].valueAge = 3 'h'
 
 // NCPI Assay
 Instance: a3
-InstanceOf: NcpiAssay
+InstanceOf: NcpiAssayRequest
 Usage: #example
 Title: "Example assay association of with Group of participants and set of specimens, provenance"
 * status = #active
 * intent = #order
-* instantiatesUri[+] = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ActivityDefinition/Submitted-Data-ActivityDefinition"
+* instantiatesUri[+] = "https://example.org/any-external-process"
 * subject = Reference(Group/rs1-g1)
 * specimen[+] = Reference(Specimen/s1)
 * specimen[+] = Reference(Specimen/s2)
 * reasonCode.text = "Identify single nucleotide changes (SNPs), insertions, deletions (indels), and larger structural variations"
 * authoredOn = "2025-04-30T10:00:00Z"
-// 3 hours past a reference time
-* extension[age].valueAge = 3 'h'
 
 
 CodeSystem: WGSParameters
@@ -312,6 +305,9 @@ Description: "Example Diagnostic Report for assay a1"
 // R5, R6
 // * media[+]
 //  * link = Reference(DocumentReference/f1)
+// R4 see back link from DocumentReference.context to DiagnosticReport
+// 3 hours past a reference time
+* extension[age].valueAge = 3 'h'
 
 Instance:  dr2
 InstanceOf: DiagnosticReport
@@ -325,5 +321,6 @@ Description: "Example Diagnostic Report for assay a2"
 // R5, R6
 // * media[+]
 //  * link = Reference(DocumentReference/f2)
-
-// R4 back link from DocumentReference.context to DiagnosticReport
+// R4 see back link from DocumentReference.context to DiagnosticReport
+// 3 hours past a reference time
+* extension[age].valueAge = 3 'h'
