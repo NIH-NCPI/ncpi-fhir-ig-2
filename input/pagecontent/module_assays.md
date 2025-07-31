@@ -1,14 +1,5 @@
 # Informatics Assay Requests
 
-* The `NcpiAssayRequest` profile is based on the `ServiceRequest` resource and is used to represent informatics assay orders such as whole genome sequencing or RNA-seq. It enables traceability and linkages to specimens, patients, and supporting evidence.
-* Each assay request must be associated with a url that defines the assay. The url MAY point to a `NcpiAssay` profile based on the `ActivityDefinition` resource, which provides a reusable template for the assay definition.
-  * The `url` of the `NcpiAssay` profile captures the specific assay definition.
-  * The `code` of the `NcpiAssay` profile captures the assay type, such as "Whole Genome Sequencing" or "RNA Sequencing" - ideally specified by the [EDAM ontology](https://edamontology.github.io/edam-browser/). 
-* Assay results are captured in the `DiagnosticReport` resource, which summarizes the findings and MAY include links to structured results in the `Observation` resource.
-  * Temporal ordering of assay results is captured in the `DiagnosticReport.extension.age`property, which is an `Age` type.
-  * For R4 implementations, the `DocumentReference.context` resource is used to the DiagnosticReport and ServiceRequest. 
-  * In R5+ implementations, links to the DocumentReference are captured in the `DiagnosticReport.media`field
-
 ## 🧬 Modeling Assays in FHIR - Key Features of `NcpiAssay`
 
 
@@ -16,21 +7,27 @@ The assay—including the order, the structured results, and linked raw outputs�
 
 ### Core Resource Mapping
 
-| Concept                  | FHIR Resource           | Role in the Model                                          |
-|--------------------------|--------------------------|------------------------------------------------------------|
-| Patient                  | `Patient`               | Recipient of assay                                         |
-| Specimen                 | `Specimen`              | Biological sample being tested                             |
-| Assay definition         | `ActivityDefinition`    | Template for assay configuration                           |
-| Assay request            | `ServiceRequest`        | Formal order for the assay                                 |
-| Assay result             | `DiagnosticReport`      | Summary and interpretation container                       |
+| Concept                  | FHIR Resource           | Role in the Model                           |
+|--------------------------|--------------------------|---------------------------------------------|
+| Patient                  | `Patient`               | Recipient of assay                          |
+| Specimen                 | `Specimen`              | Biological sample being tested              |
+| Assay definition         | `ActivityDefinition`    | Template for assay configuration            |
+| Assay request            | `ServiceRequest`        | Formal order for the assay                  |
+| Assay result             | `DiagnosticReport`      | Summary and interpretation container        |
 | Structured findings      | `Observation`           | Genomic variants, implications, annotations, scalar values |
-| Raw/complementary files | `DocumentReference`     | Linked external files like VCFs or PDFs                    |
+| Raw/complementary files | `DocumentReference`     | Linked external files like VCFs or PDFs     |
 
 > ⚠️ **Use `Task` for workflow tracking only. For searchable and traceable data, use `ServiceRequest`, `Observation`, and `DiagnosticReport`.**
 
 ---
 
 ## 📌 Resource Descriptions
+
+
+* Assay results are captured in the `DiagnosticReport` resource, which summarizes the findings and MAY include links to structured results in the `Observation` resource.
+  * Temporal ordering of assay results is captured in the `DiagnosticReport.extension.age`property, which is an `Age` type.
+  * For R4 implementations, the `DocumentReference.context` resource is used to the DiagnosticReport and ServiceRequest. 
+  * In R5+ implementations, links to the DocumentReference are captured in the `DiagnosticReport.media`field
 
 ### `Patient`
 Represents the individual receiving care or study. Connects to all clinical or assay-related resources.
@@ -42,37 +39,26 @@ Represents the collected biological material. Includes collection method, proces
 Represents a cohort of patients or specimens. Useful for studies involving multiple subjects or samples.
 
 ### `ActivityDefinition`
-Defines what an assay *is*: specimen requirements, outputs, performers. Reusable, protocol-based template.
-The `ActivityDefinition.code` value should be a SNOMED CT code that describes the assay type. Examples include:
-
-* measure "anything"
-```
-* code = $snomedct_us#122869004 "Measurement procedure (procedure)"
-```
-
-* measure "any substance"
-```
-* code = $snomedct_us#430925007 "Measurement of substance (procedure)"
-```
-* measure "Nucleic acid"
-```x
-* code = $snomedct_us#398545005 "Nucleic acid assay (procedure)"
-```
+Defines what an assay *is*: a reusable, protocol-based template, specifies *what* was done..
+* The `url` of the `NcpiAssay` profile captures the specific assay definition.
+* The `code` of the `NcpiAssay` profile captures the assay type, such as "Whole Genome Sequencing" or "RNA Sequencing" - ideally specified by the [EDAM ontology](https://edamontology.github.io/edam-browser/). 
 
 
 ### `ServiceRequest`
-Instantiates a request for an assay, linking `Patient`, `Specimen`, and `ActivityDefinition`.
+* The `NcpiAssayRequest` profile is based on the `ServiceRequest` resource and is used to represent informatics assay orders such as whole genome sequencing or RNA-seq. It enables traceability and linkages to specimens, patients, and supporting evidence.
+* Instantiates a request for an assay, linking `Patient`, `Specimen`, and `ActivityDefinition`.
+* Each assay request must be associated with a url that defines the assay.
+  * The url MAY point to a `NcpiAssay` profile based on the `ActivityDefinition` resource, which provides a reusable template for the assay definition.
 
 ### `DiagnosticReport`
-Summarizes assay results. Links to the ordering `ServiceRequest`, source `Patient`, `Group`, `Specimen`, and `Observations`.
+Summarizes assay results. Links to the ordering `ServiceRequest`, source `Patient`, `Group`, `Specimen`, and optional `Observations`.
 
 ### `Observation`
-The `Observation` resource in FHIR is highly extensible and can be used to capture a wide range of assay results—not limited to genomics.
-By standardizing assay outputs using `Observation`, systems gain improved **searchability**, **cross-modality analytics**, and **longitudinal comparisons**.
+The optional `Observation` resource in FHIR is highly extensible and can be used to capture a wide range of assay results—not limited to genomics.  While the use of `Observation` is optional, but is useful to expose findings that are otherwise embedded in `DocumentReference`. It allows for more granular querying and analysis of assay results.
 
 > Use `Observation.code` and `Observation.method` to semantically distinguish result types across assays.
 
-The use of `Observation` is optional, but is useful to expose findings that are otherwise embedded in `DocumentReference`. It allows for more granular querying and analysis of assay results.
+
 
 ### `DocumentReference`
 Links external data artifacts (e.g., VCFs, BAMs, PDFs) to the clinical context.
@@ -81,13 +67,15 @@ Links external data artifacts (e.g., VCFs, BAMs, PDFs) to the clinical context.
 
 ## 🔄 Task Resource: Workflow Management Caveats
 
+> Why not use `Task` for assay data?
+
 The `Task` resource supports execution and state transitions across workflow steps. However:
 
 - **Inputs/outputs are not searchable**
 - **Not suitable for data-level chaining or query**
 - **Intended for backend processing, not provenance**
 
-Recommendation: Optionally, use `Task` to model actions like “sequence this sample,” but **not** for linking files to Patient, Specimen, etc.
+Recommendation: Optionally, use `Task` to model actions like “assay parameters” but **not** for linking files to Patient, Specimen, etc.
 
 ---
 
