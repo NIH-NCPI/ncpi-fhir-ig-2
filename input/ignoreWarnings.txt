@@ -1,21 +1,20 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
-# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem. One line comments before a group of ignored warnings should justify why. See https://confluence.hl7.org/spaces/FHIR/pages/66938614/Implementation+Guide+Parameters for full details. and https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# I copied this code system URL from
-# https://terminology.hl7.org/6.4.0/NamingSystem-v3-nciThesaurus.html
-# So, I know it's correct. It is just a failing of the terminology server
-# that it cannot find it.
-/A definition for CodeSystem 'http:..terminology.hl7.org.NamingSystem.v3-nciThesaurus' could not be found, so the code cannot be validated/
+# I copied this code system URL from https://terminology.hl7.org/6.4.0/NamingSystem-v3-nciThesaurus.html So, I know it's correct. It is just a failing of the terminology server that it cannot find it.
+%A definition for CodeSystem 'http://terminology.hl7.org/NamingSystem/v3-nciThesaurus' could not be found, so the code cannot be validated
+ERROR: ValueSet/family-biological-relationship-vs: ValueSet.compose.include[0].concept[1]: The code 'C96572' is not valid in the system http://terminology.hl7.org/NamingSystem/v3-nciThesaurus (A definition for CodeSystem 'http://terminology.hl7.org/NamingSystem/v3-nciThesaurus' could not be found, so the code cannot be validated)
 
-# These are errors resulting from the above missing code system.
-# They are expected.
-/The code 'C\d+' is not valid in the system http:..terminology.hl7.org.NamingSystem.v3-nciThesaurus \(A definition for CodeSystem 'http:..terminology.hl7.org.NamingSystem.v3-nciThesaurus' could not be found, so the code cannot be validated\)/
+# I think this error is a bug in the terminology server - I'm clearly using 3.0.0 of the code system (terminology version - which is different from FHIR release), but it gives an error for 4.3.0 even though that string appears nowhere in the repo.
+WARNING: ValueSet.where(id = 'family-biological-relationship-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/v3-RoleCode version 4.3.0 (known versions = 2018-08-12,3.0.0)
 
-# I think this error is a bug in the terminology server - I'm clearly using
-# 3.0.0 of the code system (terminology version - which is different from
-# FHIR release), but it gives an error for 4.3.0 even though
-# that string appears nowhere in the repo.
-/Error from https:..tx.fhir.org.r4: Unable to provide support for code system http:..terminology.hl7.org.CodeSystem.v3-RoleCode version 4.3.0 \(known versions = 2018-08-12,3.0.0\)/
+# Another bug in the terminology server - The url http://human-phenotype-ontology.org in the Alias.fsh file is copied directly from https://terminology.hl7.org/6.5.0/CodeSystem-HPO.html
+%A definition for CodeSystem 'http://human-phenotype-ontology.org' could not be found%
+
+# A Sushi bug validating URLs. I spent a lot of time for the AirTable.com URL. And I backed it up with two LLM discussions: https://chatgpt.com/share/6891176d-d27c-8003-ae04-6f8e818052f5 and https://claude.ai/share/5796b856-67e6-4203-976a-0b621defcda7 For other URLs, I checked that the code looked valid and that the URL worked in a browser.
+WARNING: Consent/kf-gru-dac-consent: Consent.extension[1].value.ofType(url): No definition could be found for URL value 'https://airtable.com/apperYvVD82ti3021/pagdArwI0TxJQpiVW/form'
+WARNING: Consent/kf-gru-dbgap-consent: Consent.extension[1].value.ofType(url): No definition could be found for URL value 'https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002517'
+WARNING: Consent/kf-gsr-allowed-access: Consent.extension[1].value.ofType(url): No definition could be found for URL value 'https://www.genome.gov/about-nhgri/Policies-Guidance/Data-Sharing-Policies-and-Expectations/GSR-update-FAQs'
+%No definition could be found for URL value 'https://cbtn.org/'%
+%No definition could be found for URL value 'https://cbtn.org/pediatric-brain-tumor-atlas'%
