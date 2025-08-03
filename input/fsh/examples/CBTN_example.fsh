@@ -112,7 +112,7 @@ Description: "General Research Use (GRU)"
 * provision.type = http://hl7.org/fhir/consent-provision-type#permit
 * provision.purpose[+] = $ncpi-data-access-code#GRU "General Research Use"
 * extension[description].valueMarkdown = "Use of the data is limited only by the terms of the model Data Use Certification."
-* extension[website].valueUrl = "https://redcap.chop.edu/surveys/?s=A7M873HMN8"
+* extension[website].valueUrl = "https://airtable.com/apperYvVD82ti3021/pagdArwI0TxJQpiVW/form"
 * extension[accessType].valueCodeableConcept = $ncpi-data-access-type#controlled
 
 /*
