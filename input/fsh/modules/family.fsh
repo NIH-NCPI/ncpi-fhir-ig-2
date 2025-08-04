@@ -72,6 +72,7 @@ Extension: FamilyType
 Id: family-type
 Title: "Family Type Extension"
 Description: "Extension containing Family Type"
+* insert SetContext(Group)
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Describes the 'type' of study family, eg, trio."
 * valueCodeableConcept from ncpi-family-types-vs (extensible)
@@ -80,6 +81,7 @@ Extension: Description
 Id: description
 Title: "Description"
 Description: "Free text describing containing resource."
+* insert SetContext(Group)
 * value[x] only markdown
 * valueMarkdown 0..1
 
@@ -97,6 +99,7 @@ Extension: Consanguinity
 Id: consanguinity
 Title: "Consanguinity Extension"
 Description: "Extension containing Consanguinity"
+* insert SetContext(Group)
 * value[x] only CodeableConcept
 * valueCodeableConcept from consanguinity-assertion-vs (extensible)
 * valueCodeableConcept ^short = "Is there known or suspected consanguinity in this study family?"
@@ -105,6 +108,7 @@ Extension: StudyFamilyFocus
 Id: study-family-focus
 Title: "Study Family Focus Extension"
 Description: "Extension containing Study Family Focus"
+* insert SetContext(Group)
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "What is this study family investigating? EG, a specific condition"
 
