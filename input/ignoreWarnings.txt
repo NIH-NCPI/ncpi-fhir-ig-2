@@ -18,3 +18,6 @@ WARNING: Consent/kf-gru-dbgap-consent: Consent.extension[1].value.ofType(url): N
 WARNING: Consent/kf-gsr-allowed-access: Consent.extension[1].value.ofType(url): No definition could be found for URL value 'https://www.genome.gov/about-nhgri/Policies-Guidance/Data-Sharing-Policies-and-Expectations/GSR-update-FAQs'
 %No definition could be found for URL value 'https://cbtn.org/'%
 %No definition could be found for URL value 'https://cbtn.org/pediatric-brain-tumor-atlas'%
+
+# It looks like NcpiFamilyTypes is intentionally a fragment, so I'm removing the warning. We might want to change it to #complete if the #fragment designation was just supposed to last until we'd discussed the options and increment the version when we add missing options.
+INFORMATION: ValueSet/ncpi-family-types-vs: ValueSet.compose.include[0]: The value set references CodeSystem 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types' which has status 'fragment'
