@@ -52,6 +52,7 @@ Description: "CodeSystem for Types of Families"
 * ^caseSensitive = true
 * ^publisher = "NCPI FHIR Works"
 * ^content = #fragment
+* ^version = "0.1.0"
 * #Control-only "Control Only"
 * #Duo "Duo"
 * #Other "Other"
