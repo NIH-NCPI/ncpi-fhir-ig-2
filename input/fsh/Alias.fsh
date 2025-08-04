@@ -37,7 +37,7 @@ Alias: $family-role-code = http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0
 // says that this is the official URL for the NCI Thesaurus.
 Alias: $nci-thesaurus = http://terminology.hl7.org/NamingSystem/v3-nciThesaurus
 Alias: $ncpi-family-types = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types
-Alias: $ncpi-family-member = http://terminology.hl7.org/ValueSet/v3-FamilyMember
+Alias: $ncpi-family-member = http://terminology.hl7.org/ValueSet/v3-FamilyMember|3.0.0
 // The purl URL for the kin ontology does not work, though it is the official URL.
 // You can find the description of the ontology on GitHub:
 // https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html
