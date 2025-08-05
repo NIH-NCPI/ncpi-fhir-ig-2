@@ -16,7 +16,7 @@ To ensure an unambiguous representation of family relationships, we recommend th
 - For other genetic relationships, (like grandparents), create `FamilyRelationship` resources for each parent-child relationship.
   - This may require inferred individuals to be created to fill in gaps.
   - Use the [Patient Knowledge Source Extension][p_knowledge] to mark the inferred individuals as such.
-- For non-genetic relationships, such as a spouse, an adoptive parent, or surrogate mother, create one `FamilyRelationship` with each participant as the `patient` and the other as the `relative`. So, "spouse" would require two `FamilyRelationship` resources. Prefer non-gendered and sexless codes for the relationship because gender and sex are properties of the individual. For example, prefer "spouse" over "husband" or "wife."
+- For non-genetic relationships, such as a spouse, an adoptive parent, or a surrogate mother, create one `FamilyRelationship` with each participant as the `patient` and the other as the `relative`. So, "spouse" would require two `FamilyRelationship` resources. Prefer non-gendered and sexless codes for the relationship because gender and sex are properties of the individual. For example, prefer "spouse" over "husband" or "wife."
 - It is acceptable to create several `FamilyRelationship` resources for the same `patient` and `relative` pair. For example, two participants may be spouses but also third cousins. That would require four `FamilyRelationship` resources.
 
 #### Relationship to other implementation guides
