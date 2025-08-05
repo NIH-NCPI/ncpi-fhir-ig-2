@@ -183,9 +183,11 @@ Description: "List of codes indicating the biological relationship between two i
 // NMTH ("natural mother") is
 //    The player of the role is a female who conceives
 //    or gives birth to the scoping entity (child).
+//    https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NMTH
 // NFTH ("natural father") is
 //    The player of the role is a male who begets the
 //    scoping entity (child).
+//    https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NFTH
 //
 // In particular, "Biological Mother" excludes surrogates but
 // NMTH is ambiguous and "Biological Father" specifies
@@ -203,6 +205,7 @@ Description: "List of codes indicating the biological relationship between two i
 // ITWIN ("Identical Twin") is:
 //    The scoper and player are offspring of the same egg-sperm
 //    pair.
+//    https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ITWIN
 //
 // Though being "offspring" of the same fertilized egg is
 // questionable wording, we use ITWIN because it also allows
