@@ -235,16 +235,56 @@ Profile: NcpiFamilyRelationship
 Parent: FamilyMemberHistory
 Id: ncpi-family-relationship
 Title: "Family Relationship"
-Description: "A relationship between individuals in a pedigree or family. We chose the direction of the relationship to match PED files, which go from the individual to the mother and father."
+Description: """
+A relationship between individuals in a pedigree or family.
+
+We chose the direction of the relationship to match PED files,
+which go from the individual to the mother and father.
+"""
 * ^version = "0.2.0"
 * ^status = #draft
 * extension contains $family-patient-record named relative 1..1 MS
-* extension[relative] ^short = "The other participant in the relationship who plays the role named by the relationship. That is, if the relationship is C96572 (Biological Father), the \"relative\" is the father."
+* extension[relative] ^short = """
+The other participant in the relationship who plays the role named by the relationship.
+
+That is, if the relationship is `C96572` (**\"Biological Father\"**), the
+`relative` is the father and the `patient` is the child.
+"""
 * relationship 1..1 MS
 * relationship from FamilyBiologicalRelationshipVS (extensible)
-* relationship ^short = "The family role the relative fills with respect to the patient for this relationship.  [relative] is [relationship] to [patient]. For the sake of users, prefer to exclusively use C96572, C96580, and ITWIN for genetic relationships. All other genetic relationships can be expressed with these and dummy individuals. ITWIN should be used for all monozygotic multiples (triplets, quadruplets, etc.) and should be present for all the directions of the relationship. This provides an unambiguous representation of the relationship. Example: A,B,C are triplets. You need A→B, B→A, A→C, C→A, B→C, C→B. If X and Y are twins, you need X→Y and Y→X. If Q is the maternal grandchild of the female R but Q's parent is outside the dataset, then you need to make a dummy D and make D-(Biological Mother)→Q and R-(Biological Mother)→D."
+* relationship ^short = """
+The family role the relative fills with respect to the patient for this relationship.
+
+`relative` is `relationship` to `patient`. For the sake of users,
+prefer to exclusively use `C96572`, `C96580`, and `ITWIN` for genetic relationships.
+All other genetic relationships can be expressed with these and dummy individuals.
+
+`ITWIN` should be used for all monozygotic multiples (triplets, quadruplets, etc.)
+ and should be present for all the directions of the relationship.
+
+ This provides an unambiguous representation of the relationship.
+
+ # Examples
+
+ ## Example 1 (triplets):
+
+ A,B,C are triplets. You need A→B, B→A, A→C, C→A, B→C, C→B.
+
+ ## Example 2 (twins):
+ If X and Y are twins, you need X→Y and Y→X.
+
+ ## Example 3 (maternal grandchild):
+ If Q is the maternal grandchild of the female R but Q's parent
+ is outside the dataset, then you need to make a dummy D and make
+ D-(Biological Mother)→Q and R-(Biological Mother)→D.
+ """
 * patient 1..1 MS
-* patient ^short = "The participant we are describing. That is, if the relationship is C96572 (Biological Father), the patient is the child."
+* patient ^short = """
+The participant we are describing.
+
+That is, if the relationship is `C96572` (**\"Biological Father\"**), the `patient` is the child
+and the `relative` is the father.
+"""
 * name 0..0
 * sex 0..0
 * born[x] 0..0
