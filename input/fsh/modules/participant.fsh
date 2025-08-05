@@ -36,6 +36,43 @@ Description: "Enumerations for how DOB was constructed"
 * ^experimental = false
 * include codes from system $ncpi-dob-method 
 
+CodeSystem: PatientKnowledgeSource
+Id: patient-knowledge-source
+Title: "Patient Knowledge Source"
+Description: """
+The source of the knowledge represented in a `Patient` resource.
+"""
+* ^version = "0.1.0"
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* #traditional "Traditional" "The knowledge comes from traditional sources like a form filled out by a patient or information copied from an external traditional source like government records."
+* #inferred "Inferred" "The knowledge is inferred from indirect evidence. For example, the existence of one patient's mother can be inferred from the existence of the patient."
+
+ValueSet: PatientKnowledgeSourceVS
+Id: patient-knowledge-source-vs
+Title: "Patient Knowledge Source"
+Description: """
+The source of the knowledge represented in a `Patient` resource.
+"""
+* ^experimental = false
+* include codes from system PatientKnowledgeSource
+
+Extension: PatientKnowledgeSourceEx
+Id: patient-knowledge-source
+Title: "Patient Knowledge Source"
+Description: """
+An extension to record the source of the knowledge in a particular
+`Patient` resource.
+
+The primary use case is to identify those `Patient` resources
+created via inference in order to support indirect pedigree
+relationships.
+"""
+* insert SetContext(Patient)
+* value[x] only CodeableConcept
+* value[x] from PatientKnowledgeSourceVS (extensible)
+
 Extension: ResearchPopulation
 Id: research-population
 Title: "Research Population"
@@ -85,7 +122,8 @@ Description: "Research oriented patient"
 * extension[dobMethod] ^short = "Specifies method used to alter DOB for research sharing. Details should be available in the study protocols."
 * extension contains AgeAtLastVitalStatus named ageAtLastVitalStatus 0..1
 * extension[ageAtLastVitalStatus] ^short = "Age or date of last vital status"
-
+* extension contains PatientKnowledgeSourceEx named patientKnowledgeSource 0..1
+* extension[patientKnowledgeSource] ^short = "The source of the knowledge represented by this Patient resource."
 
 
 //  Person Module
