@@ -235,12 +235,9 @@ Profile: NcpiFamilyRelationship
 Parent: FamilyMemberHistory
 Id: ncpi-family-relationship
 Title: "Family Relationship"
-Description: """
-A relationship between individuals in a pedigree or family.
-
-We chose the direction of the relationship to match PED files,
-which go from the individual to the mother and father.
-"""
+// The rest of the description is in
+// input/pagecontent/StructureDefinition-ncpi-family-relationship-intro.md
+Description: "A relationship between individuals in a pedigree or family."
 * ^version = "0.2.0"
 * ^status = #draft
 * extension contains $family-patient-record named relative 1..1 MS
@@ -249,6 +246,9 @@ The other participant in the relationship who plays the role named by the relati
 
 That is, if the relationship is `C96572` (**\"Biological Father\"**), the
 `relative` is the father and the `patient` is the child.
+
+This uses [the standard Patient Record extension](http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record)
+for compatibility with the
 """
 * relationship 1..1 MS
 * relationship from FamilyBiologicalRelationshipVS (extensible)
