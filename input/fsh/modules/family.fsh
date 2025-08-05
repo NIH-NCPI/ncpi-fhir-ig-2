@@ -137,18 +137,6 @@ Description: "Study Family"
 * member.entity.extension[familyRole] ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
 
 
-/*
-Extension: StudyFamily
-Id: study-family
-Title: "Study Family Reference"
-Description: "Extension containing Study Family Reference"
-* insert SetContext(Group)
-* value[x] only Reference
-* valueReference 1..1
-* valueReference only Reference(NcpiStudyFamily)
-*/
-
-
 // Family Relationship
 
 Logical: CdmFamilyRelationship
