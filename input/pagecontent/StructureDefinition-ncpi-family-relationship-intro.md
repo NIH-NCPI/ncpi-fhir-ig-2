@@ -28,13 +28,13 @@ This `FamilyRelationship` resource is almost compatible
 with the GA4GH Family Relationships specification. However, we cannot include it in the profile because the GA4GH specification restricts relationships to the [codes defined in that standard][g_rel_types]. Unfortunately, that set of codes does not meet our use cases or interoperability requirements. If the binding had been extensible, we could have inherited from the GA4GH Family Relationships profile and encouraged the use of better codes. However, software written for that profile might be able to read our `FamilyRelationship` resources as long as it does not rely on the "required" binding.
 
 ##### FHIR Mappings
-The following fields from the shared data model are to be mapped into the NCPI Participant as shown below:
+The following fields from [the shared data model][l_overview] map into the NCPI Participant as shown below:
 
-| **Logical Model Property**                                                                                                                 | **Cardinality** | **NCPI Family Relationship Mapping** | **Usage Guidance** | **Notes** |
-|--------------------------------------------------------------------------------------------------------------------------------------------|-----------------|--------------------------------------|--------------------|-----------|
-| [subject](StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#diff_SharedDataModelFamilyRelationship.subject)           | 1..1            | extension[relative]                  | Required           |           |
-| [target](StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#diff_SharedDataModelFamilyRelationship.target)             | 1..1            | patient                              |                    |           |
-| [relationship](StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#diff_SharedDataModelFamilyRelationship.relationship) | 1..1            | relationship                         |                    |           |
+| **[Logical Model][l_overview] Property** | **[NCPI Family Relationship][n_overview] Instantiation** |
+|------------------------------------------|----------------------------------------------------------|
+| [subject][l_subject]                     | [patient][n_patient]                                     |
+| [target][l_target]                       | [extension[relative]][n_relative]                        |
+| [relationship][l_relationship]           | [relationship][n_relationship]                           |
 
 [ped_plink]: https://zzz.bwh.harvard.edu/plink/data.shtml#ped
 [ped_broad]: https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format
