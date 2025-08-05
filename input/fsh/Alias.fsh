@@ -37,7 +37,8 @@ Alias: $family-role-code = http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0
 // says that this is the official URL for the NCI Thesaurus.
 Alias: $nci-thesaurus = http://terminology.hl7.org/NamingSystem/v3-nciThesaurus
 // Another URL for the NCI thesaurus - this one has better behavior for the terminology
-// server.
+// server. It comes from the identifiers section of
+// https://terminology.hl7.org/6.4.0/NamingSystem-v3-nciThesaurus.html
 Alias: $nci-thesaurus-alt = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|3.0.0
 Alias: $ncpi-family-types = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types
 Alias: $ncpi-family-member = http://terminology.hl7.org/ValueSet/v3-FamilyMember|3.0.0
