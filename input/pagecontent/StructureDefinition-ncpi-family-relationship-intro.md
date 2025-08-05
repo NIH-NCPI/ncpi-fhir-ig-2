@@ -35,3 +35,17 @@ The following fields from the shared data model are to be mapped into the NCPI P
 | [subject](StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#diff_SharedDataModelFamilyRelationship.subject)           | 1..1            | extension[relative]                  | Required           |           |
 | [target](StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#diff_SharedDataModelFamilyRelationship.target)             | 1..1            | patient                              |                    |           |
 | [relationship](StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#diff_SharedDataModelFamilyRelationship.relationship) | 1..1            | relationship                         |                    |           |
+
+[ped_plink]: https://zzz.bwh.harvard.edu/plink/data.shtml#ped
+[ped_broad]: https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format
+[g_overview]: https://ga4gh.github.io/pedigree-fhir-ig/index.html
+[g_rel_types]: https://ga4gh.github.io/pedigree-fhir-ig/ValueSet-PedigreeRelationshipTypes.html
+[l_overview]: StructureDefinition-SharedDataModelFamilyRelationship.html
+[l_subject]: StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#key_SharedDataModelFamilyRelationship.subject
+[l_target]: StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#key_SharedDataModelFamilyRelationship.target
+[l_relationship]: StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#key_SharedDataModelFamilyRelationship.relationship
+[p_knowledge]: StructureDefinition-patient-knowledge-source.html
+[n_overivew]: StructureDefinition-ncpi-family-relationship.html
+[n_patient]: StructureDefinition-ncpi-family-relationship-definitions.html#key_FamilyMemberHistory.patient
+[n_relative]: StructureDefinition-ncpi-family-relationship-definitions.html#key_FamilyMemberHistory.extension:relative
+[n_relationship]: StructureDefinition-ncpi-family-relationship-definitions.html#key_FamilyMemberHistory.relationship
