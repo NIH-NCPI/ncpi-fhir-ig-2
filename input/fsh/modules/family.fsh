@@ -163,59 +163,72 @@ Description: "The **Shared Data Model for Family Relationship**"
 ValueSet: FamilyBiologicalRelationshipVS
 Id: family-biological-relationship-vs
 Title: "Biological Relationship Codes"
-Description: "List of codes indicating the biological relationship between two individuals in a family. It is restrictive to encourage a standardized representation."
+Description: """
+List of codes indicating the biological relationship between two individuals
+in a family. It is restrictive to encourage a standardized representation.
+
+# Code Selection Rationale
+
+## Parent Codes
+
+We use the NCI Thesaurus here for the mother and father because its
+definitions are more precise.
+
+- [`C96572` (**"Biological Father"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96572):
+   A male who contributes to the genetic makeup of his offspring through
+   the fertilization of an ovum by his sperm.
+- [`C96580` (**"Biological Mother"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96580):
+   A female who contributes to the genetic makeup of her offspring
+   from the fertilization of her ovum.
+
+In contrast, the parental family-role's codes are less refined:
+
+- [`NMTH` (**"natural mother"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NMTH):
+   The player of the role is a female who conceives
+   or gives birth to the scoping entity (child).
+- [`NFTH` (**"natural father"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NFTH):
+   The player of the role is a male who begets the
+   scoping entity (child).
+
+In particular, **"Biological Mother"** excludes surrogates but
+`NMTH` is ambiguous. **"Biological Father"** specifies
+fertilization of an ovum by sperm, whereas `NFTH` uses the
+ambiguous term "begets," which could include other
+mechanisms.
+
+## Twin Codes
+
+For twins, we use the RoleCode `ITWIN` code rather than the NCI `C73429`.
+
+- [`C73429` (**"Identical Twin"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C73429):
+   Either of the two offspring resulting from a shared ovum.
+- [`ITWIN` (**"Identical Twin"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ITWIN):
+   The scoper and player are offspring of the same egg-sperm
+   pair.
+
+Though being "offspring" of the same fertilized egg is
+questionable wording, we use `ITWIN` because it also allows
+other multiples (triplets, quadruplets, etc.) to be
+represented with the same code whereas `C73429` is only for
+twins.
+
+# Note for upgrading to FHIR R5
+
+When we add support for R5 to the IG, we should add the rest of the
+codes from http://terminology.hl7.org/ValueSet/v3-FamilyMember
+as additional bindings to guide users when not using one of the
+main bindings.
+
+We intend that when users need to use a code that is not in
+the main bindings, they should default to the FamilyMember
+ValueSet. However, in R4, there is no way to express this
+in the ValueSet itself.
+"""
 * ^version = "0.1.0"
 * ^experimental = false
-// We use the NCI Thesaurus here for the mother and father because its
-// definitions are more precise.
-//
-// C96572 ("Biological Father") is:
-//    A male who contributes to the genetic makeup of his offspring through
-//    the fertilization of an ovum by his sperm.
-//    https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96572
-// C96580 ("Biological Mother") is:
-//    A female who contributes to the genetic makeup of her offspring
-//    from the fertilization of her ovum.
-//    https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96580
-//
-// Whereas the parental family-role's codes are less refined:
-//
-// NMTH ("natural mother") is
-//    The player of the role is a female who conceives
-//    or gives birth to the scoping entity (child).
-//    https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NMTH
-// NFTH ("natural father") is
-//    The player of the role is a male who begets the
-//    scoping entity (child).
-//    https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NFTH
-//
-// In particular, "Biological Mother" excludes surrogates but
-// NMTH is ambiguous and "Biological Father" specifies
-// fertilization of an ovum by sperm. Whereas NFTH uses the
-// ambiguous term "begets," which could include other
-// mechanisms.
 * include $nci-thesaurus-alt#C96580 "Biological Mother"
 * include $nci-thesaurus-alt#C96572 "Biological Father"
-// For Twin,
-//
-// C73429 ("Identical Twin") is:
-//    Either of the two offspring resulting from a shared ovum.
-//    https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C73429
-//
-// ITWIN ("Identical Twin") is:
-//    The scoper and player are offspring of the same egg-sperm
-//    pair.
-//    https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ITWIN
-//
-// Though being "offspring" of the same fertilized egg is
-// questionable wording, we use ITWIN because it also allows
-// other multiples (triplets, quadruplets, etc.) to be
-// represented with the same code whereas C73429 is only for
-// twins.
 * include $family-role-code#ITWIN "identical twin"
-// If we were using version 5, we could add the rest of the
-// codes from $ncpi-family-member as additional bindings
-// to guide users when not using one of the main bindings.
 
 
 Profile: NcpiFamilyRelationship
