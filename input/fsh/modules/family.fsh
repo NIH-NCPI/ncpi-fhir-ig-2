@@ -34,7 +34,7 @@ Description: "The **Shared Data Model for Family Role**"
 
 Extension: FamilyRole
 Id: family-role
-Title: "Study Family Focus"
+Title: "Family Role"
 Description: "Extension containing Family Role"
 
 * insert SetContext(Group.member.entity)
@@ -99,7 +99,7 @@ Description: "List of codes indicates the level of known consanguinity (blood re
 Extension: Consanguinity
 Id: consanguinity
 Title: "Consanguinity Extension"
-Description: "Extension containing Consanguinity"
+Description: "Extension containing a consanguinity assertion"
 * insert SetContext(Group)
 * value[x] only CodeableConcept
 * valueCodeableConcept from consanguinity-assertion-vs (extensible)
@@ -108,7 +108,7 @@ Description: "Extension containing Consanguinity"
 Extension: StudyFamilyFocus
 Id: study-family-focus
 Title: "Study Family Focus Extension"
-Description: "Extension containing Study Family Focus"
+Description: "Extension containing a study family focus assertion"
 * insert SetContext(Group)
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "What is this study family investigating? EG, a specific condition"
