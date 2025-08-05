@@ -259,7 +259,7 @@ The role the relative fills with respect to the patient for this relationship.
 
 `relative` is `relationship` to `patient`. For the sake of users,
 prefer to exclusively use `C96572`, `C96580`, and `ITWIN` for genetic relationships.
-All other genetic relationships can be expressed with these and dummy individuals.
+All other genetic relationships can be expressed with these and inferred individuals.
 
 `ITWIN` should be used for all monozygotic multiples (triplets, quadruplets, etc.)
 and should be present for all the directions of the relationship.
@@ -290,7 +290,7 @@ resources:
 
 ## Example 3 (maternal grandchild):
 If Q is the maternal grandchild of the female R but Q's parent
-is outside the dataset, then you need to make a dummy Patient
+is outside the dataset, then you need to make an inferred Patient
 resource D and make two `NcpiFamilyRelationship` resources:
 - D-(Biological Mother)→Q
 - R-(Biological Mother)→D.

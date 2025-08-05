@@ -13,8 +13,10 @@ Further extended relationships can be made available using Family Relationship, 
 To ensure an unambiguous representation of family relationships, we recommend that the following guidelines be followed:
 - For each parent-child relationship, create a `FamilyRelationship` resource with the child as the `patient` and the parent as the `relative`.
 - For all identical-sibling relationships, create two `FamilyRelationship` resources. That is, if three participants are triplets, create six `FamilyRelationship` resources. One with the `patient` as the first participant and the `relative` as the second participant, and one with the `patient` as the second participant and the `relative` as the first participant, one with the `patient` as the second participant and the `relative` as the third participant, and so on.
-- For other genetic relationships, (like grandparents), create `FamilyRelationship` resources for each parent-child relationship. This may require dummy individuals to be created to fill in gaps.
-- For other relationships, such as a spouse, an adoptive parent, or surrogate mother, create one `FamilyRelationship` with each participant as the `patient` and the other as the `relative`. So, "spouse" would require two `FamilyRelationship` resources. Prefer non-gendered and sexless codes for the relationship because gender and sex are properties of the individual. For example, prefer "spouse" over "husband" or "wife."
+- For other genetic relationships, (like grandparents), create `FamilyRelationship` resources for each parent-child relationship.
+  - This may require inferred individuals to be created to fill in gaps.
+  - Use the [Patient Knowledge Source Extension](StructureDefinition-patient-knowledge-source.html) to mark the inferred individuals as such.
+- For non-genetic relationships, such as a spouse, an adoptive parent, or surrogate mother, create one `FamilyRelationship` with each participant as the `patient` and the other as the `relative`. So, "spouse" would require two `FamilyRelationship` resources. Prefer non-gendered and sexless codes for the relationship because gender and sex are properties of the individual. For example, prefer "spouse" over "husband" or "wife."
 - It is acceptable to create several `FamilyRelationship` resources for the same `patient` and `relative` pair. For example, two participants may be spouses but also third cousins. That would require four `FamilyRelationship` resources.
 
 #### Relationship to other implementation guides
