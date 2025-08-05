@@ -172,9 +172,11 @@ Description: "List of codes indicating the biological relationship between two i
 // C96572 ("Biological Father") is:
 //    A male who contributes to the genetic makeup of his offspring through
 //    the fertilization of an ovum by his sperm.
+//    https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96572
 // C96580 ("Biological Mother") is:
 //    A female who contributes to the genetic makeup of her offspring
 //    from the fertilization of her ovum.
+//    https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96580
 //
 // Whereas the parental family-role's codes are less refined:
 //
@@ -196,6 +198,7 @@ Description: "List of codes indicating the biological relationship between two i
 //
 // C73429 ("Identical Twin") is:
 //    Either of the two offspring resulting from a shared ovum.
+//    https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C73429
 //
 // ITWIN ("Identical Twin") is:
 //    The scoper and player are offspring of the same egg-sperm
