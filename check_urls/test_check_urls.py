@@ -1,6 +1,14 @@
 from unittest.mock import MagicMock
 
-from check_urls import main, parse_args, SubCommand
+from check_urls import (
+    main,
+    parse_args,
+    SubCommand,
+    Args,
+    _status_from_dict,
+    Status,
+    save_on_success,
+)
 from pathlib import Path
 import sys
 import pytest
@@ -16,10 +24,6 @@ from check_urls import (
     load_statuses,
     ErrorCode,
 )
-
-
-def test_main():
-    assert main() == 0
 
 
 def test_parse_args_basic(monkeypatch):
@@ -179,8 +183,6 @@ def test_save_statuses_io_error(monkeypatch):
 def test__status_from_dict_bad_status_dict():
     # Line 245: Should return ErrorCode.BAD_STATUS_DICT for unknown status
     d = {"status": "NotAStatus", "last_check": "2024-01-01T00:00:00"}
-    from check_urls import _status_from_dict, ErrorCode
-
     assert _status_from_dict(d) == ErrorCode.BAD_STATUS_DICT
 
 
@@ -193,9 +195,6 @@ def test_load_statuses_type_error():
 
 def test_load_statuses_bad_status_dict():
     # Line 262: Should return ErrorCode.BAD_STATUS_DICT if status dict is bad
-    import io
-    from check_urls import load_statuses, ErrorCode
-
     # status dict with an unknown status type
     bad_data = '{"https://example.com": {"status": "NotAStatus", "last_check": "2024-01-01T00:00:00"}}'
     buf = io.StringIO(bad_data)
@@ -204,7 +203,6 @@ def test_load_statuses_bad_status_dict():
 
 def test__status_from_dict_bad_last_check_time():
     # Line 226: Should return ErrorCode.BAD_LAST_CHECK_TIME for invalid last_check
-    from check_urls import _status_from_dict, ErrorCode
 
     d = {"status": "Unknown", "last_check": "not-a-date"}
     assert _status_from_dict(d) == ErrorCode.BAD_LAST_CHECK_TIME
@@ -212,16 +210,12 @@ def test__status_from_dict_bad_last_check_time():
 
 def test__status_from_dict_missing_last_check():
     # Line 234: Should return ErrorCode.BAD_LAST_CHECK_TIME for missing last_check with non-Unknown status
-    from check_urls import _status_from_dict, ErrorCode, Status
-
     d = {"status": Status.ARCHIVED.value}
     assert _status_from_dict(d) == ErrorCode.BAD_LAST_CHECK_TIME
 
 
 def test__status_from_dict_archived():
     # Line 239: Should return ArchivedStatus for valid archived status
-    from check_urls import _status_from_dict, ArchivedStatus, Status
-
     d = {"status": Status.ARCHIVED.value, "last_check": "2024-01-01T12:00:00"}
     result = _status_from_dict(d)
     assert isinstance(result, ArchivedStatus)
@@ -229,3 +223,167 @@ def test__status_from_dict_archived():
     assert result.last_check.month == 1
     assert result.last_check.day == 1
     assert result.last_check.hour == 12
+
+
+def make_args(
+    subcommand,
+    archive_status_file=None,
+    files=None,
+    ignore_file=None,
+    log_file=None,
+    verbose=False,
+    credentials=None,
+) -> Args:
+    return Args(
+        archive_status_file=archive_status_file or Path("status.json"),
+        subcommand=subcommand,
+        ignore_file=ignore_file,
+        log_file=log_file,
+        verbose=verbose,
+        files=files or [],
+        credentials=credentials,
+    )
+
+
+@pytest.fixture(autouse=True)
+def patch_parse_args(monkeypatch):
+    # Patch parse_args to be controlled by each test
+    args = {}
+
+    def fake_parse_args():
+        return args["value"]
+
+    monkeypatch.setattr(sys.modules["check_urls"], "parse_args", fake_parse_args)
+    return args
+
+
+@pytest.fixture(autouse=True)
+def patch_logging(monkeypatch):
+    monkeypatch.setattr(
+        sys.modules["check_urls"].logging, "basicConfig", lambda **kwargs: None
+    )
+    monkeypatch.setattr(sys.modules["check_urls"].logging, "info", lambda *a, **k: None)
+    monkeypatch.setattr(
+        sys.modules["check_urls"].logging, "error", lambda *a, **k: None
+    )
+    monkeypatch.setattr(
+        sys.modules["check_urls"].logging, "exception", lambda *a, **k: None
+    )
+    monkeypatch.setattr(
+        sys.modules["check_urls"].logging, "debug", lambda *a, **k: None
+    )
+
+
+@pytest.fixture(autouse=True)
+def patch_open(monkeypatch):
+    monkeypatch.setattr(Path, "open", lambda self, mode="r": io.StringIO("{}"))
+
+
+@pytest.fixture(autouse=True)
+def patch_load_save(monkeypatch):
+    monkeypatch.setattr(sys.modules["check_urls"], "load_statuses", lambda f: {})
+    monkeypatch.setattr(sys.modules["check_urls"], "save_statuses", lambda f, s: None)
+
+
+@pytest.mark.parametrize(
+    "subcommand,handler",
+    [
+        (SubCommand.ADD_URLS, "add_urls"),
+        (SubCommand.FAIL_IF_WOULD_ADD, "fail_if_would_add"),
+        (SubCommand.CHECK, "check"),
+        (SubCommand.LIST_UNARCHIVED, "list_unarchived"),
+        (SubCommand.SUBMIT, "submit"),
+    ],
+)
+def test_main_success(monkeypatch, patch_parse_args, subcommand, handler):
+    patch_parse_args["value"] = make_args(
+        subcommand,
+        credentials=Path("cred.json")
+        if subcommand in {SubCommand.CHECK, SubCommand.SUBMIT}
+        else None,
+    )
+    for h in [
+        "add_urls",
+        "fail_if_would_add",
+        "check",
+        "list_unarchived",
+        "submit",
+    ]:
+        monkeypatch.setattr(
+            sys.modules["check_urls"], h, lambda *a, **k: ErrorCode.SUCCESS
+        )
+    assert main() == ErrorCode.SUCCESS
+
+
+def test_main_save_error(monkeypatch, patch_parse_args):
+    patch_parse_args["value"] = make_args(SubCommand.ADD_URLS)
+    monkeypatch.setattr(
+        sys.modules["check_urls"], "add_urls", lambda *a, **k: ErrorCode.SUCCESS
+    )
+    monkeypatch.setattr(
+        sys.modules["check_urls"], "save_statuses", lambda f, s: ErrorCode.JSON_ERROR
+    )
+    assert main() == ErrorCode.JSON_ERROR
+
+
+def test_main_load_error(monkeypatch, patch_parse_args):
+    patch_parse_args["value"] = make_args(SubCommand.ADD_URLS)
+    monkeypatch.setattr(
+        sys.modules["check_urls"], "load_statuses", lambda f: ErrorCode.JSON_ERROR
+    )
+    assert main() == ErrorCode.JSON_ERROR
+
+
+def test_main_file_open_error(monkeypatch, patch_parse_args):
+    patch_parse_args["value"] = make_args(SubCommand.ADD_URLS)
+    monkeypatch.setattr(
+        Path, "open", lambda self, mode="r": (_ for _ in ()).throw(OSError("fail"))
+    )
+    assert main() == ErrorCode.FILE_ERROR
+
+
+def test_main_invalid_subcommand(monkeypatch, patch_parse_args):
+    class DummySubCommand:
+        value = "dummy"
+
+    patch_parse_args["value"] = make_args(DummySubCommand())
+    assert main() == ErrorCode.INVALID_ARGS
+
+
+IGNORED_P = Path("ignored.json")
+
+
+def test_save_on_success_success(monkeypatch):
+    statuses = {}
+    monkeypatch.setattr(Path, "open", lambda self, mode="w": io.StringIO())
+    monkeypatch.setattr(sys.modules["check_urls"], "save_statuses", lambda f, s: None)
+    assert save_on_success(statuses, IGNORED_P, ErrorCode.SUCCESS) == ErrorCode.SUCCESS
+
+
+def test_save_on_success_save_error(monkeypatch):
+    statuses = {}
+    monkeypatch.setattr(Path, "open", lambda self, mode="w": io.StringIO())
+    monkeypatch.setattr(
+        sys.modules["check_urls"], "save_statuses", lambda f, s: ErrorCode.JSON_ERROR
+    )
+    assert (
+        save_on_success(statuses, IGNORED_P, ErrorCode.SUCCESS) == ErrorCode.JSON_ERROR
+    )
+
+
+def test_save_on_success_file_error(monkeypatch):
+    statuses = {}
+    monkeypatch.setattr(
+        Path, "open", lambda self, mode="w": (_ for _ in ()).throw(OSError("fail"))
+    )
+    assert (
+        save_on_success(statuses, IGNORED_P, ErrorCode.SUCCESS) == ErrorCode.FILE_ERROR
+    )
+
+
+def test_save_on_success_non_success(monkeypatch):
+    statuses = {}
+    assert (
+        save_on_success(statuses, IGNORED_P, ErrorCode.JSON_ERROR)
+        == ErrorCode.JSON_ERROR
+    )

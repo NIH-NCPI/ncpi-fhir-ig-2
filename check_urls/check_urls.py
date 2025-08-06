@@ -330,13 +330,103 @@ def save_statuses(dest: IO[str], statuses: StatusDict) -> ErrorCode | None:
         return ErrorCode.JSON_ERROR
 
 
-def main() -> int:
+def add_urls(
+    statuses: StatusDict, files: list[Path], ignore_file: Path | None
+) -> ErrorCode:
+    """Execute the add-urls subcommand."""
+    # TODO: implement add-urls logic
+    return ErrorCode.SUCCESS
+
+
+def fail_if_would_add(
+    statuses: StatusDict, files: list[Path], ignore_file: Path | None
+) -> ErrorCode:
+    """Execute the fail-if-would-add subcommand."""
+    # TODO: implement fail-if-would-add logic
+    return ErrorCode.SUCCESS
+
+
+def check(statuses: StatusDict, credentials: Path) -> ErrorCode:
+    """Execute the check subcommand."""
+    # TODO: implement check logic
+    return ErrorCode.SUCCESS
+
+
+def list_unarchived(statuses: StatusDict) -> ErrorCode:
+    """Execute the list-unarchived subcommand."""
+    # TODO: implement list-unarchived logic
+    return ErrorCode.SUCCESS
+
+
+def submit(statuses: StatusDict, credentials: Path) -> ErrorCode:
+    """Execute the "submit" subcommand."""
+    # TODO: implement submit logic
+    return ErrorCode.SUCCESS
+
+
+def save_on_success(
+    statuses: StatusDict, dest: Path, error_code: ErrorCode
+) -> ErrorCode:
+    """Save statuses if error_code is SUCCESS, otherwise return error_code."""
+    if error_code != ErrorCode.SUCCESS:
+        return error_code
+
+    # noinspection PyBroadException
+    try:
+        with dest.open("w") as f:
+            save_result = save_statuses(f, statuses)
+    except Exception:
+        logging.exception('Failed to save archive status file "%s".', dest)
+        return ErrorCode.FILE_ERROR
+
+    if save_result is None:
+        return ErrorCode.SUCCESS
+
+    logging.error("Error saving statuses: %s", save_result)
+    return save_result
+
+
+def main() -> ErrorCode:
     """Check the URLs according to the command line arguments.
 
-    Return a Unix status code."""
-    # TODO: implement main
-    return 0
+    Return an ErrorCode."""
+    args = parse_args()
+    # Set up logging
+    log_level = logging.DEBUG if args.verbose else logging.INFO
+    # noinspection SpellCheckingInspection
+    logging.basicConfig(
+        filename=str(args.log_file) if args.log_file else None,
+        level=log_level,
+        format="%(asctime)s %(levelname)s %(message)s",
+    )
+    # Load statuses
+    stat_path = args.archive_status_file
+    try:
+        with stat_path.open("r") as f:
+            statuses_or_error = load_statuses(f)
+    except Exception:
+        logging.exception('Failed to open archive status file "%s"', stat_path)
+        return ErrorCode.FILE_ERROR
+    if isinstance(statuses_or_error, ErrorCode):
+        logging.error("Error loading statuses: %s", statuses_or_error)
+        return statuses_or_error
+    statuses = statuses_or_error
+    # Dispatch to subcommand
+    if args.subcommand == SubCommand.ADD_URLS:
+        return save_on_success(
+            statuses, stat_path, add_urls(statuses, args.files, args.ignore_file)
+        )
+    if args.subcommand == SubCommand.FAIL_IF_WOULD_ADD:
+        return fail_if_would_add(statuses, args.files, args.ignore_file)
+    if args.subcommand == SubCommand.CHECK:
+        return save_on_success(statuses, stat_path, check(statuses, args.credentials))
+    if args.subcommand == SubCommand.LIST_UNARCHIVED:
+        return list_unarchived(statuses)
+    if args.subcommand == SubCommand.SUBMIT:
+        return save_on_success(statuses, stat_path, submit(statuses, args.credentials))
+    logging.error("Unknown subcommand: %s", args.subcommand)
+    return ErrorCode.INVALID_ARGS
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main().value)
