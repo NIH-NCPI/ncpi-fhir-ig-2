@@ -54,22 +54,27 @@ $ python check_urls.py url_archive_status.json submit --cred credentials.json
 
    On an error, the entry is left unchanged.
 """
-from dataclasses import dataclass
+
+import logging
+from dataclasses import dataclass, asdict
 from datetime import datetime
 from enum import Enum
 from pathlib import Path
 import argparse
 import sys
-from typing import TypedDict, NewType, IO
+from typing import NewType, IO
+import json
 
 
 class SubCommand(Enum):
     """A sub-command chosen from the command line."""
+
     ADD_URLS = "add-urls"
     FAIL_IF_WOULD_ADD = "fail-if-would-add"
     CHECK = "check"
     LIST_UNARCHIVED = "list-unarchived"
     SUBMIT = "submit"
+
 
 @dataclass
 class Args:
@@ -86,6 +91,7 @@ class Args:
            otherwise (INFO).
         files: The files to process for commands that require them.
     """
+
     archive_status_file: Path
     subcommand: SubCommand
     ignore_file: Path | None
@@ -94,22 +100,49 @@ class Args:
     files: list[Path]
     credentials: Path | None
 
+
 def parse_args() -> Args:
     """Return the parsed the command line arguments."""
-    parser = argparse.ArgumentParser(description="Check URLs in files and archive status.")
-    parser.add_argument("archive_status_file", type=Path, help="Path to archive status JSON file.")
-    parser.add_argument("subcommand", type=str, choices=[sc.value for sc in SubCommand], help="Subcommand to execute.")
+    parser = argparse.ArgumentParser(
+        description="Check URLs in files and archive status."
+    )
+    parser.add_argument(
+        "archive_status_file", type=Path, help="Path to archive status JSON file."
+    )
+    parser.add_argument(
+        "subcommand",
+        type=str,
+        choices=[sc.value for sc in SubCommand],
+        help="Subcommand to execute.",
+    )
     parser.add_argument("files", nargs="*", type=Path, help="Files to process.")
-    parser.add_argument("--ignore", dest="ignore_file", type=Path, help="Path to ignore file.")
-    parser.add_argument("--log-file", dest="log_file", type=Path, help="Path to log file.")
-    parser.add_argument("--verbose", action="store_true", help="Enable verbose logging.")
-    parser.add_argument("--cred", "--credentials", dest="credentials", type=Path, help="Path to credentials file.")
+    parser.add_argument(
+        "--ignore", dest="ignore_file", type=Path, help="Path to ignore file."
+    )
+    parser.add_argument(
+        "--log-file", dest="log_file", type=Path, help="Path to log file."
+    )
+    parser.add_argument(
+        "--verbose", action="store_true", help="Enable verbose logging."
+    )
+    parser.add_argument(
+        "--cred",
+        "--credentials",
+        dest="credentials",
+        type=Path,
+        help="Path to credentials file.",
+    )
     args = parser.parse_args()
 
     # Require credentials for submit and check subcommands
     subcmd = SubCommand(args.subcommand)
-    if subcmd in {SubCommand.SUBMIT, SubCommand.CHECK} and getattr(args, "credentials", None) is None:
-        parser.error(f"--cred/--credentials is required for '{subcmd.value}' subcommand.")
+    if (
+        subcmd in {SubCommand.SUBMIT, SubCommand.CHECK}
+        and getattr(args, "credentials", None) is None
+    ):
+        parser.error(
+            f"--cred/--credentials is required for '{subcmd.value}' subcommand."
+        )
 
     return Args(
         archive_status_file=args.archive_status_file,
@@ -121,12 +154,15 @@ def parse_args() -> Args:
         credentials=getattr(args, "credentials", None),
     )
 
+
 class Status(Enum):
     """A status for URLs."""
+
     UNKNOWN = "Unknown"
     SUBMITTED = "Submitted"
     SUBMISSION_FAILED = "Submission Failed"
     ARCHIVED = "Archived"
+
 
 @dataclass
 class UnknownStatus:
@@ -135,8 +171,10 @@ class UnknownStatus:
     last_check: The last time the URL was checked. (None if never checked.)
     status: The status of the URL - used to ease JSON serialization.
     """
+
     last_check: datetime | None
     status: str = Status.UNKNOWN.value
+
 
 @dataclass
 class ArchivedStatus:
@@ -146,8 +184,10 @@ class ArchivedStatus:
         last_check: The last time the URL was checked.
         status: The status of the URL - used to ease JSON serialization.
     """
+
     last_check: datetime
     status: str = Status.ARCHIVED.value
+
 
 @dataclass
 class SubmittedStatus:
@@ -159,9 +199,11 @@ class SubmittedStatus:
         job_id: The ID of the capture job.
         status: The status of the URL - used to ease JSON serialization.
     """
+
     last_check: datetime
     job_id: str
     status: str = Status.SUBMITTED.value
+
 
 @dataclass
 class SubmissionFailedStatus:
@@ -176,18 +218,22 @@ class SubmissionFailedStatus:
            the failure. It will be in JSON format.
         status: The status of the URL - used to ease JSON serialization.
     """
+
     last_check: datetime
     job_id: str
     response: str
     status: str = Status.SUBMISSION_FAILED.value
+
 
 UrlStatus = UnknownStatus | ArchivedStatus | SubmittedStatus | SubmissionFailedStatus
 
 URL = NewType("URL", str)
 StatusDict = dict[URL, UrlStatus]
 
+
 class ErrorCode(Enum):
     """An error code. Details will be written to logs"""
+
     SUCCESS = 0
     ERROR = 1
     INVALID_ARGS = 2
@@ -195,15 +241,94 @@ class ErrorCode(Enum):
     JSON_ERROR = 4
     URL_ERROR = 5
     UNHANDLED_EXCEPTION = 6
+    BAD_LAST_CHECK_TIME = 7
+    BAD_STATUS_DICT = 8
+    NOT_A_FILE = 9
+
+
+def _status_to_dict(status: UrlStatus) -> dict:
+    """Return a dict representation of a URL status.
+
+    This dict could be converted back using _status_from_dict.
+    """
+    d = asdict(status)
+    last_check: datetime | None = getattr(status, "last_check", None)
+    if isinstance(last_check, datetime):
+        d["last_check"] = d["last_check"].isoformat()
+    return d
+
+
+def _datetime_from_str(s: str | None) -> datetime | ErrorCode | None:
+    """Return s as a datetime or return an error code. Will not raise.
+
+    If s is None, return None.
+    """
+    if s is None:
+        return None
+    try:
+        # If it works, we're not worried whether s was a str
+        return datetime.fromisoformat(s)
+    except ValueError:
+        logging.error("Invalid last_check time: %s", s)
+        return ErrorCode.BAD_LAST_CHECK_TIME
+
+
+def _status_from_dict(d: dict) -> UrlStatus | ErrorCode:
+    """Load a URL status from a dict. Will not raise."""
+    logging.debug("Loading status from dict: %s", d)
+    status_type = d.get("status")
+    last_check = _datetime_from_str(d.get("last_check"))
+    if isinstance(last_check, ErrorCode):
+        return last_check
+    if status_type == Status.UNKNOWN.value:
+        return UnknownStatus(last_check=last_check)
+    if last_check is None:
+        logging.error("Missing last_check time for status: %s", status_type)
+        return ErrorCode.BAD_LAST_CHECK_TIME
+    if status_type == Status.ARCHIVED.value:
+        return ArchivedStatus(last_check=last_check)
+    if status_type == Status.SUBMITTED.value:
+        return SubmittedStatus(last_check=last_check, job_id=d["job_id"])
+    if status_type == Status.SUBMISSION_FAILED.value:
+        return SubmissionFailedStatus(
+            last_check=last_check, job_id=d["job_id"], response=d["response"]
+        )
+    return ErrorCode.BAD_STATUS_DICT
+
 
 def load_statuses(serialized_statuses: IO[str]) -> StatusDict | ErrorCode:
     """Load the URL statuses from ``serialized_statuses``."""
-    # TODO: implement load_statuses
-    return {}
+    filename = getattr(serialized_statuses, "name", "<unknown>")
+    logging.info("Loading statuses from file: %s", filename)
+    try:
+        data = json.load(serialized_statuses)
+    except json.JSONDecodeError:
+        return ErrorCode.JSON_ERROR
+    except TypeError:
+        return ErrorCode.NOT_A_FILE
+    statuses: StatusDict = {}
+    for url, status_dict in data.items():
+        result = _status_from_dict(status_dict)
+        if isinstance(result, ErrorCode):
+            return result
+        statuses[URL(url)] = result
+    return statuses
+
 
 def save_statuses(dest: IO[str], statuses: StatusDict) -> ErrorCode | None:
-    # TODO: implement save_statuses
-    return None
+    """Write the URL statuses to ``dest`` in JSON format."""
+    filename = getattr(dest, "name", "<unknown>")
+    logging.info("Saving statuses to file: %s", filename)
+    data = {str(url): _status_to_dict(status) for url, status in statuses.items()}
+    # noinspection PyBroadException
+    try:
+        # noinspection PyTypeChecker
+        json.dump(data, dest, indent=2)
+        return None
+    except Exception:
+        logging.exception('Error writing statuses to file "%s"', filename)
+        return ErrorCode.JSON_ERROR
+
 
 def main() -> int:
     """Check the URLs according to the command line arguments.
@@ -211,6 +336,7 @@ def main() -> int:
     Return a Unix status code."""
     # TODO: implement main
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
