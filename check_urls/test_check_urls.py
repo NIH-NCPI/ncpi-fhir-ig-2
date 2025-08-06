@@ -1,6 +1,7 @@
 from check_urls import main, parse_args, SubCommand
 from pathlib import Path
 import sys
+import pytest
 
 def test_main():
     assert main() == 0
@@ -43,14 +44,6 @@ def test_parse_args_fail_if_would_add(monkeypatch):
     assert args.subcommand == SubCommand.FAIL_IF_WOULD_ADD
     assert args.files == [Path("foo.md"), Path("bar.html")]
 
-def test_parse_args_check(monkeypatch):
-    test_args = [
-        "check_urls.py", "status.json", "check"
-    ]
-    monkeypatch.setattr(sys, "argv", test_args)
-    args = parse_args()
-    assert args.subcommand == SubCommand.CHECK
-    assert args.files == []
 
 def test_parse_args_list_unarchived(monkeypatch):
     test_args = [
@@ -61,11 +54,40 @@ def test_parse_args_list_unarchived(monkeypatch):
     assert args.subcommand == SubCommand.LIST_UNARCHIVED
     assert args.files == []
 
-def test_parse_args_submit(monkeypatch):
+def test_parse_args_check_with_credentials(monkeypatch):
     test_args = [
-        "check_urls.py", "status.json", "submit"
+        "check_urls.py", "status.json", "check", "--cred", "credentials.json"
+    ]
+    monkeypatch.setattr(sys, "argv", test_args)
+    args = parse_args()
+    assert args.subcommand == SubCommand.CHECK
+    assert args.credentials == Path("credentials.json")
+    assert args.files == []
+
+def test_parse_args_submit_with_credentials(monkeypatch):
+    test_args = [
+        "check_urls.py", "status.json", "submit", "--credentials", "credentials.json"
     ]
     monkeypatch.setattr(sys, "argv", test_args)
     args = parse_args()
     assert args.subcommand == SubCommand.SUBMIT
+    assert args.credentials == Path("credentials.json")
     assert args.files == []
+
+def test_parse_args_check_missing_credentials(monkeypatch):
+    test_args = [
+        "check_urls.py", "status.json", "check"
+    ]
+    monkeypatch.setattr(sys, "argv", test_args)
+    with pytest.raises(SystemExit) as e:
+        parse_args()
+    assert e.value.code != 0
+
+def test_parse_args_submit_missing_credentials(monkeypatch):
+    test_args = [
+        "check_urls.py", "status.json", "submit"
+    ]
+    monkeypatch.setattr(sys, "argv", test_args)
+    with pytest.raises(SystemExit) as e:
+        parse_args()
+    assert e.value.code != 0
