@@ -365,7 +365,7 @@ Usage: #example
 Description: "An example family relationship based on data from CBTN. This demonstrates using the extensibility to express the reverse of the unambiguous relationship convention."
 * patient = Reference(PT-006SP675)
 * extension[relative].valueReference = Reference(PT-006SP660)
-* relationship = $nci-thesaurus#C96580 "Biological Mother"
+* relationship = $nci-thesaurus-alt#C96580 "Biological Mother"
 * status = #completed
 
 
