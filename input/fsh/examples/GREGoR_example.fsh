@@ -107,9 +107,17 @@ Description: "Example patients based on data from GREGoR."
 
 Instance: gregor-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship
-Title: "An example family relationship based on data from GREGoR"
+Title: "An example family relationship (child-to-parent) based on data from GREGoR"
 Usage: #example
-Description: "An example family relationship based on data from GREGoR."
+Description: """
+An example family relationship based on data from GREGoR.
+
+GSS123456 (the patient) is male and >= 64 years old
+GSS654321 (the relative) has no information in the patient record
+This is the "mother" relationship. The relative is the mother of the patient.
+
+This instance instantiates the minimum relationship direction to reproduce a PED file.
+"""
 * patient = Reference(GSS123456)
 * extension[relative].valueReference = Reference(GSS654321)
 * relationship = $nci-thesaurus-alt#C96580 "Biological Mother"

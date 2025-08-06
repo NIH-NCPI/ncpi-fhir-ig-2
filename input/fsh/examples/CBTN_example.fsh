@@ -347,9 +347,17 @@ Description: "Example patients based on data from CBTN."
 
 Instance: cbtn-family-relationship-daughter
 InstanceOf: NcpiFamilyRelationship
-Title: "An example family relationship based on data from CBTN"
+Title: "An example family relationship (parent to child) based on data from CBTN"
 Usage: #example
-Description: "An example family relationship based on data from CBTN."
+Description: """An example family relationship based on data from CBTN.
+
+ PT-006SP675 (the relative) is female and 5 years old
+ PT-006SP660 (the patient) is female and 17 years old
+ This is the "daughter" relationship. The relative is the daughter of the patient.
+
+ This demonstrates using extensibility to express the reverse of the
+ minimum relationship convention.
+ """
 * patient = Reference(PT-006SP660)
 * extension[relative].valueReference = Reference(PT-006SP675)
 // Extensibility to express the reverse of the unambiguous relationship convention
@@ -360,9 +368,16 @@ Description: "An example family relationship based on data from CBTN."
 
 Instance: cbtn-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship
-Title: "An example family relationship based on data from CBTN"
+Title: "An example family relationship (child to parent) based on data from CBTN"
 Usage: #example
-Description: "An example family relationship based on data from CBTN. This demonstrates using the extensibility to express the reverse of the unambiguous relationship convention."
+Description: """An example family relationship based on data from CBTN.
+
+PT-006SP675 (the patient) is female and 5 years old
+PT-006SP660 (the relative) is female and 17 years old
+This is the "mother" relationship. The relative is the mother of the patient.
+
+This instance instantiates the minimum relationship direction to reproduce a PED file.
+"""
 * patient = Reference(PT-006SP675)
 * extension[relative].valueReference = Reference(PT-006SP660)
 * relationship = $nci-thesaurus-alt#C96580 "Biological Mother"
