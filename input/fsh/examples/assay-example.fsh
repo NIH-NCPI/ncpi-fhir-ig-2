@@ -273,7 +273,7 @@ InstanceOf: NcpiFile
 Title: "Example file created by assay t2"
 Usage: #example
 Description: "Example file created by assay t2, associated with a group"
-* identifier.value = "f2"
+* identifier.value = "f3"
 * subject = Reference(Group/rs1-g1)
 * status = #current
 * content[+]
