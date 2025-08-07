@@ -56,14 +56,19 @@ $ python check_urls.py url_archive_status.json submit --cred credentials.json
 """
 
 import logging
+import re
 from dataclasses import dataclass, asdict
 from datetime import datetime
 from enum import Enum
 from pathlib import Path
 import argparse
 import sys
-from typing import NewType, IO
+from re import Pattern
+from typing import NewType, IO, Any
 import json
+
+import markdown
+from bs4 import BeautifulSoup
 
 
 class SubCommand(Enum):
@@ -344,11 +349,138 @@ def save_statuses(dest: IO[str], statuses: StatusDict) -> ErrorCode | None:
         return ErrorCode.JSON_ERROR
 
 
+def _pat(x: Any) -> Pattern | None:
+    """Return a Pattern object corresponding to x or None on error.
+
+    Intended for when x is a string holding a regular expression.
+    """
+    # noinspection PyBroadException
+    try:
+        return re.compile(str(x))
+    except Exception:
+        logging.exception('Failed to compile regex "%s"', x)
+        return None
+
+
+def read_ignore_file(ignore_file: Path | None) -> list[Pattern]:
+    """Read ignore regexes from a JSON file. Returns a list of regex strings."""
+    logging.info("Reading ignore file: %s", ignore_file)
+    if ignore_file is None:
+        logging.debug("No ignore file specified.")
+        return []
+    # noinspection PyBroadException
+    try:
+        with ignore_file.open("r") as f:
+            s = f.read()
+            data = json.loads(s)
+    except Exception:
+        logging.exception('Failed to read ignore file "%s"', ignore_file)
+        return []
+
+    if not isinstance(data, list):
+        logging.debug("Ignore file is not a list.")
+        return []
+    maybe_pats = (_pat(x) for x in data)
+    return [p for p in maybe_pats if p is not None]
+
+
+def extract_urls_from_fsh(file: Path) -> list[str]:
+    """Extract URLs from a FHIR shorthand (FSH) file.
+
+    Uses a simple regular expression to find URLs, so might miss some."""
+    url_pattern = re.compile("(https?://[^\")'\t ]+)")
+    # noinspection PyBroadException
+    try:
+        with file.open("r") as f:
+            matches = filter(bool, (url_pattern.search(line) for line in f))
+            return [match.group(1) for match in matches]
+    except Exception:
+        logging.exception('Failed to read FSH file "%s"', file)
+        return []
+
+
+def extract_urls_from_soup(soup: BeautifulSoup) -> list[str]:
+    """Extract URLs from a BeautifulSoup object."""
+    urls = set()
+    # Extract from <a href>
+    for tag in soup.find_all("a", href=True):
+        urls.add(tag["href"])
+    # Extract from <img src>
+    for tag in soup.find_all("img", src=True):
+        urls.add(tag["src"])
+    # Extract from <link href>
+    for tag in soup.find_all("link", href=True):
+        urls.add(tag["href"])
+    # Extract from <script src>
+    for tag in soup.find_all("script", src=True):
+        urls.add(tag["src"])
+    # Only keep http/https URLs
+    # noinspection HttpUrlsUsage
+    return [u for u in urls if u.startswith("http://") or u.startswith("https://")]
+
+
+def extract_urls_from_html(file: Path) -> list[str]:
+    """Extract URLs from an HTML"""
+    # noinspection PyBroadException
+    try:
+        with file.open("r") as f:
+            soup = BeautifulSoup(f, "html.parser")
+    except Exception:
+        logging.exception('Failed to read HTML file "%s"', file)
+        return []
+
+    return extract_urls_from_soup(soup)
+
+
+def extract_urls_from_md(file: Path) -> list[str]:
+    """Extract URLs from a Markdown file (http/https only)."""
+    # noinspection PyBroadException
+    try:
+        with file.open("r") as f:
+            html = markdown.markdown(f.read())
+        soup = BeautifulSoup(html, "html.parser")
+    except Exception:
+        logging.exception('Failed to read Markdown file "%s"', file)
+        return []
+
+    return extract_urls_from_soup(soup)
+
+
 def add_urls(
     statuses: StatusDict, files: list[Path], ignore_file: Path | None
 ) -> ErrorCode:
-    """Execute the add-urls subcommand."""
-    # TODO: implement add-urls logic
+    """Execute the add-urls subcommand.
+
+    Args:
+        statuses: The statuses to update. Will be modified.
+        files: The files to process. Must be HTML, FSH, or Markdown
+          where the type is determined by the file extension.
+        ignore_file: The path to the JSON file containing regular expressions
+          to ignore URLs.
+    """
+    ignore_regexes = read_ignore_file(ignore_file)
+
+    def is_included(s: str) -> bool:
+        return not any(r.match(s) for r in ignore_regexes)
+
+    extractors = {
+        ".html": extract_urls_from_html,
+        ".htm": extract_urls_from_html,
+        ".md": extract_urls_from_md,
+        ".fsh": extract_urls_from_fsh,
+    }
+    for file in files:
+        logging.debug('Adding URLs from: "%s"', file)
+        extractor = extractors.get(file.suffix.lower())
+        if not extractor:
+            logging.error('Unrecognized file type: "%s"', file.suffix)
+            continue
+
+        urls = map(lambda s: URL(s), filter(is_included, extractor(file)))
+        missing = filter(lambda u: u not in statuses, urls)
+        for url in missing:
+            logging.debug('Adding URL: "%s"', url)
+            statuses[url] = UnknownStatus(last_check=None)
     return ErrorCode.SUCCESS
 
 

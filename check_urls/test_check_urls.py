@@ -1,3 +1,6 @@
+import json
+import logging
+import re
 from unittest.mock import MagicMock
 
 from check_urls import (
@@ -8,6 +11,11 @@ from check_urls import (
     _status_from_dict,
     Status,
     save_on_success,
+    read_ignore_file,
+    extract_urls_from_fsh,
+    extract_urls_from_html,
+    extract_urls_from_md,
+    add_urls,
 )
 from pathlib import Path
 import sys
@@ -281,24 +289,7 @@ def patch_parse_args(monkeypatch):
     return args
 
 
-@pytest.fixture(autouse=True)
-def patch_logging(monkeypatch):
-    monkeypatch.setattr(
-        sys.modules["check_urls"].logging, "basicConfig", lambda **kwargs: None
-    )
-    monkeypatch.setattr(sys.modules["check_urls"].logging, "info", lambda *a, **k: None)
-    monkeypatch.setattr(
-        sys.modules["check_urls"].logging, "error", lambda *a, **k: None
-    )
-    monkeypatch.setattr(
-        sys.modules["check_urls"].logging, "exception", lambda *a, **k: None
-    )
-    monkeypatch.setattr(
-        sys.modules["check_urls"].logging, "debug", lambda *a, **k: None
-    )
-
-
-@pytest.fixture(autouse=True)
+@pytest.fixture
 def patch_open(monkeypatch):
     monkeypatch.setattr(Path, "open", lambda self, mode="r": io.StringIO("{}"))
 
@@ -319,7 +310,7 @@ def patch_load_save(monkeypatch):
         (SubCommand.SUBMIT, "submit"),
     ],
 )
-def test_main_success(monkeypatch, patch_parse_args, subcommand, handler):
+def test_main_success(monkeypatch, patch_open, patch_parse_args, subcommand, handler):
     patch_parse_args["value"] = make_args(
         subcommand,
         credentials=Path("cred.json")
@@ -339,7 +330,7 @@ def test_main_success(monkeypatch, patch_parse_args, subcommand, handler):
     assert main() == ErrorCode.SUCCESS
 
 
-def test_main_save_error(monkeypatch, patch_parse_args):
+def test_main_save_error(monkeypatch, patch_parse_args, patch_open):
     patch_parse_args["value"] = make_args(SubCommand.ADD_URLS)
     monkeypatch.setattr(
         sys.modules["check_urls"], "add_urls", lambda *a, **k: ErrorCode.SUCCESS
@@ -350,7 +341,7 @@ def test_main_save_error(monkeypatch, patch_parse_args):
     assert main() == ErrorCode.JSON_ERROR
 
 
-def test_main_load_error(monkeypatch, patch_parse_args):
+def test_main_load_error(monkeypatch, patch_parse_args, patch_open):
     patch_parse_args["value"] = make_args(SubCommand.ADD_URLS)
     monkeypatch.setattr(
         sys.modules["check_urls"], "load_statuses", lambda f: ErrorCode.JSON_ERROR
@@ -366,7 +357,7 @@ def test_main_file_open_error(monkeypatch, patch_parse_args):
     assert main() == ErrorCode.FILE_ERROR
 
 
-def test_main_invalid_subcommand(monkeypatch, patch_parse_args):
+def test_main_invalid_subcommand(monkeypatch, patch_parse_args, patch_open):
     class DummySubCommand:
         value = "dummy"
 
@@ -411,3 +402,191 @@ def test_save_on_success_non_success(monkeypatch):
         save_on_success(statuses, IGNORED_P, ErrorCode.JSON_ERROR)
         == ErrorCode.JSON_ERROR
     )
+
+
+def test_read_ignore_file_none(tmp_path):
+    assert read_ignore_file(None) == []
+
+
+def write(path: Path, content: str):
+    """The pytest tmp_path write_text is buggy, so this substitutes"""
+    with path.open("w") as f:
+        f.write(content)
+
+
+def test_read_ignore_file_valid(tmp_path):
+    ignore_file = tmp_path / "ignore.json"
+    write(ignore_file, '["^https://example.com", "(", "^https://foo.com"]')
+    result = read_ignore_file(ignore_file)
+    assert result == list(map(re.compile, ("^https://example.com", "^https://foo.com")))
+
+
+def test_read_ignore_file_invalid_json(tmp_path):
+    ignore_file = tmp_path / "ignore.json"
+    write(ignore_file, "not a json")
+    result = read_ignore_file(ignore_file)
+    assert result == []
+
+
+def test_read_ignore_file_not_list(tmp_path):
+    ignore_file = tmp_path / "ignore.json"
+    write(ignore_file, '{"foo": "bar"}')
+    result = read_ignore_file(ignore_file)
+    assert result == []
+
+
+# noinspection HttpUrlsUsage
+def test_extract_urls_from_fsh(tmp_path):
+    fsh_content = """
+    * url = "https://example.com/abc"
+    // http://foo.org/#bar"
+    url: "https://bar.com/baz"
+    irrelevant line
+    * url = "not-a-url"
+    """
+    fsh_file = tmp_path / "test.fsh"
+    write(fsh_file, fsh_content)
+    urls = extract_urls_from_fsh(fsh_file)
+    assert "https://example.com/abc" in urls
+    assert "http://foo.org/#bar" in urls
+    assert "https://bar.com/baz" in urls
+    assert "not-a-url" not in urls
+    assert len(urls) == 3
+
+
+def test_extract_urls_from_fsh_exception(monkeypatch, tmp_path):
+    bad_file = BadPath(tmp_path / "bad.fsh")
+    assert [] == extract_urls_from_fsh(bad_file)
+
+
+# noinspection HttpUrlsUsage
+def test_extract_urls_from_html(tmp_path):
+    html_content = """
+    <html>
+      <body>
+        <a href="https://example.com/page1">Link1</a>
+        <a href="http://foo.org/page2">Link2</a>
+        <img src="https://img.com/img.png" />
+        <link href="https://cdn.com/style.css" rel="stylesheet" />
+        <script src="https://js.com/script.js"></script>
+        <a href="/relative/path">Relative</a>
+      </body>
+    </html>
+    """
+    html_file = tmp_path / "test.html"
+    write(html_file, html_content)
+    urls = extract_urls_from_html(html_file)
+    assert "https://example.com/page1" in urls
+    assert "http://foo.org/page2" in urls
+    assert "https://img.com/img.png" in urls
+    assert "https://cdn.com/style.css" in urls
+    assert "https://js.com/script.js" in urls
+    # Should not include relative URLs
+    assert "/relative/path" not in urls
+    assert len(urls) == 5
+
+
+def test_extract_urls_from_md(tmp_path):
+    md_content = """
+[Google](https://google.com)
+![Image](https://img.com/pic.png)
+[Relative](/local/path)
+[Mailto](mailto:someone@example.com)
+[FTP](ftp://ftp.example.com)
+[out-of-line][ool]
+[ool]: https://out-of-line.com
+"""
+    md_file = tmp_path / "test.md"
+    write(md_file, md_content)
+
+    urls = extract_urls_from_md(md_file)
+    assert "https://google.com" in urls
+    assert "https://img.com/pic.png" in urls
+    assert "https://out-of-line.com" in urls
+    assert "/local/path" not in urls
+    assert "mailto:someone@example.com" not in urls
+    assert "ftp://ftp.example.com" not in urls
+    assert len(urls) == 3
+
+
+class BadPath(Path):
+    def open(self, mode="r", **kwargs):
+        raise OSError("fail to open file")
+
+
+def test_extract_urls_from_html_exception(monkeypatch, tmp_path):
+    bad_file = BadPath(tmp_path / "bad.html")
+    assert extract_urls_from_html(bad_file) == []
+
+
+def test_extract_urls_from_md_exception(tmp_path):
+    bad_file = BadPath(tmp_path / "bad.md")
+    assert extract_urls_from_md(bad_file) == []
+
+
+def test_add_urls_basic(monkeypatch, tmp_path):
+    # Create a Markdown file with two URLs
+    md_file = tmp_path / "test.md"
+    write(
+        md_file,
+        """
+[L1](https://foo.com)
+[L2](https://bar.com)
+[L3](https://baz.com)
+""",
+    )
+    dt = datetime(2024, 1, 1)
+    statuses = {
+        URL("https://baz.com"): UnknownStatus(last_check=dt),
+    }
+    result = add_urls(statuses, [md_file], None)
+    assert result == ErrorCode.SUCCESS
+    assert statuses == {
+        URL("https://baz.com"): UnknownStatus(last_check=dt),
+        URL("https://foo.com"): UnknownStatus(last_check=None),
+        URL("https://bar.com"): UnknownStatus(last_check=None),
+    }
+
+
+def test_add_urls_ignore(monkeypatch, tmp_path):
+    md_file = tmp_path / "test.md"
+    write(
+        md_file,
+        """
+[Link1](https://foo.com)
+[Link2](https://bar.com)
+""",
+    )
+    ignore_file = tmp_path / "ignore.json"
+    write(ignore_file, json.dumps(["^https://foo.com"]))
+    statuses = {}
+    result = add_urls(statuses, [md_file], ignore_file)
+    assert result == ErrorCode.SUCCESS
+    assert URL("https://foo.com") not in statuses
+    assert URL("https://bar.com") in statuses
+
+
+def test_add_urls_unsupported_file(monkeypatch, tmp_path, caplog):
+    caplog.set_level(logging.ERROR)
+    txt_file = tmp_path / "test.txt"
+    write(txt_file, "https://foo.com")
+    statuses = {}
+    result = add_urls(statuses, [txt_file], None)
+    assert result == ErrorCode.SUCCESS
+    assert statuses == {}
+    assert "Unrecognized file type" in caplog.text
+
+
+def test_add_urls_multiple_types(monkeypatch, tmp_path):
+    md_file = tmp_path / "test.md"
+    html_file = tmp_path / "test.html"
+    fsh_file = tmp_path / "test.fsh"
+    write(md_file, "[Link](https://md.com)")
+    write(html_file, '<a href="https://html.com">Link</a>')
+    write(fsh_file, '* url = "https://fsh.com"')
+    statuses = {}
+    result = add_urls(statuses, [md_file, html_file, fsh_file], None)
+    assert result == ErrorCode.SUCCESS
+    assert URL("https://md.com") in statuses
+    assert URL("https://html.com") in statuses
+    assert URL("https://fsh.com") in statuses
