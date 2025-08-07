@@ -16,6 +16,7 @@ from check_urls import (
     extract_urls_from_html,
     extract_urls_from_md,
     add_urls,
+    fail_if_would_add,
 )
 from pathlib import Path
 import sys
@@ -574,7 +575,7 @@ def test_add_urls_unsupported_file(monkeypatch, tmp_path, caplog):
     result = add_urls(statuses, [txt_file], None)
     assert result == ErrorCode.SUCCESS
     assert statuses == {}
-    assert "Unrecognized file type" in caplog.text
+    assert "unrecognized file type" in caplog.text
 
 
 def test_add_urls_multiple_types(monkeypatch, tmp_path):
@@ -590,3 +591,46 @@ def test_add_urls_multiple_types(monkeypatch, tmp_path):
     assert URL("https://md.com") in statuses
     assert URL("https://html.com") in statuses
     assert URL("https://fsh.com") in statuses
+
+
+def test_fail_if_would_add_no_new_urls(tmp_path):
+    md_file = tmp_path / "test.md"
+    write(md_file, "[L1](https://foo.com)")
+    statuses = {URL("https://foo.com"): UnknownStatus(last_check=None)}
+    result = fail_if_would_add(statuses, [md_file], None)
+    assert result == ErrorCode.SUCCESS
+
+
+def test_fail_if_would_add_new_url(tmp_path):
+    md_file = tmp_path / "test.md"
+    write(md_file, "[L1](https://foo.com) [L2](https://bar.com)")
+    statuses = {URL("https://foo.com"): UnknownStatus(last_check=None)}
+    result = fail_if_would_add(statuses, [md_file], None)
+    assert result != ErrorCode.SUCCESS
+
+
+def test_fail_if_would_add_ignored_url(tmp_path):
+    md_file = tmp_path / "test.md"
+    write(md_file, "[L1](https://foo.com) [L2](https://bar.com)")
+    ignore_file = tmp_path / "ignore.json"
+    write(ignore_file, json.dumps(["^https://bar.com"]))
+    statuses = {URL("https://foo.com"): UnknownStatus(last_check=None)}
+    result = fail_if_would_add(statuses, [md_file], ignore_file)
+    assert result == ErrorCode.SUCCESS
+
+
+def test_fail_if_would_add_unsupported_file(tmp_path, caplog):
+    caplog.set_level(logging.ERROR)
+    txt_file = tmp_path / "test.txt"
+    write(txt_file, "https://foo.com")
+    statuses = {}
+    result = fail_if_would_add(statuses, [txt_file], None)
+    assert result == ErrorCode.SUCCESS
+    assert "unrecognized file type" in caplog.text
+
+
+def test_fail_if_would_add_exception(tmp_path):
+    bad_file = BadPath(tmp_path / "bad.md")
+    statuses = {}
+    result = fail_if_would_add(statuses, [bad_file], None)
+    assert result == ErrorCode.SUCCESS

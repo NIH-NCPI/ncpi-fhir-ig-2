@@ -57,6 +57,7 @@ $ python check_urls.py url_archive_status.json submit --cred credentials.json
 
 import logging
 import re
+from collections.abc import Iterable, Callable
 from dataclasses import dataclass, asdict
 from datetime import datetime
 from enum import Enum
@@ -254,15 +255,13 @@ class ErrorCode(Enum):
     """An error code. Details will be written to logs"""
 
     SUCCESS = 0
-    ERROR = 1
     INVALID_ARGS = 2
     FILE_ERROR = 3
     JSON_ERROR = 4
-    URL_ERROR = 5
-    UNHANDLED_EXCEPTION = 6
     BAD_LAST_CHECK_TIME = 7
     BAD_STATUS_DICT = 8
     NOT_A_FILE = 9
+    WOULD_ADD_URLS = 10
 
 
 def _status_to_dict(status: UrlStatus) -> dict:
@@ -446,10 +445,13 @@ def extract_urls_from_md(file: Path) -> list[str]:
     return extract_urls_from_soup(soup)
 
 
-def add_urls(
-    statuses: StatusDict, files: list[Path], ignore_file: Path | None
+def _call_on_missing_for_missing_urls(
+    statuses: StatusDict,
+    files: list[Path],
+    ignore_file: Path | None,
+    on_missing: Callable[[StatusDict, Iterable[URL]], ErrorCode],
 ) -> ErrorCode:
-    """Execute the add-urls subcommand.
+    """Find the URLs that are missing from statuses and call on_missing.
 
     Args:
         statuses: The statuses to update. Will be modified.
@@ -457,6 +459,12 @@ def add_urls(
           where the type is determined by the file extension.
         ignore_file: The path to the JSON file containing regular expressions
           to ignore URLs.
+        on_missing: A function that takes the statuses and the missing URLs
+          and returns an ErrorCode. If the returned ErrorCode is not SUCCESS,
+          _call_for_missing_urls will immediately return that ErrorCode.
+          Otherwise, it will continue to process the remaining files and
+          URLs. ``on_missing`` may update ``statuses``. The collection of
+          missing URLs may be empty.
     """
     ignore_regexes = read_ignore_file(ignore_file)
 
@@ -473,23 +481,68 @@ def add_urls(
         logging.debug('Adding URLs from: "%s"', file)
         extractor = extractors.get(file.suffix.lower())
         if not extractor:
-            logging.error('Unrecognized file type: "%s"', file.suffix)
+            logging.error('Ignoring unrecognized file type: "%s" from "%s"',
+                          file.suffix, file)
             continue
 
         urls = map(lambda s: URL(s), filter(is_included, extractor(file)))
         missing = filter(lambda u: u not in statuses, urls)
-        for url in missing:
-            logging.debug('Adding URL: "%s"', url)
-            statuses[url] = UnknownStatus(last_check=None)
+        rv = on_missing(statuses, missing)
+        if rv != ErrorCode.SUCCESS:
+            return rv
     return ErrorCode.SUCCESS
+
+
+def add_urls_on_missing(statuses: StatusDict, missing: Iterable[URL]) -> ErrorCode:
+    """Callback to execute the add-urls subcommand.
+
+    Adds all the URLs in missing to statuses as unknown and then
+    returns ErrorCode.SUCCESS.
+    """
+    for url in missing:
+        logging.debug('Adding URL: "%s"', url)
+        statuses[url] = UnknownStatus(last_check=None)
+    return ErrorCode.SUCCESS
+
+
+def return_error_on_missing(
+    _ignored_statuses: StatusDict, missing: Iterable[URL]
+) -> ErrorCode:
+    """Callback to execute the fail-if-would-add subcommand.
+
+    Return ErrorCode.SUCCESS if missing is empty, otherwise return
+    ErrorCode.WOULD_ADD_URLS
+    """
+    for url in missing:
+        logging.error("Missing URL: %s", url)
+        return ErrorCode.WOULD_ADD_URLS
+    return ErrorCode.SUCCESS  # missing is empty
+
+
+def add_urls(
+    statuses: StatusDict, files: list[Path], ignore_file: Path | None
+) -> ErrorCode:
+    """Execute the add-urls subcommand.
+
+    Args:
+        statuses: The statuses to update. Will be modified.
+        files: The files to process. Must be HTML, FSH, or Markdown
+          where the type is determined by the file extension.
+        ignore_file: The path to the JSON file containing regular expressions
+          to ignore URLs.
+    """
+    return _call_on_missing_for_missing_urls(
+        statuses, files, ignore_file, add_urls_on_missing
+    )
 
 
 def fail_if_would_add(
     statuses: StatusDict, files: list[Path], ignore_file: Path | None
 ) -> ErrorCode:
     """Execute the fail-if-would-add subcommand."""
-    # TODO: implement fail-if-would-add logic
-    return ErrorCode.SUCCESS
+    return _call_on_missing_for_missing_urls(
+        statuses, files, ignore_file, return_error_on_missing
+    )
 
 
 def check(statuses: StatusDict, credentials: Path) -> ErrorCode:
@@ -552,7 +605,9 @@ def main() -> ErrorCode:
         with stat_path.open("r") as f:
             statuses_or_error = load_statuses(f)
     except FileNotFoundError:
-        logging.warning('Archive status file "%s" not found. Treating as empty.', stat_path)
+        logging.warning(
+            'Archive status file "%s" not found. Treating as empty.', stat_path
+        )
         statuses_or_error = {}
     except Exception:
         logging.exception('Failed to open archive status file "%s"', stat_path)
