@@ -118,9 +118,12 @@ def test_parse_args_submit_with_credentials(monkeypatch):
 def test_parse_args_check_missing_credentials(monkeypatch):
     test_args = ["check_urls.py", "status.json", "check"]
     monkeypatch.setattr(sys, "argv", test_args)
-    with pytest.raises(SystemExit) as e:
-        parse_args()
-    assert e.value.code != 0
+    args = parse_args()
+    assert args.subcommand == SubCommand.CHECK
+    assert args.credentials is None
+    assert args.files == []
+    # TODO: when we make the check subcommand also check Submission status
+    #       update this to expect an exception with `e.value.code != 0`
 
 
 def test_parse_args_submit_missing_credentials(monkeypatch):

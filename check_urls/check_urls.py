@@ -18,6 +18,9 @@ $ python check_urls.py url_archive_status.json fail-if-would-add --ignore ignore
 
 $ python check_urls.py url_archive_status.json check --cred credentials.json
 
+   TODO: currently ignores the credentials and does not check the status of
+           capture jobs.
+
    Every URL in archive_status.json with a status of "Unknown" is checked to
    see if it is stored in the Internet Archive WayBack machine as long as it
    hasn't been checked in the last day. It also checks the capture status of
@@ -159,9 +162,12 @@ def parse_args() -> Args:
         subcmd in {SubCommand.SUBMIT, SubCommand.CHECK}
         and getattr(args, "credentials", None) is None
     ):
-        parser.error(
-            f"--cred/--credentials is required for '{subcmd.value}' subcommand."
-        )
+        if subcmd == SubCommand.SUBMIT:
+            # TODO: When we enable checking of submitted jobs, remove this if
+            #       and require credentials for CHECK commands as well.
+            parser.error(
+                f"--cred/--credentials is required for '{subcmd.value}' subcommand."
+            )
 
     # Extension check for add-urls and fail-if-would-add
     if subcmd in {SubCommand.ADD_URLS, SubCommand.FAIL_IF_WOULD_ADD}:
@@ -560,6 +566,7 @@ AVAIL_API_URL = "https://archive.org/wayback/available"
 
 def check(statuses: StatusDict, requests_per_second: float) -> ErrorCode:
     """Execute the check subcommand using Wayback Availability API."""
+    logging.warning("Currently does not check the status of capture jobs.")
     logging.info("Checking URLs.")
     session = LimiterSession(per_second=requests_per_second)
     # Only check URLs that were never checked or last_check > 1 day ago
