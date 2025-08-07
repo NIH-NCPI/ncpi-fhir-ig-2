@@ -59,7 +59,7 @@ import logging
 import re
 from collections.abc import Iterable, Callable
 from dataclasses import dataclass, asdict
-from datetime import datetime
+from datetime import datetime, timedelta
 from enum import Enum
 from pathlib import Path
 import argparse
@@ -562,8 +562,13 @@ def check(statuses: StatusDict, requests_per_second: float) -> ErrorCode:
     """Execute the check subcommand using Wayback Availability API."""
     logging.info("Checking URLs.")
     session = LimiterSession(per_second=requests_per_second)
+    # Only check URLs that were never checked or last_check > 1 day ago
+    one_day_ago = datetime.now().astimezone() - timedelta(days=1)
     urls_to_check = (
-        url for url, status in statuses.items() if isinstance(status, UnknownStatus)
+        url for url, status in statuses.items()
+        if isinstance(status, UnknownStatus) and (
+            status.last_check is None or status.last_check < one_day_ago
+        )
     )
     num_checked = 0
     for url in urls_to_check:
