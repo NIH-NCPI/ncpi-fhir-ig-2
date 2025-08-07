@@ -655,3 +655,33 @@ def test_check_is_available(monkeypatch):
     result = check(statuses, requests_per_second=10)
     assert isinstance(statuses[URL("https://example.com")], ArchivedStatus)
     assert result == ErrorCode.SUCCESS
+
+
+def test_check_skips_recently_checked(monkeypatch):
+    # Prepare a fake LimiterSession that should NOT be called
+    fake_session = Mock()
+    fake_session.get.side_effect = Exception("Should not be called")
+    monkeypatch.setattr(sys.modules["check_urls"], "LimiterSession", fake_session)
+
+    # URL checked just now, should be skipped
+    now = datetime.now().astimezone()
+    statuses = {URL("https://example.com"): UnknownStatus(last_check=now)}
+    result = check(statuses, requests_per_second=10)
+    assert statuses[URL("https://example.com")].last_check == now
+    assert result == ErrorCode.SUCCESS
+
+
+def test_check_skips_recently_submitted(monkeypatch):
+    # Prepare a fake LimiterSession that should NOT be called
+    fake_session = Mock()
+    fake_session.get.side_effect = Exception("Should not be called")
+    monkeypatch.setattr(sys.modules["check_urls"], "LimiterSession", fake_session)
+
+    # The URL was submitted just now, it should be skipped
+    now = datetime.now().astimezone()
+    statuses = {
+        URL("https://submitted.com"): SubmittedStatus(last_check=now, job_id="ignored")
+    }
+    result = check(statuses, requests_per_second=10)
+    assert statuses[URL("https://submitted.com")].last_check == now
+    assert result == ErrorCode.SUCCESS
