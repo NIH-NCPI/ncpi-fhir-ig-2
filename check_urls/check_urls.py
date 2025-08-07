@@ -547,9 +547,13 @@ def main() -> ErrorCode:
     )
     # Load statuses
     stat_path = args.archive_status_file
+    # noinspection PyBroadException
     try:
         with stat_path.open("r") as f:
             statuses_or_error = load_statuses(f)
+    except FileNotFoundError:
+        logging.warning('Archive status file "%s" not found. Treating as empty.', stat_path)
+        statuses_or_error = {}
     except Exception:
         logging.exception('Failed to open archive status file "%s"', stat_path)
         return ErrorCode.FILE_ERROR
