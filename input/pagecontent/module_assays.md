@@ -86,7 +86,7 @@ GET /Task?for=Group/rs1-g1&_include=Task:output
 ### 6. Find all tasks instantiating a specific ActivityDefinition
 
 ```http
-GET /Task?instantiates-canonical=
+GET /Task?instantiates-canonical=http://example.org/ActivityDefinition/assay-protocol-1
 ```
 
 ### 7. Find all tasks with a specific output DocumentReference
