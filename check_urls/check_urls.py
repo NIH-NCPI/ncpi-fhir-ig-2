@@ -350,7 +350,7 @@ def save_statuses(dest: IO[str], statuses: StatusDict) -> ErrorCode | None:
     # noinspection PyBroadException
     try:
         # noinspection PyTypeChecker
-        json.dump(data, dest, indent=2)
+        json.dump(data, dest, indent=2, sort_keys=True)
         return None
     except Exception:
         logging.exception('Error writing statuses to file "%s"', filename)
