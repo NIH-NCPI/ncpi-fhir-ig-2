@@ -18,6 +18,7 @@ from check_urls import (
     add_urls,
     fail_if_would_add,
     check,
+    list_unarchived,
 )
 from pathlib import Path
 import sys
@@ -685,3 +686,30 @@ def test_check_skips_recently_submitted(monkeypatch):
     result = check(statuses, requests_per_second=10)
     assert statuses[URL("https://submitted.com")].last_check == now
     assert result == ErrorCode.SUCCESS
+
+
+def test_list_unarchived_prints_correct_urls(capsys):
+    statuses = {
+        URL("https://example.com/unknown"): UnknownStatus(last_check=None),
+        URL("https://example.com/archived"): ArchivedStatus(
+            last_check=datetime(2024, 1, 1, 12, 0, 0)
+        ),
+        URL("https://example.com/submitted"): SubmittedStatus(
+            last_check=datetime(2024, 1, 2, 13, 0, 0), job_id="job123"
+        ),
+        URL("https://example.com/failed"): SubmissionFailedStatus(
+            last_check=datetime(2024, 1, 3, 14, 0, 0),
+            job_id="job456",
+            response='{"error":true}',
+        ),
+    }
+
+    list_unarchived(statuses)
+    captured = capsys.readouterr()
+    output_lines = set(captured.out.strip().split("\n"))
+    expected = {
+        "https://example.com/unknown",
+        "https://example.com/submitted",
+        "https://example.com/failed",
+    }
+    assert output_lines == expected

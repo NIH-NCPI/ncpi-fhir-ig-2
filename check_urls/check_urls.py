@@ -608,7 +608,14 @@ def check(statuses: StatusDict, requests_per_second: float) -> ErrorCode:
 
 def list_unarchived(statuses: StatusDict) -> ErrorCode:
     """Execute the list-unarchived subcommand."""
-    # TODO: implement list-unarchived logic
+    unarchived_statuses = {
+        Status.UNKNOWN.value,
+        Status.SUBMITTED.value,
+        Status.SUBMISSION_FAILED.value,
+    }
+    for url, status in statuses.items():
+        if getattr(status, "status", None) in unarchived_statuses:
+            print(url)
     return ErrorCode.SUCCESS
 
 
