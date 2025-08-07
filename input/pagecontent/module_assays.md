@@ -1,249 +1,147 @@
 # Informatics Assay Requests
+# 🧬 Modeling Informatics Assays with NcpiAssayTask
 
-## 🧬 Modeling Assays in FHIR - Key Features of `NcpiAssay`
+## Overview
 
+The `NcpiAssayTask` resource is a condensed FHIR representation of research assay events. It integrates **what was performed**, **on whom**, **using what parameters**, and **producing what results** — all within a single Task-derived structure.
 
-The assay—including the order, the structured results, and linked raw outputs—is represented in FHIR using a set of interconnected resources.
-
-### Core Resource Mapping
-
-| Concept                  | FHIR Resource           | Role in the Model                           |
-|--------------------------|--------------------------|---------------------------------------------|
-| Patient                  | `Patient`               | Recipient of assay                          |
-| Specimen                 | `Specimen`              | Biological sample being tested              |
-| Assay definition         | `ActivityDefinition`    | Template for assay configuration            |
-| Assay request            | `ServiceRequest`        | Formal order for the assay                  |
-| Assay result             | `DiagnosticReport`      | Summary and interpretation container        |
-| Structured findings      | `Observation`           | Genomic variants, implications, annotations, scalar values |
-| Raw/complementary files | `DocumentReference`     | Linked external files like VCFs or PDFs     |
-
-> ⚠️ **Use `Task` for workflow tracking only. For searchable and traceable data, use `ServiceRequest`, `Observation`, and `DiagnosticReport`.**
+This model eliminates the need for separate `ServiceRequest` and `DiagnosticReport` resources, while making use of `ActivityDefinition` as an optional reusable reference.
 
 ---
 
-## 📌 Resource Descriptions
+## 🔑 Core Resource Roles
 
-
-* Assay results are captured in the `DiagnosticReport` resource, which summarizes the findings and MAY include links to structured results in the `Observation` resource.
-  * Temporal ordering of assay results is captured in the `DiagnosticReport.extension.age`property, which is an `Age` type.
-  * For R4 implementations, the `DocumentReference.context` resource is used to the DiagnosticReport and ServiceRequest. 
-  * In R5+ implementations, links to the DocumentReference are captured in the `DiagnosticReport.media`field
-
-### `Patient`
-Represents the individual receiving care or study. Connects to all clinical or assay-related resources.
-
-### `Specimen`
-Represents the collected biological material. Includes collection method, processing, and origin.
-
-### `Group`
-Represents a cohort of patients or specimens. Useful for studies involving multiple subjects or samples.
-
-### `ActivityDefinition`
-Defines what an assay *is*: a reusable, protocol-based template, specifies *what* was done..
-* The `url` of the `NcpiAssay` profile captures the specific assay definition.
-* The `code` of the `NcpiAssay` profile captures the assay type, such as "Whole Genome Sequencing" or "RNA Sequencing" - ideally specified by the [EDAM ontology](https://edamontology.github.io/edam-browser/). 
-
-
-### `ServiceRequest`
-* The `NcpiAssayRequest` profile is based on the `ServiceRequest` resource and is used to represent informatics assay orders such as whole genome sequencing or RNA-seq. It enables traceability and linkages to specimens, patients, and supporting evidence.
-* Instantiates a request for an assay, linking `Patient`, `Specimen`, and `ActivityDefinition`.
-* Each assay request must be associated with a url that defines the assay.
-  * The url MAY point to a `NcpiAssay` profile based on the `ActivityDefinition` resource, which provides a reusable template for the assay definition.
-
-### `DiagnosticReport`
-Summarizes assay results. Links to the ordering `ServiceRequest`, source `Patient`, `Group`, `Specimen`, and optional `Observations`.
-
-### `Observation`
-The optional `Observation` resource in FHIR is highly extensible and can be used to capture a wide range of assay results—not limited to genomics.  While the use of `Observation` is optional, but is useful to expose findings that are otherwise embedded in `DocumentReference`. It allows for more granular querying and analysis of assay results.
-
-> Use `Observation.code` and `Observation.method` to semantically distinguish result types across assays.
-
-
-
-### `DocumentReference`
-Links external data artifacts (e.g., VCFs, BAMs, PDFs) to the clinical context.
+| Concept              | FHIR Resource        | Purpose                                     |
+|----------------------|----------------------|---------------------------------------------|
+| Patient              | `Patient`            | Participant from whom specimens are collected |
+| Specimen             | `Specimen`           | Biological material input into the assay    |
+| Group                | `Group`              | Cohort of subjects (optional)              |
+| Assay Task           | `NcpiAssayTask`      | Encapsulates assay execution and output     |
+| Assay definition     | `ActivityDefinition` | (Optional) Defines a reusable assay protocol |
+| File outputs         | `DocumentReference`  | Data outputs from the assay (e.g. BAM, VCF) |
+| Observations         | `Observation`        | (Optional) Scalar or interpreted results     |
 
 ---
 
-## 🔄 Task Resource: Workflow Management Caveats
+## 📄 NcpiAssayTask Structure
 
-> Why not use `Task` for assay data?
+`NcpiAssayTask` captures:
 
-The `Task` resource supports execution and state transitions across workflow steps. However:
-
-- **Inputs/outputs are not searchable**
-- **Not suitable for data-level chaining or query**
-- **Intended for backend processing, not provenance**
-
-Recommendation: Optionally, use `Task` to model actions like “assay parameters” but **not** for linking files to Patient, Specimen, etc.
-
----
-
-## 🧭 FHIR Workflow Pattern
-
-FHIR organizes activities into three layers:
-
-| Pattern         | FHIR Resource        | Assay Example                             |
-|-----------------|----------------------|---------------------------------------------------|
-| Definition      | `ActivityDefinition` | BRCA1 sequencing protocol                         |
-| Request         | `ServiceRequest`     | Order to run BRCA1 test for Patient X            |
-| Event           | `Observation`, `DiagnosticReport` | Results and interpretations              |
-
-Links like `basedOn`, `result`, and `subject` enable full traceability across these stages.
+- `code`: The assay performed (EDAM term recommended)
+- `for`: The `Patient` or `Group` the assay is performed on
+- `input`: One or more `Specimen` and optional parameters
+- `output`: One or more `DocumentReference` resources pointing to files or structured results
+- `instantiatesCanonical`: (Optional) An `ActivityDefinition` representing the assay protocol
+- `executionPeriod`: When the assay occurred
+- `note`, `status`, `intent`: Execution metadata
 
 ---
 
-## 🔍 Search & Chaining Examples
+## 🔍 SearchParameters
 
-### Query IG example resources
+Custom SearchParameters enable linking and inclusion:
 
-If the submitter has not provided any `Assay` resources, you can query the "core" resources directly. For example:
+* `assaytask-input` Search by input reference (e.g., Specimen, Group, Patient or DocumentReference)
+* `assaytask-input-string` Search by string input (e.g., parameter)
+* `assaytask-input-integer` Search by integer input (e.g., numeric parameter)
+* `assaytask-input-quantity` Search by quantity input
 
-```
-GET '/Patient?_id=p1&_revinclude=Specimen:subject&_revinclude=DocumentReference:subject' | jq '.entry[] | .fullUrl'
-"http://localhost:8080/fhir/Patient/p1"
-"http://localhost:8080/fhir/Specimen/s1"
-"http://localhost:8080/fhir/DocumentReference/f1"
+* `assaytask-output` Search by output reference (e.g., DocumentReference, Observation)
 
-```
+---
 
+## 🔎 Example Queries
 
-To retrieve all resources associated with a specific Diagnostic Report provided in examples:
-
-```
-GET /DiagnosticReport?_id=dr1&_include=DiagnosticReport:based-on&_include=DiagnosticReport:subject&_revinclude:iterate=DocumentReference:related  | jq '.entry[] | .fullUrl'
-```
-Will return:
-```
-
-"http://localhost:8080/fhir/DiagnosticReport/dr1"
-"http://localhost:8080/fhir/Patient/p1"
-"http://localhost:8080/fhir/ServiceRequest/a1"
-"http://localhost:8080/fhir/DocumentReference/f1"
-
-```
-
-To find all `ServiceRequest` resources that instantiate a specific `ActivityDefinition` and are associated with a given `Patient`, you can use the following query:
-```
-GET '/fhir/ServiceRequest?instantiates-uri=https://github.com/lh3/bwa&subject=Patient/p1&_revinclude:iterate=DocumentReference:related&_revinclude:iterate=DiagnosticReport:based-on'  | jq '.entry[] | .fullUrl'
-"http://localhost:8080/fhir/ServiceRequest/a1"
-"http://localhost:8080/fhir/DiagnosticReport/dr1"
-"http://localhost:8080/fhir/DocumentReference/f1"
-
-```
-
-
-### General FHIR Search
-
-FHIR search allows powerful, relationship-based querying:
-
+### 1. Find AssayTasks by Specimen
 
 ```http
-# 1. Find all reports for patient named "Sarah"
-GET /DiagnosticReport?subject:Patient.name=Sarah
-
-# 2. Find Observations from a specific report
-GET /Observation?based-on=DiagnosticReport/123
-
-# 3. Find reports related to BRCA1 testing
-GET /DiagnosticReport?result:Observation.code=LA6706-1
-
-# 4. Find patients with a variant
-GET /Patient?_has:DiagnosticReport:subject:result.value-concept=XYZ
+GET /Task?input=Specimen/s1
 ```
 
-An 'end-to-end' query for all documents associated with a given Assay and Group would look like this:
-
-
-* The `ActivityDefinition` is instantiated into a `ServiceRequest`
-* That `ServiceRequest.subject` is a `Group/{groupId}`
-* We want all `DiagnosticReport` and `DocumentReference` resources resulting from that `ServiceRequest` (via `basedOn`, `context.related`, etc.)
-
----
-
-## 🧭 Goal
-
-> Find all `DiagnosticReport` and `DocumentReference` resources that are **based on a `ServiceRequest`** for a given `ActivityDefinition`, where **that `ServiceRequest` references a Group**.
-
----
-
-## 🔍 Query Flow
-
-### **Step 1: Find `ServiceRequest`s for the `ActivityDefinition` and `Group`**
+### 2. Find DocumentReferences produced by Tasks using a given Specimen
 
 ```http
-GET /ServiceRequest?instantiates-canonical=ActivityDefinition/{activityDefId}&subject=Group/{groupId}
+GET /Task?input=Specimen/s1&_include=Task:output
 ```
 
-This returns a list of matching `ServiceRequest` resources.
+### 3. Find all tasks for a given assay type
 
-Example response:
+```http
+GET /Task?code=operation_3670
+```
 
-```json
-{
-  "resourceType": "Bundle",
-  "entry": [
-    {
-      "resource": {
-        "resourceType": "ServiceRequest",
-        "id": "sr-001",
-        "subject": { "reference": "Group/heart-cohort" },
-        "instantiatesCanonical": ["ActivityDefinition/covid-test"]
-      }
-    }
-  ]
-}
+### 4. Search by string input (e.g., parameter)
+
+```http
+GET /Task?input-string=Phred+33
+```
+
+(Requires `assaytask-input-string` SearchParameter)
+
+### 5. Find all tasks for a specific group
+
+```http
+GET /Task?for=Group/rs1-g1&_include=Task:output
+```
+### 6. Find all tasks instantiating a specific ActivityDefinition
+
+```http
+GET /Task?instantiates-canonical=
+```
+
+### 7. Find all tasks with a specific output DocumentReference
+
+```http
+GET /Task?output=DocumentReference/f3
+```
+
+### 8. Find all tasks with a specific code (e.g., BWA alignment)
+
+```http
+GET /Task?code=http://edamontology.org/operation_3670
+```
+
+### 9. Find all tasks with a specific numeric input parameter
+
+```http
+GET /Task?input-integer=150
+```
+(Requires `assaytask-input-integer` SearchParameter)
+---
+
+## 🔗 Group and ActivityDefinition Example
+
+Find all `NcpiAssayTask` resources:
+
+- Based on a specific `ActivityDefinition` (e.g., BWA alignment)
+- Performed for members of a specific `Group`
+
+```http
+GET /Task?instantiates-canonical=https://github.com/lh3/bwa&for=Group/rs1-g1&_include=Task:output
 ```
 
 ---
 
-### **Step 2: Find `DiagnosticReport`s based on those `ServiceRequest`s**
+## 🧪 Output Example
 
-Suppose you got `ServiceRequest/sr-001`:
+Returns:
 
-```http
-GET /DiagnosticReport?based-on=ServiceRequest/sr-001
-```
-
-> Each report is tied to a specific `Patient`, even though the request was for a `Group`.
+- `NcpiAssayTask/t2`
+- `Group/rs1-g1`
+- `DocumentReference/f3`
 
 ---
 
-### **Step 3: Find `DocumentReference`s based on the same `ServiceRequest`**
+## ✅ Summary
 
-Check for `basedOn` or `context.related` for R4 vs R5+ implementations:
+`NcpiAssayTask` provides a **compact, queryable, and interoperable** representation of assay events in research and clinical settings, supporting:
 
-```http
-GET /DocumentReference?based-on=ServiceRequest/sr-001
-```
+- EDAM-coded assay types
+- Parameterized execution
+- Multiple inputs and outputs
+- Optional protocol definitions
 
-or:
-
-```http
-GET /DocumentReference?context.related=ServiceRequest/sr-001
-```
-
-> Many servers index only `context.related`, so both are worth trying.
-
----
-
-## 🧪 Combined Query (if supported)
-
-Some servers support chaining with `_type`:
-
-```http
-GET /?_type=DiagnosticReport,DocumentReference&based-on=ServiceRequest/sr-001
-```
-
----
-
-## ✅ Summary Table
-
-| Resource            | Filter                                                                  |
-| ------------------- | ----------------------------------------------------------------------- |
-| `ServiceRequest`    | `instantiates-canonical=ActivityDefinition/{id}` + `subject=Group/{id}` |
-| `DiagnosticReport`  | `based-on=ServiceRequest/{id}`                                          |
-| `DocumentReference` | `based-on=` or `context.related=ServiceRequest/{id}`                    |
+This model promotes clean chaining, backward compatibility, and simplifies both retrospective and prospective data capture.
 
 
 ### Example Usage

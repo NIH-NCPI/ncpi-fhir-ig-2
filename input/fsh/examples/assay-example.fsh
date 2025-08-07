@@ -79,7 +79,7 @@ Description: "Example study group"
 
 // ========= 1. BWA Identified by GIT =========
 Instance: BWA-GIT-ActivityDefinition
-InstanceOf: NcpiAssay
+InstanceOf: ActivityDefinition
 Title: "BWA definition by GIT"
 Description: "BWA software tool defined using GIT repository"
 Usage: #example
@@ -101,7 +101,7 @@ Usage: #example
 
 // ========= 2. Submitted Data =========
 Instance: Submitted-Data-ActivityDefinition
-InstanceOf: NcpiAssay
+InstanceOf: ActivityDefinition
 Title: "Data submission"
 Description: "A priori data uploaded as part of Research Study"
 Usage: #example
@@ -112,48 +112,6 @@ Usage: #example
 * url = Canonical(Submitted-Data-ActivityDefinition)
 * code = $edam#topic_0219 "Data submission, annotation and curation"
 
-
-// NCPI Assay Request
-Instance: a1
-InstanceOf: NcpiAssayRequest
-Usage: #example
-Title: "Example assay simple association of Patient and Specimen, WGS performed by BWA"
-* status = #active
-* intent = #order
-* instantiatesUri[+] = "https://github.com/lh3/bwa"
-* subject = Reference(Patient/p1)
-* specimen[+] = Reference(Specimen/s1)
-* authoredOn = "2025-04-30T09:00:00Z"
-* reasonCode.text = "Investigating suspected hereditary condition"
-
-
-// NCPI Assay
-Instance: a2
-InstanceOf: NcpiAssayRequest
-Usage: #example
-Title: "Example assay association of with Group of participants and set of specimens"
-* status = #active
-* intent = #order
-* instantiatesUri[+] = Canonical(Submitted-Data-ActivityDefinition)
-* subject = Reference(Group/rs1-g1)
-* specimen[+] = Reference(Specimen/s1)
-* specimen[+] = Reference(Specimen/s2)
-* reasonCode.text = "Investigating suspected hereditary condition"
-* authoredOn = "2025-04-30T10:00:00Z"
-
-// NCPI Assay
-Instance: a3
-InstanceOf: NcpiAssayRequest
-Usage: #example
-Title: "Example assay association of with Group of participants and set of specimens, provenance"
-* status = #active
-* intent = #order
-* instantiatesUri[+] = "https://example.org/any-external-process"
-* subject = Reference(Group/rs1-g1)
-* specimen[+] = Reference(Specimen/s1)
-* specimen[+] = Reference(Specimen/s2)
-* reasonCode.text = "Identify single nucleotide changes (SNPs), insertions, deletions (indels), and larger structural variations"
-* authoredOn = "2025-04-30T10:00:00Z"
 
 
 CodeSystem: WGSParameters
@@ -177,82 +135,106 @@ Id: wgs-parameters
 Alias: $wgs-parameters = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters
 
 
-Instance: t1
-InstanceOf: Task
-Title: "Example Task based on assay a1"
-Usage: #example
-Description: "Optional, detailed provenance referencing assay a1"
-* status = #requested
-* intent = #order
-* basedOn = Reference(ServiceRequest/a2)
-* focus = Reference(Patient/p1)
 
+Instance: t1
+InstanceOf: NcpiAssayTask
+Title: "Example AssayTask with 2 Specimens and 2 Outputs"
+Usage: #example
+
+* status = #completed
+* intent = #order
+* code = $edam#operation_3670 "RNA-seq analysis"
+* for = Reference(Patient/p1)
+* instantiatesCanonical = Canonical(BWA-GIT-ActivityDefinition)
+* executionPeriod.start = "2024-10-01"
+* executionPeriod.end = "2024-10-02"
+* note.text = "Paired tumor/normal assay with two outputs."
+* extension[age].valueAge = 3 'h'
+
+// Input specimens
+* input[specimen][+].valueReference = Reference(Specimen/s1)
+* input[specimen][+].valueReference = Reference(Specimen/s2)
+
+// Input parameters
+* input[+].type = $wgs-parameters#fastq-format "FASTQ Format"
+* input[=].valueString = "Phred+33"
+
+* input[+].type = $wgs-parameters#read-length "Read Length"
+* input[=].valueInteger = 150
+
+* input[+].type = $wgs-parameters#paired-end "Paired End"
+* input[=].valueBoolean = true
+
+* input[+].type = $wgs-parameters#adapter-sequence "Adapter Sequence"
+* input[=].valueString = "AGATCGGAAGAGC"
+
+* input[+].type = $wgs-parameters#min-base-quality "Minimum Base Quality"
+* input[=].valueInteger = 20
+
+* input[+].type = $wgs-parameters#reference-genome "Reference Genome"
+* input[=].valueString = "GRCh38"
+
+* input[+].type = $wgs-parameters#mark-duplicates "Mark Duplicates"
+* input[=].valueBoolean = true
+
+* input[+].type = $wgs-parameters#variant-caller "Variant Caller"
+* input[=].valueString = "GATK HaplotypeCaller"
+
+* input[+].type = $wgs-parameters#variant-caller-mode "Variant Caller Mode"
+* input[=].valueString = "gVCF"
+
+* input[+].type = $wgs-parameters#ploidy "Ploidy"
+* input[=].valueInteger = 2
+
+* input[+].type = $wgs-parameters#population-database "Population Database"
+* input[=].valueString = "gnomAD v3"
+
+* input[+].type = $wgs-parameters#annotation-tool "Annotation Tool"
+* input[=].valueString = "Ensembl VEP"
+
+* input[+].type = $wgs-parameters#target-region "Target Region"
+* input[=].valueString = "Whole genome"
+
+// Output document references
+* output[result][+].valueReference = Reference(DocumentReference/f1)
+* output[result][+].valueReference = Reference(DocumentReference/f2)
+
+
+Instance: task-observation
+InstanceOf: Observation
+Title: "Task Observation Example"
+Usage: #example
+Description: "Observation related to a Task"
+* status = #final
+* code = $edam#data_1394 "Alignment score or penalty"
+* focus = Reference(Task/t1)
+* effectiveDateTime = "2025-05-01T09:00:00Z"
+* valueQuantity = 42.0 '{score}'
 
 Instance: t2
-InstanceOf: Task
-Title: "Example Task based on assay a2"
+InstanceOf: NcpiAssayTask
+Title: "AssayTask for assay a2"
 Usage: #example
-Description: "Optional, detailed provenance referencing assay a2 with example inputs"
-* status = #requested
+Description: "AssayTask for a group with 1 output"
+* status = #completed
 * intent = #order
-* basedOn = Reference(ServiceRequest/a1)
-* focus = Reference(Group/rs1-g1)
-
-* input[0].type = $wgs-parameters#fastq-format "FASTQ Format"
-* input[0].valueString = "Phred+33"
-
-* input[1].type = $wgs-parameters#read-length "Read Length"
-* input[1].valueInteger = 150
-
-* input[2].type = $wgs-parameters#paired-end "Paired End"
-* input[2].valueBoolean = true
-
-* input[3].type = $wgs-parameters#adapter-sequence "Adapter Sequence"
-* input[3].valueString = "AGATCGGAAGAGC"
-
-* input[4].type = $wgs-parameters#min-base-quality "Minimum Base Quality"
-* input[4].valueInteger = 20
-
-* input[5].type = $wgs-parameters#reference-genome "Reference Genome"
-* input[5].valueString = "GRCh38"
-
-* input[6].type = $wgs-parameters#mark-duplicates "Mark Duplicates"
-* input[6].valueBoolean = true
-
-* input[7].type = $wgs-parameters#variant-caller "Variant Caller"
-* input[7].valueString = "GATK HaplotypeCaller"
-
-* input[8].type = $wgs-parameters#variant-caller-mode "Variant Caller Mode"
-* input[8].valueString = "gVCF"
-
-* input[9].type = $wgs-parameters#ploidy "Ploidy"
-* input[9].valueInteger = 2
-
-* input[10].type = $wgs-parameters#population-database "Population Database"
-* input[10].valueString = "gnomAD v3"
-
-* input[11].type = $wgs-parameters#annotation-tool "Annotation Tool"
-* input[11].valueString = "Ensembl VEP"
-
-* input[12].type = $wgs-parameters#target-region "Target Region"
-* input[12].valueString = "Whole genome"
+* instantiatesUri[+] = Canonical(Submitted-Data-ActivityDefinition)
+* code = $edam#topic_0219 "Data submission, annotation and curation"
+* for = Reference(Group/rs1-g1)
+* output[result][+].valueReference = Reference(DocumentReference/f3)
+// 3 hours past a reference time
+* extension[age].valueAge = 3 'h'
 
 
 // NCPI File
 Instance: f1
 InstanceOf: NcpiFile
-Title: "Example file created by assay a1"
+Title: "Example file created by assay t1"
 Usage: #example
-Description: "Example file created by assay a1"
+Description: "Example file created by assay t1, associated with a patient"
 * identifier.value = "f1"
 * subject = Reference(Patient/p1)
 * status = #current
-// R4
-* context
-  * related[+] = Reference(ServiceRequest/a1)
-  * related[+] = Reference(DiagnosticReport/dr1)
-// R5,R6
-// * basedOn = Reference(ServiceRequest/a1)
 * content[+]
   * attachment.url = "s3://foobar/example.bam"
 * extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
@@ -268,18 +250,12 @@ Description: "Example file created by assay a1"
 // NCPI File
 Instance: f2
 InstanceOf: NcpiFile
-Title: "Example file created by assay a2"
+Title: "Example file created by assay t1"
 Usage: #example
-Description: "Example file created by assay a2, associated with a group"
+Description: "Example file created by assay t1, associated with a patient"
 * identifier.value = "f2"
-* subject = Reference(Group/rs1-g1)
+* subject = Reference(Patient/p1)
 * status = #current
-// R4
-* context
-  * related[+] = Reference(ServiceRequest/a2)
-  * related[+] = Reference(DiagnosticReport/dr2)
-// R5,R6
-// * basedOn = Reference(ServiceRequest/a1)
 * content[+]
   * attachment.url = "s3://foobar/example2.bam"
 * extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
@@ -291,36 +267,23 @@ Description: "Example file created by assay a2, associated with a group"
   * extension[hash-value].valueString = "9c2460c4647fdc57261f040042863fa2"
   * extension[hash-type].valueCode = #md5
 
-
-// DiagnosticReport
-Instance: dr1
-InstanceOf: DiagnosticReport
-Title: "Example Diagnostic Report for assay a1"
+// NCPI File
+Instance: f3
+InstanceOf: NcpiFile
+Title: "Example file created by assay t2"
 Usage: #example
-Description: "Example Diagnostic Report for assay a1"
-* basedOn = Reference(ServiceRequest/a1)
-* status = #final
-* code = $loinc#47045-0 "Study report"
-* subject = Reference(Patient/p1)
-// R5, R6
-// * media[+]
-//  * link = Reference(DocumentReference/f1)
-// R4 see back link from DocumentReference.context to DiagnosticReport
-// 3 hours past a reference time
-* extension[age].valueAge = 3 'h'
-
-Instance:  dr2
-InstanceOf: DiagnosticReport
-Title: "Example Diagnostic Report for assay a2"
-Usage: #example
-Description: "Example Diagnostic Report for assay a2"
-* basedOn = Reference(ServiceRequest/a2)
-* status = #final
-* code = $loinc#47045-0 "Study report"
+Description: "Example file created by assay t2, associated with a group"
+* identifier.value = "f2"
 * subject = Reference(Group/rs1-g1)
-// R5, R6
-// * media[+]
-//  * link = Reference(DocumentReference/f2)
-// R4 see back link from DocumentReference.context to DiagnosticReport
-// 3 hours past a reference time
-* extension[age].valueAge = 3 'h'
+* status = #current
+* content[+]
+  * attachment.url = "s3://foobar/example3.bam"
+* extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
+* extension[file-size]
+  * valueQuantity
+    * value = 1044770381
+    * unit = "bytes"
+* extension[hash]
+  * extension[hash-value].valueString = "9c2460c4647fdc57261f040042863fa2"
+  * extension[hash-type].valueCode = #md5
+
