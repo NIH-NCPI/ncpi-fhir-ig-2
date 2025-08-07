@@ -5,7 +5,8 @@ Logical models, profiles, extensions and valuesets for:
 * NcpiStudyFamily
 * NcpiFamilyRelationship
 
-*/ 
+*/
+
 
 // Study Family
 
@@ -33,11 +34,11 @@ Description: "The **Shared Data Model for Family Role**"
 
 Extension: FamilyRole
 Id: family-role
-Title: "Study Family Focus"
+Title: "Family Role"
 Description: "Extension containing Family Role"
 
 * insert SetContext(Group.member.entity)
-* value[x] only CodeableConcept 
+* value[x] only CodeableConcept
 * valueCodeableConcept ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
 * valueCodeableConcept from $ncpi-family-member (extensible)
 
@@ -51,6 +52,7 @@ Description: "CodeSystem for Types of Families"
 * ^caseSensitive = true
 * ^publisher = "NCPI FHIR Works"
 * ^content = #fragment
+* ^version = "0.1.0"
 * #Control-only "Control Only"
 * #Duo "Duo"
 * #Other "Other"
@@ -71,15 +73,17 @@ Extension: FamilyType
 Id: family-type
 Title: "Family Type Extension"
 Description: "Extension containing Family Type"
-* value[x] only CodeableConcept 
+* insert SetContext(Group)
+* value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Describes the 'type' of study family, eg, trio."
 * valueCodeableConcept from ncpi-family-types-vs (extensible)
 
 Extension: Description
 Id: description
-Title: "Study Family Description"
-Description: "Free text describing the study family, such as potential inheritance or details about consanguinity"
-* value[x] only markdown 
+Title: "Description"
+Description: "Free text describing containing resource."
+* insert SetContext(Group)
+* value[x] only markdown
 * valueMarkdown 0..1
 
 ValueSet: ConsanguinityAssertionVS
@@ -95,7 +99,8 @@ Description: "List of codes indicates the level of known consanguinity (blood re
 Extension: Consanguinity
 Id: consanguinity
 Title: "Consanguinity Extension"
-Description: "Extension containing Consanguinity"
+Description: "Extension containing a consanguinity assertion"
+* insert SetContext(Group)
 * value[x] only CodeableConcept
 * valueCodeableConcept from consanguinity-assertion-vs (extensible)
 * valueCodeableConcept ^short = "Is there known or suspected consanguinity in this study family?"
@@ -103,8 +108,9 @@ Description: "Extension containing Consanguinity"
 Extension: StudyFamilyFocus
 Id: study-family-focus
 Title: "Study Family Focus Extension"
-Description: "Extension containing Study Family Focus"
-* value[x] only CodeableConcept 
+Description: "Extension containing a study family focus assertion"
+* insert SetContext(Group)
+* value[x] only CodeableConcept
 * valueCodeableConcept ^short = "What is this study family investigating? EG, a specific condition"
 
 Profile: NcpiStudyFamily
@@ -126,21 +132,9 @@ Description: "Study Family"
 * extension[studyFamilyFocus] ^short = "What is this study family investigating? EG, a specific condition"
 * member 1..*
 * member.entity only Reference(NcpiParticipant)
-* member.entity ^short = "The participant we are describing."
+* member.entity ^short = "The participant described by this member."
 * member.entity.extension contains FamilyRole named familyRole 0..1
 * member.entity.extension[familyRole] ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
-
-
-/*
-Extension: StudyFamily
-Id: study-family
-Title: "Study Family Reference"
-Description: "Extension containing Study Family Reference"
-* insert SetContext(Group)
-* value[x] only Reference
-* valueReference 1..1
-* valueReference only Reference(NcpiStudyFamily)
-*/
 
 
 // Family Relationship
@@ -153,18 +147,159 @@ Description: "The **Shared Data Model for Family Relationship**"
 * target 1..1 Reference "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'"
 * relationship 1..1 code "The relationship between the subject and the target."
 
+
+ValueSet: FamilyBiologicalRelationshipVS
+Id: family-biological-relationship-vs
+Title: "Biological Relationship Codes"
+Description: """
+List of codes indicating the biological relationship between two individuals
+in a family. It is restrictive to encourage a standardized representation.
+
+# Code Selection Rationale
+
+## Parent Codes
+
+We use the NCI Thesaurus here for the mother and father because its
+definitions are more precise.
+
+- [`C96572` (**"Biological Father"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96572):
+   A male who contributes to the genetic makeup of his offspring through
+   the fertilization of an ovum by his sperm.
+- [`C96580` (**"Biological Mother"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96580):
+   A female who contributes to the genetic makeup of her offspring
+   from the fertilization of her ovum.
+
+In contrast, the parental family-role's codes are less refined:
+
+- [`NMTH` (**"natural mother"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NMTH):
+   The player of the role is a female who conceives
+   or gives birth to the scoping entity (child).
+- [`NFTH` (**"natural father"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NFTH):
+   The player of the role is a male who begets the
+   scoping entity (child).
+
+In particular, **"Biological Mother"** excludes surrogates but
+`NMTH` is ambiguous. **"Biological Father"** specifies
+fertilization of an ovum by sperm, whereas `NFTH` uses the
+ambiguous term "begets," which could include other
+mechanisms.
+
+## Twin Codes
+
+For twins, we use the RoleCode `ITWIN` code rather than the NCI `C73429`.
+
+- [`C73429` (**"Identical Twin"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C73429):
+   Either of the two offspring resulting from a shared ovum.
+- [`ITWIN` (**"Identical Twin"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ITWIN):
+   The scoper and player are offspring of the same egg-sperm
+   pair.
+
+Though being "offspring" of the same fertilized egg is
+questionable wording, we use `ITWIN` because it also allows
+other multiples (triplets, quadruplets, etc.) to be
+represented with the same code whereas `C73429` is only for
+twins.
+
+# Note for upgrading to FHIR R5
+
+When we add support for R5 to the IG, we should add the rest of the
+codes from <http://terminology.hl7.org/ValueSet/v3-FamilyMember>
+as additional bindings to guide users when not using one of the
+main bindings.
+
+We intend that when users need to use a code that is not in
+the main bindings, they should default to the FamilyMember
+ValueSet. However, in R4, there is no way to express this
+in the ValueSet itself.
+"""
+* ^version = "0.1.0"
+* ^experimental = false
+* include $nci-thesaurus-alt#C96580 "Biological Mother"
+* include $nci-thesaurus-alt#C96572 "Biological Father"
+* include $family-role-code#ITWIN "identical twin"
+
+
 Profile: NcpiFamilyRelationship
-Parent: Observation
+Parent: FamilyMemberHistory
 Id: ncpi-family-relationship
 Title: "Family Relationship"
-Description: "Family Relationship"
-* ^version = "0.1.0"
+// The rest of the description is in
+// input/pagecontent/StructureDefinition-ncpi-family-relationship-intro.md
+Description: "A relationship between individuals in a pedigree or family."
+* ^version = "0.2.0"
 * ^status = #draft
-* subject 1..1 
-* subject only Reference(NcpiParticipant)
-* subject ^short = "The participant we are describing"
-* focus 1..1 
-* focus only Reference(NcpiParticipant)
-* focus ^short = "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'"
-* code ^short = "The relationship between the subject and the target."
-* code from $ncpi-family-member (extensible)
+* extension contains $family-patient-record named relative 1..1 MS
+* extension[relative] ^short = "The participant in the relationship who plays the role named by the relationship."
+* extension[relative] ^definition = """
+The participant in the relationship who plays the role named by the relationship.
+
+That is, if the relationship is `C96572` (**\"Biological Father\"**), the
+`relative` is the father and the `patient` is the child.
+
+This uses [the standard Patient Record extension](http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record)
+for compatibility with the [GA4GH PedigreeRelationship profile](https://ga4gh.github.io/pedigree-fhir-ig/StructureDefinition-PedigreeRelationship.html)
+"""
+* relationship 1..1 MS
+* relationship from FamilyBiologicalRelationshipVS (extensible)
+* relationship ^short = "The role the relative fills with respect to the patient for this relationship."
+* relationship ^definition = """
+The role the relative fills with respect to the patient for this relationship.
+
+`relative` is `relationship` to `patient`. For the sake of users,
+prefer to exclusively use `C96572`, `C96580`, and `ITWIN` for genetic relationships.
+All other genetic relationships can be expressed with these and inferred individuals.
+
+`ITWIN` should be used for all monozygotic multiples (triplets, quadruplets, etc.)
+and should be present for all the directions of the relationship.
+
+This provides an unambiguous representation of the genetic relationship
+that is easily convertable to and from
+[PED files](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format)
+"""
+* relationship ^comment = """
+# Examples
+
+## Example 1 (triplets):
+
+A,B,C are triplets. You need six `NcpiFamilyRelationship`
+resources:
+- A→B
+- B→A
+- A→C
+- C→A
+- B→C
+- C→B.
+
+## Example 2 (twins):
+If X and Y are twins, you need two `NcpiFamilyRelationship`
+resources:
+- X→Y
+- Y→X.
+
+## Example 3 (maternal grandchild):
+If Q is the maternal grandchild of the female R but Q's parent
+is outside the dataset, then you need to make an inferred Patient
+resource D and make two `NcpiFamilyRelationship` resources:
+- D-(Biological Mother)→Q
+- R-(Biological Mother)→D.
+"""
+* patient 1..1 MS
+* patient ^short = "The participant we are describing."
+* patient ^definition = """
+The participant we are describing.
+
+That is, if the relationship is `C96572` (**\"Biological Father\"**), the `patient` is the child
+and the `relative` is the father.
+"""
+// Remove the elements that are redundant with Patient for compatibility with
+// the GA4GH PedigreeRelationship and because redundant elements incur
+// database maintenance costs.
+* name 0..0
+* sex 0..0
+* born[x] 0..0
+* age[x] 0..0
+* estimatedAge 0..0
+* deceased[x] 0..0
+* reasonCode 0..0
+* reasonReference 0..0
+* condition 0..0
