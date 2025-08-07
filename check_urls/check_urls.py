@@ -67,6 +67,7 @@ import sys
 from re import Pattern
 from typing import NewType, IO, Any
 import json
+from requests_ratelimiter import LimiterSession
 
 import markdown
 from bs4 import BeautifulSoup
@@ -105,6 +106,7 @@ class Args:
     verbose: bool
     files: list[Path]
     credentials: Path | None
+    requests_per_second: float = 1.0
 
 
 def parse_args() -> Args:
@@ -143,6 +145,12 @@ def parse_args() -> Args:
         type=Path,
         help="Path to credentials file.",
     )
+    parser.add_argument(
+        "--requests-per-second",
+        type=float,
+        default=1.0,
+        help="Number of requests per second for API calls (default: 1)",
+    )
     args = parser.parse_args()
 
     subcmd = SubCommand(args.subcommand)
@@ -172,6 +180,7 @@ def parse_args() -> Args:
         verbose=args.verbose,
         files=args.files,
         credentials=getattr(args, "credentials", None),
+        requests_per_second=args.requests_per_second,
     )
 
 
@@ -481,8 +490,9 @@ def _call_on_missing_for_missing_urls(
         logging.debug('Adding URLs from: "%s"', file)
         extractor = extractors.get(file.suffix.lower())
         if not extractor:
-            logging.error('Ignoring unrecognized file type: "%s" from "%s"',
-                          file.suffix, file)
+            logging.error(
+                'Ignoring unrecognized file type: "%s" from "%s"', file.suffix, file
+            )
             continue
 
         urls = map(lambda s: URL(s), filter(is_included, extractor(file)))
@@ -545,9 +555,42 @@ def fail_if_would_add(
     )
 
 
-def check(statuses: StatusDict, credentials: Path) -> ErrorCode:
-    """Execute the check subcommand."""
-    # TODO: implement check logic
+AVAIL_API_URL = "https://archive.org/wayback/available"
+
+
+def check(statuses: StatusDict, requests_per_second: float) -> ErrorCode:
+    """Execute the check subcommand using Wayback Availability API."""
+    logging.info("Checking URLs.")
+    session = LimiterSession(per_second=requests_per_second)
+    urls_to_check = (
+        url for url, status in statuses.items() if isinstance(status, UnknownStatus)
+    )
+    num_checked = 0
+    for url in urls_to_check:
+        num_checked += 1
+        # noinspection PyBroadException
+        try:
+            logging.debug('Checking URL: "%s"', url)
+            resp = session.get(AVAIL_API_URL, params={"url": url})
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception:
+            logging.exception("Error checking URL: %s", url)
+            statuses[url].last_check = datetime.now()
+            continue
+        is_archived = (
+            data.get("archived_snapshots", {})
+            .get("closest", {})
+            .get("available", False)
+        )
+        now = datetime.now().astimezone()
+        if is_archived:
+            logging.debug('Marking URL "%s" as archived.', url)
+            statuses[url] = ArchivedStatus(last_check=now)
+        else:
+            logging.debug('Updating check time for URL "%s".', url)
+            statuses[url].last_check = now
+    logging.info("Checked %d URLs.", num_checked)
     return ErrorCode.SUCCESS
 
 
@@ -624,7 +667,9 @@ def main() -> ErrorCode:
     if args.subcommand == SubCommand.FAIL_IF_WOULD_ADD:
         return fail_if_would_add(statuses, args.files, args.ignore_file)
     if args.subcommand == SubCommand.CHECK:
-        return save_on_success(statuses, stat_path, check(statuses, args.credentials))
+        return save_on_success(
+            statuses, stat_path, check(statuses, args.requests_per_second)
+        )
     if args.subcommand == SubCommand.LIST_UNARCHIVED:
         return list_unarchived(statuses)
     if args.subcommand == SubCommand.SUBMIT:

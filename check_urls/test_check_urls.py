@@ -1,7 +1,7 @@
 import json
 import logging
 import re
-from unittest.mock import MagicMock
+from unittest.mock import MagicMock, Mock
 
 from check_urls import (
     main,
@@ -17,6 +17,7 @@ from check_urls import (
     extract_urls_from_md,
     add_urls,
     fail_if_would_add,
+    check,
 )
 from pathlib import Path
 import sys
@@ -633,4 +634,21 @@ def test_fail_if_would_add_exception(tmp_path):
     bad_file = BadPath(tmp_path / "bad.md")
     statuses = {}
     result = fail_if_would_add(statuses, [bad_file], None)
+    assert result == ErrorCode.SUCCESS
+
+
+def test_check_is_available(monkeypatch):
+    # Prepare a fake response object
+    fake_response = Mock()
+    fake_response.json.return_value = {
+        "archived_snapshots": {"closest": {"available": True}}
+    }
+    fake_session = Mock()
+    fake_session.get.return_value = fake_response
+
+    monkeypatch.setattr(sys.modules["check_urls"], "LimiterSession", fake_session)
+
+    statuses = {URL("https://example.com"): UnknownStatus(last_check=None)}
+    result = check(statuses, requests_per_second=10)
+    assert isinstance(statuses[URL("https://example.com")], ArchivedStatus)
     assert result == ErrorCode.SUCCESS
