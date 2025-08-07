@@ -115,7 +115,12 @@ def parse_args() -> Args:
         choices=[sc.value for sc in SubCommand],
         help="Subcommand to execute.",
     )
-    parser.add_argument("files", nargs="*", type=Path, help="Files to process.")
+    parser.add_argument(
+        "files",
+        nargs="*",
+        type=Path,
+        help="Files to process. Must be HTML, FSH, or Markdown.",
+    )
     parser.add_argument(
         "--ignore", dest="ignore_file", type=Path, help="Path to ignore file."
     )
@@ -134,8 +139,8 @@ def parse_args() -> Args:
     )
     args = parser.parse_args()
 
-    # Require credentials for submit and check subcommands
     subcmd = SubCommand(args.subcommand)
+    # Require credentials for submit and check subcommands
     if (
         subcmd in {SubCommand.SUBMIT, SubCommand.CHECK}
         and getattr(args, "credentials", None) is None
@@ -143,6 +148,15 @@ def parse_args() -> Args:
         parser.error(
             f"--cred/--credentials is required for '{subcmd.value}' subcommand."
         )
+
+    # Extension check for add-urls and fail-if-would-add
+    if subcmd in {SubCommand.ADD_URLS, SubCommand.FAIL_IF_WOULD_ADD}:
+        allowed_exts = {".md", ".fsh", ".htm", ".html"}
+        for file in args.files:
+            if file.suffix.lower() not in allowed_exts:
+                parser.error(
+                    f"File '{file}' has disallowed extension '{file.suffix}'. Allowed extensions: {', '.join(allowed_exts)}."
+                )
 
     return Args(
         archive_status_file=args.archive_status_file,

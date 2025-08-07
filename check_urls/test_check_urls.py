@@ -31,8 +31,10 @@ def test_parse_args_basic(monkeypatch):
         "check_urls.py",
         "status.json",
         "add-urls",
-        "file1.md",
-        "file2.html",
+        "f1.md",
+        "f2.html",
+        "f3.htm",
+        "f4.fsh",
         "--ignore",
         "ignore.json",
         "--log-file",
@@ -46,7 +48,7 @@ def test_parse_args_basic(monkeypatch):
     assert args.ignore_file == Path("ignore.json")
     assert args.log_file == Path("log.txt")
     assert args.verbose is True
-    assert args.files == [Path("file1.md"), Path("file2.html")]
+    assert args.files == list(map(Path, ["f1.md", "f2.html", "f3.htm", "f4.fsh"]))
 
 
 def test_parse_args_add_urls(monkeypatch):
@@ -113,6 +115,28 @@ def test_parse_args_check_missing_credentials(monkeypatch):
 
 def test_parse_args_submit_missing_credentials(monkeypatch):
     test_args = ["check_urls.py", "status.json", "submit"]
+    monkeypatch.setattr(sys, "argv", test_args)
+    with pytest.raises(SystemExit) as e:
+        parse_args()
+    assert e.value.code != 0
+
+
+def test_parse_args_add_urls_invalid_extension(monkeypatch):
+    test_args = ["check_urls.py", "status.json", "add-urls", "foo.txt", "bar.md"]
+    monkeypatch.setattr(sys, "argv", test_args)
+    with pytest.raises(SystemExit) as e:
+        parse_args()
+    assert e.value.code != 0
+
+
+def test_parse_args_fail_if_would_add_invalid_extension(monkeypatch):
+    test_args = [
+        "check_urls.py",
+        "status.json",
+        "fail-if-would-add",
+        "foo.md",
+        "bar.exe",
+    ]
     monkeypatch.setattr(sys, "argv", test_args)
     with pytest.raises(SystemExit) as e:
         parse_args()
