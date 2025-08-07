@@ -93,3 +93,17 @@ archive.org save page.
 - See `requirements.txt` for dependencies.
 
 
+## Development
+
+I've been using the following command
+before committing to update formatting and
+ensure tests pass. This really should
+be using `pre-commit` but that might cause
+problems for other people working on the IG
+who are not coders.
+
+From `<repo-root>/check_urls`
+
+```sh
+ruff format *.py && ruff check *.py && pytest
+```
