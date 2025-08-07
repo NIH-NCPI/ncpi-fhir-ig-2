@@ -30,7 +30,7 @@ Description: "Profile to represent informatics assay definitions within NCPI, su
 * input[specimen].type = #Specimen
 * input[specimen].valueReference only Reference(Specimen)
 
-// Create a slice for specimen input
+// Create a slice for result output
 * output contains result 0..* MS
 * output[result].type = #DocumentReference
 * output[result].valueReference only Reference(DocumentReference)
