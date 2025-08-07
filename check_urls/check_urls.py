@@ -388,7 +388,7 @@ def extract_urls_from_fsh(file: Path) -> list[str]:
     """Extract URLs from a FHIR shorthand (FSH) file.
 
     Uses a simple regular expression to find URLs, so might miss some."""
-    url_pattern = re.compile("(https?://[^\")'\t ]+)")
+    url_pattern = re.compile("(https?://[^\")'\t\n| ]+)")
     # noinspection PyBroadException
     try:
         with file.open("r") as f:
