@@ -6,7 +6,7 @@ Logical: CdmFile
 Id: SharedDataModelFile
 Title: "Shared Data Model for File"
 Description: "The **Shared Data Model for File**"
-* participantID 1..1 reference "The participant(s) for whom this file contains data"
+* participantID 0..1 reference "The participant(s) for whom this file contains data"
 * fileExternalID 0..1 string "A related identifier of this file"
 * format 1..1 code "The file format used"
 * location 1..* List "List of locations where this data can be accessed"
@@ -137,7 +137,7 @@ Description: "Information about a file related to a research participant"
 * ^version = "0.0.1"
 * ^status = #draft
 * identifier ^short = "A related external file ID"
-* subject 1..1 /*Participant*/
+* subject 0..1 /*Participant*/
 * subject ^short = "The participant(s) for whom this file contains data (i.e., ParticipantID)"
 * extension contains FileFormat named fileFormat 1..1 /*File Format*/
 * extension[fileFormat] ^short = "The file format used (EDAM is preferred)"
