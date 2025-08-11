@@ -36,15 +36,21 @@ Description: "NCPI Metadata slices"
 * #WorkflowTool "Workflow tool"
 * #AdaptorTrimmed "Adaptor trimmed"
 
-CodeSystem: AssayStrategyCS
-Id: assay-strategy-cs
+ValueSet: AssayStrategyVS
+Id: assay-strategy-vs
 Title: "Assay strategy options"
 Description: "Assay strategy options"
-* ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* #WGS "Whole Genome Sequencing"
-* #unknown "Unknown"
+* ^status = #draft
+* ^publisher = "NCPI FHIR IG WG"
+* include codes from system $obi where concept is-a #OBI_0000070
+/** Some examples explicitly provided */
+* $obi#0002117 "whole genome sequencing assay" 
+* $obi#0002118 "exome sequencing assay"
+* $obi#0001274 "genotyping by array assay"
+* $obi#0003090 "bulk RNA-Seq assay"
+* $obi#0002571 "polyA-selected RNA sequencing assay"
+* $obi#0002631 "single-cell RNA sequencing assay"
+* $obi#0002764 "single-cell ATAC-seq"
 
 CodeSystem: PlatformInstrumentCS
 Id: platform-instrument-cs
