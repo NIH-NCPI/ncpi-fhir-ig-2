@@ -1,8 +1,8 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "SharedDataModelFile","SharedDataModelFile","","","",0,*,"","","","null {[]} {[]}
 ","Shared Data Model for File","The **Shared Data Model for File**","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"SharedDataModelFile.participantID","SharedDataModelFile.participantID","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/valueset-reference]]} {[]}
-","The participant(s) for whom this file contains data","The participant(s) for whom this file contains data","","","","","","","","","",,,,,"",,,,"SharedDataModelFile.participantID",1,1,"",""
+"SharedDataModelFile.participantID","SharedDataModelFile.participantID","","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/valueset-reference]]} {[]}
+","The participant(s) for whom this file contains data","The participant(s) for whom this file contains data","","","","","","","","","",,,,,"",,,,"SharedDataModelFile.participantID",0,1,"",""
 "SharedDataModelFile.fileExternalID","SharedDataModelFile.fileExternalID","","","",0,1,"","","","string {[]} {[]}
 ","A related identifier of this file","A related identifier of this file","","","","","","","","","",,,,,"",,,,"SharedDataModelFile.fileExternalID",0,1,"",""
 "SharedDataModelFile.format","SharedDataModelFile.format","","","",1,1,"","","","code {[]} {[]}

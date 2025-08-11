@@ -16,7 +16,7 @@
   <name value="NcpiDRSFile"/>
   <title value="NCPI DRS File"/>
   <status value="draft"/>
-  <date value="2025-08-11T13:46:00+00:00"/>
+  <date value="2025-08-11T15:03:48+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -874,7 +874,7 @@
       <path value="DocumentReference.subject"/>
       <short value="The participant(s) for whom this file contains data (i.e., ParticipantID)"/>
       <definition value="Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure)."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <base>
         <path value="DocumentReference.subject"/>

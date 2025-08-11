@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NcpiDRSFile"] ; # 
   fhir:title [ fhir:v "NCPI DRS File"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-08-11T13:46:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-11T15:03:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -969,7 +969,7 @@
        fhir:path [ fhir:v "DocumentReference.subject" ] ;
        fhir:short [ fhir:v "The participant(s) for whom this file contains data (i.e., ParticipantID)" ] ;
        fhir:definition [ fhir:v "Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure)." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
          fhir:path [ fhir:v "DocumentReference.subject" ] ;

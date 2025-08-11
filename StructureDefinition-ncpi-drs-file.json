@@ -10,7 +10,7 @@
   "name" : "NcpiDRSFile",
   "title" : "NCPI DRS File",
   "status" : "draft",
-  "date" : "2025-08-11T13:46:00+00:00",
+  "date" : "2025-08-11T15:03:48+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -897,7 +897,7 @@
       "path" : "DocumentReference.subject",
       "short" : "The participant(s) for whom this file contains data (i.e., ParticipantID)",
       "definition" : "Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "base" : {
         "path" : "DocumentReference.subject",
