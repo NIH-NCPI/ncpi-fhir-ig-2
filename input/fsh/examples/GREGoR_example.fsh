@@ -244,7 +244,7 @@ Description: "Example file metadata for a BAM-CRAM file from GREGoR"
 * status = #final
 * code = $edam#format_2572 /*for a BAM file | $edam#format_3462 for CRAM*/
 * specimen = Reference(GSS123456-01-010) /*using specimen is a placeholder for using a slice of component for related samples*/
-* component[assay_strategy].valueCodeableConcept = $assay-strategy#WGS
+* component[assay_strategy].valueCodeableConcept = $obi#0002117 "whole genome sequencing assay"
 * component[platform_instrument].valueCodeableConcept = #IlluminaHiSeq2000
 * component[library_prep].valueCodeableConcept = #polyA
 * component[library_selection].valueCodeableConcept = #PolyTEnrichment
