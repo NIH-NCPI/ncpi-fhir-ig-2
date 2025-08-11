@@ -17,6 +17,7 @@ Alias: $ncpi-data-access-type = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSy
 // been using that system for a while now, and DbGAP was using it as well, 
 // at least at some point in the past. 
 Alias: $mesh = http://terminology.hl7.org/CodeSystem/MSH
+Alias: $obi = http://purl.obolibrary.org/obo/
 // Alias: $mesh = http://id.nlm.nih.gov/mesh/
 
 Alias: $ncpi-dob-method = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method
