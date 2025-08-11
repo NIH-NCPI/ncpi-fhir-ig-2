@@ -1,9 +1,9 @@
 NCPIFHIRIGv2 : Validation Results
 =========================================
 
-err = 9, warn = 203, info = 16
-IG Publisher Version: 2.0.10
-Generated Tue Jul 22 19:48:31 UTC 2025. FHIR version 4.0.1 for ncpi-fhir-implementation-guide-v2#0.2.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
+err = 9, warn = 206, info = 16
+IG Publisher Version: 2.0.13
+Generated Mon Aug 11 13:50:03 UTC 2025. FHIR version 4.0.1 for ncpi-fhir-implementation-guide-v2#0.2.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
  Build Errors : 0 / 4 / 0
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-adaptor-trimmed-cs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-assay-strategy-cs : 0 / 0 / 1
@@ -142,14 +142,14 @@ Generated Tue Jul 22 19:48:31 UTC 2025. FHIR version 4.0.1 for ncpi-fhir-impleme
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-specimen-collection : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-study-family-focus : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-collection-type-vs : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-condition-code-vs : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-condition-code-vs : 0 / 3 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-condition-type-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-consanguinity-assertion-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-edam-ontology-terms-vs : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-mesh-terms : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-ncpi-family-types-vs : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-phenotypic-feature-assertion-vs : 0 / 1 / 1
- /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-phenotypic-feature-code-vs : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-phenotypic-feature-code-vs : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-research-data-access-code-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-research-data-access-type-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-research-data-date-of-birth-method-vs : 0 / 0 / 1
@@ -341,9 +341,9 @@ WARNING: StructureDefinition/SharedDataModelFile: StructureDefinition.differenti
 == fsh-generated/resources/StructureDefinition-SharedDataModelFileMetadata.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelParticipantAssertion.json ==
 WARNING: StructureDefinition/SharedDataModelParticipantAssertion: StructureDefinition.snapshot.element[1].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/valueset-reference'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/valueset-reference' to 'http://hl7.org/fhir/StructureDefinition/valueset-reference|5.2.0'
-WARNING: StructureDefinition/SharedDataModelParticipantAssertion: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/SharedDataModelParticipantAssertion: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/SharedDataModelParticipantAssertion: StructureDefinition.differential.element[1].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/valueset-reference'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/valueset-reference' to 'http://hl7.org/fhir/StructureDefinition/valueset-reference|5.2.0'
-WARNING: StructureDefinition/SharedDataModelParticipantAssertion: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/SharedDataModelParticipantAssertion: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 == fsh-generated/resources/StructureDefinition-SharedDataModelPerson.json ==
 WARNING: StructureDefinition/SharedDataModelPerson: StructureDefinition.snapshot.element[2].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/valueset-reference'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/valueset-reference' to 'http://hl7.org/fhir/StructureDefinition/valueset-reference|5.2.0'
 WARNING: StructureDefinition/SharedDataModelPerson: StructureDefinition.differential.element[2].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/valueset-reference'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/valueset-reference' to 'http://hl7.org/fhir/StructureDefinition/valueset-reference|5.2.0'
@@ -507,6 +507,8 @@ WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-i
 WARNING: StructureDefinition/study-family-focus: StructureDefinition.context[0]: Review the extension type for study-family-focus: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/ValueSet-collection-type-vs.json ==
 == fsh-generated/resources/ValueSet-condition-code-vs.json ==
+WARNING: ValueSet/condition-code-vs: ValueSet.compose.include[0]: The value set references CodeSystem 'http://human-phenotype-ontology.org' which has status 'not-present'
+WARNING: ValueSet/condition-code-vs: ValueSet.compose.include[1]: The value set references CodeSystem 'http://purl.obolibrary.org/obo/mondo.owl' which has status 'not-present'
 WARNING: ValueSet.where(id = 'condition-code-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://human-phenotype-ontology.org
 == fsh-generated/resources/ValueSet-condition-type-vs.json ==
 == fsh-generated/resources/ValueSet-consanguinity-assertion-vs.json ==
@@ -520,6 +522,7 @@ INFORMATION: ValueSet/ncpi-family-types-vs: ValueSet.compose.include[0]: The val
 == fsh-generated/resources/ValueSet-phenotypic-feature-assertion-vs.json ==
 WARNING: ValueSet/phenotypic-feature-assertion-vs: ValueSet.compose.include[1].valueSet[0]: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-NullFlavor'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-NullFlavor' to 'http://terminology.hl7.org/ValueSet/v3-NullFlavor|3.0.0'
 == fsh-generated/resources/ValueSet-phenotypic-feature-code-vs.json ==
+WARNING: ValueSet/phenotypic-feature-code-vs: ValueSet.compose.include[0]: The value set references CodeSystem 'http://human-phenotype-ontology.org' which has status 'not-present'
 WARNING: ValueSet.where(id = 'phenotypic-feature-code-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://human-phenotype-ontology.org
 == fsh-generated/resources/ValueSet-research-data-access-code-vs.json ==
 == fsh-generated/resources/ValueSet-research-data-access-type-vs.json ==
