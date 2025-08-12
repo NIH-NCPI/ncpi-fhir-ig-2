@@ -16,6 +16,18 @@
     "oids" : ["2.16.840.1.113883.4.642.1.1492"]
   },
   {
+    "id" : "BWA-GIT-ActivityDefinition",
+    "type" : "ActivityDefinition",
+    "url" : "https://github.com/lh3/bwa",
+    "version" : "0.2.0"
+  },
+  {
+    "id" : "Submitted-Data-ActivityDefinition",
+    "type" : "ActivityDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ActivityDefinition/Submitted-Data-ActivityDefinition",
+    "version" : "0.2.0"
+  },
+  {
     "id" : "adaptor-trimmed-cs",
     "type" : "CodeSystem",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/adaptor-trimmed-cs",
@@ -163,6 +175,13 @@
     "name" : "StudyPersonnelRole"
   },
   {
+    "id" : "wgs-parameters",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters",
+    "version" : "0.2.0",
+    "name" : "WGSParameters"
+  },
+  {
     "id" : "workflow-tool-cs",
     "type" : "CodeSystem",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-tool-cs",
@@ -182,6 +201,41 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2",
     "version" : "0.2.0",
     "name" : "NCPIFHIRIGv2"
+  },
+  {
+    "id" : "assaytask-input",
+    "type" : "SearchParameter",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-input",
+    "version" : "0.2.0",
+    "name" : "assaytask-input"
+  },
+  {
+    "id" : "assaytask-input-integer",
+    "type" : "SearchParameter",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-input-integer",
+    "version" : "0.2.0",
+    "name" : "assaytask-input-integer"
+  },
+  {
+    "id" : "assaytask-input-quantity",
+    "type" : "SearchParameter",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-input-quantity",
+    "version" : "0.2.0",
+    "name" : "assaytask-input-quantity"
+  },
+  {
+    "id" : "assaytask-input-string",
+    "type" : "SearchParameter",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-input-string",
+    "version" : "0.2.0",
+    "name" : "assaytask-input-string"
+  },
+  {
+    "id" : "assaytask-output",
+    "type" : "SearchParameter",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-output",
+    "version" : "0.2.0",
+    "name" : "assaytask-output"
   },
   {
     "id" : "SharedDataModelAliquot",
@@ -315,6 +369,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type",
     "version" : "0.2.0",
     "name" : "AccessType"
+  },
+  {
+    "id" : "age",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age",
+    "version" : "0.2.0",
+    "name" : "AgeExtension"
   },
   {
     "id" : "age-at-assertion",
@@ -455,6 +516,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant",
     "version" : "0.2.0",
     "name" : "NcpiStudyParticipant"
+  },
+  {
+    "id" : "ncpi-assay-task",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task",
+    "version" : "0.2.0",
+    "name" : "NcpiAssayTask"
   },
   {
     "id" : "ncpi-bamcram",

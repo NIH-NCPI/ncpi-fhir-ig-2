@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="f3"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference f3</b></p><a name="f3"> </a><a name="hcf3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncpi-file.html">NCPI File</a></p></div><p><b>The file format used</b>: <span title="Codes:{http://edamontology.org format_2572}">BAM</span></p><p><b>The size of the file, e.g., in bytes.</b>: 1044770381 bytes</p><blockquote><p><b>Provides a list of hashes for confirming file transfers</b></p><ul><li>https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value: 9c2460c4647fdc57261f040042863fa2</li><li>https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type: md5</li></ul></blockquote><p><b>identifier</b>: f2</p><p><b>status</b>: Current</p><p><b>subject</b>: <a href="Group-rs1-g1.html">Group Participants from the Example research study</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>s3://foobar/example3.bam</td></tr></table></blockquote></div>
+  </text>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://edamontology.org"/>
+        <code value="format_2572"/>
+        <display value="BAM"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size">
+    <valueQuantity>
+      <value value="1044770381"/>
+      <unit value="bytes"/>
+    </valueQuantity>
+  </extension>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension">
+    <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value">
+      <valueString value="9c2460c4647fdc57261f040042863fa2"/>
+    </extension>
+    <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type">
+      <valueCode value="md5"/>
+    </extension>
+  </extension>
+  <identifier>
+    <value value="f2"/>
+  </identifier>
+  <status value="current"/>
+  <subject>
+    <reference value="Group/rs1-g1"/>
+  </subject>
+  <content>
+    <attachment>
+      <url value="s3://foobar/example3.bam"/>
+    </attachment>
+  </content>
+</DocumentReference>

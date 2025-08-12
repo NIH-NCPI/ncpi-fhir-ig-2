@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="assaytask-input-quantity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter assaytask-input-quantity</b></p><a name="assaytask-input-quantity"> </a><a name="hcassaytask-input-quantity"> </a><h2>assaytask-input-quantity</h2><p>Parameter <code>input-quantity</code>:<code>quantity</code></p><div><p>Search AssayTask input by quantity value (Task.input.valueQuantity)</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/task.html">Task</a></td></tr><tr><td>Expression</td><td><code>Task.input.value.as(Quantity)</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-input-quantity"/>
+  <version value="0.2.0"/>
+  <name value="assaytask-input-quantity"/>
+  <status value="active"/>
+  <date value="2025-08-12T16:35:35+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Search AssayTask input by quantity value (Task.input.valueQuantity)"/>
+  <code value="input-quantity"/>
+  <base value="Task"/>
+  <type value="quantity"/>
+  <expression value="Task.input.value.as(Quantity)"/>
+</SearchParameter>

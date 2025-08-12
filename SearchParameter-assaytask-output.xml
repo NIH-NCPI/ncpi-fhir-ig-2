@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="assaytask-output"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter assaytask-output</b></p><a name="assaytask-output"> </a><a name="hcassaytask-output"> </a><h2>assaytask-output</h2><p>Parameter <code>output</code>:<code>reference</code></p><div><p>Search by output reference (e.g., DocumentReference, Observation) on AssayTask.</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/task.html">Task</a></td></tr><tr><td>Expression</td><td><code>Task.output.value.as(Reference)</code></td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>, <a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Chains</td><td>Allowed: identifier, subject, patient, basedOn, type</td></tr></table></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-output"/>
+  <version value="0.2.0"/>
+  <name value="assaytask-output"/>
+  <status value="active"/>
+  <date value="2025-08-12T16:35:35+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Search by output reference (e.g., DocumentReference, Observation) on AssayTask."/>
+  <code value="output"/>
+  <base value="Task"/>
+  <type value="reference"/>
+  <expression value="Task.output.value.as(Reference)"/>
+  <target value="DocumentReference"/>
+  <target value="Observation"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <chain value="identifier"/>
+  <chain value="subject"/>
+  <chain value="patient"/>
+  <chain value="basedOn"/>
+  <chain value="type"/>
+</SearchParameter>

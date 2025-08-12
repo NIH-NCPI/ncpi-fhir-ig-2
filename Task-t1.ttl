@@ -1,0 +1,259 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/Task/t1> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "t1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task t1</b></p><a name=\"t1\"> </a><a name=\"hct1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-assay-task.html\">Condensed Assay Task</a></p></div><p><b>Age at Event</b>: 3 h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p><p><b>instantiatesCanonical</b>: <a href=\"ActivityDefinition-BWA-GIT-ActivityDefinition.html\">ActivityDefinition[https://github.com/lh3/bwa|0.2.0]</a></p><p><b>status</b>: Completed</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes:{http://edamontology.org operation_3670}\">RNA-seq analysis</span></p><p><b>for</b>: <a href=\"Patient-p1.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/#patient-001)</a></p><p><b>executionPeriod</b>: 2024-10-01 --&gt; 2024-10-02</p><p><b>note</b>: </p><blockquote><div><p>Paired tumor/normal assay with two outputs.</p>\n</div></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:\">Specimen</span></p><p><b>value</b>: <a href=\"Specimen-s1.html\">Specimen: identifier = https://example.org/#specimen-001; type = BLD</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:\">Specimen</span></p><p><b>value</b>: <a href=\"Specimen-s2.html\">Specimen: identifier = https://example.org/#specimen-002; type = BLD</a></p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters fastq-format}\">FASTQ Format</span></p><p><b>value</b>: Phred+33</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters read-length}\">Read Length</span></p><p><b>value</b>: 150</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters paired-end}\">Paired End</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters adapter-sequence}\">Adapter Sequence</span></p><p><b>value</b>: AGATCGGAAGAGC</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters min-base-quality}\">Minimum Base Quality</span></p><p><b>value</b>: 20</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters reference-genome}\">Reference Genome</span></p><p><b>value</b>: GRCh38</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters mark-duplicates}\">Mark Duplicates</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters variant-caller}\">Variant Caller</span></p><p><b>value</b>: GATK HaplotypeCaller</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters variant-caller-mode}\">Variant Caller Mode</span></p><p><b>value</b>: gVCF</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters ploidy}\">Ploidy</span></p><p><b>value</b>: 2</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters population-database}\">Population Database</span></p><p><b>value</b>: gnomAD v3</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters annotation-tool}\">Annotation Tool</span></p><p><b>value</b>: Ensembl VEP</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters target-region}\">Target Region</span></p><p><b>value</b>: Whole genome</p></blockquote><blockquote><p><b>output</b></p><p><b>type</b>: <span title=\"Codes:\">DocumentReference</span></p><p><b>value</b>: <a href=\"DocumentReference-f1.html\">DocumentReference: extension = BAM,1044770380 bytes,; identifier = f1; status = current</a></p></blockquote><blockquote><p><b>output</b></p><p><b>type</b>: <span title=\"Codes:\">DocumentReference</span></p><p><b>value</b>: <a href=\"DocumentReference-f2.html\">DocumentReference: extension = BAM,1044770381 bytes,; identifier = f2; status = current</a></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Age ;
+       fhir:value [ fhir:v "3"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "h" ]
+     ]
+  ] ) ; # 
+  fhir:instantiatesCanonical [
+     fhir:v "https://github.com/lh3/bwa"^^xsd:anyURI ;
+     fhir:link <https://github.com/lh3/bwa>
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://edamontology.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "operation_3670" ] ;
+       fhir:display [ fhir:v "RNA-seq analysis" ]
+     ] )
+  ] ; # 
+  fhir:for [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/p1> ;
+     fhir:reference [ fhir:v "Patient/p1" ]
+  ] ; # 
+  fhir:executionPeriod [
+     fhir:start [ fhir:v "2024-10-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2024-10-02"^^xsd:date ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Paired tumor/normal assay with two outputs." ]
+  ] ) ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "Specimen" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Specimen/s1> ;
+       fhir:reference [ fhir:v "Specimen/s1" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "Specimen" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Specimen/s2> ;
+       fhir:reference [ fhir:v "Specimen/s2" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fastq-format" ] ;
+         fhir:display [ fhir:v "FASTQ Format" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Phred+33"
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "read-length" ] ;
+         fhir:display [ fhir:v "Read Length" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 150
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "paired-end" ] ;
+         fhir:display [ fhir:v "Paired End" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "adapter-sequence" ] ;
+         fhir:display [ fhir:v "Adapter Sequence" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "AGATCGGAAGAGC"
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "min-base-quality" ] ;
+         fhir:display [ fhir:v "Minimum Base Quality" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 20
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "reference-genome" ] ;
+         fhir:display [ fhir:v "Reference Genome" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "GRCh38"
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mark-duplicates" ] ;
+         fhir:display [ fhir:v "Mark Duplicates" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "variant-caller" ] ;
+         fhir:display [ fhir:v "Variant Caller" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "GATK HaplotypeCaller"
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "variant-caller-mode" ] ;
+         fhir:display [ fhir:v "Variant Caller Mode" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "gVCF"
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ploidy" ] ;
+         fhir:display [ fhir:v "Ploidy" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 2
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "population-database" ] ;
+         fhir:display [ fhir:v "Population Database" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "gnomAD v3"
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "annotation-tool" ] ;
+         fhir:display [ fhir:v "Annotation Tool" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Ensembl VEP"
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "target-region" ] ;
+         fhir:display [ fhir:v "Target Region" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "Whole genome"
+     ]
+  ] ) ; # 
+  fhir:output ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "DocumentReference" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/f1> ;
+       fhir:reference [ fhir:v "DocumentReference/f1" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "DocumentReference" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/f2> ;
+       fhir:reference [ fhir:v "DocumentReference/f2" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

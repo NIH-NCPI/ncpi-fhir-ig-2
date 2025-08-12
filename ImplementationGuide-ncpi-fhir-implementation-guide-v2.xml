@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2025-08-11T15:03:48+00:00"/>
+  <date value="2025-08-12T16:35:35+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -529,6 +529,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/age"/>
+      </reference>
+      <name value="Age at Event"/>
+      <description value="Age at Event Extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/research-age-at-last-vital-status"/>
       </reference>
       <name value="Age at Last Vital Status Extension"/>
@@ -603,6 +614,72 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/t2"/>
+      </reference>
+      <name value="AssayTask for assay a2"/>
+      <description value="AssayTask for a group with 1 output"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/assaytask-input"/>
+      </reference>
+      <name value="AssayTask Input SearchParameter"/>
+      <description value="Search by input reference (e.g., Specimen, Group) on AssayTask."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/assaytask-input-integer"/>
+      </reference>
+      <name value="AssayTask Input Value (Integer) SearchParameter"/>
+      <description value="Search AssayTask input by Integer value (Task.input.valueInteger)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/assaytask-input-quantity"/>
+      </reference>
+      <name value="AssayTask Input Value (Quantity) SearchParameter"/>
+      <description value="Search AssayTask input by quantity value (Task.input.valueQuantity)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/assaytask-input-string"/>
+      </reference>
+      <name value="AssayTask Input Value (String) SearchParameter"/>
+      <description value="Search AssayTask input by string value (Task.input.valueString)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/assaytask-output"/>
+      </reference>
+      <name value="AssayTask Output SearchParameter"/>
+      <description value="Search by output reference (e.g., DocumentReference, Observation) on AssayTask."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -633,6 +710,17 @@
       <name value="BAM or CRAM file profile"/>
       <description value="BAM or CRAM file profile"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/BWA-GIT-ActivityDefinition"/>
+      </reference>
+      <name value="BWA definition by GIT"/>
+      <description value="BWA software tool defined using GIT repository"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -724,6 +812,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-assay-task"/>
+      </reference>
+      <name value="Condensed Assay Task"/>
+      <description value="Profile to represent informatics assay definitions within NCPI, such as Submitted Data, WGS, RNA-seq, etc.  A single resource to represent the intent, execution, and results of a research assay."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -754,6 +853,17 @@
       <name value="Consanguinity Value Codes"/>
       <description value="List of codes indicates the level of known consanguinity (blood relation) within a study family."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/Submitted-Data-ActivityDefinition"/>
+      </reference>
+      <name value="Data submission"/>
+      <description value="A priori data uploaded as part of Research Study"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -834,6 +944,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/t1"/>
+      </reference>
+      <name value="Example AssayTask with 2 Specimens and 2 Outputs"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -842,6 +962,28 @@
       <name value="Example assertion using data from GREGoR"/>
       <description value="Example assertion using data from GREGoR"/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/s1"/>
+      </reference>
+      <name value="Example biospecimen"/>
+      <description value="Example biospecimen"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/s2"/>
+      </reference>
+      <name value="Example biospecimen"/>
+      <description value="Example biospecimen"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -955,6 +1097,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/f1"/>
+      </reference>
+      <name value="Example file created by assay t1"/>
+      <description value="Example file created by assay t1, associated with a patient"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/f2"/>
+      </reference>
+      <name value="Example file created by assay t1"/>
+      <description value="Example file created by assay t1, associated with a patient"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/f3"/>
+      </reference>
+      <name value="Example file created by assay t2"/>
+      <description value="Example file created by assay t2, associated with a group"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -985,6 +1160,28 @@
       <name value="Example mappings based on data from GREGoR"/>
       <description value="Example mappings based on data from GREGoR"/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/p1"/>
+      </reference>
+      <name value="Example patient"/>
+      <description value="Example patient"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/p2"/>
+      </reference>
+      <name value="Example patient"/>
+      <description value="Example patient"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1068,11 +1265,33 @@
         <valueString value="ResearchStudy"/>
       </extension>
       <reference>
+        <reference value="ResearchStudy/rs1"/>
+      </reference>
+      <name value="Example study"/>
+      <description value="Example study"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
         <reference value="ResearchStudy/research-study-gregor"/>
       </reference>
       <name value="Example study from GREGoR"/>
       <description value="Example study from GREGoR"/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/rs1-g1"/>
+      </reference>
+      <name value="Example study group"/>
+      <description value="Example study group"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2022,6 +2241,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/task-observation"/>
+      </reference>
+      <name value="Task Observation Example"/>
+      <description value="Observation related to a Task"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -2117,6 +2347,17 @@
       </reference>
       <name value="Version of the contents of the file"/>
       <description value="Version of the contents of the file"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/wgs-parameters"/>
+      </reference>
+      <name value="WGS Task Input Parameters"/>
+      <description value="Parameters for WGS Task Input example"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

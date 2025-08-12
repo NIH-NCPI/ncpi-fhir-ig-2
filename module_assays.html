@@ -266,12 +266,226 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h3 id="assays">Assays</h3>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#informatics-assay-requests" id="markdown-toc-informatics-assay-requests">Informatics Assay Requests</a></li>
+  <li><a href="#-modeling-informatics-assays-with-ncpiassaytask" id="markdown-toc--modeling-informatics-assays-with-ncpiassaytask">🧬 Modeling Informatics Assays with NcpiAssayTask</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#-core-resource-roles" id="markdown-toc--core-resource-roles">🔑 Core Resource Roles</a></li>
+      <li><a href="#-ncpiassaytask-structure" id="markdown-toc--ncpiassaytask-structure">📄 NcpiAssayTask Structure</a></li>
+      <li><a href="#-searchparameters" id="markdown-toc--searchparameters">🔍 SearchParameters</a></li>
+      <li><a href="#-example-queries" id="markdown-toc--example-queries">🔎 Example Queries</a>        <ul>
+          <li><a href="#1-find-assaytasks-by-specimen" id="markdown-toc-1-find-assaytasks-by-specimen">1. Find AssayTasks by Specimen</a></li>
+          <li><a href="#2-find-documentreferences-produced-by-tasks-using-a-given-specimen" id="markdown-toc-2-find-documentreferences-produced-by-tasks-using-a-given-specimen">2. Find DocumentReferences produced by Tasks using a given Specimen</a></li>
+          <li><a href="#3-find-all-tasks-for-a-given-assay-type" id="markdown-toc-3-find-all-tasks-for-a-given-assay-type">3. Find all tasks for a given assay type</a></li>
+          <li><a href="#4-search-by-string-input-eg-parameter" id="markdown-toc-4-search-by-string-input-eg-parameter">4. Search by string input (e.g., parameter)</a></li>
+          <li><a href="#5-find-all-tasks-for-a-specific-group" id="markdown-toc-5-find-all-tasks-for-a-specific-group">5. Find all tasks for a specific group</a></li>
+          <li><a href="#6-find-all-tasks-instantiating-a-specific-activitydefinition" id="markdown-toc-6-find-all-tasks-instantiating-a-specific-activitydefinition">6. Find all tasks instantiating a specific ActivityDefinition</a></li>
+          <li><a href="#7-find-all-tasks-with-a-specific-output-documentreference" id="markdown-toc-7-find-all-tasks-with-a-specific-output-documentreference">7. Find all tasks with a specific output DocumentReference</a></li>
+          <li><a href="#8-find-all-tasks-with-a-specific-code-eg-bwa-alignment" id="markdown-toc-8-find-all-tasks-with-a-specific-code-eg-bwa-alignment">8. Find all tasks with a specific code (e.g., BWA alignment)</a></li>
+          <li><a href="#9-find-all-tasks-with-a-specific-numeric-input-parameter" id="markdown-toc-9-find-all-tasks-with-a-specific-numeric-input-parameter">9. Find all tasks with a specific numeric input parameter</a></li>
+        </ul>
+      </li>
+      <li><a href="#-group-and-activitydefinition-example" id="markdown-toc--group-and-activitydefinition-example">🔗 Group and ActivityDefinition Example</a></li>
+      <li><a href="#-output-example" id="markdown-toc--output-example">🧪 Output Example</a></li>
+      <li><a href="#-summary" id="markdown-toc--summary">✅ Summary</a>        <ul>
+          <li><a href="#example-usage" id="markdown-toc-example-usage">Example Usage</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-<p>The assay model is currently under revision, and does not have a structure that is ready for release at this time.  However, we recognize that a subset of assay metadata is necessary to support, even if we do not have a full model finalized.  For that reason, assay information that is relevant to the use of specific files can be found in the module information for file metadata.</p>
+</div>
+<h1 id="informatics-assay-requests">Informatics Assay Requests</h1>
+<h1 id="-modeling-informatics-assays-with-ncpiassaytask">🧬 Modeling Informatics Assays with NcpiAssayTask</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">NcpiAssayTask</code> resource is a condensed FHIR representation of research assay events. It integrates <strong>what was performed</strong>, <strong>on whom</strong>, <strong>using what parameters</strong>, and <strong>producing what results</strong> — all within a single Task-derived structure.</p>
+
+<p>This model eliminates the need for separate <code class="language-plaintext highlighter-rouge">ServiceRequest</code> and <code class="language-plaintext highlighter-rouge">DiagnosticReport</code> resources, while making use of <code class="language-plaintext highlighter-rouge">ActivityDefinition</code> as an optional reusable reference.</p>
+
+<hr />
+
+<h2 id="-core-resource-roles">🔑 Core Resource Roles</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Concept</th>
+      <th>FHIR Resource</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code></td>
+      <td>Participant from whom specimens are collected</td>
+    </tr>
+    <tr>
+      <td>Specimen</td>
+      <td><code class="language-plaintext highlighter-rouge">Specimen</code></td>
+      <td>Biological material input into the assay</td>
+    </tr>
+    <tr>
+      <td>Group</td>
+      <td><code class="language-plaintext highlighter-rouge">Group</code></td>
+      <td>Cohort of subjects (optional)</td>
+    </tr>
+    <tr>
+      <td>Assay Task</td>
+      <td><code class="language-plaintext highlighter-rouge">NcpiAssayTask</code></td>
+      <td>Encapsulates assay execution and output</td>
+    </tr>
+    <tr>
+      <td>Assay definition</td>
+      <td><code class="language-plaintext highlighter-rouge">ActivityDefinition</code></td>
+      <td>(Optional) Defines a reusable assay protocol</td>
+    </tr>
+    <tr>
+      <td>File outputs</td>
+      <td><code class="language-plaintext highlighter-rouge">DocumentReference</code></td>
+      <td>Data outputs from the assay (e.g. BAM, VCF)</td>
+    </tr>
+    <tr>
+      <td>Observations</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code></td>
+      <td>(Optional) Scalar or interpreted results</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="-ncpiassaytask-structure">📄 NcpiAssayTask Structure</h2>
+
+<p><code class="language-plaintext highlighter-rouge">NcpiAssayTask</code> captures:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code</code>: The assay performed (EDAM term recommended)</li>
+  <li><code class="language-plaintext highlighter-rouge">for</code>: The <code class="language-plaintext highlighter-rouge">Patient</code> or <code class="language-plaintext highlighter-rouge">Group</code> the assay is performed on</li>
+  <li><code class="language-plaintext highlighter-rouge">input</code>: One or more <code class="language-plaintext highlighter-rouge">Specimen</code> and optional parameters</li>
+  <li><code class="language-plaintext highlighter-rouge">output</code>: One or more <code class="language-plaintext highlighter-rouge">DocumentReference</code> resources pointing to files or structured results</li>
+  <li><code class="language-plaintext highlighter-rouge">instantiatesCanonical</code>: (Optional) An <code class="language-plaintext highlighter-rouge">ActivityDefinition</code> representing the assay protocol</li>
+  <li><code class="language-plaintext highlighter-rouge">executionPeriod</code>: When the assay occurred</li>
+  <li><code class="language-plaintext highlighter-rouge">note</code>, <code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">intent</code>: Execution metadata</li>
+</ul>
+
+<hr />
+
+<h2 id="-searchparameters">🔍 SearchParameters</h2>
+
+<p>Custom SearchParameters enable linking and inclusion:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">assaytask-input</code> Search by input reference (e.g., Specimen, Group, Patient or DocumentReference)</li>
+  <li><code class="language-plaintext highlighter-rouge">assaytask-input-string</code> Search by string input (e.g., parameter)</li>
+  <li><code class="language-plaintext highlighter-rouge">assaytask-input-integer</code> Search by integer input (e.g., numeric parameter)</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">assaytask-input-quantity</code> Search by quantity input</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">assaytask-output</code> Search by output reference (e.g., DocumentReference, Observation)</li>
+</ul>
+
+<hr />
+
+<h2 id="-example-queries">🔎 Example Queries</h2>
+
+<h3 id="1-find-assaytasks-by-specimen">1. Find AssayTasks by Specimen</h3>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Task?input=Specimen/s1
+</span></code></pre></div></div>
+
+<h3 id="2-find-documentreferences-produced-by-tasks-using-a-given-specimen">2. Find DocumentReferences produced by Tasks using a given Specimen</h3>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Task?input=Specimen/s1&amp;_include=Task:output
+</span></code></pre></div></div>
+
+<h3 id="3-find-all-tasks-for-a-given-assay-type">3. Find all tasks for a given assay type</h3>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Task?code=operation_3670
+</span></code></pre></div></div>
+
+<h3 id="4-search-by-string-input-eg-parameter">4. Search by string input (e.g., parameter)</h3>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Task?input-string=Phred+33
+</span></code></pre></div></div>
+
+<p>(Requires <code class="language-plaintext highlighter-rouge">assaytask-input-string</code> SearchParameter)</p>
+
+<h3 id="5-find-all-tasks-for-a-specific-group">5. Find all tasks for a specific group</h3>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Task?for=Group/rs1-g1&amp;_include=Task:output
+</span></code></pre></div></div>
+<h3 id="6-find-all-tasks-instantiating-a-specific-activitydefinition">6. Find all tasks instantiating a specific ActivityDefinition</h3>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Task?instantiates-canonical=
+</span></code></pre></div></div>
+
+<h3 id="7-find-all-tasks-with-a-specific-output-documentreference">7. Find all tasks with a specific output DocumentReference</h3>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Task?output=DocumentReference/f3
+</span></code></pre></div></div>
+
+<h3 id="8-find-all-tasks-with-a-specific-code-eg-bwa-alignment">8. Find all tasks with a specific code (e.g., BWA alignment)</h3>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Task?code=http://edamontology.org/operation_3670
+</span></code></pre></div></div>
+
+<h3 id="9-find-all-tasks-with-a-specific-numeric-input-parameter">9. Find all tasks with a specific numeric input parameter</h3>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Task?input-integer=150
+</span></code></pre></div></div>
+<p>(Requires <code class="language-plaintext highlighter-rouge">assaytask-input-integer</code> SearchParameter)
+—</p>
+
+<h2 id="-group-and-activitydefinition-example">🔗 Group and ActivityDefinition Example</h2>
+
+<p>Find all <code class="language-plaintext highlighter-rouge">NcpiAssayTask</code> resources:</p>
+
+<ul>
+  <li>Based on a specific <code class="language-plaintext highlighter-rouge">ActivityDefinition</code> (e.g., BWA alignment)</li>
+  <li>Performed for members of a specific <code class="language-plaintext highlighter-rouge">Group</code></li>
+</ul>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Task?instantiates-canonical=https://github.com/lh3/bwa&amp;for=Group/rs1-g1&amp;_include=Task:output
+</span></code></pre></div></div>
+
+<hr />
+
+<h2 id="-output-example">🧪 Output Example</h2>
+
+<p>Returns:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">NcpiAssayTask/t2</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Group/rs1-g1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DocumentReference/f3</code></li>
+</ul>
+
+<hr />
+
+<h2 id="-summary">✅ Summary</h2>
+
+<p><code class="language-plaintext highlighter-rouge">NcpiAssayTask</code> provides a <strong>compact, queryable, and interoperable</strong> representation of assay events in research and clinical settings, supporting:</p>
+
+<ul>
+  <li>EDAM-coded assay types</li>
+  <li>Parameterized execution</li>
+  <li>Multiple inputs and outputs</li>
+  <li>Optional protocol definitions</li>
+</ul>
+
+<p>This model promotes clean chaining, backward compatibility, and simplifies both retrospective and prospective data capture.</p>
+
+<h3 id="example-usage">Example Usage</h3>
+
+<div style="text-align: center;">
+    <img style="display: block; margin: 0 auto; margin-bottom: 20px;" width="100%" src="assay-usage.png" alt="Example Assay Diagram" />
+</div>
+
 
 
 
@@ -291,7 +505,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 11, 2025 15:04+0000">2025-08-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 12, 2025 16:36+0000">2025-08-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,0 +1,59 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "f2",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "f2"
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "url": "s3://foobar/example2.bam"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "format_2572",
+            "system": "http://edamontology.org",
+            "display": "BAM"
+          }
+        ]
+      },
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format"
+    },
+    {
+      "valueQuantity": {
+        "value": 1044770381,
+        "unit": "bytes"
+      },
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size"
+    },
+    {
+      "extension": [
+        {
+          "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
+          "valueString": "9c2460c4647fdc57261f040042863fa2"
+        },
+        {
+          "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type",
+          "valueCode": "md5"
+        }
+      ],
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/p1"
+  },
+  "status": "current"
+}

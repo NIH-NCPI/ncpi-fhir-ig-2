@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Group xmlns="http://hl7.org/fhir">
+  <id value="rs1-g1"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Group rs1-g1</b></p><a name="rs1-g1"> </a><a name="hcrs1-g1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-research-study-group.html">NCPI Research Study Group</a></p></div><p><b>identifier</b>: <code>https://example.org/</code>/study-group-001</p><p><b>type</b>: Person</p><p><b>actual</b>: true</p><p><b>name</b>: Participants from the Example research study</p><p><b>quantity</b>: 2</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-p1.html">Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/#patient-001)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-p2.html">Anonymous Patient (no stated gender), DoB Unknown ( https://example.org/#patient-002)</a></p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="https://example.org/"/>
+    <value value="study-group-001"/>
+  </identifier>
+  <type value="person"/>
+  <actual value="true"/>
+  <name value="Participants from the Example research study"/>
+  <quantity value="2"/>
+  <member>
+    <entity>
+      <reference value="Patient/p1"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/p2"/>
+    </entity>
+  </member>
+</Group>

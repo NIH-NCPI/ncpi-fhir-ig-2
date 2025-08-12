@@ -1,0 +1,25 @@
+{
+  "resourceType" : "Observation",
+  "id" : "task-observation",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation task-observation</b></p><a name=\"task-observation\"> </a><a name=\"hctask-observation\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://edamontology.org data_1394}\">Alignment score or penalty</span></p><p><b>focus</b>: <a href=\"Task-t1.html\">Task RNA-seq analysis</a></p><p><b>effective</b>: 2025-05-01 09:00:00+0000</p><p><b>value</b>: 42 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://edamontology.org",
+      "code" : "data_1394",
+      "display" : "Alignment score or penalty"
+    }]
+  },
+  "focus" : [{
+    "reference" : "Task/t1"
+  }],
+  "effectiveDateTime" : "2025-05-01T09:00:00Z",
+  "valueQuantity" : {
+    "value" : 42,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "{score}"
+  }
+}

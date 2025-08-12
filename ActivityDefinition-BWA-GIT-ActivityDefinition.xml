@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="BWA-GIT-ActivityDefinition"/>
+  <text>
+    <status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">BWA software tool defined using GIT repository</div>
+  </text>
+  <url value="https://github.com/lh3/bwa"/>
+  <version value="0.2.0"/>
+  <status value="active"/>
+  <date value="2025-08-12T16:35:35+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <code>
+    <coding>
+      <system value="http://edamontology.org"/>
+      <code value="operation_3182"/>
+      <display value="Genome alignment"/>
+    </coding>
+  </code>
+</ActivityDefinition>

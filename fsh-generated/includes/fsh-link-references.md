@@ -4,6 +4,7 @@
 [AdaptorTrimmedCS]: CodeSystem-adaptor-trimmed-cs.html
 [AgeAtAssertion]: StructureDefinition-age-at-assertion.html
 [AgeAtEvent]: StructureDefinition-age-at-event.html
+[AgeExtension]: StructureDefinition-age.html
 [AgeAtLastVitalStatus]: StructureDefinition-research-age-at-last-vital-status.html
 [HashType]: StructureDefinition-hash-type.html
 [cbtn-family-relationship-mother]: Observation-cbtn-family-relationship-mother.html
@@ -11,9 +12,16 @@
 [gregor-family-relationship-mother]: Observation-gregor-family-relationship-mother.html
 [OtherConditionModifiers]: StructureDefinition-other-condition-modifiers.html
 [AssayStrategyCS]: CodeSystem-assay-strategy-cs.html
+[t2]: Task-t2.html
+[assaytask-input]: SearchParameter-assaytask-input.html
+[assaytask-input-integer]: SearchParameter-assaytask-input-integer.html
+[assaytask-input-quantity]: SearchParameter-assaytask-input-quantity.html
+[assaytask-input-string]: SearchParameter-assaytask-input-string.html
+[assaytask-output]: SearchParameter-assaytask-output.html
 [PhenotypicFeatureAssertionVS]: ValueSet-phenotypic-feature-assertion-vs.html
 [AliquotAvailability]: StructureDefinition-aliquot-availability.html
 [NcpiBAMCRAM]: StructureDefinition-ncpi-bamcram.html
+[BWA-GIT-ActivityDefinition]: ActivityDefinition-BWA-GIT-ActivityDefinition.html
 [kf-gru-dac-consent]: Consent-kf-gru-dac-consent.html
 [kf-gru-dbgap-consent]: Consent-kf-gru-dbgap-consent.html
 [kf-research-study-personnel-role-op-lead]: PractitionerRole-kf-research-study-personnel-role-op-lead.html
@@ -22,9 +30,11 @@
 [CollectionTypeVS]: ValueSet-collection-type-vs.html
 [CollectionType]: CodeSystem-collection-type.html
 [AliquotConcentration]: StructureDefinition-aliquot-concentration.html
+[NcpiAssayTask]: StructureDefinition-ncpi-assay-task.html
 [ConditionCodeVS]: ValueSet-condition-code-vs.html
 [Consanguinity]: StructureDefinition-consanguinity.html
 [ConsanguinityAssertionVS]: ValueSet-consanguinity-assertion-vs.html
+[Submitted-Data-ActivityDefinition]: ActivityDefinition-Submitted-Data-ActivityDefinition.html
 [kf-research-study-personnel-role-pi]: PractitionerRole-kf-research-study-personnel-role-pi.html
 [kf-research-study-personnel-role-pi-x01]: PractitionerRole-kf-research-study-personnel-role-pi-x01.html
 [DRSAttachment]: StructureDefinition-ncpi-drs-attachment.html
@@ -32,7 +42,10 @@
 [ResearchDataDateOfBirthMethodVS]: ValueSet-research-data-date-of-birth-method-vs.html
 [ResearchDataDateOfBirthMethod]: CodeSystem-research-data-date-of-birth-method.html
 [EDAMOntologyTerms]: ValueSet-edam-ontology-terms-vs.html
+[t1]: Task-t1.html
 [GSS123456-assertion]: Observation-GSS123456-assertion.html
+[s1]: Specimen-s1.html
+[s2]: Specimen-s2.html
 [SA-000]: Specimen-SA-000.html
 [GSS123456-01-010p]: Specimen-GSS123456-01-010p.html
 [GSS123456-01-010]: Specimen-GSS123456-01-010.html
@@ -43,9 +56,14 @@
 [GSS654321]: Patient-GSS654321.html
 [GF-6BAD9S7D]: DocumentReference-GF-6BAD9S7D.html
 [GSS123456-01-010-SG-2]: DocumentReference-GSS123456-01-010-SG-2.html
+[f1]: DocumentReference-f1.html
+[f2]: DocumentReference-f2.html
+[f3]: DocumentReference-f3.html
 [gregor-example-metadata]: Observation-gregor-example-metadata.html
 [FASTQ-example]: Observation-FASTQ-example.html
 [gregor-example-participantstudy]: ResearchSubject-gregor-example-participantstudy.html
+[p1]: Patient-p1.html
+[p2]: Patient-p2.html
 [PT-006SP660]: Patient-PT-006SP660.html
 [cbtn-study-family]: Group-cbtn-study-family.html
 [GSS123456]: Patient-GSS123456.html
@@ -53,7 +71,9 @@
 [gregor-study-family]: Group-gregor-study-family.html
 [PT-006SP675]: Patient-PT-006SP675.html
 [pcgc-example-person]: Person-pcgc-example-person.html
+[rs1]: ResearchStudy-rs1.html
 [research-study-gregor]: ResearchStudy-research-study-gregor.html
+[rs1-g1]: Group-rs1-g1.html
 [NcpiFamilyRelationship]: StructureDefinition-ncpi-family-relationship.html
 [FamilyType]: StructureDefinition-family-type.html
 [NcpiFamilyTypesVS]: ValueSet-ncpi-family-types-vs.html
@@ -140,6 +160,7 @@
 [StudyNameType]: CodeSystem-study-name-type.html
 [StudyPersonnelRoleVS]: ValueSet-study-personnel-role-vs.html
 [StudyPersonnelRole]: CodeSystem-study-personnel-role.html
+[task-observation]: Observation-task-observation.html
 [FileFormat]: StructureDefinition-file-format.html
 [FileSize]: StructureDefinition-file-size.html
 [TitleTypeVS]: ValueSet-title-type-vs.html
@@ -149,5 +170,6 @@
 [HashValue]: StructureDefinition-hash-value.html
 [NcpiVCF]: StructureDefinition-ncpi-vcf.html
 [ContentVersion]: StructureDefinition-content-version.html
+[WGSParameters]: CodeSystem-wgs-parameters.html
 [WorkflowToolCS]: CodeSystem-workflow-tool-cs.html
 [WorkflowTypeCS]: CodeSystem-workflow-type-cs.html

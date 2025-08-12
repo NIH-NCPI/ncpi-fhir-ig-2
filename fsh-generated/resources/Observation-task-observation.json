@@ -1,0 +1,25 @@
+{
+  "resourceType": "Observation",
+  "id": "task-observation",
+  "focus": [
+    {
+      "reference": "Task/t1"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "data_1394",
+        "system": "http://edamontology.org",
+        "display": "Alignment score or penalty"
+      }
+    ]
+  },
+  "effectiveDateTime": "2025-05-01T09:00:00Z",
+  "valueQuantity": {
+    "value": 42,
+    "code": "{score}",
+    "system": "http://unitsofmeasure.org"
+  }
+}

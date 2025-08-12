@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="wgs-parameters"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem wgs-parameters</b></p><a name="wgs-parameters"> </a><a name="hcwgs-parameters"> </a><p>This  code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">fastq-format<a name="wgs-parameters-fastq-format"> </a></td><td>FASTQ Format</td></tr><tr><td style="white-space:nowrap">read-length<a name="wgs-parameters-read-length"> </a></td><td>Read Length</td></tr><tr><td style="white-space:nowrap">paired-end<a name="wgs-parameters-paired-end"> </a></td><td>Paired End</td></tr><tr><td style="white-space:nowrap">adapter-sequence<a name="wgs-parameters-adapter-sequence"> </a></td><td>Adapter Sequence</td></tr><tr><td style="white-space:nowrap">min-base-quality<a name="wgs-parameters-min-base-quality"> </a></td><td>Minimum Base Quality</td></tr><tr><td style="white-space:nowrap">reference-genome<a name="wgs-parameters-reference-genome"> </a></td><td>Reference Genome</td></tr><tr><td style="white-space:nowrap">mark-duplicates<a name="wgs-parameters-mark-duplicates"> </a></td><td>Mark Duplicates</td></tr><tr><td style="white-space:nowrap">variant-caller<a name="wgs-parameters-variant-caller"> </a></td><td>Variant Caller</td></tr><tr><td style="white-space:nowrap">variant-caller-mode<a name="wgs-parameters-variant-caller-mode"> </a></td><td>Variant Caller Mode</td></tr><tr><td style="white-space:nowrap">ploidy<a name="wgs-parameters-ploidy"> </a></td><td>Ploidy</td></tr><tr><td style="white-space:nowrap">population-database<a name="wgs-parameters-population-database"> </a></td><td>Population Database</td></tr><tr><td style="white-space:nowrap">annotation-tool<a name="wgs-parameters-annotation-tool"> </a></td><td>Annotation Tool</td></tr><tr><td style="white-space:nowrap">target-region<a name="wgs-parameters-target-region"> </a></td><td>Target Region</td></tr></table></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters"/>
+  <version value="0.2.0"/>
+  <name value="WGSParameters"/>
+  <title value="WGS Task Input Parameters"/>
+  <status value="draft"/>
+  <date value="2025-08-12T16:35:35+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Parameters for WGS Task Input example"/>
+  <content value="complete"/>
+  <count value="13"/>
+  <concept>
+    <code value="fastq-format"/>
+    <display value="FASTQ Format"/>
+  </concept>
+  <concept>
+    <code value="read-length"/>
+    <display value="Read Length"/>
+  </concept>
+  <concept>
+    <code value="paired-end"/>
+    <display value="Paired End"/>
+  </concept>
+  <concept>
+    <code value="adapter-sequence"/>
+    <display value="Adapter Sequence"/>
+  </concept>
+  <concept>
+    <code value="min-base-quality"/>
+    <display value="Minimum Base Quality"/>
+  </concept>
+  <concept>
+    <code value="reference-genome"/>
+    <display value="Reference Genome"/>
+  </concept>
+  <concept>
+    <code value="mark-duplicates"/>
+    <display value="Mark Duplicates"/>
+  </concept>
+  <concept>
+    <code value="variant-caller"/>
+    <display value="Variant Caller"/>
+  </concept>
+  <concept>
+    <code value="variant-caller-mode"/>
+    <display value="Variant Caller Mode"/>
+  </concept>
+  <concept>
+    <code value="ploidy"/>
+    <display value="Ploidy"/>
+  </concept>
+  <concept>
+    <code value="population-database"/>
+    <display value="Population Database"/>
+  </concept>
+  <concept>
+    <code value="annotation-tool"/>
+    <display value="Annotation Tool"/>
+  </concept>
+  <concept>
+    <code value="target-region"/>
+    <display value="Target Region"/>
+  </concept>
+</CodeSystem>

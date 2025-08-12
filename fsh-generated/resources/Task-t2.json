@@ -1,0 +1,48 @@
+{
+  "resourceType": "Task",
+  "id": "t2",
+  "meta": {
+    "profile": [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task"
+    ]
+  },
+  "output": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "DocumentReference"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "DocumentReference/f3"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age",
+      "valueAge": {
+        "value": 3,
+        "code": "h",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
+  "status": "completed",
+  "intent": "order",
+  "instantiatesUri": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ActivityDefinition/Submitted-Data-ActivityDefinition",
+  "code": {
+    "coding": [
+      {
+        "code": "topic_0219",
+        "system": "http://edamontology.org",
+        "display": "Data submission, annotation and curation"
+      }
+    ]
+  },
+  "for": {
+    "reference": "Group/rs1-g1"
+  }
+}

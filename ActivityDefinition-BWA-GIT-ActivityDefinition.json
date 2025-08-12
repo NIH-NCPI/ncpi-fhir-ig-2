@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "BWA-GIT-ActivityDefinition",
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">BWA software tool defined using GIT repository</div>"
+  },
+  "url" : "https://github.com/lh3/bwa",
+  "version" : "0.2.0",
+  "status" : "active",
+  "date" : "2025-08-12T16:35:35+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://edamontology.org",
+      "code" : "operation_3182",
+      "display" : "Genome alignment"
+    }]
+  }
+}

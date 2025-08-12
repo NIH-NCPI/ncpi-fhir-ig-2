@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-08-11T15:03:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-12T16:35:35+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -956,6 +956,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age> ;
+         fhir:reference [ fhir:v "StructureDefinition/age" ]
+       ] ;
+       fhir:name [ fhir:v "Age at Event" ] ;
+       fhir:description [ fhir:v "Age at Event Extension" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status> ;
          fhir:reference [ fhir:v "StructureDefinition/research-age-at-last-vital-status" ]
        ] ;
@@ -1081,6 +1099,115 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Task"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Task/t2> ;
+         fhir:reference [ fhir:v "Task/t2" ]
+       ] ;
+       fhir:name [ fhir:v "AssayTask for assay a2" ] ;
+       fhir:description [ fhir:v "AssayTask for a group with 1 output" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-input> ;
+         fhir:reference [ fhir:v "SearchParameter/assaytask-input" ]
+       ] ;
+       fhir:name [ fhir:v "AssayTask Input SearchParameter" ] ;
+       fhir:description [ fhir:v "Search by input reference (e.g., Specimen, Group) on AssayTask." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-input-integer> ;
+         fhir:reference [ fhir:v "SearchParameter/assaytask-input-integer" ]
+       ] ;
+       fhir:name [ fhir:v "AssayTask Input Value (Integer) SearchParameter" ] ;
+       fhir:description [ fhir:v "Search AssayTask input by Integer value (Task.input.valueInteger)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-input-quantity> ;
+         fhir:reference [ fhir:v "SearchParameter/assaytask-input-quantity" ]
+       ] ;
+       fhir:name [ fhir:v "AssayTask Input Value (Quantity) SearchParameter" ] ;
+       fhir:description [ fhir:v "Search AssayTask input by quantity value (Task.input.valueQuantity)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-input-string> ;
+         fhir:reference [ fhir:v "SearchParameter/assaytask-input-string" ]
+       ] ;
+       fhir:name [ fhir:v "AssayTask Input Value (String) SearchParameter" ] ;
+       fhir:description [ fhir:v "Search AssayTask input by string value (Task.input.valueString)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/SearchParameter/assaytask-output> ;
+         fhir:reference [ fhir:v "SearchParameter/assaytask-output" ]
+       ] ;
+       fhir:name [ fhir:v "AssayTask Output SearchParameter" ] ;
+       fhir:description [ fhir:v "Search by output reference (e.g., DocumentReference, Observation) on AssayTask." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -1129,6 +1256,24 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ActivityDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ActivityDefinition/BWA-GIT-ActivityDefinition> ;
+         fhir:reference [ fhir:v "ActivityDefinition/BWA-GIT-ActivityDefinition" ]
+       ] ;
+       fhir:name [ fhir:v "BWA definition by GIT" ] ;
+       fhir:description [ fhir:v "BWA software tool defined using GIT repository" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -1282,6 +1427,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task> ;
+         fhir:reference [ fhir:v "StructureDefinition/ncpi-assay-task" ]
+       ] ;
+       fhir:name [ fhir:v "Condensed Assay Task" ] ;
+       fhir:description [ fhir:v "Profile to represent informatics assay definitions within NCPI, such as Submitted Data, WGS, RNA-seq, etc.  A single resource to represent the intent, execution, and results of a research assay." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -1330,6 +1493,24 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ActivityDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ActivityDefinition/Submitted-Data-ActivityDefinition> ;
+         fhir:reference [ fhir:v "ActivityDefinition/Submitted-Data-ActivityDefinition" ]
+       ] ;
+       fhir:name [ fhir:v "Data submission" ] ;
+       fhir:description [ fhir:v "A priori data uploaded as part of Research Study" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -1462,6 +1643,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Task"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Task/t1> ;
+         fhir:reference [ fhir:v "Task/t1" ]
+       ] ;
+       fhir:name [ fhir:v "Example AssayTask with 2 Specimens and 2 Outputs" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
@@ -1475,6 +1674,44 @@
          a fhir:canonical ;
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Specimen"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Specimen/s1> ;
+         fhir:reference [ fhir:v "Specimen/s1" ]
+       ] ;
+       fhir:name [ fhir:v "Example biospecimen" ] ;
+       fhir:description [ fhir:v "Example biospecimen" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Specimen"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Specimen/s2> ;
+         fhir:reference [ fhir:v "Specimen/s2" ]
+       ] ;
+       fhir:name [ fhir:v "Example biospecimen" ] ;
+       fhir:description [ fhir:v "Example biospecimen" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample>
        ]
      ] [
        fhir:extension ( [
@@ -1671,6 +1908,63 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "DocumentReference"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/f1> ;
+         fhir:reference [ fhir:v "DocumentReference/f1" ]
+       ] ;
+       fhir:name [ fhir:v "Example file created by assay t1" ] ;
+       fhir:description [ fhir:v "Example file created by assay t1, associated with a patient" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "DocumentReference"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/f2> ;
+         fhir:reference [ fhir:v "DocumentReference/f2" ]
+       ] ;
+       fhir:name [ fhir:v "Example file created by assay t1" ] ;
+       fhir:description [ fhir:v "Example file created by assay t1, associated with a patient" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "DocumentReference"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/f3> ;
+         fhir:reference [ fhir:v "DocumentReference/f3" ]
+       ] ;
+       fhir:name [ fhir:v "Example file created by assay t2" ] ;
+       fhir:description [ fhir:v "Example file created by assay t2, associated with a group" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Observation"
          ]
        ] ) ;
@@ -1722,6 +2016,44 @@
          a fhir:canonical ;
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/p1> ;
+         fhir:reference [ fhir:v "Patient/p1" ]
+       ] ;
+       fhir:name [ fhir:v "Example patient" ] ;
+       fhir:description [ fhir:v "Example patient" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/p2> ;
+         fhir:reference [ fhir:v "Patient/p2" ]
+       ] ;
+       fhir:name [ fhir:v "Example patient" ] ;
+       fhir:description [ fhir:v "Example patient" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant>
        ]
      ] [
        fhir:extension ( [
@@ -1865,6 +2197,25 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/rs1> ;
+         fhir:reference [ fhir:v "ResearchStudy/rs1" ]
+       ] ;
+       fhir:name [ fhir:v "Example study" ] ;
+       fhir:description [ fhir:v "Example study" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ResearchStudy"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/research-study-gregor> ;
          fhir:reference [ fhir:v "ResearchStudy/research-study-gregor" ]
        ] ;
@@ -1874,6 +2225,25 @@
          a fhir:canonical ;
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Group"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/rs1-g1> ;
+         fhir:reference [ fhir:v "Group/rs1-g1" ]
+       ] ;
+       fhir:name [ fhir:v "Example study group" ] ;
+       fhir:description [ fhir:v "Example study group" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group>
        ]
      ] [
        fhir:extension ( [
@@ -3435,6 +3805,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/task-observation> ;
+         fhir:reference [ fhir:v "Observation/task-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Task Observation Example" ] ;
+       fhir:description [ fhir:v "Observation related to a Task" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -3588,6 +3976,24 @@
        ] ;
        fhir:name [ fhir:v "Version of the contents of the file" ] ;
        fhir:description [ fhir:v "Version of the contents of the file" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/wgs-parameters> ;
+         fhir:reference [ fhir:v "CodeSystem/wgs-parameters" ]
+       ] ;
+       fhir:name [ fhir:v "WGS Task Input Parameters" ] ;
+       fhir:description [ fhir:v "Parameters for WGS Task Input example" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

@@ -1,0 +1,51 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "f3",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference f3</b></p><a name=\"f3\"> </a><a name=\"hcf3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-file.html\">NCPI File</a></p></div><p><b>The file format used</b>: <span title=\"Codes:{http://edamontology.org format_2572}\">BAM</span></p><p><b>The size of the file, e.g., in bytes.</b>: 1044770381 bytes</p><blockquote><p><b>Provides a list of hashes for confirming file transfers</b></p><ul><li>https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value: 9c2460c4647fdc57261f040042863fa2</li><li>https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type: md5</li></ul></blockquote><p><b>identifier</b>: f2</p><p><b>status</b>: Current</p><p><b>subject</b>: <a href=\"Group-rs1-g1.html\">Group Participants from the Example research study</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>s3://foobar/example3.bam</td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://edamontology.org",
+        "code" : "format_2572",
+        "display" : "BAM"
+      }]
+    }
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size",
+    "valueQuantity" : {
+      "value" : 1044770381,
+      "unit" : "bytes"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
+      "valueString" : "9c2460c4647fdc57261f040042863fa2"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type",
+      "valueCode" : "md5"
+    }],
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"
+  }],
+  "identifier" : [{
+    "value" : "f2"
+  }],
+  "status" : "current",
+  "subject" : {
+    "reference" : "Group/rs1-g1"
+  },
+  "content" : [{
+    "attachment" : {
+      "url" : "s3://foobar/example3.bam"
+    }
+  }]
+}

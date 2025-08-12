@@ -262,25 +262,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Logical Models</a>
+         <a href="#1">Behavior: Search Parameters</a>
       </li>
       <li>
-         <a href="#2">Structures: Resource Profiles</a>
+         <a href="#2">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#3">Structures: Data Type Profiles</a>
+         <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Structures: Extension Definitions</a>
+         <a href="#4">Structures: Data Type Profiles</a>
       </li>
       <li>
-         <a href="#5">Terminology: Value Sets</a>
+         <a href="#5">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#6">Terminology: Code Systems</a>
+         <a href="#6">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#7">Example: Example Instances</a>
+         <a href="#7">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -289,6 +292,59 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Behavior: Search Parameters </h3>
+    <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-assaytask-input.html"
+                  title="SearchParameter/assaytask-input">AssayTask Input SearchParameter</a>
+            </td>
+            <td>
+<p>Search by input reference (e.g., Specimen, Group) on AssayTask.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-assaytask-input-integer.html"
+                  title="SearchParameter/assaytask-input-integer">AssayTask Input Value (Integer) SearchParameter</a>
+            </td>
+            <td>
+<p>Search AssayTask input by Integer value (Task.input.valueInteger)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-assaytask-input-quantity.html"
+                  title="SearchParameter/assaytask-input-quantity">AssayTask Input Value (Quantity) SearchParameter</a>
+            </td>
+            <td>
+<p>Search AssayTask input by quantity value (Task.input.valueQuantity)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-assaytask-input-string.html"
+                  title="SearchParameter/assaytask-input-string">AssayTask Input Value (String) SearchParameter</a>
+            </td>
+            <td>
+<p>Search AssayTask input by string value (Task.input.valueString)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-assaytask-output.html"
+                  title="SearchParameter/assaytask-output">AssayTask Output SearchParameter</a>
+            </td>
+            <td>
+<p>Search by output reference (e.g., DocumentReference, Observation) on AssayTask.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Structures: Logical Models </h3>
     <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
 <table class="grid">
@@ -440,7 +496,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -453,6 +509,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>BAM or CRAM file profile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ncpi-assay-task.html"
+                  title="StructureDefinition/ncpi-assay-task">Condensed Assay Task</a>
+            </td>
+            <td>
+<p>Profile to represent informatics assay definitions within NCPI, such as Submitted Data, WGS, RNA-seq, etc.  A single resource to represent the intent, execution, and results of a research assay.</p>
 </td>
          </tr>
          <tr>
@@ -655,7 +720,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Structures: Data Type Profiles </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -672,7 +737,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -720,6 +785,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Age at Assertion Extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-age.html" title="StructureDefinition/age">Age at Event</a>
+            </td>
+            <td>
+<p>Age at Event Extension</p>
 </td>
          </tr>
          <tr>
@@ -985,7 +1058,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1135,7 +1208,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1347,6 +1420,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-wgs-parameters.html" title="CodeSystem/wgs-parameters">WGS Task Input Parameters</a>
+            </td>
+            <td>
+<p>Parameters for WGS Task Input example</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-workflow-tool-cs.html"
                   title="CodeSystem/workflow-tool-cs">Workflow tool options</a>
             </td>
@@ -1365,7 +1446,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -1396,6 +1477,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>An example family relationship based on data from GREGoR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-t2.html" title="Task/t2">AssayTask for assay a2</a>
+            </td>
+            <td>
+<p>AssayTask for a group with 1 output</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActivityDefinition-BWA-GIT-ActivityDefinition.html"
+                  title="ActivityDefinition/BWA-GIT-ActivityDefinition">BWA definition by GIT</a>
+            </td>
+            <td>
+<p>BWA software tool defined using GIT repository</p>
 </td>
          </tr>
          <tr>
@@ -1445,11 +1543,44 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ActivityDefinition-Submitted-Data-ActivityDefinition.html"
+                  title="ActivityDefinition/Submitted-Data-ActivityDefinition">Data submission</a>
+            </td>
+            <td>
+<p>A priori data uploaded as part of Research Study</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-t1.html" title="Task/t1">Example AssayTask with 2 Specimens and 2 Outputs</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-GSS123456-assertion.html"
                   title="Observation/GSS123456-assertion">Example assertion using data from GREGoR</a>
             </td>
             <td>
 <p>Example assertion using data from GREGoR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-s1.html" title="Specimen/s1">Example biospecimen</a>
+            </td>
+            <td>
+<p>Example biospecimen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Specimen-s2.html" title="Specimen/s2">Example biospecimen</a>
+            </td>
+            <td>
+<p>Example biospecimen</p>
 </td>
          </tr>
          <tr>
@@ -1541,6 +1672,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="DocumentReference-f1.html" title="DocumentReference/f1">Example file created by assay t1</a>
+            </td>
+            <td>
+<p>Example file created by assay t1, associated with a patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-f2.html" title="DocumentReference/f2">Example file created by assay t1</a>
+            </td>
+            <td>
+<p>Example file created by assay t1, associated with a patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-f3.html" title="DocumentReference/f3">Example file created by assay t2</a>
+            </td>
+            <td>
+<p>Example file created by assay t2, associated with a group</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-gregor-example-metadata.html"
                   title="Observation/gregor-example-metadata">Example file metadata for a BAM-CRAM file from GREGoR</a>
             </td>
@@ -1563,6 +1718,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Example mappings based on data from GREGoR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-p1.html" title="Patient/p1">Example patient</a>
+            </td>
+            <td>
+<p>Example patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-p2.html" title="Patient/p2">Example patient</a>
+            </td>
+            <td>
+<p>Example patient</p>
 </td>
          </tr>
          <tr>
@@ -1625,11 +1796,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ResearchStudy-rs1.html" title="ResearchStudy/rs1">Example study</a>
+            </td>
+            <td>
+<p>Example study</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ResearchStudy-research-study-gregor.html"
                   title="ResearchStudy/research-study-gregor">Example study from GREGoR</a>
             </td>
             <td>
 <p>Example study from GREGoR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Group-rs1-g1.html" title="Group/rs1-g1">Example study group</a>
+            </td>
+            <td>
+<p>Example study group</p>
 </td>
          </tr>
          <tr>
@@ -1697,6 +1884,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Observation-task-observation.html"
+                  title="Observation/task-observation">Task Observation Example</a>
+            </td>
+            <td>
+<p>Observation related to a Task</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="PractitionerRole-kf-research-study-personnel-role-pi.html"
                   title="PractitionerRole/kf-research-study-personnel-role-pi">dbGaP PI</a>
             </td>
@@ -1733,7 +1929,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 11, 2025 15:04+0000">2025-08-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 12, 2025 16:36+0000">2025-08-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
