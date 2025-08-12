@@ -13,9 +13,9 @@ Description: "Example file metadata for a VCF file"
 * code = $edam#format_3016
 * specimen = Reference(SA-000) /*using specimen is a placeholder for using a slice of component for related samples
 * component.code = #AssayStrategy
-* component[assay_strategy].valueCodeableConcept = #WGS
+* component[assay_strategy].valueCodeableConcept = $obi#0002117 "whole genome sequencing assay" 
 * component.code = #PlatformInstrument
-* component[platform_instrument].valueCodeableConcept = #IlluminaHiSeq2000
+* component[platform_instrument].valueCodeableConcept = $obi#0002001 "Illumina HiSeq 2000"
 * component.code = #LibraryPrep
 * component[library_prep].valueCodeableConcept = #polyA
 * component.code = #LibrarySelection

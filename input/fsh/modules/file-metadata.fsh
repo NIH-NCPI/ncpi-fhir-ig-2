@@ -36,25 +36,37 @@ Description: "NCPI Metadata slices"
 * #WorkflowTool "Workflow tool"
 * #AdaptorTrimmed "Adaptor trimmed"
 
-CodeSystem: AssayStrategyCS
-Id: assay-strategy-cs
+ValueSet: AssayStrategyVS
+Id: assay-strategy-vs
 Title: "Assay strategy options"
 Description: "Assay strategy options"
+* ^status = #draft
+* ^publisher = "NCPI FHIR IG WG"
 * ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* #WGS "Whole Genome Sequencing"
-* #unknown "Unknown"
+* include codes from system $obi where concept is-a #0000070
+/** Some examples explicitly provided. We strongly NCPI FHIR implementers to consider completing this list for future users' convenience */
+* $obi#0002117 "whole genome sequencing assay" 
+* $obi#0002118 "exome sequencing assay"
+* $obi#0001274 "genotyping by array assay"
+* $obi#0003090 "bulk RNA-Seq assay"
+* $obi#0002571 "polyA-selected RNA sequencing assay"
+* $obi#0002631 "single-cell RNA sequencing assay"
+* $obi#0002764 "single-cell ATAC-seq"
 
-CodeSystem: PlatformInstrumentCS
-Id: platform-instrument-cs
+ValueSet: PlatformInstrumentVS
+Id: platform-instrument-vs
 Title: "Platform instrument options"
 Description: "Platform instrument options"
+* ^status = #draft
+* ^publisher = "NCPI FHIR IG WG"
 * ^experimental = false
-* ^caseSensitive = true
-* ^status = #active
-* #IlluminaHiSeq2000 "Illumina HiSeq2000"
-* #unknown "Unknown"
+* include codes from system $obi where concept is-a #0000832
+/** Some examples explicitly provided. We strongly NCPI FHIR implementers to consider completing this list for future users' convenience */
+* $obi#0000689 "454 Genome Sequence 20"
+* $obi#0000691 "ABI 377 automated sequencer"
+* $obi#0002022 "Illumina HiSeq 1000"
+* $obi#0002001 "Illumina HiSeq 2000"
+* $obi#0002633 "PacBio Sequel II"
 
 CodeSystem: LibraryPrepCS
 Id: library-prep-cs
@@ -184,8 +196,10 @@ Description: "NCPI FASTQ File"
   workflow_tool 0..1
 * component[assay_strategy].code = $meta-data-elements#AssayStrategy
 * component[assay_strategy].value[x] only CodeableConcept
+* component[assay_strategy].valueCodeableConcept from assay-strategy-vs (preferred)
 * component[platform_instrument].code = $meta-data-elements#PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
+* component[platform_instrument].valueCodeableConcept from platform-instrument-vs (preferred)
 * component[library_prep].code = $meta-data-elements#LibraryPrep
 * component[library_prep].value[x] only CodeableConcept
 * component[library_selection].code = $meta-data-elements#LibrarySelection
@@ -233,8 +247,10 @@ Description: "BAM or CRAM file profile"
   workflow_tool 1..1
 * component[assay_strategy].code = $meta-data-elements#AssayStrategy
 * component[assay_strategy].value[x] only CodeableConcept
+* component[assay_strategy].valueCodeableConcept from assay-strategy-vs (preferred)
 * component[platform_instrument].code = $meta-data-elements#PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
+* component[platform_instrument].valueCodeableConcept from platform-instrument-vs (preferred)
 * component[library_prep].code = $meta-data-elements#LibraryPrep
 * component[library_prep].value[x] only CodeableConcept
 * component[library_selection].code = $meta-data-elements#LibrarySelection
@@ -282,8 +298,10 @@ Description: "VCF or gVCF file profile"
   workflow_tool 1..1
 * component[assay_strategy].code = $meta-data-elements#AssayStrategy
 * component[assay_strategy].value[x] only CodeableConcept
+* component[assay_strategy].valueCodeableConcept from assay-strategy-vs (preferred)
 * component[platform_instrument].code = $meta-data-elements#PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
+* component[platform_instrument].valueCodeableConcept from platform-instrument-vs (preferred)
 * component[library_prep].code = $meta-data-elements#LibraryPrep
 * component[library_prep].value[x] only CodeableConcept
 * component[library_selection].code = $meta-data-elements#LibrarySelection
@@ -331,8 +349,10 @@ Description: "MAF (Somatic Mutation) file profile"
   workflow_tool 1..1
 * component[assay_strategy].code = $meta-data-elements#AssayStrategy
 * component[assay_strategy].value[x] only CodeableConcept
+* component[assay_strategy].valueCodeableConcept from assay-strategy-vs (preferred)
 * component[platform_instrument].code = $meta-data-elements#PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
+* component[platform_instrument].valueCodeableConcept from platform-instrument-vs (preferred)
 * component[library_prep].code = $meta-data-elements#LibraryPrep
 * component[library_prep].value[x] only CodeableConcept
 * component[library_selection].code = $meta-data-elements#LibrarySelection
@@ -380,8 +400,10 @@ Description: "Gene fusion or gene expression file profile"
   workflow_tool 1..1
 * component[assay_strategy].code = $meta-data-elements#AssayStrategy
 * component[assay_strategy].value[x] only CodeableConcept
+* component[assay_strategy].valueCodeableConcept from assay-strategy-vs (preferred)
 * component[platform_instrument].code = $meta-data-elements#PlatformInstrument
 * component[platform_instrument].value[x] only CodeableConcept
+* component[platform_instrument].valueCodeableConcept from platform-instrument-vs (preferred)
 * component[library_prep].code = $meta-data-elements#LibraryPrep
 * component[library_prep].value[x] only CodeableConcept
 * component[library_selection].code = $meta-data-elements#LibrarySelection
@@ -428,9 +450,11 @@ Description: "Proteomics file profile"
   workflow_type 1..1 and
   workflow_tool 1..1
 * component[assay_strategy].code = #AssayStrategy
-* component[assay_strategy].value[x] only CodeableConcept
+* component[assay_strategy].value[x] only CodeableConcept 
+* component[assay_strategy].valueCodeableConcept from assay-strategy-vs (preferred)
 * component[platform_instrument].code = #PlatformInstrument
-* component[platform_instrument].value[x] only CodeableConcept
+* component[platform_instrument].value[x] only CodeableConcept 
+* component[platform_instrument].valueCodeableConcept from platform-instrument-vs (preferred)
 * component[library_prep].code = #LibraryPrep
 * component[library_prep].value[x] only CodeableConcept
 * component[library_selection].code = #LibrarySelection

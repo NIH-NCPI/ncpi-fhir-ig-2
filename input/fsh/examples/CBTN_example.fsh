@@ -468,8 +468,8 @@ Description: "Example file metadata from CBTN"
 * status = #final
 * code = $edam#format_1930
 * specimen = Reference(SA-000) // using specimen is a placeholder for using a slice of component for related samples
-* component[assay_strategy].valueCodeableConcept = #WGS
-* component[platform_instrument].valueCodeableConcept = #IlluminaHiSeq2000
+* component[assay_strategy].valueCodeableConcept = $obi#0002117 "whole genome sequencing assay" 
+* component[platform_instrument].valueCodeableConcept = $obi#0002001 "Illumina HiSeq 2000"
 * component[library_prep].valueCodeableConcept = #polyA
 * component[library_selection].valueCodeableConcept = #PolyTEnrichment
 * component[strandedness].valueCodeableConcept = #unstranded
