@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "platform-instrument-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet platform-instrument-vs</b></p><a name=\"platform-instrument-vs\"> </a><a name=\"hcplatform-instrument-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://purl.obolibrary.org/obo/obi.owl</code> where concept  is-a 0000832</li><li>Include these codes as defined in <code>http://purl.obolibrary.org/obo/obi.owl</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0000689</td><td>454 Genome Sequence 20</td></tr><tr><td>0000691</td><td>ABI 377 automated sequencer</td></tr><tr><td>0002022</td><td>Illumina HiSeq 1000</td></tr><tr><td>0002001</td><td>Illumina HiSeq 2000</td></tr><tr><td>0002633</td><td>PacBio Sequel II</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "PlatformInstrumentVS"] ; # 
+  fhir:title [ fhir:v "Platform instrument options"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-08-12T18:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Platform instrument options"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "0000832" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "0000689" ] ;
+         fhir:display [ fhir:v "454 Genome Sequence 20" ]
+       ] [
+         fhir:code [ fhir:v "0000691" ] ;
+         fhir:display [ fhir:v "ABI 377 automated sequencer" ]
+       ] [
+         fhir:code [ fhir:v "0002022" ] ;
+         fhir:display [ fhir:v "Illumina HiSeq 1000" ]
+       ] [
+         fhir:code [ fhir:v "0002001" ] ;
+         fhir:display [ fhir:v "Illumina HiSeq 2000" ]
+       ] [
+         fhir:code [ fhir:v "0002633" ] ;
+         fhir:display [ fhir:v "PacBio Sequel II" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

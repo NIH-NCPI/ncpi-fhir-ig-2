@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2025-08-12T17:45:57+00:00",
+  "date" : "2025-08-12T18:02:45+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -692,18 +692,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/age"
-      },
-      "name" : "Age at Event",
-      "description" : "Age at Event Extension",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/research-age-at-last-vital-status"
       },
       "name" : "Age at Last Vital Status Extension",
@@ -773,85 +761,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "CodeSystem/assay-strategy-cs"
+        "reference" : "ValueSet/assay-strategy-vs"
       },
       "name" : "Assay strategy options",
       "description" : "Assay strategy options",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/t2"
-      },
-      "name" : "AssayTask for assay a2",
-      "description" : "AssayTask for a group with 1 output",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/assaytask-input"
-      },
-      "name" : "AssayTask Input SearchParameter",
-      "description" : "Search by input reference (e.g., Specimen, Group) on AssayTask.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/assaytask-input-integer"
-      },
-      "name" : "AssayTask Input Value (Integer) SearchParameter",
-      "description" : "Search AssayTask input by Integer value (Task.input.valueInteger)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/assaytask-input-quantity"
-      },
-      "name" : "AssayTask Input Value (Quantity) SearchParameter",
-      "description" : "Search AssayTask input by quantity value (Task.input.valueQuantity)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/assaytask-input-string"
-      },
-      "name" : "AssayTask Input Value (String) SearchParameter",
-      "description" : "Search AssayTask input by string value (Task.input.valueString)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/assaytask-output"
-      },
-      "name" : "AssayTask Output SearchParameter",
-      "description" : "Search by output reference (e.g., DocumentReference, Observation) on AssayTask.",
       "exampleBoolean" : false
     },
     {
@@ -889,18 +805,6 @@
       "name" : "BAM or CRAM file profile",
       "description" : "BAM or CRAM file profile",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ActivityDefinition"
-      }],
-      "reference" : {
-        "reference" : "ActivityDefinition/BWA-GIT-ActivityDefinition"
-      },
-      "name" : "BWA definition by GIT",
-      "description" : "BWA software tool defined using GIT repository",
-      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1001,18 +905,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ncpi-assay-task"
-      },
-      "name" : "Condensed Assay Task",
-      "description" : "Profile to represent informatics assay definitions within NCPI, such as Submitted Data, WGS, RNA-seq, etc.  A single resource to represent the intent, execution, and results of a research assay.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1045,18 +937,6 @@
       "name" : "Consanguinity Value Codes",
       "description" : "List of codes indicates the level of known consanguinity (blood relation) within a study family.",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ActivityDefinition"
-      }],
-      "reference" : {
-        "reference" : "ActivityDefinition/Submitted-Data-ActivityDefinition"
-      },
-      "name" : "Data submission",
-      "description" : "A priori data uploaded as part of Research Study",
-      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1145,17 +1025,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/t1"
-      },
-      "name" : "Example AssayTask with 2 Specimens and 2 Outputs",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-assay-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1164,30 +1033,6 @@
       "name" : "Example assertion using data from GREGoR",
       "description" : "Example assertion using data from GREGoR",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Specimen"
-      }],
-      "reference" : {
-        "reference" : "Specimen/s1"
-      },
-      "name" : "Example biospecimen",
-      "description" : "Example biospecimen",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Specimen"
-      }],
-      "reference" : {
-        "reference" : "Specimen/s2"
-      },
-      "name" : "Example biospecimen",
-      "description" : "Example biospecimen",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
     },
     {
       "extension" : [{
@@ -1312,42 +1157,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DocumentReference"
-      }],
-      "reference" : {
-        "reference" : "DocumentReference/f1"
-      },
-      "name" : "Example file created by assay t1",
-      "description" : "Example file created by assay t1, associated with a patient",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DocumentReference"
-      }],
-      "reference" : {
-        "reference" : "DocumentReference/f2"
-      },
-      "name" : "Example file created by assay t1",
-      "description" : "Example file created by assay t1, associated with a patient",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DocumentReference"
-      }],
-      "reference" : {
-        "reference" : "DocumentReference/f3"
-      },
-      "name" : "Example file created by assay t2",
-      "description" : "Example file created by assay t2, associated with a group",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1380,30 +1189,6 @@
       "name" : "Example mappings based on data from GREGoR",
       "description" : "Example mappings based on data from GREGoR",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/p1"
-      },
-      "name" : "Example patient",
-      "description" : "Example patient",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/p2"
-      },
-      "name" : "Example patient",
-      "description" : "Example patient",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
     },
     {
       "extension" : [{
@@ -1495,35 +1280,11 @@
         "valueString" : "ResearchStudy"
       }],
       "reference" : {
-        "reference" : "ResearchStudy/rs1"
-      },
-      "name" : "Example study",
-      "description" : "Example study",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
         "reference" : "ResearchStudy/research-study-gregor"
       },
       "name" : "Example study from GREGoR",
       "description" : "Example study from GREGoR",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Group"
-      }],
-      "reference" : {
-        "reference" : "Group/rs1-g1"
-      },
-      "name" : "Example study group",
-      "description" : "Example study group",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
     },
     {
       "extension" : [{
@@ -2032,10 +1793,10 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "CodeSystem/platform-instrument-cs"
+        "reference" : "ValueSet/platform-instrument-vs"
       },
       "name" : "Platform instrument options",
       "description" : "Platform instrument options",
@@ -2560,18 +2321,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/task-observation"
-      },
-      "name" : "Task Observation Example",
-      "description" : "Observation related to a Task",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -2675,18 +2424,6 @@
       },
       "name" : "Version of the contents of the file",
       "description" : "Version of the contents of the file",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/wgs-parameters"
-      },
-      "name" : "WGS Task Input Parameters",
-      "description" : "Parameters for WGS Task Input example",
       "exampleBoolean" : false
     },
     {

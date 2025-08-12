@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/assay-strategy-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "assay-strategy-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet assay-strategy-vs</b></p><a name=\"assay-strategy-vs\"> </a><a name=\"hcassay-strategy-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://purl.obolibrary.org/obo/obi.owl</code> where concept  is-a 0000070</li><li>Include these codes as defined in <code>http://purl.obolibrary.org/obo/obi.owl</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0002117</td><td>whole genome sequencing assay</td></tr><tr><td>0002118</td><td>exome sequencing assay</td></tr><tr><td>0001274</td><td>genotyping by array assay</td></tr><tr><td>0003090</td><td>bulk RNA-Seq assay</td></tr><tr><td>0002571</td><td>polyA-selected RNA sequencing assay</td></tr><tr><td>0002631</td><td>single-cell RNA sequencing assay</td></tr><tr><td>0002764</td><td>single-cell ATAC-seq</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/assay-strategy-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "AssayStrategyVS"] ; # 
+  fhir:title [ fhir:v "Assay strategy options"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-08-12T18:02:45+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Assay strategy options"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "0000070" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "0002117" ] ;
+         fhir:display [ fhir:v "whole genome sequencing assay" ]
+       ] [
+         fhir:code [ fhir:v "0002118" ] ;
+         fhir:display [ fhir:v "exome sequencing assay" ]
+       ] [
+         fhir:code [ fhir:v "0001274" ] ;
+         fhir:display [ fhir:v "genotyping by array assay" ]
+       ] [
+         fhir:code [ fhir:v "0003090" ] ;
+         fhir:display [ fhir:v "bulk RNA-Seq assay" ]
+       ] [
+         fhir:code [ fhir:v "0002571" ] ;
+         fhir:display [ fhir:v "polyA-selected RNA sequencing assay" ]
+       ] [
+         fhir:code [ fhir:v "0002631" ] ;
+         fhir:display [ fhir:v "single-cell RNA sequencing assay" ]
+       ] [
+         fhir:code [ fhir:v "0002764" ] ;
+         fhir:display [ fhir:v "single-cell ATAC-seq" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

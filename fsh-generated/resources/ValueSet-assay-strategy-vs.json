@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "AssayStrategyVS",
+  "id": "assay-strategy-vs",
+  "title": "Assay strategy options",
+  "description": "Assay strategy options",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/assay-strategy-vs",
+  "publisher": "NCPI FHIR IG WG",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://purl.obolibrary.org/obo/obi.owl",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "0000070"
+          }
+        ]
+      },
+      {
+        "system": "http://purl.obolibrary.org/obo/obi.owl",
+        "concept": [
+          {
+            "code": "0002117",
+            "display": "whole genome sequencing assay"
+          },
+          {
+            "code": "0002118",
+            "display": "exome sequencing assay"
+          },
+          {
+            "code": "0001274",
+            "display": "genotyping by array assay"
+          },
+          {
+            "code": "0003090",
+            "display": "bulk RNA-Seq assay"
+          },
+          {
+            "code": "0002571",
+            "display": "polyA-selected RNA sequencing assay"
+          },
+          {
+            "code": "0002631",
+            "display": "single-cell RNA sequencing assay"
+          },
+          {
+            "code": "0002764",
+            "display": "single-cell ATAC-seq"
+          }
+        ]
+      }
+    ]
+  }
+}

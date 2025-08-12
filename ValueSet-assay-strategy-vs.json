@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "assay-strategy-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet assay-strategy-vs</b></p><a name=\"assay-strategy-vs\"> </a><a name=\"hcassay-strategy-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://purl.obolibrary.org/obo/obi.owl</code> where concept  is-a 0000070</li><li>Include these codes as defined in <code>http://purl.obolibrary.org/obo/obi.owl</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0002117</td><td>whole genome sequencing assay</td></tr><tr><td>0002118</td><td>exome sequencing assay</td></tr><tr><td>0001274</td><td>genotyping by array assay</td></tr><tr><td>0003090</td><td>bulk RNA-Seq assay</td></tr><tr><td>0002571</td><td>polyA-selected RNA sequencing assay</td></tr><tr><td>0002631</td><td>single-cell RNA sequencing assay</td></tr><tr><td>0002764</td><td>single-cell ATAC-seq</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/assay-strategy-vs",
+  "version" : "0.2.0",
+  "name" : "AssayStrategyVS",
+  "title" : "Assay strategy options",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-08-12T18:02:45+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    },
+    {
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
+  "description" : "Assay strategy options",
+  "compose" : {
+    "include" : [{
+      "system" : "http://purl.obolibrary.org/obo/obi.owl",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "0000070"
+      }]
+    },
+    {
+      "system" : "http://purl.obolibrary.org/obo/obi.owl",
+      "concept" : [{
+        "code" : "0002117",
+        "display" : "whole genome sequencing assay"
+      },
+      {
+        "code" : "0002118",
+        "display" : "exome sequencing assay"
+      },
+      {
+        "code" : "0001274",
+        "display" : "genotyping by array assay"
+      },
+      {
+        "code" : "0003090",
+        "display" : "bulk RNA-Seq assay"
+      },
+      {
+        "code" : "0002571",
+        "display" : "polyA-selected RNA sequencing assay"
+      },
+      {
+        "code" : "0002631",
+        "display" : "single-cell RNA sequencing assay"
+      },
+      {
+        "code" : "0002764",
+        "display" : "single-cell ATAC-seq"
+      }]
+    }]
+  }
+}

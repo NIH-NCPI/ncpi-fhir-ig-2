@@ -30,6 +30,23 @@
       "ValueSet-phenotypic-feature-assertion-vs.html" : "Assertion of Phenotypic Feature Codes"
     },
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/assay-strategy-vs",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "AssayStrategyVS",
+      "title" : "Assay strategy options",
+      "description" : "Assay strategy options",
+      "systems" : ["http://purl.obolibrary.org/obo/obi.owl"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
       "version" : "0.2.0",
       "status" : "draft",
@@ -146,6 +163,23 @@
       "StructureDefinition-ncpi-phenotypic-feature-assertion.html" : "NCPI Phenotypic Feature Assertion"
     },
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "PlatformInstrumentVS",
+      "title" : "Platform instrument options",
+      "description" : "Platform instrument options",
+      "systems" : ["http://purl.obolibrary.org/obo/obi.owl"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-bamcram.html" : "BAM or CRAM file profile",
+      "StructureDefinition-ncpi-gene-fusion-expression.html" : "Gene fusion or gene expression file profile",
+      "StructureDefinition-ncpi-fastq.html" : "NCPI FASTQ File",
+      "StructureDefinition-ncpi-proteomics.html" : "Proteomics file profile",
+      "StructureDefinition-ncpi-vcf.html" : "VCF or gVCF file profile",
+      "StructureDefinition-ncpi-maf.html" : "MAF (Somatic Mutation) file profile"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs",
       "version" : "0.2.0",
       "status" : "draft",
@@ -157,8 +191,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
-      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy"
+      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy",
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs",

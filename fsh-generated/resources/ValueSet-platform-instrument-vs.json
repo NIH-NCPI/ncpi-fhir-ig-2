@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "PlatformInstrumentVS",
+  "id": "platform-instrument-vs",
+  "title": "Platform instrument options",
+  "description": "Platform instrument options",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs",
+  "publisher": "NCPI FHIR IG WG",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://purl.obolibrary.org/obo/obi.owl",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "0000832"
+          }
+        ]
+      },
+      {
+        "system": "http://purl.obolibrary.org/obo/obi.owl",
+        "concept": [
+          {
+            "code": "0000689",
+            "display": "454 Genome Sequence 20"
+          },
+          {
+            "code": "0000691",
+            "display": "ABI 377 automated sequencer"
+          },
+          {
+            "code": "0002022",
+            "display": "Illumina HiSeq 1000"
+          },
+          {
+            "code": "0002001",
+            "display": "Illumina HiSeq 2000"
+          },
+          {
+            "code": "0002633",
+            "display": "PacBio Sequel II"
+          }
+        ]
+      }
+    ]
+  }
+}

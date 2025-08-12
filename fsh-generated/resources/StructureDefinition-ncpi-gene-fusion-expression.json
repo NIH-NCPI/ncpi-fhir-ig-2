@@ -87,7 +87,11 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/assay-strategy-vs"
+        }
       },
       {
         "id": "Observation.component:platform_instrument",
@@ -115,7 +119,11 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs"
+        }
       },
       {
         "id": "Observation.component:library_prep",

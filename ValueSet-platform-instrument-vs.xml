@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="platform-instrument-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet platform-instrument-vs</b></p><a name="platform-instrument-vs"> </a><a name="hcplatform-instrument-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://purl.obolibrary.org/obo/obi.owl</code> where concept  is-a 0000832</li><li>Include these codes as defined in <code>http://purl.obolibrary.org/obo/obi.owl</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0000689</td><td>454 Genome Sequence 20</td></tr><tr><td>0000691</td><td>ABI 377 automated sequencer</td></tr><tr><td>0002022</td><td>Illumina HiSeq 1000</td></tr><tr><td>0002001</td><td>Illumina HiSeq 2000</td></tr><tr><td>0002633</td><td>PacBio Sequel II</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs"/>
+  <version value="0.2.0"/>
+  <name value="PlatformInstrumentVS"/>
+  <title value="Platform instrument options"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-08-12T18:02:45+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Platform instrument options"/>
+  <compose>
+    <include>
+      <system value="http://purl.obolibrary.org/obo/obi.owl"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="0000832"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://purl.obolibrary.org/obo/obi.owl"/>
+      <concept>
+        <code value="0000689"/>
+        <display value="454 Genome Sequence 20"/>
+      </concept>
+      <concept>
+        <code value="0000691"/>
+        <display value="ABI 377 automated sequencer"/>
+      </concept>
+      <concept>
+        <code value="0002022"/>
+        <display value="Illumina HiSeq 1000"/>
+      </concept>
+      <concept>
+        <code value="0002001"/>
+        <display value="Illumina HiSeq 2000"/>
+      </concept>
+      <concept>
+        <code value="0002633"/>
+        <display value="PacBio Sequel II"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
