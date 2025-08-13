@@ -88,19 +88,11 @@ Usage: #example
   * status = #additional
 * url = "https://github.com/lh3/bwa"
 * status = #active
-
-// measure "anything"
-// * code = $snomedct_us#122869004 "Measurement procedure (procedure)"
-// measure "substance"
-// * code = $snomedct_us#430925007 "Measurement of substance (procedure)"
-// measure "Nucleic acid"
-// * code = $snomedct_us#398545005 "Nucleic acid assay (procedure)"
-
-* code = $edam#operation_3182 "Genome alignment"
+* code = $obi#0002567 "sequence alignment"
 * version = "0.7.19"
 
 // ========= 2. Submitted Data =========
-Instance: Submitted-Data-ActivityDefinition
+Instance: Submitted-Data
 InstanceOf: NcpiAssay
 Title: "Data submission"
 Description: "A priori data uploaded as part of Research Study"
@@ -109,7 +101,8 @@ Usage: #example
   * div = "<div>Data uploaded as part of Research Study submission</div>"
   * status = #additional
 * status = #active
-* url = Canonical(Submitted-Data-ActivityDefinition)
+* url = Canonical(Submitted-Data)
+// note: using edam ontology as no data submission found in OBI
 * code = $edam#topic_0219 "Data submission, annotation and curation"
 
 
@@ -134,7 +127,7 @@ Usage: #example
 Title: "Example assay association of with Group of participants and set of specimens"
 * status = #active
 * intent = #order
-* instantiatesUri[+] = Canonical(Submitted-Data-ActivityDefinition)
+* instantiatesUri[+] = Canonical(Submitted-Data)
 * subject = Reference(Group/rs1-g1)
 * specimen[+] = Reference(Specimen/s1)
 * specimen[+] = Reference(Specimen/s2)
@@ -247,12 +240,6 @@ Description: "Example file created by assay a1"
 * identifier.value = "f1"
 * subject = Reference(Patient/p1)
 * status = #current
-// R4
-* context
-  * related[+] = Reference(ServiceRequest/a1)
-  * related[+] = Reference(DiagnosticReport/dr1)
-// R5,R6
-// * basedOn = Reference(ServiceRequest/a1)
 * content[+]
   * attachment.url = "s3://foobar/example.bam"
 * extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
@@ -274,12 +261,6 @@ Description: "Example file created by assay a2, associated with a group"
 * identifier.value = "f2"
 * subject = Reference(Group/rs1-g1)
 * status = #current
-// R4
-* context
-  * related[+] = Reference(ServiceRequest/a2)
-  * related[+] = Reference(DiagnosticReport/dr2)
-// R5,R6
-// * basedOn = Reference(ServiceRequest/a1)
 * content[+]
   * attachment.url = "s3://foobar/example2.bam"
 * extension[file-format].valueCodeableConcept.coding = $edam#format_2572 "BAM"
@@ -305,7 +286,9 @@ Description: "Example Diagnostic Report for assay a1"
 // R5, R6
 // * media[+]
 //  * link = Reference(DocumentReference/f1)
-// R4 see back link from DocumentReference.context to DiagnosticReport
+// R4
+* extension[DiagnosticReportMedia_R4].valueReference = Reference(DocumentReference/f1)
+
 // 3 hours past a reference time
 * extension[age].valueAge = 3 'h'
 
@@ -318,6 +301,8 @@ Description: "Example Diagnostic Report for assay a2"
 * status = #final
 * code = $loinc#47045-0 "Study report"
 * subject = Reference(Group/rs1-g1)
+// R4
+* extension[DiagnosticReportMedia_R4].valueReference = Reference(DocumentReference/f2)
 // R5, R6
 // * media[+]
 //  * link = Reference(DocumentReference/f2)

@@ -93,6 +93,70 @@ Links like `basedOn`, `result`, and `subject` enable full traceability across th
 
 ---
 
+## Implementation
+This approach adds a **FHIR SearchParameter** that enables `_include` and `_revinclude` searches between `DiagnosticReport` and `DocumentReference` in **R4** implementations.  
+It supports the `DiagnosticReportMedia_R4` extension, which links `DocumentReference` resources as media attachments to a `DiagnosticReport`.
+
+### Background
+- **FHIR R4** does not natively allow `DiagnosticReport.media` to reference `DocumentReference` (supported in **R5**).
+- To align R4 with R5 semantics, we introduced the `DiagnosticReportMedia_R4` extension:
+- Without a SearchParameter, these extension-based references cannot be traversed in `_include` / `_revinclude` queries.
+
+### Design Approach for SearchParameter
+1. **Code Alignment with R5**
+   - Use `code = media` so client queries are identical across R4 and R5.
+
+2. **FHIRPath Expression**
+   - Target the extension explicitly:
+     ```fhirpath
+     DiagnosticReport.extension.where(
+       url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/diagnosticReportMedia-R4'
+     ).value.as(Reference)
+     ```
+
+3. **Version-Specific Inclusion**
+   - Include this SearchParameter only in the **R4** IG build; omit in **R5** where native behavior exists.
+
+4. **Example Queries (Same in R4 & R5)**
+   ```
+   GET /DiagnosticReport?_include=DiagnosticReport:media
+   GET /DocumentReference?_revinclude=DiagnosticReport:media
+   ```
+   - **Transparent to clients**: the same query works on both versions.
+     - Without the SearchParameter, clients would need to handle version-specific logic.
+     ```
+     GET /DiagnosticReport?_id=dr1&_include=DiagnosticReport:based-on&_include=DiagnosticReport:subject&_revinclude:iterate=DocumentReference:related  | jq '.entry[] | .fullUrl'
+      ```
+   
+
+5. **Authoring Differences in FSH**
+   - **R4 (via extension)**  
+     ```fsh
+     Instance: dr-r4-1
+     InstanceOf: DiagnosticReport
+     * status = #final
+     * code.text = "Example report"
+     * subject = Reference(Patient/p1)
+     * extension[diagnosticReportMedia-R4].valueReference = Reference(DocumentReference/doc-123)
+     ```
+   - **R5 (native)**  
+     ```fsh
+     Instance: dr-r5-1
+     InstanceOf: DiagnosticReport
+     * status = #final
+     * code.text = "Example report"
+     * subject = Reference(Patient/p1)
+     * media[0].link = Reference(DocumentReference/doc-123)
+     ```
+   - **Result:** The client’s query remains the same (`_include=DiagnosticReport:media`); only the authoring pattern differs.
+
+
+### Benefits
+- **Transparent client experience** — same query (`media`) in R4 and R5.
+- **Interoperability & migration** — aligns behavior, minimizes client conditionals.
+- **Maintainability** — version-specific behavior isolated to IG authoring, not client code.
+
+---
 ## 🔍 Search & Chaining Examples
 
 ### Query IG example resources
@@ -111,7 +175,7 @@ GET '/Patient?_id=p1&_revinclude=Specimen:subject&_revinclude=DocumentReference:
 To retrieve all resources associated with a specific Diagnostic Report provided in examples:
 
 ```
-GET /DiagnosticReport?_id=dr1&_include=DiagnosticReport:based-on&_include=DiagnosticReport:subject&_revinclude:iterate=DocumentReference:related  | jq '.entry[] | .fullUrl'
+GET /DiagnosticReport?_id=dr1&_include=DiagnosticReport:based-on&_include=DiagnosticReport:subject&_include=DiagnosticReport:media  | jq '.entry[] | .fullUrl'
 ```
 Will return:
 ```
@@ -251,3 +315,4 @@ GET /?_type=DiagnosticReport,DocumentReference&based-on=ServiceRequest/sr-001
 <div style="text-align: center;">
     <img style="display: block; margin: 0 auto; margin-bottom: 20px;" width="100%" src="assay-usage.png" alt="Example Assay Diagram" />
 </div>
+
