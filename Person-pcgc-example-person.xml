@@ -6,8 +6,13 @@
     <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Person pcgc-example-person</b></p><a name="pcgc-example-person"> </a><a name="hcpcgc-example-person"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncpi-person.html">NCPI Person</a></p></div><p><b>identifier</b>: <code>http://chdgenes.org/</code>/PS_123</p><h3>Links</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Target</b></td></tr><tr><td style="display: none">*</td><td><a href="Patient-PT-006SP675.html">Anonymous Patient (no stated gender), DoB:  ( http://chdgenes.org/#20757)</a></td></tr></table></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Person pcgc-example-person</b></p><a name="pcgc-example-person"> </a><a name="hcpcgc-example-person"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncpi-person.html">NCPI Person</a></p></div><p><b>Part of Study</b>: <a href="ResearchStudy-kf-research-study-cbtn.html">ResearchStudy Children's Brain Tumor Network (CBTN)</a></p><p><b>identifier</b>: <code>http://chdgenes.org/</code>/PS_123</p><h3>Links</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Target</b></td></tr><tr><td style="display: none">*</td><td><a href="Patient-PT-006SP675.html">Anonymous Patient (no stated gender), DoB:  ( http://chdgenes.org/#20757)</a></td></tr></table></div>
   </text>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study">
+    <valueReference>
+      <reference value="ResearchStudy/kf-research-study-cbtn"/>
+    </valueReference>
+  </extension>
   <identifier>
     <system value="http://chdgenes.org/"/>
     <value value="PS_123"/>

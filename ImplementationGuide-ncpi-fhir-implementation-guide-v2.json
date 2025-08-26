@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2025-08-12T18:02:45+00:00",
+  "date" : "2025-08-26T23:53:55+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -1728,6 +1728,18 @@
       },
       "name" : "NCPI Study Participant",
       "description" : "Research Study",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/part-of-study"
+      },
+      "name" : "Part of Study",
+      "description" : "Link study related sources back to the relevant study.",
       "exampleBoolean" : false
     },
     {

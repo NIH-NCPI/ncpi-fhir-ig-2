@@ -16,9 +16,17 @@
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen GSS123456-01-010p</b></p><a name=\"GSS123456-01-010p\"> </a><a name=\"hcGSS123456-01-010p\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-sample.html\">NCPI Sample</a></p></div><p><b>identifier</b>: GSS123456-s1</p><p><b>type</b>: <span title=\"Codes:\">Blood Draw</span></p><p><b>subject</b>: <a href=\"Patient-GSS123456.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Method</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Blood</span></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen GSS123456-01-010p</b></p><a name=\"GSS123456-01-010p\"> </a><a name=\"hcGSS123456-01-010p\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-sample.html\">NCPI Sample</a></p></div><p><b>Part of Study</b>: <a href=\"ResearchStudy-research-study-gregor.html\">ResearchStudy: identifier = AnVIL_GREGoR_GSS_U08_GRU; status = completed</a></p><p><b>identifier</b>: GSS123456-s1</p><p><b>type</b>: <span title=\"Codes:\">Blood Draw</span></p><p><b>subject</b>: <a href=\"Patient-GSS123456.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Method</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Blood</span></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/research-study-gregor> ;
+       fhir:reference [ fhir:v "ResearchStudy/research-study-gregor" ]
+     ]
+  ] ) ; # 
   fhir:identifier ( [
      fhir:value [ fhir:v "GSS123456-s1" ]
   ] ) ; # 

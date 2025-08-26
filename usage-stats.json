@@ -265,6 +265,13 @@
       ]
     },
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+      "title": "Part of Study",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status",
       "title": "Age at Last Vital Status Extension",
       "types": [
@@ -624,6 +631,16 @@
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers": [
       "Condition"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study": [
+      "Condition",
+      "DocumentReference",
+      "Group",
+      "Observation",
+      "Patient",
+      "Person",
+      "ResearchSubject",
+      "Specimen"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status": [
       "Patient"

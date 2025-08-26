@@ -17,8 +17,16 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient GSS654321</b></p><a name=\"GSS654321\"> </a><a name=\"hcGSS654321\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-participant.html\">NCPI Participant</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS654321)</p><hr/></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient GSS654321</b></p><a name=\"GSS654321\"> </a><a name=\"hcGSS654321\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-participant.html\">NCPI Participant</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS654321)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Link study related sources back to the relevant study.\"><a href=\"StructureDefinition-part-of-study.html\">Part of Study</a></td><td colspan=\"3\"><a href=\"ResearchStudy-research-study-gregor.html\">ResearchStudy: identifier = AnVIL_GREGoR_GSS_U08_GRU; status = completed</a></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/research-study-gregor> ;
+       fhir:reference [ fhir:v "ResearchStudy/research-study-gregor" ]
+     ]
+  ] ) ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "https://anvil.terra.bio/"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "GSS654321" ]

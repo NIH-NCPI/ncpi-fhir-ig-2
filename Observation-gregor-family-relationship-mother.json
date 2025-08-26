@@ -5,9 +5,15 @@
     "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"]
   },
   "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation gregor-family-relationship-mother</b></p><a name=\"gregor-family-relationship-mother\"> </a><a name=\"hcgregor-family-relationship-mother\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-family-relationship.html\">Family Relationship</a></p></div><p><b>status</b>: Registered</p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode CHILD}\">child</span></p><p><b>subject</b>: <a href=\"Patient-GSS123456.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>focus</b>: <a href=\"Patient-GSS654321.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS654321)</a></p></div>"
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation gregor-family-relationship-mother</b></p><a name=\"gregor-family-relationship-mother\"> </a><a name=\"hcgregor-family-relationship-mother\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-family-relationship.html\">Family Relationship</a></p></div><p><b>Part of Study</b>: <a href=\"ResearchStudy-research-study-gregor.html\">ResearchStudy: identifier = AnVIL_GREGoR_GSS_U08_GRU; status = completed</a></p><p><b>status</b>: Registered</p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode CHILD}\">child</span></p><p><b>subject</b>: <a href=\"Patient-GSS123456.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>focus</b>: <a href=\"Patient-GSS654321.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS654321)</a></p></div>"
   },
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/research-study-gregor"
+    }
+  }],
   "status" : "registered",
   "code" : {
     "coding" : [{

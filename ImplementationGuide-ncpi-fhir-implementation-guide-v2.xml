@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2025-08-12T18:02:45+00:00"/>
+  <date value="2025-08-26T23:53:55+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -1479,6 +1479,17 @@
       </reference>
       <name value="NCPI Study Participant"/>
       <description value="Research Study"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/part-of-study"/>
+      </reference>
+      <name value="Part of Study"/>
+      <description value="Link study related sources back to the relevant study."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

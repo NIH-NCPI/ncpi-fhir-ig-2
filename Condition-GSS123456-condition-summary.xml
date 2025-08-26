@@ -6,7 +6,7 @@
     <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition-summary"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition GSS123456-condition-summary</b></p><a name="GSS123456-condition-summary"> </a><a name="hcGSS123456-condition-summary"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncpi-condition-summary.html">NCPI Conditon Summary</a></p></div><p><b>Any additional modifiers for this condition, such as severity.</b>: <span title="Codes:{http://human-phenotype-ontology.org HP:0012832}">HP:0012832</span></p><p><b>category</b>: <span title="Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type Disease}">Disease</span></p><p><b>code</b>: <span title="Codes:{http://human-phenotype-ontology.org HP:0006951}">retrocerebellar cyst</span></p><p><b>subject</b>: <a href="Patient-GSS123456.html">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>onset</b>: 64 years<span style="background: LightGoldenRodYellow"> (Details: UCUM  codea = 'a')</span></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition GSS123456-condition-summary</b></p><a name="GSS123456-condition-summary"> </a><a name="hcGSS123456-condition-summary"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncpi-condition-summary.html">NCPI Conditon Summary</a></p></div><p><b>Any additional modifiers for this condition, such as severity.</b>: <span title="Codes:{http://human-phenotype-ontology.org HP:0012832}">HP:0012832</span></p><p><b>Part of Study</b>: <a href="ResearchStudy-research-study-gregor.html">ResearchStudy: identifier = AnVIL_GREGoR_GSS_U08_GRU; status = completed</a></p><p><b>category</b>: <span title="Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type Disease}">Disease</span></p><p><b>code</b>: <span title="Codes:{http://human-phenotype-ontology.org HP:0006951}">retrocerebellar cyst</span></p><p><b>subject</b>: <a href="Patient-GSS123456.html">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>onset</b>: 64 years<span style="background: LightGoldenRodYellow"> (Details: UCUM  codea = 'a')</span></p></div>
   </text>
   <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers">
     <valueCodeableConcept>
@@ -15,6 +15,11 @@
         <code value="HP:0012832"/>
       </coding>
     </valueCodeableConcept>
+  </extension>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study">
+    <valueReference>
+      <reference value="ResearchStudy/research-study-gregor"/>
+    </valueReference>
   </extension>
   <category>
     <coding>

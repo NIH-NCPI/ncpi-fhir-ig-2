@@ -11,6 +11,14 @@
       "reference": "Patient/GSS654321"
     }
   ],
+  "extension": [
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+      "valueReference": {
+        "reference": "ResearchStudy/research-study-gregor"
+      }
+    }
+  ],
   "subject": {
     "reference": "Patient/GSS123456"
   },

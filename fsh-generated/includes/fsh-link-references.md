@@ -91,6 +91,7 @@
 [NCPISample]: StructureDefinition-ncpi-sample.html
 [NcpiStudyFamily]: StructureDefinition-ncpi-study-family.html
 [NcpiStudyParticipant]: StructureDefinition-ncpi-Study-Participant.html
+[PartOfStudy]: StructureDefinition-part-of-study.html
 [kf-research-study-cbtn-participants]: Group-kf-research-study-cbtn-participants.html
 [gregor-research-study-participants]: Group-gregor-research-study-participants.html
 [ncpi-research-collection-pbta]: List-ncpi-research-collection-pbta.html

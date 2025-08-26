@@ -6,8 +6,13 @@
     <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen GSS123456-01-010x</b></p><a name="GSS123456-01-010x"> </a><a name="hcGSS123456-01-010x"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncpi-sample.html">NCPI Sample</a></p></div><p><b>identifier</b>: GSS123456-s1</p><p><b>type</b>: <span title="Codes:">DNA</span></p><p><b>subject</b>: <a href="Patient-GSS123456.html">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>parent</b>: <a href="Specimen-GSS123456-01-010p.html">Specimen: identifier = GSS123456-s1; type = </a></p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Method</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">DNA</span></td></tr></table></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen GSS123456-01-010x</b></p><a name="GSS123456-01-010x"> </a><a name="hcGSS123456-01-010x"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncpi-sample.html">NCPI Sample</a></p></div><p><b>Part of Study</b>: <a href="ResearchStudy-research-study-gregor.html">ResearchStudy: identifier = AnVIL_GREGoR_GSS_U08_GRU; status = completed</a></p><p><b>identifier</b>: GSS123456-s1</p><p><b>type</b>: <span title="Codes:">DNA</span></p><p><b>subject</b>: <a href="Patient-GSS123456.html">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>parent</b>: <a href="Specimen-GSS123456-01-010p.html">Specimen: extension = -&gt;ResearchStudy: identifier = AnVIL_GREGoR_GSS_U08_GRU; status = completed; identifier = GSS123456-s1; type = </a></p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Method</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">DNA</span></td></tr></table></div>
   </text>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study">
+    <valueReference>
+      <reference value="ResearchStudy/research-study-gregor"/>
+    </valueReference>
+  </extension>
   <identifier>
     <value value="GSS123456-s1"/>
   </identifier>
