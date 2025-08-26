@@ -99,6 +99,9 @@ Description: "Participants from the CBTN research study"
 * quantity = 6667
 * actual = true
 * type = #person
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(kf-research-study-cbtn)
 
 Instance: kf-gru-dac-consent
 InstanceOf: NcpiResearchAccessPolicy
@@ -115,22 +118,6 @@ Description: "General Research Use (GRU)"
 * extension[website].valueUrl = "https://redcap.chop.edu/surveys/?s=A7M873HMN8"
 * extension[accessType].valueCodeableConcept = $ncpi-data-access-type#controlled
 
-/*
-Instance: kf-research-study-subject-gru-dac
-InstanceOf: ResearchStudySubject
-Title: "CBTN GRU data access via DAC"
-Usage: #example
-Description: "GRU data access via DAC"
-* identifier[0]
-  * system = "https://cbtn.org/"
-  * value = "GRU-DAC"
-* title = "GRU-DAC Study Subject"
-* description = "General Research Use data access via DAC"
-* status = #completed
-* partOf = Reference(kf-research-study-cbtn)
-* extension[consent].valueReference = Reference(kf-gru-dac-consent)
-* enrollment = Reference(kf-research-study-cbtn-participants)
-*/
 
 Instance: kf-gru-dbgap-consent
 InstanceOf: NcpiResearchAccessPolicy
@@ -147,23 +134,6 @@ Description: "General Research Use (GRU)"
 * extension[website].valueUrl = "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002517"
 * extension[accessType].valueCodeableConcept = $ncpi-data-access-type#controlled
 
-/*
-Instance: kf-research-study-subject-gru-dbgap
-InstanceOf: ResearchStudySubject
-Title: "CBTN GRU data access via dbGaP"
-Usage: #example
-Description: "GRU data access via dbGaP"
-* identifier[0]
-  * system = "https://cbtn.org/"
-  * value = "GRU-dbGaP"
-* title = "GRU-dbGaP Study Subject"
-* description = "General Research Use data access via dbGaP"
-* status = #completed
-* partOf = Reference(kf-research-study-cbtn)
-* extension[consent].valueReference = Reference(kf-gru-dbgap-consent)
-* enrollment = Reference(kf-research-study-cbtn-participants)
-*/
-
 Instance: kf-gsr-allowed-access
 InstanceOf: NcpiResearchAccessPolicy
 Title: "Genomic Summary Results (GSR) Allowed Access"
@@ -177,22 +147,7 @@ Description: "Genomic Summary Results (GSR) Allowed Access"
 * extension[website].valueUrl = "https://www.genome.gov/about-nhgri/Policies-Guidance/Data-Sharing-Policies-and-Expectations/GSR-update-FAQs"
 * extension[accessType].valueCodeableConcept = $ncpi-data-access-type#gsr-allowed
 
-/*
-Instance: kf-research-study-subject-gsr-allowed
-InstanceOf: ResearchStudySubject
-Title: "CBTN Genomic Summary Results (GSR) Allowed Access"
-Usage: #example
-Description: "Genomic Summary Results (GSR) Allowed Access"
-* identifier[0]
-  * system = "https://cbtn.org/"
-  * value = "GSR-ALLOWED"
-* title = "GSR-ALLOWED Study Subject"
-* description = "Genomic Summary Results (GSR) Allowed Access"
-* status = #completed
-* partOf = Reference(kf-research-study-cbtn)
-* extension[consent].valueReference = Reference(kf-gsr-allowed-access)
-* enrollment = Reference(kf-research-study-cbtn-participants)
-*/
+
 Instance: kf-registered-allowed-access
 InstanceOf: NcpiResearchAccessPolicy
 Title: "Registered Tier Access"
@@ -205,23 +160,6 @@ Description: "Registered Tier Access"
 * extension[description].valueMarkdown = "Spans clinical data, expression data, somatic mutations, etc"
 * extension[website].valueUrl = "https://kidsfirstdrc.org/portal/portal-features/#dataAccess"
 * extension[accessType].valueCodeableConcept = $ncpi-data-access-type#registered
-
-/*
-Instance: kf-research-study-subject-registered
-InstanceOf: ResearchStudySubject
-Title: "CBTN Registered Tier Access"
-Usage: #example
-Description: "CBTN Registered Tier Access"
-* identifier[0]
-  * system = "https://cbtn.org/"
-  * value = "GSR-ALLOWED"
-* title = "GSR-ALLOWED Study Subject"
-* description = "CBTN Registered Tier Access"
-* status = #completed
-* partOf = Reference(kf-research-study-cbtn)
-* extension[consent].valueReference = Reference(kf-gsr-allowed-access)
-* enrollment = Reference(kf-research-study-cbtn-participants)
-*/
 
 Instance: ncpi-research-collection-pbta
 InstanceOf: NcpiResearchCollection
@@ -275,6 +213,9 @@ Description: "Example patients based on data from CBTN."
   * unit = "days"
   * system = $ucum
   * code = #d "days"
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(kf-research-study-cbtn)
 
 
 
@@ -311,6 +252,9 @@ Description: "Example patients based on data from PCGC."
 * extension[usCoreEthnicity]
   * extension[ombCategory].valueCoding =  $omb-race-eth#2135-2 "Hispanic or Latino"
   * extension[text].valueString = "Hispanic or Latino"
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(kf-research-study-cbtn)
 
 Instance: pcgc-example-person
 InstanceOf: NcpiPerson
@@ -322,6 +266,9 @@ Description: "Example patients based on data from PCGC"
   * value = "PS_123"
 * link
   * target = Reference(PT-006SP675) 
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(kf-research-study-cbtn)
 // NCPI Family -- TBD
 
 Instance: FM-00C8Y7DG
@@ -335,6 +282,9 @@ Description: "Example patients based on data from CBTN."
   * value = "FM-00C8Y7DG"
 * type = #person // Required by Group with required VS
 * actual = true // Required by Group
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(kf-research-study-cbtn)
 
 * extension[familyType].valueCodeableConcept = $ncpi-family-types#Trio "Trio"
 // * extension[description].valueMarkdown = "Potential inheritance details"
@@ -354,6 +304,9 @@ Description: "An example family relationship based on data from CBTN."
 * focus = Reference(PT-006SP675)
 * code = $family-role-code#MTH "mother"
 * status = #registered
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(kf-research-study-cbtn)
 
 
 
@@ -366,6 +319,9 @@ Description: "An example family relationship based on data from CBTN."
 * focus = Reference(PT-006SP660)
 * code = $family-role-code#SON "natural son"
 * status = #registered
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(kf-research-study-cbtn)
 
 
 // NCPI Condition Assertion
@@ -402,6 +358,9 @@ Description: "Example condition assertion using data from CBTN."
 * valueCodeableConcept = $phenotypic-feature-assertion#Present
 /* condition type */
 * category = $condition-type#Disease
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(kf-research-study-cbtn)
 
 // NCPI Biospecimen
 Instance: SA-000 /*Collection Event ID can't have underscores*/
@@ -433,6 +392,9 @@ to access this codesystem for now but we defintely need a real ontology for desc
     * url = "offset"
     * valueDuration = 4931 'days'
     * valueDuration.unit = "d"
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(kf-research-study-cbtn)
  
 // NCPI File
 Instance: GF-6BAD9S7D
@@ -457,6 +419,9 @@ Description: "Use case of file information from CBTN"
 * extension[hash]
   * extension[hashValue].valueString = "8f107912d862cf91fbfb77bf9c1bab36-4"
   * extension[hashType].valueCode = #etag
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(kf-research-study-cbtn)
 
 // NCPI File Metadata
 Instance: FASTQ-example
@@ -475,3 +440,6 @@ Description: "Example file metadata from CBTN"
 * component[strandedness].valueCodeableConcept = #unstranded
 * component[is_paired_end].valueBoolean = false
 * component[adaptor_trimmed].valueBoolean = true
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(kf-research-study-cbtn)
