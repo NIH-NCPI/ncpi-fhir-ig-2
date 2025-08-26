@@ -2,6 +2,25 @@ Alias: $ncpi-study-name-type = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSys
 Alias: $ncpi-study-personnel-role = https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role
 Alias: $research-study-party-organization-type = https://hl7.org/fhir/valueset-research-study-party-organization-type.html
 
+/*
+ * Link resources back to their relevant research study
+ */
+Extension: PartOfStudy
+Id: part-of-study
+Title: "Part of Study"
+Description: "Link study related sources back to the relevant study."
+* insert SetContext(DocumentReference)
+* insert SetContext(Condition)
+* insert SetContext(Group)
+* insert SetContext(Observation) 
+* insert SetContext(Patient)
+* insert SetContext(Person)
+* insert SetContext(ResearchSubject)
+* insert SetContext(Specimen)
+* value[x] only Reference
+* valueReference only Reference(NcpiResearchStudy)
+* valueReference ^short = "Reference to the relevant research study."
+
 
 Extension: ResearchStudyDesign
 Id: research-study-design
