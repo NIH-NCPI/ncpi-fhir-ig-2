@@ -21,6 +21,9 @@ Description: "Participants from the GREGoR research study"
 * quantity = 555
 * actual = true
 * type = #person
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 Instance: gregor-gru-consent
 InstanceOf: NcpiResearchAccessPolicy
@@ -46,6 +49,9 @@ Description: "Example family member based on data from GREGoR."
 * identifier[0]
   * system = "https://anvil.terra.bio/"
   * value = "GSS654321"
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 Instance: GSS123456
 InstanceOf: NcpiParticipant
@@ -64,6 +70,9 @@ Description: "Example patients based on data from GREGoR."
   * extension[ombCategory].valueCoding =  $omb-race-eth#2186-5 "Not Hispanic or Latino"
   * extension[text].valueString = "Not Hispanic or Latino"
 * extension[population].valueString = "English|Scottish"
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 Instance: gregor-example-person
 InstanceOf: NcpiPerson
@@ -75,6 +84,9 @@ Description: "Example patients based on data from GREGoR"
   * value = "PS_000"
 * link
   * target = Reference(GSS123456) 
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 Instance: gregor-example-participantstudy
 InstanceOf: NcpiStudyParticipant
@@ -85,6 +97,9 @@ Description: "Example mappings based on data from GREGoR"
 * study = Reference(research-study-gregor)
 * status = #candidate
 * consent = Reference(gregor-gru-consent)
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 // NCPI Family
 
@@ -104,6 +119,9 @@ Description: "Example patients based on data from GREGoR."
 * member[0].entity.extension[familyRole].valueCodeableConcept = $family-role-code#CHILD "child"
 * member[1].entity = Reference(GSS654321)
 * member[1].entity.extension[familyRole].valueCodeableConcept = $family-role-code#MTH "mother"
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 Instance: gregor-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship
@@ -114,6 +132,9 @@ Description: "An example family relationship based on data from GREGoR."
 * focus = Reference(GSS654321)
 * code = $family-role-code#CHILD "child"
 * status = #registered
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 // NCPI Condition as an assertion
 Instance: GSS123456-condition-assertion
@@ -135,6 +156,9 @@ Description: "Example condition assertion using data from GREGoR"
   * code = #a  
 * component.code = #otherModifiers
 * component[otherModifiers].valueCodeableConcept = $hpo#HP:0012832
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 // NCPI Condition as a condition summary
 Instance: GSS123456-condition-summary
@@ -152,6 +176,9 @@ Description: "Example condition summary using data from GREGoR"
   * system = $ucum
   * code = #a  
 * extension[otherConditionModifiers].valueCodeableConcept = $hpo#HP:0012832
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 // NCPI Participant Assertion
 Instance: GSS123456-assertion
@@ -175,6 +202,9 @@ Description: "Example assertion using data from GREGoR"
   * unit = "year"
   * code = $ucum#a
   * system = $ucum
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 //NCPI Biospecimen
 Instance: GSS123456-01-010p /*Collection Event ID can't have underscores*/
@@ -186,6 +216,9 @@ Description: "Example biospecimen based on data from GREGoR"
 * subject = Reference(GSS123456) /*Participant ID*/
 * type.text = "Blood Draw" /*Sample Type*/
 * collection.method.text = "Blood"
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 //NCPI Biospecimen
 Instance: GSS123456-01-010 /*Collection Event ID can't have underscores*/
@@ -197,6 +230,9 @@ Description: "Example biospecimen based on data from GREGoR"
 * subject = Reference(GSS123456) /*Participant ID*/
 * type.text = "DNA" /*Sample Type*/
 * parent = Reference(GSS123456-01-010p)
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 //NCPI Biospecimen
 Instance: GSS123456-01-010x /*Collection Event ID can't have underscores*/
@@ -209,6 +245,9 @@ Description: "Example biospecimen based on data from GREGoR that will generate a
 * type.text = "DNA" /*Sample Type*/
 * collection.method.text = "DNA"
 * parent = Reference(GSS123456-01-010p)
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 // NCPI File
 Instance: GSS123456-01-010-SG-2
@@ -233,6 +272,9 @@ Description: "Use case of file information from GREGor"
 * extension[hash]
   * extension[hashValue].valueString = "9c2460c4647fdc57261f040042863fa0"
   * extension[hashType].valueCode = #md5
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
 
 // NCPI File Metadata
 Instance: gregor-example-metadata
@@ -254,3 +296,6 @@ Description: "Example file metadata for a BAM-CRAM file from GREGoR"
 * component[is_paired_end].valueBoolean = false
 * component[workflow_tool].valueCodeableConcept = #bammem
 * component[workflow_type].valueCodeableConcept = #alignment
+* extension[+] 
+  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
+  * valueReference = Reference(research-study-gregor)
