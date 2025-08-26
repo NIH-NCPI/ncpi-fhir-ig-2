@@ -9,14 +9,7 @@ Extension: PartOfStudy
 Id: part-of-study
 Title: "Part of Study"
 Description: "Link study related sources back to the relevant study."
-* insert SetContext(DocumentReference)
-* insert SetContext(Condition)
-* insert SetContext(Group)
-* insert SetContext(Observation) 
-* insert SetContext(Patient)
-* insert SetContext(Person)
-* insert SetContext(ResearchSubject)
-* insert SetContext(Specimen)
+* insert SetContext(DomainResource)
 * value[x] only Reference
 * valueReference only Reference(NcpiResearchStudy)
 * valueReference ^short = "Reference to the relevant research study."
