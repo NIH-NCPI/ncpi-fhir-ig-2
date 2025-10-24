@@ -67,7 +67,7 @@ Description: "Brain tumors are the most common form of cancer in children aged 0
   * label = "enrollmentCriteria"
   * display = "Pediatric and AYA patients diagnosed with a central nervous system tumor, solid tumor, or hematologic malignancy."
 * relatedArtifact[+]
-  * type = #citation 
+  * type = #citation
   * label = "Publication"
   * url = "https://cbtn.org/publications"
 * status = #completed
@@ -115,7 +115,7 @@ Description: "General Research Use (GRU)"
 * provision.type = http://hl7.org/fhir/consent-provision-type#permit
 * provision.purpose[+] = $ncpi-data-access-code#GRU "General Research Use"
 * extension[description].valueMarkdown = "Use of the data is limited only by the terms of the model Data Use Certification."
-* extension[website].valueUrl = "https://redcap.chop.edu/surveys/?s=A7M873HMN8"
+* extension[website].valueUrl = "https://airtable.com/apperYvVD82ti3021/pagdArwI0TxJQpiVW/form"
 * extension[accessType].valueCodeableConcept = $ncpi-data-access-type#controlled
 
 
@@ -168,7 +168,7 @@ Description: "Pediatric Brain Tumor Atlas"
 * title = "Pediatric Brain Tumor Atlas"
 * code = $ncpi-collection-type#consortium "Consortium"
 * note[0].text = "The Pediatric Brain Tumor Atlas (PBTA) is a collaborative effort to accelerate discoveries for therapeutic intervention for children diagnosed with a brain tumor. The first PBTA dataset release occurred in September of 2018 and includes data from tumor types including matched tumor/normal, whole genome data (WGS), RNAseq, proteomics, longitudinal clinical data, imaging data including MRIs and radiology reports, histology slide images and pathology reports. Funding for this initiative was provided by more than 50 foundation sponsors"
-* status = http://hl7.org/fhir/list-status#current 
+* status = http://hl7.org/fhir/list-status#current
 * mode = http://hl7.org/fhir/list-mode#snapshot
 * extension[website].valueUrl = "https://cbtn.org/pediatric-brain-tumor-atlas"
 * extension[label][0].extension[type].valueCodeableConcept = $title-type#acronym
@@ -182,7 +182,7 @@ Description: "Kids First X01s"
 * title = "Kids First X01s"
 * code = $ncpi-collection-type#program "Program"
 * note[0].text = "Through its Data Resource Center and NIH X01 grant mechanism, Kids First supports data generation and data sharing in the cloud. To date, the program has supported the public release of data from 30 projects and made available nearly 30,000 genomes, representing structural birth defects and childhood cancer patients and families through the Kids First Data Resource Portal"
-* status = http://hl7.org/fhir/list-status#current 
+* status = http://hl7.org/fhir/list-status#current
 * mode = http://hl7.org/fhir/list-mode#snapshot
 * extension[website].valueUrl = "https://cbtn.org/pediatric-brain-tumor-atlas"
 * entry[+].item = Reference(kf-research-study-cbtn)
@@ -265,7 +265,7 @@ Description: "Example patients based on data from PCGC"
   * system = "http://chdgenes.org/"
   * value = "PS_123"
 * link
-  * target = Reference(PT-006SP675) 
+  * target = Reference(PT-006SP675)
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
   * valueReference = Reference(kf-research-study-cbtn)
@@ -295,30 +295,46 @@ Description: "Example patients based on data from CBTN."
 * member[1].entity = Reference(PT-006SP675)
 * member[1].entity.extension[familyRole].valueCodeableConcept = $family-role-code#SON "natural son"
 
-Instance: cbtn-family-relationship-mother
+Instance: cbtn-family-relationship-daughter
 InstanceOf: NcpiFamilyRelationship
-Title: "An example family relationship based on data from CBTN"
+Title: "An example family relationship (parent to child) based on data from CBTN"
 Usage: #example
-Description: "An example family relationship based on data from CBTN."
-* subject = Reference(PT-006SP660)
-* focus = Reference(PT-006SP675)
-* code = $family-role-code#MTH "mother"
-* status = #registered
+Description: """An example family relationship based on data from CBTN.
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
   * valueReference = Reference(kf-research-study-cbtn)
 
+ PT-006SP675 (the relative) is female and 5 years old
+ PT-006SP660 (the patient) is female and 17 years old
+ This is the "daughter" relationship. The relative is the daughter of the patient.
 
+ This demonstrates using extensibility to express the reverse of the
+ minimum relationship convention.
+ """
+* patient = Reference(PT-006SP660)
+* extension[relative].valueReference = Reference(PT-006SP675)
+// Extensibility to express the reverse of the unambiguous relationship convention
+* relationship = $family-role-code#DAU "natural daughter"
+* status = #completed
 
-Instance: cbtn-family-relationship-son
+// PT-006SP675 is female and 5 years old, the daughter of PT-006SP660 who is female and 17 years old
+
+Instance: cbtn-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship
-Title: "An example family relationship based on data from CBTN"
+Title: "An example family relationship (child to parent) based on data from CBTN"
 Usage: #example
-Description: "An example family relationship based on data from CBTN."
-* subject = Reference(PT-006SP675)
-* focus = Reference(PT-006SP660)
-* code = $family-role-code#SON "natural son"
-* status = #registered
+Description: """An example family relationship based on data from CBTN.
+
+PT-006SP675 (the patient) is female and 5 years old
+PT-006SP660 (the relative) is female and 17 years old
+This is the "mother" relationship. The relative is the mother of the patient.
+
+This instance instantiates the minimum relationship direction to reproduce a PED file.
+"""
+* patient = Reference(PT-006SP675)
+* extension[relative].valueReference = Reference(PT-006SP660)
+* relationship = $nci-thesaurus-alt#C96580 "Biological Mother"
+* status = #completed
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
   * valueReference = Reference(kf-research-study-cbtn)
@@ -371,8 +387,8 @@ Description: "Example biospecimen based on data from CBTN"
 * identifier.value = "SA_RV52EY7S" /*Sample ID*/
 * subject = Reference(PT-006SP660) /*Participant ID*/
 * type.text = "Peripheral Whole Blood" /*Sample Type*/
-/*There is a SNOMED term for peripheral blood specimen OR 
-https://github.com/include-dcc/include-model-forge/blob/main/input/fsh/codesystems/CodeSystem-SampleTypes.fsh 
+/*There is a SNOMED term for peripheral blood specimen OR
+https://github.com/include-dcc/include-model-forge/blob/main/input/fsh/codesystems/CodeSystem-SampleTypes.fsh
 to access this codesystem for now but we defintely need a real ontology for describing things like blood draws etc.*/
 * collection.method.text = "Blood Draw" /*Biospecimen Method*/
 * collection.method.coding = $loinc#LP125037-4 /*Biospecimen Method*/
@@ -395,7 +411,7 @@ to access this codesystem for now but we defintely need a real ontology for desc
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
   * valueReference = Reference(kf-research-study-cbtn)
- 
+
 // NCPI File
 Instance: GF-6BAD9S7D
 InstanceOf: NcpiFile
