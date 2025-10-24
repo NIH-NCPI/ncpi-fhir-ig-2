@@ -194,8 +194,8 @@ Description: "List of codes indicating the biological relationship between two i
 // fertilization of an ovum by sperm. Whereas NFTH uses the
 // ambiguous term "begets," which could include other
 // mechanisms.
-* include $nci-thesaurus#C96580 "Biological Mother"
-* include $nci-thesaurus#C96572 "Biological Father"
+* include $nci-thesaurus-alt#C96580 "Biological Mother"
+* include $nci-thesaurus-alt#C96572 "Biological Father"
 // For Twin,
 //
 // C73429 ("Identical Twin") is:
