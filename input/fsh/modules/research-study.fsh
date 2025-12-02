@@ -99,7 +99,7 @@ Description: "The NCPI Research Study FHIR resource represents an individual res
     
 * extension[studyDesign] ^short = "Study Design and Study Type"
 // * extension[result] ^short = "Link to results generated during the study."
-* extension[acknowledgement] ^short = "Any attribution or acknowledgements relevant to the study. This can include but is not limited to funding sources, organizational affiliations or sponsors."
+* extension[acknowledgement] ^short = "Statement investigators should include to acknowledge use data from this study. This can include, but is not limited to, funding sources, organizational affiliations, or sponsors."
 
 // These are TBD for after we have completed digging into what access control 
 // will require
