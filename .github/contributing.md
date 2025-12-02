@@ -23,6 +23,9 @@ on the code and review each other's code before merging into the main branch.
 This assumes you've already set up your development environment. If not,
 follow the steps in [Setup Dev Environment](#setup-dev-environment)
 
+As of Dec 2025, you will need Java 17 or better to run the implementation
+guide publisher.
+
 #### 1. 🌴 Create a branch
 ```shell
 # Checkout your local main branch
