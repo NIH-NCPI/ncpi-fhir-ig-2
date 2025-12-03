@@ -46,7 +46,7 @@ The following fields from [the shared data model][l_overview] map into the NCPI 
 [l_target]: StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#key_SharedDataModelFamilyRelationship.target
 [l_relationship]: StructureDefinition-SharedDataModelFamilyRelationship-definitions.html#key_SharedDataModelFamilyRelationship.relationship
 [p_knowledge]: StructureDefinition-patient-knowledge-source.html
-[n_overivew]: StructureDefinition-ncpi-family-relationship.html
+[n_overview]: StructureDefinition-ncpi-family-relationship.html
 [n_patient]: StructureDefinition-ncpi-family-relationship-definitions.html#key_FamilyMemberHistory.patient
 [n_relative]: StructureDefinition-ncpi-family-relationship-definitions.html#key_FamilyMemberHistory.extension:relative
 [n_relationship]: StructureDefinition-ncpi-family-relationship-definitions.html#key_FamilyMemberHistory.relationship
