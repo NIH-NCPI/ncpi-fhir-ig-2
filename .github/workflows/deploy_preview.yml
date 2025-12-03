@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install GA4GH Pedigree FHIR IG package
+      - name: 🛠 Install GA4GH Pedigree FHIR IG package
         run: |
           mkdir -p ~/.fhir/packages/"ga4gh.fhir.pedigree#0.1.0"
           curl -L https://ga4gh.github.io/pedigree-fhir-ig/package.tgz -o /tmp/ga4gh-pedigree.tgz
@@ -50,7 +50,7 @@ jobs:
         run: |
           chmod +x ./_genonce.sh
           ./_genonce.sh
-      - name: Capture FSH-Generated
+      - name: 📦️ Capture FSH-Generated
         run: |
           ./_build_fgen_index.rb
 
