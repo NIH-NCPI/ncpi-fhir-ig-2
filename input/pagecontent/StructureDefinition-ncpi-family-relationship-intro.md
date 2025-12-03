@@ -24,7 +24,9 @@ To ensure an unambiguous representation of family relationships, we recommend th
 ##### GA4GH Family Relationships
 GA4GH Family Relationships are defined in the [GA4GH Pedigree FHIR IG][g_overview] specification.
 
-This `NcpiFamilyRelationship` profile **derives from** the [GA4GH PedigreeRelationship][g_pedigree] profile and uses codes from the [GA4GH KIN ontology][g_kin]. Because of the "required" binding, we cannot express our desire to restrict the ValueSet to three core codes (`KIN:027`, `KIN:028`, `KIN:010`) for maximum NCPI interoperability while still allowing other codes when needed. However, we have stated this soft constraint in the documentation.
+This `NcpiFamilyRelationship` profile **derives from** the [GA4GH PedigreeRelationship][g_pedigree] profile and uses codes from the [GA4GH KIN ontology][g_kin]. The profile includes all 55 KIN codes in its ValueSet and maintains the parent's required binding for full GA4GH compatibility.
+
+NCPI recommends using a canonical approach with three core codes (`KIN:027`, `KIN:028`, `KIN:010`) plus inferred individuals to express all pedigree relationships. This provides a complete, unambiguous representation that eases data consumption. While all KIN codes remain available for use when needed, we cannot machine-encode the preference for these three codes due to the required binding strength—doing so would require extensible binding restricted to the KIN ontology, a constraint not expressible in FHIR R4. If future FHIR versions (R5/R6) provide mechanisms to express "extensible within a required parent set," we would adopt that approach. For now, this canonical approach is documented as guidance in the profile definition and ValueSet description.
 
 ##### FHIR Mappings
 The following fields from [the shared data model][l_overview] map into the NCPI Participant as shown below:

@@ -236,7 +236,7 @@ genetic relationships in [PED files](https://gatk.broadinstitute.org/hc/en-us/ar
 
 All other genetic relationships (grandparents, aunts, uncles, cousins, etc.) can be
 expressed using these three codes with inferred individuals to represent the relationship
-chain. This provides a unique way to express all pedigree relationships, which will ease
+chain. This provides a canonical way to express all pedigree relationships, which will ease
 consuming the data.
 
 # Additional KIN Codes
