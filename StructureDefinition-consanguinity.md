@@ -11,7 +11,7 @@
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/consanguinity | *Version*:0.2.0 |
 | Draft as of 2025-12-03 | *Computable Name*:Consanguinity |
 
-Extension containing Consanguinity
+Extension containing a consanguinity assertion
 
 **Context of Use**
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-consanguinity.csv), 
   "name" : "Consanguinity",
   "title" : "Consanguinity Extension",
   "status" : "draft",
-  "date" : "2025-12-03T18:37:31+00:00",
+  "date" : "2025-12-03T22:26:51+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-consanguinity.csv), 
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.ncpi-acc.org/about/working-groups"
         },
         {
           "system" : "email",
@@ -65,7 +65,7 @@ Other representations of profile: [CSV](StructureDefinition-consanguinity.csv), 
       ]
     }
   ],
-  "description" : "Extension containing Consanguinity",
+  "description" : "Extension containing a consanguinity assertion",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-consanguinity.csv), 
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Group"
     }
   ],
   "type" : "Extension",
@@ -91,7 +91,7 @@ Other representations of profile: [CSV](StructureDefinition-consanguinity.csv), 
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Consanguinity Extension",
-        "definition" : "Extension containing Consanguinity"
+        "definition" : "Extension containing a consanguinity assertion"
       },
       {
         "id" : "Extension.extension",

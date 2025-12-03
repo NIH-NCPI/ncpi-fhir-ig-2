@@ -50,7 +50,7 @@ Use of the data is limited only by the terms of the model Data Use Certification
       "valueMarkdown" : "Use of the data is limited only by the terms of the model Data Use Certification."
     },
     {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link",
       "valueUrl" : "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs002517"
     },
     {

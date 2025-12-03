@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="patient-knowledge-source"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem patient-knowledge-source</b></p><a name="patient-knowledge-source"> </a><a name="hcpatient-knowledge-source"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">traditional<a name="patient-knowledge-source-traditional"> </a></td><td>Traditional</td><td>The knowledge comes from traditional sources like a form filled out by a patient or information copied from an external traditional source like government records.</td></tr><tr><td style="white-space:nowrap">inferred<a name="patient-knowledge-source-inferred"> </a></td><td>Inferred</td><td>The knowledge is inferred from indirect evidence. For example, the existence of one patient's mother can be inferred from the existence of the patient.</td></tr></table></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source"/>
+  <version value="0.2.0"/>
+  <name value="PatientKnowledgeSource"/>
+  <title value="Patient Knowledge Source"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-12-03T22:26:51+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ncpi-acc.org/about/working-groups"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="The source of the knowledge represented in a `Patient` resource."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="traditional"/>
+    <display value="Traditional"/>
+    <definition value="The knowledge comes from traditional sources like a form filled out by a patient or information copied from an external traditional source like government records."/>
+  </concept>
+  <concept>
+    <code value="inferred"/>
+    <display value="Inferred"/>
+    <definition value="The knowledge is inferred from indirect evidence. For example, the existence of one patient's mother can be inferred from the existence of the patient."/>
+  </concept>
+</CodeSystem>

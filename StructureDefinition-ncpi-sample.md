@@ -97,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-sample.csv), [E
   "name" : "NCPISample",
   "title" : "NCPI Sample",
   "status" : "draft",
-  "date" : "2025-12-03T18:37:31+00:00",
+  "date" : "2025-12-03T22:26:51+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -105,7 +105,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-sample.csv), [E
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.ncpi-acc.org/about/working-groups"
         },
         {
           "system" : "email",

@@ -63,7 +63,7 @@ Our Implementation Guide defines the structure of a study using the following Re
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2025-12-03T18:37:31+00:00",
+  "date" : "2025-12-03T22:26:51+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -71,7 +71,7 @@ Our Implementation Guide defines the structure of a study using the following Re
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.ncpi-acc.org/about/working-groups"
         },
         {
           "system" : "email",
@@ -896,42 +896,42 @@ Our Implementation Guide defines the structure of a study using the following Re
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
+            "valueString" : "FamilyMemberHistory"
           }
         ],
         "reference" : {
-          "reference" : "Observation/cbtn-family-relationship-mother"
+          "reference" : "FamilyMemberHistory/cbtn-family-relationship-mother"
         },
-        "name" : "An example family relationship based on data from CBTN",
-        "description" : "An example family relationship based on data from CBTN.",
+        "name" : "An example family relationship (child to parent) based on data from CBTN",
+        "description" : "An example family relationship based on data from CBTN.\n\nPT-006SP675 (the patient) is female and 5 years old\nPT-006SP660 (the relative) is female and 17 years old\nThis is the \"mother\" relationship. The relative is the mother of the patient.\n\nThis instance instantiates the minimum relationship direction to reproduce a PED file.",
         "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
       },
       {
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
+            "valueString" : "FamilyMemberHistory"
           }
         ],
         "reference" : {
-          "reference" : "Observation/cbtn-family-relationship-son"
+          "reference" : "FamilyMemberHistory/gregor-family-relationship-mother"
         },
-        "name" : "An example family relationship based on data from CBTN",
-        "description" : "An example family relationship based on data from CBTN.",
+        "name" : "An example family relationship (child-to-parent) based on data from GREGoR",
+        "description" : "An example family relationship based on data from GREGoR.\n\nGSS123456 (the patient) is male and >= 64 years old\nGSS654321 (the relative) has no information in the patient record\nThis is the \"mother\" relationship. The relative is the mother of the patient.\n\nThis instance instantiates the minimum relationship direction to reproduce a PED file.",
         "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
       },
       {
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
+            "valueString" : "FamilyMemberHistory"
           }
         ],
         "reference" : {
-          "reference" : "Observation/gregor-family-relationship-mother"
+          "reference" : "FamilyMemberHistory/cbtn-family-relationship-daughter"
         },
-        "name" : "An example family relationship based on data from GREGoR",
-        "description" : "An example family relationship based on data from GREGoR.",
+        "name" : "An example family relationship (parent to child) based on data from CBTN",
+        "description" : "An example family relationship based on data from CBTN.\n* extension[+] \n  * url = \"https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study\"\n  * valueReference = Reference(kf-research-study-cbtn)\n\n PT-006SP675 (the relative) is female and 5 years old\n PT-006SP660 (the patient) is female and 17 years old\n This is the \"daughter\" relationship. The relative is the daughter of the patient.\n\n This demonstrates using extensibility to express the reverse of the\n minimum relationship convention.",
         "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
       },
       {
@@ -1002,6 +1002,20 @@ Our Implementation Guide defines the structure of a study using the following Re
         },
         "name" : "BAM or CRAM file profile",
         "description" : "BAM or CRAM file profile",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/family-biological-relationship-vs"
+        },
+        "name" : "Biological Relationship Codes",
+        "description" : "List of codes indicating the biological relationship between two individuals\nin a family. It is restrictive to encourage a standardized representation.\n\n# Code Selection Rationale\n\n## Parent Codes\n\nWe use the NCI Thesaurus here for the mother and father because its\ndefinitions are more precise.\n\n- [`C96572` (**\"Biological Father\"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96572):\n   A male who contributes to the genetic makeup of his offspring through\n   the fertilization of an ovum by his sperm.\n- [`C96580` (**\"Biological Mother\"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96580):\n   A female who contributes to the genetic makeup of her offspring\n   from the fertilization of her ovum.\n\nIn contrast, the parental family-role's codes are less refined:\n\n- [`NMTH` (**\"natural mother\"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NMTH):\n   The player of the role is a female who conceives\n   or gives birth to the scoping entity (child).\n- [`NFTH` (**\"natural father\"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NFTH):\n   The player of the role is a male who begets the\n   scoping entity (child).\n\nIn particular, **\"Biological Mother\"** excludes surrogates but\n`NMTH` is ambiguous. **\"Biological Father\"** specifies\nfertilization of an ovum by sperm, whereas `NFTH` uses the\nambiguous term \"begets,\" which could include other\nmechanisms.\n\n## Twin Codes\n\nFor twins, we use the RoleCode `ITWIN` code rather than the NCI `C73429`.\n\n- [`C73429` (**\"Identical Twin\"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C73429):\n   Either of the two offspring resulting from a shared ovum.\n- [`ITWIN` (**\"Identical Twin\"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ITWIN):\n   The scoper and player are offspring of the same egg-sperm\n   pair.\n\nThough being \"offspring\" of the same fertilized egg is\nquestionable wording, we use `ITWIN` because it also allows\nother multiples (triplets, quadruplets, etc.) to be\nrepresented with the same code whereas `C73429` is only for\ntwins.\n\n# Note for upgrading to FHIR R5\n\nWhen we add support for R5 to the IG, we should add the rest of the\ncodes from <http://terminology.hl7.org/ValueSet/v3-FamilyMember>\nas additional bindings to guide users when not using one of the\nmain bindings.\n\nWe intend that when users need to use a code that is not in\nthe main bindings, they should default to the FamilyMember\nValueSet. However, in R4, there is no way to express this\nin the ValueSet itself.",
         "exampleBoolean" : false
       },
       {
@@ -1141,7 +1155,7 @@ Our Implementation Guide defines the structure of a study using the following Re
           "reference" : "StructureDefinition/consanguinity"
         },
         "name" : "Consanguinity Extension",
-        "description" : "Extension containing Consanguinity",
+        "description" : "Extension containing a consanguinity assertion",
         "exampleBoolean" : false
       },
       {
@@ -1185,6 +1199,20 @@ Our Implementation Guide defines the structure of a study using the following Re
         "name" : "dbGaP PI, X01 FY 2021",
         "description" : "dbGaP PI, X01 FY 2021",
         "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/description"
+        },
+        "name" : "Description",
+        "description" : "Free text describing containing resource.",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -1575,7 +1603,21 @@ Our Implementation Guide defines the structure of a study using the following Re
           "reference" : "StructureDefinition/ncpi-family-relationship"
         },
         "name" : "Family Relationship",
-        "description" : "Family Relationship",
+        "description" : "A relationship between individuals in a pedigree or family.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/family-role"
+        },
+        "name" : "Family Role",
+        "description" : "Extension containing Family Role",
         "exampleBoolean" : false
       },
       {
@@ -2128,6 +2170,48 @@ Our Implementation Guide defines the structure of a study using the following Re
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/patient-knowledge-source"
+        },
+        "name" : "Patient Knowledge Source",
+        "description" : "An extension to record the source of the knowledge in a particular\n`Patient` resource.\n\nThe primary use case is to identify those `Patient` resources\ncreated via inference in order to support indirect pedigree\nrelationships.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/patient-knowledge-source-vs"
+        },
+        "name" : "Patient Knowledge Source",
+        "description" : "The source of the knowledge represented in a `Patient` resource.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/patient-knowledge-source"
+        },
+        "name" : "Patient Knowledge Source",
+        "description" : "The source of the knowledge represented in a `Patient` resource.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "List"
           }
         ],
@@ -2412,7 +2496,7 @@ Our Implementation Guide defines the structure of a study using the following Re
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/research-web-Link"
+          "reference" : "StructureDefinition/research-web-link"
         },
         "name" : "Research Web Link",
         "description" : "A URL pointing to a either a research study's website, an online document or other research related site or document.",
@@ -2692,38 +2776,10 @@ Our Implementation Guide defines the structure of a study using the following Re
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/description"
-        },
-        "name" : "Study Family Description",
-        "description" : "Free text describing the study family, such as potential inheritance or details about consanguinity",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/family-role"
-        },
-        "name" : "Study Family Focus",
-        "description" : "Extension containing Family Role",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
           "reference" : "StructureDefinition/study-family-focus"
         },
         "name" : "Study Family Focus Extension",
-        "description" : "Extension containing Study Family Focus",
+        "description" : "Extension containing a study family focus assertion",
         "exampleBoolean" : false
       },
       {

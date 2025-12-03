@@ -24,7 +24,7 @@ The collection element allows for high level organization of objects into variou
 * code **must** be defined and **should** be one of the codes from the CodeSystem, [CollectionType](CodeSystem-collection-type.md), when possible.
 * note **should** contain a meaningful description whenever possible.
 * there **must** be one or more entries referencing the "contained" resources.
-* When possible, a [website](StructureDefinition-research-web-Link.md) should be provided. For Consortium, programs and other entities with formal websites, this should be the one that provides the best overview of the group. For adhoc collections, or those collections that are less formally defined, an online document may be sufficient.
+* When possible, a [website](StructureDefinition-research-web-link.md) should be provided. For Consortium, programs and other entities with formal websites, this should be the one that provides the best overview of the group. For adhoc collections, or those collections that are less formally defined, an online document may be sufficient.
 
 **Usages:**
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-research-collec
   "name" : "NcpiResearchCollection",
   "title" : "NCPI Research Collection",
   "status" : "draft",
-  "date" : "2025-12-03T18:37:31+00:00",
+  "date" : "2025-12-03T22:26:51+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -61,7 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-research-collec
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.ncpi-acc.org/about/working-groups"
         },
         {
           "system" : "email",
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-research-collec
           {
             "code" : "Extension",
             "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link"
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link"
             ]
           }
         ]

@@ -39,7 +39,7 @@ The Pediatric Brain Tumor Atlas (PBTA) is a collaborative effort to accelerate d
   },
   "extension" : [
     {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link",
       "valueUrl" : "https://cbtn.org/pediatric-brain-tumor-atlas"
     },
     {

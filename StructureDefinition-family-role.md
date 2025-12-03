@@ -1,10 +1,10 @@
-# Study Family Focus - NCPI FHIR Implementation Guide v2 v0.2.0
+# Family Role - NCPI FHIR Implementation Guide v2 v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Study Family Focus**
+* **Family Role**
 
-## Extension: Study Family Focus 
+## Extension: Family Role 
 
 | | |
 | :--- | :--- |
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-family-role.csv), [E
   "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
   "version" : "0.2.0",
   "name" : "FamilyRole",
-  "title" : "Study Family Focus",
+  "title" : "Family Role",
   "status" : "draft",
-  "date" : "2025-12-03T18:37:31+00:00",
+  "date" : "2025-12-03T22:26:51+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](StructureDefinition-family-role.csv), [E
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.ncpi-acc.org/about/working-groups"
         },
         {
           "system" : "email",
@@ -91,7 +91,7 @@ Other representations of profile: [CSV](StructureDefinition-family-role.csv), [E
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Study Family Focus",
+        "short" : "Family Role",
         "definition" : "Extension containing Family Role"
       },
       {
@@ -115,7 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-family-role.csv), [E
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "http://terminology.hl7.org/ValueSet/v3-FamilyMember"
+          "valueSet" : "http://terminology.hl7.org/ValueSet/v3-FamilyMember|3.0.0"
         }
       }
     ]

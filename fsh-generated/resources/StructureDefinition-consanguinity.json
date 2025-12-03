@@ -5,14 +5,14 @@
   "name": "Consanguinity",
   "title": "Consanguinity Extension",
   "status": "draft",
-  "description": "Extension containing Consanguinity",
+  "description": "Extension containing a consanguinity assertion",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "Element"
+      "expression": "Group"
     }
   ],
   "type": "Extension",
@@ -24,7 +24,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Consanguinity Extension",
-        "definition": "Extension containing Consanguinity"
+        "definition": "Extension containing a consanguinity assertion"
       },
       {
         "id": "Extension.extension",

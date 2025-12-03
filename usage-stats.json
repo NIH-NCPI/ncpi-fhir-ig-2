@@ -82,7 +82,7 @@
     },
     {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/description",
-      "title": "Study Family Description",
+      "title": "Description",
       "types": [
         "markdown"
       ]
@@ -96,7 +96,7 @@
     },
     {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
-      "title": "Study Family Focus",
+      "title": "Family Role",
       "types": [
         "CodeableConcept"
       ]
@@ -272,6 +272,13 @@
       ]
     },
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/patient-knowledge-source",
+      "title": "Patient Knowledge Source",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status",
       "title": "Age at Last Vital Status Extension",
       "types": [
@@ -378,7 +385,7 @@
       ]
     },
     {
-      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link",
       "title": "Research Web Link",
       "types": [
         "url",
@@ -423,6 +430,12 @@
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file",
         "title": "NCPI File"
+      }
+    ],
+    "FamilyMemberHistory": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship",
+        "title": "Family Relationship"
       }
     ],
     "Patient": [
@@ -491,6 +504,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record": [
+      "FamilyMemberHistory"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record|4.0.1": [
+      "FamilyMemberHistory"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
@@ -635,12 +654,16 @@
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study": [
       "Condition",
       "DocumentReference",
+      "FamilyMemberHistory",
       "Group",
       "Observation",
       "Patient",
       "Person",
       "ResearchSubject",
       "Specimen"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/patient-knowledge-source": [
+      "Patient"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status": [
       "Patient"
@@ -663,7 +686,7 @@
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design": [
       "ResearchStudy"
     ],
-    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link": [
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link": [
       "Consent",
       "List"
     ],

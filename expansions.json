@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "dbe82351-6c1f-4cf8-9733-20ed8cedd107",
+  "id" : "f555fc0f-9cb3-4929-846b-2bd7f6b3e617",
   "meta" : {
-    "lastUpdated" : "2025-12-03T18:37:31.573+00:00"
+    "lastUpdated" : "2025-12-03T22:26:51.636+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,10 +19,10 @@
       "title" : "Collection Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:ac23da2b-9a35-4954-a353-6ab9e7d2a11a",
-        "timestamp" : "2025-12-03T18:41:00+00:00",
+        "identifier" : "urn:uuid:918cb763-f9e7-4da7-879c-e43d3ecaa2f7",
+        "timestamp" : "2025-12-03T22:29:42+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -77,10 +77,10 @@
       "title" : "Type of Condition",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:52654ca2-c276-4f61-a8c7-1ab5c3b9369a",
-        "timestamp" : "2025-12-03T18:41:00+00:00",
+        "identifier" : "urn:uuid:a49b940f-dc36-4435-a378-a034dd77010a",
+        "timestamp" : "2025-12-03T22:29:43+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -150,10 +150,10 @@
       "title" : "Consanguinity Value Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:db6c73b6-0034-4e00-ba96-170ec213feca",
-        "timestamp" : "2025-12-03T18:41:00+00:00",
+        "identifier" : "urn:uuid:b5f07902-9d55-469f-b6f2-fc06b3b260c6",
+        "timestamp" : "2025-12-03T22:29:43+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -217,10 +217,10 @@
       "title" : "Family Types Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:861fa5f7-c757-4ed7-8c40-c47cde7811ab",
-        "timestamp" : "2025-12-03T18:41:02+00:00",
+        "identifier" : "urn:uuid:4b26edd7-e579-4ddb-bbb4-0be1ee36fd26",
+        "timestamp" : "2025-12-03T22:29:47+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -281,6 +281,59 @@
     }
   },
   {
+    "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/patient-knowledge-source-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-patient-knowledge-source.html\">codesystem Patient Knowledge Source v0.2.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source|0.2.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source-traditional\"> </a><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-patient-knowledge-source.html#patient-knowledge-source-traditional\">traditional</a></td><td>Traditional</td><td>The knowledge comes from traditional sources like a form filled out by a patient or information copied from an external traditional source like government records.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;traditional&quot;, &quot;display&quot;: &quot;Traditional&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;traditional&quot;&gt;&lt;display value=&quot;Traditional&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source-inferred\"> </a><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-patient-knowledge-source.html#patient-knowledge-source-inferred\">inferred</a></td><td>Inferred</td><td>The knowledge is inferred from indirect evidence. For example, the existence of one patient's mother can be inferred from the existence of the patient.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;inferred&quot;, &quot;display&quot;: &quot;Inferred&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;inferred&quot;&gt;&lt;display value=&quot;Inferred&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/patient-knowledge-source-vs",
+      "version" : "0.2.0",
+      "name" : "PatientKnowledgeSourceVS",
+      "title" : "Patient Knowledge Source",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2025-12-03T22:26:51+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:eeaceadb-cafc-4387-8288-30652a38174b",
+        "timestamp" : "2025-12-03T22:29:47+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source",
+          "code" : "traditional",
+          "display" : "Traditional"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source",
+          "code" : "inferred",
+          "display" : "Inferred"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-assertion-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -294,10 +347,10 @@
       "title" : "Assertion of Phenotypic Feature Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:9cbd43e8-9d24-42cb-b6d7-1e9f708ae1a0",
-        "timestamp" : "2025-12-03T18:40:55+00:00",
+        "identifier" : "urn:uuid:3ce0f9b9-f14f-4404-9725-0129057d4137",
+        "timestamp" : "2025-12-03T22:29:38+00:00",
         "total" : 19,
         "offset" : 0,
         "parameter" : [{
@@ -445,10 +498,10 @@
       "title" : "Research Data Access Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:eddac31d-027f-49fa-bc57-94829a49ac35",
-        "timestamp" : "2025-12-03T18:41:02+00:00",
+        "identifier" : "urn:uuid:e0635f54-faef-4547-9026-4d4fb3272e79",
+        "timestamp" : "2025-12-03T22:29:47+00:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{
@@ -538,10 +591,10 @@
       "title" : "Research Data Access Type Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:1ba7e68b-87a5-4146-81ff-a1ff570a689a",
-        "timestamp" : "2025-12-03T18:41:02+00:00",
+        "identifier" : "urn:uuid:faed8313-b2ed-4282-8546-825f57ae5592",
+        "timestamp" : "2025-12-03T22:29:47+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -606,10 +659,10 @@
       "title" : "Enumerations for how DOB was constructed",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:79c26a88-daea-456e-862d-1deaded8b326",
-        "timestamp" : "2025-12-03T18:41:02+00:00",
+        "identifier" : "urn:uuid:abca6ad8-0ff6-4cfb-b330-64806fbd72df",
+        "timestamp" : "2025-12-03T22:29:47+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -674,10 +727,10 @@
       "title" : "Study Name Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e7c062c1-9bf2-449e-b46a-d7c516059a8e",
-        "timestamp" : "2025-12-03T18:41:02+00:00",
+        "identifier" : "urn:uuid:346bccc1-1f7f-4544-9910-e4484a57bcdb",
+        "timestamp" : "2025-12-03T22:29:47+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -742,10 +795,10 @@
       "title" : "Study Personnel Role",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:fb01b43b-3609-4dbb-98a9-85622bbc32ba",
-        "timestamp" : "2025-12-03T18:41:02+00:00",
+        "identifier" : "urn:uuid:2ae11b2b-fc0e-462b-a013-d6e4d9c92419",
+        "timestamp" : "2025-12-03T22:29:47+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -800,10 +853,10 @@
       "title" : "Family Types Codes",
       "status" : "active",
       "experimental" : true,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:794f8624-8f3c-4d1c-a1a9-f1e756de7b59",
-        "timestamp" : "2025-12-03T18:41:03+00:00",
+        "identifier" : "urn:uuid:41c93ad8-ba84-4f27-b2c6-02e48ec2034f",
+        "timestamp" : "2025-12-03T22:29:48+00:00",
         "total" : 12,
         "offset" : 0,
         "parameter" : [{
@@ -910,11 +963,11 @@
       "title" : "Title Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2025-12-03T18:37:31+00:00",
+      "date" : "2025-12-03T22:26:51+00:00",
       "immutable" : true,
       "expansion" : {
-        "identifier" : "urn:uuid:51f107f0-d692-430a-9d1f-dfed0c202f76",
-        "timestamp" : "2025-12-03T18:41:03+00:00",
+        "identifier" : "urn:uuid:0cddfb17-12c1-467c-9cde-1afb3e65db6f",
+        "timestamp" : "2025-12-03T22:29:48+00:00",
         "total" : 13,
         "offset" : 0,
         "parameter" : [{

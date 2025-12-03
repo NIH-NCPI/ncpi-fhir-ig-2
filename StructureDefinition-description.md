@@ -1,17 +1,17 @@
-# Study Family Description - NCPI FHIR Implementation Guide v2 v0.2.0
+# Description - NCPI FHIR Implementation Guide v2 v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Study Family Description**
+* **Description**
 
-## Extension: Study Family Description 
+## Extension: Description 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/description | *Version*:0.2.0 |
 | Draft as of 2025-12-03 | *Computable Name*:Description |
 
-Free text describing the study family, such as potential inheritance or details about consanguinity
+Free text describing containing resource.
 
 **Context of Use**
 
@@ -44,9 +44,9 @@ Other representations of profile: [CSV](StructureDefinition-description.csv), [E
   "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/description",
   "version" : "0.2.0",
   "name" : "Description",
-  "title" : "Study Family Description",
+  "title" : "Description",
   "status" : "draft",
-  "date" : "2025-12-03T18:37:31+00:00",
+  "date" : "2025-12-03T22:26:51+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-description.csv), [E
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.ncpi-acc.org/about/working-groups"
         },
         {
           "system" : "email",
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-description.csv), [E
       ]
     }
   ],
-  "description" : "Free text describing the study family, such as potential inheritance or details about consanguinity",
+  "description" : "Free text describing containing resource.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-description.csv), [E
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Group"
     }
   ],
   "type" : "Extension",
@@ -88,8 +88,8 @@ Other representations of profile: [CSV](StructureDefinition-description.csv), [E
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Study Family Description",
-        "definition" : "Free text describing the study family, such as potential inheritance or details about consanguinity"
+        "short" : "Description",
+        "definition" : "Free text describing containing resource."
       },
       {
         "id" : "Extension.extension",

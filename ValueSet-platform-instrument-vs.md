@@ -58,7 +58,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "Platform instrument options",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T18:37:31+00:00",
+  "date" : "2025-12-03T22:26:51+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -66,7 +66,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.ncpi-acc.org/about/working-groups"
         },
         {
           "system" : "email",

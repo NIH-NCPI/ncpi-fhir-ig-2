@@ -11,7 +11,7 @@
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus | *Version*:0.2.0 |
 | Draft as of 2025-12-03 | *Computable Name*:StudyFamilyFocus |
 
-Extension containing Study Family Focus
+Extension containing a study family focus assertion
 
 **Context of Use**
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-study-family-focus.c
   "name" : "StudyFamilyFocus",
   "title" : "Study Family Focus Extension",
   "status" : "draft",
-  "date" : "2025-12-03T18:37:31+00:00",
+  "date" : "2025-12-03T22:26:51+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-study-family-focus.c
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.ncpi-acc.org/about/working-groups"
         },
         {
           "system" : "email",
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-study-family-focus.c
       ]
     }
   ],
-  "description" : "Extension containing Study Family Focus",
+  "description" : "Extension containing a study family focus assertion",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](StructureDefinition-study-family-focus.c
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Group"
     }
   ],
   "type" : "Extension",
@@ -90,7 +90,7 @@ Other representations of profile: [CSV](StructureDefinition-study-family-focus.c
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Study Family Focus Extension",
-        "definition" : "Extension containing Study Family Focus"
+        "definition" : "Extension containing a study family focus assertion"
       },
       {
         "id" : "Extension.extension",

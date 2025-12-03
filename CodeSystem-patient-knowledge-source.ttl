@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-knowledge-source"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem patient-knowledge-source</b></p><a name=\"patient-knowledge-source\"> </a><a name=\"hcpatient-knowledge-source\"> </a><p>This case-sensitive code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">traditional<a name=\"patient-knowledge-source-traditional\"> </a></td><td>Traditional</td><td>The knowledge comes from traditional sources like a form filled out by a patient or information copied from an external traditional source like government records.</td></tr><tr><td style=\"white-space:nowrap\">inferred<a name=\"patient-knowledge-source-inferred\"> </a></td><td>Inferred</td><td>The knowledge is inferred from indirect evidence. For example, the existence of one patient's mother can be inferred from the existence of the patient.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source"^^xsd:anyURI ;
+     fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source>
+  ] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "PatientKnowledgeSource"] ; # 
+  fhir:title [ fhir:v "Patient Knowledge Source"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-03T22:26:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ncpi-acc.org/about/working-groups" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The source of the knowledge represented in a `Patient` resource."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "traditional" ] ;
+     fhir:display [ fhir:v "Traditional" ] ;
+     fhir:definition [ fhir:v "The knowledge comes from traditional sources like a form filled out by a patient or information copied from an external traditional source like government records." ]
+  ] [
+     fhir:code [ fhir:v "inferred" ] ;
+     fhir:display [ fhir:v "Inferred" ] ;
+     fhir:definition [ fhir:v "The knowledge is inferred from indirect evidence. For example, the existence of one patient's mother can be inferred from the existence of the patient." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

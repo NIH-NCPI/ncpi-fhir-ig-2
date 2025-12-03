@@ -1,0 +1,29 @@
+{
+  "resourceType" : "FamilyMemberHistory",
+  "id" : "cbtn-family-relationship-daughter",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: FamilyMemberHistory cbtn-family-relationship-daughter</b></p><a name=\"cbtn-family-relationship-daughter\"> </a><a name=\"hccbtn-family-relationship-daughter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-family-relationship.html\">Family Relationship</a></p></div><p><b>FamilyMemberHistory Patient Record</b>: <a href=\"Patient-PT-006SP675.html\">Anonymous Patient (no stated gender), DoB:  ( http://chdgenes.org/#20757)</a></p><p><b>status</b>: Completed</p><p><b>patient</b>: <a href=\"Patient-PT-006SP660.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://cbtn.org/#C21156)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode DAU}\">natural daughter</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record",
+    "valueReference" : {
+      "reference" : "Patient/PT-006SP675"
+    }
+  }],
+  "status" : "completed",
+  "patient" : {
+    "reference" : "Patient/PT-006SP660"
+  },
+  "relationship" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "3.0.0",
+      "code" : "DAU",
+      "display" : "natural daughter"
+    }]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "PatientKnowledgeSource",
+  "id": "patient-knowledge-source",
+  "title": "Patient Knowledge Source",
+  "description": "The source of the knowledge represented in a `Patient` resource.",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source",
+  "concept": [
+    {
+      "code": "traditional",
+      "display": "Traditional",
+      "definition": "The knowledge comes from traditional sources like a form filled out by a patient or information copied from an external traditional source like government records."
+    },
+    {
+      "code": "inferred",
+      "display": "Inferred",
+      "definition": "The knowledge is inferred from indirect evidence. For example, the existence of one patient's mother can be inferred from the existence of the patient."
+    }
+  ],
+  "version": "0.1.0",
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 2
+}

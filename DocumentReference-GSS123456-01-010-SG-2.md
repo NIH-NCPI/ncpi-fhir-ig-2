@@ -30,7 +30,7 @@ Profile: [NCPI File](StructureDefinition-ncpi-file.md)
 
 **description**: Aligned DNA short read
 
-> **content****If present, only those under the specific Access Policy can access the file in this location.**:[Consent: extension = Use of the data is limited only by the terms of the model Data Use Certification.,https://redcap.chop.edu/surveys/?s=A7M873HMN8,Controlled; status = draft; scope = Research; category = Research Information Access; policyRule = Common Rule Informed Consent](Consent-kf-gru-dac-consent.md)
+> **content****If present, only those under the specific Access Policy can access the file in this location.**:[Consent: extension = Use of the data is limited only by the terms of the model Data Use Certification.,https://airtable.com/apperYvVD82ti3021/pagdArwI0TxJQpiVW/form,Controlled; status = draft; scope = Research; category = Research Information Access; policyRule = Common Rule Informed Consent](Consent-kf-gru-dac-consent.md)
 
 ### Attachments
 

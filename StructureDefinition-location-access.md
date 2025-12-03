@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-location-access.csv)
   "name" : "LocationAccess",
   "title" : "If present, only those under the specific Access Policy can access the file in this location.",
   "status" : "draft",
-  "date" : "2025-12-03T18:37:31+00:00",
+  "date" : "2025-12-03T22:26:51+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-location-access.csv)
       "telecom" : [
         {
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://www.ncpi-acc.org/about/working-groups"
         },
         {
           "system" : "email",
