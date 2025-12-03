@@ -311,7 +311,14 @@ Description: """An example family relationship based on data from CBTN.
 * patient = Reference(PT-006SP660)
 * extension[relative].valueReference = Reference(PT-006SP675)
 // Extensibility to express the reverse of the unambiguous relationship convention
-* relationship = $family-role-code#DAU "natural daughter"
+//
+// Note: You must use isBiologicalChild because the KIN ontology does not have
+//       a sex-linked code like isBiologicalDaughter and CodeableConcept's coding
+//       elements are semantically asserted to be synonyms. So,
+//       [isBiologicalChild, Female] would imply that the two codings were
+//       intended as synonyms. No information is lost, however, since the patient
+//       resource includes her sex.
+* relationship = $ga4gh-kin#KIN:032 "isBiologicalChild"
 * status = #completed
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
@@ -333,7 +340,7 @@ This instance instantiates the minimum relationship direction to reproduce a PED
 """
 * patient = Reference(PT-006SP675)
 * extension[relative].valueReference = Reference(PT-006SP660)
-* relationship = $nci-thesaurus-alt#C96580 "Biological Mother"
+* relationship = $ga4gh-kin#KIN:027 "isBiologicalMother"
 * status = #completed
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"

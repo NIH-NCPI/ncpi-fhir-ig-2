@@ -138,7 +138,7 @@ This instance instantiates the minimum relationship direction to reproduce a PED
 """
 * patient = Reference(GSS123456)
 * extension[relative].valueReference = Reference(GSS654321)
-* relationship = $nci-thesaurus-alt#C96580 "Biological Mother"
+* relationship = $ga4gh-kin#KIN:027 "isBiologicalMother"
 * status = #completed
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"

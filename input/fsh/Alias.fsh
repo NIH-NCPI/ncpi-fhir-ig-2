@@ -47,6 +47,7 @@ Alias: $ncpi-family-member = http://terminology.hl7.org/ValueSet/v3-FamilyMember
 // You can find the description of the ontology on GitHub:
 // https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html
 Alias: $ga4gh-kin = http://purl.org/ga4gh/kin.fhir|0.1.0
+Alias: $ga4gh-pedigree-relationship = http://purl.org/ga4gh/pedigree-fhir-ig/StructureDefinition/PedigreeRelationship
 Alias: $family-patient-record = http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record|4.0.1
 
 Alias: $mondo = http://purl.obolibrary.org/obo/mondo.owl

@@ -3,11 +3,37 @@
 Welcome to NCPI FHIR IG 2. The goal for this repository is to relaunch the IG project
 with a clearer focus, an explicit style guide using the current tools including Sushi v3. 
 
-## 👨🏻‍💻 Contributor's Guide 
+## 👨🏻‍💻 Contributor's Guide
 
-If you would like to contribute to this project, please take a look at the 
+If you would like to contribute to this project, please take a look at the
 software development lifecycle and standard practices for this project
 [here](./.github/contributing.md).
+
+## 🛠️ Initial Setup
+
+### Install GA4GH Pedigree FHIR IG Package
+
+The GA4GH Pedigree FHIR IG package is required for building this IG but is not available in the public FHIR package registry. You must manually download and install it to your local FHIR package cache before building.
+
+#### One-time setup (required for all developers):
+
+```bash
+# Download the GA4GH Pedigree package
+curl -L https://ga4gh.github.io/pedigree-fhir-ig/package.tgz -o /tmp/ga4gh-pedigree.tgz
+
+# Create the package directory and extract (note: # must be quoted in directory name)
+mkdir -p ~/.fhir/packages/"ga4gh.fhir.pedigree#0.1.0"
+tar -xzf /tmp/ga4gh-pedigree.tgz -C ~/.fhir/packages/"ga4gh.fhir.pedigree#0.1.0"
+
+# Verify installation
+ls -la ~/.fhir/packages/"ga4gh.fhir.pedigree#0.1.0"/package/StructureDefinition-PedigreeRelationship.json
+```
+
+#### Why this is needed:
+- The `NcpiFamilyRelationship` profile derives from the GA4GH `PedigreeRelationship` profile
+- This dependency is declared in `sushi-config.yaml` as `ga4gh.fhir.pedigree: 0.1.0`
+- The package is not published to packages.fhir.org, so manual installation is required
+- Without this package, SUSHI and the IG Publisher will fail with "Parent not found" errors
 
 # 📝 IG Development Details 
 The contribution content I wrote back during the initial start for IG v2 is somewhat outdated, but I don't have time to correct it for this gathering. So, here are some key points to consider if you are up for contributing:

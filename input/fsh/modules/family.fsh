@@ -152,75 +152,51 @@ ValueSet: FamilyBiologicalRelationshipVS
 Id: family-biological-relationship-vs
 Title: "Biological Relationship Codes"
 Description: """
-List of codes indicating the biological relationship between two individuals
-in a family. It is restrictive to encourage a standardized representation.
+All codes from the GA4GH KIN ontology for family relationships. This ValueSet
+duplicates the GA4GH PedigreeRelationshipTypes ValueSet to maintain compatibility
+with the GA4GH PedigreeRelationship profile while documenting NCPI-specific guidance.
 
-# Code Selection Rationale
+# NCPI-Recommended Codes for Maximum Interoperability
 
-## Parent Codes
+For maximum interoperability with other NCPI systems, prefer these three codes for
+genetic relationships in pedigrees ([PED files](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format)):
 
-We use the NCI Thesaurus here for the mother and father because its
-definitions are more precise.
+- [`KIN:027` (**"isBiologicalMother"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58027):
+   The relative is the biological mother of the patient.
+- [`KIN:028` (**"isBiologicalFather"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58028):
+   The relative is the biological father of the patient.
+- [`KIN:010` (**"isMonozygoticTwin"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58010):
+   The relative and patient are monozygotic twins. For higher-order multiples
+   (triplets, quadruplets, etc.), create KIN:010 relationships between every
+   pair of individuals in the multiple. Since this is a non-directed relationship,
+   each pair requires two FamilyRelationship resources (A→B and B→A).
 
-- [`C96572` (**"Biological Father"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96572):
-   A male who contributes to the genetic makeup of his offspring through
-   the fertilization of an ovum by his sperm.
-- [`C96580` (**"Biological Mother"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96580):
-   A female who contributes to the genetic makeup of her offspring
-   from the fertilization of her ovum.
+Relationships are expressed from patient (child) to relative (parent):
+`patient`=child, `relative`=parent, `relationship`="isBiologicalMother" or "isBiologicalFather".
 
-In contrast, the parental family-role's codes are less refined:
+For other genetic relationships (grandparents, aunts, uncles, cousins), use these
+three codes with inferred individuals to represent the relationship chain.
 
-- [`NMTH` (**"natural mother"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NMTH):
-   The player of the role is a female who conceives
-   or gives birth to the scoping entity (child).
-- [`NFTH` (**"natural father"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NFTH):
-   The player of the role is a male who begets the
-   scoping entity (child).
+# Additional KIN Codes
 
-In particular, **"Biological Mother"** excludes surrogates but
-`NMTH` is ambiguous. **"Biological Father"** specifies
-fertilization of an ovum by sperm, whereas `NFTH` uses the
-ambiguous term "begets," which could include other
-mechanisms.
+The full [KIN ontology](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html)
+provides 55 relationship codes including adoptive parents, step-relations, grandparents,
+and more. While all codes are available for use, NCPI systems may not fully support
+relationships beyond the three core codes listed above.
 
-## Twin Codes
+# Future Enhancement
 
-For twins, we use the RoleCode `ITWIN` code rather than the NCI `C73429`.
-
-- [`C73429` (**"Identical Twin"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C73429):
-   Either of the two offspring resulting from a shared ovum.
-- [`ITWIN` (**"Identical Twin"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ITWIN):
-   The scoper and player are offspring of the same egg-sperm
-   pair.
-
-Though being "offspring" of the same fertilized egg is
-questionable wording, we use `ITWIN` because it also allows
-other multiples (triplets, quadruplets, etc.) to be
-represented with the same code whereas `C73429` is only for
-twins.
-
-# Note for upgrading to FHIR R5
-
-When we add support for R5 to the IG, we should add the rest of the
-codes from <http://terminology.hl7.org/ValueSet/v3-FamilyMember>
-as additional bindings to guide users when not using one of the
-main bindings.
-
-We intend that when users need to use a code that is not in
-the main bindings, they should default to the FamilyMember
-ValueSet. However, in R4, there is no way to express this
-in the ValueSet itself.
+When FHIR R5/R6 support is added, we plan to use additional binding features to better
+express the preference for the three core codes while maintaining the full KIN ontology
+as an option.
 """
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 * ^experimental = false
-* include $nci-thesaurus-alt#C96580 "Biological Mother"
-* include $nci-thesaurus-alt#C96572 "Biological Father"
-* include $family-role-code#ITWIN "identical twin"
+* include codes from system $ga4gh-kin
 
 
 Profile: NcpiFamilyRelationship
-Parent: FamilyMemberHistory
+Parent: $ga4gh-pedigree-relationship
 Id: ncpi-family-relationship
 Title: "Family Relationship"
 // The rest of the description is in
@@ -228,33 +204,45 @@ Title: "Family Relationship"
 Description: "A relationship between individuals in a pedigree or family."
 * ^version = "0.2.0"
 * ^status = #draft
-* extension contains $family-patient-record named relative 1..1 MS
+// The relative extension slice is inherited from GA4GH PedigreeRelationship
 * extension[relative] ^short = "The participant in the relationship who plays the role named by the relationship."
 * extension[relative] ^definition = """
 The participant in the relationship who plays the role named by the relationship.
 
-That is, if the relationship is `C96572` (**\"Biological Father\"**), the
+That is, if the relationship is `KIN:028` (**\"isBiologicalFather\"**), the
 `relative` is the father and the `patient` is the child.
 
 This uses [the standard Patient Record extension](http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record)
-for compatibility with the [GA4GH PedigreeRelationship profile](https://ga4gh.github.io/pedigree-fhir-ig/StructureDefinition-PedigreeRelationship.html)
+inherited from the [GA4GH PedigreeRelationship profile](https://ga4gh.github.io/pedigree-fhir-ig/StructureDefinition-PedigreeRelationship.html)
 """
 * relationship 1..1 MS
-* relationship from FamilyBiologicalRelationshipVS (extensible)
+* relationship from FamilyBiologicalRelationshipVS (required)
 * relationship ^short = "The role the relative fills with respect to the patient for this relationship."
 * relationship ^definition = """
 The role the relative fills with respect to the patient for this relationship.
 
-`relative` is `relationship` to `patient`. For the sake of users,
-prefer to exclusively use `C96572`, `C96580`, and `ITWIN` for genetic relationships.
-All other genetic relationships can be expressed with these and inferred individuals.
+`relative` is `relationship` to `patient`.
 
-`ITWIN` should be used for all monozygotic multiples (triplets, quadruplets, etc.)
-and should be present for all the directions of the relationship.
+# NCPI-Recommended Codes
 
-This provides an unambiguous representation of the genetic relationship
-that is easily convertable to and from
-[PED files](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format)
+For maximum interoperability with other NCPI systems, prefer these three codes for
+genetic relationships in [PED files](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format):
+
+- `KIN:027` (isBiologicalMother): The relative is the biological mother of the patient.
+- `KIN:028` (isBiologicalFather): The relative is the biological father of the patient.
+- `KIN:010` (isMonozygoticTwin): The relative and patient are monozygotic twins. For
+  higher-order multiples (triplets, quadruplets, etc.), create pairwise `KIN:010`
+  relationships between every pair with bidirectional relationships (both A→B and B→A).
+
+All other genetic relationships (grandparents, aunts, uncles, cousins, etc.) can be
+expressed using these three codes with inferred individuals to represent the relationship
+chain. This provides a unique way to express all pedigree relationships, which will ease
+consuming the data.
+
+# Additional KIN Codes
+
+While all 55 codes from the [GA4GH KIN ontology](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html)
+are available, NCPI systems may not fully support relationships beyond the three core codes above.
 """
 * relationship ^comment = """
 # Examples
@@ -262,7 +250,7 @@ that is easily convertable to and from
 ## Example 1 (triplets):
 
 A,B,C are triplets. You need six `NcpiFamilyRelationship`
-resources:
+resources with `KIN:010` (isMonozygoticTwin):
 - A→B
 - B→A
 - A→C
@@ -272,7 +260,7 @@ resources:
 
 ## Example 2 (twins):
 If X and Y are twins, you need two `NcpiFamilyRelationship`
-resources:
+resources with `KIN:010` (isMonozygoticTwin):
 - X→Y
 - Y→X.
 
@@ -280,15 +268,15 @@ resources:
 If Q is the maternal grandchild of the female R but Q's parent
 is outside the dataset, then you need to make an inferred Patient
 resource D and make two `NcpiFamilyRelationship` resources:
-- D-(Biological Mother)→Q
-- R-(Biological Mother)→D.
+- D-(KIN:027, isBiologicalMother)→Q
+- R-(KIN:027, isBiologicalMother)→D.
 """
 * patient 1..1 MS
 * patient ^short = "The participant we are describing."
 * patient ^definition = """
 The participant we are describing.
 
-That is, if the relationship is `C96572` (**\"Biological Father\"**), the `patient` is the child
+That is, if the relationship is `KIN:028` (**\"isBiologicalFather\"**), the `patient` is the child
 and the `relative` is the father.
 """
 // Remove the elements that are redundant with Patient for compatibility with
