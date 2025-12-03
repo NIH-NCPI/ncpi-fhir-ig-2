@@ -10,7 +10,7 @@
   "name" : "ResearchStudyGroup",
   "title" : "NCPI Research Study Group",
   "status" : "draft",
-  "date" : "2025-08-26T23:53:55+00:00",
+  "date" : "2025-12-03T18:37:31+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -239,7 +239,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
       }
     },
     {
@@ -669,10 +669,10 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",

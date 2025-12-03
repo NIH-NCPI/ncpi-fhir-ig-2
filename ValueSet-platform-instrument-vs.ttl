@@ -11,15 +11,18 @@
   fhir:id [ fhir:v "platform-instrument-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet platform-instrument-vs</b></p><a name=\"platform-instrument-vs\"> </a><a name=\"hcplatform-instrument-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://purl.obolibrary.org/obo/obi.owl</code> where concept  is-a 0000832</li><li>Include these codes as defined in <code>http://purl.obolibrary.org/obo/obi.owl</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0000689</td><td>454 Genome Sequence 20</td></tr><tr><td>0000691</td><td>ABI 377 automated sequencer</td></tr><tr><td>0002022</td><td>Illumina HiSeq 1000</td></tr><tr><td>0002001</td><td>Illumina HiSeq 2000</td></tr><tr><td>0002633</td><td>PacBio Sequel II</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet platform-instrument-vs</b></p><a name=\"platform-instrument-vs\"> </a><a name=\"hcplatform-instrument-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://purl.obolibrary.org/obo/obi.owl</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a 0000832</li><li>Include these codes as defined in <code>http://purl.obolibrary.org/obo/obi.owl</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0000689</td><td>454 Genome Sequence 20</td></tr><tr><td>0000691</td><td>ABI 377 automated sequencer</td></tr><tr><td>0002022</td><td>Illumina HiSeq 1000</td></tr><tr><td>0002001</td><td>Illumina HiSeq 2000</td></tr><tr><td>0002633</td><td>PacBio Sequel II</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs"^^xsd:anyURI ;
+     fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs>
+  ] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "PlatformInstrumentVS"] ; # 
   fhir:title [ fhir:v "Platform instrument options"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-08-26T23:53:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-03T18:37:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -34,14 +37,20 @@
   fhir:description [ fhir:v "Platform instrument options"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ;
+         fhir:l <http://purl.obolibrary.org/obo/obi.owl>
+       ] ;
        fhir:filter ( [
          fhir:property [ fhir:v "concept" ] ;
          fhir:op [ fhir:v "is-a" ] ;
          fhir:value [ fhir:v "0000832" ]
        ] )
      ] [
-       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ;
+         fhir:l <http://purl.obolibrary.org/obo/obi.owl>
+       ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "0000689" ] ;
          fhir:display [ fhir:v "454 Genome Sequence 20" ]

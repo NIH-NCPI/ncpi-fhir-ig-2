@@ -12,29 +12,41 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+       fhir:l <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem research-study-party-role</b></p><a name=\"research-study-party-role\"> </a><a name=\"hcresearch-study-party-role\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>http://hl7.org/fhir/research-study-party-role</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">sponsor<a name=\"research-study-party-role-sponsor\"> </a></td><td>sponsor</td><td>sponsor</td></tr><tr><td style=\"white-space:nowrap\">lead-sponsor<a name=\"research-study-party-role-lead-sponsor\"> </a></td><td>lead-sponsor</td><td>lead-sponsor</td></tr><tr><td style=\"white-space:nowrap\">sponsor-investigator<a name=\"research-study-party-role-sponsor-investigator\"> </a></td><td>sponsor-investigator</td><td>sponsor-investigator</td></tr><tr><td style=\"white-space:nowrap\">primary-investigator<a name=\"research-study-party-role-primary-investigator\"> </a></td><td>primary-investigator</td><td>primary-investigator</td></tr><tr><td style=\"white-space:nowrap\">collaborator<a name=\"research-study-party-role-collaborator\"> </a></td><td>collaborator</td><td>collaborator</td></tr><tr><td style=\"white-space:nowrap\">funding-source<a name=\"research-study-party-role-funding-source\"> </a></td><td>funding-source</td><td>funding-source</td></tr><tr><td style=\"white-space:nowrap\">general-contact<a name=\"research-study-party-role-general-contact\"> </a></td><td>general-contact</td><td>general-contact</td></tr><tr><td style=\"white-space:nowrap\">recruitment-contact<a name=\"research-study-party-role-recruitment-contact\"> </a></td><td>recruitment-contact</td><td>recruitment-contact</td></tr><tr><td style=\"white-space:nowrap\">sub-investigator<a name=\"research-study-party-role-sub-investigator\"> </a></td><td>sub-investigator</td><td>sub-investigator</td></tr><tr><td style=\"white-space:nowrap\">study-director<a name=\"research-study-party-role-study-director\"> </a></td><td>study-director</td><td>study-director</td></tr><tr><td style=\"white-space:nowrap\">study-chair<a name=\"research-study-party-role-study-chair\"> </a></td><td>study-chair</td><td>study-chair</td></tr><tr><td style=\"white-space:nowrap\">irb<a name=\"research-study-party-role-irb\"> </a></td><td>Institutional Review Board</td><td/></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem research-study-party-role</b></p><a name=\"research-study-party-role\"> </a><a name=\"hcresearch-study-party-role\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>http://hl7.org/fhir/research-study-party-role</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">sponsor<a name=\"research-study-party-role-sponsor\"> </a></td><td>sponsor</td><td>sponsor</td></tr><tr><td style=\"white-space:nowrap\">lead-sponsor<a name=\"research-study-party-role-lead-sponsor\"> </a></td><td>lead-sponsor</td><td>lead-sponsor</td></tr><tr><td style=\"white-space:nowrap\">sponsor-investigator<a name=\"research-study-party-role-sponsor-investigator\"> </a></td><td>sponsor-investigator</td><td>sponsor-investigator</td></tr><tr><td style=\"white-space:nowrap\">primary-investigator<a name=\"research-study-party-role-primary-investigator\"> </a></td><td>primary-investigator</td><td>primary-investigator</td></tr><tr><td style=\"white-space:nowrap\">collaborator<a name=\"research-study-party-role-collaborator\"> </a></td><td>collaborator</td><td>collaborator</td></tr><tr><td style=\"white-space:nowrap\">funding-source<a name=\"research-study-party-role-funding-source\"> </a></td><td>funding-source</td><td>funding-source</td></tr><tr><td style=\"white-space:nowrap\">general-contact<a name=\"research-study-party-role-general-contact\"> </a></td><td>general-contact</td><td>general-contact</td></tr><tr><td style=\"white-space:nowrap\">recruitment-contact<a name=\"research-study-party-role-recruitment-contact\"> </a></td><td>recruitment-contact</td><td>recruitment-contact</td></tr><tr><td style=\"white-space:nowrap\">sub-investigator<a name=\"research-study-party-role-sub-investigator\"> </a></td><td>sub-investigator</td><td>sub-investigator</td></tr><tr><td style=\"white-space:nowrap\">study-director<a name=\"research-study-party-role-study-director\"> </a></td><td>study-director</td><td>study-director</td></tr><tr><td style=\"white-space:nowrap\">study-chair<a name=\"research-study-party-role-study-chair\"> </a></td><td>study-chair</td><td>study-chair</td></tr><tr><td style=\"white-space:nowrap\">irb<a name=\"research-study-party-role-irb\"> </a></td><td>Institutional Review Board</td><td/></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
      fhir:value [
-       a fhir:code ;
+       a fhir:Code ;
        fhir:v "trial-use"
      ]
   ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
      fhir:value [
-       a fhir:integer ;
+       a fhir:Integer ;
        fhir:v 0
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/research-study-party-role"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/research-study-party-role"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/research-study-party-role>
+  ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:l <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.4.1968" ]
   ] ) ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
@@ -42,7 +54,7 @@
   fhir:title [ fhir:v "Research Study Party Role"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-08-26T23:53:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-03T18:37:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;

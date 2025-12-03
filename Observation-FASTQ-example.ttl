@@ -12,47 +12,59 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq"^^xsd:anyURI ;
-       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq>
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FASTQ-example</b></p><a name=\"FASTQ-example\"> </a><a name=\"hcFASTQ-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-fastq.html\">NCPI FASTQ File</a></p></div><p><b>Part of Study</b>: <a href=\"ResearchStudy-kf-research-study-cbtn.html\">ResearchStudy Children's Brain Tumor Network (CBTN)</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://edamontology.org format_1930}\">format_1930</span></p><p><b>focus</b>: <a href=\"DocumentReference-GF-6BAD9S7D.html\">DocumentReference: extension = V1,VCF,1044770380 bytes,,-&gt;ResearchStudy Children's Brain Tumor Network (CBTN); identifier = GF-6BAD9S7D; status = current; type = Variant calling; description = Annotated Variant Call</a></p><p><b>specimen</b>: <a href=\"Specimen-SA-000.html\">Specimen: extension = -&gt;ResearchStudy Children's Brain Tumor Network (CBTN); identifier = SA_RV52EY7S; type = </a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements AssayStrategy}\">Assay strategy</span></p><p><b>value</b>: <span title=\"Codes:{http://purl.obolibrary.org/obo/obi.owl 0002117}\">whole genome sequencing assay</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements PlatformInstrument}\">Platform instrument</span></p><p><b>value</b>: <span title=\"Codes:{http://purl.obolibrary.org/obo/obi.owl 0002001}\">Illumina HiSeq 2000</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements LibraryPrep}\">Library preparation</span></p><p><b>value</b>: <span title=\"Codes:\">polyA</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements LibrarySelection}\">Library selection</span></p><p><b>value</b>: <span title=\"Codes:\">PolyTEnrichment</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements Strandedness}\">Strandedness</span></p><p><b>value</b>: <span title=\"Codes:\">unstranded</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements IsPairedEnd}\">Is paired end</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements AdaptorTrimmed}\">Adaptor trimmed</span></p><p><b>value</b>: true</p></blockquote></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FASTQ-example</b></p><a name=\"FASTQ-example\"> </a><a name=\"hcFASTQ-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-fastq.html\">NCPI FASTQ File</a></p></div><p><b>Part of Study</b>: <a href=\"ResearchStudy-kf-research-study-cbtn.html\">ResearchStudy Children's Brain Tumor Network (CBTN)</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://edamontology.org format_1930}\">format_1930</span></p><p><b>focus</b>: <a href=\"DocumentReference-GF-6BAD9S7D.html\">DocumentReference: extension = V1,VCF,1044770380 bytes,,-&gt;ResearchStudy Children's Brain Tumor Network (CBTN); identifier = GF-6BAD9S7D; status = current; type = Variant calling; description = Annotated Variant Call</a></p><p><b>specimen</b>: <a href=\"Specimen-SA-000.html\">Specimen: extension = -&gt;ResearchStudy Children's Brain Tumor Network (CBTN); identifier = SA_RV52EY7S; type = </a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements AssayStrategy}\">Assay strategy</span></p><p><b>value</b>: <span title=\"Codes:{http://purl.obolibrary.org/obo/obi.owl 0002117}\">whole genome sequencing assay</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements PlatformInstrument}\">Platform instrument</span></p><p><b>value</b>: <span title=\"Codes:{http://purl.obolibrary.org/obo/obi.owl 0002001}\">Illumina HiSeq 2000</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements LibraryPrep}\">Library preparation</span></p><p><b>value</b>: <span title=\"Codes:\">polyA</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements LibrarySelection}\">Library selection</span></p><p><b>value</b>: <span title=\"Codes:\">PolyTEnrichment</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements Strandedness}\">Strandedness</span></p><p><b>value</b>: <span title=\"Codes:\">unstranded</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements IsPairedEnd}\">Is paired end</span></p><p><b>value</b>: false</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements AdaptorTrimmed}\">Adaptor trimmed</span></p><p><b>value</b>: true</p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"^^xsd:anyURI ;
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study>
+     ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-cbtn> ;
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-cbtn> ;
        fhir:reference [ fhir:v "ResearchStudy/kf-research-study-cbtn" ]
      ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://edamontology.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://edamontology.org"^^xsd:anyURI ;
+         fhir:l <http://edamontology.org>
+       ] ;
        fhir:code [ fhir:v "format_1930" ]
      ] )
   ] ; # 
   fhir:focus ( [
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/GF-6BAD9S7D> ;
+     fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/DocumentReference/GF-6BAD9S7D> ;
      fhir:reference [ fhir:v "DocumentReference/GF-6BAD9S7D" ]
   ] ) ; # 
   fhir:specimen [
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Specimen/SA-000> ;
+     fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Specimen/SA-000> ;
      fhir:reference [ fhir:v "Specimen/SA-000" ]
   ] ; # 
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ;
+           fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements>
+         ] ;
          fhir:code [ fhir:v "AssayStrategy" ]
        ] )
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ;
+           fhir:l <http://purl.obolibrary.org/obo/obi.owl>
+         ] ;
          fhir:code [ fhir:v "0002117" ] ;
          fhir:display [ fhir:v "whole genome sequencing assay" ]
        ] )
@@ -60,14 +72,20 @@
   ] [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ;
+           fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements>
+         ] ;
          fhir:code [ fhir:v "PlatformInstrument" ]
        ] )
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://purl.obolibrary.org/obo/obi.owl"^^xsd:anyURI ;
+           fhir:l <http://purl.obolibrary.org/obo/obi.owl>
+         ] ;
          fhir:code [ fhir:v "0002001" ] ;
          fhir:display [ fhir:v "Illumina HiSeq 2000" ]
        ] )
@@ -75,7 +93,10 @@
   ] [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ;
+           fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements>
+         ] ;
          fhir:code [ fhir:v "LibraryPrep" ]
        ] )
      ] ;
@@ -88,7 +109,10 @@
   ] [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ;
+           fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements>
+         ] ;
          fhir:code [ fhir:v "LibrarySelection" ]
        ] )
      ] ;
@@ -101,7 +125,10 @@
   ] [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ;
+           fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements>
+         ] ;
          fhir:code [ fhir:v "Strandedness" ]
        ] )
      ] ;
@@ -114,23 +141,29 @@
   ] [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ;
+           fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements>
+         ] ;
          fhir:code [ fhir:v "IsPairedEnd" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:boolean ;
+       a fhir:Boolean ;
        fhir:v false
      ]
   ] [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements"^^xsd:anyURI ;
+           fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements>
+         ] ;
          fhir:code [ fhir:v "AdaptorTrimmed" ]
        ] )
      ] ;
      fhir:value [
-       a fhir:boolean ;
+       a fhir:Boolean ;
        fhir:v true
      ]
   ] ) . # 

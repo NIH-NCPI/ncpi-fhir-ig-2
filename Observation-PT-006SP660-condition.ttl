@@ -12,78 +12,108 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"^^xsd:anyURI ;
-       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion>
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation PT-006SP660-condition</b></p><a name=\"PT-006SP660-condition\"> </a><a name=\"hcPT-006SP660-condition\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-participant-assertion.html\">NCPI Participant Assertion</a></p></div><p><b>Part of Study</b>: <a href=\"ResearchStudy-kf-research-study-cbtn.html\">ResearchStudy Children's Brain Tumor Network (CBTN)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type Disease}\">Disease</span></p><p><b>code</b>: <span title=\"Codes:{http://purl.obolibrary.org/obo/mondo.owl MONDO:0002203}\">ventricular ectopy</span></p><p><b>subject</b>: <a href=\"Patient-PT-006SP660.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://cbtn.org/#C21156)</a></p><p><b>effective</b>: <code>Relative date time: </code></p><p><b>value</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion Present}\">Present</span></p></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation PT-006SP660-condition</b></p><a name=\"PT-006SP660-condition\"> </a><a name=\"hcPT-006SP660-condition\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-participant-assertion.html\">NCPI Participant Assertion</a></p></div><p><b>Part of Study</b>: <a href=\"ResearchStudy-kf-research-study-cbtn.html\">ResearchStudy Children's Brain Tumor Network (CBTN)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type Disease}\">Disease</span></p><p><b>code</b>: <span title=\"Codes:{http://purl.obolibrary.org/obo/mondo.owl MONDO:0002203}\">ventricular ectopy</span></p><p><b>subject</b>: <a href=\"Patient-PT-006SP660.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://cbtn.org/#C21156)</a></p><p><b>effective</b>: <code>Relative date time: </code></p><p><b>value</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion Present}\">Present</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"^^xsd:anyURI ;
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study>
+     ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-cbtn> ;
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-cbtn> ;
        fhir:reference [ fhir:v "ResearchStudy/kf-research-study-cbtn" ]
      ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"^^xsd:anyURI ;
+         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type>
+       ] ;
        fhir:code [ fhir:v "Disease" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/mondo.owl"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://purl.obolibrary.org/obo/mondo.owl"^^xsd:anyURI ;
+         fhir:l <http://purl.obolibrary.org/obo/mondo.owl>
+       ] ;
        fhir:code [ fhir:v "MONDO:0002203" ]
      ] ) ;
      fhir:text [ fhir:v "ventricular ectopy" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-006SP660> ;
+     fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-006SP660> ;
      fhir:reference [ fhir:v "Patient/PT-006SP660" ]
   ] ; # 
   fhir:effective [
-     a fhir:dateTime ;
+     a fhir:DateTime ;
      fhir:extension ( [
        fhir:extension ( [
-         fhir:url [ fhir:v "target"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "target"^^xsd:anyURI ;
+           fhir:l fhir:target
+         ] ;
          fhir:value [
            a fhir:Reference ;
-           fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-006SP660> ;
+           fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-006SP660> ;
            fhir:reference [ fhir:v "Patient/PT-006SP660" ]
          ]
        ] [
-         fhir:url [ fhir:v "targetPath"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "targetPath"^^xsd:anyURI ;
+           fhir:l fhir:targetPath
+         ] ;
          fhir:value [
-           a fhir:string ;
+           a fhir:String ;
            fhir:v "None"
          ]
        ] [
-         fhir:url [ fhir:v "relationship"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "relationship"^^xsd:anyURI ;
+           fhir:l fhir:relationship
+         ] ;
          fhir:value [
-           a fhir:code ;
+           a fhir:Code ;
            fhir:v "after"
          ]
        ] [
-         fhir:url [ fhir:v "offset"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "offset"^^xsd:anyURI ;
+           fhir:l fhir:offset
+         ] ;
          fhir:value [
            a fhir:Duration ;
            fhir:value [ fhir:v "4931"^^xsd:decimal ] ;
            fhir:unit [ fhir:v "d" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:l <http://unitsofmeasure.org>
+           ] ;
            fhir:code [ fhir:v "days" ]
          ]
        ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime>
+       ]
      ] )
   ] ; # 
   fhir:value [
      a fhir:CodeableConcept ;
      fhir:coding ( [
-       fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion"^^xsd:anyURI ;
+         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/phenotypic-feature-assertion>
+       ] ;
        fhir:code [ fhir:v "Present" ]
      ] )
   ] . # 

@@ -353,7 +353,7 @@
         
           Draft
           
-            as of 2025-08-26
+            as of 2025-12-03
           
         
       </td>
@@ -563,7 +563,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Plain text representation of the concept</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5509a655-56aa-4a43-a188-c8e371a538f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f7f8f517-8151-46c6-b2a8-1357de6d908e
 document.getElementById('cbncpi-research-access-policyK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-research-access-policyK'), 'binding', document.getElementById('cbncpi-research-access-policyK-binding').checked, document.getElementById('ppncpi-research-access-policyK'));
 document.getElementById('cbncpi-research-access-policyK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -573,11 +573,72 @@ filterDesc(document.getElementById('ncpi-research-access-policyK'), 'obligation'
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Consent.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Indicates the state of the consent."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState</a><div><code>http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.scope</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The four anticipated uses for the Consent Resource."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-scope.html">ConsentScopeCodes</a><div><code>http://hl7.org/fhir/ValueSet/consent-scope</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-scope"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="A classification of the type of consents found in a consent statement.">Pattern Value: <a title="Consent Category Codes" href="http://terminology.hl7.org/6.5.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-research">research</a>("Research Information Access")<div><code>http://hl7.org/fhir/ValueSet/consent-category</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-category"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Indicates the state of the consent.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.scope</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="The four anticipated uses for the Consent Resource.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-scope.html">Consent Scope Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-scope|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.category</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="A classification of the type of consents found in a consent statement.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-category.html">Consent Category Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-category|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -587,21 +648,145 @@ filterDesc(document.getElementById('ncpi-research-access-policyK'), 'obligation'
             <a name="inv-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>completed-consent-code</td><td>error</td><td>Consent</td><td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation<br/>: provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Consent</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Consent</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Consent</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ppc-1</td><td>error</td><td>Consent</td><td>Either a Policy or PolicyRule<br/>: policy.exists() or policyRule.exists()</td><td></td></tr>
-<tr><td>ppc-2</td><td>error</td><td>Consent</td><td>IF Scope=privacy, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</td><td></td></tr>
-<tr><td>ppc-3</td><td>error</td><td>Consent</td><td>IF Scope=research, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='research').exists().not()</td><td></td></tr>
-<tr><td>ppc-4</td><td>error</td><td>Consent</td><td>IF Scope=adr, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='adr').exists().not()</td><td></td></tr>
-<tr><td>ppc-5</td><td>error</td><td>Consent</td><td>IF Scope=treatment, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='treatment').exists().not()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>completed-consent-code</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation</td>
+    <td>
+      <code>provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Consent</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-1</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>Either a Policy or PolicyRule</td>
+    <td>
+      <code>policy.exists() or policyRule.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-2</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=privacy, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-3</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=research, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='research').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-4</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=adr, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='adr').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-5</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=treatment, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='treatment').exists().not()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -685,7 +870,7 @@ filterDesc(document.getElementById('ncpi-research-access-policyK'), 'obligation'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Context of activities covered by this rule</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-research-data-access-code-vs.html" title="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs" class="binding">Research Data Access Codes</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5509a655-56aa-4a43-a188-c8e371a538f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f7f8f517-8151-46c6-b2a8-1357de6d908e
 document.getElementById('cbncpi-research-access-policyD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-research-access-policyD'), 'binding', document.getElementById('cbncpi-research-access-policyD-binding').checked, document.getElementById('ppncpi-research-access-policyD'));
 document.getElementById('cbncpi-research-access-policyD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -696,9 +881,40 @@ filterDesc(document.getElementById('ncpi-research-access-policyD'), 'obligation'
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Consent.provision.purpose</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="ValueSet-research-data-access-code-vs.html">ResearchDataAccessCodeVS</a>(a valid code from <a href="CodeSystem-research-data-access-code.html">Research Data Access Codes</a>)<div><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.purpose</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 0.5" href="ValueSet-research-data-access-code-vs.html">Research Data Access Codes</a>
+      <button data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.2.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -708,9 +924,33 @@ filterDesc(document.getElementById('ncpi-research-access-policyD'), 'obligation'
             <a name="inv-diff"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>completed-consent-code</td><td>error</td><td>Consent</td><td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation<br/>: provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>completed-consent-code</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation</td>
+    <td>
+      <code>provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1107,7 +1347,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/consent.html#Consent.provision" title="Consent.provision">provision (Consent)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nested Exception Rules<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5509a655-56aa-4a43-a188-c8e371a538f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f7f8f517-8151-46c6-b2a8-1357de6d908e
 document.getElementById('cbncpi-research-access-policyS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-research-access-policyS'), 'binding', document.getElementById('cbncpi-research-access-policyS-binding').checked, document.getElementById('ppncpi-research-access-policyS'));
 document.getElementById('cbncpi-research-access-policyS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1117,37 +1357,220 @@ filterDesc(document.getElementById('ncpi-research-access-policyS'), 'obligation'
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Consent.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
+<table class="list" data-fhir="generated-heirarchy">
   <tr>
-    <td style="font-size: 11px">
-      <b>Additional Bindings</b>
+    <td>
+      <b>Path</b>
     </td>
-    <td style="font-size: 11px">Purpose</td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
   </tr>
   <tr>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    <td>Consent.language</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
     </td>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
+    <td title="A human language.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
   </tr>
-</table>
-</td></tr>
-<tr><td>Consent.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Indicates the state of the consent."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState</a><div><code>http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.scope</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The four anticipated uses for the Consent Resource."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-scope.html">ConsentScopeCodes</a><div><code>http://hl7.org/fhir/ValueSet/consent-scope</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-scope"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="A classification of the type of consents found in a consent statement.">Pattern Value: <a title="Consent Category Codes" href="http://terminology.hl7.org/6.5.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-research">research</a>("Research Information Access")<div><code>http://hl7.org/fhir/ValueSet/consent-category</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-category"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.policyRule</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Regulatory policy examples."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-policy.html">ConsentPolicyRuleCodes</a><div><code>http://hl7.org/fhir/ValueSet/consent-policy</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-policy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="How a rule statement is applied, such as adding additional consent or removing consent."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-provision-type.html">ConsentProvisionType</a><div><code>http://hl7.org/fhir/ValueSet/consent-provision-type|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-provision-type|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.actor.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="How an actor is involved in the consent considerations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.action</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Detailed codes for the consent action."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-action.html">ConsentActionCodes</a><div><code>http://hl7.org/fhir/ValueSet/consent-action</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-action"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.securityLabel</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Security Labels from the Healthcare Privacy and Security Classification System."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">All Security Labels</a><div><code>http://hl7.org/fhir/ValueSet/security-labels</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.purpose</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="ValueSet-research-data-access-code-vs.html">ResearchDataAccessCodeVS</a>(a valid code from <a href="CodeSystem-research-data-access-code.html">Research Data Access Codes</a>)<div><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Consent.provision.class</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The class (type) of information a consent rule covers."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-content-class.html">ConsentContentClass</a><div><code>http://hl7.org/fhir/ValueSet/consent-content-class</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-content-class"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="If this code is found in an instance, then the exception applies."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-content-code.html">ConsentContentCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/consent-content-code</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-content-code"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.data.meaning</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="How a resource reference is interpreted when testing consent restrictions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-data-meaning.html">ConsentDataMeaning</a><div><code>http://hl7.org/fhir/ValueSet/consent-data-meaning|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-data-meaning|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+  <tr>
+    <td>Consent.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Indicates the state of the consent.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.scope</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="The four anticipated uses for the Consent Resource.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-scope.html">Consent Scope Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-scope|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.category</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="A classification of the type of consents found in a consent statement.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-category.html">Consent Category Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-category|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.policyRule</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="Regulatory policy examples.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-policy.html">Consent PolicyRule Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-policy|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="How a rule statement is applied, such as adding additional consent or removing consent.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-provision-type.html">ConsentProvisionType</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-provision-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.actor.​role</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="How an actor is involved in the consent considerations.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.action</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Detailed codes for the consent action.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-action.html">Consent Action Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-action|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.securityLabel</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="Security Labels from the Healthcare Privacy and Security Classification System.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">SecurityLabels</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.purpose</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-research-data-access-code-vs.html">Research Data Access Codes</a>
+      <button data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.2.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Consent.provision.class</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="The class (type) of information a consent rule covers.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-content-class.html">Consent Content Class</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-content-class|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.code</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="If this code is found in an instance, then the exception applies.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-content-code.html">Consent Content Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-content-code|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.data.​meaning</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="How a resource reference is interpreted when testing consent restrictions.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-data-meaning.html">ConsentDataMeaning</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-data-meaning|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1157,21 +1580,145 @@ filterDesc(document.getElementById('ncpi-research-access-policyS'), 'obligation'
             <a name="inv-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>completed-consent-code</td><td>error</td><td>Consent</td><td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation<br/>: provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Consent</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Consent</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Consent</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ppc-1</td><td>error</td><td>Consent</td><td>Either a Policy or PolicyRule<br/>: policy.exists() or policyRule.exists()</td><td></td></tr>
-<tr><td>ppc-2</td><td>error</td><td>Consent</td><td>IF Scope=privacy, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</td><td></td></tr>
-<tr><td>ppc-3</td><td>error</td><td>Consent</td><td>IF Scope=research, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='research').exists().not()</td><td></td></tr>
-<tr><td>ppc-4</td><td>error</td><td>Consent</td><td>IF Scope=adr, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='adr').exists().not()</td><td></td></tr>
-<tr><td>ppc-5</td><td>error</td><td>Consent</td><td>IF Scope=treatment, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='treatment').exists().not()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>completed-consent-code</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation</td>
+    <td>
+      <code>provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Consent</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-1</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>Either a Policy or PolicyRule</td>
+    <td>
+      <code>policy.exists() or policyRule.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-2</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=privacy, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-3</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=research, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='research').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-4</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=adr, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='adr').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-5</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=treatment, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='treatment').exists().not()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1221,13 +1768,13 @@ filterDesc(document.getElementById('ncpi-research-access-policyS'), 'obligation'
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.status" title="Indicates the current state of this consent (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">status</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">draft | proposed | active | rejected | inactive | entered-in-error</a></span>
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.scope" title="A selector of the type of consent being presented: ADR, Privacy, Treatment, Research.  This list is now extensible (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">scope</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Which of the four areas this resource covers (extensible)</a></span>
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.category" title="A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements" class="dict"><span style="text-decoration: underline">category</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Classification of the consent statement - for indexing/retrieval</a></span>
-    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.patient" title="The patient/healthcare consumer to whom this consent applies" class="dict"><span style="text-decoration: underline">patient</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who the consent applies to</span>
+    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.patient" title="The patient/healthcare consumer to whom this consent applies" class="dict"><span style="text-decoration: underline">patient</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Patient|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who the consent applies to</span>
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.dateTime" title="When this  Consent was issued / created / indexed" class="dict"><span style="text-decoration: underline">dateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When this Consent was created or indexed</span>
-    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.performer" title="Either the Grantor, which is the entity responsible for granting the rights listed in a Consent Directive or the Grantee, which is the entity responsible for complying with the Consent Directive, including any obligations or limitations on authorizations and enforcement of prohibitions" class="dict"><span style="text-decoration: underline">performer</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who is agreeing to the policy and rules</span>
-    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.organization" title="The organization that manages the consent, and the framework within which it is executed" class="dict"><span style="text-decoration: underline">organization</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Custodian of the consent</span>
+    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.performer" title="Either the Grantor, which is the entity responsible for granting the rights listed in a Consent Directive or the Grantee, which is the entity responsible for complying with the Consent Directive, including any obligations or limitations on authorizations and enforcement of prohibitions" class="dict"><span style="text-decoration: underline">performer</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Organization|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who is agreeing to the policy and rules</span>
+    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.organization" title="The organization that manages the consent, and the framework within which it is executed" class="dict"><span style="text-decoration: underline">organization</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Organization|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Custodian of the consent</span>
 <span style="color: Gray">// source[x]: <span style="color: navy; opacity: 0.8">Source from which this consent is taken</span>. One of these 2:</span>
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.sourceAttachment" title="The source on which this consent statement is based. The source might be a scanned original paper form, or a reference to a consent that links back to such a source, a reference to a document repository (e.g. XDS) that stores the original consent document" class="dict"><span style="text-decoration: underline">sourceAttachment</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Source from which this consent is taken</span>
-    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.sourceReference" title="The source on which this consent statement is based. The source might be a scanned original paper form, or a reference to a consent that links back to such a source, a reference to a document repository (e.g. XDS) that stores the original consent document" class="dict"><span style="text-decoration: underline">sourceReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/consent.html">Consent</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Source from which this consent is taken</span>
+    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.sourceReference" title="The source on which this consent statement is based. The source might be a scanned original paper form, or a reference to a consent that links back to such a source, a reference to a document repository (e.g. XDS) that stores the original consent document" class="dict"><span style="text-decoration: underline">sourceReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Consent|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Source from which this consent is taken</span>
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.policy" title="The references to the policies that are included in this consent scope. Policies may be organizational, but are often defined jurisdictionally, or in law" class="dict"><span style="text-decoration: underline">policy</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Policies covered by this consent</span>
       "extension": [
       ],
@@ -1239,7 +1786,7 @@ filterDesc(document.getElementById('ncpi-research-access-policyS'), 'obligation'
       "extension": [
       ],
       "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.verification.verified" title="Has the instruction been verified" class="dict"><span style="text-decoration: underline">verified</span></a>" : &lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>&gt;, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Has been verified</span>
-      "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.verification.verifiedWith" title="Who verified the instruction (Patient, Relative or other Authorized Person)" class="dict"><span style="text-decoration: underline">verifiedWith</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Person who verified</span>
+      "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.verification.verifiedWith" title="Who verified the instruction (Patient, Relative or other Authorized Person)" class="dict"><span style="text-decoration: underline">verifiedWith</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Patient|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Person who verified</span>
       "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.verification.verificationDate" title="Date verification was collected" class="dict"><span style="text-decoration: underline">verificationDate</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When consent verified</span>
     }],
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision" title="An exception to the base policy of this consent. An exception can be an addition or removal of access permissions" class="dict"><span style="text-decoration: underline">provision</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Constraints to the base Consent.policyRule</span>
@@ -1255,7 +1802,7 @@ filterDesc(document.getElementById('ncpi-research-access-policyS'), 'obligation'
         "extension": [
         ],
         "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.actor.role" title="How the individual is involved in the resources content that is described in the exception" class="dict"><span style="text-decoration: underline">role</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">How the actor is involved</a></span>
-        "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.actor.reference" title="The resource that identifies the actor. To identify actors by type, use group to identify a set of actors by some property they share (e.g. 'admitting officers')" class="dict"><span style="text-decoration: underline">reference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/device.html">Device</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Resource for the actor (or group, by role)</span>
+        "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.actor.reference" title="The resource that identifies the actor. To identify actors by type, use group to identify a set of actors by some property they share (e.g. 'admitting officers')" class="dict"><span style="text-decoration: underline">reference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Device|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Resource for the actor (or group, by role)</span>
       }],
       "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.action" title="Actions controlled by this Rule" class="dict"><span style="text-decoration: underline">action</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Actions controlled by this rule</a></span>
       "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.securityLabel" title="A security label, comprised of 0..* security label fields (Privacy tags), which define which resources are controlled by this exception" class="dict"><span style="text-decoration: underline">securityLabel</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Security Labels that define affected resources</a></span>
@@ -1267,7 +1814,7 @@ filterDesc(document.getElementById('ncpi-research-access-policyS'), 'obligation'
         "extension": [
         ],
         "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.data.meaning" title="How the resource reference is interpreted when testing consent restrictions" class="dict"><span style="text-decoration: underline">meaning</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">instance | related | dependents | authoredby</a></span>
-        "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.data.reference" title="A reference to a specific resource that defines which resources are covered by this consent" class="dict"><span style="text-decoration: underline">reference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/resource.html">Resource</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The actual data reference</span>
+        "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.data.reference" title="A reference to a specific resource that defines which resources are covered by this consent" class="dict"><span style="text-decoration: underline">reference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Resource|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The actual data reference</span>
       }],
       "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.provision" title="Rules which provide exceptions to the base rule or subrules" class="dict"><span style="text-decoration: underline">provision</span></a>" : [&lt;<span style="color: darkgreen">n/a</span>&gt;], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Nested Exception Rules</span>
     },
@@ -1428,7 +1975,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Plain text representation of the concept</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5509a655-56aa-4a43-a188-c8e371a538f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f7f8f517-8151-46c6-b2a8-1357de6d908e
 document.getElementById('cbncpi-research-access-policyKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-research-access-policyKA'), 'binding', document.getElementById('cbncpi-research-access-policyKA-binding').checked, document.getElementById('ppncpi-research-access-policyKA'));
 document.getElementById('cbncpi-research-access-policyKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1438,11 +1985,72 @@ filterDesc(document.getElementById('ncpi-research-access-policyKA'), 'obligation
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Consent.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Indicates the state of the consent."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState</a><div><code>http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.scope</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The four anticipated uses for the Consent Resource."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-scope.html">ConsentScopeCodes</a><div><code>http://hl7.org/fhir/ValueSet/consent-scope</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-scope"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="A classification of the type of consents found in a consent statement.">Pattern Value: <a title="Consent Category Codes" href="http://terminology.hl7.org/6.5.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-research">research</a>("Research Information Access")<div><code>http://hl7.org/fhir/ValueSet/consent-category</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-category"></button></div><div>From the FHIR Standard</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Indicates the state of the consent.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.scope</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="The four anticipated uses for the Consent Resource.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-scope.html">Consent Scope Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-scope|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.category</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="A classification of the type of consents found in a consent statement.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-category.html">Consent Category Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-category|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -1452,21 +2060,145 @@ filterDesc(document.getElementById('ncpi-research-access-policyKA'), 'obligation
             <a name="inv-all-key"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>completed-consent-code</td><td>error</td><td>Consent</td><td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation<br/>: provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Consent</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Consent</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Consent</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ppc-1</td><td>error</td><td>Consent</td><td>Either a Policy or PolicyRule<br/>: policy.exists() or policyRule.exists()</td><td></td></tr>
-<tr><td>ppc-2</td><td>error</td><td>Consent</td><td>IF Scope=privacy, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</td><td></td></tr>
-<tr><td>ppc-3</td><td>error</td><td>Consent</td><td>IF Scope=research, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='research').exists().not()</td><td></td></tr>
-<tr><td>ppc-4</td><td>error</td><td>Consent</td><td>IF Scope=adr, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='adr').exists().not()</td><td></td></tr>
-<tr><td>ppc-5</td><td>error</td><td>Consent</td><td>IF Scope=treatment, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='treatment').exists().not()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>completed-consent-code</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation</td>
+    <td>
+      <code>provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Consent</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-1</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>Either a Policy or PolicyRule</td>
+    <td>
+      <code>policy.exists() or policyRule.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-2</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=privacy, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-3</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=research, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='research').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-4</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=adr, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='adr').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-5</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=treatment, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='treatment').exists().not()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1550,7 +2282,7 @@ filterDesc(document.getElementById('ncpi-research-access-policyKA'), 'obligation
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Context of activities covered by this rule</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-research-data-access-code-vs.html" title="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs" class="binding">Research Data Access Codes</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5509a655-56aa-4a43-a188-c8e371a538f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f7f8f517-8151-46c6-b2a8-1357de6d908e
 document.getElementById('cbncpi-research-access-policyDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-research-access-policyDA'), 'binding', document.getElementById('cbncpi-research-access-policyDA-binding').checked, document.getElementById('ppncpi-research-access-policyDA'));
 document.getElementById('cbncpi-research-access-policyDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1560,9 +2292,40 @@ filterDesc(document.getElementById('ncpi-research-access-policyDA'), 'obligation
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>Consent.provision.purpose</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="ValueSet-research-data-access-code-vs.html">ResearchDataAccessCodeVS</a>(a valid code from <a href="CodeSystem-research-data-access-code.html">Research Data Access Codes</a>)<div><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs"></button></div><div>From this IG</div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.purpose</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 0.5" href="ValueSet-research-data-access-code-vs.html">Research Data Access Codes</a>
+      <button data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.2.0</td>
+    <td>This IG</td>
+  </tr>
 </table>
 
         
@@ -1572,9 +2335,33 @@ filterDesc(document.getElementById('ncpi-research-access-policyDA'), 'obligation
             <a name="inv-all-diff"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>completed-consent-code</td><td>error</td><td>Consent</td><td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation<br/>: provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>completed-consent-code</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation</td>
+    <td>
+      <code>provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -1971,7 +2758,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/consent.html#Consent.provision" title="Consent.provision">provision (Consent)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nested Exception Rules<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 5509a655-56aa-4a43-a188-c8e371a538f7
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f7f8f517-8151-46c6-b2a8-1357de6d908e
 document.getElementById('cbncpi-research-access-policySA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ncpi-research-access-policySA'), 'binding', document.getElementById('cbncpi-research-access-policySA-binding').checked, document.getElementById('ppncpi-research-access-policySA'));
 document.getElementById('cbncpi-research-access-policySA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1981,37 +2768,220 @@ filterDesc(document.getElementById('ncpi-research-access-policySA'), 'obligation
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
-<tr><td>Consent.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><div><code>http://hl7.org/fhir/ValueSet/languages</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/languages"></button></div><div>From the FHIR Standard</div><table class="grid">
+<table class="list" data-fhir="generated-heirarchy">
   <tr>
-    <td style="font-size: 11px">
-      <b>Additional Bindings</b>
+    <td>
+      <b>Path</b>
     </td>
-    <td style="font-size: 11px">Purpose</td>
+    <td>
+      <b>Status</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
   </tr>
   <tr>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    <td>Consent.language</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
     </td>
-    <td style="font-size: 11px">
-      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
+    <td title="A human language.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">Common Languages</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/languages|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
     </td>
   </tr>
-</table>
-</td></tr>
-<tr><td>Consent.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Indicates the state of the consent."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState</a><div><code>http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.scope</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The four anticipated uses for the Consent Resource."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-scope.html">ConsentScopeCodes</a><div><code>http://hl7.org/fhir/ValueSet/consent-scope</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-scope"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="A classification of the type of consents found in a consent statement.">Pattern Value: <a title="Consent Category Codes" href="http://terminology.hl7.org/6.5.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-research">research</a>("Research Information Access")<div><code>http://hl7.org/fhir/ValueSet/consent-category</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-category"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.policyRule</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Regulatory policy examples."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-policy.html">ConsentPolicyRuleCodes</a><div><code>http://hl7.org/fhir/ValueSet/consent-policy</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-policy"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="How a rule statement is applied, such as adding additional consent or removing consent."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-provision-type.html">ConsentProvisionType</a><div><code>http://hl7.org/fhir/ValueSet/consent-provision-type|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-provision-type|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.actor.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="How an actor is involved in the consent considerations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.action</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Detailed codes for the consent action."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-action.html">ConsentActionCodes</a><div><code>http://hl7.org/fhir/ValueSet/consent-action</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-action"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.securityLabel</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Security Labels from the Healthcare Privacy and Security Classification System."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">All Security Labels</a><div><code>http://hl7.org/fhir/ValueSet/security-labels</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.purpose</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="ValueSet-research-data-access-code-vs.html">ResearchDataAccessCodeVS</a>(a valid code from <a href="CodeSystem-research-data-access-code.html">Research Data Access Codes</a>)<div><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>Consent.provision.class</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The class (type) of information a consent rule covers."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-content-class.html">ConsentContentClass</a><div><code>http://hl7.org/fhir/ValueSet/consent-content-class</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-content-class"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="If this code is found in an instance, then the exception applies."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-content-code.html">ConsentContentCodes</a>(a valid code from <a href="https://loinc.org/">LOINC</a>)<div><code>http://hl7.org/fhir/ValueSet/consent-content-code</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-content-code"></button></div><div>From the FHIR Standard</div></td></tr>
-<tr><td>Consent.provision.data.meaning</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="How a resource reference is interpreted when testing consent restrictions."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-data-meaning.html">ConsentDataMeaning</a><div><code>http://hl7.org/fhir/ValueSet/consent-data-meaning|4.0.1</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-data-meaning|4.0.1"></button></div><div>From the FHIR Standard</div></td></tr>
+  <tr>
+    <td>Consent.status</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="Indicates the state of the consent.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-state-codes.html">ConsentState</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-state-codes|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.scope</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="The four anticipated uses for the Consent Resource.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-scope.html">Consent Scope Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-scope|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.category</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="A classification of the type of consents found in a consent statement.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-category.html">Consent Category Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-category|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.policyRule</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="Regulatory policy examples.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-policy.html">Consent PolicyRule Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-policy|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.type</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="How a rule statement is applied, such as adding additional consent or removing consent.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-provision-type.html">ConsentProvisionType</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-provision-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.actor.​role</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="How an actor is involved in the consent considerations.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.action</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="Detailed codes for the consent action.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-action.html">Consent Action Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-action|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.securityLabel</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="Security Labels from the Healthcare Privacy and Security Classification System.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">SecurityLabels</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-labels|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.purpose</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-research-data-access-code-vs.html">Research Data Access Codes</a>
+      <button data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.2.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>Consent.provision.class</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[extensible]">extensible</a>
+    </td>
+    <td title="The class (type) of information a consent rule covers.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-content-class.html">Consent Content Class</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-content-class|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.code</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
+    </td>
+    <td title="If this code is found in an instance, then the exception applies.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-content-code.html">Consent Content Codes</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-content-code|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Consent.provision.data.​meaning</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[required]">required</a>
+    </td>
+    <td title="How a resource reference is interpreted when testing consent restrictions.">
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-consent-data-meaning.html">ConsentDataMeaning</a>
+      <button data-clipboard-text="http://hl7.org/fhir/ValueSet/consent-data-meaning|4.0.1" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is explicitly stated to be 4.0.1">&#x1F4CD;4.0.1</td>
+    <td>
+      <a href="https://hl7.org/fhir/R4/">FHIR Std.</a>
+    </td>
+  </tr>
 </table>
 
         
@@ -2021,21 +2991,145 @@ filterDesc(document.getElementById('ncpi-research-access-policySA'), 'obligation
             <a name="inv-all-snap"> </a>
             <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
-<table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>completed-consent-code</td><td>error</td><td>Consent</td><td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation<br/>: provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Consent</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Consent</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Consent</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>best practice</td><td>Consent</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td><b>**ALL** elements</b></td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td><b>**ALL** extensions</b></td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ppc-1</td><td>error</td><td>Consent</td><td>Either a Policy or PolicyRule<br/>: policy.exists() or policyRule.exists()</td><td></td></tr>
-<tr><td>ppc-2</td><td>error</td><td>Consent</td><td>IF Scope=privacy, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</td><td></td></tr>
-<tr><td>ppc-3</td><td>error</td><td>Consent</td><td>IF Scope=research, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='research').exists().not()</td><td></td></tr>
-<tr><td>ppc-4</td><td>error</td><td>Consent</td><td>IF Scope=adr, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='adr').exists().not()</td><td></td></tr>
-<tr><td>ppc-5</td><td>error</td><td>Consent</td><td>IF Scope=treatment, there must be a patient<br/>: patient.exists() or scope.coding.where(system='something' and code='treatment').exists().not()</td><td></td></tr>
+<table class="list presentation" data-fhir="generated-heirarchy">
+  <tr>
+    <td width="60">
+      <b>Id</b>
+    </td>
+    <td>
+      <b>Grade</b>
+    </td>
+    <td>
+      <b>Path(s)</b>
+    </td>
+    <td>
+      <b>Description</b>
+    </td>
+    <td>
+      <b>Expression</b>
+    </td>
+  </tr>
+  <tr>
+    <td>completed-consent-code</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If category is DS then there must be a ResearchConsentDiseaseAbbreviation</td>
+    <td>
+      <code>provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-2</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If the resource is contained in another resource, it SHALL NOT contain nested Resources</td>
+    <td>
+      <code>contained.contained.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-3</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</td>
+    <td>
+      <code>contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-4</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</td>
+    <td>
+      <code>contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-5</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>If a resource is contained in another resource, it SHALL NOT have a security label</td>
+    <td>
+      <code>contained.meta.security.empty()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>dom-6</td>
+    <td>best practice</td>
+    <td>Consent</td>
+    <td>A resource should have narrative for robust management</td>
+    <td>
+      <code>text.`div`.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ele-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** elements</b>
+    </td>
+    <td>All FHIR elements must have a @value or children</td>
+    <td>
+      <code>hasValue() or (children().count() &gt; id.count())</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ext-1</td>
+    <td>error</td>
+    <td>
+      <b>**ALL** extensions</b>
+    </td>
+    <td>Must have either extensions or value[x], not both</td>
+    <td>
+      <code>extension.exists() != value.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-1</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>Either a Policy or PolicyRule</td>
+    <td>
+      <code>policy.exists() or policyRule.exists()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-2</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=privacy, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='patient-privacy').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-3</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=research, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='research').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-4</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=adr, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='adr').exists().not()</code>
+    </td>
+  </tr>
+  <tr>
+    <td>ppc-5</td>
+    <td>error</td>
+    <td>Consent</td>
+    <td>IF Scope=treatment, there must be a patient</td>
+    <td>
+      <code>patient.exists() or scope.coding.where(system='something' and code='treatment').exists().not()</code>
+    </td>
+  </tr>
 </table>
 
           
@@ -2085,13 +3179,13 @@ filterDesc(document.getElementById('ncpi-research-access-policySA'), 'obligation
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.status" title="Indicates the current state of this consent (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">status</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">draft | proposed | active | rejected | inactive | entered-in-error</a></span>
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.scope" title="A selector of the type of consent being presented: ADR, Privacy, Treatment, Research.  This list is now extensible (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">scope</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Which of the four areas this resource covers (extensible)</a></span>
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.category" title="A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements" class="dict"><span style="text-decoration: underline">category</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Classification of the consent statement - for indexing/retrieval</a></span>
-    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.patient" title="The patient/healthcare consumer to whom this consent applies" class="dict"><span style="text-decoration: underline">patient</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who the consent applies to</span>
+    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.patient" title="The patient/healthcare consumer to whom this consent applies" class="dict"><span style="text-decoration: underline">patient</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Patient|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who the consent applies to</span>
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.dateTime" title="When this  Consent was issued / created / indexed" class="dict"><span style="text-decoration: underline">dateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When this Consent was created or indexed</span>
-    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.performer" title="Either the Grantor, which is the entity responsible for granting the rights listed in a Consent Directive or the Grantee, which is the entity responsible for complying with the Consent Directive, including any obligations or limitations on authorizations and enforcement of prohibitions" class="dict"><span style="text-decoration: underline">performer</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who is agreeing to the policy and rules</span>
-    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.organization" title="The organization that manages the consent, and the framework within which it is executed" class="dict"><span style="text-decoration: underline">organization</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Custodian of the consent</span>
+    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.performer" title="Either the Grantor, which is the entity responsible for granting the rights listed in a Consent Directive or the Grantee, which is the entity responsible for complying with the Consent Directive, including any obligations or limitations on authorizations and enforcement of prohibitions" class="dict"><span style="text-decoration: underline">performer</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Organization|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Who is agreeing to the policy and rules</span>
+    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.organization" title="The organization that manages the consent, and the framework within which it is executed" class="dict"><span style="text-decoration: underline">organization</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Organization|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Custodian of the consent</span>
 <span style="color: Gray">// source[x]: <span style="color: navy; opacity: 0.8">Source from which this consent is taken</span>. One of these 2:</span>
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.sourceAttachment" title="The source on which this consent statement is based. The source might be a scanned original paper form, or a reference to a consent that links back to such a source, a reference to a document repository (e.g. XDS) that stores the original consent document" class="dict"><span style="text-decoration: underline">sourceAttachment</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Source from which this consent is taken</span>
-    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.sourceReference" title="The source on which this consent statement is based. The source might be a scanned original paper form, or a reference to a consent that links back to such a source, a reference to a document repository (e.g. XDS) that stores the original consent document" class="dict"><span style="text-decoration: underline">sourceReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/consent.html">Consent</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Source from which this consent is taken</span>
+    "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.sourceReference" title="The source on which this consent statement is based. The source might be a scanned original paper form, or a reference to a consent that links back to such a source, a reference to a document repository (e.g. XDS) that stores the original consent document" class="dict"><span style="text-decoration: underline">sourceReference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Consent|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Source from which this consent is taken</span>
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.policy" title="The references to the policies that are included in this consent scope. Policies may be organizational, but are often defined jurisdictionally, or in law" class="dict"><span style="text-decoration: underline">policy</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Policies covered by this consent</span>
       "extension": [
       ],
@@ -2103,7 +3197,7 @@ filterDesc(document.getElementById('ncpi-research-access-policySA'), 'obligation
       "extension": [
       ],
       "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.verification.verified" title="Has the instruction been verified" class="dict"><span style="text-decoration: underline">verified</span></a>" : &lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>&gt;, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Has been verified</span>
-      "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.verification.verifiedWith" title="Who verified the instruction (Patient, Relative or other Authorized Person)" class="dict"><span style="text-decoration: underline">verifiedWith</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Person who verified</span>
+      "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.verification.verifiedWith" title="Who verified the instruction (Patient, Relative or other Authorized Person)" class="dict"><span style="text-decoration: underline">verifiedWith</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Patient|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Person who verified</span>
       "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.verification.verificationDate" title="Date verification was collected" class="dict"><span style="text-decoration: underline">verificationDate</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">When consent verified</span>
     }],
     "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision" title="An exception to the base policy of this consent. An exception can be an addition or removal of access permissions" class="dict"><span style="text-decoration: underline">provision</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Constraints to the base Consent.policyRule</span>
@@ -2119,7 +3213,7 @@ filterDesc(document.getElementById('ncpi-research-access-policySA'), 'obligation
         "extension": [
         ],
         "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.actor.role" title="How the individual is involved in the resources content that is described in the exception" class="dict"><span style="text-decoration: underline">role</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">How the actor is involved</a></span>
-        "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.actor.reference" title="The resource that identifies the actor. To identify actors by type, use group to identify a set of actors by some property they share (e.g. 'admitting officers')" class="dict"><span style="text-decoration: underline">reference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/device.html">Device</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Resource for the actor (or group, by role)</span>
+        "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.actor.reference" title="The resource that identifies the actor. To identify actors by type, use group to identify a set of actors by some property they share (e.g. 'admitting officers')" class="dict"><span style="text-decoration: underline">reference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Device|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Resource for the actor (or group, by role)</span>
       }],
       "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.action" title="Actions controlled by this Rule" class="dict"><span style="text-decoration: underline">action</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Actions controlled by this rule</a></span>
       "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.securityLabel" title="A security label, comprised of 0..* security label fields (Privacy tags), which define which resources are controlled by this exception" class="dict"><span style="text-decoration: underline">securityLabel</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Security Labels that define affected resources</a></span>
@@ -2131,7 +3225,7 @@ filterDesc(document.getElementById('ncpi-research-access-policySA'), 'obligation
         "extension": [
         ],
         "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.data.meaning" title="How the resource reference is interpreted when testing consent restrictions" class="dict"><span style="text-decoration: underline">meaning</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">instance | related | dependents | authoredby</a></span>
-        "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.data.reference" title="A reference to a specific resource that defines which resources are covered by this consent" class="dict"><span style="text-decoration: underline">reference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/resource.html">Resource</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The actual data reference</span>
+        "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.data.reference" title="A reference to a specific resource that defines which resources are covered by this consent" class="dict"><span style="text-decoration: underline">reference</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Resource|4.0.1)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">The actual data reference</span>
       }],
       "<a href="StructureDefinition-ncpi-research-access-policy.html#Consent.provision.provision" title="Rules which provide exceptions to the base rule or subrules" class="dict"><span style="text-decoration: underline">provision</span></a>" : [&lt;<span style="color: darkgreen">n/a</span>&gt;], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Nested Exception Rules</span>
     },
@@ -2216,7 +3310,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 26, 2025 23:55+0000">2025-08-26</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 3, 2025 18:37+0000">2025-12-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

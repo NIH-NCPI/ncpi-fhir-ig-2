@@ -18,7 +18,7 @@
   <name value="NcpiResearchCollection"/>
   <title value="NCPI Research Collection"/>
   <status value="draft"/>
-  <date value="2025-08-26T23:53:55+00:00"/>
+  <date value="2025-12-03T18:37:31+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -254,7 +254,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages|4.0.1"/>
       </binding>
     </element>
     <element id="List.text">
@@ -679,10 +679,10 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -720,7 +720,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -792,10 +792,10 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -848,7 +848,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="What order applies to the items in a list."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/list-order"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/list-order|4.0.1"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -1055,7 +1055,7 @@
         </extension>
         <strength value="example"/>
         <description value="Codes that provide further information about the reason and meaning of the item in the list."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/list-item-flag"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/list-item-flag|4.0.1"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -1139,7 +1139,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1189,7 +1189,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="If a list is empty, why it is empty."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/list-empty-reason"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/list-empty-reason|4.0.1"/>
       </binding>
       <mapping>
         <identity value="rim"/>

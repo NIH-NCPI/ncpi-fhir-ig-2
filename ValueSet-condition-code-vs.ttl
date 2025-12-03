@@ -11,15 +11,18 @@
   fhir:id [ fhir:v "condition-code-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet condition-code-vs</b></p><a name=\"condition-code-vs\"> </a><a name=\"hccondition-code-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-HPO.html\"><code>http://human-phenotype-ontology.org</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-MONDO.html\"><code>http://purl.obolibrary.org/obo/mondo.owl</code></a></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet condition-code-vs</b></p><a name=\"condition-code-vs\"> </a><a name=\"hccondition-code-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-HPO.html\"><code>http://human-phenotype-ontology.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-MONDO.html\"><code>http://purl.obolibrary.org/obo/mondo.owl</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs"^^xsd:anyURI ;
+     fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs>
+  ] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "ConditionCodeVS"] ; # 
   fhir:title [ fhir:v "Condition Codes"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-08-26T23:53:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-03T18:37:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -34,9 +37,15 @@
   fhir:description [ fhir:v "Includes all codes from **HPO** and **MONDO**"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://human-phenotype-ontology.org"^^xsd:anyURI ]
+       fhir:system [
+         fhir:v "http://human-phenotype-ontology.org"^^xsd:anyURI ;
+         fhir:l <http://human-phenotype-ontology.org>
+       ]
      ] [
-       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/mondo.owl"^^xsd:anyURI ]
+       fhir:system [
+         fhir:v "http://purl.obolibrary.org/obo/mondo.owl"^^xsd:anyURI ;
+         fhir:l <http://purl.obolibrary.org/obo/mondo.owl>
+       ]
      ] )
   ] . # 
 

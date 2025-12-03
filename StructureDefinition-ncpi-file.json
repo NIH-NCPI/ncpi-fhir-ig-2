@@ -10,7 +10,7 @@
   "name" : "NcpiFile",
   "title" : "NCPI File",
   "status" : "draft",
-  "date" : "2025-08-26T23:53:55+00:00",
+  "date" : "2025-12-03T18:37:31+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -268,7 +268,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
       }
     },
     {
@@ -869,7 +869,7 @@
         }],
         "strength" : "example",
         "description" : "High-level kind of a clinical document at a macro level.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/document-classcodes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/document-classcodes|4.0.1"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -906,10 +906,10 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/Group",
-        "http://hl7.org/fhir/StructureDefinition/Device"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Group|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Device|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1013,12 +1013,12 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Organization",
-        "http://hl7.org/fhir/StructureDefinition/Device",
-        "http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1070,9 +1070,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1128,7 +1128,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1366,7 +1366,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DocumentReference"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DocumentReference|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1465,7 +1465,7 @@
         }],
         "strength" : "extensible",
         "description" : "Security Labels from the Healthcare Privacy and Security Classification System.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/security-labels"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/security-labels|4.0.1"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -1883,7 +1883,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2133,7 +2133,7 @@
         }],
         "strength" : "preferred",
         "description" : "Document Format Codes.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/formatcodes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/formatcodes|4.0.1"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2309,8 +2309,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter",
-        "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2461,7 +2461,7 @@
         }],
         "strength" : "example",
         "description" : "XDS Facility Type.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes|4.0.1"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2514,7 +2514,7 @@
         }],
         "strength" : "example",
         "description" : "Additional details about where the content was created (e.g. clinical specialty).",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/c80-practice-codes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2547,7 +2547,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2591,7 +2591,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",

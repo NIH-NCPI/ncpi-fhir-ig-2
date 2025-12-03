@@ -13,45 +13,57 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"^^xsd:anyURI ;
-       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion>
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation GSS123456-assertion</b></p><a name=\"GSS123456-assertion\"> </a><a name=\"hcGSS123456-assertion\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-participant-assertion.html\">NCPI Participant Assertion</a></p></div><p><b>Part of Study</b>: <a href=\"ResearchStudy-research-study-gregor.html\">ResearchStudy: identifier = AnVIL_GREGoR_GSS_U08_GRU; status = completed</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type Clinical-Finding}\">Clinical Finding</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271603002}\">Height / growth measure</span></p><p><b>subject</b>: <a href=\"Patient-GSS123456.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>value</b>: 66 inches<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code[in_us] = '[in_us]')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">ageAtAssertion</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">ageAtAssertion</span></p><p><b>value</b>: 38 year<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p></blockquote></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation GSS123456-assertion</b></p><a name=\"GSS123456-assertion\"> </a><a name=\"hcGSS123456-assertion\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-participant-assertion.html\">NCPI Participant Assertion</a></p></div><p><b>Part of Study</b>: <a href=\"ResearchStudy-research-study-gregor.html\">ResearchStudy: identifier = AnVIL_GREGoR_GSS_U08_GRU; status = completed</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type Clinical-Finding}\">Clinical Finding</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271603002}\">Height / growth measure</span></p><p><b>subject</b>: <a href=\"Patient-GSS123456.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)</a></p><p><b>value</b>: 66 inches<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code[in_us] = '[in_us]')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">ageAtAssertion</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">ageAtAssertion</span></p><p><b>value</b>: 38 year<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"^^xsd:anyURI ;
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study>
+     ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/research-study-gregor> ;
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/research-study-gregor> ;
        fhir:reference [ fhir:v "ResearchStudy/research-study-gregor" ]
      ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type"^^xsd:anyURI ;
+         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type>
+       ] ;
        fhir:code [ fhir:v "Clinical-Finding" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a sct:271603002 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "271603002" ]
      ] ) ;
      fhir:text [ fhir:v "Height / growth measure" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/GSS123456> ;
+     fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/GSS123456> ;
      fhir:reference [ fhir:v "Patient/GSS123456" ]
   ] ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "66"^^xsd:decimal ] ;
      fhir:unit [ fhir:v "inches" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "[in_us]" ]
   ] ; # 
   fhir:component ( [
@@ -70,7 +82,10 @@
        a fhir:Quantity ;
        fhir:value [ fhir:v "38"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "year" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "a" ]
      ]
   ] ) . # 

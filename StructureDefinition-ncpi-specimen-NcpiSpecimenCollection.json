@@ -10,7 +10,7 @@
   "name" : "NcpiSpecimenCollection",
   "title" : "Linkage for related samples",
   "status" : "draft",
-  "date" : "2025-08-26T23:53:55+00:00",
+  "date" : "2025-12-03T18:37:31+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -257,7 +257,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
       }
     },
     {
@@ -599,7 +599,7 @@
         }],
         "strength" : "example",
         "description" : "What the purpose of a list is.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/list-example-codes"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/list-example-codes|4.0.1"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -626,10 +626,10 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/Group",
-        "http://hl7.org/fhir/StructureDefinition/Device",
-        "http://hl7.org/fhir/StructureDefinition/Location"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Group|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -668,7 +668,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -742,10 +742,10 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/Device"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Device|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -800,7 +800,7 @@
         }],
         "strength" : "preferred",
         "description" : "What order applies to the items in a list.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/list-order"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/list-order|4.0.1"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1015,7 +1015,7 @@
         }],
         "strength" : "example",
         "description" : "Codes that provide further information about the reason and meaning of the item in the list.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/list-item-flag"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/list-item-flag|4.0.1"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1102,7 +1102,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1154,7 +1154,7 @@
         }],
         "strength" : "preferred",
         "description" : "If a list is empty, why it is empty.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/list-empty-reason"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/list-empty-reason|4.0.1"
       },
       "mapping" : [{
         "identity" : "rim",

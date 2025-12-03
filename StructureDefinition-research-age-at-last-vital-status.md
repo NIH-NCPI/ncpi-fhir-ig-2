@@ -1,0 +1,144 @@
+# Age at Last Vital Status Extension - NCPI FHIR Implementation Guide v2 v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Age at Last Vital Status Extension**
+
+## Extension: Age at Last Vital Status Extension 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status | *Version*:0.2.0 |
+| Draft as of 2025-12-03 | *Computable Name*:AgeAtLastVitalStatus |
+
+Age at Last Vital Status Extension
+
+**Context of Use**
+
+**Usage info**
+
+**Usages:**
+
+* Use this Extension: [NCPI Participant](StructureDefinition-ncpi-participant.md)
+* Examples for this Extension: [Patient/PT-006SP660](Patient-PT-006SP660.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ncpi-fhir-implementation-guide-v2|current/StructureDefinition/research-age-at-last-vital-status)
+
+### Formal Views of Extension Content
+
+ [Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-research-age-at-last-vital-status.csv), [Excel](StructureDefinition-research-age-at-last-vital-status.xlsx), [Schematron](StructureDefinition-research-age-at-last-vital-status.sch) 
+
+#### Constraints
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "research-age-at-last-vital-status",
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status",
+  "version" : "0.2.0",
+  "name" : "AgeAtLastVitalStatus",
+  "title" : "Age at Last Vital Status Extension",
+  "status" : "draft",
+  "date" : "2025-12-03T18:37:31+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [
+    {
+      "name" : "NCPI FHIR Working Group",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://example.org/example-publisher"
+        },
+        {
+          "system" : "email",
+          "value" : "ncpi-fhir-ig@googlegroups.com"
+        }
+      ]
+    }
+  ],
+  "description" : "Age at Last Vital Status Extension",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }
+  ],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    {
+      "type" : "element",
+      "expression" : "Patient"
+    }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Extension",
+        "path" : "Extension",
+        "short" : "Age at Last Vital Status Extension",
+        "definition" : "Age at Last Vital Status Extension"
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "type" : [
+          {
+            "code" : "date"
+          },
+          {
+            "code" : "Quantity"
+          }
+        ]
+      },
+      {
+        "id" : "Extension.value[x]:valueQuantity",
+        "path" : "Extension.value[x]",
+        "sliceName" : "valueQuantity",
+        "short" : "Indicate age via relative date time extension or official date of when last vital status was assessed.",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Quantity"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+```
