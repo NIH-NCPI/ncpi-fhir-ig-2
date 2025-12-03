@@ -99,7 +99,7 @@ Description: "The NCPI Research Study FHIR resource represents an individual res
     
 * extension[studyDesign] ^short = "Study Design and Study Type"
 // * extension[result] ^short = "Link to results generated during the study."
-* extension[acknowledgement] ^short = "URL describing the policy restrictions in detail."
+* extension[acknowledgement] ^short = "Statement investigators should include to acknowledge use data from this study. This can include, but is not limited to, funding sources, organizational affiliations, or sponsors."
 
 // These are TBD for after we have completed digging into what access control 
 // will require
@@ -124,7 +124,6 @@ Description: "Some common types of study 'names'."
 * #familiar-ame "Familiar Name (Nickname)"
 * #acronym "Acronym"
 * #alternative-name "Alternative Name"
-
 
 ValueSet: StudyNameTypeVS
 Id: study-name-type-vs
