@@ -12,12 +12,13 @@ Further extended relationships can be made available using Family Relationship, 
 #### Recommended Practices
 To ensure an unambiguous representation of family relationships, we recommend that the following guidelines be followed:
 - For each parent-child relationship, create a `FamilyRelationship` resource with the child as the `patient` and the parent as the `relative`.
+- Treat rarer genetic relationships (for example, `isMitochondrialDonor` or `isOvumDonor`) like the parent-child relationship. The receiver of the genetic or cellular material is the `patient` and the donor is the `relative`.
 - For all monozygotic sibling relationships, create pairwise `FamilyRelationship` resources using `KIN:010`. For triplets, create six `FamilyRelationship` resources (one for each direction of each pair: A→B, B→A, A→C, C→A, B→C, C→B). For quadruplets, create twelve resources, and so on.
 - For other genetic relationships, (like grandparents), create `FamilyRelationship` resources for each parent-child relationship.
   - This may require inferred individuals to be created to fill in gaps.
   - Use the [Patient Knowledge Source Extension][p_knowledge] to mark the inferred individuals as such.
-- For non-genetic relationships, such as a spouse, an adoptive parent, or a surrogate mother, create one `FamilyRelationship` with each participant as the `patient` and the other as the `relative`. So, "spouse" would require two `FamilyRelationship` resources. Prefer non-gendered and sexless codes for the relationship because gender and sex are properties of the individual. For example, prefer "spouse" over "husband" or "wife."
-- It is acceptable to create several `FamilyRelationship` resources for the same `patient` and `relative` pair. For example, two participants may be spouses but also third cousins. That would require four `FamilyRelationship` resources.
+- For non-genetic relationships, such as a partner, an adoptive parent, or a surrogate mother, create one `FamilyRelationship` with each participant as the `patient` and the other as the `relative`. So, "partner" would require two `FamilyRelationship` resources. Prefer non-gendered and sexless codes for the relationship because gender and sex are properties of the individual. For example, prefer "partner" over "husband" or "wife." The KIN ontology lacks many terms for precise inverse relationships, so one direction may be `isAdoptiveParent` (KIN:022) and the other `isSocialLegalRelative` (KIN:019).
+- It is acceptable to create several `FamilyRelationship` resources for the same `patient` and `relative` pair. For example, two participants may be spouses but also third cousins. That would require two `FamilyRelationship` resources for the mutual isPartner relationships and several more to map back to their common great-great-grandparent. In this case, you may not know the sex of the inferred figures, so you'd use KIN:003, `isBiologicalParent` for the ancestors of unknown sex.
 
 #### Relationship to other implementation guides
 
