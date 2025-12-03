@@ -131,7 +131,8 @@ Description: """
 An example family relationship based on data from GREGoR.
 
 GSS123456 (the patient) is male and >= 64 years old
-GSS654321 (the relative) has no information in the patient record
+GSS654321 (the relative) has no age or sex information in their patient record.
+    We made them female for the sake of this example.
 This is the "mother" relationship. The relative is the mother of the patient.
 
 This instance instantiates the minimum relationship direction to reproduce a PED file.
