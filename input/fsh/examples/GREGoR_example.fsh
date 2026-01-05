@@ -234,21 +234,6 @@ Description: "Example biospecimen based on data from GREGoR"
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
   * valueReference = Reference(research-study-gregor)
 
-//NCPI Biospecimen
-Instance: GSS123456-01-010x /*Collection Event ID can't have underscores*/
-InstanceOf: NCPISample
-Title: "Example biospecimen based on data from GREGoR, intentionally breaking the no parent and collection together rule. This should generate a warning."
-Usage: #example
-Description: "Example biospecimen based on data from GREGoR that will generate a warning"
-* identifier.value = "GSS123456-s1" /*Sample ID*/
-* subject = Reference(GSS123456) /*Participant ID*/
-* type.text = "DNA" /*Sample Type*/
-* collection.method.text = "DNA"
-* parent = Reference(GSS123456-01-010p)
-* extension[+] 
-  * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
-  * valueReference = Reference(research-study-gregor)
-
 // NCPI File
 Instance: GSS123456-01-010-SG-2
 InstanceOf: NcpiFile
