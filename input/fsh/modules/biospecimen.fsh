@@ -4,8 +4,8 @@ Logical: CdmBiospecimenCollection
 Id: SharedDataModelBiospecimenCollection
 Title: "Shared Data Model for Biospecimen Collection"
 Description: "Shared Data Model for Biospecimen Collection"
-* sampleGenerated 1..1 reference "Sample that was generated from this collection event"
-* participant 1..1 reference "The participant from whom the biospecimen was taken"
+* sampleGenerated 1..1 string "Sample that was generated from this collection event"
+* participant 1..1 Reference(NcpiParticipant) "The participant from whom the biospecimen was taken"
 * ageAtCollection 0..1 Quantity "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range."
 * method 0..1 code "The approach used to collect the biospecimen"
 * site 0..1 code "The location of the specimen collection"
@@ -67,7 +67,7 @@ Id: SharedDataModelAliquot
 Title: "Shared Data Model for Aliquot"
 Description: "Shared Data Model for Aliquot"
 * aliquotId 1..1 string "Unique ID for this aliquot"
-* sample 1..1 reference "The sample of which this tube is a part."
+* sample 1..1 Reference(NCPISample) "The sample of which this tube is a part."
 * availabilityStatus 0..1 code "Can this Sample be requested for further analysis?"
 * volume 0..1 Quantity "What is the volume of the Aliquot?"
 * concentration 0..1 Quantity "What is the concentration of the analyte in the Aliquot?"
@@ -121,7 +121,7 @@ Description: "FHIR Profile for NCPI Sample"
 * collection.collectedDateTime ^short = "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 * collection.quantity 0..1 /*Sample.Quantity*/
 * collection.quantity ^short = "The total quantity of the specimen"
-* collection.method ^short = "How is the Sample stored, eg, Frozen or with additives (example value set: [hl7VS-specimenCondition](http://terminology.hl7.org/ValueSet/v2-0493)) "
+* collection.method ^short = "How is the Sample stored, eg, Frozen or with additives (example value set: [hl7VS-specimenCondition](http://terminology.hl7.org/ValueSet/v2-0493))"
 * collection.bodySite 0..1 /*Biospecimen.Site*/
 * collection.bodySite ^short = "The location of the specimen collection"
 * collection.extension contains BiospecimenSpatial named biospecimenSpatial 0..1 /*Biospecimen.Spatial*/
