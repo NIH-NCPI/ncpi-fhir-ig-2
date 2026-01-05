@@ -121,7 +121,7 @@ Description: "FHIR Profile for NCPI Sample"
 * collection.collectedDateTime ^short = "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
 * collection.quantity 0..1 /*Sample.Quantity*/
 * collection.quantity ^short = "The total quantity of the specimen"
-* collection.method ^short = "The approach used to collect the biospecimen (unknown if not provided)"
+* collection.method ^short = "How is the Sample stored, eg, Frozen or with additives (example value set: [hl7VS-specimenCondition](http://terminology.hl7.org/ValueSet/v2-0493)) "
 * collection.bodySite 0..1 /*Biospecimen.Site*/
 * collection.bodySite ^short = "The location of the specimen collection"
 * collection.extension contains BiospecimenSpatial named biospecimenSpatial 0..1 /*Biospecimen.Spatial*/
