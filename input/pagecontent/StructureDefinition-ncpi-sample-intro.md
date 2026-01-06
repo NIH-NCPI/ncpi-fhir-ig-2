@@ -35,7 +35,7 @@ The following fields from the shared data model are to be mapped into the NCPI C
 |[type](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.type)|1..1|type|The type of material of which this Sample is comprised||
 |[processing](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.processing)|0..*|processing.procedure|Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample||
 |[availabilityStatus](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.availabilityStatus)|0..1|status|Can this Sample be requested for further analysis?|URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability|
-|[storageMethod](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.storageMethod)|0..1|collection.method|How is the Sample stored, eg, Frozen or with additives|Recommended to use [Hl7VSSpecimenCondition](https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html)|
+|[storageMethod](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.storageMethod)|0..1|condition|How is the Sample stored, eg, Frozen or with additives|Recommended to use [Hl7VSSpecimenCondition](https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html)|
 |[quantity](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.quantity)|0..1|collection.quantity|The total quantity of the specimen||
 
 **Aliquot:**
