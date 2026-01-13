@@ -53,3 +53,5 @@ The following fields from [the shared data model][l_overview] map into the NCPI 
 [n_patient]: StructureDefinition-ncpi-family-relationship-definitions.html#key_FamilyMemberHistory.patient
 [n_relative]: StructureDefinition-ncpi-family-relationship-definitions.html#key_FamilyMemberHistory.extension:relative
 [n_relationship]: StructureDefinition-ncpi-family-relationship-definitions.html#key_FamilyMemberHistory.relationship
+
+<div class="dragon">Please note that the original GA4GH profiles were built using older tooling that wasn't intended for being published 'as is'. As a result, some of the links below will be invalid. Please use the <a href="https://ga4gh.github.io/pedigree-fhir-ig/StructureDefinition-PedigreeRelationship.html" target="_blank" rel="noopener noreferrer">GA4GH PedigreeRelationship</a> instead.</div>
