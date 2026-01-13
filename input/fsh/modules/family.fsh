@@ -7,7 +7,6 @@ Logical models, profiles, extensions and valuesets for:
 
 */
 
-
 // Study Family
 
 Logical: CdmStudyFamily
