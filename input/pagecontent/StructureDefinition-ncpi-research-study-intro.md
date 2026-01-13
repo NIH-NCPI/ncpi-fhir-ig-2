@@ -35,11 +35,15 @@ For studies that exist alongside row-level data, the Study’s Study Group resou
 
 #### Identifiers - Best Practices
 ##### Provide meaningful systems at all times
-System uris are important for identifying the origin of an identifier. These uris should be consistent across all groups which utilize these identifiers. Some important systems to note include:
+System URIs are important for identifying the origin of an identifier. These URIs should be consistent across all groups that utilize these identifiers. Some important systems to note include:
 
-| Organization | System | Comment |
-| ------------ | ------ | ------- |
-| DbGAP | https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id= | For DbGAP Research Studies, this recommended system, when combined with the value would constitute a valid URL for the study. |
+
+| Organization | ID type                           | System                                                                                       | Comment                                                                                                                                                                                                                                                                                                                                |
+|--------------|-----------------------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DbGaP        | Subject Identifier                | <https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/CodeSystem/DbGaPConcept-DbGaPSubjectIdentifier>  | This is used for the subject identifiers assigned by the dbGaP curators and staff. These should not be unique to the individual even across studies. They are always integers.                                                                                                                                                         |
+| DbGaP        | Submitted Subject Identifier      | https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/CodeSystem/DbGaP-Phenotype-Variable-phv########   | Subject identifiers submitted by the original study authors are listed under a given Phenotype Variable (PHV). Substituting that PHV identifier into the above URL gives the recommended system for that submitted ID. Sometimes the ID will be duplicated across multiple data tables, in which case one should use the smallest PHV. |
+| DbGaP        | Study Accession (without version) | <https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/CodeSystem/DbGaPConcept-StudyAccessionNoVersion> | This is the study accession without the version and participant number, identifying a single study (or substudy) across all its variants. For example, "phs002409"                                                                                                                                                                     |
+| DbGaP        | Study Accession (complete)        | <https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/CodeSystem/DbGaPConcept-StudyAccession>          | This is the study accession with the version and participant number, identifying a single version of the study with a single group of participants. For example, "phs002409.v1.p1"                                                                                                                                                     |
 
 For those identifiers that have been defined by the investigators and collaborators, the system should be unique to the Research Study and may be defined by those responsible for the ETL itself. 
 
