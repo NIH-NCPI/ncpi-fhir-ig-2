@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:ResearchWebLink |
+| Draft as of 2026-01-13 | *Computable Name*:ResearchWebLink |
 
 A URL pointing to a either a research study's website, an online document or other research related site or document.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-research-web-link.cs
   "name" : "ResearchWebLink",
   "title" : "Research Web Link",
   "status" : "draft",
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

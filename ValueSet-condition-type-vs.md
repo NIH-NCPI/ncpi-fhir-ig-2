@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:ConditionTypeVS |
+| Draft as of 2026-01-13 | *Computable Name*:ConditionTypeVS |
 
  
 Type of Condition 
@@ -19,8 +19,6 @@ Type of Condition
 This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
-
-* Include all codes defined in [`https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type`](CodeSystem-condition-type.md)version 📦0.2.0
 
  
 
@@ -53,7 +51,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Type of Condition",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

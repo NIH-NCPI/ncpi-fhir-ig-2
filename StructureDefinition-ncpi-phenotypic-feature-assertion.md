@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-phenotypic-feature-assertion | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:NcpiPhenotypicFeatureAssertion |
+| Draft as of 2026-01-13 | *Computable Name*:NcpiPhenotypicFeatureAssertion |
 
  
 Assertion about a phenotypic feature's presence or absence given a particular participant. 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-phenotypic-feat
   "name" : "NcpiPhenotypicFeatureAssertion",
   "title" : "NCPI Phenotypic Feature Assertion",
   "status" : "draft",
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

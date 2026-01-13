@@ -21,10 +21,6 @@ Used to express the reason and specific aspect for the variant title, such as la
 
 ### Logical Definition (CLD)
 
-Profile: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
-
-* Include all codes defined in [`http://hl7.org/fhir/title-type`](CodeSystem-title-type.md)version 📦0.2.0
-
  
 
 ### Expansion
@@ -75,7 +71,7 @@ Profile: [Shareable ValueSet](http://hl7.org/fhir/R4/shareablevalueset.html)
   "title" : "Title Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

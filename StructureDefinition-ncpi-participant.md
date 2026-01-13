@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:NcpiParticipant |
+| Draft as of 2026-01-13 | *Computable Name*:NcpiParticipant |
 
  
 Research oriented patient 
@@ -66,7 +66,7 @@ For further information, see the Participant, Research Study, and Person example
 
 **Usages:**
 
-* Refer to this Profile: [NCPI Study Participant](StructureDefinition-ncpi-Study-Participant.md), [NCPI Participant Assertion](StructureDefinition-ncpi-participant-assertion.md), [NCPI Person](StructureDefinition-ncpi-person.md) and [NCPI Study Family](StructureDefinition-ncpi-study-family.md)
+* Refer to this Profile: [NCPI Study Participant](StructureDefinition-ncpi-Study-Participant.md), [Family Relationship](StructureDefinition-ncpi-family-relationship.md), [NCPI Participant Assertion](StructureDefinition-ncpi-participant-assertion.md), [NCPI Person](StructureDefinition-ncpi-person.md) and [NCPI Study Family](StructureDefinition-ncpi-study-family.md)
 * Examples for this Profile: [Patient/GSS123456](Patient-GSS123456.md), [Patient/GSS654321](Patient-GSS654321.md), [Patient/PT-006SP660](Patient-PT-006SP660.md) and [Patient/PT-006SP675](Patient-PT-006SP675.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ncpi-fhir-implementation-guide-v2|current/StructureDefinition/ncpi-participant)
@@ -114,7 +114,7 @@ Please note that there are 3 different systems listed in the codes above.
   "name" : "NcpiParticipant",
   "title" : "NCPI Participant",
   "status" : "draft",
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -282,22 +282,6 @@ Please note that there are 3 different systems listed in the codes above.
             "code" : "Extension",
             "profile" : [
               "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.extension:patientKnowledgeSource",
-        "path" : "Patient.extension",
-        "sliceName" : "patientKnowledgeSource",
-        "short" : "The source of the knowledge represented by this Patient resource.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/patient-knowledge-source"
             ]
           }
         ]

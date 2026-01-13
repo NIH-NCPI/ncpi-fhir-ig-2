@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:ConditionCodeVS |
+| Draft as of 2026-01-13 | *Computable Name*:ConditionCodeVS |
 
  
 Includes all codes from**HPO**and**MONDO** 
@@ -20,16 +20,9 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Logical Definition (CLD)
 
-This value set includes codes based on the following rules:
-
-* Include all codes defined in [`http://human-phenotype-ontology.org`](http://terminology.hl7.org/6.2.0/CodeSystem-HPO.html)version Not Stated (use latest from terminology server)
-* Include all codes defined in [`http://purl.obolibrary.org/obo/mondo.owl`](http://terminology.hl7.org/6.2.0/CodeSystem-MONDO.html)version Not Stated (use latest from terminology server)
-
  
 
 ### Expansion
-
-No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -58,7 +51,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "Condition Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

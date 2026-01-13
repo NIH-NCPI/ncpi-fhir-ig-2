@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types | *Version*:0.2.0 |
-| Active as of 2025-12-03 | *Computable Name*:NcpiFamilyTypes |
+| Active as of 2026-01-13 | *Computable Name*:NcpiFamilyTypes |
 
  
 CodeSystem for Types of Families 
@@ -17,8 +17,6 @@ CodeSystem for Types of Families
  This Code system is referenced in the content logical definition of the following value sets: 
 
 * [NcpiFamilyTypesVS](ValueSet-ncpi-family-types-vs.md)
-
-This case-sensitive code system `https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types` provides **a fragment** that includes following codes:
 
 
 
@@ -34,7 +32,7 @@ This case-sensitive code system `https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeS
   "title" : "NCPI Family Types CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

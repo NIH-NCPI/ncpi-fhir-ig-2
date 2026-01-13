@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/specimen-collection | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:SpecimenCollection |
+| Draft as of 2026-01-13 | *Computable Name*:SpecimenCollection |
 
 Linkage for related samples
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-specimen-collection.
   "name" : "SpecimenCollection",
   "title" : "Linkage for related samples",
   "status" : "draft",
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

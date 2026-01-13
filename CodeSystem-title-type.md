@@ -49,7 +49,7 @@ Used to express the reason and specific aspect for the variant title, such as la
   "title" : "TitleType",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

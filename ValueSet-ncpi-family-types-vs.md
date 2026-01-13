@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/ncpi-family-types-vs | *Version*:0.2.0 |
-| Active as of 2025-12-03 | *Computable Name*:NcpiFamilyTypesVS |
+| Active as of 2026-01-13 | *Computable Name*:NcpiFamilyTypesVS |
 
  
 A value set with all codes used for the expected family types. 
@@ -19,8 +19,6 @@ A value set with all codes used for the expected family types.
 * [Family Type Extension](StructureDefinition-family-type.md)
 
 ### Logical Definition (CLD)
-
-* Include all codes defined in [`https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types`](CodeSystem-ncpi-family-types.md)version 📦0.2.0
 
  
 
@@ -53,7 +51,7 @@ A value set with all codes used for the expected family types.
   "title" : "Family Types Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

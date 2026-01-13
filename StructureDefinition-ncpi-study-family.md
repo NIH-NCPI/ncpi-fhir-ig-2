@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:NcpiStudyFamily |
+| Draft as of 2026-01-13 | *Computable Name*:NcpiStudyFamily |
 
  
 Study Family 
@@ -71,7 +71,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-study-family.cs
   "name" : "NcpiStudyFamily",
   "title" : "NCPI Study Family",
   "status" : "draft",
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -209,7 +209,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-study-family.cs
       {
         "id" : "Group.member.entity",
         "path" : "Group.member.entity",
-        "short" : "The participant described by this member.",
+        "short" : "The participant we are describing.",
         "type" : [
           {
             "code" : "Reference",

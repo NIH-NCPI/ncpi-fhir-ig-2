@@ -87,7 +87,6 @@ Profile: [NCPI Study Family](StructureDefinition-ncpi-study-family.md)
               "coding" : [
                 {
                   "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-                  "version" : "3.0.0",
                   "code" : "MTH",
                   "display" : "mother"
                 }
@@ -107,7 +106,6 @@ Profile: [NCPI Study Family](StructureDefinition-ncpi-study-family.md)
               "coding" : [
                 {
                   "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-                  "version" : "3.0.0",
                   "code" : "SON",
                   "display" : "natural son"
                 }

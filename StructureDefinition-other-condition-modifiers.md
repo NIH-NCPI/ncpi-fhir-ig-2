@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:OtherConditionModifiers |
+| Draft as of 2026-01-13 | *Computable Name*:OtherConditionModifiers |
 
 Any additional modifiers for this condition, such as severity.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-other-condition-modi
   "name" : "OtherConditionModifiers",
   "title" : "Any additional modifiers for this condition, such as severity.",
   "status" : "draft",
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

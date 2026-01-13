@@ -9,9 +9,9 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:StudyFamilyFocus |
+| Draft as of 2026-01-13 | *Computable Name*:StudyFamilyFocus |
 
-Extension containing a study family focus assertion
+Extension containing Study Family Focus
 
 **Context of Use**
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-study-family-focus.c
   "name" : "StudyFamilyFocus",
   "title" : "Study Family Focus Extension",
   "status" : "draft",
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {
@@ -64,7 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-study-family-focus.c
       ]
     }
   ],
-  "description" : "Extension containing a study family focus assertion",
+  "description" : "Extension containing Study Family Focus",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](StructureDefinition-study-family-focus.c
   "context" : [
     {
       "type" : "element",
-      "expression" : "Group"
+      "expression" : "Element"
     }
   ],
   "type" : "Extension",
@@ -90,7 +90,7 @@ Other representations of profile: [CSV](StructureDefinition-study-family-focus.c
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Study Family Focus Extension",
-        "definition" : "Extension containing a study family focus assertion"
+        "definition" : "Extension containing Study Family Focus"
       },
       {
         "id" : "Extension.extension",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchCollection | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:CdmResearchCollection |
+| Draft as of 2026-01-13 | *Computable Name*:CdmResearchCollection |
 
  
 The**Shared Data Model for Research Collection**represent various collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelResea
   "name" : "CdmResearchCollection",
   "title" : "Shared Data Model for Research Collection",
   "status" : "draft",
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-date-of-birth-method-vs | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:ResearchDataDateOfBirthMethodVS |
+| Draft as of 2026-01-13 | *Computable Name*:ResearchDataDateOfBirthMethodVS |
 
  
 Enumerations for how DOB was constructed 
@@ -19,8 +19,6 @@ Enumerations for how DOB was constructed
 * [Research Date of Birth Method](StructureDefinition-research-date-of-birth-method.md)
 
 ### Logical Definition (CLD)
-
-* Include all codes defined in [`https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method`](CodeSystem-research-data-date-of-birth-method.md)version 📦0.2.0
 
  
 
@@ -53,7 +51,7 @@ Enumerations for how DOB was constructed
   "title" : "Enumerations for how DOB was constructed",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

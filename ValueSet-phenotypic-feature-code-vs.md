@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-code-vs | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:PhenotypicFeatureCodeVS |
+| Draft as of 2026-01-13 | *Computable Name*:PhenotypicFeatureCodeVS |
 
  
 Includes all codes from**HPO** 
@@ -20,13 +20,9 @@ Includes all codes from**HPO**
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://human-phenotype-ontology.org`](http://terminology.hl7.org/6.2.0/CodeSystem-HPO.html)version Not Stated (use latest from terminology server)
-
  
 
 ### Expansion
-
-No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -55,7 +51,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "Phenotypic Feature Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

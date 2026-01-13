@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type | *Version*:0.2.0 |
-| Active as of 2025-12-03 | *Computable Name*:ConditionType |
+| Active as of 2026-01-13 | *Computable Name*:ConditionType |
 
  
 Code System for type of condition 
@@ -32,7 +32,7 @@ Code System for type of condition
   "title" : "Type of Condition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

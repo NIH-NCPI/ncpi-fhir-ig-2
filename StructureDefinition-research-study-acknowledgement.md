@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-acknowledgement | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:ResearchStudyAcknowledgement |
+| Draft as of 2026-01-13 | *Computable Name*:ResearchStudyAcknowledgement |
 
 Provides an informative description of acknowledgement expectations for those using data from the research study.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-research-study-ackno
   "name" : "ResearchStudyAcknowledgement",
   "title" : "Research Study Acknowledgement",
   "status" : "draft",
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

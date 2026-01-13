@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/consanguinity-assertion-vs | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:ConsanguinityAssertionVS |
+| Draft as of 2026-01-13 | *Computable Name*:ConsanguinityAssertionVS |
 
  
 List of codes indicates the level of known consanguinity (blood relation) within a study family. 
@@ -23,10 +23,6 @@ List of codes indicates the level of known consanguinity (blood relation) within
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 4 concepts
 
 -------
 
@@ -55,7 +51,7 @@ This value set contains 4 concepts
   "title" : "Consanguinity Value Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

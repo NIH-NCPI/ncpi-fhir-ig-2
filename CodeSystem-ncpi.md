@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi | *Version*:0.2.0 |
-| Active as of 2025-12-03 | *Computable Name*:Ncpi |
+| Active as of 2026-01-13 | *Computable Name*:Ncpi |
 
  
 Codes that would apply to NCPI projects 
@@ -17,8 +17,6 @@ Codes that would apply to NCPI projects
  This Code system is referenced in the content logical definition of the following value sets: 
 
 * This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
-
-This case-sensitive code system `https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi` provides **a fragment** that includes following codes:
 
 
 
@@ -34,7 +32,7 @@ This case-sensitive code system `https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeS
   "title" : "NCPI FHIR Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

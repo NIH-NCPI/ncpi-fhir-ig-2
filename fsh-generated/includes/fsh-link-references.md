@@ -6,15 +6,14 @@
 [AgeAtEvent]: StructureDefinition-age-at-event.html
 [AgeAtLastVitalStatus]: StructureDefinition-research-age-at-last-vital-status.html
 [HashType]: StructureDefinition-hash-type.html
-[cbtn-family-relationship-mother]: FamilyMemberHistory-cbtn-family-relationship-mother.html
-[gregor-family-relationship-mother]: FamilyMemberHistory-gregor-family-relationship-mother.html
-[cbtn-family-relationship-daughter]: FamilyMemberHistory-cbtn-family-relationship-daughter.html
+[cbtn-family-relationship-mother]: Observation-cbtn-family-relationship-mother.html
+[cbtn-family-relationship-son]: Observation-cbtn-family-relationship-son.html
+[gregor-family-relationship-mother]: Observation-gregor-family-relationship-mother.html
 [OtherConditionModifiers]: StructureDefinition-other-condition-modifiers.html
 [AssayStrategyVS]: ValueSet-assay-strategy-vs.html
 [PhenotypicFeatureAssertionVS]: ValueSet-phenotypic-feature-assertion-vs.html
 [AliquotAvailability]: StructureDefinition-aliquot-availability.html
 [NcpiBAMCRAM]: StructureDefinition-ncpi-bamcram.html
-[FamilyBiologicalRelationshipVS]: ValueSet-family-biological-relationship-vs.html
 [kf-gru-dac-consent]: Consent-kf-gru-dac-consent.html
 [kf-gru-dbgap-consent]: Consent-kf-gru-dbgap-consent.html
 [kf-research-study-personnel-role-op-lead]: PractitionerRole-kf-research-study-personnel-role-op-lead.html
@@ -57,7 +56,6 @@
 [pcgc-example-person]: Person-pcgc-example-person.html
 [research-study-gregor]: ResearchStudy-research-study-gregor.html
 [NcpiFamilyRelationship]: StructureDefinition-ncpi-family-relationship.html
-[FamilyRole]: StructureDefinition-family-role.html
 [FamilyType]: StructureDefinition-family-type.html
 [NcpiFamilyTypesVS]: ValueSet-ncpi-family-types-vs.html
 [ResearchStudyPartyRoleVS]: ValueSet-research-study-party-role-vs.html
@@ -97,9 +95,6 @@
 [PartOfStudy]: StructureDefinition-part-of-study.html
 [kf-research-study-cbtn-participants]: Group-kf-research-study-cbtn-participants.html
 [gregor-research-study-participants]: Group-gregor-research-study-participants.html
-[PatientKnowledgeSourceEx]: StructureDefinition-patient-knowledge-source.html
-[PatientKnowledgeSourceVS]: ValueSet-patient-knowledge-source-vs.html
-[PatientKnowledgeSource]: CodeSystem-patient-knowledge-source.html
 [ncpi-research-collection-pbta]: List-ncpi-research-collection-pbta.html
 [EntityAsserter]: StructureDefinition-entity-asserter.html
 [PhenotypicFeatureCodeVS]: ValueSet-phenotypic-feature-code-vs.html
@@ -140,6 +135,7 @@
 [CdmStudyFamily]: StructureDefinition-SharedDataModelStudyFamily.html
 [BiospecimenSpatial]: StructureDefinition-biospecimen-spatial.html
 [StrandednessCS]: CodeSystem-strandedness-cs.html
+[FamilyRole]: StructureDefinition-family-role.html
 [StudyFamilyFocus]: StructureDefinition-study-family-focus.html
 [StudyNameTypeVS]: ValueSet-study-name-type-vs.html
 [StudyNameType]: CodeSystem-study-name-type.html

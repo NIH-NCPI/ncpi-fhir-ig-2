@@ -131,22 +131,6 @@
         ]
       },
       {
-        "id": "Patient.extension:patientKnowledgeSource",
-        "path": "Patient.extension",
-        "sliceName": "patientKnowledgeSource",
-        "short": "The source of the knowledge represented by this Patient resource.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/patient-knowledge-source"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Patient.identifier",
         "path": "Patient.identifier",
         "short": "External IDs for this participant. Requires scoping."

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-assertion-vs | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:PhenotypicFeatureAssertionVS |
+| Draft as of 2026-01-13 | *Computable Name*:PhenotypicFeatureAssertionVS |
 
  
 Assertion of Phenotypic Feature Codes 
@@ -23,14 +23,6 @@ Assertion of Phenotypic Feature Codes
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on:
-
-* Loinc v2.81
-* [codesystem NullFlavor v3.0.0 (CodeSystem)](http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html)
-* [valueset NullFlavor v3.0.0 (ValueSet)](http://terminology.hl7.org/7.0.0/ValueSet-v3-NullFlavor.html)
-
-This value set contains 19 concepts
 
 -------
 
@@ -59,7 +51,7 @@ This value set contains 19 concepts
   "title" : "Assertion of Phenotypic Feature Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

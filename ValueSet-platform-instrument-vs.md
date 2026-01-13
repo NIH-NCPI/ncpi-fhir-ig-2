@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:PlatformInstrumentVS |
+| Draft as of 2026-01-13 | *Computable Name*:PlatformInstrumentVS |
 
  
 Platform instrument options 
@@ -58,7 +58,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "Platform instrument options",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

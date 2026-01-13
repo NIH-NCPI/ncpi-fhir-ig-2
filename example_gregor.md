@@ -19,7 +19,7 @@ Below is a table of collected example profiles from GREGoR. The links will conne
 | Person | [Example JSON](Person-gregor-example-person.json.md) |
 | Study Participant | [Example JSON](ResearchSubject-gregor-example-participantstudy.json.md) |
 | Study Family | [Example JSON](Group-gregor-study-family.json.md) |
-| Family Relationship | [Example JSON](FamilyMemberHistory-gregor-family-relationship-mother.json.md) |
+| Family Relationship | [Example JSON](Observation-gregor-family-relationship-mother.json.md) |
 | Subject Assertion | [Example JSON](Observation-GSS123456-assertion.json.md) |
 | Condition | [Example JSON](Observation-GSS123456-condition-assertion.json.md) |
 | Biospecimen | [Example JSON](Specimen-GSS123456-01-010.json.md) |

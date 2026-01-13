@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:StudyPersonnelRoleVS |
+| Draft as of 2026-01-13 | *Computable Name*:StudyPersonnelRoleVS |
 
  
 Roles associated with study personnel. 
@@ -19,8 +19,6 @@ Roles associated with study personnel.
 * [Shared Data Model for Research Study](StructureDefinition-SharedDataModelResearchStudy.md)
 
 ### Logical Definition (CLD)
-
-* Include all codes defined in [`https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role`](CodeSystem-study-personnel-role.md)version 📦0.2.0
 
  
 
@@ -53,7 +51,7 @@ Roles associated with study personnel.
   "title" : "Study Personnel Role",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

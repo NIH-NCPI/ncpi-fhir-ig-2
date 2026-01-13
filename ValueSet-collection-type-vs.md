@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:CollectionTypeVS |
+| Draft as of 2026-01-13 | *Computable Name*:CollectionTypeVS |
 
  
 Enumerated list of Collection types 
@@ -20,8 +20,6 @@ Enumerated list of Collection types
 * [NCPI Research Collection](StructureDefinition-ncpi-research-collection.md)
 
 ### Logical Definition (CLD)
-
-* Include all codes defined in [`https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type`](CodeSystem-collection-type.md)version 📦0.2.0
 
  
 
@@ -54,7 +52,7 @@ Enumerated list of Collection types
   "title" : "Collection Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:MeshTerms |
+| Draft as of 2026-01-13 | *Computable Name*:MeshTerms |
 
  
 Example terms from Medical Subject Headings (MeSH) Ontology 
@@ -19,8 +19,6 @@ Example terms from Medical Subject Headings (MeSH) Ontology
 * [Research Usage Limitation Disease Code](StructureDefinition-research-disease-use-limitation.md)
 
 ### Logical Definition (CLD)
-
-* Include all codes defined in `http://terminology.hl7.org/CodeSystem/MSH`version Not Stated (use latest from terminology server)
 
  
 
@@ -55,7 +53,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "MeSH Terms",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

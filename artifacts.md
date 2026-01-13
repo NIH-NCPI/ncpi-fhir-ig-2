@@ -37,7 +37,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [BAM or CRAM file profile](StructureDefinition-ncpi-bamcram.md) | BAM or CRAM file profile |
-| [Family Relationship](StructureDefinition-ncpi-family-relationship.md) | A relationship between individuals in a pedigree or family. |
+| [Family Relationship](StructureDefinition-ncpi-family-relationship.md) | Family Relationship |
 | [Gene fusion or gene expression file profile](StructureDefinition-ncpi-gene-fusion-expression.md) | Gene fusion or gene expression file profile |
 | [Linkage for related samples](StructureDefinition-ncpi-specimen-NcpiSpecimenCollection.md) | Linkage for related samples |
 | [MAF (Somatic Mutation) file profile](StructureDefinition-ncpi-maf.md) | MAF (Somatic Mutation) file profile |
@@ -88,16 +88,14 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Any additional modifiers for this condition, such as severity.](StructureDefinition-other-condition-modifiers.md) | Any additional modifiers for this condition, such as severity. |
 | [Availability Status of Aliquot](StructureDefinition-aliquot-availability.md) | Availability Status of Aliquot |
 | [Concentration of the Aliquot](StructureDefinition-aliquot-concentration.md) | Concentration of the Aliquot |
-| [Consanguinity Extension](StructureDefinition-consanguinity.md) | Extension containing a consanguinity assertion |
+| [Consanguinity Extension](StructureDefinition-consanguinity.md) | Extension containing Consanguinity |
 | [Description](StructureDefinition-description.md) | Free text describing containing resource. |
-| [Family Role](StructureDefinition-family-role.md) | Extension containing Family Role |
 | [Family Type Extension](StructureDefinition-family-type.md) | Extension containing Family Type |
 | [If present, only those under the specific Access Policy can access the file in this location.](StructureDefinition-location-access.md) | If present, only those under the specific Access Policy can access the file in this location. |
 | [Label](StructureDefinition-label-extension.md) | A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc) |
 | [Laterality Information](StructureDefinition-biospecimen-laterality.md) | Laterality Information |
 | [Linkage for related samples](StructureDefinition-specimen-collection.md) | Linkage for related samples |
 | [Part of Study](StructureDefinition-part-of-study.md) | Link study related sources back to the relevant study. |
-| [Patient Knowledge Source](StructureDefinition-patient-knowledge-source.md) | An extension to record the source of the knowledge in a particular`Patient`resource.The primary use case is to identify those`Patient`resources created via inference in order to support indirect pedigree relationships. |
 | [Person who recorded assertion about participant](StructureDefinition-entity-asserter.md) | Person who recorded assertion about participant |
 | [Provides a list of hashes for confirming file transfers](StructureDefinition-hash-extension.md) | Provides a list of hashes for confirming file transfers |
 | [Research Date of Birth Method](StructureDefinition-research-date-of-birth-method.md) | Code indicating method of the DOB construction |
@@ -108,7 +106,8 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Research Usage Limitation Disease Code](StructureDefinition-research-disease-use-limitation.md) | Coding associated with limitation on what research can be performed this data. |
 | [Research Web Link](StructureDefinition-research-web-link.md) | A URL pointing to a either a research study's website, an online document or other research related site or document. |
 | [Spatial Information](StructureDefinition-biospecimen-spatial.md) | Spatial Information |
-| [Study Family Focus Extension](StructureDefinition-study-family-focus.md) | Extension containing a study family focus assertion |
+| [Study Family Focus](StructureDefinition-family-role.md) | Extension containing Family Role |
+| [Study Family Focus Extension](StructureDefinition-study-family-focus.md) | Extension containing Study Family Focus |
 | [The file format used](StructureDefinition-file-format.md) | The file format used |
 | [The size of the file, e.g., in bytes.](StructureDefinition-file-size.md) | The size of the file, e.g., in bytes. |
 | [Value of hashing the file](StructureDefinition-hash-value.md) | Value of hashing the file |
@@ -122,13 +121,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | :--- | :--- |
 | [Assay strategy options](ValueSet-assay-strategy-vs.md) | Assay strategy options |
 | [Assertion of Phenotypic Feature Codes](ValueSet-phenotypic-feature-assertion-vs.md) | Assertion of Phenotypic Feature Codes |
-| [Biological Relationship Codes](ValueSet-family-biological-relationship-vs.md) | List of codes indicating the biological relationship between two individuals in a family. It is restrictive to encourage a standardized representation.# Code Selection Rationale## Parent CodesWe use the NCI Thesaurus here for the mother and father because its definitions are more precise.* [`C96572`(**"Biological Father"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96572): A male who contributes to the genetic makeup of his offspring through the fertilization of an ovum by his sperm.
-* [`C96580`(**"Biological Mother"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96580): A female who contributes to the genetic makeup of her offspring from the fertilization of her ovum.
-In contrast, the parental family-role's codes are less refined:* [`NMTH`(**"natural mother"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NMTH): The player of the role is a female who conceives or gives birth to the scoping entity (child).
-* [`NFTH`(**"natural father"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NFTH): The player of the role is a male who begets the scoping entity (child).
-In particular,**"Biological Mother"**excludes surrogates but`NMTH`is ambiguous.**"Biological Father"**specifies fertilization of an ovum by sperm, whereas`NFTH`uses the ambiguous term "begets," which could include other mechanisms.## Twin CodesFor twins, we use the RoleCode`ITWIN`code rather than the NCI`C73429`.* [`C73429`(**"Identical Twin"**)](https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C73429): Either of the two offspring resulting from a shared ovum.
-* [`ITWIN`(**"Identical Twin"**)](https://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ITWIN): The scoper and player are offspring of the same egg-sperm pair.
-Though being "offspring" of the same fertilized egg is questionable wording, we use`ITWIN`because it also allows other multiples (triplets, quadruplets, etc.) to be represented with the same code whereas`C73429`is only for twins.# Note for upgrading to FHIR R5When we add support for R5 to the IG, we should add the rest of the codes from <http://terminology.hl7.org/ValueSet/v3-FamilyMember> as additional bindings to guide users when not using one of the main bindings.We intend that when users need to use a code that is not in the main bindings, they should default to the FamilyMember ValueSet. However, in R4, there is no way to express this in the ValueSet itself. |
 | [Collection Type](ValueSet-collection-type-vs.md) | Enumerated list of Collection types |
 | [Condition Codes](ValueSet-condition-code-vs.md) | Includes all codes from**HPO**and**MONDO** |
 | [Consanguinity Value Codes](ValueSet-consanguinity-assertion-vs.md) | List of codes indicates the level of known consanguinity (blood relation) within a study family. |
@@ -137,7 +129,6 @@ Though being "offspring" of the same fertilized egg is questionable wording, we 
 | [Family Types Codes](ValueSet-ncpi-family-types-vs.md) | A value set with all codes used for the expected family types. |
 | [Family Types Codes](ValueSet-research-study-party-role-vs.md) | A value set with all codes used for the expected family types. |
 | [MeSH Terms](ValueSet-mesh-terms.md) | Example terms from Medical Subject Headings (MeSH) Ontology |
-| [Patient Knowledge Source](ValueSet-patient-knowledge-source-vs.md) | The source of the knowledge represented in a`Patient`resource. |
 | [Phenotypic Feature Codes](ValueSet-phenotypic-feature-code-vs.md) | Includes all codes from**HPO** |
 | [Platform instrument options](ValueSet-platform-instrument-vs.md) | Platform instrument options |
 | [Research Data Access Codes](ValueSet-research-data-access-code-vs.md) | Enumerated list of access codes such as dbGaP consent codes among others. |
@@ -163,7 +154,6 @@ These define new code systems used by systems conforming to this implementation 
 | [NCPI FHIR Codes](CodeSystem-ncpi.md) | Codes that would apply to NCPI projects |
 | [NCPI Family Types CodeSystem](CodeSystem-ncpi-family-types.md) | CodeSystem for Types of Families |
 | [NCPI Metadata slices](CodeSystem-metadata-elements.md) | NCPI Metadata slices |
-| [Patient Knowledge Source](CodeSystem-patient-knowledge-source.md) | The source of the knowledge represented in a`Patient`resource. |
 | [Reference genome examples](CodeSystem-reference-genome-cs.md) | Reference genome examples |
 | [Related File Type Code System](CodeSystem-related-file-type-code-system.md) | Explains the relationship of this file to the file of reference |
 | [Research Data Access Codes](CodeSystem-research-data-access-code.md) | Enumerated list of access codes such as dbGaP consent codes among others. |
@@ -184,13 +174,9 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [An example family relationship (child to parent) based on data from CBTN](FamilyMemberHistory-cbtn-family-relationship-mother.md) | An example family relationship based on data from CBTN.PT-006SP675 (the patient) is female and 5 years old PT-006SP660 (the relative) is female and 17 years old This is the "mother" relationship. The relative is the mother of the patient.This instance instantiates the minimum relationship direction to reproduce a PED file. |
-| [An example family relationship (child-to-parent) based on data from GREGoR](FamilyMemberHistory-gregor-family-relationship-mother.md) | An example family relationship based on data from GREGoR.GSS123456 (the patient) is male and >= 64 years old GSS654321 (the relative) has no information in the patient record This is the "mother" relationship. The relative is the mother of the patient.This instance instantiates the minimum relationship direction to reproduce a PED file. |
-| [An example family relationship (parent to child) based on data from CBTN](FamilyMemberHistory-cbtn-family-relationship-daughter.md) | An example family relationship based on data from CBTN.* extension[+] 
-* url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
-* valueReference = Reference(kf-research-study-cbtn)
- 
-PT-006SP675 (the relative) is female and 5 years old PT-006SP660 (the patient) is female and 17 years old This is the "daughter" relationship. The relative is the daughter of the patient.This demonstrates using extensibility to express the reverse of the minimum relationship convention. |
+| [An example family relationship based on data from CBTN](Observation-cbtn-family-relationship-mother.md) | An example family relationship based on data from CBTN. |
+| [An example family relationship based on data from CBTN](Observation-cbtn-family-relationship-son.md) | An example family relationship based on data from CBTN. |
+| [An example family relationship based on data from GREGoR](Observation-gregor-family-relationship-mother.md) | An example family relationship based on data from GREGoR. |
 | [CBTN General Research Use (GRU) Consent DAC](Consent-kf-gru-dac-consent.md) | General Research Use (GRU) |
 | [CBTN General Research Use (GRU) Consent dbGaP](Consent-kf-gru-dbgap-consent.md) | General Research Use (GRU) |
 | [CBTN Operations Lead](PractitionerRole-kf-research-study-personnel-role-op-lead.md) | CBTN Operations Lead |

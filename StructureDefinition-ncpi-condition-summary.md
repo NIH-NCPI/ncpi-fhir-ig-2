@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition-summary | *Version*:0.2.0 |
-| Draft as of 2025-12-03 | *Computable Name*:NcpiConditionSummary |
+| Draft as of 2026-01-13 | *Computable Name*:NcpiConditionSummary |
 
  
 Information about a condition related to a research participant 
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-condition-summa
   "name" : "NcpiConditionSummary",
   "title" : "NCPI Conditon Summary",
   "status" : "draft",
-  "date" : "2025-12-03T22:26:51+00:00",
+  "date" : "2026-01-13T18:03:13+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

@@ -12,7 +12,7 @@ Profile: [NCPI Research Access Policy](StructureDefinition-ncpi-research-access-
 
 Use of the data is limited only by the terms of the model Data Use Certification.
 
-**Research Web Link**: [https://airtable.com/apperYvVD82ti3021/pagdArwI0TxJQpiVW/form](https://airtable.com/apperYvVD82ti3021/pagdArwI0TxJQpiVW/form)
+**Research Web Link**: [https://redcap.chop.edu/surveys/?s=A7M873HMN8](https://redcap.chop.edu/surveys/?s=A7M873HMN8)
 
 **Access Type**: Controlled
 
@@ -51,7 +51,7 @@ Use of the data is limited only by the terms of the model Data Use Certification
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link",
-      "valueUrl" : "https://airtable.com/apperYvVD82ti3021/pagdArwI0TxJQpiVW/form"
+      "valueUrl" : "https://redcap.chop.edu/surveys/?s=A7M873HMN8"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type",

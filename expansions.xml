@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="f555fc0f-9cb3-4929-846b-2bd7f6b3e617"/>
+  <id value="639735f2-34e2-4f7a-92f5-98a18267ae4e"/>
   <meta>
-    <lastUpdated value="2025-12-03T22:26:51.636+00:00"/>
+    <lastUpdated value="2026-01-13T18:03:13.254+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -12,7 +12,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-collection-type.html">codesystem Collection Type v0.2.0 (CodeSystem)</a>
@@ -108,10 +108,10 @@
         <title value="Collection Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:918cb763-f9e7-4da7-879c-e43d3ecaa2f7"/>
-          <timestamp value="2025-12-03T22:29:42+00:00"/>
+          <identifier value="urn:uuid:37590f76-801c-4b3a-b64a-d4b7d6251dab"/>
+          <timestamp value="2026-01-13T18:06:10+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -154,12 +154,115 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx-nordics.fhir.org based on:</p>
+              <ul>
+                <li>
+                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-HPO.html">codesystem Human Phenotype Ontology v1.0.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://human-phenotype-ontology.org|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-MONDO.html">codesystem Mondo Disease Ontology v1.0.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://purl.obolibrary.org/obo/mondo.owl|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 0 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs"/>
+        <version value="0.2.0"/>
+        <name value="ConditionCodeVS"/>
+        <title value="Condition Codes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:075fe89b-6967-4e18-ba15-47b7aa3a4ab0"/>
+          <timestamp value="2026-01-13T18:06:10+00:00"/>
+          <total value="0"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://human-phenotype-ontology.org|1.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://human-phenotype-ontology.org|1.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://purl.obolibrary.org/obo/mondo.owl|1.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://purl.obolibrary.org/obo/mondo.owl|1.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-condition-type.html">codesystem Type of Condition v0.2.0 (CodeSystem)</a>
@@ -315,10 +418,10 @@
         <title value="Type of Condition"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a49b940f-dc36-4435-a378-a034dd77010a"/>
-          <timestamp value="2025-12-03T22:29:43+00:00"/>
+          <identifier value="urn:uuid:f2094134-655d-415d-ad37-1e0f93ed94b5"/>
+          <timestamp value="2026-01-13T18:06:11+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -381,7 +484,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
               <span class="copy-text-inline">
@@ -496,10 +599,10 @@
         <title value="Consanguinity Value Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b5f07902-9d55-469f-b6f2-fc06b3b260c6"/>
-          <timestamp value="2025-12-03T22:29:43+00:00"/>
+          <identifier value="urn:uuid:c5eba0e5-f149-4c0d-bfa4-32c2f2e00947"/>
+          <timestamp value="2026-01-13T18:06:11+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -556,7 +659,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment 
               <a href="CodeSystem-ncpi-family-types.html">https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types NCPI Family Types CodeSystem v0.2.0 (CodeSystem)</a>
@@ -718,10 +821,10 @@
         <title value="Family Types Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4b26edd7-e579-4ddb-bbb4-0be1ee36fd26"/>
-          <timestamp value="2025-12-03T22:29:47+00:00"/>
+          <identifier value="urn:uuid:bbd4f6ce-d743-4b57-90eb-4f44f6381e49"/>
+          <timestamp value="2026-01-13T18:06:12+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -783,139 +886,12 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/patient-knowledge-source-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-patient-knowledge-source.html">codesystem Patient Knowledge Source v0.2.0 (CodeSystem)</a>
-              <span class="copy-text-inline">
-                <button data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p>This value set contains 2 concepts</p>
-            <table class="codes" data-fhir="generated">
-              <tr>
-                <td>
-                  <b>System</b>
-                </td>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display (en)</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-                <td>
-                  <b>JSON</b>
-                </td>
-                <td>
-                  <b>XML</b>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source-traditional"> </a>
-                  <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="CodeSystem-patient-knowledge-source.html#patient-knowledge-source-traditional">traditional</a>
-                </td>
-                <td>Traditional</td>
-                <td>The knowledge comes from traditional sources like a form filled out by a patient or information copied from an external traditional source like government records.</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;traditional&quot;, &quot;display&quot;: &quot;Traditional&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;traditional&quot;&gt;&lt;display value=&quot;Traditional&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source-inferred"> </a>
-                  <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="CodeSystem-patient-knowledge-source.html#patient-knowledge-source-inferred">inferred</a>
-                </td>
-                <td>Inferred</td>
-                <td>The knowledge is inferred from indirect evidence. For example, the existence of one patient's mother can be inferred from the existence of the patient.</td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;inferred&quot;, &quot;display&quot;: &quot;Inferred&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;inferred&quot;&gt;&lt;display value=&quot;Inferred&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
-                  </span>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/patient-knowledge-source-vs"/>
-        <version value="0.2.0"/>
-        <name value="PatientKnowledgeSourceVS"/>
-        <title value="Patient Knowledge Source"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
-        <expansion>
-          <identifier value="urn:uuid:eeaceadb-cafc-4387-8288-30652a38174b"/>
-          <timestamp value="2025-12-03T22:29:47+00:00"/>
-          <total value="2"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="en"/>
-          </parameter>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source|0.2.0"/>
-          </parameter>
-          <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source"/>
-            <code value="traditional"/>
-            <display value="Traditional"/>
-          </contains>
-          <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source"/>
-            <code value="inferred"/>
-            <display value="Inferred"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-assertion-vs"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion from tx.fhir.org based on:</p>
@@ -926,13 +902,13 @@
                   </span>
                 </li>
                 <li>
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>
-                  <a href="http://terminology.hl7.org/7.0.0/ValueSet-v3-NullFlavor.html">valueset NullFlavor v3.0.0 (ValueSet)</a>
+                  <a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-NullFlavor.html">valueset NullFlavor v3.0.0 (ValueSet)</a>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-NullFlavor|3.0.0" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
@@ -1014,7 +990,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NI">NI</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NI">NI</a>
                 </td>
                 <td>NoInformation</td>
                 <td/>
@@ -1041,7 +1017,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-INV">INV</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-INV">INV</a>
                 </td>
                 <td>invalid</td>
                 <td/>
@@ -1068,7 +1044,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-DER">DER</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-DER">DER</a>
                 </td>
                 <td>derived</td>
                 <td/>
@@ -1095,7 +1071,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
                 </td>
                 <td>other</td>
                 <td/>
@@ -1128,7 +1104,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NINF">NINF</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NINF">NINF</a>
                 </td>
                 <td>negative infinity</td>
                 <td/>
@@ -1155,7 +1131,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-PINF">PINF</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-PINF">PINF</a>
                 </td>
                 <td>positive infinity</td>
                 <td/>
@@ -1182,7 +1158,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNC">UNC</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNC">UNC</a>
                 </td>
                 <td>un-encoded</td>
                 <td/>
@@ -1221,7 +1197,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-MSK">MSK</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-MSK">MSK</a>
                 </td>
                 <td>masked</td>
                 <td/>
@@ -1250,7 +1226,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NA">NA</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NA">NA</a>
                 </td>
                 <td>not applicable</td>
                 <td/>
@@ -1277,7 +1253,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
                 </td>
                 <td>unknown</td>
                 <td/>
@@ -1316,7 +1292,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-ASKU">ASKU</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-ASKU">ASKU</a>
                 </td>
                 <td>asked but unknown</td>
                 <td/>
@@ -1343,7 +1319,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAV">NAV</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAV">NAV</a>
                 </td>
                 <td>temporarily unavailable</td>
                 <td/>
@@ -1370,7 +1346,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NASK">NASK</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NASK">NASK</a>
                 </td>
                 <td>not asked</td>
                 <td/>
@@ -1397,7 +1373,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAVU">NAVU</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAVU">NAVU</a>
                 </td>
                 <td>Not available</td>
                 <td/>
@@ -1424,7 +1400,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-QS">QS</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-QS">QS</a>
                 </td>
                 <td>Sufficient Quantity</td>
                 <td/>
@@ -1451,7 +1427,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-TRC">TRC</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-TRC">TRC</a>
                 </td>
                 <td>trace</td>
                 <td/>
@@ -1478,7 +1454,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NP">NP</a>
+                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NP">NP</a>
                 </td>
                 <td>not present</td>
                 <td>inactive</td>
@@ -1508,10 +1484,10 @@
         <title value="Assertion of Phenotypic Feature Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3ce0f9b9-f14f-4404-9725-0129057d4137"/>
-          <timestamp value="2025-12-03T22:29:38+00:00"/>
+          <identifier value="urn:uuid:40b6343a-bdc2-49d1-b441-b117a5ba104f"/>
+          <timestamp value="2026-01-13T18:06:06+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -1647,12 +1623,92 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-code-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx-nordics.fhir.org based on 
+              <a href="http://terminology.hl7.org/6.2.0/CodeSystem-HPO.html">codesystem Human Phenotype Ontology v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://human-phenotype-ontology.org|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 0 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-code-vs"/>
+        <version value="0.2.0"/>
+        <name value="PhenotypicFeatureCodeVS"/>
+        <title value="Phenotypic Feature Codes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:aff5691d-6f19-48a6-a3ba-66ef50ffbfd4"/>
+          <timestamp value="2026-01-13T18:06:06+00:00"/>
+          <total value="0"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://human-phenotype-ontology.org|1.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://human-phenotype-ontology.org|1.0.0"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-research-data-access-code.html">codesystem Research Data Access Codes v0.2.0 (CodeSystem)</a>
@@ -1888,10 +1944,10 @@
         <title value="Research Data Access Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e0635f54-faef-4547-9026-4d4fb3272e79"/>
-          <timestamp value="2025-12-03T22:29:47+00:00"/>
+          <identifier value="urn:uuid:2ab78498-06da-4b81-bc55-61e0349021b8"/>
+          <timestamp value="2026-01-13T18:06:13+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -1974,7 +2030,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-research-data-access-type.html">codesystem Research Data Access Type Codes v0.2.0 (CodeSystem)</a>
@@ -2110,10 +2166,10 @@
         <title value="Research Data Access Type Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:faed8313-b2ed-4282-8546-825f57ae5592"/>
-          <timestamp value="2025-12-03T22:29:47+00:00"/>
+          <identifier value="urn:uuid:bba8c653-0a29-4c9f-86f4-7bfa5e3721a4"/>
+          <timestamp value="2026-01-13T18:06:13+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2171,7 +2227,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-research-data-date-of-birth-method.html">codesystem Enumerations for how DOB was constructed v0.2.0 (CodeSystem)</a>
@@ -2307,10 +2363,10 @@
         <title value="Enumerations for how DOB was constructed"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:abca6ad8-0ff6-4cfb-b330-64806fbd72df"/>
-          <timestamp value="2025-12-03T22:29:47+00:00"/>
+          <identifier value="urn:uuid:7c2000cb-bda6-4d70-a762-a7284386e0d0"/>
+          <timestamp value="2026-01-13T18:06:13+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2368,7 +2424,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-study-name-type.html">codesystem Study Name Type v0.2.0 (CodeSystem)</a>
@@ -2504,10 +2560,10 @@
         <title value="Study Name Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:346bccc1-1f7f-4544-9910-e4484a57bcdb"/>
-          <timestamp value="2025-12-03T22:29:47+00:00"/>
+          <identifier value="urn:uuid:ec0bd94a-941c-459a-8fb8-6cedd1c71b98"/>
+          <timestamp value="2026-01-13T18:06:13+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2565,7 +2621,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-study-personnel-role.html">codesystem Study Personnel Role v0.2.0 (CodeSystem)</a>
@@ -2661,10 +2717,10 @@
         <title value="Study Personnel Role"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:2ae11b2b-fc0e-462b-a013-d6e4d9c92419"/>
-          <timestamp value="2025-12-03T22:29:47+00:00"/>
+          <identifier value="urn:uuid:b4d3d623-490a-4a1a-ba9f-9b41497826c6"/>
+          <timestamp value="2026-01-13T18:06:13+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2712,7 +2768,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-research-study-party-role.html">codesystem Research Study Party Role v0.2.0 (CodeSystem)</a>
@@ -3003,10 +3059,10 @@
         <title value="Family Types Codes"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:41c93ad8-ba84-4f27-b2c6-02e48ec2034f"/>
-          <timestamp value="2025-12-03T22:29:48+00:00"/>
+          <identifier value="urn:uuid:fde6bd5a-11d5-4da4-a79d-2102e173ed99"/>
+          <timestamp value="2026-01-13T18:06:13+00:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>
@@ -3102,7 +3158,7 @@
         </meta>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-title-type.html">codesystem TitleType v0.2.0 (CodeSystem)</a>
@@ -3418,11 +3474,11 @@
         <title value="Title Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-12-03T22:26:51+00:00"/>
+        <date value="2026-01-13T18:03:13+00:00"/>
         <immutable value="true"/>
         <expansion>
-          <identifier value="urn:uuid:0cddfb17-12c1-467c-9cde-1afb3e65db6f"/>
-          <timestamp value="2025-12-03T22:29:48+00:00"/>
+          <identifier value="urn:uuid:ba561ce1-9be5-44bd-af8e-922bec52fa1c"/>
+          <timestamp value="2026-01-13T18:06:13+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
