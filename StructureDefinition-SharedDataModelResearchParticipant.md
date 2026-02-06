@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchParticipant | *Version*:0.2.0 |
-| Draft as of 2026-01-13 | *Computable Name*:CdmResearchParticipant |
+| Draft as of 2026-02-06 | *Computable Name*:CdmResearchParticipant |
 
  
-The**Shared Data Model for Research Participants** 
+The **Shared Data Model for Research Participants** 
 
 ### NCPI Participant
 
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelResea
   "name" : "CdmResearchParticipant",
   "title" : "Shared Data Model for Research Participants",
   "status" : "draft",
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

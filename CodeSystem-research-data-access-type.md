@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type | *Version*:0.2.0 |
-| Active as of 2026-01-13 | *Computable Name*:ResearchDataAccessType |
+| Active as of 2026-02-06 | *Computable Name*:ResearchDataAccessType |
 
  
 Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access' 
@@ -32,7 +32,7 @@ Enumerated list of access type codes such as 'Open Access', 'Registered Access' 
   "title" : "Research Data Access Type Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

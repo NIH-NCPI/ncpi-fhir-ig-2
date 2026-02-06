@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method | *Version*:0.2.0 |
-| Draft as of 2026-01-13 | *Computable Name*:ResearchDateOfBirthMethod |
+| Draft as of 2026-02-06 | *Computable Name*:ResearchDateOfBirthMethod |
 
 Code indicating method of the DOB construction
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-research-date-of-bir
   "name" : "ResearchDateOfBirthMethod",
   "title" : "Research Date of Birth Method",
   "status" : "draft",
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

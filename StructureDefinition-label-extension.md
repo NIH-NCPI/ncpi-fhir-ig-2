@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension | *Version*:0.2.0 |
-| Draft as of 2026-01-13 | *Computable Name*:Label |
+| Draft as of 2026-02-06 | *Computable Name*:Label |
 
 A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-label-extension.csv)
   "name" : "Label",
   "title" : "Label",
   "status" : "draft",
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

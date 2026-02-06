@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file | *Version*:0.2.0 |
-| Draft as of 2026-01-13 | *Computable Name*:NcpiFile |
+| Draft as of 2026-02-06 | *Computable Name*:NcpiFile |
 
  
 Information about a file related to a research participant 
@@ -37,8 +37,8 @@ The following fields from the shared data model are to be mapped to the NCPI Fil
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | **Logical Model Property** | **Cardinality** | **NCPI FHIR Mapping** | **Usage Guidance** | **Notes** |
-| [participantID](StructureDefinition-SharedDataModelFile-definitions.md#diff_SharedDataModelFile.participantID) | 0..1 | identifier.value | The participant(s) for whom this file contains data |   |
-| [fileExternalID](StructureDefinition-SharedDataModelFile-definitions.md#diff_SharedDataModelFile.fileExternalID) | 0..1 | subject | A related identifier of this file |   |
+| [participantID](StructureDefinition-SharedDataModelFile-definitions.md#diff_SharedDataModelFile.participantID) | 0..1 | subject | The participant(s) for whom this file contains data |   |
+| [fileExternalID](StructureDefinition-SharedDataModelFile-definitions.md#diff_SharedDataModelFile.fileExternalID) | 0..1 | identifier.value | A related identifier of this file |   |
 | [format](StructureDefinition-SharedDataModelFile-definitions.md#diff_SharedDataModelFile.format) | 1..1 | extension[file-format].valueCodeableConcept.coding | The file format used |   |
 | [location](StructureDefinition-SharedDataModelFile-definitions.md#diff_SharedDataModelFile.location) | 1..* | content | List of locations where this data can be accessed |   |
 | [location.uri](StructureDefinition-SharedDataModelFile-definitions.md#diff_SharedDataModelFile.location.uri) | 1..1 | content.attachment.url | The URI at which this data can be accessed |   |
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-file.csv), [Exc
   "name" : "NcpiFile",
   "title" : "NCPI File",
   "status" : "draft",
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

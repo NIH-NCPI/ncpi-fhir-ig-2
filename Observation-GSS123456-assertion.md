@@ -18,11 +18,11 @@ Profile: [NCPI Participant Assertion](StructureDefinition-ncpi-participant-asser
 
 **subject**: [Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)](Patient-GSS123456.md)
 
-**value**: 66 inches(Details: UCUM code[in_us] = '[in_us]')
+**value**: 66 inches (Details: UCUM code[in_us] = '[in_us]')
 
-> **component****code**:ageAtAssertion
+> **component****code**: ageAtAssertion
 
-> **component****code**:ageAtAssertion**value**: 38 year(Details: UCUM codea = 'a')
+> **component****code**: ageAtAssertion**value**: 38 year (Details: UCUM codea = 'a')
 
 
 

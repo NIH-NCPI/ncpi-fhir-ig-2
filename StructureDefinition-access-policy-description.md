@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description | *Version*:0.2.0 |
-| Draft as of 2026-01-13 | *Computable Name*:AccessPolicyDescription |
+| Draft as of 2026-02-06 | *Computable Name*:AccessPolicyDescription |
 
 Descriptive text summarizing the policy restrictions and other details associated with this access provision.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-access-policy-descri
   "name" : "AccessPolicyDescription",
   "title" : "Access Policy Description",
   "status" : "draft",
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

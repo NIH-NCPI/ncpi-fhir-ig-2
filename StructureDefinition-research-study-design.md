@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design | *Version*:0.2.0 |
-| Draft as of 2026-01-13 | *Computable Name*:ResearchStudyDesign |
+| Draft as of 2026-02-06 | *Computable Name*:ResearchStudyDesign |
 
 Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-research-study-desig
   "name" : "ResearchStudyDesign",
   "title" : "Research Study Design",
   "status" : "draft",
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

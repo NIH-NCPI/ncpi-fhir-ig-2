@@ -18,7 +18,7 @@ Profile: [NCPI Conditon Summary](StructureDefinition-ncpi-condition-summary.md)
 
 **subject**: [Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)](Patient-GSS123456.md)
 
-**onset**: 64 years(Details: UCUM codea = 'a')
+**onset**: 64 years (Details: UCUM codea = 'a')
 
 
 

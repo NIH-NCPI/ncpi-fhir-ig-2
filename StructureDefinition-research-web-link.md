@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link | *Version*:0.2.0 |
-| Draft as of 2026-01-13 | *Computable Name*:ResearchWebLink |
+| Draft as of 2026-02-06 | *Computable Name*:ResearchWebLink |
 
 A URL pointing to a either a research study's website, an online document or other research related site or document.
 
@@ -20,7 +20,7 @@ A URL pointing to a either a research study's website, an online document or oth
 **Usages:**
 
 * Use this Extension: [NCPI Research Access Policy](StructureDefinition-ncpi-research-access-policy.md) and [NCPI Research Collection](StructureDefinition-ncpi-research-collection.md)
-* Examples for this Extension: [Consent/kf-gru-dac-consent](Consent-kf-gru-dac-consent.md), [Consent/kf-gru-dbgap-consent](Consent-kf-gru-dbgap-consent.md), [Consent/kf-gsr-allowed-access](Consent-kf-gsr-allowed-access.md), [Consent/kf-registered-allowed-access](Consent-kf-registered-allowed-access.md)...Show 2 more,[List/ncpi-research-collection-kfx01](List-ncpi-research-collection-kfx01.md)and[List/ncpi-research-collection-pbta](List-ncpi-research-collection-pbta.md)
+* Examples for this Extension: [Consent/kf-gru-dac-consent](Consent-kf-gru-dac-consent.md), [Consent/kf-gru-dbgap-consent](Consent-kf-gru-dbgap-consent.md), [Consent/kf-gsr-allowed-access](Consent-kf-gsr-allowed-access.md), [Consent/kf-registered-allowed-access](Consent-kf-registered-allowed-access.md)... Show 2 more, [List/ncpi-research-collection-kfx01](List-ncpi-research-collection-kfx01.md) and [List/ncpi-research-collection-pbta](List-ncpi-research-collection-pbta.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ncpi-fhir-implementation-guide-v2|current/StructureDefinition/research-web-link)
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-research-web-link.cs
   "name" : "ResearchWebLink",
   "title" : "Research Web Link",
   "status" : "draft",
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

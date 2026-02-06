@@ -13,7 +13,7 @@ The Subject Assertion Module is based on the standard FHIR resource type, [Obser
 
 The distinction is one of “record of asserted status” and “Details of positively asserted status”. We make these distinctions to support general use cases of “longitudinal, catch all records” and “curated summaries of features”. This distinction is focused on the interoperability utility over the “direct representation of reality”. There is overlap in these data; many assertions about status and onset might be coalesced into a single description of an affected status. In other studies, the “summary” may be derived from a single “assertion” and appear mostly duplicative.
 
-> This distinction is similar to those in OMOP and FHIR, though it does not map precisely. Critically in OMOP and FHIR,`Condition_occurrence`and`Condition`are**ALWAYS**a positive assertion (though they may be wrong). “Assertions of history of disease” are observations in OMOP, eg, ICD9CM V-codes like “Personal history of malignant neoplasm of breast” go in Observation.
+> This distinction is similar to those in OMOP and FHIR, though it does not map precisely. Critically in OMOP and FHIR, `Condition_occurrence` and `Condition` are **ALWAYS** a positive assertion (though they may be wrong). “Assertions of history of disease” are observations in OMOP, eg, ICD9CM V-codes like “Personal history of malignant neoplasm of breast” go in Observation.
 
 ### Phenotypic Feature Assertion
 

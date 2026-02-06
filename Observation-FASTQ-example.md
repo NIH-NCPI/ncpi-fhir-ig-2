@@ -16,21 +16,21 @@ Profile: [NCPI FASTQ File](StructureDefinition-ncpi-fastq.md)
 
 **focus**: [DocumentReference: extension = V1,VCF,1044770380 bytes,,->ResearchStudy Children's Brain Tumor Network (CBTN); identifier = GF-6BAD9S7D; status = current; type = Variant calling; description = Annotated Variant Call](DocumentReference-GF-6BAD9S7D.md)
 
-**specimen**: [Specimen: extension = ->ResearchStudy Children's Brain Tumor Network (CBTN); identifier = SA_RV52EY7S; type =](Specimen-SA-000.md)
+**specimen**: [Specimen: extension = ->ResearchStudy Children's Brain Tumor Network (CBTN); identifier = SA_RV52EY7S; type = ](Specimen-SA-000.md)
 
-> **component****code**:Assay strategy**value**:whole genome sequencing assay
+> **component****code**: Assay strategy**value**: whole genome sequencing assay
 
-> **component****code**:Platform instrument**value**:Illumina HiSeq 2000
+> **component****code**: Platform instrument**value**: Illumina HiSeq 2000
 
-> **component****code**:Library preparation**value**:polyA
+> **component****code**: Library preparation**value**: polyA
 
-> **component****code**:Library selection**value**:PolyTEnrichment
+> **component****code**: Library selection**value**: PolyTEnrichment
 
-> **component****code**:Strandedness**value**:unstranded
+> **component****code**: Strandedness**value**: unstranded
 
-> **component****code**:Is paired end**value**: false
+> **component****code**: Is paired end**value**: false
 
-> **component****code**:Adaptor trimmed**value**: true
+> **component****code**: Adaptor trimmed**value**: true
 
 
 

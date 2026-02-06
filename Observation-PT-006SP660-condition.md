@@ -18,7 +18,7 @@ Profile: [NCPI Participant Assertion](StructureDefinition-ncpi-participant-asser
 
 **subject**: [Anonymous Patient (no stated gender), DoB Unknown ( https://cbtn.org/#C21156)](Patient-PT-006SP660.md)
 
-**effective**: `Relative date time:`
+**effective**: `Relative date time: `
 
 **value**: Present
 

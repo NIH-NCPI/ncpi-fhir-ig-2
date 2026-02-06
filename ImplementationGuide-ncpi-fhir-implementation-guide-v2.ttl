@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-01-13T18:03:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-06T18:07:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -2125,28 +2125,6 @@
        ] ;
        fhir:name [ fhir:v "Example biospecimen based on data from GREGoR" ] ;
        fhir:description [ fhir:v "Example biospecimen based on data from GREGoR" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"^^xsd:anyURI ;
-         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Specimen"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Specimen/GSS123456-01-010x> ;
-         fhir:reference [ fhir:v "Specimen/GSS123456-01-010x" ]
-       ] ;
-       fhir:name [ fhir:v "Example biospecimen based on data from GREGoR, intentionally breaking the no parent and collection together rule. This should generate a warning." ] ;
-       fhir:description [ fhir:v "Example biospecimen based on data from GREGoR that will generate a warning" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"^^xsd:anyURI ;

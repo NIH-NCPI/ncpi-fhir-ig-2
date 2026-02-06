@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method | *Version*:0.2.0 |
-| Active as of 2026-01-13 | *Computable Name*:ResearchDataDateOfBirthMethod |
+| Active as of 2026-02-06 | *Computable Name*:ResearchDataDateOfBirthMethod |
 
  
 Enumerations for how DOB was constructed 
@@ -32,7 +32,7 @@ Enumerations for how DOB was constructed
   "title" : "Enumerations for how DOB was constructed",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

@@ -19,7 +19,7 @@ Anonymous Patient (no stated gender), DoB Unknown ( https://cbtn.org/#C21156)
 | US Core Ethnicity Extension: | * ombCategory: [CDC Race and Ethnicity: 2186-5](http://terminology.hl7.org/6.2.0/CodeSystem-CDCREC.html#CDCREC-2186-5) (Not Hispanic or Latino)
 * text: Not Hispanic or Latino
  |
-| [Age at Last Vital Status Extension](StructureDefinition-research-age-at-last-vital-status.md) | 6314 days(Details: UCUM coded = 'd') |
+| [Age at Last Vital Status Extension](StructureDefinition-research-age-at-last-vital-status.md) | 6314 days (Details: UCUM coded = 'd') |
 | [Research Date of Birth Method](StructureDefinition-research-date-of-birth-method.md) | [Enumerations for how DOB was constructed: year-only](CodeSystem-research-data-date-of-birth-method.md#research-data-date-of-birth-method-year-only)(Year Only) |
 | [US Core Birth Sex Extension](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-birthsex.html) | F |
 | US Core Race Extension: | * ombCategory: [CDC Race and Ethnicity: 2106-3](http://terminology.hl7.org/6.2.0/CodeSystem-CDCREC.html#CDCREC-2106-3) (White)

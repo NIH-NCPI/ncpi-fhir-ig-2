@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs | *Version*:0.2.0 |
-| Draft as of 2026-01-13 | *Computable Name*:ConditionTypeVS |
+| Draft as of 2026-02-06 | *Computable Name*:ConditionTypeVS |
 
  
 Type of Condition 
@@ -51,7 +51,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Type of Condition",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

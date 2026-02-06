@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample | *Version*:0.2.0 |
-| Draft as of 2026-01-13 | *Computable Name*:NCPISample |
+| Draft as of 2026-02-06 | *Computable Name*:NCPISample |
 
  
 FHIR Profile for NCPI Sample 
@@ -54,9 +54,9 @@ The following fields from the shared data model are to be mapped into the NCPI C
 | [participant](StructureDefinition-SharedDataModelSample-definitions.md#diff_SharedDataModelSample.participant) | 1..1 | subject | The participant from whom the biospecimen was taken |   |
 | [parentSample](StructureDefinition-SharedDataModelSample-definitions.md#diff_SharedDataModelSample.parentSample) | 0..* | parent | The Sample from which this Sample was derived |   |
 | [type](StructureDefinition-SharedDataModelSample-definitions.md#diff_SharedDataModelSample.type) | 1..1 | type | The type of material of which this Sample is comprised |   |
-| [processing](StructureDefinition-SharedDataModelSample-definitions.md#diff_SharedDataModelSample.processing) | 0..* | processing | Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample |   |
+| [processing](StructureDefinition-SharedDataModelSample-definitions.md#diff_SharedDataModelSample.processing) | 0..* | processing.procedure | Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample |   |
 | [availabilityStatus](StructureDefinition-SharedDataModelSample-definitions.md#diff_SharedDataModelSample.availabilityStatus) | 0..1 | status | Can this Sample be requested for further analysis? | URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability |
-| [storageMethod](StructureDefinition-SharedDataModelSample-definitions.md#diff_SharedDataModelSample.storageMethod) | 0..1 | collection.method | The approach used to collect the biospecimen | Recommended to use[Hl7VSSpecimenCondition](https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html) |
+| [storageMethod](StructureDefinition-SharedDataModelSample-definitions.md#diff_SharedDataModelSample.storageMethod) | 0..1 | condition | How is the Sample stored, eg, Frozen or with additives | Recommended to use[Hl7VSSpecimenCondition](https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html) |
 | [quantity](StructureDefinition-SharedDataModelSample-definitions.md#diff_SharedDataModelSample.quantity) | 0..1 | collection.quantity | The total quantity of the specimen |   |
 
 **Aliquot:**
@@ -65,14 +65,15 @@ The following fields from the shared data model are to be mapped into the NCPI C
 | :--- | :--- | :--- | :--- | :--- |
 | **Logical Model Property** | **Cardinality** | **NCPI Sample Mapping** | **Usage Guidance** | **Notes** |
 | [aliquotId](StructureDefinition-SharedDataModelAliquot-definitions.md#diff_SharedDataModelAliquot.aliquotId) | 1..1 | container.identifier | Unique ID for this aliquot |   |
-| [sample](StructureDefinition-SharedDataModelAliquot-definitions.md#diff_SharedDataModelAliquot.sample) | 1..1 | **MISSING** | The sample of which this tube is a part. |   |
+| [sample](StructureDefinition-SharedDataModelAliquot-definitions.md#diff_SharedDataModelAliquot.sample) | 1..1 | sample.id (of parent) | The sample of which this tube is a part. |   |
 | [availabilityStatus](StructureDefinition-SharedDataModelAliquot-definitions.md#diff_SharedDataModelAliquot.availabilityStatus) | 0..1 | extension[aliquot-availability] | Can this Sample be requested for further analysis? | URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability |
 | [volume](StructureDefinition-SharedDataModelAliquot-definitions.md#diff_SharedDataModelAliquot.volume) | 0..1 | container.specimenQuantity | What is the volume of the Aliquot? |   |
 | [concentration](StructureDefinition-SharedDataModelAliquot-definitions.md#diff_SharedDataModelAliquot.concentration) | 0..1 | extension[aliquot-concentration] | What is the concentration of the analyte in the Aliquot? | URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration |
 
 **Usages:**
 
-* Examples for this Profile: [Specimen/GSS123456-01-010](Specimen-GSS123456-01-010.md), [Specimen/GSS123456-01-010p](Specimen-GSS123456-01-010p.md), [Specimen/GSS123456-01-010x](Specimen-GSS123456-01-010x.md) and [Specimen/SA-000](Specimen-SA-000.md)
+* Refer to this Profile: [Shared Data Model for Aliquot](StructureDefinition-SharedDataModelAliquot.md)
+* Examples for this Profile: [Specimen/GSS123456-01-010](Specimen-GSS123456-01-010.md), [Specimen/GSS123456-01-010p](Specimen-GSS123456-01-010p.md) and [Specimen/SA-000](Specimen-SA-000.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ncpi-fhir-implementation-guide-v2|current/StructureDefinition/ncpi-sample)
 
@@ -97,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-sample.csv), [E
   "name" : "NCPISample",
   "title" : "NCPI Sample",
   "status" : "draft",
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

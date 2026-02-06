@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -1080,18 +1080,6 @@
       },
       "name" : "Example biospecimen based on data from GREGoR",
       "description" : "Example biospecimen based on data from GREGoR",
-      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Specimen"
-      }],
-      "reference" : {
-        "reference" : "Specimen/GSS123456-01-010x"
-      },
-      "name" : "Example biospecimen based on data from GREGoR, intentionally breaking the no parent and collection together rule. This should generate a warning.",
-      "description" : "Example biospecimen based on data from GREGoR that will generate a warning",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
     },
     {

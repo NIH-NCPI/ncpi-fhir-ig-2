@@ -16,27 +16,27 @@ Profile: [BAM or CRAM file profile](StructureDefinition-ncpi-bamcram.md)
 
 **focus**: [Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)](Patient-GSS123456.md)
 
-**specimen**: [Specimen: extension = ->ResearchStudy: identifier = AnVIL_GREGoR_GSS_U08_GRU; status = completed; identifier = GSS123456-s1; type =](Specimen-GSS123456-01-010.md)
+**specimen**: [Specimen: extension = ->ResearchStudy: identifier = AnVIL_GREGoR_GSS_U08_GRU; status = completed; identifier = GSS123456-s1; type = ](Specimen-GSS123456-01-010.md)
 
-> **component****code**:Assay strategy**value**:whole genome sequencing assay
+> **component****code**: Assay strategy**value**: whole genome sequencing assay
 
-> **component****code**:Platform instrument**value**:Illumina HiSeq 2000
+> **component****code**: Platform instrument**value**: Illumina HiSeq 2000
 
-> **component****code**:Library preparation**value**:polyA
+> **component****code**: Library preparation**value**: polyA
 
-> **component****code**:Library selection**value**:PolyTEnrichment
+> **component****code**: Library selection**value**: PolyTEnrichment
 
-> **component****code**:Target region**value**:Not Applicable
+> **component****code**: Target region**value**: Not Applicable
 
-> **component****code**:Strandedness**value**:stranded
+> **component****code**: Strandedness**value**: stranded
 
-> **component****code**:Reference genome**value**:GRCh38
+> **component****code**: Reference genome**value**: GRCh38
 
-> **component****code**:Is paired end**value**: false
+> **component****code**: Is paired end**value**: false
 
-> **component****code**:Workflow tool**value**:bammem
+> **component****code**: Workflow tool**value**: bammem
 
-> **component****code**:Workflow type**value**:alignment
+> **component****code**: Workflow type**value**: alignment
 
 
 

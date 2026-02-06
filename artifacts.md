@@ -15,20 +15,20 @@ These define data models that represent the domain covered by this implementatio
 | :--- | :--- |
 | [Shared Data Model for Aliquot](StructureDefinition-SharedDataModelAliquot.md) | Shared Data Model for Aliquot |
 | [Shared Data Model for Biospecimen Collection](StructureDefinition-SharedDataModelBiospecimenCollection.md) | Shared Data Model for Biospecimen Collection |
-| [Shared Data Model for Condition Assertions](StructureDefinition-SharedDataModelCondition.md) | The Shared Data Model for**Condition Assertions** |
-| [Shared Data Model for Family Relationship](StructureDefinition-SharedDataModelFamilyRelationship.md) | The**Shared Data Model for Family Relationship** |
-| [Shared Data Model for Family Role](StructureDefinition-SharedDataModelFamilyRole.md) | The**Shared Data Model for Family Role** |
-| [Shared Data Model for File](StructureDefinition-SharedDataModelFile.md) | The**Shared Data Model for File** |
-| [Shared Data Model for Participant Assertion](StructureDefinition-SharedDataModelParticipantAssertion.md) | The Shared Data Model for**Participant Assertion** |
-| [Shared Data Model for Research Collection](StructureDefinition-SharedDataModelResearchCollection.md) | The**Shared Data Model for Research Collection**represent various collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections. |
-| [Shared Data Model for Research Data Access Policy](StructureDefinition-SharedDataModelResearchDataAccessPolicy.md) | The**Shared Data Model for Research Data Access Policy**represent the various Data Use Agreements that govern a researcher's access and use of research data. |
-| [Shared Data Model for Research Participant and Study Mapping](StructureDefinition-SharedDataModelStudyParticipant.md) | The**Shared data model for StudyParticipant** |
-| [Shared Data Model for Research Participants](StructureDefinition-SharedDataModelResearchParticipant.md) | The**Shared Data Model for Research Participants** |
-| [Shared Data Model for Research Persons](StructureDefinition-SharedDataModelPerson.md) | The**Shared data model for Person** |
-| [Shared Data Model for Research Study](StructureDefinition-SharedDataModelResearchStudy.md) | The**Shared Data Model for Research Study**represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG. |
+| [Shared Data Model for Condition Assertions](StructureDefinition-SharedDataModelCondition.md) | The Shared Data Model for **Condition Assertions** |
+| [Shared Data Model for Family Relationship](StructureDefinition-SharedDataModelFamilyRelationship.md) | The **Shared Data Model for Family Relationship** |
+| [Shared Data Model for Family Role](StructureDefinition-SharedDataModelFamilyRole.md) | The **Shared Data Model for Family Role** |
+| [Shared Data Model for File](StructureDefinition-SharedDataModelFile.md) | The **Shared Data Model for File** |
+| [Shared Data Model for Participant Assertion](StructureDefinition-SharedDataModelParticipantAssertion.md) | The Shared Data Model for **Participant Assertion** |
+| [Shared Data Model for Research Collection](StructureDefinition-SharedDataModelResearchCollection.md) | The **Shared Data Model for Research Collection** represent various collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections. |
+| [Shared Data Model for Research Data Access Policy](StructureDefinition-SharedDataModelResearchDataAccessPolicy.md) | The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data. |
+| [Shared Data Model for Research Participant and Study Mapping](StructureDefinition-SharedDataModelStudyParticipant.md) | The **Shared data model for StudyParticipant** |
+| [Shared Data Model for Research Participants](StructureDefinition-SharedDataModelResearchParticipant.md) | The **Shared Data Model for Research Participants** |
+| [Shared Data Model for Research Persons](StructureDefinition-SharedDataModelPerson.md) | The **Shared data model for Person** |
+| [Shared Data Model for Research Study](StructureDefinition-SharedDataModelResearchStudy.md) | The **Shared Data Model for Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG. |
 | [Shared Data Model for Sample](StructureDefinition-SharedDataModelSample.md) | Shared Data Model for Sample |
-| [Shared Data Model for Study Family](StructureDefinition-SharedDataModelStudyFamily.md) | The**Shared Data Model for Study Family** |
-| [Shared data model for File Metadata](StructureDefinition-SharedDataModelFileMetadata.md) | The**Shared Data Model for File Metadata** |
+| [Shared Data Model for Study Family](StructureDefinition-SharedDataModelStudyFamily.md) | The **Shared Data Model for Study Family** |
+| [Shared data model for File Metadata](StructureDefinition-SharedDataModelFileMetadata.md) | The **Shared Data Model for File Metadata** |
 
 ### Structures: Resource Profiles 
 
@@ -53,7 +53,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [NCPI Research Access Policy](StructureDefinition-ncpi-research-access-policy.md) | Limitations and/or requirements that define how a user may gain access to a particular set of data. |
 | [NCPI Research Collection](StructureDefinition-ncpi-research-collection.md) | Collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections. |
 | [NCPI Research Study](StructureDefinition-ncpi-research-study.md) | The NCPI Research Study FHIR resource represents an individual research effort and acts as a grouper or “container” for that effort’s study participants and their related data files. |
-| [NCPI Research Study Group](StructureDefinition-research-study-group.md) | Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as**All Participants**or**Participants From a Particular Consent Group**, etc. |
+| [NCPI Research Study Group](StructureDefinition-research-study-group.md) | Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as **All Participants** or **Participants From a Particular Consent Group**, etc. |
 | [NCPI Sample](StructureDefinition-ncpi-sample.md) | FHIR Profile for NCPI Sample |
 | [NCPI Study Family](StructureDefinition-ncpi-study-family.md) | Study Family |
 | [NCPI Study Participant](StructureDefinition-ncpi-Study-Participant.md) | Research Study |
@@ -122,14 +122,14 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Assay strategy options](ValueSet-assay-strategy-vs.md) | Assay strategy options |
 | [Assertion of Phenotypic Feature Codes](ValueSet-phenotypic-feature-assertion-vs.md) | Assertion of Phenotypic Feature Codes |
 | [Collection Type](ValueSet-collection-type-vs.md) | Enumerated list of Collection types |
-| [Condition Codes](ValueSet-condition-code-vs.md) | Includes all codes from**HPO**and**MONDO** |
+| [Condition Codes](ValueSet-condition-code-vs.md) | Includes all codes from **HPO** and **MONDO** |
 | [Consanguinity Value Codes](ValueSet-consanguinity-assertion-vs.md) | List of codes indicates the level of known consanguinity (blood relation) within a study family. |
 | [Enumerations for how DOB was constructed](ValueSet-research-data-date-of-birth-method-vs.md) | Enumerations for how DOB was constructed |
 | [Enumerations for the EDAM ontology](ValueSet-edam-ontology-terms-vs.md) | Enumerations for the EDAM ontology |
 | [Family Types Codes](ValueSet-ncpi-family-types-vs.md) | A value set with all codes used for the expected family types. |
 | [Family Types Codes](ValueSet-research-study-party-role-vs.md) | A value set with all codes used for the expected family types. |
 | [MeSH Terms](ValueSet-mesh-terms.md) | Example terms from Medical Subject Headings (MeSH) Ontology |
-| [Phenotypic Feature Codes](ValueSet-phenotypic-feature-code-vs.md) | Includes all codes from**HPO** |
+| [Phenotypic Feature Codes](ValueSet-phenotypic-feature-code-vs.md) | Includes all codes from **HPO** |
 | [Platform instrument options](ValueSet-platform-instrument-vs.md) | Platform instrument options |
 | [Research Data Access Codes](ValueSet-research-data-access-code-vs.md) | Enumerated list of access codes such as dbGaP consent codes among others. |
 | [Research Data Access Type Codes](ValueSet-research-data-access-type-vs.md) | Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access' |
@@ -186,7 +186,6 @@ These are example instances that show what data produced and consumed by systems
 | [Example biospecimen based on data from CBTN](Specimen-SA-000.md) | Example biospecimen based on data from CBTN |
 | [Example biospecimen based on data from GREGoR](Specimen-GSS123456-01-010.md) | Example biospecimen based on data from GREGoR |
 | [Example biospecimen based on data from GREGoR](Specimen-GSS123456-01-010p.md) | Example biospecimen based on data from GREGoR |
-| [Example biospecimen based on data from GREGoR, intentionally breaking the no parent and collection together rule. This should generate a warning.](Specimen-GSS123456-01-010x.md) | Example biospecimen based on data from GREGoR that will generate a warning |
 | [Example condition assertion using data from CBTN](Observation-PT-006SP660-condition.md) | Example condition assertion using data from CBTN. |
 | [Example condition assertion using data from GREGoR](Observation-GSS123456-condition-assertion.md) | Example condition assertion using data from GREGoR |
 | [Example condition summary using data from GREGoR](Condition-GSS123456-condition-summary.md) | Example condition summary using data from GREGoR |

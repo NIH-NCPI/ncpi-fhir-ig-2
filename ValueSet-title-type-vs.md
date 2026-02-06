@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/title-type | *Version*:0.2.0 | |
-| *Standards status:*[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:TitleTypeVS |
+| * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:TitleTypeVS |
 | *Other Identifiers:*OID:2.16.840.1.113883.4.642.3.2974 | | |
 
  
@@ -71,7 +71,7 @@ Used to express the reason and specific aspect for the variant title, such as la
   "title" : "Title Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

@@ -3,7 +3,7 @@
 ","Shared Data Model for Aliquot","Shared Data Model for Aliquot","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "SharedDataModelAliquot","SharedDataModelAliquot.aliquotId","SharedDataModelAliquot.aliquotId","","","",1,1,"","","","string {[]} {[]}
 ","Unique ID for this aliquot","Unique ID for this aliquot","","","","","","","","","",,,,,"",,,,"SharedDataModelAliquot.aliquotId",1,1,"",""
-"SharedDataModelAliquot","SharedDataModelAliquot.sample","SharedDataModelAliquot.sample","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/valueset-reference]]} {[]}
+"SharedDataModelAliquot","SharedDataModelAliquot.sample","SharedDataModelAliquot.sample","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample]]}
 ","The sample of which this tube is a part.","The sample of which this tube is a part.","","","","","","","","","",,,,,"",,,,"SharedDataModelAliquot.sample",1,1,"",""
 "SharedDataModelAliquot","SharedDataModelAliquot.availabilityStatus","SharedDataModelAliquot.availabilityStatus","","","",0,1,"","","","code {[]} {[]}
 ","Can this Sample be requested for further analysis?","Can this Sample be requested for further analysis?","","","","","","","","","",,,,,"",,,,"SharedDataModelAliquot.availabilityStatus",0,1,"",""
@@ -13,9 +13,9 @@
 ","What is the concentration of the analyte in the Aliquot?","What is the concentration of the analyte in the Aliquot?","","","","","","","","","",,,,,"",,,,"SharedDataModelAliquot.concentration",0,1,"",""
 "SharedDataModelBiospecimenCollection","SharedDataModelBiospecimenCollection","SharedDataModelBiospecimenCollection","","","",0,*,"","","","null {[]} {[]}
 ","Shared Data Model for Biospecimen Collection","Shared Data Model for Biospecimen Collection","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"SharedDataModelBiospecimenCollection","SharedDataModelBiospecimenCollection.sampleGenerated","SharedDataModelBiospecimenCollection.sampleGenerated","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/valueset-reference]]} {[]}
+"SharedDataModelBiospecimenCollection","SharedDataModelBiospecimenCollection.sampleGenerated","SharedDataModelBiospecimenCollection.sampleGenerated","","","",1,1,"","","","string {[]} {[]}
 ","Sample that was generated from this collection event","Sample that was generated from this collection event","","","","","","","","","",,,,,"",,,,"SharedDataModelBiospecimenCollection.sampleGenerated",1,1,"",""
-"SharedDataModelBiospecimenCollection","SharedDataModelBiospecimenCollection.participant","SharedDataModelBiospecimenCollection.participant","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/valueset-reference]]} {[]}
+"SharedDataModelBiospecimenCollection","SharedDataModelBiospecimenCollection.participant","SharedDataModelBiospecimenCollection.participant","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant]]}
 ","The participant from whom the biospecimen was taken","The participant from whom the biospecimen was taken","","","","","","","","","",,,,,"",,,,"SharedDataModelBiospecimenCollection.participant",1,1,"",""
 "SharedDataModelBiospecimenCollection","SharedDataModelBiospecimenCollection.ageAtCollection","SharedDataModelBiospecimenCollection.ageAtCollection","","","",0,1,"","","","Quantity {[]} {[]}
 ","The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range.","The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range.","","","","","","","","","",,,,,"",,,,"SharedDataModelBiospecimenCollection.ageAtCollection",0,1,"",""

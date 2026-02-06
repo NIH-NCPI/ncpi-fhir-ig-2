@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file-metadata | *Version*:0.2.0 |
-| Draft as of 2026-01-13 | *Computable Name*:NcpiFileMetadata |
+| Draft as of 2026-02-06 | *Computable Name*:NcpiFileMetadata |
 
  
 Representation of file metadata for NCPI 
@@ -51,7 +51,7 @@ The following fields from the shared data model are to be mapped to the NCPI Fil
 
 **Usages:**
 
-* Derived from this Profile: [BAM or CRAM file profile](StructureDefinition-ncpi-bamcram.md), [NCPI FASTQ File](StructureDefinition-ncpi-fastq.md), [Gene fusion or gene expression file profile](StructureDefinition-ncpi-gene-fusion-expression.md), [MAF (Somatic Mutation) file profile](StructureDefinition-ncpi-maf.md)...Show 2 more,[Proteomics file profile](StructureDefinition-ncpi-proteomics.md)and[VCF or gVCF file profile](StructureDefinition-ncpi-vcf.md)
+* Derived from this Profile: [BAM or CRAM file profile](StructureDefinition-ncpi-bamcram.md), [NCPI FASTQ File](StructureDefinition-ncpi-fastq.md), [Gene fusion or gene expression file profile](StructureDefinition-ncpi-gene-fusion-expression.md), [MAF (Somatic Mutation) file profile](StructureDefinition-ncpi-maf.md)... Show 2 more, [Proteomics file profile](StructureDefinition-ncpi-proteomics.md) and [VCF or gVCF file profile](StructureDefinition-ncpi-vcf.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ncpi-fhir-implementation-guide-v2|current/StructureDefinition/ncpi-file-metadata)
 
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-file-metadata.c
   "name" : "NcpiFileMetadata",
   "title" : "NCPI File Meta Data",
   "status" : "draft",
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

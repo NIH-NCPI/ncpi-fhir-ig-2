@@ -21,7 +21,7 @@ Profile: [NCPI Sample](StructureDefinition-ncpi-sample.md)
 | | | |
 | :--- | :--- | :--- |
 | - | **Collected[x]** | **Method** |
-| * | `Relative date time:` | Blood Draw |
+| * | `Relative date time: ` | Blood Draw |
 
 ### Containers
 

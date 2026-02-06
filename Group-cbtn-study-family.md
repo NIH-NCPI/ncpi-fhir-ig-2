@@ -20,9 +20,9 @@ Profile: [NCPI Study Family](StructureDefinition-ncpi-study-family.md)
 
 **actual**: true
 
-> **member****entity**:[Anonymous Patient (no stated gender), DoB Unknown ( https://cbtn.org/#C21156)](Patient-PT-006SP660.md)
+> **member****entity**: [Anonymous Patient (no stated gender), DoB Unknown ( https://cbtn.org/#C21156)](Patient-PT-006SP660.md)
 
-> **member****entity**:[Anonymous Patient (no stated gender), DoB: ( http://chdgenes.org/#20757)](Patient-PT-006SP675.md)
+> **member****entity**: [Anonymous Patient (no stated gender), DoB: ( http://chdgenes.org/#20757)](Patient-PT-006SP675.md)
 
 
 

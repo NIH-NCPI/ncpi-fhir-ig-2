@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchDataAccessPolicy | *Version*:0.2.0 |
-| Draft as of 2026-01-13 | *Computable Name*:CdmResearchDataAccessPolicy |
+| Draft as of 2026-02-06 | *Computable Name*:CdmResearchDataAccessPolicy |
 
  
-The**Shared Data Model for Research Data Access Policy**represent the various Data Use Agreements that govern a researcher's access and use of research data. 
+The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data. 
 
 ### Shared Data Model Research Data Access Policy
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelResea
   "name" : "CdmResearchDataAccessPolicy",
   "title" : "Shared Data Model for Research Data Access Policy",
   "status" : "draft",
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

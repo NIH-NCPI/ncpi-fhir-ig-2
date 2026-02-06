@@ -29,10 +29,7 @@
         "max": "1",
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/valueset-reference"
-            ]
+            "code": "string"
           }
         ]
       },
@@ -45,9 +42,9 @@
         "max": "1",
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/valueset-reference"
+            "code": "Reference",
+            "targetProfile": [
+              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
             ]
           }
         ]

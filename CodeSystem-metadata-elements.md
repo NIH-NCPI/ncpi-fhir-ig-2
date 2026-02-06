@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements | *Version*:0.2.0 |
-| Active as of 2026-01-13 | *Computable Name*:MetadataElements |
+| Active as of 2026-02-06 | *Computable Name*:MetadataElements |
 
  
 NCPI Metadata slices 
@@ -32,7 +32,7 @@ NCPI Metadata slices
   "title" : "NCPI Metadata slices",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-13T18:03:13+00:00",
+  "date" : "2026-02-06T18:07:39+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [
     {

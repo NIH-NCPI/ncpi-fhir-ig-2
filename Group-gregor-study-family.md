@@ -18,9 +18,9 @@ Profile: [NCPI Study Family](StructureDefinition-ncpi-study-family.md)
 
 **actual**: true
 
-> **member****entity**:[Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)](Patient-GSS123456.md)
+> **member****entity**: [Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)](Patient-GSS123456.md)
 
-> **member****entity**:[Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS654321)](Patient-GSS654321.md)
+> **member****entity**: [Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS654321)](Patient-GSS654321.md)
 
 
 

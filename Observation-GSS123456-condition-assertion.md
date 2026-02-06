@@ -20,11 +20,11 @@ Profile: [NCPI Participant Assertion](StructureDefinition-ncpi-participant-asser
 
 **value**: Present
 
-> **component****code**:otherModifiers
+> **component****code**: otherModifiers
 
-> **component****code**:ageAtOnset**value**: 64 years(Details: UCUM codea = 'a')
+> **component****code**: ageAtOnset**value**: 64 years (Details: UCUM codea = 'a')
 
-> **component****code**:otherModifiers**value**:HP:0012832
+> **component****code**: otherModifiers**value**: HP:0012832
 
 
 
