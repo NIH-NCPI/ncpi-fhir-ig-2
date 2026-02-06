@@ -33,16 +33,16 @@ The following fields from the shared data model are to be mapped into the NCPI C
 |[participant](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.participant)|1..1|subject|The participant from whom the biospecimen was taken||
 |[parentSample](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.parentSample)|0..*|parent|The Sample from which this Sample was derived||
 |[type](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.type)|1..1|type|The type of material of which this Sample is comprised||
-|[processing](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.processing)|0..*|processing|Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample||
+|[processing](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.processing)|0..*|processing.procedure|Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample||
 |[availabilityStatus](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.availabilityStatus)|0..1|status|Can this Sample be requested for further analysis?|URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability|
-|[storageMethod](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.storageMethod)|0..1|collection.method|The approach used to collect the biospecimen|Recommended to use [Hl7VSSpecimenCondition](https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html)|
+|[storageMethod](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.storageMethod)|0..1|condition|How is the Sample stored, eg, Frozen or with additives|Recommended to use [Hl7VSSpecimenCondition](https://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html)|
 |[quantity](StructureDefinition-SharedDataModelSample-definitions.html#diff_SharedDataModelSample.quantity)|0..1|collection.quantity|The total quantity of the specimen||
 
 **Aliquot:**
 
 | **Logical Model Property** | **Cardinality** |  **NCPI Sample Mapping** |**Usage Guidance** | **Notes** |
 |[aliquotId](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.aliquotId)|1..1|container.identifier|Unique ID for this aliquot||
-|[sample](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.sample)|1..1|**MISSING**|The sample of which this tube is a part.||
+|[sample](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.sample)|1..1|sample.id (of parent)|The sample of which this tube is a part.||
 |[availabilityStatus](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.availabilityStatus)|0..1|extension[aliquot-availability]|Can this Sample be requested for further analysis?|URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-availability|
 |[volume](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.volume)|0..1|container.specimenQuantity|What is the volume of the Aliquot?||
 |[concentration](StructureDefinition-SharedDataModelAliquot-definitions.html#diff_SharedDataModelAliquot.concentration)|0..1|extension[aliquot-concentration]|What is the concentration of the analyte in the Aliquot?|URL: https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/aliquot-concentration|

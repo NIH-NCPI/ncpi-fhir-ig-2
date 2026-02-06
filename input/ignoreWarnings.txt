@@ -2,6 +2,26 @@
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem. One line comments before a group of ignored warnings should justify why. See https://confluence.hl7.org/spaces/FHIR/pages/66938614/Implementation+Guide+Parameters for full details. and https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
+# This was intentionally provided to confirm that the XOR does, in fact, behave correctly. However, we shouldn't have to be concered about it. 
+WARNING: Constraint failed: collection-xor-parent: 'If there is a parent sample, there should be no collection information. If there is collection information present, there should be no parent sample.' (defined in https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample)
+
+# Known systems that aren't present in the default FHIR terminology service 
+A definition for CodeSystem 'https://loinc.org' could not be found, so the code cannot be validated
+A definition for CodeSystem 'http://edamontology.org' could not be found, so the code cannot be validated (from https://tx.fhir.org/r4)
+No definition could be found for URL value 'http://edamontology.org'
+Error from https://tx.fhir.org/r4: Unable to provide support for code system http://edamontology.org
+Error from https://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/MSH
+
+# Example identifier prefixes
+No definition could be found for URL value 'https://anvil.terra.bio'
+No definition could be found for URL value 'http://chdgenes.org/'
+
+# The following message occurs many times due to how we are using "reference" 
+# to indicate that the attribute is a reference to something else. We can "fix" 
+# these by using Referece(ProfileName) for real profiles, however, it doesn't 
+# seem to be possible to reference another logical model class. So, we can turn 
+# this warning off. 
+There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/valueset-reference'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/valueset-reference' to 'http://hl7.org/fhir/StructureDefinition/valueset-reference|5.2.0'
 # I copied this code system URL from https://terminology.hl7.org/6.4.0/NamingSystem-v3-nciThesaurus.html So, I know it's correct. It is just a failing of the terminology server that it cannot find it. This code is valid, it is documented at https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C96580
 INFORMATION: ValueSet/family-biological-relationship-vs: ValueSet.compose.include[0].concept[0]: Unknown Code 'C96580' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
 %Unknown Code 'C96580' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment%

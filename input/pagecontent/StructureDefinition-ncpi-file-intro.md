@@ -17,8 +17,8 @@ Providing as much information about a file and file metatdata will help individu
 The following fields from the shared data model are to be mapped to the NCPI File as shown below:
 
 | **Logical Model Property** | **Cardinality** | **NCPI FHIR Mapping** | **Usage Guidance** | **Notes**|
-|[participantID](StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.participantID)|0..1|identifier.value|The participant(s) for whom this file contains data|
-|[fileExternalID](StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.fileExternalID)|0..1|subject|A related identifier of this file|
+|[participantID](StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.participantID)|0..1|subject|The participant(s) for whom this file contains data|
+|[fileExternalID](StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.fileExternalID)|0..1|identifier.value|A related identifier of this file|
 |[format](StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.format)|1..1|extension[file-format].valueCodeableConcept.coding|The file format used|
 |[location](StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.location)|1..*|content|List of locations where this data can be accessed|
 |[location.uri](StructureDefinition-SharedDataModelFile-definitions.html#diff_SharedDataModelFile.location.uri)|1..1|content.attachment.url|The URI at which this data can be accessed|
