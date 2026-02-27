@@ -25,13 +25,17 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  hl7.fhir.us.core: 6.1.0
-  # Can't upgrade to 7 due to memory issues in GH Actions. 
+  # mcode has us core as a dependency
+  #hl7.fhir.us.core: 6.1.0
+  # Can't upgrade to 7 due to memory issues in GH Actions.
   # hl7.fhir.us.core: 7.0.0
   hl7.fhir.us.mcode:
     id: mcode
     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
     version: 4.0.0
+  hl7.fhir.us.core:
+    version: 6.1.0
+    id: hl7fhiruscore
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -85,7 +89,7 @@ menu:
     FHIR Basics: FHIR_Basics.html
     Authors: authors.html
     Contact: contact.html
-  Guidance: 
+  Guidance:
     Conformance Rules: conformance.html
     Must Support: must_support.html
     Contributor Guidelines: contributing.html
@@ -98,18 +102,18 @@ menu:
     Specimen: module_specimen.html
     Assays: module_assays.html
     File Data: module_files.html
-  Use Case Guides: 
+  Use Case Guides:
     TBD Use Cases: use_case_tbd.html
   Examples:
     CBTN Example: example_cbtn.html
     GREGoR Example: example_gregor.html
-  Artifacts: 
+  Artifacts:
     All Artifacts: artifacts.html
     Profiles: artifacts.html#structures-resource-profiles
     Code Systems: artifacts.html#terminology-code-systems
     Value Sets: artifacts.html#terminology-value-sets
     Extensions: artifacts.html#structures-extension-definitions
-  Support: 
+  Support:
     FHIR Versions: fhir_version.html
     FHIR Spec: http://hl7.org/fhir/R4/index.html
     Downloads: downloads.html
