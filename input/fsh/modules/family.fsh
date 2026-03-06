@@ -160,11 +160,11 @@ with the GA4GH PedigreeRelationship profile while documenting NCPI-specific guid
 For maximum interoperability with other NCPI systems, prefer these three codes for
 genetic relationships in pedigrees ([PED files](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format)):
 
-- [`KIN:027` (**"isBiologicalMother"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58027):
+- [`KIN:027` (**"isBiologicalMotherOf"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58027):
    The relative is the biological mother of the patient.
-- [`KIN:028` (**"isBiologicalFather"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58028):
+- [`KIN:028` (**"isBiologicalFatherOf"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58028):
    The relative is the biological father of the patient.
-- [`KIN:010` (**"isMonozygoticTwin"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58010):
+- [`KIN:010` (**"isMonozygoticTwinOf"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58010):
    The relative and patient are monozygotic twins. For higher-order multiples
    (triplets, quadruplets, etc.), create KIN:010 relationships between every
    pair of individuals in the multiple. Since this is a non-directed relationship,

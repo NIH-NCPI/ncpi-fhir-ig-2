@@ -301,8 +301,8 @@ Title: "An example family relationship (parent to child) based on data from CBTN
 Usage: #example
 Description: """An example family relationship based on data from CBTN.
 
- PT-006SP675 (the relative) is female and 5 years old
- PT-006SP660 (the patient) is female and 17 years old
+ PT-006SP675 is female and 5 years old
+ PT-006SP660 is female and 17 years old
  This is the "daughter" relationship. The relative is the daughter of the patient.
 
  This demonstrates using extensibility to express the reverse of the
@@ -318,7 +318,7 @@ Description: """An example family relationship based on data from CBTN.
 //       [isBiologicalChild, Female] would imply that the two codings were
 //       intended as synonyms. No information is lost, however, since the patient
 //       resource includes her sex.
-* relationship = $ga4gh-kin#KIN:032 "isBiologicalChild"
+* relationship = $ga4gh-kin#KIN:032 "isBiologicalChildOf"
 * status = #completed
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
