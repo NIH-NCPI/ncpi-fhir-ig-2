@@ -33,7 +33,7 @@ Description: "The **Shared Data Model for Family Role**"
 
 Extension: FamilyRole
 Id: family-role
-Title: "Study Family Focus"
+Title: "Family Role"
 Description: "Extension containing Family Role"
 
 * insert SetContext(Group.member.entity)
@@ -51,6 +51,7 @@ Description: "CodeSystem for Types of Families"
 * ^caseSensitive = true
 * ^publisher = "NCPI FHIR Works"
 * ^content = #fragment
+* ^version = "0.1.0"
 * #Control-only "Control Only"
 * #Duo "Duo"
 * #Other "Other"
@@ -71,6 +72,7 @@ Extension: FamilyType
 Id: family-type
 Title: "Family Type Extension"
 Description: "Extension containing Family Type"
+* insert SetContext(Group)
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Describes the 'type' of study family, eg, trio."
 * valueCodeableConcept from ncpi-family-types-vs (extensible)
@@ -79,6 +81,7 @@ Extension: Description
 Id: description
 Title: "Description"
 Description: "Free text describing containing resource."
+* insert SetContext(Group)
 * value[x] only markdown
 * valueMarkdown 0..1
 
@@ -95,7 +98,8 @@ Description: "List of codes indicates the level of known consanguinity (blood re
 Extension: Consanguinity
 Id: consanguinity
 Title: "Consanguinity Extension"
-Description: "Extension containing Consanguinity"
+Description: "Extension containing a consanguinity assertion"
+* insert SetContext(Group)
 * value[x] only CodeableConcept
 * valueCodeableConcept from consanguinity-assertion-vs (extensible)
 * valueCodeableConcept ^short = "Is there known or suspected consanguinity in this study family?"
@@ -103,7 +107,8 @@ Description: "Extension containing Consanguinity"
 Extension: StudyFamilyFocus
 Id: study-family-focus
 Title: "Study Family Focus Extension"
-Description: "Extension containing Study Family Focus"
+Description: "Extension containing a study family focus assertion"
+* insert SetContext(Group)
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "What is this study family investigating? EG, a specific condition"
 
@@ -126,21 +131,9 @@ Description: "Study Family"
 * extension[studyFamilyFocus] ^short = "What is this study family investigating? EG, a specific condition"
 * member 1..*
 * member.entity only Reference(NcpiParticipant)
-* member.entity ^short = "The participant we are describing."
+* member.entity ^short = "The participant described by this member."
 * member.entity.extension contains FamilyRole named familyRole 0..1
 * member.entity.extension[familyRole] ^short = "The role this individual has in the family, specifically with respect to a proband or index participant"
-
-
-/*
-Extension: StudyFamily
-Id: study-family
-Title: "Study Family Reference"
-Description: "Extension containing Study Family Reference"
-* insert SetContext(Group)
-* value[x] only Reference
-* valueReference 1..1
-* valueReference only Reference(NcpiStudyFamily)
-*/
 
 
 // Family Relationship
@@ -153,18 +146,147 @@ Description: "The **Shared Data Model for Family Relationship**"
 * target 1..1 Reference "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'"
 * relationship 1..1 code "The relationship between the subject and the target."
 
+
+ValueSet: FamilyBiologicalRelationshipVS
+Id: family-biological-relationship-vs
+Title: "Biological Relationship Codes"
+Description: """
+All codes from the GA4GH KIN ontology for family relationships. This ValueSet
+duplicates the GA4GH PedigreeRelationshipTypes ValueSet to maintain compatibility
+with the GA4GH PedigreeRelationship profile while documenting NCPI-specific guidance.
+
+# NCPI-Recommended Codes for Maximum Interoperability
+
+For maximum interoperability with other NCPI systems, prefer these three codes for
+genetic relationships in pedigrees ([PED files](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format)):
+
+- [`KIN:027` (**"isBiologicalMotherOf"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58027):
+   The relative is the biological mother of the patient.
+- [`KIN:028` (**"isBiologicalFatherOf"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58028):
+   The relative is the biological father of the patient.
+- [`KIN:010` (**"isMonozygoticMultipleBirthSiblingOf"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58010):
+   The relative and patient are monozygotic twins. For higher-order multiples
+   (triplets, quadruplets, etc.), create KIN:010 relationships between every
+   pair of individuals in the multiple. Since this is a non-directed relationship,
+   each pair requires two FamilyRelationship resources (A→B and B→A).
+
+Relationships are expressed from relative (parent) to patient (child):
+`relative`=parent, `patient`=child, , `relationship`="isBiologicalMotherOf" or "isBiologicalFatherOf".
+
+For other genetic relationships (grandparents, aunts, uncles, cousins), use these
+three codes with inferred individuals to represent the relationship chain.
+
+# Additional KIN Codes
+
+The full [KIN ontology](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html)
+provides 55 relationship codes including adoptive parents, step-relations, grandparents,
+and more. While all codes are available for use, NCPI systems may not fully support
+relationships beyond the three core codes listed above.
+
+# Future Enhancement
+
+When FHIR R5/R6 support is added, we plan to use additional binding features to better
+express the preference for the three core codes while maintaining the full KIN ontology
+as an option.
+"""
+* ^version = "0.2.0"
+* ^experimental = false
+* include codes from system $ga4gh-kin
+
+
 Profile: NcpiFamilyRelationship
-Parent: Observation
+Parent: $ga4gh-pedigree-relationship
 Id: ncpi-family-relationship
 Title: "Family Relationship"
-Description: "Family Relationship"
-* ^version = "0.1.0"
+// The rest of the description is in
+// input/pagecontent/StructureDefinition-ncpi-family-relationship-intro.md
+Description: "A relationship between individuals in a pedigree or family."
+* ^version = "0.2.0"
 * ^status = #draft
-* subject 1..1
-* subject only Reference(NcpiParticipant)
-* subject ^short = "The participant we are describing"
-* focus 1..1
-* focus only Reference(NcpiParticipant)
-* focus ^short = "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'"
-* code ^short = "The relationship between the subject and the target."
-* code from $ncpi-family-member (extensible)
+// The relative extension slice is inherited from GA4GH PedigreeRelationship
+* extension[relative] ^short = "The participant in the relationship who plays the role named by the relationship."
+* extension[relative] ^definition = """
+The participant in the relationship who plays the role named by the relationship.
+
+That is, if the relationship is `KIN:028` (**\"isBiologicalFatherOf\"**), the
+`relative` is the father and the `patient` is the child.
+
+This uses [the standard Patient Record extension](http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record)
+inherited from the [GA4GH PedigreeRelationship profile](https://ga4gh.github.io/pedigree-fhir-ig/StructureDefinition-PedigreeRelationship.html)
+"""
+* relationship 1..1 MS
+* relationship from FamilyBiologicalRelationshipVS (required)
+* relationship ^short = "The role the relative fills with respect to the patient for this relationship."
+* relationship ^definition = """
+The role the relative fills with respect to the patient for this relationship.
+
+`relative` is `relationship` to `patient`.
+
+# NCPI-Recommended Codes
+
+For maximum interoperability with other NCPI systems, prefer these three codes for
+genetic relationships in [PED files](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format):
+
+- `KIN:027` (`isBiologicalMotherOf`): The relative is the biological mother of the patient.
+- `KIN:028` (`isBiologicalFatherOf`): The relative is the biological father of the patient.
+- `KIN:010` (`isMonozygoticMultipleBirthSiblingOf`): The relative and patient are monozygotic twins. For
+  higher-order multiples (triplets, quadruplets, etc.), create pairwise `KIN:010`
+  relationships between every pair with bidirectional relationships (both A→B and B→A).
+
+All other genetic relationships (grandparents, aunts, uncles, cousins, etc.) can be
+expressed using these three codes with inferred individuals to represent the relationship
+chain. This provides a canonical way to express all pedigree relationships, which will ease
+consuming the data.
+
+# Additional KIN Codes
+
+While all 55 codes from the [GA4GH KIN ontology](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html)
+are available, NCPI systems may not fully support relationships beyond the three core codes above.
+"""
+* relationship ^comment = """
+# Examples
+
+## Example 1 (triplets):
+
+A,B,C are triplets. You need six `NcpiFamilyRelationship`
+resources with `KIN:010` (`isMonozygoticMultipleBirthSiblingOf`):
+- A→B
+- B→A
+- A→C
+- C→A
+- B→C
+- C→B.
+
+## Example 2 (twins):
+If X and Y are twins, you need two `NcpiFamilyRelationship`
+resources with `KIN:010` (`isMonozygoticMultipleBirthSiblingOf`):
+- X→Y
+- Y→X.
+
+## Example 3 (maternal grandchild):
+If Q is the maternal grandchild of the female R but Q's parent
+is outside the dataset, then you need to make an inferred Patient
+resource D and make two `NcpiFamilyRelationship` resources:
+- D-(KIN:027, `isBiologicalMotherOf`)→Q
+- R-(KIN:027, `isBiologicalMotherOf`)→D.
+"""
+* patient 1..1 MS
+* patient ^short = "The participant we are describing."
+* patient ^definition = """
+The participant we are describing.
+
+That is, if the relationship is `KIN:028` (**\"isBiologicalFatherOf\"**), the `patient` is the child
+and the `relative` is the father.
+"""
+// Remove the elements that are redundant with Patient for compatibility with
+// the GA4GH PedigreeRelationship and because redundant elements incur
+// database maintenance costs.
+* name 0..0
+* sex 0..0
+* born[x] 0..0
+* age[x] 0..0
+* estimatedAge 0..0
+* deceased[x] 0..0
+* reasonCode 0..0
+* reasonReference 0..0
+* condition 0..0

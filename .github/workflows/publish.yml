@@ -35,6 +35,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Install GA4GH Pedigree FHIR IG package
+        run: |
+          mkdir -p ~/.fhir/packages/"ga4gh.fhir.pedigree#0.1.0"
+          curl -L https://ga4gh.github.io/pedigree-fhir-ig/package.tgz -o /tmp/ga4gh-pedigree.tgz
+          tar -xzf /tmp/ga4gh-pedigree.tgz -C ~/.fhir/packages/"ga4gh.fhir.pedigree#0.1.0"
+          ls -la ~/.fhir/packages/"ga4gh.fhir.pedigree#0.1.0"/package/StructureDefinition-PedigreeRelationship.json
+
       - name: Install SUSHI and add FSH definitions
         run: |
           npm install -g fsh-sushi

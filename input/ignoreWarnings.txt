@@ -29,6 +29,12 @@ INFORMATION: ValueSet/family-biological-relationship-vs: ValueSet.compose.includ
 # I think this error is a bug in the terminology server - I'm clearly using 3.0.0 of the code system (terminology version - which is different from FHIR release), but it gives an error for 4.3.0 even though that string appears nowhere in the repo.
 WARNING: ValueSet.where(id = 'family-biological-relationship-vs'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/v3-RoleCode version 4.3.0 (known versions = 2018-08-12,3.0.0)
 
+# The GA4GH KIN ontology codes are valid (see https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html) but may not be recognized by the terminology server
+%Unknown Code 'KIN:027' in the CodeSystem 'http://purl.org/ga4gh/kin.fhir'%
+%Unknown Code 'KIN:028' in the CodeSystem 'http://purl.org/ga4gh/kin.fhir'%
+%Unknown Code 'KIN:010' in the CodeSystem 'http://purl.org/ga4gh/kin.fhir'%
+%Unknown Code 'KIN:032' in the CodeSystem 'http://purl.org/ga4gh/kin.fhir'%
+
 # Another bug in the terminology server - The url http://human-phenotype-ontology.org in the Alias.fsh file is copied directly from https://terminology.hl7.org/6.5.0/CodeSystem-HPO.html
 %A definition for CodeSystem 'http://human-phenotype-ontology.org' could not be found%
 

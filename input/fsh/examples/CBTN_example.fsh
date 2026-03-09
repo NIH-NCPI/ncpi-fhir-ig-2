@@ -115,7 +115,7 @@ Description: "General Research Use (GRU)"
 * provision.type = http://hl7.org/fhir/consent-provision-type#permit
 * provision.purpose[+] = $ncpi-data-access-code#GRU "General Research Use"
 * extension[description].valueMarkdown = "Use of the data is limited only by the terms of the model Data Use Certification."
-* extension[website].valueUrl = "https://redcap.chop.edu/surveys/?s=A7M873HMN8"
+* extension[website].valueUrl = "https://airtable.com/apperYvVD82ti3021/pagdArwI0TxJQpiVW/form"
 * extension[accessType].valueCodeableConcept = $ncpi-data-access-type#controlled
 
 
@@ -295,30 +295,53 @@ Description: "Example patients based on data from CBTN."
 * member[1].entity = Reference(PT-006SP675)
 * member[1].entity.extension[familyRole].valueCodeableConcept = $family-role-code#SON "natural son"
 
-Instance: cbtn-family-relationship-mother
+Instance: cbtn-family-relationship-daughter
 InstanceOf: NcpiFamilyRelationship
-Title: "An example family relationship based on data from CBTN"
+Title: "An example family relationship (parent to child) based on data from CBTN"
 Usage: #example
-Description: "An example family relationship based on data from CBTN."
-* subject = Reference(PT-006SP660)
-* focus = Reference(PT-006SP675)
-* code = $family-role-code#MTH "mother"
-* status = #registered
+Description: """An example family relationship based on data from CBTN.
+
+ PT-006SP675 (the relative) is female and 5 years old
+ PT-006SP660 (the patient) is female and 17 years old
+ PT-006SP675 isBiologicalChildOf (KIN:032) PT-006SP660. This is the "daughter" relationship. The relative is the daughter of the patient.
+
+ This demonstrates using extensibility to express the reverse of the
+ minimum relationship convention.
+ """
+* patient = Reference(PT-006SP660)
+* extension[relative].valueReference = Reference(PT-006SP675)
+// Extensibility to express the reverse of the unambiguous relationship convention
+//
+// Note: You must use isBiologicalChildOf because the KIN ontology does not have
+//       a sex-linked code like isBiologicalDaughter and CodeableConcept's coding
+//       elements are semantically asserted to be synonyms. So,
+//       [isBiologicalChildOf, Female] would imply that the two codings were
+//       intended as synonyms. No information is lost, however, since the patient
+//       resource includes her sex.
+* relationship = $ga4gh-kin#KIN:032 "isBiologicalChildOf"
+* status = #completed
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
   * valueReference = Reference(kf-research-study-cbtn)
 
+// PT-006SP675 is female and 5 years old, the daughter of PT-006SP660 who is female and 17 years old
 
-
-Instance: cbtn-family-relationship-son
+Instance: cbtn-family-relationship-mother
 InstanceOf: NcpiFamilyRelationship
-Title: "An example family relationship based on data from CBTN"
+Title: "An example family relationship (child to parent) based on data from CBTN"
 Usage: #example
-Description: "An example family relationship based on data from CBTN."
-* subject = Reference(PT-006SP675)
-* focus = Reference(PT-006SP660)
-* code = $family-role-code#SON "natural son"
-* status = #registered
+Description: """An example family relationship based on data from CBTN.
+
+PT-006SP675 (the patient) is female and 5 years old
+PT-006SP660 (the relative) is female and 17 years old
+PT-006SP660 isBiologicalMotherOf (KIN:027) PT-006SP675.This is the "mother" relationship. The relative is the mother of the patient.
+
+This instance instantiates the minimum relationship direction to reproduce a PED file.
+"""
+* patient = Reference(PT-006SP675)
+* extension[relative].valueReference = Reference(PT-006SP660)
+* relationship = $ga4gh-kin#KIN:027 "isBiologicalMotherOf"
+* status = #completed
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
   * valueReference = Reference(kf-research-study-cbtn)
