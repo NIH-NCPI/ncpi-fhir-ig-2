@@ -164,14 +164,14 @@ genetic relationships in pedigrees ([PED files](https://gatk.broadinstitute.org/
    The relative is the biological mother of the patient.
 - [`KIN:028` (**"isBiologicalFatherOf"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58028):
    The relative is the biological father of the patient.
-- [`KIN:010` (**"isMonozygoticTwinOf"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58010):
+- [`KIN:010` (**"isMonozygoticMultipleBirthSiblingOf"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58010):
    The relative and patient are monozygotic twins. For higher-order multiples
    (triplets, quadruplets, etc.), create KIN:010 relationships between every
    pair of individuals in the multiple. Since this is a non-directed relationship,
    each pair requires two FamilyRelationship resources (A→B and B→A).
 
-Relationships are expressed from patient (child) to relative (parent):
-`patient`=child, `relative`=parent, `relationship`="isBiologicalMother" or "isBiologicalFather".
+Relationships are expressed from relative (parent) to patient (child):
+`relative`=parent, `patient`=child, , `relationship`="isBiologicalMotherOf" or "isBiologicalFatherOf".
 
 For other genetic relationships (grandparents, aunts, uncles, cousins), use these
 three codes with inferred individuals to represent the relationship chain.
@@ -208,7 +208,7 @@ Description: "A relationship between individuals in a pedigree or family."
 * extension[relative] ^definition = """
 The participant in the relationship who plays the role named by the relationship.
 
-That is, if the relationship is `KIN:028` (**\"isBiologicalFather\"**), the
+That is, if the relationship is `KIN:028` (**\"isBiologicalFatherOf\"**), the
 `relative` is the father and the `patient` is the child.
 
 This uses [the standard Patient Record extension](http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record)
@@ -227,9 +227,9 @@ The role the relative fills with respect to the patient for this relationship.
 For maximum interoperability with other NCPI systems, prefer these three codes for
 genetic relationships in [PED files](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format):
 
-- `KIN:027` (isBiologicalMother): The relative is the biological mother of the patient.
-- `KIN:028` (isBiologicalFather): The relative is the biological father of the patient.
-- `KIN:010` (isMonozygoticTwin): The relative and patient are monozygotic twins. For
+- `KIN:027` (`isBiologicalMotherOf`): The relative is the biological mother of the patient.
+- `KIN:028` (`isBiologicalFatherOf`): The relative is the biological father of the patient.
+- `KIN:010` (`isMonozygoticMultipleBirthSiblingOf`): The relative and patient are monozygotic twins. For
   higher-order multiples (triplets, quadruplets, etc.), create pairwise `KIN:010`
   relationships between every pair with bidirectional relationships (both A→B and B→A).
 
@@ -249,7 +249,7 @@ are available, NCPI systems may not fully support relationships beyond the three
 ## Example 1 (triplets):
 
 A,B,C are triplets. You need six `NcpiFamilyRelationship`
-resources with `KIN:010` (isMonozygoticTwin):
+resources with `KIN:010` (`isMonozygoticMultipleBirthSiblingOf`):
 - A→B
 - B→A
 - A→C
@@ -259,7 +259,7 @@ resources with `KIN:010` (isMonozygoticTwin):
 
 ## Example 2 (twins):
 If X and Y are twins, you need two `NcpiFamilyRelationship`
-resources with `KIN:010` (isMonozygoticTwin):
+resources with `KIN:010` (`isMonozygoticMultipleBirthSiblingOf`):
 - X→Y
 - Y→X.
 
@@ -267,15 +267,15 @@ resources with `KIN:010` (isMonozygoticTwin):
 If Q is the maternal grandchild of the female R but Q's parent
 is outside the dataset, then you need to make an inferred Patient
 resource D and make two `NcpiFamilyRelationship` resources:
-- D-(KIN:027, isBiologicalMother)→Q
-- R-(KIN:027, isBiologicalMother)→D.
+- D-(KIN:027, `isBiologicalMotherOf`)→Q
+- R-(KIN:027, `isBiologicalMotherOf`)→D.
 """
 * patient 1..1 MS
 * patient ^short = "The participant we are describing."
 * patient ^definition = """
 The participant we are describing.
 
-That is, if the relationship is `KIN:028` (**\"isBiologicalFather\"**), the `patient` is the child
+That is, if the relationship is `KIN:028` (**\"isBiologicalFatherOf\"**), the `patient` is the child
 and the `relative` is the father.
 """
 // Remove the elements that are redundant with Patient for compatibility with

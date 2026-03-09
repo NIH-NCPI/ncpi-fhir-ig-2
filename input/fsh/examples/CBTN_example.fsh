@@ -301,9 +301,9 @@ Title: "An example family relationship (parent to child) based on data from CBTN
 Usage: #example
 Description: """An example family relationship based on data from CBTN.
 
- PT-006SP675 is female and 5 years old
- PT-006SP660 is female and 17 years old
- This is the "daughter" relationship. The relative is the daughter of the patient.
+ PT-006SP675 (the relative) is female and 5 years old
+ PT-006SP660 (the patient) is female and 17 years old
+ PT-006SP675 isBiologicalChildOf (KIN:032) PT-006SP660. This is the "daughter" relationship. The relative is the daughter of the patient.
 
  This demonstrates using extensibility to express the reverse of the
  minimum relationship convention.
@@ -312,10 +312,10 @@ Description: """An example family relationship based on data from CBTN.
 * extension[relative].valueReference = Reference(PT-006SP675)
 // Extensibility to express the reverse of the unambiguous relationship convention
 //
-// Note: You must use isBiologicalChild because the KIN ontology does not have
+// Note: You must use isBiologicalChildOf because the KIN ontology does not have
 //       a sex-linked code like isBiologicalDaughter and CodeableConcept's coding
 //       elements are semantically asserted to be synonyms. So,
-//       [isBiologicalChild, Female] would imply that the two codings were
+//       [isBiologicalChildOf, Female] would imply that the two codings were
 //       intended as synonyms. No information is lost, however, since the patient
 //       resource includes her sex.
 * relationship = $ga4gh-kin#KIN:032 "isBiologicalChildOf"
@@ -334,13 +334,13 @@ Description: """An example family relationship based on data from CBTN.
 
 PT-006SP675 (the patient) is female and 5 years old
 PT-006SP660 (the relative) is female and 17 years old
-This is the "mother" relationship. The relative is the mother of the patient.
+PT-006SP660 isBiologicalMotherOf (KIN:027) PT-006SP675.This is the "mother" relationship. The relative is the mother of the patient.
 
 This instance instantiates the minimum relationship direction to reproduce a PED file.
 """
 * patient = Reference(PT-006SP675)
 * extension[relative].valueReference = Reference(PT-006SP660)
-* relationship = $ga4gh-kin#KIN:027 "isBiologicalMother"
+* relationship = $ga4gh-kin#KIN:027 "isBiologicalMotherOf"
 * status = #completed
 * extension[+] 
   * url = "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"
