@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:FileSize |
+| Draft as of 2026-03-09 | *Computable Name*:FileSize |
 
 The size of the file, e.g., in bytes.
 
@@ -47,72 +47,60 @@ Other representations of profile: [CSV](StructureDefinition-file-size.csv), [Exc
   "name" : "FileSize",
   "title" : "The size of the file, e.g., in bytes.",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "The size of the file, e.g., in bytes.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "DocumentReference"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "DocumentReference"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "The size of the file, e.g., in bytes.",
-        "definition" : "The size of the file, e.g., in bytes."
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "short" : "Indicate the size of the file in reference",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "The size of the file, e.g., in bytes.",
+      "definition" : "The size of the file, e.g., in bytes."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "short" : "Indicate the size of the file in reference",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    }]
   }
 }
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelStudyFamily | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:CdmStudyFamily |
+| Draft as of 2026-03-09 | *Computable Name*:CdmStudyFamily |
 
  
 The **Shared Data Model for Study Family** 
@@ -41,23 +41,19 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelStudy
   "name" : "CdmStudyFamily",
   "title" : "Shared Data Model for Study Family",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "The **Shared Data Model for Study Family**",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
@@ -66,92 +62,78 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelStudy
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "SharedDataModelStudyFamily",
-        "path" : "SharedDataModelStudyFamily",
-        "short" : "Shared Data Model for Study Family",
-        "definition" : "The **Shared Data Model for Study Family**"
-      },
-      {
-        "id" : "SharedDataModelStudyFamily.familyID",
-        "path" : "SharedDataModelStudyFamily.familyID",
-        "short" : "Unique study family identifier. System identifier used for internal references.",
-        "definition" : "Unique study family identifier. System identifier used for internal references.",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelStudyFamily.externalID",
-        "path" : "SharedDataModelStudyFamily.externalID",
-        "short" : "Study family identifier. System identifier used for external references.",
-        "definition" : "Study family identifier. System identifier used for external references.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelStudyFamily.familyType",
-        "path" : "SharedDataModelStudyFamily.familyType",
-        "short" : "Describes the 'type' of study family, eg, trio.",
-        "definition" : "Describes the 'type' of study family, eg, trio.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelStudyFamily.description",
-        "path" : "SharedDataModelStudyFamily.description",
-        "short" : "Free text describing the study family, such as potential inheritance or details about consanguinity",
-        "definition" : "Free text describing the study family, such as potential inheritance or details about consanguinity",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelStudyFamily.consanguinity",
-        "path" : "SharedDataModelStudyFamily.consanguinity",
-        "short" : "Is there known or suspected consanguinity in this study family?",
-        "definition" : "Is there known or suspected consanguinity in this study family?",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelStudyFamily.studyFamilyFocus",
-        "path" : "SharedDataModelStudyFamily.studyFamilyFocus",
-        "short" : "What is this study family investigating? EG, a specific condition",
-        "definition" : "What is this study family investigating? EG, a specific condition",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "SharedDataModelStudyFamily",
+      "path" : "SharedDataModelStudyFamily",
+      "short" : "Shared Data Model for Study Family",
+      "definition" : "The **Shared Data Model for Study Family**"
+    },
+    {
+      "id" : "SharedDataModelStudyFamily.familyID",
+      "path" : "SharedDataModelStudyFamily.familyID",
+      "short" : "Unique study family identifier. System identifier used for internal references.",
+      "definition" : "Unique study family identifier. System identifier used for internal references.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "SharedDataModelStudyFamily.externalID",
+      "path" : "SharedDataModelStudyFamily.externalID",
+      "short" : "Study family identifier. System identifier used for external references.",
+      "definition" : "Study family identifier. System identifier used for external references.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "SharedDataModelStudyFamily.familyType",
+      "path" : "SharedDataModelStudyFamily.familyType",
+      "short" : "Describes the 'type' of study family, eg, trio.",
+      "definition" : "Describes the 'type' of study family, eg, trio.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelStudyFamily.description",
+      "path" : "SharedDataModelStudyFamily.description",
+      "short" : "Free text describing the study family, such as potential inheritance or details about consanguinity",
+      "definition" : "Free text describing the study family, such as potential inheritance or details about consanguinity",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "SharedDataModelStudyFamily.consanguinity",
+      "path" : "SharedDataModelStudyFamily.consanguinity",
+      "short" : "Is there known or suspected consanguinity in this study family?",
+      "definition" : "Is there known or suspected consanguinity in this study family?",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelStudyFamily.studyFamilyFocus",
+      "path" : "SharedDataModelStudyFamily.studyFamilyFocus",
+      "short" : "What is this study family investigating? EG, a specific condition",
+      "definition" : "What is this study family investigating? EG, a specific condition",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    }]
   }
 }
 

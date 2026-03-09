@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:HashType |
+| Draft as of 2026-03-09 | *Computable Name*:HashType |
 
 Algorithm used to calculate the hash (and size, where applicable)
 
@@ -47,72 +47,60 @@ Other representations of profile: [CSV](StructureDefinition-hash-type.csv), [Exc
   "name" : "HashType",
   "title" : "Algorithm used to calculate the hash (and size, where applicable)",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Algorithm used to calculate the hash (and size, where applicable)",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "DocumentReference.extension"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "DocumentReference.extension"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Algorithm used to calculate the hash (and size, where applicable)",
-        "definition" : "Algorithm used to calculate the hash (and size, where applicable)"
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "short" : "Algorithm used to calculate the hash (and size, where applicable)",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Algorithm used to calculate the hash (and size, where applicable)",
+      "definition" : "Algorithm used to calculate the hash (and size, where applicable)"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "short" : "Algorithm used to calculate the hash (and size, where applicable)",
+      "type" : [{
+        "code" : "code"
+      }]
+    }]
   }
 }
 

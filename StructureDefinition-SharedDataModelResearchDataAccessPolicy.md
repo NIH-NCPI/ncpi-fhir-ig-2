@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchDataAccessPolicy | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:CdmResearchDataAccessPolicy |
+| Draft as of 2026-03-09 | *Computable Name*:CdmResearchDataAccessPolicy |
 
  
 The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data. 
@@ -53,23 +53,19 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelResea
   "name" : "CdmResearchDataAccessPolicy",
   "title" : "Shared Data Model for Research Data Access Policy",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
@@ -78,57 +74,49 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelResea
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "SharedDataModelResearchDataAccessPolicy",
-        "path" : "SharedDataModelResearchDataAccessPolicy",
-        "short" : "Shared Data Model for Research Data Access Policy",
-        "definition" : "The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data."
-      },
-      {
-        "id" : "SharedDataModelResearchDataAccessPolicy.policyCode",
-        "path" : "SharedDataModelResearchDataAccessPolicy.policyCode",
-        "short" : "Enumerated values that describe the policy including: dbGaP consent codes, DUO Terms among others. The bindings to these terms should enable groups to create their own codes.",
-        "definition" : "Enumerated values that describe the policy including: dbGaP consent codes, DUO Terms among others. The bindings to these terms should enable groups to create their own codes.",
-        "min" : 1,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs"
-        }
-      },
-      {
-        "id" : "SharedDataModelResearchDataAccessPolicy.description",
-        "path" : "SharedDataModelResearchDataAccessPolicy.description",
-        "short" : "Free text further describing the policy, including description of necessary steps for gaining access to data",
-        "definition" : "Free text further describing the policy, including description of necessary steps for gaining access to data",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelResearchDataAccessPolicy.website",
-        "path" : "SharedDataModelResearchDataAccessPolicy.website",
-        "short" : "TBD",
-        "definition" : "TBD",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "url"
-          }
-        ]
+    "element" : [{
+      "id" : "SharedDataModelResearchDataAccessPolicy",
+      "path" : "SharedDataModelResearchDataAccessPolicy",
+      "short" : "Shared Data Model for Research Data Access Policy",
+      "definition" : "The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data."
+    },
+    {
+      "id" : "SharedDataModelResearchDataAccessPolicy.policyCode",
+      "path" : "SharedDataModelResearchDataAccessPolicy.policyCode",
+      "short" : "Enumerated values that describe the policy including: dbGaP consent codes, DUO Terms among others. The bindings to these terms should enable groups to create their own codes.",
+      "definition" : "Enumerated values that describe the policy including: dbGaP consent codes, DUO Terms among others. The bindings to these terms should enable groups to create their own codes.",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs"
       }
-    ]
+    },
+    {
+      "id" : "SharedDataModelResearchDataAccessPolicy.description",
+      "path" : "SharedDataModelResearchDataAccessPolicy.description",
+      "short" : "Free text further describing the policy, including description of necessary steps for gaining access to data",
+      "definition" : "Free text further describing the policy, including description of necessary steps for gaining access to data",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "SharedDataModelResearchDataAccessPolicy.website",
+      "path" : "SharedDataModelResearchDataAccessPolicy.website",
+      "short" : "TBD",
+      "definition" : "TBD",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "url"
+      }]
+    }]
   }
 }
 

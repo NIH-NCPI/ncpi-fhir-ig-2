@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability | *Version*:0.2.0 |
-| Active as of 2026-02-06 | *Computable Name*:BiospecimenAvailability |
+| Active as of 2026-03-09 | *Computable Name*:BiospecimenAvailability |
 
  
 Sample availability for Sample and Aliquot modules 
@@ -32,37 +32,31 @@ Sample availability for Sample and Aliquot modules
   "title" : "Sample availability for Sample and Aliquot modules",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Sample availability for Sample and Aliquot modules",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 2,
-  "concept" : [
-    {
-      "code" : "available",
-      "display" : "Available"
-    },
-    {
-      "code" : "unavailable",
-      "display" : "Unavailable"
-    }
-  ]
+  "concept" : [{
+    "code" : "available",
+    "display" : "Available"
+  },
+  {
+    "code" : "unavailable",
+    "display" : "Unavailable"
+  }]
 }
 
 ```

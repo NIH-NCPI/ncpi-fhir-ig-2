@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="356a6483-3e37-41b2-a814-6e4c230b3f16"/>
+  <id value="2cc0dbe1-87d9-4338-b12a-17eece9d7d29"/>
   <meta>
-    <lastUpdated value="2026-02-06T18:07:39.712+00:00"/>
+    <lastUpdated value="2026-03-09T20:11:59.698+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -108,10 +108,10 @@
         <title value="Collection Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c5cd634d-e6f2-44c4-af47-4668e0ceffcc"/>
-          <timestamp value="2026-02-06T18:10:39+00:00"/>
+          <identifier value="urn:uuid:e2d0a136-3565-4449-8683-a1889373147c"/>
+          <timestamp value="2026-03-09T20:14:10+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -149,109 +149,6 @@
             <code value="user-defined"/>
             <display value="User Defined"/>
           </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
-            <p class="res-header-id"/>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion from tx-nordics.fhir.org based on:</p>
-              <ul>
-                <li>
-                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-HPO.html">codesystem Human Phenotype Ontology v1.0.0 (CodeSystem)</a>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="http://human-phenotype-ontology.org|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
-                  </span>
-                </li>
-                <li>
-                  <a href="http://terminology.hl7.org/6.2.0/CodeSystem-MONDO.html">codesystem Mondo Disease Ontology v1.0.0 (CodeSystem)</a>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="http://purl.obolibrary.org/obo/mondo.owl|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <p>This value set contains 0 concepts</p>
-            <table class="codes" data-fhir="generated">
-              <tr>
-                <td>
-                  <b>System</b>
-                </td>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display (en)</b>
-                </td>
-                <td>
-                  <b>JSON</b>
-                </td>
-                <td>
-                  <b>XML</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs"/>
-        <version value="0.2.0"/>
-        <name value="ConditionCodeVS"/>
-        <title value="Condition Codes"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
-        <expansion>
-          <identifier value="urn:uuid:ea2fdeb1-9970-4a01-a0e8-09546e4f4a66"/>
-          <timestamp value="2026-02-06T18:10:39+00:00"/>
-          <total value="0"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="en"/>
-          </parameter>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://human-phenotype-ontology.org|1.0.0"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://human-phenotype-ontology.org|1.0.0"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://purl.obolibrary.org/obo/mondo.owl|1.0.0"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://purl.obolibrary.org/obo/mondo.owl|1.0.0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="true"/>
-          </parameter>
         </expansion>
       </ValueSet>
     </resource>
@@ -418,10 +315,10 @@
         <title value="Type of Condition"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3cad9510-a97f-4f27-a6a2-9622af64ddda"/>
-          <timestamp value="2026-02-06T18:10:40+00:00"/>
+          <identifier value="urn:uuid:f1d43bf3-0fd5-4448-a19d-0dfba3a954dd"/>
+          <timestamp value="2026-03-09T20:14:10+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -518,15 +415,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/428263003">428263003</a>
                 </td>
-                <td>NOT suspected (qualifier value)</td>
+                <td>NOT suspected</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;428263003&quot;, &quot;display&quot;: &quot;NOT suspected (qualifier value)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;428263003&quot;, &quot;display&quot;: &quot;NOT suspected&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;428263003&quot;&gt;&lt;display value=&quot;NOT suspected (qualifier value)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;428263003&quot;&gt;&lt;display value=&quot;NOT suspected&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -538,15 +435,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/415684004">415684004</a>
                 </td>
-                <td>Suspected (qualifier value)</td>
+                <td>Suspected</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;415684004&quot;, &quot;display&quot;: &quot;Suspected (qualifier value)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;415684004&quot;, &quot;display&quot;: &quot;Suspected&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;415684004&quot;&gt;&lt;display value=&quot;Suspected (qualifier value)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;415684004&quot;&gt;&lt;display value=&quot;Suspected&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -558,15 +455,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/410515003">410515003</a>
                 </td>
-                <td>Known present (qualifier value)</td>
+                <td>Known present</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;410515003&quot;, &quot;display&quot;: &quot;Known present (qualifier value)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;410515003&quot;, &quot;display&quot;: &quot;Known present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;410515003&quot;&gt;&lt;display value=&quot;Known present (qualifier value)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;410515003&quot;&gt;&lt;display value=&quot;Known present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -599,10 +496,10 @@
         <title value="Consanguinity Value Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7fa3e688-1903-4fdd-87b0-a35bd3e71b34"/>
-          <timestamp value="2026-02-06T18:10:40+00:00"/>
+          <identifier value="urn:uuid:90768e2f-e754-48c2-8816-688618e6120c"/>
+          <timestamp value="2026-03-09T20:14:10+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -626,28 +523,1479 @@
             <valueUri value="null"/>
           </parameter>
           <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
             <name value="used-codesystem"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="428263003"/>
-            <display value="NOT suspected (qualifier value)"/>
+            <display value="NOT suspected"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="415684004"/>
-            <display value="Suspected (qualifier value)"/>
+            <display value="Suspected"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="410515003"/>
-            <display value="Known present (qualifier value)"/>
+            <display value="Known present"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="261665006"/>
             <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/family-biological-relationship-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html">codesystem Family History Relations Ontology v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://purl.org/ga4gh/kin.fhir|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 55 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:994"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58994">KIN:994</a>
+                </td>
+                <td>Man</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:994&quot;, &quot;display&quot;: &quot;Man&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:994&quot;&gt;&lt;display value=&quot;Man&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:993"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58993">KIN:993</a>
+                </td>
+                <td>Woman</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:993&quot;, &quot;display&quot;: &quot;Woman&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:993&quot;&gt;&lt;display value=&quot;Woman&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:996"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58996">KIN:996</a>
+                </td>
+                <td>Male</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:996&quot;, &quot;display&quot;: &quot;Male&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:996&quot;&gt;&lt;display value=&quot;Male&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:995"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58995">KIN:995</a>
+                </td>
+                <td>Female</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:995&quot;, &quot;display&quot;: &quot;Female&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:995&quot;&gt;&lt;display value=&quot;Female&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:998"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58998">KIN:998</a>
+                </td>
+                <td>Person</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:998&quot;, &quot;display&quot;: &quot;Person&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:998&quot;&gt;&lt;display value=&quot;Person&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:997"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58997">KIN:997</a>
+                </td>
+                <td>Sex</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:997&quot;, &quot;display&quot;: &quot;Sex&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:997&quot;&gt;&lt;display value=&quot;Sex&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:999"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58999">KIN:999</a>
+                </td>
+                <td>Domain Entity</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:999&quot;, &quot;display&quot;: &quot;Domain Entity&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:999&quot;&gt;&lt;display value=&quot;Domain Entity&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-Thing"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-Thing">Thing</a>
+                </td>
+                <td>Thing</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;Thing&quot;, &quot;display&quot;: &quot;Thing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;Thing&quot;&gt;&lt;display value=&quot;Thing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:001"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58001">KIN:001</a>
+                </td>
+                <td>isRelative</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:001&quot;, &quot;display&quot;: &quot;isRelative&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:001&quot;&gt;&lt;display value=&quot;isRelative&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:002"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58002">KIN:002</a>
+                </td>
+                <td>isBiologicalRelative</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:002&quot;, &quot;display&quot;: &quot;isBiologicalRelative&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:002&quot;&gt;&lt;display value=&quot;isBiologicalRelative&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:003"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58003">KIN:003</a>
+                </td>
+                <td>isBiologicalParent</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:003&quot;, &quot;display&quot;: &quot;isBiologicalParent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:003&quot;&gt;&lt;display value=&quot;isBiologicalParent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:004"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58004">KIN:004</a>
+                </td>
+                <td>isSpermDonor</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:004&quot;, &quot;display&quot;: &quot;isSpermDonor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:004&quot;&gt;&lt;display value=&quot;isSpermDonor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:005"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58005">KIN:005</a>
+                </td>
+                <td>isGestationalCarrier</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:005&quot;, &quot;display&quot;: &quot;isGestationalCarrier&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:005&quot;&gt;&lt;display value=&quot;isGestationalCarrier&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:006"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58006">KIN:006</a>
+                </td>
+                <td>isSurrogateOvumDonor</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:006&quot;, &quot;display&quot;: &quot;isSurrogateOvumDonor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:006&quot;&gt;&lt;display value=&quot;isSurrogateOvumDonor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:007"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58007">KIN:007</a>
+                </td>
+                <td>isBiologicalSibling</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:007&quot;, &quot;display&quot;: &quot;isBiologicalSibling&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:007&quot;&gt;&lt;display value=&quot;isBiologicalSibling&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:008"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58008">KIN:008</a>
+                </td>
+                <td>isFullsibling</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:008&quot;, &quot;display&quot;: &quot;isFullsibling&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:008&quot;&gt;&lt;display value=&quot;isFullsibling&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:009"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58009">KIN:009</a>
+                </td>
+                <td>isTwin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:009&quot;, &quot;display&quot;: &quot;isTwin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:009&quot;&gt;&lt;display value=&quot;isTwin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:010"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58010">KIN:010</a>
+                </td>
+                <td>isMonozygoticTwin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:010&quot;, &quot;display&quot;: &quot;isMonozygoticTwin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:010&quot;&gt;&lt;display value=&quot;isMonozygoticTwin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:011"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58011">KIN:011</a>
+                </td>
+                <td>isPolyzygoticTwin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:011&quot;, &quot;display&quot;: &quot;isPolyzygoticTwin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:011&quot;&gt;&lt;display value=&quot;isPolyzygoticTwin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:012"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58012">KIN:012</a>
+                </td>
+                <td>isHalfSibling</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:012&quot;, &quot;display&quot;: &quot;isHalfSibling&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:012&quot;&gt;&lt;display value=&quot;isHalfSibling&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:013"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58013">KIN:013</a>
+                </td>
+                <td>isParentalSibling</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:013&quot;, &quot;display&quot;: &quot;isParentalSibling&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:013&quot;&gt;&lt;display value=&quot;isParentalSibling&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:014"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58014">KIN:014</a>
+                </td>
+                <td>isCousin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:014&quot;, &quot;display&quot;: &quot;isCousin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:014&quot;&gt;&lt;display value=&quot;isCousin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:015"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58015">KIN:015</a>
+                </td>
+                <td>isMaternalCousin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:015&quot;, &quot;display&quot;: &quot;isMaternalCousin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:015&quot;&gt;&lt;display value=&quot;isMaternalCousin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:016"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58016">KIN:016</a>
+                </td>
+                <td>isPaternalCousin</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:016&quot;, &quot;display&quot;: &quot;isPaternalCousin&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:016&quot;&gt;&lt;display value=&quot;isPaternalCousin&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:017"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58017">KIN:017</a>
+                </td>
+                <td>isGrandparent</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:017&quot;, &quot;display&quot;: &quot;isGrandparent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:017&quot;&gt;&lt;display value=&quot;isGrandparent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:018"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58018">KIN:018</a>
+                </td>
+                <td>isGreatGrandparent</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:018&quot;, &quot;display&quot;: &quot;isGreatGrandparent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:018&quot;&gt;&lt;display value=&quot;isGreatGrandparent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:019"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58019">KIN:019</a>
+                </td>
+                <td>isSocialLegalRelative</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:019&quot;, &quot;display&quot;: &quot;isSocialLegalRelative&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:019&quot;&gt;&lt;display value=&quot;isSocialLegalRelative&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:020"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58020">KIN:020</a>
+                </td>
+                <td>isParentFigure</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:020&quot;, &quot;display&quot;: &quot;isParentFigure&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:020&quot;&gt;&lt;display value=&quot;isParentFigure&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:021"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58021">KIN:021</a>
+                </td>
+                <td>isFosterParent</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:021&quot;, &quot;display&quot;: &quot;isFosterParent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:021&quot;&gt;&lt;display value=&quot;isFosterParent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:022"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58022">KIN:022</a>
+                </td>
+                <td>isAdoptiveParent</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:022&quot;, &quot;display&quot;: &quot;isAdoptiveParent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:022&quot;&gt;&lt;display value=&quot;isAdoptiveParent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:023"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58023">KIN:023</a>
+                </td>
+                <td>isStepParent</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:023&quot;, &quot;display&quot;: &quot;isStepParent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:023&quot;&gt;&lt;display value=&quot;isStepParent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:024"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58024">KIN:024</a>
+                </td>
+                <td>isSiblingFigure</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:024&quot;, &quot;display&quot;: &quot;isSiblingFigure&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:024&quot;&gt;&lt;display value=&quot;isSiblingFigure&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:025"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58025">KIN:025</a>
+                </td>
+                <td>isStepSibling</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:025&quot;, &quot;display&quot;: &quot;isStepSibling&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:025&quot;&gt;&lt;display value=&quot;isStepSibling&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:026"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58026">KIN:026</a>
+                </td>
+                <td>isPartner</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:026&quot;, &quot;display&quot;: &quot;isPartner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:026&quot;&gt;&lt;display value=&quot;isPartner&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:027"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58027">KIN:027</a>
+                </td>
+                <td>isBiologicalMother</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:027&quot;, &quot;display&quot;: &quot;isBiologicalMother&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:027&quot;&gt;&lt;display value=&quot;isBiologicalMother&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:028"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58028">KIN:028</a>
+                </td>
+                <td>isBiologicalFather</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:028&quot;, &quot;display&quot;: &quot;isBiologicalFather&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:028&quot;&gt;&lt;display value=&quot;isBiologicalFather&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:029"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58029">KIN:029</a>
+                </td>
+                <td>isMitochondrialDonor</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:029&quot;, &quot;display&quot;: &quot;isMitochondrialDonor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:029&quot;&gt;&lt;display value=&quot;isMitochondrialDonor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:030"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58030">KIN:030</a>
+                </td>
+                <td>isConsanguineousPartner</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:030&quot;, &quot;display&quot;: &quot;isConsanguineousPartner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:030&quot;&gt;&lt;display value=&quot;isConsanguineousPartner&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:031"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58031">KIN:031</a>
+                </td>
+                <td>hasSex</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:031&quot;, &quot;display&quot;: &quot;hasSex&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:031&quot;&gt;&lt;display value=&quot;hasSex&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:032"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58032">KIN:032</a>
+                </td>
+                <td>isBiologicalChild</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:032&quot;, &quot;display&quot;: &quot;isBiologicalChild&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:032&quot;&gt;&lt;display value=&quot;isBiologicalChild&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:033"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58033">KIN:033</a>
+                </td>
+                <td>hasBiologicalChild</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:033&quot;, &quot;display&quot;: &quot;hasBiologicalChild&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:033&quot;&gt;&lt;display value=&quot;hasBiologicalChild&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:034"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58034">KIN:034</a>
+                </td>
+                <td>hasBiologicalParent</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:034&quot;, &quot;display&quot;: &quot;hasBiologicalParent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:034&quot;&gt;&lt;display value=&quot;hasBiologicalParent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:035"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58035">KIN:035</a>
+                </td>
+                <td>hasGrandparent</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:035&quot;, &quot;display&quot;: &quot;hasGrandparent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:035&quot;&gt;&lt;display value=&quot;hasGrandparent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:036"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58036">KIN:036</a>
+                </td>
+                <td>isGrandchild</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:036&quot;, &quot;display&quot;: &quot;isGrandchild&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:036&quot;&gt;&lt;display value=&quot;isGrandchild&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:037"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58037">KIN:037</a>
+                </td>
+                <td>hasGrandchild</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:037&quot;, &quot;display&quot;: &quot;hasGrandchild&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:037&quot;&gt;&lt;display value=&quot;hasGrandchild&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:038"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58038">KIN:038</a>
+                </td>
+                <td>isOvumDonor</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:038&quot;, &quot;display&quot;: &quot;isOvumDonor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:038&quot;&gt;&lt;display value=&quot;isOvumDonor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:039"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58039">KIN:039</a>
+                </td>
+                <td>hasGestationalCarrier</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:039&quot;, &quot;display&quot;: &quot;hasGestationalCarrier&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:039&quot;&gt;&lt;display value=&quot;hasGestationalCarrier&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:040"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58040">KIN:040</a>
+                </td>
+                <td>hasBiologicalFather</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:040&quot;, &quot;display&quot;: &quot;hasBiologicalFather&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:040&quot;&gt;&lt;display value=&quot;hasBiologicalFather&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:041"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58041">KIN:041</a>
+                </td>
+                <td>hasBiologicalMother</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:041&quot;, &quot;display&quot;: &quot;hasBiologicalMother&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:041&quot;&gt;&lt;display value=&quot;hasBiologicalMother&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:042"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58042">KIN:042</a>
+                </td>
+                <td>hasOvumDonor</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:042&quot;, &quot;display&quot;: &quot;hasOvumDonor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:042&quot;&gt;&lt;display value=&quot;hasOvumDonor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:043"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58043">KIN:043</a>
+                </td>
+                <td>hasSurrogateOvumDonor</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:043&quot;, &quot;display&quot;: &quot;hasSurrogateOvumDonor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:043&quot;&gt;&lt;display value=&quot;hasSurrogateOvumDonor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:044"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58044">KIN:044</a>
+                </td>
+                <td>hasSpermDonor</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:044&quot;, &quot;display&quot;: &quot;hasSpermDonor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:044&quot;&gt;&lt;display value=&quot;hasSpermDonor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:045"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58045">KIN:045</a>
+                </td>
+                <td>hasGreatGrandParent</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:045&quot;, &quot;display&quot;: &quot;hasGreatGrandParent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:045&quot;&gt;&lt;display value=&quot;hasGreatGrandParent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-KIN:046"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58046">KIN:046</a>
+                </td>
+                <td>hasParentalSibling</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:046&quot;, &quot;display&quot;: &quot;hasParentalSibling&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:046&quot;&gt;&lt;display value=&quot;hasParentalSibling&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://purl.org/ga4gh/kin.fhir-topObjectProperty"> </a>
+                  <code>http://purl.org/ga4gh/kin.fhir</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-topObjectProperty">topObjectProperty</a>
+                </td>
+                <td>topObjectProperty</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;topObjectProperty&quot;, &quot;display&quot;: &quot;topObjectProperty&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;topObjectProperty&quot;&gt;&lt;display value=&quot;topObjectProperty&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/family-biological-relationship-vs"/>
+        <version value="0.2.0"/>
+        <name value="FamilyBiologicalRelationshipVS"/>
+        <title value="Biological Relationship Codes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:90328351-144d-4d24-ab6c-b9210ad0e010"/>
+          <timestamp value="2026-03-09T20:14:11+00:00"/>
+          <total value="55"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://purl.org/ga4gh/kin.fhir|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:994"/>
+            <display value="Man"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:993"/>
+            <display value="Woman"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:996"/>
+            <display value="Male"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:995"/>
+            <display value="Female"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:998"/>
+            <display value="Person"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:997"/>
+            <display value="Sex"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:999"/>
+            <display value="Domain Entity"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="Thing"/>
+            <display value="Thing"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:001"/>
+            <display value="isRelative"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:002"/>
+            <display value="isBiologicalRelative"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:003"/>
+            <display value="isBiologicalParent"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:004"/>
+            <display value="isSpermDonor"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:005"/>
+            <display value="isGestationalCarrier"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:006"/>
+            <display value="isSurrogateOvumDonor"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:007"/>
+            <display value="isBiologicalSibling"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:008"/>
+            <display value="isFullsibling"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:009"/>
+            <display value="isTwin"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:010"/>
+            <display value="isMonozygoticTwin"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:011"/>
+            <display value="isPolyzygoticTwin"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:012"/>
+            <display value="isHalfSibling"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:013"/>
+            <display value="isParentalSibling"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:014"/>
+            <display value="isCousin"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:015"/>
+            <display value="isMaternalCousin"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:016"/>
+            <display value="isPaternalCousin"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:017"/>
+            <display value="isGrandparent"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:018"/>
+            <display value="isGreatGrandparent"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:019"/>
+            <display value="isSocialLegalRelative"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:020"/>
+            <display value="isParentFigure"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:021"/>
+            <display value="isFosterParent"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:022"/>
+            <display value="isAdoptiveParent"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:023"/>
+            <display value="isStepParent"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:024"/>
+            <display value="isSiblingFigure"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:025"/>
+            <display value="isStepSibling"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:026"/>
+            <display value="isPartner"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:027"/>
+            <display value="isBiologicalMother"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:028"/>
+            <display value="isBiologicalFather"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:029"/>
+            <display value="isMitochondrialDonor"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:030"/>
+            <display value="isConsanguineousPartner"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:031"/>
+            <display value="hasSex"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:032"/>
+            <display value="isBiologicalChild"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:033"/>
+            <display value="hasBiologicalChild"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:034"/>
+            <display value="hasBiologicalParent"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:035"/>
+            <display value="hasGrandparent"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:036"/>
+            <display value="isGrandchild"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:037"/>
+            <display value="hasGrandchild"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:038"/>
+            <display value="isOvumDonor"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:039"/>
+            <display value="hasGestationalCarrier"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:040"/>
+            <display value="hasBiologicalFather"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:041"/>
+            <display value="hasBiologicalMother"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:042"/>
+            <display value="hasOvumDonor"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:043"/>
+            <display value="hasSurrogateOvumDonor"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:044"/>
+            <display value="hasSpermDonor"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:045"/>
+            <display value="hasGreatGrandParent"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="KIN:046"/>
+            <display value="hasParentalSibling"/>
+          </contains>
+          <contains>
+            <system value="http://purl.org/ga4gh/kin.fhir"/>
+            <code value="topObjectProperty"/>
+            <display value="topObjectProperty"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -821,10 +2169,10 @@
         <title value="Family Types Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7c51276d-8215-4f54-b9fb-28b5043b88fe"/>
-          <timestamp value="2026-02-06T18:10:41+00:00"/>
+          <identifier value="urn:uuid:efaa509a-5784-4b61-95c5-e885836ce28e"/>
+          <timestamp value="2026-03-09T20:14:11+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -886,6 +2234,133 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/patient-knowledge-source-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-patient-knowledge-source.html">codesystem Patient Knowledge Source v0.2.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source-traditional"> </a>
+                  <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-patient-knowledge-source.html#patient-knowledge-source-traditional">traditional</a>
+                </td>
+                <td>Traditional</td>
+                <td>The knowledge comes from traditional sources like a form filled out by a patient or information copied from an external traditional source like government records.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;traditional&quot;, &quot;display&quot;: &quot;Traditional&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;traditional&quot;&gt;&lt;display value=&quot;Traditional&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source-inferred"> </a>
+                  <code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-patient-knowledge-source.html#patient-knowledge-source-inferred">inferred</a>
+                </td>
+                <td>Inferred</td>
+                <td>The knowledge is inferred from indirect evidence. For example, the existence of one patient's mother can be inferred from the existence of the patient.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;inferred&quot;, &quot;display&quot;: &quot;Inferred&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;inferred&quot;&gt;&lt;display value=&quot;Inferred&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/patient-knowledge-source-vs"/>
+        <version value="0.2.0"/>
+        <name value="PatientKnowledgeSourceVS"/>
+        <title value="Patient Knowledge Source"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:7d04b4bb-3c4f-4fbb-b770-b93ec901a592"/>
+          <timestamp value="2026-03-09T20:14:11+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source"/>
+            <code value="traditional"/>
+            <display value="Traditional"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source"/>
+            <code value="inferred"/>
+            <display value="Inferred"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-assertion-vs"/>
     <resource>
       <ValueSet>
@@ -902,13 +2377,13 @@
                   </span>
                 </li>
                 <li>
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v4.0.0 (CodeSystem)</a>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|4.0.0" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>
-                  <a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-NullFlavor.html">valueset NullFlavor v3.0.0 (ValueSet)</a>
+                  <a href="http://terminology.hl7.org/7.1.0/ValueSet-v3-NullFlavor.html">valueset NullFlavor v3.0.0 (ValueSet)</a>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-NullFlavor|3.0.0" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
@@ -990,7 +2465,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NI">NI</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NI">NI</a>
                 </td>
                 <td>NoInformation</td>
                 <td/>
@@ -1002,12 +2477,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NI&quot;, &quot;display&quot;: &quot;NoInformation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NI&quot;, &quot;display&quot;: &quot;NoInformation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NI&quot;&gt;&lt;display value=&quot;NoInformation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NI&quot;&gt;&lt;display value=&quot;NoInformation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1017,7 +2492,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-INV">INV</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-INV">INV</a>
                 </td>
                 <td>invalid</td>
                 <td/>
@@ -1029,12 +2504,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;INV&quot;, &quot;display&quot;: &quot;invalid&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;INV&quot;, &quot;display&quot;: &quot;invalid&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;INV&quot;&gt;&lt;display value=&quot;invalid&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;INV&quot;&gt;&lt;display value=&quot;invalid&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1044,7 +2519,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-DER">DER</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-DER">DER</a>
                 </td>
                 <td>derived</td>
                 <td/>
@@ -1056,12 +2531,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;DER&quot;, &quot;display&quot;: &quot;derived&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;DER&quot;, &quot;display&quot;: &quot;derived&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;DER&quot;&gt;&lt;display value=&quot;derived&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;DER&quot;&gt;&lt;display value=&quot;derived&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1071,7 +2546,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
                 </td>
                 <td>other</td>
                 <td/>
@@ -1089,12 +2564,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;OTH&quot;, &quot;display&quot;: &quot;other&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;OTH&quot;, &quot;display&quot;: &quot;other&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;OTH&quot;&gt;&lt;display value=&quot;other&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;OTH&quot;&gt;&lt;display value=&quot;other&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1104,7 +2579,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NINF">NINF</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NINF">NINF</a>
                 </td>
                 <td>negative infinity</td>
                 <td/>
@@ -1116,12 +2591,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NINF&quot;, &quot;display&quot;: &quot;negative infinity&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NINF&quot;, &quot;display&quot;: &quot;negative infinity&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NINF&quot;&gt;&lt;display value=&quot;negative infinity&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NINF&quot;&gt;&lt;display value=&quot;negative infinity&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1131,7 +2606,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-PINF">PINF</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-PINF">PINF</a>
                 </td>
                 <td>positive infinity</td>
                 <td/>
@@ -1143,12 +2618,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;PINF&quot;, &quot;display&quot;: &quot;positive infinity&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;PINF&quot;, &quot;display&quot;: &quot;positive infinity&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;PINF&quot;&gt;&lt;display value=&quot;positive infinity&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;PINF&quot;&gt;&lt;display value=&quot;positive infinity&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1158,7 +2633,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNC">UNC</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNC">UNC</a>
                 </td>
                 <td>un-encoded</td>
                 <td/>
@@ -1182,12 +2657,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;UNC&quot;, &quot;display&quot;: &quot;un-encoded&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;UNC&quot;, &quot;display&quot;: &quot;un-encoded&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;UNC&quot;&gt;&lt;display value=&quot;un-encoded&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;UNC&quot;&gt;&lt;display value=&quot;un-encoded&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1197,7 +2672,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-MSK">MSK</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-MSK">MSK</a>
                 </td>
                 <td>masked</td>
                 <td/>
@@ -1211,12 +2686,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;MSK&quot;, &quot;display&quot;: &quot;masked&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;MSK&quot;, &quot;display&quot;: &quot;masked&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;MSK&quot;&gt;&lt;display value=&quot;masked&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;MSK&quot;&gt;&lt;display value=&quot;masked&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1226,7 +2701,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NA">NA</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NA">NA</a>
                 </td>
                 <td>not applicable</td>
                 <td/>
@@ -1238,12 +2713,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NA&quot;, &quot;display&quot;: &quot;not applicable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NA&quot;, &quot;display&quot;: &quot;not applicable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NA&quot;&gt;&lt;display value=&quot;not applicable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NA&quot;&gt;&lt;display value=&quot;not applicable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1253,7 +2728,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
                 </td>
                 <td>unknown</td>
                 <td/>
@@ -1277,12 +2752,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;UNK&quot;, &quot;display&quot;: &quot;unknown&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;UNK&quot;, &quot;display&quot;: &quot;unknown&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;UNK&quot;&gt;&lt;display value=&quot;unknown&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;UNK&quot;&gt;&lt;display value=&quot;unknown&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1292,7 +2767,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-ASKU">ASKU</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-ASKU">ASKU</a>
                 </td>
                 <td>asked but unknown</td>
                 <td/>
@@ -1304,12 +2779,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;ASKU&quot;, &quot;display&quot;: &quot;asked but unknown&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;ASKU&quot;, &quot;display&quot;: &quot;asked but unknown&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;ASKU&quot;&gt;&lt;display value=&quot;asked but unknown&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;ASKU&quot;&gt;&lt;display value=&quot;asked but unknown&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1319,7 +2794,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAV">NAV</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAV">NAV</a>
                 </td>
                 <td>temporarily unavailable</td>
                 <td/>
@@ -1331,12 +2806,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NAV&quot;, &quot;display&quot;: &quot;temporarily unavailable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NAV&quot;, &quot;display&quot;: &quot;temporarily unavailable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NAV&quot;&gt;&lt;display value=&quot;temporarily unavailable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NAV&quot;&gt;&lt;display value=&quot;temporarily unavailable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1346,7 +2821,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NASK">NASK</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NASK">NASK</a>
                 </td>
                 <td>not asked</td>
                 <td/>
@@ -1358,12 +2833,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NASK&quot;, &quot;display&quot;: &quot;not asked&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NASK&quot;, &quot;display&quot;: &quot;not asked&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NASK&quot;&gt;&lt;display value=&quot;not asked&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NASK&quot;&gt;&lt;display value=&quot;not asked&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1373,7 +2848,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAVU">NAVU</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAVU">NAVU</a>
                 </td>
                 <td>Not available</td>
                 <td/>
@@ -1385,12 +2860,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NAVU&quot;, &quot;display&quot;: &quot;Not available&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NAVU&quot;, &quot;display&quot;: &quot;Not available&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NAVU&quot;&gt;&lt;display value=&quot;Not available&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NAVU&quot;&gt;&lt;display value=&quot;Not available&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1400,7 +2875,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-QS">QS</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-QS">QS</a>
                 </td>
                 <td>Sufficient Quantity</td>
                 <td/>
@@ -1412,12 +2887,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;QS&quot;, &quot;display&quot;: &quot;Sufficient Quantity&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;QS&quot;, &quot;display&quot;: &quot;Sufficient Quantity&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;QS&quot;&gt;&lt;display value=&quot;Sufficient Quantity&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;QS&quot;&gt;&lt;display value=&quot;Sufficient Quantity&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1427,7 +2902,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-TRC">TRC</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-TRC">TRC</a>
                 </td>
                 <td>trace</td>
                 <td/>
@@ -1439,12 +2914,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;TRC&quot;, &quot;display&quot;: &quot;trace&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;TRC&quot;, &quot;display&quot;: &quot;trace&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;TRC&quot;&gt;&lt;display value=&quot;trace&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;TRC&quot;&gt;&lt;display value=&quot;trace&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1454,7 +2929,7 @@
                   <code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NP">NP</a>
+                  <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NP">NP</a>
                 </td>
                 <td>not present</td>
                 <td>inactive</td>
@@ -1466,12 +2941,12 @@
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NP&quot;, &quot;display&quot;: &quot;not present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NP&quot;, &quot;display&quot;: &quot;not present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NP&quot;&gt;&lt;display value=&quot;not present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NP&quot;&gt;&lt;display value=&quot;not present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1484,10 +2959,10 @@
         <title value="Assertion of Phenotypic Feature Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:38d00aed-3b9c-461b-badc-72d16174579e"/>
-          <timestamp value="2026-02-06T18:10:35+00:00"/>
+          <identifier value="urn:uuid:c7faa1f4-a670-4234-95e1-2d37fde942ad"/>
+          <timestamp value="2026-03-09T20:14:08+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -1511,6 +2986,10 @@
             <valueUri value="null"/>
           </parameter>
           <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
             <name value="used-codesystem"/>
             <valueUri value="http://loinc.org|2.81"/>
           </parameter>
@@ -1520,7 +2999,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|4.0.0"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -1618,86 +3097,6 @@
             <code value="NP"/>
             <display value="not present"/>
           </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-code-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
-            <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx-nordics.fhir.org based on 
-              <a href="http://terminology.hl7.org/6.2.0/CodeSystem-HPO.html">codesystem Human Phenotype Ontology v1.0.0 (CodeSystem)</a>
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://human-phenotype-ontology.org|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p>This value set contains 0 concepts</p>
-            <table class="codes" data-fhir="generated">
-              <tr>
-                <td>
-                  <b>System</b>
-                </td>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display (en)</b>
-                </td>
-                <td>
-                  <b>JSON</b>
-                </td>
-                <td>
-                  <b>XML</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-code-vs"/>
-        <version value="0.2.0"/>
-        <name value="PhenotypicFeatureCodeVS"/>
-        <title value="Phenotypic Feature Codes"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
-        <expansion>
-          <identifier value="urn:uuid:d8e40e74-7581-48c4-a03d-27cb76f86fff"/>
-          <timestamp value="2026-02-06T18:10:34+00:00"/>
-          <total value="0"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="en"/>
-          </parameter>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://human-phenotype-ontology.org|1.0.0"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://human-phenotype-ontology.org|1.0.0"/>
-          </parameter>
         </expansion>
       </ValueSet>
     </resource>
@@ -1944,10 +3343,10 @@
         <title value="Research Data Access Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:335bdd8a-b034-44ef-85fb-552ed466ea68"/>
-          <timestamp value="2026-02-06T18:10:42+00:00"/>
+          <identifier value="urn:uuid:b1abb13e-ac08-4dc8-960b-2b4f1419b2d9"/>
+          <timestamp value="2026-03-09T20:14:12+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -2166,10 +3565,10 @@
         <title value="Research Data Access Type Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6438df5b-9461-46e8-a6a7-d99838af3567"/>
-          <timestamp value="2026-02-06T18:10:42+00:00"/>
+          <identifier value="urn:uuid:94168069-7091-4a59-a42c-e4750a9927d8"/>
+          <timestamp value="2026-03-09T20:14:12+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2363,10 +3762,10 @@
         <title value="Enumerations for how DOB was constructed"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a6d0cdc4-d347-4154-8d98-769c30385a7e"/>
-          <timestamp value="2026-02-06T18:10:42+00:00"/>
+          <identifier value="urn:uuid:2b106c59-cf11-43b8-b62b-fad3d057593e"/>
+          <timestamp value="2026-03-09T20:14:12+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2560,10 +3959,10 @@
         <title value="Study Name Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7f0df41e-8c6b-487f-8541-f764f3b5ea42"/>
-          <timestamp value="2026-02-06T18:10:42+00:00"/>
+          <identifier value="urn:uuid:152452d6-8560-4b73-89df-d13bbed3164b"/>
+          <timestamp value="2026-03-09T20:14:12+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2717,10 +4116,10 @@
         <title value="Study Personnel Role"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5fcc89ac-ebd1-4a25-bf99-c414af85e835"/>
-          <timestamp value="2026-02-06T18:10:42+00:00"/>
+          <identifier value="urn:uuid:a39f3806-8523-45e2-a4a5-caeb632e5a70"/>
+          <timestamp value="2026-03-09T20:14:12+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -3059,10 +4458,10 @@
         <title value="Family Types Codes"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:fcb00aa1-b561-4ccb-8f49-7c7fb1982027"/>
-          <timestamp value="2026-02-06T18:10:42+00:00"/>
+          <identifier value="urn:uuid:2d9d2a7b-f9c0-4e4c-862a-51c2e23c09d2"/>
+          <timestamp value="2026-03-09T20:14:12+00:00"/>
           <total value="12"/>
           <offset value="0"/>
           <parameter>
@@ -3474,11 +4873,11 @@
         <title value="Title Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-02-06T18:07:39+00:00"/>
+        <date value="2026-03-09T20:11:59+00:00"/>
         <immutable value="true"/>
         <expansion>
-          <identifier value="urn:uuid:685159c3-4475-4dc1-b43e-aa1b64eabd83"/>
-          <timestamp value="2026-02-06T18:10:42+00:00"/>
+          <identifier value="urn:uuid:5967706e-ff9f-49ab-b8e9-790b8d56eebd"/>
+          <timestamp value="2026-03-09T20:14:12+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelCondition | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:CdmConditionAssertion |
+| Draft as of 2026-03-09 | *Computable Name*:CdmConditionAssertion |
 
  
 The Shared Data Model for **Condition Assertions** 
@@ -59,23 +59,19 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelCondi
   "name" : "CdmConditionAssertion",
   "title" : "Shared Data Model for Condition Assertions",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "The Shared Data Model for **Condition Assertions**",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
@@ -84,210 +80,178 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelCondi
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "SharedDataModelCondition",
-        "path" : "SharedDataModelCondition",
-        "short" : "Shared Data Model for Condition Assertions",
-        "definition" : "The Shared Data Model for **Condition Assertions**"
-      },
-      {
-        "id" : "SharedDataModelCondition.participant",
-        "path" : "SharedDataModelCondition.participant",
-        "short" : "The participant we are describing",
-        "definition" : "The participant we are describing",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : ["http://hl7.org/fhir/StructureDefinition/valueset-reference"]
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.condition",
-        "path" : "SharedDataModelCondition.condition",
-        "short" : "The condition, disease, phenotypic feature, etc that this participant may have.",
-        "definition" : "The condition, disease, phenotypic feature, etc that this participant may have.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.conditonText",
-        "path" : "SharedDataModelCondition.conditonText",
-        "short" : "Detailed description / free text about this condition.",
-        "definition" : "Detailed description / free text about this condition.",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.ageAtAssertion",
-        "path" : "SharedDataModelCondition.ageAtAssertion",
-        "short" : "The date or age at which this condition is being asserted.",
-        "definition" : "The date or age at which this condition is being asserted.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.assertion",
-        "path" : "SharedDataModelCondition.assertion",
-        "short" : "Does the participant have this condition?",
-        "definition" : "Does the participant have this condition?",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.conditionType",
-        "path" : "SharedDataModelCondition.conditionType",
-        "short" : "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting.",
-        "definition" : "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.ageAtOnset",
-        "path" : "SharedDataModelCondition.ageAtOnset",
-        "short" : "The age of onset for this condition. Could be expressed with a term, an age, or an age range.",
-        "definition" : "The age of onset for this condition. Could be expressed with a term, an age, or an age range.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.ageAtResolution",
-        "path" : "SharedDataModelCondition.ageAtResolution",
-        "short" : "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range.",
-        "definition" : "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "date"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.otherModifiers",
-        "path" : "SharedDataModelCondition.otherModifiers",
-        "short" : "Any additional modifiers for this condition, such as severity.",
-        "definition" : "Any additional modifiers for this condition, such as severity.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.stage",
-        "path" : "SharedDataModelCondition.stage",
-        "short" : "Cancer staging information",
-        "definition" : "Cancer staging information",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.location",
-        "path" : "SharedDataModelCondition.location",
-        "short" : "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows.",
-        "definition" : "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.locationQualifier",
-        "path" : "SharedDataModelCondition.locationQualifier",
-        "short" : "Any spatial/location qualifiers",
-        "definition" : "Any spatial/location qualifiers",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.lateralityQualifier",
-        "path" : "SharedDataModelCondition.lateralityQualifier",
-        "short" : "Any laterality qualifiers",
-        "definition" : "Any laterality qualifiers",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.assertionSource",
-        "path" : "SharedDataModelCondition.assertionSource",
-        "short" : "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc.",
-        "definition" : "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelCondition.asserter",
-        "path" : "SharedDataModelCondition.asserter",
-        "short" : "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.",
-        "definition" : "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "SharedDataModelCondition",
+      "path" : "SharedDataModelCondition",
+      "short" : "Shared Data Model for Condition Assertions",
+      "definition" : "The Shared Data Model for **Condition Assertions**"
+    },
+    {
+      "id" : "SharedDataModelCondition.participant",
+      "path" : "SharedDataModelCondition.participant",
+      "short" : "The participant we are describing",
+      "definition" : "The participant we are describing",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/valueset-reference"]
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.condition",
+      "path" : "SharedDataModelCondition.condition",
+      "short" : "The condition, disease, phenotypic feature, etc that this participant may have.",
+      "definition" : "The condition, disease, phenotypic feature, etc that this participant may have.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.conditonText",
+      "path" : "SharedDataModelCondition.conditonText",
+      "short" : "Detailed description / free text about this condition.",
+      "definition" : "Detailed description / free text about this condition.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.ageAtAssertion",
+      "path" : "SharedDataModelCondition.ageAtAssertion",
+      "short" : "The date or age at which this condition is being asserted.",
+      "definition" : "The date or age at which this condition is being asserted.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.assertion",
+      "path" : "SharedDataModelCondition.assertion",
+      "short" : "Does the participant have this condition?",
+      "definition" : "Does the participant have this condition?",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.conditionType",
+      "path" : "SharedDataModelCondition.conditionType",
+      "short" : "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting.",
+      "definition" : "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.ageAtOnset",
+      "path" : "SharedDataModelCondition.ageAtOnset",
+      "short" : "The age of onset for this condition. Could be expressed with a term, an age, or an age range.",
+      "definition" : "The age of onset for this condition. Could be expressed with a term, an age, or an age range.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.ageAtResolution",
+      "path" : "SharedDataModelCondition.ageAtResolution",
+      "short" : "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range.",
+      "definition" : "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.otherModifiers",
+      "path" : "SharedDataModelCondition.otherModifiers",
+      "short" : "Any additional modifiers for this condition, such as severity.",
+      "definition" : "Any additional modifiers for this condition, such as severity.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.stage",
+      "path" : "SharedDataModelCondition.stage",
+      "short" : "Cancer staging information",
+      "definition" : "Cancer staging information",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.location",
+      "path" : "SharedDataModelCondition.location",
+      "short" : "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows.",
+      "definition" : "Location information, such as site and/or laterality, of the condition. Multiple values should be interpreted cumulatively, so complex location information, such as \"right lung\" and \"left kidney\" may require multiple condition rows.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.locationQualifier",
+      "path" : "SharedDataModelCondition.locationQualifier",
+      "short" : "Any spatial/location qualifiers",
+      "definition" : "Any spatial/location qualifiers",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.lateralityQualifier",
+      "path" : "SharedDataModelCondition.lateralityQualifier",
+      "short" : "Any laterality qualifiers",
+      "definition" : "Any laterality qualifiers",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.assertionSource",
+      "path" : "SharedDataModelCondition.assertionSource",
+      "short" : "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc.",
+      "definition" : "Where or how was this this assertion about the Participant recorded? This can support understanding the differences between surveys, automated EHR extraction, manual chart abstraction, etc.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelCondition.asserter",
+      "path" : "SharedDataModelCondition.asserter",
+      "short" : "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.",
+      "definition" : "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    }]
   }
 }
 

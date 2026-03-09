@@ -20,11 +20,9 @@
 {
   "resourceType" : "Organization",
   "id" : "kf-research-study-organization-chop",
-  "identifier" : [
-    {
-      "value" : "CHOP"
-    }
-  ],
+  "identifier" : [{
+    "value" : "CHOP"
+  }],
   "name" : "Children's Hospital of Philadelphia",
   "alias" : ["CHOP"]
 }

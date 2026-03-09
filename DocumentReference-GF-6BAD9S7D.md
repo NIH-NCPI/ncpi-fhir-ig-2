@@ -30,7 +30,7 @@ Profile: [NCPI File](StructureDefinition-ncpi-file.md)
 
 **description**: Annotated Variant Call
 
-> **content****If present, only those under the specific Access Policy can access the file in this location.**: [Consent: extension = Use of the data is limited only by the terms of the model Data Use Certification.,https://redcap.chop.edu/surveys/?s=A7M873HMN8,Controlled; status = draft; scope = Research; category = Research Information Access; policyRule = Common Rule Informed Consent](Consent-kf-gru-dac-consent.md)
+> **content****If present, only those under the specific Access Policy can access the file in this location.**: [kf-gru-dac-consent](Consent-kf-gru-dac-consent.md)
 
 ### Attachments
 
@@ -49,88 +49,72 @@ Profile: [NCPI File](StructureDefinition-ncpi-file.md)
   "resourceType" : "DocumentReference",
   "id" : "GF-6BAD9S7D",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version",
-      "valueString" : "V1"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://edamontology.org",
-            "code" : "format_3016",
-            "display" : "VCF"
-          }
-        ]
-      }
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size",
-      "valueQuantity" : {
-        "value" : 1044770380,
-        "unit" : "bytes"
-      }
-    },
-    {
-      "extension" : [
-        {
-          "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
-          "valueString" : "8f107912d862cf91fbfb77bf9c1bab36-4"
-        },
-        {
-          "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type",
-          "valueCode" : "etag"
-        }
-      ],
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/kf-research-study-cbtn"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version",
+    "valueString" : "V1"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://edamontology.org",
+        "code" : "format_3016",
+        "display" : "VCF"
+      }]
     }
-  ],
-  "identifier" : [
-    {
-      "value" : "GF-6BAD9S7D"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size",
+    "valueQuantity" : {
+      "value" : 1044770380,
+      "unit" : "bytes"
     }
-  ],
+  },
+  {
+    "extension" : [{
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
+      "valueString" : "8f107912d862cf91fbfb77bf9c1bab36-4"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type",
+      "valueCode" : "etag"
+    }],
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/kf-research-study-cbtn"
+    }
+  }],
+  "identifier" : [{
+    "value" : "GF-6BAD9S7D"
+  }],
   "status" : "current",
   "type" : {
-    "coding" : [
-      {
-        "system" : "http://edamontology.org",
-        "code" : "operation_3227",
-        "display" : "Variant calling"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://edamontology.org",
+      "code" : "operation_3227",
+      "display" : "Variant calling"
+    }]
   },
   "subject" : {
     "reference" : "Patient/PT-006SP660"
   },
   "description" : "Annotated Variant Call",
-  "content" : [
-    {
-      "extension" : [
-        {
-          "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access",
-          "valueReference" : {
-            "reference" : "Consent/kf-gru-dac-consent"
-          }
-        }
-      ],
-      "attachment" : {
-        "url" : "s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz"
+  "content" : [{
+    "extension" : [{
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access",
+      "valueReference" : {
+        "reference" : "Consent/kf-gru-dac-consent"
       }
+    }],
+    "attachment" : {
+      "url" : "s3://kf-strides-study-us-east-1-prd-sd-54g4wg4r/harmonized-data/family-variants/155bb529-2e7b-474f-ba24-cd0656d5f3d0.CGP.filtered.deNovo.vep.vcf.gz"
     }
-  ]
+  }]
 }
 
 ```

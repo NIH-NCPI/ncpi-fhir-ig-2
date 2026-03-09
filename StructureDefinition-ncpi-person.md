@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:NcpiPerson |
+| Draft as of 2026-03-09 | *Computable Name*:NcpiPerson |
 
  
 Person 
@@ -82,77 +82,65 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-person.csv), [E
   "name" : "NcpiPerson",
   "title" : "NCPI Person",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Person",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Person",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Person",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Person",
-        "path" : "Person"
-      },
-      {
-        "id" : "Person.id",
-        "path" : "Person.id",
-        "short" : "Unique participant identifier"
-      },
-      {
-        "id" : "Person.link",
-        "path" : "Person.link",
-        "min" : 1
-      },
-      {
-        "id" : "Person.link.target",
-        "path" : "Person.link.target",
-        "short" : "The participant we are describing",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-            ]
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Person",
+      "path" : "Person"
+    },
+    {
+      "id" : "Person.id",
+      "path" : "Person.id",
+      "short" : "Unique participant identifier"
+    },
+    {
+      "id" : "Person.link",
+      "path" : "Person.link",
+      "min" : 1
+    },
+    {
+      "id" : "Person.link.target",
+      "path" : "Person.link.target",
+      "short" : "The participant we are describing",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"]
+      }]
+    }]
   }
 }
 

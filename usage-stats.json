@@ -96,7 +96,7 @@
     },
     {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
-      "title": "Study Family Focus",
+      "title": "Family Role",
       "types": [
         "CodeableConcept"
       ]
@@ -272,6 +272,13 @@
       ]
     },
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/patient-knowledge-source",
+      "title": "Patient Knowledge Source",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status",
       "title": "Age at Last Vital Status Extension",
       "types": [
@@ -425,6 +432,12 @@
         "title": "NCPI File"
       }
     ],
+    "FamilyMemberHistory": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship",
+        "title": "Family Relationship"
+      }
+    ],
     "Patient": [
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant",
@@ -491,6 +504,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record": [
+      "FamilyMemberHistory"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
@@ -633,12 +649,16 @@
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study": [
       "Condition",
       "DocumentReference",
+      "FamilyMemberHistory",
       "Group",
       "Observation",
       "Patient",
       "Person",
       "ResearchSubject",
       "Specimen"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/patient-knowledge-source": [
+      "Patient"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status": [
       "Patient"

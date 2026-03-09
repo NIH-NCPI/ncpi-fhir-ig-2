@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/FamilyMemberHistory/cbtn-family-relationship-mother> a fhir:FamilyMemberHistory ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cbtn-family-relationship-mother"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"^^xsd:anyURI ;
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: FamilyMemberHistory cbtn-family-relationship-mother</b></p><a name=\"cbtn-family-relationship-mother\"> </a><a name=\"hccbtn-family-relationship-mother\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-family-relationship.html\">Family Relationship</a></p></div><p><b>FamilyMemberHistory Patient Record</b>: <a href=\"Patient-PT-006SP660.html\">Anonymous Patient (no stated gender), DoB Unknown ( https://cbtn.org/#C21156)</a></p><p><b>Part of Study</b>: <a href=\"ResearchStudy-kf-research-study-cbtn.html\">ResearchStudy Children's Brain Tumor Network (CBTN)</a></p><p><b>status</b>: Completed</p><p><b>patient</b>: <a href=\"Patient-PT-006SP675.html\">Anonymous Patient (no stated gender), DoB:  ( http://chdgenes.org/#20757)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://purl.org/ga4gh/kin.fhir KIN:027}\">isBiologicalMotherOf</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-006SP660> ;
+       fhir:reference [ fhir:v "Patient/PT-006SP660" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study"^^xsd:anyURI ;
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-cbtn> ;
+       fhir:reference [ fhir:v "ResearchStudy/kf-research-study-cbtn" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:patient [
+     fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PT-006SP675> ;
+     fhir:reference [ fhir:v "Patient/PT-006SP675" ]
+  ] ; # 
+  fhir:relationship [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://purl.org/ga4gh/kin.fhir"^^xsd:anyURI ;
+         fhir:l <http://purl.org/ga4gh/kin.fhir>
+       ] ;
+       fhir:version [ fhir:v "0.1.0" ] ;
+       fhir:code [ fhir:v "KIN:027" ] ;
+       fhir:display [ fhir:v "isBiologicalMotherOf" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

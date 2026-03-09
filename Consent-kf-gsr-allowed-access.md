@@ -8,21 +8,12 @@
 
 Profile: [NCPI Research Access Policy](StructureDefinition-ncpi-research-access-policy.md)
 
-**Access Policy Description**: 
+## Participants
 
-Public Posting of Genomic Summary Results - Allowed.
 
-**Research Web Link**: [https://www.genome.gov/about-nhgri/Policies-Guidance/Data-Sharing-Policies-and-Expectations/GSR-update-FAQs](https://www.genome.gov/about-nhgri/Policies-Guidance/Data-Sharing-Policies-and-Expectations/GSR-update-FAQs)
+This consent is made under the regulation Common Rule Informed Consent .
 
-**Access Type**: GSR Allowed
-
-**status**: Pending
-
-**scope**: Research
-
-**category**: Research Information Access
-
-**policyRule**: Common Rule Informed Consent
+The subject has given their consent.
 
 
 
@@ -33,58 +24,44 @@ Public Posting of Genomic Summary Results - Allowed.
   "resourceType" : "Consent",
   "id" : "kf-gsr-allowed-access",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description",
-      "valueMarkdown" : "Public Posting of Genomic Summary Results - Allowed."
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link",
-      "valueUrl" : "https://www.genome.gov/about-nhgri/Policies-Guidance/Data-Sharing-Policies-and-Expectations/GSR-update-FAQs"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
-            "code" : "gsr-allowed"
-          }
-        ]
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description",
+    "valueMarkdown" : "Public Posting of Genomic Summary Results - Allowed."
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link",
+    "valueUrl" : "https://www.genome.gov/about-nhgri/Policies-Guidance/Data-Sharing-Policies-and-Expectations/GSR-update-FAQs"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
+        "code" : "gsr-allowed"
+      }]
     }
-  ],
+  }],
   "status" : "draft",
   "scope" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
-        "code" : "research"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "code" : "research"
+    }]
   },
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-          "code" : "research",
-          "display" : "Research Information Access"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "code" : "research",
+      "display" : "Research Information Access"
+    }]
+  }],
   "policyRule" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
-        "code" : "cric"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+      "code" : "cric"
+    }]
   }
 }
 

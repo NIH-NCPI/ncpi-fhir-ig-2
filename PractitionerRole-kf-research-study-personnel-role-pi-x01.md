@@ -21,16 +21,12 @@
   "organization" : {
     "reference" : "Organization/kf-research-study-organization-chop"
   },
-  "code" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
-          "code" : "researcher"
-        }
-      ]
-    }
-  ]
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+      "code" : "researcher"
+    }]
+  }]
 }
 
 ```

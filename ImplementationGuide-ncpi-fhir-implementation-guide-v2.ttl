@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-06T18:07:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-09T20:11:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -54,7 +54,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.0.1" ]
+     fhir:version [ fhir:v "7.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -89,6 +89,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.us.mcode" ] ;
      fhir:version [ fhir:v "4.0.0" ]
+  ] [
+     fhir:id [ fhir:v "ga4gh_fhir_pedigree" ] ;
+     fhir:uri [
+       fhir:v "http://purl.org/ga4gh/pedigree-fhir-ig/ImplementationGuide/ga4gh.fhir.pedigree"^^xsd:anyURI ;
+       fhir:l <http://purl.org/ga4gh/pedigree-fhir-ig/ImplementationGuide/ga4gh.fhir.pedigree>
+     ] ;
+     fhir:packageId [ fhir:v "ga4gh.fhir.pedigree" ] ;
+     fhir:version [ fhir:v "0.1.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -1477,15 +1485,15 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "Observation"
+           fhir:v "FamilyMemberHistory"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/cbtn-family-relationship-mother> ;
-         fhir:reference [ fhir:v "Observation/cbtn-family-relationship-mother" ]
+         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/FamilyMemberHistory/cbtn-family-relationship-mother> ;
+         fhir:reference [ fhir:v "FamilyMemberHistory/cbtn-family-relationship-mother" ]
        ] ;
-       fhir:name [ fhir:v "An example family relationship based on data from CBTN" ] ;
-       fhir:description [ fhir:v "An example family relationship based on data from CBTN." ] ;
+       fhir:name [ fhir:v "An example family relationship (child to parent) based on data from CBTN" ] ;
+       fhir:description [ fhir:v "An example family relationship based on data from CBTN.\n\nPT-006SP675 (the patient) is female and 5 years old\nPT-006SP660 (the relative) is female and 17 years old\nPT-006SP660 isBiologicalMotherOf (KIN:027) PT-006SP675.This is the \"mother\" relationship. The relative is the mother of the patient.\n\nThis instance instantiates the minimum relationship direction to reproduce a PED file." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"^^xsd:anyURI ;
@@ -1499,15 +1507,15 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "Observation"
+           fhir:v "FamilyMemberHistory"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/cbtn-family-relationship-son> ;
-         fhir:reference [ fhir:v "Observation/cbtn-family-relationship-son" ]
+         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/FamilyMemberHistory/gregor-family-relationship-mother> ;
+         fhir:reference [ fhir:v "FamilyMemberHistory/gregor-family-relationship-mother" ]
        ] ;
-       fhir:name [ fhir:v "An example family relationship based on data from CBTN" ] ;
-       fhir:description [ fhir:v "An example family relationship based on data from CBTN." ] ;
+       fhir:name [ fhir:v "An example family relationship (child-to-parent) based on data from GREGoR" ] ;
+       fhir:description [ fhir:v "An example family relationship based on data from GREGoR.\n\nGSS123456 (the patient) is male and >= 64 years old\nGSS654321 (the relative) has no age or sex information in their patient record.\n    We made them female for the sake of this example.\nGSS654321 isBiologicalMotherOf (KIN:027) GSS123456. This is the \"mother\" relationship. The relative is the mother of the patient.\n\nThis instance instantiates the minimum relationship direction to reproduce a PED file." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"^^xsd:anyURI ;
@@ -1521,15 +1529,15 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "Observation"
+           fhir:v "FamilyMemberHistory"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Observation/gregor-family-relationship-mother> ;
-         fhir:reference [ fhir:v "Observation/gregor-family-relationship-mother" ]
+         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/FamilyMemberHistory/cbtn-family-relationship-daughter> ;
+         fhir:reference [ fhir:v "FamilyMemberHistory/cbtn-family-relationship-daughter" ]
        ] ;
-       fhir:name [ fhir:v "An example family relationship based on data from GREGoR" ] ;
-       fhir:description [ fhir:v "An example family relationship based on data from GREGoR." ] ;
+       fhir:name [ fhir:v "An example family relationship (parent to child) based on data from CBTN" ] ;
+       fhir:description [ fhir:v "An example family relationship based on data from CBTN.\n\n PT-006SP675 (the relative) is female and 5 years old\n PT-006SP660 (the patient) is female and 17 years old\n PT-006SP675 isBiologicalChildOf (KIN:032) PT-006SP660. This is the \"daughter\" relationship. The relative is the daughter of the patient.\n\n This demonstrates using extensibility to express the reverse of the\n minimum relationship convention." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"^^xsd:anyURI ;
@@ -1636,6 +1644,27 @@
        ] ;
        fhir:name [ fhir:v "BAM or CRAM file profile" ] ;
        fhir:description [ fhir:v "BAM or CRAM file profile" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/family-biological-relationship-vs> ;
+         fhir:reference [ fhir:v "ValueSet/family-biological-relationship-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Biological Relationship Codes" ] ;
+       fhir:description [ fhir:v "All codes from the GA4GH KIN ontology for family relationships. This ValueSet\nduplicates the GA4GH PedigreeRelationshipTypes ValueSet to maintain compatibility\nwith the GA4GH PedigreeRelationship profile while documenting NCPI-specific guidance.\n\n# NCPI-Recommended Codes for Maximum Interoperability\n\nFor maximum interoperability with other NCPI systems, prefer these three codes for\ngenetic relationships in pedigrees ([PED files](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format)):\n\n- [`KIN:027` (**\"isBiologicalMotherOf\"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58027):\n   The relative is the biological mother of the patient.\n- [`KIN:028` (**\"isBiologicalFatherOf\"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58028):\n   The relative is the biological father of the patient.\n- [`KIN:010` (**\"isMonozygoticMultipleBirthSiblingOf\"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58010):\n   The relative and patient are monozygotic twins. For higher-order multiples\n   (triplets, quadruplets, etc.), create KIN:010 relationships between every\n   pair of individuals in the multiple. Since this is a non-directed relationship,\n   each pair requires two FamilyRelationship resources (A→B and B→A).\n\nRelationships are expressed from relative (parent) to patient (child):\n`relative`=parent, `patient`=child, , `relationship`=\"isBiologicalMotherOf\" or \"isBiologicalFatherOf\".\n\nFor other genetic relationships (grandparents, aunts, uncles, cousins), use these\nthree codes with inferred individuals to represent the relationship chain.\n\n# Additional KIN Codes\n\nThe full [KIN ontology](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html)\nprovides 55 relationship codes including adoptive parents, step-relations, grandparents,\nand more. While all codes are available for use, NCPI systems may not fully support\nrelationships beyond the three core codes listed above.\n\n# Future Enhancement\n\nWhen FHIR R5/R6 support is added, we plan to use additional binding features to better\nexpress the preference for the three core codes while maintaining the full KIN ontology\nas an option." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1848,7 +1877,7 @@
          fhir:reference [ fhir:v "StructureDefinition/consanguinity" ]
        ] ;
        fhir:name [ fhir:v "Consanguinity Extension" ] ;
-       fhir:description [ fhir:v "Extension containing Consanguinity" ] ;
+       fhir:description [ fhir:v "Extension containing a consanguinity assertion" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2520,7 +2549,28 @@
          fhir:reference [ fhir:v "StructureDefinition/ncpi-family-relationship" ]
        ] ;
        fhir:name [ fhir:v "Family Relationship" ] ;
-       fhir:description [ fhir:v "Family Relationship" ] ;
+       fhir:description [ fhir:v "A relationship between individuals in a pedigree or family." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role> ;
+         fhir:reference [ fhir:v "StructureDefinition/family-role" ]
+       ] ;
+       fhir:name [ fhir:v "Family Role" ] ;
+       fhir:description [ fhir:v "Extension containing Family Role" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3348,6 +3398,69 @@
          a fhir:Canonical ;
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"^^xsd:anyURI ;
          fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/patient-knowledge-source> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-knowledge-source" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Knowledge Source" ] ;
+       fhir:description [ fhir:v "An extension to record the source of the knowledge in a particular\n`Patient` resource.\n\nThe primary use case is to identify those `Patient` resources\ncreated via inference in order to support indirect pedigree\nrelationships." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/patient-knowledge-source-vs> ;
+         fhir:reference [ fhir:v "ValueSet/patient-knowledge-source-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Knowledge Source" ] ;
+       fhir:description [ fhir:v "The source of the knowledge represented in a `Patient` resource." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source> ;
+         fhir:reference [ fhir:v "CodeSystem/patient-knowledge-source" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Knowledge Source" ] ;
+       fhir:description [ fhir:v "The source of the knowledge represented in a `Patient` resource." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -4203,32 +4316,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role> ;
-         fhir:reference [ fhir:v "StructureDefinition/family-role" ]
-       ] ;
-       fhir:name [ fhir:v "Study Family Focus" ] ;
-       fhir:description [ fhir:v "Extension containing Family Role" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus> ;
          fhir:reference [ fhir:v "StructureDefinition/study-family-focus" ]
        ] ;
        fhir:name [ fhir:v "Study Family Focus Extension" ] ;
-       fhir:description [ fhir:v "Extension containing Study Family Focus" ] ;
+       fhir:description [ fhir:v "Extension containing a study family focus assertion" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

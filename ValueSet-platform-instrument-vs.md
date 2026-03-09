@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:PlatformInstrumentVS |
+| Draft as of 2026-03-09 | *Computable Name*:PlatformInstrumentVS |
 
  
 Platform instrument options 
@@ -29,7 +29,7 @@ Platform instrument options
 
 ### Expansion
 
-No Expansion for this valueset (not supported by Publication Tooling)
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -58,62 +58,52 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "Platform instrument options",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Platform instrument options",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://purl.obolibrary.org/obo/obi.owl",
-        "filter" : [
-          {
-            "property" : "concept",
-            "op" : "is-a",
-            "value" : "0000832"
-          }
-        ]
+    "include" : [{
+      "system" : "http://purl.obolibrary.org/obo/obi.owl",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "0000832"
+      }]
+    },
+    {
+      "system" : "http://purl.obolibrary.org/obo/obi.owl",
+      "concept" : [{
+        "code" : "0000689",
+        "display" : "454 Genome Sequence 20"
       },
       {
-        "system" : "http://purl.obolibrary.org/obo/obi.owl",
-        "concept" : [
-          {
-            "code" : "0000689",
-            "display" : "454 Genome Sequence 20"
-          },
-          {
-            "code" : "0000691",
-            "display" : "ABI 377 automated sequencer"
-          },
-          {
-            "code" : "0002022",
-            "display" : "Illumina HiSeq 1000"
-          },
-          {
-            "code" : "0002001",
-            "display" : "Illumina HiSeq 2000"
-          },
-          {
-            "code" : "0002633",
-            "display" : "PacBio Sequel II"
-          }
-        ]
-      }
-    ]
+        "code" : "0000691",
+        "display" : "ABI 377 automated sequencer"
+      },
+      {
+        "code" : "0002022",
+        "display" : "Illumina HiSeq 1000"
+      },
+      {
+        "code" : "0002001",
+        "display" : "Illumina HiSeq 2000"
+      },
+      {
+        "code" : "0002633",
+        "display" : "PacBio Sequel II"
+      }]
+    }]
   }
 }
 

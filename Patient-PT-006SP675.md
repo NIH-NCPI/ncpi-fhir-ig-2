@@ -33,97 +33,83 @@ Anonymous Patient (no stated gender), DoB: ( http://chdgenes.org/#20757)
   "resourceType" : "Patient",
   "id" : "PT-006SP675",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"]
   },
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
-      "valueCode" : "F"
-    },
-    {
-      "extension" : [
-        {
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2106-3",
-            "display" : "White"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "White"
-        }
-      ],
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
-    },
-    {
-      "extension" : [
-        {
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2135-2",
-            "display" : "Hispanic or Latino"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "Hispanic or Latino"
-        }
-      ],
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/kf-research-study-cbtn"
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+    "valueCode" : "F"
+  },
+  {
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2106-3",
+        "display" : "White"
       }
-    }
-  ],
-  "identifier" : [
-    {
-      "system" : "http://chdgenes.org/",
-      "value" : "20757"
     },
     {
-      "system" : "http://chdgenes.org/",
-      "value" : "PT_005B7CZ4"
+      "url" : "text",
+      "valueString" : "White"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+  },
+  {
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2135-2",
+        "display" : "Hispanic or Latino"
+      }
+    },
+    {
+      "url" : "text",
+      "valueString" : "Hispanic or Latino"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/kf-research-study-cbtn"
     }
-  ],
+  }],
+  "identifier" : [{
+    "system" : "http://chdgenes.org/",
+    "value" : "20757"
+  },
+  {
+    "system" : "http://chdgenes.org/",
+    "value" : "PT_005B7CZ4"
+  }],
   "_birthDate" : {
-    "extension" : [
+    "extension" : [{
+      "extension" : [{
+        "url" : "target",
+        "valueReference" : {
+          "reference" : "Patient/PT-006SP675"
+        }
+      },
       {
-        "extension" : [
-          {
-            "url" : "target",
-            "valueReference" : {
-              "reference" : "Patient/PT-006SP675"
-            }
-          },
-          {
-            "url" : "targetPath",
-            "valueString" : "birthDate"
-          },
-          {
-            "url" : "relationship",
-            "valueCode" : "after"
-          },
-          {
-            "url" : "offset",
-            "valueDuration" : {
-              "value" : 2006,
-              "unit" : "d",
-              "system" : "http://unitsofmeasure.org",
-              "code" : "days"
-            }
-          }
-        ],
-        "url" : "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"
-      }
-    ]
+        "url" : "targetPath",
+        "valueString" : "birthDate"
+      },
+      {
+        "url" : "relationship",
+        "valueCode" : "after"
+      },
+      {
+        "url" : "offset",
+        "valueDuration" : {
+          "value" : 2006,
+          "unit" : "d",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "days"
+        }
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"
+    }]
   }
 }
 

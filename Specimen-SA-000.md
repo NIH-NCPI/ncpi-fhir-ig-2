@@ -39,23 +39,17 @@ Profile: [NCPI Sample](StructureDefinition-ncpi-sample.md)
   "resourceType" : "Specimen",
   "id" : "SA-000",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/kf-research-study-cbtn"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/kf-research-study-cbtn"
     }
-  ],
-  "identifier" : [
-    {
-      "value" : "SA_RV52EY7S"
-    }
-  ],
+  }],
+  "identifier" : [{
+    "value" : "SA_RV52EY7S"
+  }],
   "type" : {
     "text" : "Peripheral Whole Blood"
   },
@@ -64,56 +58,46 @@ Profile: [NCPI Sample](StructureDefinition-ncpi-sample.md)
   },
   "collection" : {
     "_collectedDateTime" : {
-      "extension" : [
+      "extension" : [{
+        "extension" : [{
+          "url" : "target",
+          "valueReference" : {
+            "reference" : "Patient/PT-006SP660"
+          }
+        },
         {
-          "extension" : [
-            {
-              "url" : "target",
-              "valueReference" : {
-                "reference" : "Patient/PT-006SP660"
-              }
-            },
-            {
-              "url" : "targetPath",
-              "valueString" : "None"
-            },
-            {
-              "url" : "relationship",
-              "valueCode" : "after"
-            },
-            {
-              "url" : "offset",
-              "valueDuration" : {
-                "value" : 4931,
-                "unit" : "d",
-                "system" : "http://unitsofmeasure.org",
-                "code" : "days"
-              }
-            }
-          ],
-          "url" : "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"
-        }
-      ]
+          "url" : "targetPath",
+          "valueString" : "None"
+        },
+        {
+          "url" : "relationship",
+          "valueCode" : "after"
+        },
+        {
+          "url" : "offset",
+          "valueDuration" : {
+            "value" : 4931,
+            "unit" : "d",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "days"
+          }
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"
+      }]
     },
     "method" : {
-      "coding" : [
-        {
-          "system" : "https://loinc.org",
-          "code" : "LP125037-4"
-        }
-      ],
+      "coding" : [{
+        "system" : "https://loinc.org",
+        "code" : "LP125037-4"
+      }],
       "text" : "Blood Draw"
     }
   },
-  "container" : [
-    {
-      "identifier" : [
-        {
-          "value" : "BS_9QM8EXG3"
-        }
-      ]
-    }
-  ]
+  "container" : [{
+    "identifier" : [{
+      "value" : "BS_9QM8EXG3"
+    }]
+  }]
 }
 
 ```

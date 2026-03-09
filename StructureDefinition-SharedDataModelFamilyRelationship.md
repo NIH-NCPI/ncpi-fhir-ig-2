@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelFamilyRelationship | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:CdmFamilyRelationship |
+| Draft as of 2026-03-09 | *Computable Name*:CdmFamilyRelationship |
 
  
 The **Shared Data Model for Family Relationship** 
@@ -41,23 +41,19 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelFamil
   "name" : "CdmFamilyRelationship",
   "title" : "Shared Data Model for Family Relationship",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "The **Shared Data Model for Family Relationship**",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
@@ -66,53 +62,45 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelFamil
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "SharedDataModelFamilyRelationship",
-        "path" : "SharedDataModelFamilyRelationship",
-        "short" : "Shared Data Model for Family Relationship",
-        "definition" : "The **Shared Data Model for Family Relationship**"
-      },
-      {
-        "id" : "SharedDataModelFamilyRelationship.subject",
-        "path" : "SharedDataModelFamilyRelationship.subject",
-        "short" : "The participant we are describing",
-        "definition" : "The participant we are describing",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelFamilyRelationship.target",
-        "path" : "SharedDataModelFamilyRelationship.target",
-        "short" : "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'",
-        "definition" : "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelFamilyRelationship.relationship",
-        "path" : "SharedDataModelFamilyRelationship.relationship",
-        "short" : "The relationship between the subject and the target.",
-        "definition" : "The relationship between the subject and the target.",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "SharedDataModelFamilyRelationship",
+      "path" : "SharedDataModelFamilyRelationship",
+      "short" : "Shared Data Model for Family Relationship",
+      "definition" : "The **Shared Data Model for Family Relationship**"
+    },
+    {
+      "id" : "SharedDataModelFamilyRelationship.subject",
+      "path" : "SharedDataModelFamilyRelationship.subject",
+      "short" : "The participant we are describing",
+      "definition" : "The participant we are describing",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "SharedDataModelFamilyRelationship.target",
+      "path" : "SharedDataModelFamilyRelationship.target",
+      "short" : "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'",
+      "definition" : "The participant the subject has a relationship to, eg, 'Subject is Relationship to Target' or 'Subject is Mother of Target'",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "SharedDataModelFamilyRelationship.relationship",
+      "path" : "SharedDataModelFamilyRelationship.relationship",
+      "short" : "The relationship between the subject and the target.",
+      "definition" : "The relationship between the subject and the target.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    }]
   }
 }
 

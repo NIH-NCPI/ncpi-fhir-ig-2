@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:HashTypeCS |
+| Draft as of 2026-03-09 | *Computable Name*:HashTypeCS |
 
  
 Algorithm used to calculate the hash (and size, where applicable) 
@@ -32,57 +32,51 @@ Algorithm used to calculate the hash (and size, where applicable)
   "title" : "Hash Types Code System",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Algorithm used to calculate the hash (and size, where applicable)",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 7,
-  "concept" : [
-    {
-      "code" : "md5",
-      "display" : "md5 hash type"
-    },
-    {
-      "code" : "sha256",
-      "display" : "sha256 hash type"
-    },
-    {
-      "code" : "sha512",
-      "display" : "sha512 hash type"
-    },
-    {
-      "code" : "sha1",
-      "display" : "sha1 hash type"
-    },
-    {
-      "code" : "crc32",
-      "display" : "crc32 hash type"
-    },
-    {
-      "code" : "crc32c",
-      "display" : "crc32c hash type"
-    },
-    {
-      "code" : "etag",
-      "display" : "etag hash type"
-    }
-  ]
+  "concept" : [{
+    "code" : "md5",
+    "display" : "md5 hash type"
+  },
+  {
+    "code" : "sha256",
+    "display" : "sha256 hash type"
+  },
+  {
+    "code" : "sha512",
+    "display" : "sha512 hash type"
+  },
+  {
+    "code" : "sha1",
+    "display" : "sha1 hash type"
+  },
+  {
+    "code" : "crc32",
+    "display" : "crc32 hash type"
+  },
+  {
+    "code" : "crc32c",
+    "display" : "crc32c hash type"
+  },
+  {
+    "code" : "etag",
+    "display" : "etag hash type"
+  }]
 }
 
 ```

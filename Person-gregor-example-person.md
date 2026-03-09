@@ -28,31 +28,23 @@ Profile: [NCPI Person](StructureDefinition-ncpi-person.md)
   "resourceType" : "Person",
   "id" : "gregor-example-person",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/research-study-gregor"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/research-study-gregor"
     }
-  ],
-  "identifier" : [
-    {
-      "system" : "https://anvil.terra.bio",
-      "value" : "PS_000"
+  }],
+  "identifier" : [{
+    "system" : "https://anvil.terra.bio",
+    "value" : "PS_000"
+  }],
+  "link" : [{
+    "target" : {
+      "reference" : "Patient/GSS123456"
     }
-  ],
-  "link" : [
-    {
-      "target" : {
-        "reference" : "Patient/GSS123456"
-      }
-    }
-  ]
+  }]
 }
 
 ```

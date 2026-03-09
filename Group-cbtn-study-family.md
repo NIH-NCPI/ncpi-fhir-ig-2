@@ -33,90 +33,72 @@ Profile: [NCPI Study Family](StructureDefinition-ncpi-study-family.md)
   "resourceType" : "Group",
   "id" : "cbtn-study-family",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-study-family"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/kf-research-study-cbtn"
-      }
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-type",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
-            "code" : "Trio",
-            "display" : "Trio"
-          }
-        ]
-      }
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://purl.obolibrary.org/obo/mondo.owl",
-            "code" : "0004992",
-            "display" : "Cancer"
-          }
-        ]
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/kf-research-study-cbtn"
     }
-  ],
-  "identifier" : [
-    {
-      "system" : "https://cbtn.org/",
-      "value" : "FM-00C8Y7DG"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-type",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
+        "code" : "Trio",
+        "display" : "Trio"
+      }]
     }
-  ],
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-family-focus",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://purl.obolibrary.org/obo/mondo.owl",
+        "code" : "0004992",
+        "display" : "Cancer"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "https://cbtn.org/",
+    "value" : "FM-00C8Y7DG"
+  }],
   "type" : "person",
   "actual" : true,
-  "member" : [
-    {
-      "entity" : {
-        "extension" : [
-          {
-            "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
-            "valueCodeableConcept" : {
-              "coding" : [
-                {
-                  "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-                  "code" : "MTH",
-                  "display" : "mother"
-                }
-              ]
-            }
-          }
-        ],
-        "reference" : "Patient/PT-006SP660"
-      }
-    },
-    {
-      "entity" : {
-        "extension" : [
-          {
-            "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
-            "valueCodeableConcept" : {
-              "coding" : [
-                {
-                  "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-                  "code" : "SON",
-                  "display" : "natural son"
-                }
-              ]
-            }
-          }
-        ],
-        "reference" : "Patient/PT-006SP675"
-      }
+  "member" : [{
+    "entity" : {
+      "extension" : [{
+        "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "version" : "3.0.0",
+            "code" : "MTH",
+            "display" : "mother"
+          }]
+        }
+      }],
+      "reference" : "Patient/PT-006SP660"
     }
-  ]
+  },
+  {
+    "entity" : {
+      "extension" : [{
+        "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/family-role",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+            "version" : "3.0.0",
+            "code" : "SON",
+            "display" : "natural son"
+          }]
+        }
+      }],
+      "reference" : "Patient/PT-006SP675"
+    }
+  }]
 }
 
 ```

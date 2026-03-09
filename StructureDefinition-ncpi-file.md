@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:NcpiFile |
+| Draft as of 2026-03-09 | *Computable Name*:NcpiFile |
 
  
 Information about a file related to a research participant 
@@ -79,212 +79,180 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-file.csv), [Exc
   "name" : "NcpiFile",
   "title" : "NCPI File",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Information about a file related to a research participant",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "fhircomposition",
-      "uri" : "http://hl7.org/fhir/composition",
-      "name" : "FHIR Composition"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "cda",
-      "uri" : "http://hl7.org/v3/cda",
-      "name" : "CDA (R2)"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "xds",
-      "uri" : "http://ihe.net/xds",
-      "name" : "XDS metadata equivalent"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "fhircomposition",
+    "uri" : "http://hl7.org/fhir/composition",
+    "name" : "FHIR Composition"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "cda",
+    "uri" : "http://hl7.org/v3/cda",
+    "name" : "CDA (R2)"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "xds",
+    "uri" : "http://ihe.net/xds",
+    "name" : "XDS metadata equivalent"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "DocumentReference",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/DocumentReference",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "DocumentReference",
-        "path" : "DocumentReference"
+    "element" : [{
+      "id" : "DocumentReference",
+      "path" : "DocumentReference"
+    },
+    {
+      "id" : "DocumentReference.extension",
+      "path" : "DocumentReference.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       },
-      {
-        "id" : "DocumentReference.extension",
-        "path" : "DocumentReference.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        },
-        "min" : 2
-      },
-      {
-        "id" : "DocumentReference.extension:fileFormat",
-        "path" : "DocumentReference.extension",
-        "sliceName" : "fileFormat",
-        "short" : "The file format used (EDAM is preferred)",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "DocumentReference.extension:fileSize",
-        "path" : "DocumentReference.extension",
-        "sliceName" : "fileSize",
-        "short" : "Indicate the size of the file in reference",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "DocumentReference.extension:hash",
-        "path" : "DocumentReference.extension",
-        "sliceName" : "hash",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "DocumentReference.extension:contentVersion",
-        "path" : "DocumentReference.extension",
-        "sliceName" : "contentVersion",
-        "short" : "The version of the content in the file",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "DocumentReference.identifier",
-        "path" : "DocumentReference.identifier",
-        "short" : "A related external file ID"
-      },
-      {
-        "id" : "DocumentReference.type",
-        "path" : "DocumentReference.type",
-        "short" : "The type of data contained in this file.",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms-vs"
-        }
-      },
-      {
-        "id" : "DocumentReference.subject",
-        "path" : "DocumentReference.subject",
-        "short" : "The participant(s) for whom this file contains data (i.e., ParticipantID)"
-      },
-      {
-        "id" : "DocumentReference.description",
-        "path" : "DocumentReference.description",
-        "short" : "A description of the file"
-      },
-      {
-        "id" : "DocumentReference.content.extension",
-        "path" : "DocumentReference.content.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "DocumentReference.content.extension:locationAccess",
-        "path" : "DocumentReference.content.extension",
-        "sliceName" : "locationAccess",
-        "short" : "If present, only those under the specific Access Policy can access the file in this location.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "DocumentReference.content.attachment.url",
-        "path" : "DocumentReference.content.attachment.url",
-        "short" : "The URI at which this data can be accessed",
-        "min" : 1
+      "min" : 2
+    },
+    {
+      "id" : "DocumentReference.extension:fileFormat",
+      "path" : "DocumentReference.extension",
+      "sliceName" : "fileFormat",
+      "short" : "The file format used (EDAM is preferred)",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format"]
+      }]
+    },
+    {
+      "id" : "DocumentReference.extension:fileSize",
+      "path" : "DocumentReference.extension",
+      "sliceName" : "fileSize",
+      "short" : "Indicate the size of the file in reference",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size"]
+      }]
+    },
+    {
+      "id" : "DocumentReference.extension:hash",
+      "path" : "DocumentReference.extension",
+      "sliceName" : "hash",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"]
+      }]
+    },
+    {
+      "id" : "DocumentReference.extension:contentVersion",
+      "path" : "DocumentReference.extension",
+      "sliceName" : "contentVersion",
+      "short" : "The version of the content in the file",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version"]
+      }]
+    },
+    {
+      "id" : "DocumentReference.identifier",
+      "path" : "DocumentReference.identifier",
+      "short" : "A related external file ID"
+    },
+    {
+      "id" : "DocumentReference.type",
+      "path" : "DocumentReference.type",
+      "short" : "The type of data contained in this file.",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/edam-ontology-terms-vs"
       }
-    ]
+    },
+    {
+      "id" : "DocumentReference.subject",
+      "path" : "DocumentReference.subject",
+      "short" : "The participant(s) for whom this file contains data (i.e., ParticipantID)"
+    },
+    {
+      "id" : "DocumentReference.description",
+      "path" : "DocumentReference.description",
+      "short" : "A description of the file"
+    },
+    {
+      "id" : "DocumentReference.content.extension",
+      "path" : "DocumentReference.content.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "DocumentReference.content.extension:locationAccess",
+      "path" : "DocumentReference.content.extension",
+      "sliceName" : "locationAccess",
+      "short" : "If present, only those under the specific Access Policy can access the file in this location.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access"]
+      }]
+    },
+    {
+      "id" : "DocumentReference.content.attachment.url",
+      "path" : "DocumentReference.content.attachment.url",
+      "short" : "The URI at which this data can be accessed",
+      "min" : 1
+    }]
   }
 }
 

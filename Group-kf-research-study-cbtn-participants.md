@@ -29,24 +29,18 @@ Profile: [NCPI Research Study Group](StructureDefinition-research-study-group.md
   "resourceType" : "Group",
   "id" : "kf-research-study-cbtn-participants",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/kf-research-study-cbtn"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/kf-research-study-cbtn"
     }
-  ],
-  "identifier" : [
-    {
-      "system" : "https://cbtn.org/",
-      "value" : "CBTN-Participants"
-    }
-  ],
+  }],
+  "identifier" : [{
+    "system" : "https://cbtn.org/",
+    "value" : "CBTN-Participants"
+  }],
   "type" : "person",
   "actual" : true,
   "name" : "Participants from the CBTN research study",

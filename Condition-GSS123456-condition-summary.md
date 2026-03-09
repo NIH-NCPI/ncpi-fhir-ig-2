@@ -29,46 +29,34 @@ Profile: [NCPI Conditon Summary](StructureDefinition-ncpi-condition-summary.md)
   "resourceType" : "Condition",
   "id" : "GSS123456-condition-summary",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition-summary"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition-summary"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://human-phenotype-ontology.org",
-            "code" : "HP:0012832"
-          }
-        ]
-      }
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/research-study-gregor"
-      }
-    }
-  ],
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-          "code" : "Disease"
-        }
-      ]
-    }
-  ],
-  "code" : {
-    "coding" : [
-      {
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers",
+    "valueCodeableConcept" : {
+      "coding" : [{
         "system" : "http://human-phenotype-ontology.org",
-        "code" : "HP:0006951"
-      }
-    ],
+        "code" : "HP:0012832"
+      }]
+    }
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/research-study-gregor"
+    }
+  }],
+  "category" : [{
+    "coding" : [{
+      "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+      "code" : "Disease"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://human-phenotype-ontology.org",
+      "code" : "HP:0006951"
+    }],
     "text" : "retrocerebellar cyst"
   },
   "subject" : {

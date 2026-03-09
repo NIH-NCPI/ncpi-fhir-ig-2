@@ -5,14 +5,14 @@
   "name": "StudyFamilyFocus",
   "title": "Study Family Focus Extension",
   "status": "draft",
-  "description": "Extension containing Study Family Focus",
+  "description": "Extension containing a study family focus assertion",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "Element"
+      "expression": "Group"
     }
   ],
   "type": "Extension",
@@ -24,7 +24,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Study Family Focus Extension",
-        "definition": "Extension containing Study Family Focus"
+        "definition": "Extension containing a study family focus assertion"
       },
       {
         "id": "Extension.extension",

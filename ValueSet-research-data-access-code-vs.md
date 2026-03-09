@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:ResearchDataAccessCodeVS |
+| Draft as of 2026-03-09 | *Computable Name*:ResearchDataAccessCodeVS |
 
  
 Enumerated list of access codes such as dbGaP consent codes among others. 
@@ -52,30 +52,24 @@ Enumerated list of access codes such as dbGaP consent codes among others.
   "title" : "Research Data Access Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"
-      }
-    ]
+    "include" : [{
+      "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"
+    }]
   }
 }
 

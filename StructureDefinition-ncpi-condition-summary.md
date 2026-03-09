@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-condition-summary | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:NcpiConditionSummary |
+| Draft as of 2026-03-09 | *Computable Name*:NcpiConditionSummary |
 
  
 Information about a condition related to a research participant 
@@ -77,208 +77,178 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-condition-summa
   "name" : "NcpiConditionSummary",
   "title" : "NCPI Conditon Summary",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Information about a condition related to a research participant",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Condition",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Condition",
-        "path" : "Condition"
-      },
-      {
-        "id" : "Condition.extension",
-        "path" : "Condition.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Condition.extension:ageAtAssertion",
-        "path" : "Condition.extension",
-        "sliceName" : "ageAtAssertion",
-        "short" : "The age in decimal years of the Subject at the time point which the assertion.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-event"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.extension:entityAsserter",
-        "path" : "Condition.extension",
-        "sliceName" : "entityAsserter",
-        "short" : "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.extension:otherConditionModifiers",
-        "path" : "Condition.extension",
-        "sliceName" : "otherConditionModifiers",
-        "short" : "Any additional modifiers for this condition, such as severity.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.category",
-        "path" : "Condition.category",
-        "short" : "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
-      },
-      {
-        "id" : "Condition.code.coding",
-        "path" : "Condition.code.coding",
-        "short" : "The condition, disease, phenotypic feature, etc that this participant may have."
-      },
-      {
-        "id" : "Condition.code.text",
-        "path" : "Condition.code.text",
-        "short" : "Detailed description / free text about this condition."
-      },
-      {
-        "id" : "Condition.bodySite",
-        "path" : "Condition.bodySite",
-        "short" : "Location information for the condition, including site, laterality, and other qualifiers as appropriate."
-      },
-      {
-        "id" : "Condition.bodySite.extension:mcodeBodyLocationQualifier",
-        "path" : "Condition.bodySite.extension",
-        "sliceName" : "mcodeBodyLocationQualifier",
-        "short" : "Any location qualifiers",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.bodySite.extension:mcodeLateralityQualifier",
-        "path" : "Condition.bodySite.extension",
-        "sliceName" : "mcodeLateralityQualifier",
-        "short" : "Laterality information for the condition site",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.subject",
-        "path" : "Condition.subject",
-        "short" : "The participant we are describing"
-      },
-      {
-        "id" : "Condition.onset[x]",
-        "path" : "Condition.onset[x]",
-        "short" : "The age of onset for this condition. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
-      },
-      {
-        "id" : "Condition.abatement[x]",
-        "path" : "Condition.abatement[x]",
-        "short" : "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range."
-      },
-      {
-        "id" : "Condition.asserter",
-        "path" : "Condition.asserter",
-        "short" : "Reference to the individual responsible for the assertion, if this information is known (participant's Patient resource, if it is self reported, etc.)"
-      },
-      {
-        "id" : "Condition.stage.summary",
-        "path" : "Condition.stage.summary",
-        "short" : "Cancer staging information. Example ValueSet, [condition-stage](https://hl7.org/fhir/R4/valueset-condition-stage.html)"
+    "element" : [{
+      "id" : "Condition",
+      "path" : "Condition"
+    },
+    {
+      "id" : "Condition.extension",
+      "path" : "Condition.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Condition.extension:ageAtAssertion",
+      "path" : "Condition.extension",
+      "sliceName" : "ageAtAssertion",
+      "short" : "The age in decimal years of the Subject at the time point which the assertion.  Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/age-at-event"]
+      }]
+    },
+    {
+      "id" : "Condition.extension:entityAsserter",
+      "path" : "Condition.extension",
+      "sliceName" : "entityAsserter",
+      "short" : "Who recorded this assertion about the Participant? This can support understanding the differences between self-report, doctor, trained research staff.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/entity-asserter"]
+      }]
+    },
+    {
+      "id" : "Condition.extension:otherConditionModifiers",
+      "path" : "Condition.extension",
+      "sliceName" : "otherConditionModifiers",
+      "short" : "Any additional modifiers for this condition, such as severity.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/other-condition-modifiers"]
+      }]
+    },
+    {
+      "id" : "Condition.category",
+      "path" : "Condition.category",
+      "short" : "Does this condition represent a specific \"type\" of condition, such as \"Phenotypic Feature\" vs \"Disease\" in a rare disease setting."
+    },
+    {
+      "id" : "Condition.code.coding",
+      "path" : "Condition.code.coding",
+      "short" : "The condition, disease, phenotypic feature, etc that this participant may have."
+    },
+    {
+      "id" : "Condition.code.text",
+      "path" : "Condition.code.text",
+      "short" : "Detailed description / free text about this condition."
+    },
+    {
+      "id" : "Condition.bodySite",
+      "path" : "Condition.bodySite",
+      "short" : "Location information for the condition, including site, laterality, and other qualifiers as appropriate."
+    },
+    {
+      "id" : "Condition.bodySite.extension:mcodeBodyLocationQualifier",
+      "path" : "Condition.bodySite.extension",
+      "sliceName" : "mcodeBodyLocationQualifier",
+      "short" : "Any location qualifiers",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier"]
+      }]
+    },
+    {
+      "id" : "Condition.bodySite.extension:mcodeLateralityQualifier",
+      "path" : "Condition.bodySite.extension",
+      "sliceName" : "mcodeLateralityQualifier",
+      "short" : "Laterality information for the condition site",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier"]
+      }]
+    },
+    {
+      "id" : "Condition.subject",
+      "path" : "Condition.subject",
+      "short" : "The participant we are describing"
+    },
+    {
+      "id" : "Condition.onset[x]",
+      "path" : "Condition.onset[x]",
+      "short" : "The age of onset for this condition. Could be expressed with a term, an age, or an age range. (for ages use http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime)"
+    },
+    {
+      "id" : "Condition.abatement[x]",
+      "path" : "Condition.abatement[x]",
+      "short" : "The age at which this condition was resolved, abated, or cured. Should be left empty in cases of current active status. Could be expressed with a term, an age, or an age range."
+    },
+    {
+      "id" : "Condition.asserter",
+      "path" : "Condition.asserter",
+      "short" : "Reference to the individual responsible for the assertion, if this information is known (participant's Patient resource, if it is self reported, etc.)"
+    },
+    {
+      "id" : "Condition.stage.summary",
+      "path" : "Condition.stage.summary",
+      "short" : "Cancer staging information. Example ValueSet, [condition-stage](https://hl7.org/fhir/R4/valueset-condition-stage.html)"
+    }]
   }
 }
 

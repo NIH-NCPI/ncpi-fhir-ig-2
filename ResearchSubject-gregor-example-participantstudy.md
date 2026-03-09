@@ -16,7 +16,7 @@ Profile: [NCPI Study Participant](StructureDefinition-ncpi-Study-Participant.md)
 
 **individual**: [Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS123456)](Patient-GSS123456.md)
 
-**consent**: [Consent: extension = Use of the data is limited only by the terms of the model Data Use Certification.,Controlled; status = draft; scope = Research; category = Research Information Access; policyRule = Common Rule Informed Consent](Consent-gregor-gru-consent.md)
+**consent**: [gregor-gru-consent](Consent-gregor-gru-consent.md)
 
 
 
@@ -27,18 +27,14 @@ Profile: [NCPI Study Participant](StructureDefinition-ncpi-Study-Participant.md)
   "resourceType" : "ResearchSubject",
   "id" : "gregor-example-participantstudy",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-Study-Participant"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/research-study-gregor"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/research-study-gregor"
     }
-  ],
+  }],
   "status" : "candidate",
   "study" : {
     "reference" : "ResearchStudy/research-study-gregor"

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-study-party-role-vs | *Version*:0.2.0 |
-| Active as of 2026-02-06 | *Computable Name*:ResearchStudyPartyRoleVS |
+| Active as of 2026-03-09 | *Computable Name*:ResearchStudyPartyRoleVS |
 
  
 A value set with all codes used for the expected family types. 
@@ -51,30 +51,24 @@ A value set with all codes used for the expected family types.
   "title" : "Family Types Codes",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "A value set with all codes used for the expected family types.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://hl7.org/fhir/research-study-party-role"
-      }
-    ]
+    "include" : [{
+      "system" : "http://hl7.org/fhir/research-study-party-role"
+    }]
   }
 }
 

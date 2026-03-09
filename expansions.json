@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "356a6483-3e37-41b2-a814-6e4c230b3f16",
+  "id" : "2cc0dbe1-87d9-4338-b12a-17eece9d7d29",
   "meta" : {
-    "lastUpdated" : "2026-02-06T18:07:39.712+00:00"
+    "lastUpdated" : "2026-03-09T20:11:59.698+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,10 +19,10 @@
       "title" : "Collection Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:c5cd634d-e6f2-44c4-af47-4668e0ceffcc",
-        "timestamp" : "2026-02-06T18:10:39+00:00",
+        "identifier" : "urn:uuid:e2d0a136-3565-4449-8683-a1889373147c",
+        "timestamp" : "2026-03-09T20:14:10+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -64,69 +64,6 @@
     }
   },
   {
-    "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx-nordics.fhir.org based on:</p><ul><li><a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-HPO.html\">codesystem Human Phenotype Ontology v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://human-phenotype-ontology.org|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-MONDO.html\">codesystem Mondo Disease Ontology v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://purl.obolibrary.org/obo/mondo.owl|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 0 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr></table></div>"
-      },
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-code-vs",
-      "version" : "0.2.0",
-      "name" : "ConditionCodeVS",
-      "title" : "Condition Codes",
-      "status" : "draft",
-      "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
-      "expansion" : {
-        "identifier" : "urn:uuid:ea2fdeb1-9970-4a01-a0e8-09546e4f4a66",
-        "timestamp" : "2026-02-06T18:10:39+00:00",
-        "total" : 0,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "displayLanguage",
-          "valueCode" : "en"
-        },
-        {
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-valueset",
-          "valueUri" : "null"
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "http://human-phenotype-ontology.org|1.0.0"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://human-phenotype-ontology.org|1.0.0"
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "http://purl.obolibrary.org/obo/mondo.owl|1.0.0"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://purl.obolibrary.org/obo/mondo.owl|1.0.0"
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : true
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/condition-type-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -140,10 +77,10 @@
       "title" : "Type of Condition",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:3cad9510-a97f-4f27-a6a2-9622af64ddda",
-        "timestamp" : "2026-02-06T18:10:40+00:00",
+        "identifier" : "urn:uuid:f1d43bf3-0fd5-4448-a19d-0dfba3a954dd",
+        "timestamp" : "2026-03-09T20:14:10+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -205,7 +142,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-428263003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/428263003\">428263003</a></td><td>NOT suspected (qualifier value)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;428263003&quot;, &quot;display&quot;: &quot;NOT suspected (qualifier value)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;428263003&quot;&gt;&lt;display value=&quot;NOT suspected (qualifier value)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-415684004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/415684004\">415684004</a></td><td>Suspected (qualifier value)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;415684004&quot;, &quot;display&quot;: &quot;Suspected (qualifier value)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;415684004&quot;&gt;&lt;display value=&quot;Suspected (qualifier value)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-410515003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/410515003\">410515003</a></td><td>Known present (qualifier value)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;410515003&quot;, &quot;display&quot;: &quot;Known present (qualifier value)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;410515003&quot;&gt;&lt;display value=&quot;Known present (qualifier value)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-261665006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;261665006&quot;, &quot;display&quot;: &quot;Unknown&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;261665006&quot;&gt;&lt;display value=&quot;Unknown&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-428263003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/428263003\">428263003</a></td><td>NOT suspected</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;428263003&quot;, &quot;display&quot;: &quot;NOT suspected&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;428263003&quot;&gt;&lt;display value=&quot;NOT suspected&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-415684004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/415684004\">415684004</a></td><td>Suspected</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;415684004&quot;, &quot;display&quot;: &quot;Suspected&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;415684004&quot;&gt;&lt;display value=&quot;Suspected&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-410515003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/410515003\">410515003</a></td><td>Known present</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;410515003&quot;, &quot;display&quot;: &quot;Known present&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;410515003&quot;&gt;&lt;display value=&quot;Known present&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-261665006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;261665006&quot;, &quot;display&quot;: &quot;Unknown&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;261665006&quot;&gt;&lt;display value=&quot;Unknown&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/consanguinity-assertion-vs",
       "version" : "0.2.0",
@@ -213,10 +150,10 @@
       "title" : "Consanguinity Value Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:7fa3e688-1903-4fdd-87b0-a35bd3e71b34",
-        "timestamp" : "2026-02-06T18:10:40+00:00",
+        "identifier" : "urn:uuid:90768e2f-e754-48c2-8816-688618e6120c",
+        "timestamp" : "2026-03-09T20:14:10+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -240,28 +177,350 @@
           "valueUri" : "null"
         },
         {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
           "name" : "used-codesystem",
           "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
           "code" : "428263003",
-          "display" : "NOT suspected (qualifier value)"
+          "display" : "NOT suspected"
         },
         {
           "system" : "http://snomed.info/sct",
           "code" : "415684004",
-          "display" : "Suspected (qualifier value)"
+          "display" : "Suspected"
         },
         {
           "system" : "http://snomed.info/sct",
           "code" : "410515003",
-          "display" : "Known present (qualifier value)"
+          "display" : "Known present"
         },
         {
           "system" : "http://snomed.info/sct",
           "code" : "261665006",
           "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/family-biological-relationship-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html\">codesystem Family History Relations Ontology v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://purl.org/ga4gh/kin.fhir|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 55 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:994\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58994\">KIN:994</a></td><td>Man</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:994&quot;, &quot;display&quot;: &quot;Man&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:994&quot;&gt;&lt;display value=&quot;Man&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:993\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58993\">KIN:993</a></td><td>Woman</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:993&quot;, &quot;display&quot;: &quot;Woman&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:993&quot;&gt;&lt;display value=&quot;Woman&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:996\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58996\">KIN:996</a></td><td>Male</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:996&quot;, &quot;display&quot;: &quot;Male&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:996&quot;&gt;&lt;display value=&quot;Male&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:995\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58995\">KIN:995</a></td><td>Female</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:995&quot;, &quot;display&quot;: &quot;Female&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:995&quot;&gt;&lt;display value=&quot;Female&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:998\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58998\">KIN:998</a></td><td>Person</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:998&quot;, &quot;display&quot;: &quot;Person&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:998&quot;&gt;&lt;display value=&quot;Person&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:997\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58997\">KIN:997</a></td><td>Sex</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:997&quot;, &quot;display&quot;: &quot;Sex&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:997&quot;&gt;&lt;display value=&quot;Sex&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:999\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58999\">KIN:999</a></td><td>Domain Entity</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:999&quot;, &quot;display&quot;: &quot;Domain Entity&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:999&quot;&gt;&lt;display value=&quot;Domain Entity&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-Thing\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-Thing\">Thing</a></td><td>Thing</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;Thing&quot;, &quot;display&quot;: &quot;Thing&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;Thing&quot;&gt;&lt;display value=&quot;Thing&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:001\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58001\">KIN:001</a></td><td>isRelative</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:001&quot;, &quot;display&quot;: &quot;isRelative&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:001&quot;&gt;&lt;display value=&quot;isRelative&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:002\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58002\">KIN:002</a></td><td>isBiologicalRelative</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:002&quot;, &quot;display&quot;: &quot;isBiologicalRelative&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:002&quot;&gt;&lt;display value=&quot;isBiologicalRelative&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:003\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58003\">KIN:003</a></td><td>isBiologicalParent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:003&quot;, &quot;display&quot;: &quot;isBiologicalParent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:003&quot;&gt;&lt;display value=&quot;isBiologicalParent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:004\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58004\">KIN:004</a></td><td>isSpermDonor</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:004&quot;, &quot;display&quot;: &quot;isSpermDonor&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:004&quot;&gt;&lt;display value=&quot;isSpermDonor&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:005\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58005\">KIN:005</a></td><td>isGestationalCarrier</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:005&quot;, &quot;display&quot;: &quot;isGestationalCarrier&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:005&quot;&gt;&lt;display value=&quot;isGestationalCarrier&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:006\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58006\">KIN:006</a></td><td>isSurrogateOvumDonor</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:006&quot;, &quot;display&quot;: &quot;isSurrogateOvumDonor&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:006&quot;&gt;&lt;display value=&quot;isSurrogateOvumDonor&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:007\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58007\">KIN:007</a></td><td>isBiologicalSibling</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:007&quot;, &quot;display&quot;: &quot;isBiologicalSibling&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:007&quot;&gt;&lt;display value=&quot;isBiologicalSibling&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:008\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58008\">KIN:008</a></td><td>isFullsibling</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:008&quot;, &quot;display&quot;: &quot;isFullsibling&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:008&quot;&gt;&lt;display value=&quot;isFullsibling&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:009\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58009\">KIN:009</a></td><td>isTwin</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:009&quot;, &quot;display&quot;: &quot;isTwin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:009&quot;&gt;&lt;display value=&quot;isTwin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:010\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58010\">KIN:010</a></td><td>isMonozygoticTwin</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:010&quot;, &quot;display&quot;: &quot;isMonozygoticTwin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:010&quot;&gt;&lt;display value=&quot;isMonozygoticTwin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:011\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58011\">KIN:011</a></td><td>isPolyzygoticTwin</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:011&quot;, &quot;display&quot;: &quot;isPolyzygoticTwin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:011&quot;&gt;&lt;display value=&quot;isPolyzygoticTwin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:012\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58012\">KIN:012</a></td><td>isHalfSibling</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:012&quot;, &quot;display&quot;: &quot;isHalfSibling&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:012&quot;&gt;&lt;display value=&quot;isHalfSibling&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:013\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58013\">KIN:013</a></td><td>isParentalSibling</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:013&quot;, &quot;display&quot;: &quot;isParentalSibling&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:013&quot;&gt;&lt;display value=&quot;isParentalSibling&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:014\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58014\">KIN:014</a></td><td>isCousin</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:014&quot;, &quot;display&quot;: &quot;isCousin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:014&quot;&gt;&lt;display value=&quot;isCousin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:015\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58015\">KIN:015</a></td><td>isMaternalCousin</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:015&quot;, &quot;display&quot;: &quot;isMaternalCousin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:015&quot;&gt;&lt;display value=&quot;isMaternalCousin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:016\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58016\">KIN:016</a></td><td>isPaternalCousin</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:016&quot;, &quot;display&quot;: &quot;isPaternalCousin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:016&quot;&gt;&lt;display value=&quot;isPaternalCousin&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:017\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58017\">KIN:017</a></td><td>isGrandparent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:017&quot;, &quot;display&quot;: &quot;isGrandparent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:017&quot;&gt;&lt;display value=&quot;isGrandparent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:018\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58018\">KIN:018</a></td><td>isGreatGrandparent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:018&quot;, &quot;display&quot;: &quot;isGreatGrandparent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:018&quot;&gt;&lt;display value=&quot;isGreatGrandparent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:019\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58019\">KIN:019</a></td><td>isSocialLegalRelative</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:019&quot;, &quot;display&quot;: &quot;isSocialLegalRelative&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:019&quot;&gt;&lt;display value=&quot;isSocialLegalRelative&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:020\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58020\">KIN:020</a></td><td>isParentFigure</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:020&quot;, &quot;display&quot;: &quot;isParentFigure&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:020&quot;&gt;&lt;display value=&quot;isParentFigure&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:021\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58021\">KIN:021</a></td><td>isFosterParent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:021&quot;, &quot;display&quot;: &quot;isFosterParent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:021&quot;&gt;&lt;display value=&quot;isFosterParent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:022\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58022\">KIN:022</a></td><td>isAdoptiveParent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:022&quot;, &quot;display&quot;: &quot;isAdoptiveParent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:022&quot;&gt;&lt;display value=&quot;isAdoptiveParent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:023\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58023\">KIN:023</a></td><td>isStepParent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:023&quot;, &quot;display&quot;: &quot;isStepParent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:023&quot;&gt;&lt;display value=&quot;isStepParent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:024\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58024\">KIN:024</a></td><td>isSiblingFigure</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:024&quot;, &quot;display&quot;: &quot;isSiblingFigure&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:024&quot;&gt;&lt;display value=&quot;isSiblingFigure&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:025\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58025\">KIN:025</a></td><td>isStepSibling</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:025&quot;, &quot;display&quot;: &quot;isStepSibling&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:025&quot;&gt;&lt;display value=&quot;isStepSibling&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:026\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58026\">KIN:026</a></td><td>isPartner</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:026&quot;, &quot;display&quot;: &quot;isPartner&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:026&quot;&gt;&lt;display value=&quot;isPartner&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:027\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58027\">KIN:027</a></td><td>isBiologicalMother</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:027&quot;, &quot;display&quot;: &quot;isBiologicalMother&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:027&quot;&gt;&lt;display value=&quot;isBiologicalMother&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:028\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58028\">KIN:028</a></td><td>isBiologicalFather</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:028&quot;, &quot;display&quot;: &quot;isBiologicalFather&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:028&quot;&gt;&lt;display value=&quot;isBiologicalFather&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:029\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58029\">KIN:029</a></td><td>isMitochondrialDonor</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:029&quot;, &quot;display&quot;: &quot;isMitochondrialDonor&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:029&quot;&gt;&lt;display value=&quot;isMitochondrialDonor&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:030\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58030\">KIN:030</a></td><td>isConsanguineousPartner</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:030&quot;, &quot;display&quot;: &quot;isConsanguineousPartner&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:030&quot;&gt;&lt;display value=&quot;isConsanguineousPartner&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:031\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58031\">KIN:031</a></td><td>hasSex</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:031&quot;, &quot;display&quot;: &quot;hasSex&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:031&quot;&gt;&lt;display value=&quot;hasSex&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:032\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58032\">KIN:032</a></td><td>isBiologicalChild</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:032&quot;, &quot;display&quot;: &quot;isBiologicalChild&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:032&quot;&gt;&lt;display value=&quot;isBiologicalChild&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:033\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58033\">KIN:033</a></td><td>hasBiologicalChild</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:033&quot;, &quot;display&quot;: &quot;hasBiologicalChild&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:033&quot;&gt;&lt;display value=&quot;hasBiologicalChild&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:034\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58034\">KIN:034</a></td><td>hasBiologicalParent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:034&quot;, &quot;display&quot;: &quot;hasBiologicalParent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:034&quot;&gt;&lt;display value=&quot;hasBiologicalParent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:035\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58035\">KIN:035</a></td><td>hasGrandparent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:035&quot;, &quot;display&quot;: &quot;hasGrandparent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:035&quot;&gt;&lt;display value=&quot;hasGrandparent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:036\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58036\">KIN:036</a></td><td>isGrandchild</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:036&quot;, &quot;display&quot;: &quot;isGrandchild&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:036&quot;&gt;&lt;display value=&quot;isGrandchild&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:037\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58037\">KIN:037</a></td><td>hasGrandchild</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:037&quot;, &quot;display&quot;: &quot;hasGrandchild&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:037&quot;&gt;&lt;display value=&quot;hasGrandchild&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:038\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58038\">KIN:038</a></td><td>isOvumDonor</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:038&quot;, &quot;display&quot;: &quot;isOvumDonor&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:038&quot;&gt;&lt;display value=&quot;isOvumDonor&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:039\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58039\">KIN:039</a></td><td>hasGestationalCarrier</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:039&quot;, &quot;display&quot;: &quot;hasGestationalCarrier&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:039&quot;&gt;&lt;display value=&quot;hasGestationalCarrier&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:040\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58040\">KIN:040</a></td><td>hasBiologicalFather</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:040&quot;, &quot;display&quot;: &quot;hasBiologicalFather&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:040&quot;&gt;&lt;display value=&quot;hasBiologicalFather&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:041\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58041\">KIN:041</a></td><td>hasBiologicalMother</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:041&quot;, &quot;display&quot;: &quot;hasBiologicalMother&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:041&quot;&gt;&lt;display value=&quot;hasBiologicalMother&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:042\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58042\">KIN:042</a></td><td>hasOvumDonor</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:042&quot;, &quot;display&quot;: &quot;hasOvumDonor&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:042&quot;&gt;&lt;display value=&quot;hasOvumDonor&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:043\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58043\">KIN:043</a></td><td>hasSurrogateOvumDonor</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:043&quot;, &quot;display&quot;: &quot;hasSurrogateOvumDonor&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:043&quot;&gt;&lt;display value=&quot;hasSurrogateOvumDonor&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:044\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58044\">KIN:044</a></td><td>hasSpermDonor</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:044&quot;, &quot;display&quot;: &quot;hasSpermDonor&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:044&quot;&gt;&lt;display value=&quot;hasSpermDonor&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:045\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58045\">KIN:045</a></td><td>hasGreatGrandParent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:045&quot;, &quot;display&quot;: &quot;hasGreatGrandParent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:045&quot;&gt;&lt;display value=&quot;hasGreatGrandParent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-KIN:046\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-KIN.58046\">KIN:046</a></td><td>hasParentalSibling</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;KIN:046&quot;, &quot;display&quot;: &quot;hasParentalSibling&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;KIN:046&quot;&gt;&lt;display value=&quot;hasParentalSibling&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://purl.org/ga4gh/kin.fhir-topObjectProperty\"> </a><code>http://purl.org/ga4gh/kin.fhir</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"file:///home/runner/work/pedigree-fhir-ig/pedigree-fhir-ig/output/CodeSystem-kin.html#kin-topObjectProperty\">topObjectProperty</a></td><td>topObjectProperty</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://purl.org/ga4gh/kin.fhir&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;topObjectProperty&quot;, &quot;display&quot;: &quot;topObjectProperty&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://purl.org/ga4gh/kin.fhir&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;topObjectProperty&quot;&gt;&lt;display value=&quot;topObjectProperty&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/family-biological-relationship-vs",
+      "version" : "0.2.0",
+      "name" : "FamilyBiologicalRelationshipVS",
+      "title" : "Biological Relationship Codes",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-09T20:11:59+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:90328351-144d-4d24-ab6c-b9210ad0e010",
+        "timestamp" : "2026-03-09T20:14:11+00:00",
+        "total" : 55,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://purl.org/ga4gh/kin.fhir|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:994",
+          "display" : "Man"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:993",
+          "display" : "Woman"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:996",
+          "display" : "Male"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:995",
+          "display" : "Female"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:998",
+          "display" : "Person"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:997",
+          "display" : "Sex"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:999",
+          "display" : "Domain Entity"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "Thing",
+          "display" : "Thing"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:001",
+          "display" : "isRelative"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:002",
+          "display" : "isBiologicalRelative"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:003",
+          "display" : "isBiologicalParent"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:004",
+          "display" : "isSpermDonor"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:005",
+          "display" : "isGestationalCarrier"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:006",
+          "display" : "isSurrogateOvumDonor"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:007",
+          "display" : "isBiologicalSibling"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:008",
+          "display" : "isFullsibling"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:009",
+          "display" : "isTwin"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:010",
+          "display" : "isMonozygoticTwin"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:011",
+          "display" : "isPolyzygoticTwin"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:012",
+          "display" : "isHalfSibling"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:013",
+          "display" : "isParentalSibling"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:014",
+          "display" : "isCousin"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:015",
+          "display" : "isMaternalCousin"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:016",
+          "display" : "isPaternalCousin"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:017",
+          "display" : "isGrandparent"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:018",
+          "display" : "isGreatGrandparent"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:019",
+          "display" : "isSocialLegalRelative"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:020",
+          "display" : "isParentFigure"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:021",
+          "display" : "isFosterParent"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:022",
+          "display" : "isAdoptiveParent"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:023",
+          "display" : "isStepParent"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:024",
+          "display" : "isSiblingFigure"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:025",
+          "display" : "isStepSibling"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:026",
+          "display" : "isPartner"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:027",
+          "display" : "isBiologicalMother"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:028",
+          "display" : "isBiologicalFather"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:029",
+          "display" : "isMitochondrialDonor"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:030",
+          "display" : "isConsanguineousPartner"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:031",
+          "display" : "hasSex"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:032",
+          "display" : "isBiologicalChild"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:033",
+          "display" : "hasBiologicalChild"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:034",
+          "display" : "hasBiologicalParent"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:035",
+          "display" : "hasGrandparent"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:036",
+          "display" : "isGrandchild"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:037",
+          "display" : "hasGrandchild"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:038",
+          "display" : "isOvumDonor"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:039",
+          "display" : "hasGestationalCarrier"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:040",
+          "display" : "hasBiologicalFather"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:041",
+          "display" : "hasBiologicalMother"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:042",
+          "display" : "hasOvumDonor"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:043",
+          "display" : "hasSurrogateOvumDonor"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:044",
+          "display" : "hasSpermDonor"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:045",
+          "display" : "hasGreatGrandParent"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "KIN:046",
+          "display" : "hasParentalSibling"
+        },
+        {
+          "system" : "http://purl.org/ga4gh/kin.fhir",
+          "code" : "topObjectProperty",
+          "display" : "topObjectProperty"
         }]
       }
     }
@@ -280,10 +539,10 @@
       "title" : "Family Types Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:7c51276d-8215-4f54-b9fb-28b5043b88fe",
-        "timestamp" : "2026-02-06T18:10:41+00:00",
+        "identifier" : "urn:uuid:efaa509a-5784-4b61-95c5-e885836ce28e",
+        "timestamp" : "2026-03-09T20:14:11+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -344,12 +603,65 @@
     }
   },
   {
+    "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/patient-knowledge-source-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-patient-knowledge-source.html\">codesystem Patient Knowledge Source v0.2.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source|0.2.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source-traditional\"> </a><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-patient-knowledge-source.html#patient-knowledge-source-traditional\">traditional</a></td><td>Traditional</td><td>The knowledge comes from traditional sources like a form filled out by a patient or information copied from an external traditional source like government records.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;traditional&quot;, &quot;display&quot;: &quot;Traditional&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;traditional&quot;&gt;&lt;display value=&quot;Traditional&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source-inferred\"> </a><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-patient-knowledge-source.html#patient-knowledge-source-inferred\">inferred</a></td><td>Inferred</td><td>The knowledge is inferred from indirect evidence. For example, the existence of one patient's mother can be inferred from the existence of the patient.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;inferred&quot;, &quot;display&quot;: &quot;Inferred&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;inferred&quot;&gt;&lt;display value=&quot;Inferred&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/patient-knowledge-source-vs",
+      "version" : "0.2.0",
+      "name" : "PatientKnowledgeSourceVS",
+      "title" : "Patient Knowledge Source",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-09T20:11:59+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:7d04b4bb-3c4f-4fbb-b770-b93ec901a592",
+        "timestamp" : "2026-03-09T20:14:11+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source",
+          "code" : "traditional",
+          "display" : "Traditional"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source",
+          "code" : "inferred",
+          "display" : "Inferred"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-assertion-vs",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html\">codesystem NullFlavor v3.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://terminology.hl7.org/7.0.1/ValueSet-v3-NullFlavor.html\">valueset NullFlavor v3.0.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://terminology.hl7.org/ValueSet/v3-NullFlavor|3.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 19 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Inactive</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA9633-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA9633-4/\">LA9633-4</a></td><td>Present</td><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA9633-4&quot;, &quot;display&quot;: &quot;Present&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA9633-4&quot;&gt;&lt;display value=&quot;Present&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA9634-2\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA9634-2/\">LA9634-2</a></td><td>Absent</td><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA9634-2&quot;, &quot;display&quot;: &quot;Absent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA9634-2&quot;&gt;&lt;display value=&quot;Absent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NI\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NI\">NI</a></td><td>NoInformation</td><td/><td><div><p>**Description:**The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NI&quot;, &quot;display&quot;: &quot;NoInformation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NI&quot;&gt;&lt;display value=&quot;NoInformation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-INV\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-INV\">INV</a></td><td>invalid</td><td/><td><div><p>**Description:**The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain of a variable.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;INV&quot;, &quot;display&quot;: &quot;invalid&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;INV&quot;&gt;&lt;display value=&quot;invalid&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-DER\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-DER\">DER</a></td><td>derived</td><td/><td><div><p>**Description:**An actual value may exist, but it must be derived from the provided information (usually an EXPR generic data type extension will be used to convey the derivation expressionexpression .</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;DER&quot;, &quot;display&quot;: &quot;derived&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;DER&quot;&gt;&lt;display value=&quot;derived&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-OTH\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH\">OTH</a></td><td>other</td><td/><td><div><p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>\n<p><strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.</p>\n<p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;OTH&quot;, &quot;display&quot;: &quot;other&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;OTH&quot;&gt;&lt;display value=&quot;other&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NINF\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NINF\">NINF</a></td><td>negative infinity</td><td/><td><div><p>Negative infinity of numbers.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NINF&quot;, &quot;display&quot;: &quot;negative infinity&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NINF&quot;&gt;&lt;display value=&quot;negative infinity&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-PINF\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-PINF\">PINF</a></td><td>positive infinity</td><td/><td><div><p>Positive infinity of numbers.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;PINF&quot;, &quot;display&quot;: &quot;positive infinity&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;PINF&quot;&gt;&lt;display value=&quot;positive infinity&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-UNC\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNC\">UNC</a></td><td>un-encoded</td><td/><td><div><p><strong>Description:</strong> The actual value has not yet been encoded within the approved value domain.</p>\n<p><strong>Example</strong>: Original text or a local code has been specified but translation or encoding to the approved value set has not yet occurred due to limitations of the sending system. Original text has been captured for a PQ, but not attempt has been made to split the value and unit or to encode the unit in UCUM.</p>\n<p><strong>Usage Notes</strong>: If it is known that it is not possible to encode the concept, OTH should be used instead. However, use of UNC does not necessarily guarantee the concept will be encodable, only that encoding has not been attempted.</p>\n<p>Data type properties such as original text and translations may be present when this null flavor is included.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;UNC&quot;, &quot;display&quot;: &quot;un-encoded&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;UNC&quot;&gt;&lt;display value=&quot;un-encoded&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-MSK\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-MSK\">MSK</a></td><td>masked</td><td/><td><div><p>There is information on this item available but it has not been provided by the sender due to security, privacy or other reasons. There may be an alternate mechanism for gaining access to this information.</p>\n<p>Note: using this null flavor does provide information that may be a breach of confidentiality, even though no detail data is provided. Its primary purpose is for those circumstances where it is necessary to inform the receiver that the information does exist without providing any detail.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;MSK&quot;, &quot;display&quot;: &quot;masked&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;MSK&quot;&gt;&lt;display value=&quot;masked&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NA\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NA\">NA</a></td><td>not applicable</td><td/><td><div><p>Known to have no proper value (e.g., last menstrual period for a male).</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NA&quot;, &quot;display&quot;: &quot;not applicable&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NA&quot;&gt;&lt;display value=&quot;not applicable&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-UNK\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK\">UNK</a></td><td>unknown</td><td/><td><div><p>**Description:**A proper value is applicable, but not known.</p>\n<p><strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:</p>\n<ol>\n<li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>\n<li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>\n</ol>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;UNK&quot;, &quot;display&quot;: &quot;unknown&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;UNK&quot;&gt;&lt;display value=&quot;unknown&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-ASKU\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-ASKU\">ASKU</a></td><td>asked but unknown</td><td/><td><div><p>Information was sought but not found (e.g., patient was asked but didn't know)</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;ASKU&quot;, &quot;display&quot;: &quot;asked but unknown&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;ASKU&quot;&gt;&lt;display value=&quot;asked but unknown&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NAV\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAV\">NAV</a></td><td>temporarily unavailable</td><td/><td><div><p>Information is not available at this time but it is expected that it will be available later.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NAV&quot;, &quot;display&quot;: &quot;temporarily unavailable&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NAV&quot;&gt;&lt;display value=&quot;temporarily unavailable&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NASK\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NASK\">NASK</a></td><td>not asked</td><td/><td><div><p>This information has not been sought (e.g., patient was not asked)</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NASK&quot;, &quot;display&quot;: &quot;not asked&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NASK&quot;&gt;&lt;display value=&quot;not asked&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NAVU\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAVU\">NAVU</a></td><td>Not available</td><td/><td><div><p>Information is not available at this time (with no expectation regarding whether it will or will not be available in the future).</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NAVU&quot;, &quot;display&quot;: &quot;Not available&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NAVU&quot;&gt;&lt;display value=&quot;Not available&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-QS\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-QS\">QS</a></td><td>Sufficient Quantity</td><td/><td><div><p>**Description:**The specific quantity is not known, but is known to be non-zero and is not specified because it makes up the bulk of the material. e.g. 'Add 10mg of ingredient X, 50mg of ingredient Y, and sufficient quantity of water to 100mL.' The null flavor would be used to express the quantity of water.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;QS&quot;, &quot;display&quot;: &quot;Sufficient Quantity&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;QS&quot;&gt;&lt;display value=&quot;Sufficient Quantity&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-TRC\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-TRC\">TRC</a></td><td>trace</td><td/><td><div><p>The content is greater than zero, but too small to be quantified.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;TRC&quot;, &quot;display&quot;: &quot;trace&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;TRC&quot;&gt;&lt;display value=&quot;trace&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NP\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NP\">NP</a></td><td>not present</td><td>inactive</td><td><div><p>Value is not present in a message. This is only defined in messages, never in application data! All values not present in the message must be replaced by the applicable default, or no-information (NI) as the default of all defaults.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NP&quot;, &quot;display&quot;: &quot;not present&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NP&quot;&gt;&lt;display value=&quot;not present&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html\">codesystem NullFlavor v4.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://terminology.hl7.org/CodeSystem/v3-NullFlavor|4.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://terminology.hl7.org/7.1.0/ValueSet-v3-NullFlavor.html\">valueset NullFlavor v3.0.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://terminology.hl7.org/ValueSet/v3-NullFlavor|3.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 19 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Inactive</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA9633-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA9633-4/\">LA9633-4</a></td><td>Present</td><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA9633-4&quot;, &quot;display&quot;: &quot;Present&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA9633-4&quot;&gt;&lt;display value=&quot;Present&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA9634-2\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA9634-2/\">LA9634-2</a></td><td>Absent</td><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA9634-2&quot;, &quot;display&quot;: &quot;Absent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA9634-2&quot;&gt;&lt;display value=&quot;Absent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NI\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NI\">NI</a></td><td>NoInformation</td><td/><td><div><p>**Description:**The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NI&quot;, &quot;display&quot;: &quot;NoInformation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NI&quot;&gt;&lt;display value=&quot;NoInformation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-INV\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-INV\">INV</a></td><td>invalid</td><td/><td><div><p>**Description:**The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain of a variable.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;INV&quot;, &quot;display&quot;: &quot;invalid&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;INV&quot;&gt;&lt;display value=&quot;invalid&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-DER\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-DER\">DER</a></td><td>derived</td><td/><td><div><p>**Description:**An actual value may exist, but it must be derived from the provided information (usually an EXPR generic data type extension will be used to convey the derivation expressionexpression .</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;DER&quot;, &quot;display&quot;: &quot;derived&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;DER&quot;&gt;&lt;display value=&quot;derived&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-OTH\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH\">OTH</a></td><td>other</td><td/><td><div><p>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>\n<p><strong>Usage Notes</strong>: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.</p>\n<p>With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;OTH&quot;, &quot;display&quot;: &quot;other&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;OTH&quot;&gt;&lt;display value=&quot;other&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NINF\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NINF\">NINF</a></td><td>negative infinity</td><td/><td><div><p>Negative infinity of numbers.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NINF&quot;, &quot;display&quot;: &quot;negative infinity&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NINF&quot;&gt;&lt;display value=&quot;negative infinity&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-PINF\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-PINF\">PINF</a></td><td>positive infinity</td><td/><td><div><p>Positive infinity of numbers.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;PINF&quot;, &quot;display&quot;: &quot;positive infinity&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;PINF&quot;&gt;&lt;display value=&quot;positive infinity&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-UNC\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNC\">UNC</a></td><td>un-encoded</td><td/><td><div><p><strong>Description:</strong> The actual value has not yet been encoded within the approved value domain.</p>\n<p><strong>Example</strong>: Original text or a local code has been specified but translation or encoding to the approved value set has not yet occurred due to limitations of the sending system. Original text has been captured for a PQ, but not attempt has been made to split the value and unit or to encode the unit in UCUM.</p>\n<p><strong>Usage Notes</strong>: If it is known that it is not possible to encode the concept, OTH should be used instead. However, use of UNC does not necessarily guarantee the concept will be encodable, only that encoding has not been attempted.</p>\n<p>Data type properties such as original text and translations may be present when this null flavor is included.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;UNC&quot;, &quot;display&quot;: &quot;un-encoded&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;UNC&quot;&gt;&lt;display value=&quot;un-encoded&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-MSK\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-MSK\">MSK</a></td><td>masked</td><td/><td><div><p>There is information on this item available but it has not been provided by the sender due to security, privacy or other reasons. There may be an alternate mechanism for gaining access to this information.</p>\n<p>Note: using this null flavor does provide information that may be a breach of confidentiality, even though no detail data is provided. Its primary purpose is for those circumstances where it is necessary to inform the receiver that the information does exist without providing any detail.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;MSK&quot;, &quot;display&quot;: &quot;masked&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;MSK&quot;&gt;&lt;display value=&quot;masked&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NA\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NA\">NA</a></td><td>not applicable</td><td/><td><div><p>Known to have no proper value (e.g., last menstrual period for a male).</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NA&quot;, &quot;display&quot;: &quot;not applicable&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NA&quot;&gt;&lt;display value=&quot;not applicable&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-UNK\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK\">UNK</a></td><td>unknown</td><td/><td><div><p>**Description:**A proper value is applicable, but not known.</p>\n<p><strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:</p>\n<ol>\n<li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>\n<li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>\n</ol>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;UNK&quot;, &quot;display&quot;: &quot;unknown&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;UNK&quot;&gt;&lt;display value=&quot;unknown&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-ASKU\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-ASKU\">ASKU</a></td><td>asked but unknown</td><td/><td><div><p>Information was sought but not found (e.g., patient was asked but didn't know)</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;ASKU&quot;, &quot;display&quot;: &quot;asked but unknown&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;ASKU&quot;&gt;&lt;display value=&quot;asked but unknown&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NAV\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAV\">NAV</a></td><td>temporarily unavailable</td><td/><td><div><p>Information is not available at this time but it is expected that it will be available later.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NAV&quot;, &quot;display&quot;: &quot;temporarily unavailable&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NAV&quot;&gt;&lt;display value=&quot;temporarily unavailable&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NASK\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NASK\">NASK</a></td><td>not asked</td><td/><td><div><p>This information has not been sought (e.g., patient was not asked)</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NASK&quot;, &quot;display&quot;: &quot;not asked&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NASK&quot;&gt;&lt;display value=&quot;not asked&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NAVU\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NAVU\">NAVU</a></td><td>Not available</td><td/><td><div><p>Information is not available at this time (with no expectation regarding whether it will or will not be available in the future).</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NAVU&quot;, &quot;display&quot;: &quot;Not available&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NAVU&quot;&gt;&lt;display value=&quot;Not available&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-QS\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-QS\">QS</a></td><td>Sufficient Quantity</td><td/><td><div><p>**Description:**The specific quantity is not known, but is known to be non-zero and is not specified because it makes up the bulk of the material. e.g. 'Add 10mg of ingredient X, 50mg of ingredient Y, and sufficient quantity of water to 100mL.' The null flavor would be used to express the quantity of water.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;QS&quot;, &quot;display&quot;: &quot;Sufficient Quantity&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;QS&quot;&gt;&lt;display value=&quot;Sufficient Quantity&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-TRC\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-TRC\">TRC</a></td><td>trace</td><td/><td><div><p>The content is greater than zero, but too small to be quantified.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;TRC&quot;, &quot;display&quot;: &quot;trace&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;TRC&quot;&gt;&lt;display value=&quot;trace&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-NP\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-NP\">NP</a></td><td>not present</td><td>inactive</td><td><div><p>Value is not present in a message. This is only defined in messages, never in application data! All values not present in the message must be replaced by the applicable default, or no-information (NI) as the default of all defaults.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;, &quot;version&quot;: &quot;4.0.0&quot;, &quot;code&quot;: &quot;NP&quot;, &quot;display&quot;: &quot;not present&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-NullFlavor&quot;&gt;&lt;version value=&quot;4.0.0&quot;&gt;&lt;code value=&quot;NP&quot;&gt;&lt;display value=&quot;not present&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-assertion-vs",
       "version" : "0.2.0",
@@ -357,10 +669,10 @@
       "title" : "Assertion of Phenotypic Feature Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:38d00aed-3b9c-461b-badc-72d16174579e",
-        "timestamp" : "2026-02-06T18:10:35+00:00",
+        "identifier" : "urn:uuid:c7faa1f4-a670-4234-95e1-2d37fde942ad",
+        "timestamp" : "2026-03-09T20:14:08+00:00",
         "total" : 19,
         "offset" : 0,
         "parameter" : [{
@@ -384,6 +696,10 @@
           "valueUri" : "null"
         },
         {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
           "name" : "used-codesystem",
           "valueUri" : "http://loinc.org|2.81"
         },
@@ -393,7 +709,7 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor|3.0.0"
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor|4.0.0"
         }],
         "contains" : [{
           "system" : "http://loinc.org",
@@ -495,57 +811,6 @@
     }
   },
   {
-    "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-code-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx-nordics.fhir.org based on <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-HPO.html\">codesystem Human Phenotype Ontology v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://human-phenotype-ontology.org|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 0 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr></table></div>"
-      },
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-code-vs",
-      "version" : "0.2.0",
-      "name" : "PhenotypicFeatureCodeVS",
-      "title" : "Phenotypic Feature Codes",
-      "status" : "draft",
-      "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
-      "expansion" : {
-        "identifier" : "urn:uuid:d8e40e74-7581-48c4-a03d-27cb76f86fff",
-        "timestamp" : "2026-02-06T18:10:34+00:00",
-        "total" : 0,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "displayLanguage",
-          "valueCode" : "en"
-        },
-        {
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-valueset",
-          "valueUri" : "null"
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "http://human-phenotype-ontology.org|1.0.0"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://human-phenotype-ontology.org|1.0.0"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -559,10 +824,10 @@
       "title" : "Research Data Access Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:335bdd8a-b034-44ef-85fb-552ed466ea68",
-        "timestamp" : "2026-02-06T18:10:42+00:00",
+        "identifier" : "urn:uuid:b1abb13e-ac08-4dc8-960b-2b4f1419b2d9",
+        "timestamp" : "2026-03-09T20:14:12+00:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{
@@ -652,10 +917,10 @@
       "title" : "Research Data Access Type Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:6438df5b-9461-46e8-a6a7-d99838af3567",
-        "timestamp" : "2026-02-06T18:10:42+00:00",
+        "identifier" : "urn:uuid:94168069-7091-4a59-a42c-e4750a9927d8",
+        "timestamp" : "2026-03-09T20:14:12+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -720,10 +985,10 @@
       "title" : "Enumerations for how DOB was constructed",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a6d0cdc4-d347-4154-8d98-769c30385a7e",
-        "timestamp" : "2026-02-06T18:10:42+00:00",
+        "identifier" : "urn:uuid:2b106c59-cf11-43b8-b62b-fad3d057593e",
+        "timestamp" : "2026-03-09T20:14:12+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -788,10 +1053,10 @@
       "title" : "Study Name Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:7f0df41e-8c6b-487f-8541-f764f3b5ea42",
-        "timestamp" : "2026-02-06T18:10:42+00:00",
+        "identifier" : "urn:uuid:152452d6-8560-4b73-89df-d13bbed3164b",
+        "timestamp" : "2026-03-09T20:14:12+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -856,10 +1121,10 @@
       "title" : "Study Personnel Role",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:5fcc89ac-ebd1-4a25-bf99-c414af85e835",
-        "timestamp" : "2026-02-06T18:10:42+00:00",
+        "identifier" : "urn:uuid:a39f3806-8523-45e2-a4a5-caeb632e5a70",
+        "timestamp" : "2026-03-09T20:14:12+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -914,10 +1179,10 @@
       "title" : "Family Types Codes",
       "status" : "active",
       "experimental" : true,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:fcb00aa1-b561-4ccb-8f49-7c7fb1982027",
-        "timestamp" : "2026-02-06T18:10:42+00:00",
+        "identifier" : "urn:uuid:2d9d2a7b-f9c0-4e4c-862a-51c2e23c09d2",
+        "timestamp" : "2026-03-09T20:14:12+00:00",
         "total" : 12,
         "offset" : 0,
         "parameter" : [{
@@ -1024,11 +1289,11 @@
       "title" : "Title Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-02-06T18:07:39+00:00",
+      "date" : "2026-03-09T20:11:59+00:00",
       "immutable" : true,
       "expansion" : {
-        "identifier" : "urn:uuid:685159c3-4475-4dc1-b43e-aa1b64eabd83",
-        "timestamp" : "2026-02-06T18:10:42+00:00",
+        "identifier" : "urn:uuid:5967706e-ff9f-49ab-b8e9-790b8d56eebd",
+        "timestamp" : "2026-03-09T20:14:12+00:00",
         "total" : 13,
         "offset" : 0,
         "parameter" : [{

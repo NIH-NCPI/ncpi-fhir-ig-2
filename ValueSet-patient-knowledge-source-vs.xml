@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="patient-knowledge-source-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet patient-knowledge-source-vs</b></p><a name="patient-knowledge-source-vs"> </a><a name="hcpatient-knowledge-source-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-patient-knowledge-source.html"><code>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span></li></ul></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/patient-knowledge-source-vs"/>
+  <version value="0.2.0"/>
+  <name value="PatientKnowledgeSourceVS"/>
+  <title value="Patient Knowledge Source"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-03-09T20:11:59+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ncpi-acc.org/about/working-groups"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="The source of the knowledge represented in a `Patient` resource."/>
+  <compose>
+    <include>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source"/>
+    </include>
+  </compose>
+</ValueSet>

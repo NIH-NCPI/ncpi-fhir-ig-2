@@ -21,15 +21,11 @@ Profile: [NCPI Research Study](StructureDefinition-ncpi-research-study.md)
   "resourceType" : "ResearchStudy",
   "id" : "research-study-gregor",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"]
   },
-  "identifier" : [
-    {
-      "value" : "AnVIL_GREGoR_GSS_U08_GRU"
-    }
-  ],
+  "identifier" : [{
+    "value" : "AnVIL_GREGoR_GSS_U08_GRU"
+  }],
   "status" : "completed"
 }
 

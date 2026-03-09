@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -35,7 +35,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.0.1"
+    "version" : "7.1.0"
   },
   {
     "id" : "hl7ext",
@@ -58,6 +58,12 @@
     "uri" : "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
     "packageId" : "hl7.fhir.us.mcode",
     "version" : "4.0.0"
+  },
+  {
+    "id" : "ga4gh_fhir_pedigree",
+    "uri" : "http://purl.org/ga4gh/pedigree-fhir-ig/ImplementationGuide/ga4gh.fhir.pedigree",
+    "packageId" : "ga4gh.fhir.pedigree",
+    "version" : "0.1.0"
   }],
   "definition" : {
     "extension" : [{
@@ -713,37 +719,37 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "FamilyMemberHistory"
       }],
       "reference" : {
-        "reference" : "Observation/cbtn-family-relationship-mother"
+        "reference" : "FamilyMemberHistory/cbtn-family-relationship-mother"
       },
-      "name" : "An example family relationship based on data from CBTN",
-      "description" : "An example family relationship based on data from CBTN.",
+      "name" : "An example family relationship (child to parent) based on data from CBTN",
+      "description" : "An example family relationship based on data from CBTN.\n\nPT-006SP675 (the patient) is female and 5 years old\nPT-006SP660 (the relative) is female and 17 years old\nPT-006SP660 isBiologicalMotherOf (KIN:027) PT-006SP675.This is the \"mother\" relationship. The relative is the mother of the patient.\n\nThis instance instantiates the minimum relationship direction to reproduce a PED file.",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "FamilyMemberHistory"
       }],
       "reference" : {
-        "reference" : "Observation/cbtn-family-relationship-son"
+        "reference" : "FamilyMemberHistory/gregor-family-relationship-mother"
       },
-      "name" : "An example family relationship based on data from CBTN",
-      "description" : "An example family relationship based on data from CBTN.",
+      "name" : "An example family relationship (child-to-parent) based on data from GREGoR",
+      "description" : "An example family relationship based on data from GREGoR.\n\nGSS123456 (the patient) is male and >= 64 years old\nGSS654321 (the relative) has no age or sex information in their patient record.\n    We made them female for the sake of this example.\nGSS654321 isBiologicalMotherOf (KIN:027) GSS123456. This is the \"mother\" relationship. The relative is the mother of the patient.\n\nThis instance instantiates the minimum relationship direction to reproduce a PED file.",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "FamilyMemberHistory"
       }],
       "reference" : {
-        "reference" : "Observation/gregor-family-relationship-mother"
+        "reference" : "FamilyMemberHistory/cbtn-family-relationship-daughter"
       },
-      "name" : "An example family relationship based on data from GREGoR",
-      "description" : "An example family relationship based on data from GREGoR.",
+      "name" : "An example family relationship (parent to child) based on data from CBTN",
+      "description" : "An example family relationship based on data from CBTN.\n\n PT-006SP675 (the relative) is female and 5 years old\n PT-006SP660 (the patient) is female and 17 years old\n PT-006SP675 isBiologicalChildOf (KIN:032) PT-006SP660. This is the \"daughter\" relationship. The relative is the daughter of the patient.\n\n This demonstrates using extensibility to express the reverse of the\n minimum relationship convention.",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-family-relationship"
     },
     {
@@ -804,6 +810,18 @@
       },
       "name" : "BAM or CRAM file profile",
       "description" : "BAM or CRAM file profile",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/family-biological-relationship-vs"
+      },
+      "name" : "Biological Relationship Codes",
+      "description" : "All codes from the GA4GH KIN ontology for family relationships. This ValueSet\nduplicates the GA4GH PedigreeRelationshipTypes ValueSet to maintain compatibility\nwith the GA4GH PedigreeRelationship profile while documenting NCPI-specific guidance.\n\n# NCPI-Recommended Codes for Maximum Interoperability\n\nFor maximum interoperability with other NCPI systems, prefer these three codes for\ngenetic relationships in pedigrees ([PED files](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format)):\n\n- [`KIN:027` (**\"isBiologicalMotherOf\"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58027):\n   The relative is the biological mother of the patient.\n- [`KIN:028` (**\"isBiologicalFatherOf\"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58028):\n   The relative is the biological father of the patient.\n- [`KIN:010` (**\"isMonozygoticMultipleBirthSiblingOf\"**)](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html#kin-KIN.58010):\n   The relative and patient are monozygotic twins. For higher-order multiples\n   (triplets, quadruplets, etc.), create KIN:010 relationships between every\n   pair of individuals in the multiple. Since this is a non-directed relationship,\n   each pair requires two FamilyRelationship resources (A→B and B→A).\n\nRelationships are expressed from relative (parent) to patient (child):\n`relative`=parent, `patient`=child, , `relationship`=\"isBiologicalMotherOf\" or \"isBiologicalFatherOf\".\n\nFor other genetic relationships (grandparents, aunts, uncles, cousins), use these\nthree codes with inferred individuals to represent the relationship chain.\n\n# Additional KIN Codes\n\nThe full [KIN ontology](https://ga4gh.github.io/pedigree-fhir-ig/CodeSystem-kin.html)\nprovides 55 relationship codes including adoptive parents, step-relations, grandparents,\nand more. While all codes are available for use, NCPI systems may not fully support\nrelationships beyond the three core codes listed above.\n\n# Future Enhancement\n\nWhen FHIR R5/R6 support is added, we plan to use additional binding features to better\nexpress the preference for the three core codes while maintaining the full KIN ontology\nas an option.",
       "exampleBoolean" : false
     },
     {
@@ -923,7 +941,7 @@
         "reference" : "StructureDefinition/consanguinity"
       },
       "name" : "Consanguinity Extension",
-      "description" : "Extension containing Consanguinity",
+      "description" : "Extension containing a consanguinity assertion",
       "exampleBoolean" : false
     },
     {
@@ -1295,7 +1313,19 @@
         "reference" : "StructureDefinition/ncpi-family-relationship"
       },
       "name" : "Family Relationship",
-      "description" : "Family Relationship",
+      "description" : "A relationship between individuals in a pedigree or family.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/family-role"
+      },
+      "name" : "Family Role",
+      "description" : "Extension containing Family Role",
       "exampleBoolean" : false
     },
     {
@@ -1765,6 +1795,42 @@
       "name" : "Participants from the GREGoR research study",
       "description" : "Participants from the GREGoR research study",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/patient-knowledge-source"
+      },
+      "name" : "Patient Knowledge Source",
+      "description" : "An extension to record the source of the knowledge in a particular\n`Patient` resource.\n\nThe primary use case is to identify those `Patient` resources\ncreated via inference in order to support indirect pedigree\nrelationships.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/patient-knowledge-source-vs"
+      },
+      "name" : "Patient Knowledge Source",
+      "description" : "The source of the knowledge represented in a `Patient` resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/patient-knowledge-source"
+      },
+      "name" : "Patient Knowledge Source",
+      "description" : "The source of the knowledge represented in a `Patient` resource.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -2252,22 +2318,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/family-role"
-      },
-      "name" : "Study Family Focus",
-      "description" : "Extension containing Family Role",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/study-family-focus"
       },
       "name" : "Study Family Focus Extension",
-      "description" : "Extension containing Study Family Focus",
+      "description" : "Extension containing a study family focus assertion",
       "exampleBoolean" : false
     },
     {

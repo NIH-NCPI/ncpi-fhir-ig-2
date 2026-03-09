@@ -41,148 +41,114 @@ Profile: [NCPI FASTQ File](StructureDefinition-ncpi-fastq.md)
   "resourceType" : "Observation",
   "id" : "FASTQ-example",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-fastq"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/kf-research-study-cbtn"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/kf-research-study-cbtn"
     }
-  ],
+  }],
   "status" : "final",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://edamontology.org",
-        "code" : "format_1930"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://edamontology.org",
+      "code" : "format_1930"
+    }]
   },
-  "focus" : [
-    {
-      "reference" : "DocumentReference/GF-6BAD9S7D"
-    }
-  ],
+  "focus" : [{
+    "reference" : "DocumentReference/GF-6BAD9S7D"
+  }],
   "specimen" : {
     "reference" : "Specimen/SA-000"
   },
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "AssayStrategy"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://purl.obolibrary.org/obo/obi.owl",
-            "code" : "0002117",
-            "display" : "whole genome sequencing assay"
-          }
-        ]
-      }
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "AssayStrategy"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "PlatformInstrument"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://purl.obolibrary.org/obo/obi.owl",
-            "code" : "0002001",
-            "display" : "Illumina HiSeq 2000"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "LibraryPrep"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "code" : "polyA"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "LibrarySelection"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "code" : "PolyTEnrichment"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "Strandedness"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "code" : "unstranded"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "IsPairedEnd"
-          }
-        ]
-      },
-      "valueBoolean" : false
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "AdaptorTrimmed"
-          }
-        ]
-      },
-      "valueBoolean" : true
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://purl.obolibrary.org/obo/obi.owl",
+        "code" : "0002117",
+        "display" : "whole genome sequencing assay"
+      }]
     }
-  ]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "PlatformInstrument"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://purl.obolibrary.org/obo/obi.owl",
+        "code" : "0002001",
+        "display" : "Illumina HiSeq 2000"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "LibraryPrep"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "polyA"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "LibrarySelection"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "PolyTEnrichment"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "Strandedness"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "unstranded"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "IsPairedEnd"
+      }]
+    },
+    "valueBoolean" : false
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "AdaptorTrimmed"
+      }]
+    },
+    "valueBoolean" : true
+  }]
 }
 
 ```

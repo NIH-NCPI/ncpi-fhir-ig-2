@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:NcpiResearchCollection |
+| Draft as of 2026-03-09 | *Computable Name*:NcpiResearchCollection |
 
  
 Collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections. 
@@ -53,122 +53,104 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-research-collec
   "name" : "NcpiResearchCollection",
   "title" : "NCPI Research Collection",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
-    {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
-  "description" : "Collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections.",
-  "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
     },
     {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
+  "description" : "Collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "List",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/List",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "List",
-        "path" : "List"
-      },
-      {
-        "id" : "List.extension",
-        "path" : "List.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "List.extension:website",
-        "path" : "List.extension",
-        "sliceName" : "website",
-        "short" : "URL describing the research collection, this can include a formal website, such as the Consortium or Program's website, or to an online document describing the collection.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "List.extension:label",
-        "path" : "List.extension",
-        "sliceName" : "label",
-        "short" : "Alias such as acronym and alternate names.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "List.title",
-        "path" : "List.title",
-        "short" : "The collection's title.",
-        "min" : 1
-      },
-      {
-        "id" : "List.code",
-        "path" : "List.code",
-        "short" : "The type of collection being described.",
-        "min" : 1,
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs"
-        }
-      },
-      {
-        "id" : "List.note",
-        "path" : "List.note",
-        "short" : "The description of the collection."
-      },
-      {
-        "id" : "List.entry",
-        "path" : "List.entry",
-        "short" : "List of references to items included in the list.",
-        "min" : 1
+    "element" : [{
+      "id" : "List",
+      "path" : "List"
+    },
+    {
+      "id" : "List.extension",
+      "path" : "List.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "List.extension:website",
+      "path" : "List.extension",
+      "sliceName" : "website",
+      "short" : "URL describing the research collection, this can include a formal website, such as the Consortium or Program's website, or to an online document describing the collection.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link"]
+      }]
+    },
+    {
+      "id" : "List.extension:label",
+      "path" : "List.extension",
+      "sliceName" : "label",
+      "short" : "Alias such as acronym and alternate names.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension"]
+      }]
+    },
+    {
+      "id" : "List.title",
+      "path" : "List.title",
+      "short" : "The collection's title.",
+      "min" : 1
+    },
+    {
+      "id" : "List.code",
+      "path" : "List.code",
+      "short" : "The type of collection being described.",
+      "min" : 1,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs"
+      }
+    },
+    {
+      "id" : "List.note",
+      "path" : "List.note",
+      "short" : "The description of the collection."
+    },
+    {
+      "id" : "List.entry",
+      "path" : "List.entry",
+      "short" : "List of references to items included in the list.",
+      "min" : 1
+    }]
   }
 }
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelAliquot | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:CmdAliquot |
+| Draft as of 2026-03-09 | *Computable Name*:CmdAliquot |
 
  
 Shared Data Model for Aliquot 
@@ -53,23 +53,19 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelAliqu
   "name" : "CmdAliquot",
   "title" : "Shared Data Model for Aliquot",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Shared Data Model for Aliquot",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
@@ -78,82 +74,68 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelAliqu
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "SharedDataModelAliquot",
-        "path" : "SharedDataModelAliquot",
-        "short" : "Shared Data Model for Aliquot",
-        "definition" : "Shared Data Model for Aliquot"
-      },
-      {
-        "id" : "SharedDataModelAliquot.aliquotId",
-        "path" : "SharedDataModelAliquot.aliquotId",
-        "short" : "Unique ID for this aliquot",
-        "definition" : "Unique ID for this aliquot",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelAliquot.sample",
-        "path" : "SharedDataModelAliquot.sample",
-        "short" : "The sample of which this tube is a part.",
-        "definition" : "The sample of which this tube is a part.",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelAliquot.availabilityStatus",
-        "path" : "SharedDataModelAliquot.availabilityStatus",
-        "short" : "Can this Sample be requested for further analysis?",
-        "definition" : "Can this Sample be requested for further analysis?",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelAliquot.volume",
-        "path" : "SharedDataModelAliquot.volume",
-        "short" : "What is the volume of the Aliquot?",
-        "definition" : "What is the volume of the Aliquot?",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelAliquot.concentration",
-        "path" : "SharedDataModelAliquot.concentration",
-        "short" : "What is the concentration of the analyte in the Aliquot?",
-        "definition" : "What is the concentration of the analyte in the Aliquot?",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "SharedDataModelAliquot",
+      "path" : "SharedDataModelAliquot",
+      "short" : "Shared Data Model for Aliquot",
+      "definition" : "Shared Data Model for Aliquot"
+    },
+    {
+      "id" : "SharedDataModelAliquot.aliquotId",
+      "path" : "SharedDataModelAliquot.aliquotId",
+      "short" : "Unique ID for this aliquot",
+      "definition" : "Unique ID for this aliquot",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "SharedDataModelAliquot.sample",
+      "path" : "SharedDataModelAliquot.sample",
+      "short" : "The sample of which this tube is a part.",
+      "definition" : "The sample of which this tube is a part.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"]
+      }]
+    },
+    {
+      "id" : "SharedDataModelAliquot.availabilityStatus",
+      "path" : "SharedDataModelAliquot.availabilityStatus",
+      "short" : "Can this Sample be requested for further analysis?",
+      "definition" : "Can this Sample be requested for further analysis?",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelAliquot.volume",
+      "path" : "SharedDataModelAliquot.volume",
+      "short" : "What is the volume of the Aliquot?",
+      "definition" : "What is the volume of the Aliquot?",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "SharedDataModelAliquot.concentration",
+      "path" : "SharedDataModelAliquot.concentration",
+      "short" : "What is the concentration of the analyte in the Aliquot?",
+      "definition" : "What is the concentration of the analyte in the Aliquot?",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    }]
   }
 }
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types | *Version*:0.2.0 |
-| Active as of 2026-02-06 | *Computable Name*:NcpiFamilyTypes |
+| Active as of 2026-03-09 | *Computable Name*:NcpiFamilyTypes |
 
  
 CodeSystem for Types of Families 
@@ -32,52 +32,46 @@ CodeSystem for Types of Families
   "title" : "NCPI Family Types CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "CodeSystem for Types of Families",
   "caseSensitive" : true,
   "content" : "fragment",
-  "concept" : [
-    {
-      "code" : "Control-only",
-      "display" : "Control Only"
-    },
-    {
-      "code" : "Duo",
-      "display" : "Duo"
-    },
-    {
-      "code" : "Other",
-      "display" : "Other"
-    },
-    {
-      "code" : "Proband-only",
-      "display" : "Proband Only"
-    },
-    {
-      "code" : "Trio",
-      "display" : "Trio"
-    },
-    {
-      "code" : "Trio+",
-      "display" : "Trio+"
-    }
-  ]
+  "concept" : [{
+    "code" : "Control-only",
+    "display" : "Control Only"
+  },
+  {
+    "code" : "Duo",
+    "display" : "Duo"
+  },
+  {
+    "code" : "Other",
+    "display" : "Other"
+  },
+  {
+    "code" : "Proband-only",
+    "display" : "Proband Only"
+  },
+  {
+    "code" : "Trio",
+    "display" : "Trio"
+  },
+  {
+    "code" : "Trio+",
+    "display" : "Trio+"
+  }]
 }
 
 ```

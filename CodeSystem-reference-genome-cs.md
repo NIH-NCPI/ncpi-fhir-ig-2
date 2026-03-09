@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs | *Version*:0.2.0 |
-| Active as of 2026-02-06 | *Computable Name*:ReferenceGenomeCS |
+| Active as of 2026-03-09 | *Computable Name*:ReferenceGenomeCS |
 
  
 Reference genome examples 
@@ -32,49 +32,43 @@ Reference genome examples
   "title" : "Reference genome examples",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Reference genome examples",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 5,
-  "concept" : [
-    {
-      "code" : "GRCh37",
-      "display" : "GRCh37"
-    },
-    {
-      "code" : "GRCh38",
-      "display" : "CRCh38"
-    },
-    {
-      "code" : "GRCh38p13",
-      "display" : "GRCh38.p13"
-    },
-    {
-      "code" : "GRCh38p14",
-      "display" : "GRCh38.p14"
-    },
-    {
-      "code" : "unknown",
-      "display" : "Unknown"
-    }
-  ]
+  "concept" : [{
+    "code" : "GRCh37",
+    "display" : "GRCh37"
+  },
+  {
+    "code" : "GRCh38",
+    "display" : "CRCh38"
+  },
+  {
+    "code" : "GRCh38p13",
+    "display" : "GRCh38.p13"
+  },
+  {
+    "code" : "GRCh38p14",
+    "display" : "GRCh38.p14"
+  },
+  {
+    "code" : "unknown",
+    "display" : "Unknown"
+  }]
 }
 
 ```

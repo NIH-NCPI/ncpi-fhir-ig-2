@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelBiospecimenCollection | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:CdmBiospecimenCollection |
+| Draft as of 2026-03-09 | *Computable Name*:CdmBiospecimenCollection |
 
  
 Shared Data Model for Biospecimen Collection 
@@ -53,23 +53,19 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelBiosp
   "name" : "CdmBiospecimenCollection",
   "title" : "Shared Data Model for Biospecimen Collection",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Shared Data Model for Biospecimen Collection",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
@@ -78,108 +74,90 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelBiosp
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "SharedDataModelBiospecimenCollection",
-        "path" : "SharedDataModelBiospecimenCollection",
-        "short" : "Shared Data Model for Biospecimen Collection",
-        "definition" : "Shared Data Model for Biospecimen Collection"
-      },
-      {
-        "id" : "SharedDataModelBiospecimenCollection.sampleGenerated",
-        "path" : "SharedDataModelBiospecimenCollection.sampleGenerated",
-        "short" : "Sample that was generated from this collection event",
-        "definition" : "Sample that was generated from this collection event",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelBiospecimenCollection.participant",
-        "path" : "SharedDataModelBiospecimenCollection.participant",
-        "short" : "The participant from whom the biospecimen was taken",
-        "definition" : "The participant from whom the biospecimen was taken",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelBiospecimenCollection.ageAtCollection",
-        "path" : "SharedDataModelBiospecimenCollection.ageAtCollection",
-        "short" : "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range.",
-        "definition" : "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelBiospecimenCollection.method",
-        "path" : "SharedDataModelBiospecimenCollection.method",
-        "short" : "The approach used to collect the biospecimen",
-        "definition" : "The approach used to collect the biospecimen",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelBiospecimenCollection.site",
-        "path" : "SharedDataModelBiospecimenCollection.site",
-        "short" : "The location of the specimen collection",
-        "definition" : "The location of the specimen collection",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelBiospecimenCollection.spatial",
-        "path" : "SharedDataModelBiospecimenCollection.spatial",
-        "short" : "Any spatial/location qualifiers",
-        "definition" : "Any spatial/location qualifiers",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelBiospecimenCollection.laterality",
-        "path" : "SharedDataModelBiospecimenCollection.laterality",
-        "short" : "Any spatial/location qualifiers",
-        "definition" : "Any spatial/location qualifiers",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "SharedDataModelBiospecimenCollection",
+      "path" : "SharedDataModelBiospecimenCollection",
+      "short" : "Shared Data Model for Biospecimen Collection",
+      "definition" : "Shared Data Model for Biospecimen Collection"
+    },
+    {
+      "id" : "SharedDataModelBiospecimenCollection.sampleGenerated",
+      "path" : "SharedDataModelBiospecimenCollection.sampleGenerated",
+      "short" : "Sample that was generated from this collection event",
+      "definition" : "Sample that was generated from this collection event",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "SharedDataModelBiospecimenCollection.participant",
+      "path" : "SharedDataModelBiospecimenCollection.participant",
+      "short" : "The participant from whom the biospecimen was taken",
+      "definition" : "The participant from whom the biospecimen was taken",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"]
+      }]
+    },
+    {
+      "id" : "SharedDataModelBiospecimenCollection.ageAtCollection",
+      "path" : "SharedDataModelBiospecimenCollection.ageAtCollection",
+      "short" : "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range.",
+      "definition" : "The age at which this biospecimen was collected. Could be expressed with a term, an age, or an age range.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "SharedDataModelBiospecimenCollection.method",
+      "path" : "SharedDataModelBiospecimenCollection.method",
+      "short" : "The approach used to collect the biospecimen",
+      "definition" : "The approach used to collect the biospecimen",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelBiospecimenCollection.site",
+      "path" : "SharedDataModelBiospecimenCollection.site",
+      "short" : "The location of the specimen collection",
+      "definition" : "The location of the specimen collection",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelBiospecimenCollection.spatial",
+      "path" : "SharedDataModelBiospecimenCollection.spatial",
+      "short" : "Any spatial/location qualifiers",
+      "definition" : "Any spatial/location qualifiers",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelBiospecimenCollection.laterality",
+      "path" : "SharedDataModelBiospecimenCollection.laterality",
+      "short" : "Any spatial/location qualifiers",
+      "definition" : "Any spatial/location qualifiers",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    }]
   }
 }
 

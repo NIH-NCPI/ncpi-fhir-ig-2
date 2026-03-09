@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:ResearchWebLink |
+| Draft as of 2026-03-09 | *Computable Name*:ResearchWebLink |
 
 A URL pointing to a either a research study's website, an online document or other research related site or document.
 
@@ -47,94 +47,80 @@ Other representations of profile: [CSV](StructureDefinition-research-web-link.cs
   "name" : "ResearchWebLink",
   "title" : "Research Web Link",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
-    {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
-  "description" : "A URL pointing to a either a research study's website, an online document or other research related site or document.",
-  "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
-  "kind" : "complex-type",
-  "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "List"
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
     },
     {
-      "type" : "element",
-      "expression" : "Consent"
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
+  "description" : "A URL pointing to a either a research study's website, an online document or other research related site or document.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "List"
+  },
+  {
+    "type" : "element",
+    "expression" : "Consent"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Research Web Link",
-        "definition" : "A URL pointing to a either a research study's website, an online document or other research related site or document."
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Research Web Link",
+      "definition" : "A URL pointing to a either a research study's website, an online document or other research related site or document."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        },
-        "min" : 1
-      },
-      {
-        "id" : "Extension.value[x]:valueUrl",
-        "path" : "Extension.value[x]",
-        "sliceName" : "valueUrl",
-        "short" : "The URL associated with the document or related website.",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "url"
-          }
-        ]
-      }
-    ]
+      "min" : 1
+    },
+    {
+      "id" : "Extension.value[x]:valueUrl",
+      "path" : "Extension.value[x]",
+      "sliceName" : "valueUrl",
+      "short" : "The URL associated with the document or related website.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "url"
+      }]
+    }]
   }
 }
 

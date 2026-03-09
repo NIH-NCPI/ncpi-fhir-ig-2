@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/component-elements | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:ComponentElements |
+| Draft as of 2026-03-09 | *Computable Name*:ComponentElements |
 
  
 Slicing for elements of component 
@@ -32,53 +32,47 @@ Slicing for elements of component
   "title" : "Elements of Component",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Slicing for elements of component",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 6,
-  "concept" : [
-    {
-      "code" : "ageAtEvent",
-      "display" : "Age at Event"
-    },
-    {
-      "code" : "ageAtAssertion",
-      "display" : "Age at Assertion"
-    },
-    {
-      "code" : "ageAtOnset",
-      "display" : "Age at Onset"
-    },
-    {
-      "code" : "ageAtResolution",
-      "display" : "Age at Resolution"
-    },
-    {
-      "code" : "otherModifiers",
-      "display" : "Other Modifiers"
-    },
-    {
-      "code" : "stage",
-      "display" : "Stage"
-    }
-  ]
+  "concept" : [{
+    "code" : "ageAtEvent",
+    "display" : "Age at Event"
+  },
+  {
+    "code" : "ageAtAssertion",
+    "display" : "Age at Assertion"
+  },
+  {
+    "code" : "ageAtOnset",
+    "display" : "Age at Onset"
+  },
+  {
+    "code" : "ageAtResolution",
+    "display" : "Age at Resolution"
+  },
+  {
+    "code" : "otherModifiers",
+    "display" : "Other Modifiers"
+  },
+  {
+    "code" : "stage",
+    "display" : "Stage"
+  }]
 }
 
 ```

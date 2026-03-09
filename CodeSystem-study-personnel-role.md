@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:StudyPersonnelRole |
+| Draft as of 2026-03-09 | *Computable Name*:StudyPersonnelRole |
 
  
 Roles associated with study personnel. 
@@ -32,41 +32,35 @@ Roles associated with study personnel.
   "title" : "Study Personnel Role",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Roles associated with study personnel.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 3,
-  "concept" : [
-    {
-      "code" : "primary-investigator",
-      "display" : "Primary Investigator"
-    },
-    {
-      "code" : "administrator",
-      "display" : "Administrator"
-    },
-    {
-      "code" : "collaborator",
-      "display" : "Collaborator"
-    }
-  ]
+  "concept" : [{
+    "code" : "primary-investigator",
+    "display" : "Primary Investigator"
+  },
+  {
+    "code" : "administrator",
+    "display" : "Administrator"
+  },
+  {
+    "code" : "collaborator",
+    "display" : "Collaborator"
+  }]
 }
 
 ```

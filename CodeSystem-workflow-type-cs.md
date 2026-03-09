@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-type-cs | *Version*:0.2.0 |
-| Active as of 2026-02-06 | *Computable Name*:WorkflowTypeCS |
+| Active as of 2026-03-09 | *Computable Name*:WorkflowTypeCS |
 
  
 Workflow type options 
@@ -32,41 +32,35 @@ Workflow type options
   "title" : "Workflow type options",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Workflow type options",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 3,
-  "concept" : [
-    {
-      "code" : "alignment",
-      "display" : "Alignment"
-    },
-    {
-      "code" : "somatic",
-      "display" : "Somatic"
-    },
-    {
-      "code" : "unknown",
-      "display" : "Unknown"
-    }
-  ]
+  "concept" : [{
+    "code" : "alignment",
+    "display" : "Alignment"
+  },
+  {
+    "code" : "somatic",
+    "display" : "Somatic"
+  },
+  {
+    "code" : "unknown",
+    "display" : "Unknown"
+  }]
 }
 
 ```

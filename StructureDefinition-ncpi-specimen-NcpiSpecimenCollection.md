@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-specimen-NcpiSpecimenCollection | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:NcpiSpecimenCollection |
+| Draft as of 2026-03-09 | *Computable Name*:NcpiSpecimenCollection |
 
  
 Linkage for related samples 
@@ -41,54 +41,46 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-specimen-NcpiSp
   "name" : "NcpiSpecimenCollection",
   "title" : "Linkage for related samples",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
-    {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
-  "description" : "Linkage for related samples",
-  "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
     },
     {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
+  "description" : "Linkage for related samples",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "List",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/List",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "List",
-        "path" : "List"
-      },
-      {
-        "id" : "List.subject",
-        "path" : "List.subject",
-        "short" : "Reference to any subjects or other samples related to a subject"
-      }
-    ]
+    "element" : [{
+      "id" : "List",
+      "path" : "List"
+    },
+    {
+      "id" : "List.subject",
+      "path" : "List.subject",
+      "short" : "Reference to any subjects or other samples related to a subject"
+    }]
   }
 }
 

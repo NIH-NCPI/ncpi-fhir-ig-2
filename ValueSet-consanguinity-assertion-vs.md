@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/consanguinity-assertion-vs | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:ConsanguinityAssertionVS |
+| Draft as of 2026-03-09 | *Computable Name*:ConsanguinityAssertionVS |
 
  
 List of codes indicates the level of known consanguinity (blood relation) within a study family. 
@@ -51,48 +51,40 @@ List of codes indicates the level of known consanguinity (blood relation) within
   "title" : "Consanguinity Value Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "List of codes indicates the level of known consanguinity (blood relation) within a study family.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "428263003",
+        "display" : "NOT suspected"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "428263003",
-            "display" : "NOT suspected"
-          },
-          {
-            "code" : "415684004",
-            "display" : "Suspected"
-          },
-          {
-            "code" : "410515003",
-            "display" : "Known present"
-          },
-          {
-            "code" : "261665006",
-            "display" : "Unknown"
-          }
-        ]
-      }
-    ]
+        "code" : "415684004",
+        "display" : "Suspected"
+      },
+      {
+        "code" : "410515003",
+        "display" : "Known present"
+      },
+      {
+        "code" : "261665006",
+        "display" : "Unknown"
+      }]
+    }]
   }
 }
 

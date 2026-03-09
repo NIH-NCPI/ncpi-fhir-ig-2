@@ -32,23 +32,17 @@ Profile: [NCPI Sample](StructureDefinition-ncpi-sample.md)
   "resourceType" : "Specimen",
   "id" : "GSS123456-01-010p",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-sample"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/research-study-gregor"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/research-study-gregor"
     }
-  ],
-  "identifier" : [
-    {
-      "value" : "GSS123456-s1"
-    }
-  ],
+  }],
+  "identifier" : [{
+    "value" : "GSS123456-s1"
+  }],
   "type" : {
     "text" : "Blood Draw"
   },

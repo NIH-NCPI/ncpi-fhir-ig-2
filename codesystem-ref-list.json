@@ -1,177 +1,197 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "http://hl7.org/fhir/research-study-party-role",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "ResearchStudyPartyRole",
-      "title" : "Research Study Party Role",
-      "description" : "This is a ResearchStudy's party role.",
-      "oids" : ["2.16.840.1.113883.4.642.4.1968"],
-      "uses" : {
-      },
-      "ValueSet-research-study-party-role-vs.html" : "Family Types Codes"
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/research-study-party-role",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "ResearchStudyPartyRole",
+    "title" : "Research Study Party Role",
+    "description" : "This is a ResearchStudy's party role.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1968"],
+    "uses" : {
     },
-    {
-      "url" : "http://hl7.org/fhir/title-type",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "TitleType",
-      "title" : "TitleType",
-      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1492"],
-      "uses" : {
-      },
-      "ValueSet-title-type-vs.html" : "Title Type"
+    "ValueSet-research-study-party-role-vs.html" : "Family Types Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/title-type",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "TitleType",
+    "title" : "TitleType",
+    "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1492"],
+    "uses" : {
     },
-    {
-      "url" : "http://human-phenotype-ontology.org",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "HPO",
-      "title" : "Human Phenotype Ontology",
-      "description" : "\"The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Each term in the HPO describes a phenotypic abnormality, such as Atrial septal defect. The HPO is currently being developed using the medical literature, Orphanet, DECIPHER, and OMIM. HPO currently contains over 13,000 terms and over 156,000 annotations to hereditary diseases. The HPO project and others have developed software for phenotype-driven differential diagnostics, genomic diagnostics, and translational research. The HPO is a flagship product of the Monarch Initiative, an NIH-supported international consortium dedicated to semantic integration of biomedical and model organism data with the ultimate goal of improving biomedical research. The HPO, as a part of the Monarch Initiative, is a central component of one of the 13 driver projects in the Global Alliance for Genomics and Health (GA4GH) strategic roadmap.\"\r\n\r\nPlease see https://hpo.jax.org/app/download/ontology.\r\n\r\nReleases, produced approximately every 2 months, can be found [here](https://github.com/obophenotype/human-phenotype-ontology/releases).",
-      "oids" : ["2.16.840.1.113883.6.339"],
-      "uses" : {
-      },
-      "ValueSet-condition-code-vs.html" : "Condition Codes",
-      "ValueSet-phenotypic-feature-code-vs.html" : "Phenotypic Feature Codes"
+    "ValueSet-title-type-vs.html" : "Title Type"
+  },
+  {
+    "url" : "http://human-phenotype-ontology.org",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "HPO",
+    "title" : "Human Phenotype Ontology",
+    "description" : "\"The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Each term in the HPO describes a phenotypic abnormality, such as Atrial septal defect. The HPO is currently being developed using the medical literature, Orphanet, DECIPHER, and OMIM. HPO currently contains over 13,000 terms and over 156,000 annotations to hereditary diseases. The HPO project and others have developed software for phenotype-driven differential diagnostics, genomic diagnostics, and translational research. The HPO is a flagship product of the Monarch Initiative, an NIH-supported international consortium dedicated to semantic integration of biomedical and model organism data with the ultimate goal of improving biomedical research. The HPO, as a part of the Monarch Initiative, is a central component of one of the 13 driver projects in the Global Alliance for Genomics and Health (GA4GH) strategic roadmap.\"\r\n\r\nPlease see https://hpo.jax.org/app/download/ontology.\r\n\r\nReleases, produced approximately every 2 months, can be found [here](https://github.com/obophenotype/human-phenotype-ontology/releases).",
+    "oids" : ["2.16.840.1.113883.6.339"],
+    "uses" : {
     },
-    {
-      "url" : "http://loinc.org",
-      "version" : "3.1.0",
-      "status" : "active",
-      "name" : "LOINC",
-      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
-      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
-      "oids" : ["2.16.840.1.113883.6.1"],
-      "uses" : {
-      },
-      "ValueSet-phenotypic-feature-assertion-vs.html" : "Assertion of Phenotypic Feature Codes"
+    "ValueSet-phenotypic-feature-code-vs.html" : "Phenotypic Feature Codes",
+    "ValueSet-condition-code-vs.html" : "Condition Codes"
+  },
+  {
+    "url" : "http://loinc.org",
+    "version" : "3.1.0",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+    "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+    "oids" : ["2.16.840.1.113883.6.1"],
+    "uses" : {
     },
-    {
-      "url" : "http://purl.obolibrary.org/obo/mondo.owl",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "MONDO",
-      "title" : "Mondo Disease Ontology",
-      "description" : "The Mondo Disease Ontology is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology that contains cross-species disease terminology.\r\n\r\nNumerous sources for disease definitions and data models currently exist, which include HPO, OMIM, SNOMED CT, ICD, PhenoDB, MedDRA, MedGen, ORDO, DO, GARD, etc; however, these sources partially overlap and sometimes conflict, making it difficult to know definitively how they relate to each other. This has resulted in a proliferation of mappings between disease entries in different resources; however mappings are problematic: collectively, they are expensive to create and maintain. Most importantly, the mappings lack completeness, accuracy, and precision; as a result, mapping calls are often inconsistent between resources. The UMLS provides intermediate concepts through which other resources can be mapped, but these mappings suffer from the same challenges: they are not guaranteed to be one-to-one, especially in areas with evolving disease concepts such as rare disease.\r\n\r\nIn order to address the lack of a unified disease terminology that provides precise equivalences between disease concepts, we created Mondo, which provides a logic-based structure for unifying multiple disease resources.\r\n\r\nMondo’s development is coordinated with the Human Phenotype Ontology (HPO), which describes the individual phenotypic features that constitute a disease. Like the HPO, Mondo provides a hierarchical structure which can be used for classification or “rolling up” diseases to higher level groupings. It provides mappings to other disease resources, but in contrast to other mappings between ontologies, we precisely annotate each mapping using strict semantics, so that we know when two disease names or identifiers are equivalent or one-to-one, in contrast to simply being closely related.\r\n\r\nFor more information, see [https://mondo.monarchinitiative.org/](https://mondo.monarchinitiative.org/)",
-      "oids" : ["2.16.840.1.113883.3.9216"],
-      "uses" : {
-      },
-      "ValueSet-condition-code-vs.html" : "Condition Codes"
+    "ValueSet-phenotypic-feature-assertion-vs.html" : "Assertion of Phenotypic Feature Codes"
+  },
+  {
+    "url" : "http://purl.obolibrary.org/obo/mondo.owl",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "MONDO",
+    "title" : "Mondo Disease Ontology",
+    "description" : "The Mondo Disease Ontology is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology that contains cross-species disease terminology.\r\n\r\nNumerous sources for disease definitions and data models currently exist, which include HPO, OMIM, SNOMED CT, ICD, PhenoDB, MedDRA, MedGen, ORDO, DO, GARD, etc; however, these sources partially overlap and sometimes conflict, making it difficult to know definitively how they relate to each other. This has resulted in a proliferation of mappings between disease entries in different resources; however mappings are problematic: collectively, they are expensive to create and maintain. Most importantly, the mappings lack completeness, accuracy, and precision; as a result, mapping calls are often inconsistent between resources. The UMLS provides intermediate concepts through which other resources can be mapped, but these mappings suffer from the same challenges: they are not guaranteed to be one-to-one, especially in areas with evolving disease concepts such as rare disease.\r\n\r\nIn order to address the lack of a unified disease terminology that provides precise equivalences between disease concepts, we created Mondo, which provides a logic-based structure for unifying multiple disease resources.\r\n\r\nMondo’s development is coordinated with the Human Phenotype Ontology (HPO), which describes the individual phenotypic features that constitute a disease. Like the HPO, Mondo provides a hierarchical structure which can be used for classification or “rolling up” diseases to higher level groupings. It provides mappings to other disease resources, but in contrast to other mappings between ontologies, we precisely annotate each mapping using strict semantics, so that we know when two disease names or identifiers are equivalent or one-to-one, in contrast to simply being closely related.\r\n\r\nFor more information, see [https://mondo.monarchinitiative.org/](https://mondo.monarchinitiative.org/)",
+    "oids" : ["2.16.840.1.113883.3.9216"],
+    "uses" : {
     },
-    {
-      "url" : "http://snomed.info/sct",
-      "version" : null,
-      "status" : "active",
-      "name" : "SNOMED_CT",
-      "title" : "SNOMED CT (all versions)",
-      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
-      "oids" : ["2.16.840.1.113883.6.96"],
-      "uses" : {
-      },
-      "ValueSet-consanguinity-assertion-vs.html" : "Consanguinity Value Codes"
+    "ValueSet-condition-code-vs.html" : "Condition Codes"
+  },
+  {
+    "url" : "http://purl.org/ga4gh/kin.fhir",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "FamilyHistoryRelationsOntology",
+    "title" : "Family History Relations Ontology",
+    "description" : "A family relationships ontology.",
+    "uses" : {
     },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "RoleCode",
-      "title" : "RoleCode",
-      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
-      "oids" : ["2.16.840.1.113883.5.111"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/7.0.1/ValueSet-v3-FamilyMember.html" : "FamilyMember"
+    "ValueSet-family-biological-relationship-vs.html" : "Biological Relationship Codes"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
     },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
-      "version" : "0.2.0",
-      "status" : "draft",
-      "name" : "CollectionType",
-      "title" : "Collection Type",
-      "description" : "Enumerated list of collection types",
-      "uses" : {
-      },
-      "ValueSet-collection-type-vs.html" : "Collection Type"
+    "ValueSet-consanguinity-assertion-vs.html" : "Consanguinity Value Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "RoleCode",
+    "title" : "RoleCode",
+    "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+    "oids" : ["2.16.840.1.113883.5.111"],
+    "uses" : {
     },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "ConditionType",
-      "title" : "Type of Condition",
-      "description" : "Code System for type of condition",
-      "uses" : {
-      },
-      "ValueSet-condition-type-vs.html" : "Type of Condition"
+    "http://terminology.hl7.org/7.1.0/ValueSet-v3-FamilyMember.html" : "FamilyMember"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "CollectionType",
+    "title" : "Collection Type",
+    "description" : "Enumerated list of collection types",
+    "uses" : {
     },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "NcpiFamilyTypes",
-      "title" : "NCPI Family Types CodeSystem",
-      "description" : "CodeSystem for Types of Families",
-      "uses" : {
-      },
-      "ValueSet-ncpi-family-types-vs.html" : "Family Types Codes"
+    "ValueSet-collection-type-vs.html" : "Collection Type"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "ConditionType",
+    "title" : "Type of Condition",
+    "description" : "Code System for type of condition",
+    "uses" : {
     },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "ResearchDataAccessCode",
-      "title" : "Research Data Access Codes",
-      "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
-      "uses" : {
-      },
-      "ValueSet-research-data-access-code-vs.html" : "Research Data Access Codes"
+    "ValueSet-condition-type-vs.html" : "Type of Condition"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NcpiFamilyTypes",
+    "title" : "NCPI Family Types CodeSystem",
+    "description" : "CodeSystem for Types of Families",
+    "uses" : {
     },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "ResearchDataAccessType",
-      "title" : "Research Data Access Type Codes",
-      "description" : "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'",
-      "uses" : {
-      },
-      "ValueSet-research-data-access-type-vs.html" : "Research Data Access Type Codes"
+    "ValueSet-ncpi-family-types-vs.html" : "Family Types Codes"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "PatientKnowledgeSource",
+    "title" : "Patient Knowledge Source",
+    "description" : "The source of the knowledge represented in a `Patient` resource.",
+    "uses" : {
     },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "ResearchDataDateOfBirthMethod",
-      "title" : "Enumerations for how DOB was constructed",
-      "description" : "Enumerations for how DOB was constructed",
-      "uses" : {
-      },
-      "ValueSet-research-data-date-of-birth-method-vs.html" : "Enumerations for how DOB was constructed"
+    "ValueSet-patient-knowledge-source-vs.html" : "Patient Knowledge Source"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "ResearchDataAccessCode",
+    "title" : "Research Data Access Codes",
+    "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
+    "uses" : {
     },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
-      "version" : "0.2.0",
-      "status" : "draft",
-      "name" : "StudyNameType",
-      "title" : "Study Name Type",
-      "description" : "Some common types of study 'names'.",
-      "uses" : {
-      },
-      "ValueSet-study-name-type-vs.html" : "Study Name Type"
+    "ValueSet-research-data-access-code-vs.html" : "Research Data Access Codes"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "ResearchDataAccessType",
+    "title" : "Research Data Access Type Codes",
+    "description" : "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'",
+    "uses" : {
     },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
-      "version" : "0.2.0",
-      "status" : "draft",
-      "name" : "StudyPersonnelRole",
-      "title" : "Study Personnel Role",
-      "description" : "Roles associated with study personnel.",
-      "uses" : {
-      },
-      "ValueSet-study-personnel-role-vs.html" : "Study Personnel Role"
-    }
-  ]
+    "ValueSet-research-data-access-type-vs.html" : "Research Data Access Type Codes"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "ResearchDataDateOfBirthMethod",
+    "title" : "Enumerations for how DOB was constructed",
+    "description" : "Enumerations for how DOB was constructed",
+    "uses" : {
+    },
+    "ValueSet-research-data-date-of-birth-method-vs.html" : "Enumerations for how DOB was constructed"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "StudyNameType",
+    "title" : "Study Name Type",
+    "description" : "Some common types of study 'names'.",
+    "uses" : {
+    },
+    "ValueSet-study-name-type-vs.html" : "Study Name Type"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "StudyPersonnelRole",
+    "title" : "Study Personnel Role",
+    "description" : "Roles associated with study personnel.",
+    "uses" : {
+    },
+    "ValueSet-study-personnel-role-vs.html" : "Study Personnel Role"
+  }]
 }

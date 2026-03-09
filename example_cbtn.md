@@ -18,7 +18,7 @@ Below is a table of collected example profiles from the Children's Brain Tumor N
 | Participant | [Example JSON PT-006SP660](Patient-PT-006SP660.json.md),[Example JSON PT-006SP675](Patient-PT-006SP675.json.md) |
 | Person | [Example JSON](Person-pcgc-example-person.json.md) |
 | Study Family | [Example JSON](Group-cbtn-study-family.json.md) |
-| Family Relationship | [Example JSON - Son](Observation-cbtn-family-relationship-son.json.md),[Example JSON - Mother](Observation-cbtn-family-relationship-mother.md) |
+| Family Relationship | [Example JSON - Daughter](FamilyMemberHistory-cbtn-family-relationship-daughter.json.md),[Example JSON - Mother](FamilyMemberHistory-cbtn-family-relationship-mother.json.md) |
 | Condition | [Example JSON](Observation-PT-006SP660-condition.json.md) |
 | Biospecimen | [Example JSON](Specimen-SA-000.json.md) |
 | File | [Example JSON](DocumentReference-GF-6BAD9S7D.json.md) |

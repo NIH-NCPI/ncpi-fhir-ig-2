@@ -1,190 +1,196 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "http://hl7.org/fhir/research-study-party-role",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "ResearchStudyPartyRole",
-      "title" : "Research Study Party Role",
-      "description" : "This is a ResearchStudy's party role.",
-      "oids" : ["2.16.840.1.113883.4.642.4.1968"]
-    },
-    {
-      "url" : "http://hl7.org/fhir/title-type",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "TitleType",
-      "title" : "TitleType",
-      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1492"]
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/adaptor-trimmed-cs",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "AdaptorTrimmedCS",
-      "title" : "Adaptor trimmed options",
-      "description" : "Adaptor trimmed options"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "BiospecimenAvailability",
-      "title" : "Sample availability for Sample and Aliquot modules",
-      "description" : "Sample availability for Sample and Aliquot modules"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
-      "version" : "0.2.0",
-      "status" : "draft",
-      "name" : "CollectionType",
-      "title" : "Collection Type",
-      "description" : "Enumerated list of collection types"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/component-elements",
-      "version" : "0.2.0",
-      "status" : "draft",
-      "name" : "ComponentElements",
-      "title" : "Elements of Component",
-      "description" : "Slicing for elements of component"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "ConditionType",
-      "title" : "Type of Condition",
-      "description" : "Code System for type of condition"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system",
-      "version" : "0.2.0",
-      "status" : "draft",
-      "name" : "HashTypeCS",
-      "title" : "Hash Types Code System",
-      "description" : "Algorithm used to calculate the hash (and size, where applicable)"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-prep-cs",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "LibraryPrepCS",
-      "title" : "Library prep options",
-      "description" : "Library prep options"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-selection-cs",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "LibrarySelectionCS",
-      "title" : "Library selection options",
-      "description" : "Library selection options"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "MetadataElements",
-      "title" : "NCPI Metadata slices",
-      "description" : "NCPI Metadata slices"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "Ncpi",
-      "title" : "NCPI FHIR Codes",
-      "description" : "Codes that would apply to NCPI projects"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "NcpiFamilyTypes",
-      "title" : "NCPI Family Types CodeSystem",
-      "description" : "CodeSystem for Types of Families"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "ReferenceGenomeCS",
-      "title" : "Reference genome examples",
-      "description" : "Reference genome examples"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/related-file-type-code-system",
-      "version" : "0.2.0",
-      "status" : "draft",
-      "name" : "RelatedFileTypeCS",
-      "title" : "Related File Type Code System",
-      "description" : "Explains the relationship of this file to the file of reference"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "ResearchDataAccessCode",
-      "title" : "Research Data Access Codes",
-      "description" : "Enumerated list of access codes such as dbGaP consent codes among others."
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "ResearchDataAccessType",
-      "title" : "Research Data Access Type Codes",
-      "description" : "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "ResearchDataDateOfBirthMethod",
-      "title" : "Enumerations for how DOB was constructed",
-      "description" : "Enumerations for how DOB was constructed"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/strandedness-cs",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "StrandednessCS",
-      "title" : "Strandedness options",
-      "description" : "Strandedness options"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
-      "version" : "0.2.0",
-      "status" : "draft",
-      "name" : "StudyNameType",
-      "title" : "Study Name Type",
-      "description" : "Some common types of study 'names'."
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
-      "version" : "0.2.0",
-      "status" : "draft",
-      "name" : "StudyPersonnelRole",
-      "title" : "Study Personnel Role",
-      "description" : "Roles associated with study personnel."
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-tool-cs",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "WorkflowToolCS",
-      "title" : "Workflow tool options",
-      "description" : "Workflow tool options"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-type-cs",
-      "version" : "0.2.0",
-      "status" : "active",
-      "name" : "WorkflowTypeCS",
-      "title" : "Workflow type options",
-      "description" : "Workflow type options"
-    }
-  ]
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/research-study-party-role",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "ResearchStudyPartyRole",
+    "title" : "Research Study Party Role",
+    "description" : "This is a ResearchStudy's party role.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1968"]
+  },
+  {
+    "url" : "http://hl7.org/fhir/title-type",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "TitleType",
+    "title" : "TitleType",
+    "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1492"]
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/adaptor-trimmed-cs",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "AdaptorTrimmedCS",
+    "title" : "Adaptor trimmed options",
+    "description" : "Adaptor trimmed options"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "BiospecimenAvailability",
+    "title" : "Sample availability for Sample and Aliquot modules",
+    "description" : "Sample availability for Sample and Aliquot modules"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "CollectionType",
+    "title" : "Collection Type",
+    "description" : "Enumerated list of collection types"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/component-elements",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "ComponentElements",
+    "title" : "Elements of Component",
+    "description" : "Slicing for elements of component"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "ConditionType",
+    "title" : "Type of Condition",
+    "description" : "Code System for type of condition"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/example-hash-type-code-system",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "HashTypeCS",
+    "title" : "Hash Types Code System",
+    "description" : "Algorithm used to calculate the hash (and size, where applicable)"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-prep-cs",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "LibraryPrepCS",
+    "title" : "Library prep options",
+    "description" : "Library prep options"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/library-selection-cs",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "LibrarySelectionCS",
+    "title" : "Library selection options",
+    "description" : "Library selection options"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "MetadataElements",
+    "title" : "NCPI Metadata slices",
+    "description" : "NCPI Metadata slices"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "Ncpi",
+    "title" : "NCPI FHIR Codes",
+    "description" : "Codes that would apply to NCPI projects"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi-family-types",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "NcpiFamilyTypes",
+    "title" : "NCPI Family Types CodeSystem",
+    "description" : "CodeSystem for Types of Families"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/patient-knowledge-source",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "PatientKnowledgeSource",
+    "title" : "Patient Knowledge Source",
+    "description" : "The source of the knowledge represented in a `Patient` resource."
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/reference-genome-cs",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "ReferenceGenomeCS",
+    "title" : "Reference genome examples",
+    "description" : "Reference genome examples"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/related-file-type-code-system",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "RelatedFileTypeCS",
+    "title" : "Related File Type Code System",
+    "description" : "Explains the relationship of this file to the file of reference"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "ResearchDataAccessCode",
+    "title" : "Research Data Access Codes",
+    "description" : "Enumerated list of access codes such as dbGaP consent codes among others."
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "ResearchDataAccessType",
+    "title" : "Research Data Access Type Codes",
+    "description" : "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "ResearchDataDateOfBirthMethod",
+    "title" : "Enumerations for how DOB was constructed",
+    "description" : "Enumerations for how DOB was constructed"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/strandedness-cs",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "StrandednessCS",
+    "title" : "Strandedness options",
+    "description" : "Strandedness options"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "StudyNameType",
+    "title" : "Study Name Type",
+    "description" : "Some common types of study 'names'."
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "StudyPersonnelRole",
+    "title" : "Study Personnel Role",
+    "description" : "Roles associated with study personnel."
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-tool-cs",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "WorkflowToolCS",
+    "title" : "Workflow tool options",
+    "description" : "Workflow tool options"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/workflow-type-cs",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "WorkflowTypeCS",
+    "title" : "Workflow type options",
+    "description" : "Workflow type options"
+  }]
 }

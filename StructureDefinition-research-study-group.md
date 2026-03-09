@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:ResearchStudyGroup |
+| Draft as of 2026-03-09 | *Computable Name*:ResearchStudyGroup |
 
  
 Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as **All Participants** or **Participants From a Particular Consent Group**, etc. 
@@ -41,87 +41,75 @@ Other representations of profile: [CSV](StructureDefinition-research-study-group
   "name" : "ResearchStudyGroup",
   "title" : "NCPI Research Study Group",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
-    {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
-  "description" : "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. ",
-  "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
     },
     {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
+  "description" : "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. ",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Group",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Group",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Group",
-        "path" : "Group"
-      },
-      {
-        "id" : "Group.type",
-        "path" : "Group.type",
-        "patternCode" : "person"
-      },
-      {
-        "id" : "Group.actual",
-        "path" : "Group.actual",
-        "patternBoolean" : true
-      },
-      {
-        "id" : "Group.code",
-        "path" : "Group.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://purl.obolibrary.org/obo/ncit.owl",
-              "code" : "C142710",
-              "display" : "Study Participant"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Group.quantity",
-        "path" : "Group.quantity",
-        "min" : 1
-      },
-      {
-        "id" : "Group.member.entity",
-        "path" : "Group.member.entity",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
-          }
-        ]
+    "element" : [{
+      "id" : "Group",
+      "path" : "Group"
+    },
+    {
+      "id" : "Group.type",
+      "path" : "Group.type",
+      "patternCode" : "person"
+    },
+    {
+      "id" : "Group.actual",
+      "path" : "Group.actual",
+      "patternBoolean" : true
+    },
+    {
+      "id" : "Group.code",
+      "path" : "Group.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://purl.obolibrary.org/obo/ncit.owl",
+          "code" : "C142710",
+          "display" : "Study Participant"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "Group.quantity",
+      "path" : "Group.quantity",
+      "min" : 1
+    },
+    {
+      "id" : "Group.member.entity",
+      "path" : "Group.member.entity",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }]
+    }]
   }
 }
 

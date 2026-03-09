@@ -33,66 +33,56 @@ Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS
   "resourceType" : "Patient",
   "id" : "GSS123456",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"]
   },
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
-      "valueCode" : "M"
-    },
-    {
-      "extension" : [
-        {
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2106-3",
-            "display" : "White"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "White"
-        }
-      ],
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
-    },
-    {
-      "extension" : [
-        {
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2186-5",
-            "display" : "Not Hispanic or Latino"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "Not Hispanic or Latino"
-        }
-      ],
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-population",
-      "valueString" : "English|Scottish"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/research-study-gregor"
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+    "valueCode" : "M"
+  },
+  {
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2106-3",
+        "display" : "White"
       }
-    }
-  ],
-  "identifier" : [
+    },
     {
-      "system" : "https://anvil.terra.bio/",
-      "value" : "GSS123456"
+      "url" : "text",
+      "valueString" : "White"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+  },
+  {
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2186-5",
+        "display" : "Not Hispanic or Latino"
+      }
+    },
+    {
+      "url" : "text",
+      "valueString" : "Not Hispanic or Latino"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-population",
+    "valueString" : "English|Scottish"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/research-study-gregor"
     }
-  ]
+  }],
+  "identifier" : [{
+    "system" : "https://anvil.terra.bio/",
+    "value" : "GSS123456"
+  }]
 }
 
 ```

@@ -47,201 +47,155 @@ Profile: [BAM or CRAM file profile](StructureDefinition-ncpi-bamcram.md)
   "resourceType" : "Observation",
   "id" : "gregor-example-metadata",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-bamcram"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/research-study-gregor"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/research-study-gregor"
     }
-  ],
+  }],
   "status" : "final",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://edamontology.org",
-        "code" : "format_2572"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://edamontology.org",
+      "code" : "format_2572"
+    }]
   },
-  "focus" : [
-    {
-      "reference" : "Patient/GSS123456"
-    }
-  ],
+  "focus" : [{
+    "reference" : "Patient/GSS123456"
+  }],
   "specimen" : {
     "reference" : "Specimen/GSS123456-01-010"
   },
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "AssayStrategy"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://purl.obolibrary.org/obo/obi.owl",
-            "code" : "0002117",
-            "display" : "whole genome sequencing assay"
-          }
-        ]
-      }
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "AssayStrategy"
+      }]
     },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "PlatformInstrument"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://purl.obolibrary.org/obo/obi.owl",
-            "code" : "0002001",
-            "display" : "Illumina HiSeq 2000"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "LibraryPrep"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "code" : "polyA"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "LibrarySelection"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "code" : "PolyTEnrichment"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "TargetRegion"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "text" : "Not Applicable"
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "Strandedness"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "code" : "stranded"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "ReferenceGenome"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "code" : "GRCh38"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "IsPairedEnd"
-          }
-        ]
-      },
-      "valueBoolean" : false
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "WorkflowTool"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "code" : "bammem"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-            "code" : "WorkflowType"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "code" : "alignment"
-          }
-        ]
-      }
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://purl.obolibrary.org/obo/obi.owl",
+        "code" : "0002117",
+        "display" : "whole genome sequencing assay"
+      }]
     }
-  ]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "PlatformInstrument"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://purl.obolibrary.org/obo/obi.owl",
+        "code" : "0002001",
+        "display" : "Illumina HiSeq 2000"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "LibraryPrep"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "polyA"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "LibrarySelection"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "PolyTEnrichment"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "TargetRegion"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "text" : "Not Applicable"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "Strandedness"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "stranded"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "ReferenceGenome"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "GRCh38"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "IsPairedEnd"
+      }]
+    },
+    "valueBoolean" : false
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "WorkflowTool"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "bammem"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+        "code" : "WorkflowType"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "alignment"
+      }]
+    }
+  }]
 }
 
 ```

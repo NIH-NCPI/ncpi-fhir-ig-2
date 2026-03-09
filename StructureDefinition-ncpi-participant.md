@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:NcpiParticipant |
+| Draft as of 2026-03-09 | *Computable Name*:NcpiParticipant |
 
  
 Research oriented patient 
@@ -66,7 +66,7 @@ For further information, see the Participant, Research Study, and Person example
 
 **Usages:**
 
-* Refer to this Profile: [Shared Data Model for Biospecimen Collection](StructureDefinition-SharedDataModelBiospecimenCollection.md), [NCPI Study Participant](StructureDefinition-ncpi-Study-Participant.md), [Family Relationship](StructureDefinition-ncpi-family-relationship.md), [NCPI Participant Assertion](StructureDefinition-ncpi-participant-assertion.md)... Show 2 more, [NCPI Person](StructureDefinition-ncpi-person.md) and [NCPI Study Family](StructureDefinition-ncpi-study-family.md)
+* Refer to this Profile: [Shared Data Model for Biospecimen Collection](StructureDefinition-SharedDataModelBiospecimenCollection.md), [NCPI Study Participant](StructureDefinition-ncpi-Study-Participant.md), [NCPI Participant Assertion](StructureDefinition-ncpi-participant-assertion.md), [NCPI Person](StructureDefinition-ncpi-person.md) and [NCPI Study Family](StructureDefinition-ncpi-study-family.md)
 * Examples for this Profile: [Patient/GSS123456](Patient-GSS123456.md), [Patient/GSS654321](Patient-GSS654321.md), [Patient/PT-006SP660](Patient-PT-006SP660.md) and [Patient/PT-006SP675](Patient-PT-006SP675.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ncpi-fhir-implementation-guide-v2|current/StructureDefinition/ncpi-participant)
@@ -114,194 +114,172 @@ Please note that there are 3 different systems listed in the codes above.
   "name" : "NcpiParticipant",
   "title" : "NCPI Participant",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Research oriented patient",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "cda",
-      "uri" : "http://hl7.org/v3/cda",
-      "name" : "CDA (R2)"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "loinc",
-      "uri" : "http://loinc.org",
-      "name" : "LOINC code for the element"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "cda",
+    "uri" : "http://hl7.org/v3/cda",
+    "name" : "CDA (R2)"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "loinc",
+    "uri" : "http://loinc.org",
+    "name" : "LOINC code for the element"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Patient",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Patient",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Patient",
-        "path" : "Patient"
-      },
-      {
-        "id" : "Patient.id",
-        "path" : "Patient.id",
-        "short" : "ParticipantID - Unique participant identifier. System identifier used for internal references."
-      },
-      {
-        "id" : "Patient.extension",
-        "path" : "Patient.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Patient.extension:usCoreBirthSex",
-        "path" : "Patient.extension",
-        "sliceName" : "usCoreBirthSex",
-        "short" : "Sex assigned at birth (or pre-natal observed sex)",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex|6.1.0"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.extension:usCoreRace",
-        "path" : "Patient.extension",
-        "sliceName" : "usCoreRace",
-        "short" : "US Core Race",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|6.1.0"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.extension:usCoreEthnicity",
-        "path" : "Patient.extension",
-        "sliceName" : "usCoreEthnicity",
-        "short" : "US Core Ethnicity",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity|6.1.0"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.extension:population",
-        "path" : "Patient.extension",
-        "sliceName" : "population",
-        "short" : "Population, Race, and/or Ethnicity information.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-population"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.extension:dobMethod",
-        "path" : "Patient.extension",
-        "sliceName" : "dobMethod",
-        "short" : "Specifies method used to alter DOB for research sharing. Details should be available in the study protocols.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.extension:ageAtLastVitalStatus",
-        "path" : "Patient.extension",
-        "sliceName" : "ageAtLastVitalStatus",
-        "short" : "Age or date of last vital status",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.identifier",
-        "path" : "Patient.identifier",
-        "short" : "External IDs for this participant. Requires scoping."
-      },
-      {
-        "id" : "Patient.birthDate",
-        "path" : "Patient.birthDate",
-        "short" : "Date of Birth of the participant. Details of privacy method should be included in DOBMethod"
-      },
-      {
-        "id" : "Patient.deceased[x]",
-        "path" : "Patient.deceased[x]",
-        "short" : "Implementers can provide relativeDateTime or actual date or T/F, depending on data available."
+    "element" : [{
+      "id" : "Patient",
+      "path" : "Patient"
+    },
+    {
+      "id" : "Patient.id",
+      "path" : "Patient.id",
+      "short" : "ParticipantID - Unique participant identifier. System identifier used for internal references."
+    },
+    {
+      "id" : "Patient.extension",
+      "path" : "Patient.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Patient.extension:usCoreBirthSex",
+      "path" : "Patient.extension",
+      "sliceName" : "usCoreBirthSex",
+      "short" : "Sex assigned at birth (or pre-natal observed sex)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex|6.1.0"]
+      }]
+    },
+    {
+      "id" : "Patient.extension:usCoreRace",
+      "path" : "Patient.extension",
+      "sliceName" : "usCoreRace",
+      "short" : "US Core Race",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|6.1.0"]
+      }]
+    },
+    {
+      "id" : "Patient.extension:usCoreEthnicity",
+      "path" : "Patient.extension",
+      "sliceName" : "usCoreEthnicity",
+      "short" : "US Core Ethnicity",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity|6.1.0"]
+      }]
+    },
+    {
+      "id" : "Patient.extension:population",
+      "path" : "Patient.extension",
+      "sliceName" : "population",
+      "short" : "Population, Race, and/or Ethnicity information.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-population"]
+      }]
+    },
+    {
+      "id" : "Patient.extension:dobMethod",
+      "path" : "Patient.extension",
+      "sliceName" : "dobMethod",
+      "short" : "Specifies method used to alter DOB for research sharing. Details should be available in the study protocols.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method"]
+      }]
+    },
+    {
+      "id" : "Patient.extension:ageAtLastVitalStatus",
+      "path" : "Patient.extension",
+      "sliceName" : "ageAtLastVitalStatus",
+      "short" : "Age or date of last vital status",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status"]
+      }]
+    },
+    {
+      "id" : "Patient.extension:patientKnowledgeSource",
+      "path" : "Patient.extension",
+      "sliceName" : "patientKnowledgeSource",
+      "short" : "The source of the knowledge represented by this Patient resource.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/patient-knowledge-source"]
+      }]
+    },
+    {
+      "id" : "Patient.identifier",
+      "path" : "Patient.identifier",
+      "short" : "External IDs for this participant. Requires scoping."
+    },
+    {
+      "id" : "Patient.birthDate",
+      "path" : "Patient.birthDate",
+      "short" : "Date of Birth of the participant. Details of privacy method should be included in DOBMethod"
+    },
+    {
+      "id" : "Patient.deceased[x]",
+      "path" : "Patient.deceased[x]",
+      "short" : "Implementers can provide relativeDateTime or actual date or T/F, depending on data available."
+    }]
   }
 }
 

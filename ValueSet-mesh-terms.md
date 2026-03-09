@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:MeshTerms |
+| Draft as of 2026-03-09 | *Computable Name*:MeshTerms |
 
  
 Example terms from Medical Subject Headings (MeSH) Ontology 
@@ -24,7 +24,7 @@ Example terms from Medical Subject Headings (MeSH) Ontology
 
 ### Expansion
 
-No Expansion for this valueset (not supported by Publication Tooling)
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -53,30 +53,24 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "MeSH Terms",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Example terms from Medical Subject Headings (MeSH) Ontology",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/MSH"
-      }
-    ]
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/MSH"
+    }]
   }
 }
 

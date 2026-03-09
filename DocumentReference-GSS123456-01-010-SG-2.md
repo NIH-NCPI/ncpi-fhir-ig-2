@@ -30,7 +30,7 @@ Profile: [NCPI File](StructureDefinition-ncpi-file.md)
 
 **description**: Aligned DNA short read
 
-> **content****If present, only those under the specific Access Policy can access the file in this location.**: [Consent: extension = Use of the data is limited only by the terms of the model Data Use Certification.,https://redcap.chop.edu/surveys/?s=A7M873HMN8,Controlled; status = draft; scope = Research; category = Research Information Access; policyRule = Common Rule Informed Consent](Consent-kf-gru-dac-consent.md)
+> **content****If present, only those under the specific Access Policy can access the file in this location.**: [kf-gru-dac-consent](Consent-kf-gru-dac-consent.md)
 
 ### Attachments
 
@@ -49,88 +49,72 @@ Profile: [NCPI File](StructureDefinition-ncpi-file.md)
   "resourceType" : "DocumentReference",
   "id" : "GSS123456-01-010-SG-2",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version",
-      "valueString" : "V1"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format",
-      "valueCodeableConcept" : {
-        "coding" : [
-          {
-            "system" : "http://edamontology.org",
-            "code" : "format_2572",
-            "display" : "BAM"
-          }
-        ]
-      }
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size",
-      "valueQuantity" : {
-        "value" : 1044770380,
-        "unit" : "bytes"
-      }
-    },
-    {
-      "extension" : [
-        {
-          "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
-          "valueString" : "9c2460c4647fdc57261f040042863fa0"
-        },
-        {
-          "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type",
-          "valueCode" : "md5"
-        }
-      ],
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/research-study-gregor"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/content-version",
+    "valueString" : "V1"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-format",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://edamontology.org",
+        "code" : "format_2572",
+        "display" : "BAM"
+      }]
     }
-  ],
-  "identifier" : [
-    {
-      "value" : "GSS123456-01-010-SG-2"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/file-size",
+    "valueQuantity" : {
+      "value" : 1044770380,
+      "unit" : "bytes"
     }
-  ],
+  },
+  {
+    "extension" : [{
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-value",
+      "valueString" : "9c2460c4647fdc57261f040042863fa0"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-type",
+      "valueCode" : "md5"
+    }],
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/hash-extension"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/research-study-gregor"
+    }
+  }],
+  "identifier" : [{
+    "value" : "GSS123456-01-010-SG-2"
+  }],
   "status" : "current",
   "type" : {
-    "coding" : [
-      {
-        "system" : "http://edamontology.org",
-        "code" : "operation_3198",
-        "display" : "Read mapping"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://edamontology.org",
+      "code" : "operation_3198",
+      "display" : "Read mapping"
+    }]
   },
   "subject" : {
     "reference" : "Patient/GSS123456"
   },
   "description" : "Aligned DNA short read",
-  "content" : [
-    {
-      "extension" : [
-        {
-          "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access",
-          "valueReference" : {
-            "reference" : "Consent/kf-gru-dac-consent"
-          }
-        }
-      ],
-      "attachment" : {
-        "url" : "gs://fc-secure-a1f0e28d-c9d9-43bb-b4ba-5e0h81784fb1/GSS123456/SR_GS/GSS123456.bam"
+  "content" : [{
+    "extension" : [{
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/location-access",
+      "valueReference" : {
+        "reference" : "Consent/kf-gru-dac-consent"
       }
+    }],
+    "attachment" : {
+      "url" : "gs://fc-secure-a1f0e28d-c9d9-43bb-b4ba-5e0h81784fb1/GSS123456/SR_GS/GSS123456.bam"
     }
-  ]
+  }]
 }
 
 ```

@@ -33,36 +33,26 @@ Profile: [NCPI Participant Assertion](StructureDefinition-ncpi-participant-asser
   "resourceType" : "Observation",
   "id" : "GSS123456-assertion",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant-assertion"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/research-study-gregor"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/research-study-gregor"
     }
-  ],
+  }],
   "status" : "final",
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
-          "code" : "Clinical-Finding"
-        }
-      ]
-    }
-  ],
+  "category" : [{
+    "coding" : [{
+      "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type",
+      "code" : "Clinical-Finding"
+    }]
+  }],
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "271603002"
-      }
-    ],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "271603002"
+    }],
     "text" : "Height / growth measure"
   },
   "subject" : {
@@ -74,32 +64,26 @@ Profile: [NCPI Participant Assertion](StructureDefinition-ncpi-participant-asser
     "system" : "http://unitsofmeasure.org",
     "code" : "[in_us]"
   },
-  "component" : [
-    {
-      "code" : {
-        "coding" : [
-          {
-            "code" : "ageAtAssertion"
-          }
-        ]
-      }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "code" : "ageAtAssertion"
-          }
-        ]
-      },
-      "valueQuantity" : {
-        "value" : 38,
-        "unit" : "year",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "a"
-      }
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "code" : "ageAtAssertion"
+      }]
     }
-  ]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "code" : "ageAtAssertion"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 38,
+      "unit" : "year",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "a"
+    }
+  }]
 }
 
 ```

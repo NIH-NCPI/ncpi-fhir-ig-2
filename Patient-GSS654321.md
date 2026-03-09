@@ -25,24 +25,18 @@ Anonymous Patient (no stated gender), DoB Unknown ( https://anvil.terra.bio/#GSS
   "resourceType" : "Patient",
   "id" : "GSS654321",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/research-study-gregor"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/research-study-gregor"
     }
-  ],
-  "identifier" : [
-    {
-      "system" : "https://anvil.terra.bio/",
-      "value" : "GSS654321"
-    }
-  ]
+  }],
+  "identifier" : [{
+    "system" : "https://anvil.terra.bio/",
+    "value" : "GSS654321"
+  }]
 }
 
 ```

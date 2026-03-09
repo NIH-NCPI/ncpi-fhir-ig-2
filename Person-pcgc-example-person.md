@@ -28,31 +28,23 @@ Profile: [NCPI Person](StructureDefinition-ncpi-person.md)
   "resourceType" : "Person",
   "id" : "pcgc-example-person",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-person"]
   },
-  "extension" : [
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/kf-research-study-cbtn"
-      }
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/kf-research-study-cbtn"
     }
-  ],
-  "identifier" : [
-    {
-      "system" : "http://chdgenes.org/",
-      "value" : "PS_123"
+  }],
+  "identifier" : [{
+    "system" : "http://chdgenes.org/",
+    "value" : "PS_123"
+  }],
+  "link" : [{
+    "target" : {
+      "reference" : "Patient/PT-006SP675"
     }
-  ],
-  "link" : [
-    {
-      "target" : {
-        "reference" : "Patient/PT-006SP675"
-      }
-    }
-  ]
+  }]
 }
 
 ```

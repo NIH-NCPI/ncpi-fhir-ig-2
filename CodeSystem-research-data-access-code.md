@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code | *Version*:0.2.0 |
-| Active as of 2026-02-06 | *Computable Name*:ResearchDataAccessCode |
+| Active as of 2026-03-09 | *Computable Name*:ResearchDataAccessCode |
 
  
 Enumerated list of access codes such as dbGaP consent codes among others. 
@@ -32,69 +32,63 @@ Enumerated list of access codes such as dbGaP consent codes among others.
   "title" : "Research Data Access Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 10,
-  "concept" : [
-    {
-      "code" : "GRU",
-      "display" : "General Research Use"
-    },
-    {
-      "code" : "HMB",
-      "display" : "Health/Medical/Biomedical"
-    },
-    {
-      "code" : "DS",
-      "display" : "Disease-Specific (Disease/Trait/Exposure)"
-    },
-    {
-      "code" : "IRB",
-      "display" : "IRB approval required"
-    },
-    {
-      "code" : "PUB",
-      "display" : "Publication required"
-    },
-    {
-      "code" : "COL",
-      "display" : "Collaboration Required"
-    },
-    {
-      "code" : "NPU",
-      "display" : "Not-for-profit use only"
-    },
-    {
-      "code" : "MDS",
-      "display" : "Methods"
-    },
-    {
-      "code" : "GSO",
-      "display" : "Genetic studies only"
-    },
-    {
-      "code" : "GSR",
-      "display" : "Genomic Summary Results"
-    }
-  ]
+  "concept" : [{
+    "code" : "GRU",
+    "display" : "General Research Use"
+  },
+  {
+    "code" : "HMB",
+    "display" : "Health/Medical/Biomedical"
+  },
+  {
+    "code" : "DS",
+    "display" : "Disease-Specific (Disease/Trait/Exposure)"
+  },
+  {
+    "code" : "IRB",
+    "display" : "IRB approval required"
+  },
+  {
+    "code" : "PUB",
+    "display" : "Publication required"
+  },
+  {
+    "code" : "COL",
+    "display" : "Collaboration Required"
+  },
+  {
+    "code" : "NPU",
+    "display" : "Not-for-profit use only"
+  },
+  {
+    "code" : "MDS",
+    "display" : "Methods"
+  },
+  {
+    "code" : "GSO",
+    "display" : "Genetic studies only"
+  },
+  {
+    "code" : "GSR",
+    "display" : "Genomic Summary Results"
+  }]
 }
 
 ```

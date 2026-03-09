@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements | *Version*:0.2.0 |
-| Active as of 2026-02-06 | *Computable Name*:MetadataElements |
+| Active as of 2026-03-09 | *Computable Name*:MetadataElements |
 
  
 NCPI Metadata slices 
@@ -32,77 +32,71 @@ NCPI Metadata slices
   "title" : "NCPI Metadata slices",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "NCPI Metadata slices",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 12,
-  "concept" : [
-    {
-      "code" : "AssayStrategy",
-      "display" : "Assay strategy"
-    },
-    {
-      "code" : "PlatformInstrument",
-      "display" : "Platform instrument"
-    },
-    {
-      "code" : "RelatedSamples",
-      "display" : "Related samples"
-    },
-    {
-      "code" : "LibraryPrep",
-      "display" : "Library preparation"
-    },
-    {
-      "code" : "LibrarySelection",
-      "display" : "Library selection"
-    },
-    {
-      "code" : "Strandedness",
-      "display" : "Strandedness"
-    },
-    {
-      "code" : "TargetRegion",
-      "display" : "Target region"
-    },
-    {
-      "code" : "ReferenceGenome",
-      "display" : "Reference genome"
-    },
-    {
-      "code" : "IsPairedEnd",
-      "display" : "Is paired end"
-    },
-    {
-      "code" : "WorkflowType",
-      "display" : "Workflow type"
-    },
-    {
-      "code" : "WorkflowTool",
-      "display" : "Workflow tool"
-    },
-    {
-      "code" : "AdaptorTrimmed",
-      "display" : "Adaptor trimmed"
-    }
-  ]
+  "concept" : [{
+    "code" : "AssayStrategy",
+    "display" : "Assay strategy"
+  },
+  {
+    "code" : "PlatformInstrument",
+    "display" : "Platform instrument"
+  },
+  {
+    "code" : "RelatedSamples",
+    "display" : "Related samples"
+  },
+  {
+    "code" : "LibraryPrep",
+    "display" : "Library preparation"
+  },
+  {
+    "code" : "LibrarySelection",
+    "display" : "Library selection"
+  },
+  {
+    "code" : "Strandedness",
+    "display" : "Strandedness"
+  },
+  {
+    "code" : "TargetRegion",
+    "display" : "Target region"
+  },
+  {
+    "code" : "ReferenceGenome",
+    "display" : "Reference genome"
+  },
+  {
+    "code" : "IsPairedEnd",
+    "display" : "Is paired end"
+  },
+  {
+    "code" : "WorkflowType",
+    "display" : "Workflow type"
+  },
+  {
+    "code" : "WorkflowTool",
+    "display" : "Workflow tool"
+  },
+  {
+    "code" : "AdaptorTrimmed",
+    "display" : "Adaptor trimmed"
+  }]
 }
 
 ```

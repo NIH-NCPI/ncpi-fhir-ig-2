@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchParticipant | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:CdmResearchParticipant |
+| Draft as of 2026-03-09 | *Computable Name*:CdmResearchParticipant |
 
  
 The **Shared Data Model for Research Participants** 
@@ -57,23 +57,19 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelResea
   "name" : "CdmResearchParticipant",
   "title" : "Shared Data Model for Research Participants",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "The **Shared Data Model for Research Participants**",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
@@ -82,144 +78,122 @@ Other representations of profile: [CSV](StructureDefinition-SharedDataModelResea
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "SharedDataModelResearchParticipant",
-        "path" : "SharedDataModelResearchParticipant",
-        "short" : "Shared Data Model for Research Participants",
-        "definition" : "The **Shared Data Model for Research Participants**"
-      },
-      {
-        "id" : "SharedDataModelResearchParticipant.participantID",
-        "path" : "SharedDataModelResearchParticipant.participantID",
-        "short" : "Unique participant identifier. System identifier used for internal references.",
-        "definition" : "Unique participant identifier. System identifier used for internal references.",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelResearchParticipant.externalID",
-        "path" : "SharedDataModelResearchParticipant.externalID",
-        "short" : "Unique participant identifier. System identifier used for internal references.",
-        "definition" : "Unique participant identifier. System identifier used for internal references.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelResearchParticipant.population",
-        "path" : "SharedDataModelResearchParticipant.population",
-        "short" : "Population, Race, and/or Ethnicity information.",
-        "definition" : "Population, Race, and/or Ethnicity information.",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelResearchParticipant.ombRace",
-        "path" : "SharedDataModelResearchParticipant.ombRace",
-        "short" : "OMB coded Race for backwards compatibility",
-        "definition" : "OMB coded Race for backwards compatibility",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelResearchParticipant.ombEth",
-        "path" : "SharedDataModelResearchParticipant.ombEth",
-        "short" : "OMB coded Ethnicity for backwards compatibility",
-        "definition" : "OMB coded Ethnicity for backwards compatibility",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelResearchParticipant.sex",
-        "path" : "SharedDataModelResearchParticipant.sex",
-        "short" : "Sex assigned at birth (or pre-natal observed sex)",
-        "definition" : "Sex assigned at birth (or pre-natal observed sex)",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelResearchParticipant.dateOfBirth",
-        "path" : "SharedDataModelResearchParticipant.dateOfBirth",
-        "short" : "Date of Birth of the participant. Details of privacy method should be included in DOBMethod",
-        "definition" : "Date of Birth of the participant. Details of privacy method should be included in DOBMethod",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "date"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelResearchParticipant.dobMethod",
-        "path" : "SharedDataModelResearchParticipant.dobMethod",
-        "short" : "Specifies method used to alter DOB for research sharing. Details should be available in the study protocols.",
-        "definition" : "Specifies method used to alter DOB for research sharing. Details should be available in the study protocols.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelResearchParticipant.ageAtLastVitalStatus",
-        "path" : "SharedDataModelResearchParticipant.ageAtLastVitalStatus",
-        "short" : "Age at last vital status",
-        "definition" : "Age at last vital status",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "date"
-          }
-        ]
-      },
-      {
-        "id" : "SharedDataModelResearchParticipant.vitalStatus",
-        "path" : "SharedDataModelResearchParticipant.vitalStatus",
-        "short" : "Vital Status",
-        "definition" : "Vital Status",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "code"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "SharedDataModelResearchParticipant",
+      "path" : "SharedDataModelResearchParticipant",
+      "short" : "Shared Data Model for Research Participants",
+      "definition" : "The **Shared Data Model for Research Participants**"
+    },
+    {
+      "id" : "SharedDataModelResearchParticipant.participantID",
+      "path" : "SharedDataModelResearchParticipant.participantID",
+      "short" : "Unique participant identifier. System identifier used for internal references.",
+      "definition" : "Unique participant identifier. System identifier used for internal references.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "SharedDataModelResearchParticipant.externalID",
+      "path" : "SharedDataModelResearchParticipant.externalID",
+      "short" : "Unique participant identifier. System identifier used for internal references.",
+      "definition" : "Unique participant identifier. System identifier used for internal references.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelResearchParticipant.population",
+      "path" : "SharedDataModelResearchParticipant.population",
+      "short" : "Population, Race, and/or Ethnicity information.",
+      "definition" : "Population, Race, and/or Ethnicity information.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelResearchParticipant.ombRace",
+      "path" : "SharedDataModelResearchParticipant.ombRace",
+      "short" : "OMB coded Race for backwards compatibility",
+      "definition" : "OMB coded Race for backwards compatibility",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelResearchParticipant.ombEth",
+      "path" : "SharedDataModelResearchParticipant.ombEth",
+      "short" : "OMB coded Ethnicity for backwards compatibility",
+      "definition" : "OMB coded Ethnicity for backwards compatibility",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelResearchParticipant.sex",
+      "path" : "SharedDataModelResearchParticipant.sex",
+      "short" : "Sex assigned at birth (or pre-natal observed sex)",
+      "definition" : "Sex assigned at birth (or pre-natal observed sex)",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelResearchParticipant.dateOfBirth",
+      "path" : "SharedDataModelResearchParticipant.dateOfBirth",
+      "short" : "Date of Birth of the participant. Details of privacy method should be included in DOBMethod",
+      "definition" : "Date of Birth of the participant. Details of privacy method should be included in DOBMethod",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "SharedDataModelResearchParticipant.dobMethod",
+      "path" : "SharedDataModelResearchParticipant.dobMethod",
+      "short" : "Specifies method used to alter DOB for research sharing. Details should be available in the study protocols.",
+      "definition" : "Specifies method used to alter DOB for research sharing. Details should be available in the study protocols.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "SharedDataModelResearchParticipant.ageAtLastVitalStatus",
+      "path" : "SharedDataModelResearchParticipant.ageAtLastVitalStatus",
+      "short" : "Age at last vital status",
+      "definition" : "Age at last vital status",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "SharedDataModelResearchParticipant.vitalStatus",
+      "path" : "SharedDataModelResearchParticipant.vitalStatus",
+      "short" : "Vital Status",
+      "definition" : "Vital Status",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    }]
   }
 }
 

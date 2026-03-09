@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:Label |
+| Draft as of 2026-03-09 | *Computable Name*:Label |
 
 A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)
 
@@ -49,122 +49,108 @@ Other representations of profile: [CSV](StructureDefinition-label-extension.csv)
   "name" : "Label",
   "title" : "Label",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "List"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "List"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Label",
-        "definition" : "A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)"
-      },
-      {
-        "id" : "Extension.extension:type",
-        "path" : "Extension.extension",
-        "sliceName" : "type",
-        "short" : "primary|official|scientific|plain-language|subtitle|acronym|earlier-title|language|autotranslated|human-use|machine-use|duplicate-uid",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Extension.extension:type.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:type.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "type"
-      },
-      {
-        "id" : "Extension.extension:type.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/title-type"
-        }
-      },
-      {
-        "id" : "Extension.extension:label",
-        "path" : "Extension.extension",
-        "sliceName" : "label",
-        "short" : "The name",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Extension.extension:label.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:label.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "label"
-      },
-      {
-        "id" : "Extension.extension:label.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "string"
-          }
-        ]
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "max" : "0"
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Label",
+      "definition" : "A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)"
+    },
+    {
+      "id" : "Extension.extension:type",
+      "path" : "Extension.extension",
+      "sliceName" : "type",
+      "short" : "primary|official|scientific|plain-language|subtitle|acronym|earlier-title|language|autotranslated|human-use|machine-use|duplicate-uid",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:type.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:type.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "type"
+    },
+    {
+      "id" : "Extension.extension:type.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/title-type"
       }
-    ]
+    },
+    {
+      "id" : "Extension.extension:label",
+      "path" : "Extension.extension",
+      "sliceName" : "label",
+      "short" : "The name",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:label.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:label.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "label"
+    },
+    {
+      "id" : "Extension.extension:label.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
   }
 }
 

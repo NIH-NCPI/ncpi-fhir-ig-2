@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:NcpiResearchAccessPolicy |
+| Draft as of 2026-03-09 | *Computable Name*:NcpiResearchAccessPolicy |
 
  
 Limitations and/or requirements that define how a user may gain access to a particular set of data. 
@@ -63,182 +63,150 @@ While the standard FHIR R4 Consent is intended to be directly associated with a 
   "name" : "NcpiResearchAccessPolicy",
   "title" : "NCPI Research Access Policy",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Limitations and/or requirements that define how a user may gain access to a particular set of data.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Consent",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Consent",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Consent",
-        "path" : "Consent",
-        "constraint" : [
-          {
-            "key" : "completed-consent-code",
-            "severity" : "error",
-            "human" : "If category is DS then there must be a ResearchConsentDiseaseAbbreviation",
-            "expression" : "provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()",
-            "source" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
-          }
-        ]
+    "element" : [{
+      "id" : "Consent",
+      "path" : "Consent",
+      "constraint" : [{
+        "key" : "completed-consent-code",
+        "severity" : "error",
+        "human" : "If category is DS then there must be a ResearchConsentDiseaseAbbreviation",
+        "expression" : "provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()",
+        "source" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+      }]
+    },
+    {
+      "id" : "Consent.extension",
+      "path" : "Consent.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       },
-      {
-        "id" : "Consent.extension",
-        "path" : "Consent.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        },
-        "min" : 1
-      },
-      {
-        "id" : "Consent.extension:description",
-        "path" : "Consent.extension",
-        "sliceName" : "description",
-        "short" : "Descriptive text summarizing the policy restrictions and other details associated with this access provision.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Consent.extension:accessType",
-        "path" : "Consent.extension",
-        "sliceName" : "accessType",
-        "short" : "Type of access restrictions on file downloads ( open | registered | controlled )",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Consent.extension:website",
-        "path" : "Consent.extension",
-        "sliceName" : "website",
-        "short" : "URL describing the policy restrictions in detail.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Consent.category",
-        "path" : "Consent.category",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-              "code" : "research",
-              "display" : "Research Information Access"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Consent.provision.extension",
-        "path" : "Consent.provision.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Consent.provision.extension:diseaseUseLimitation",
-        "path" : "Consent.provision.extension",
-        "sliceName" : "diseaseUseLimitation",
-        "short" : "Consent Code Disease Abbreviation",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-disease-use-limitation"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Consent.provision.purpose",
-        "path" : "Consent.provision.purpose",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs"
-        }
+      "min" : 1
+    },
+    {
+      "id" : "Consent.extension:description",
+      "path" : "Consent.extension",
+      "sliceName" : "description",
+      "short" : "Descriptive text summarizing the policy restrictions and other details associated with this access provision.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description"]
+      }]
+    },
+    {
+      "id" : "Consent.extension:accessType",
+      "path" : "Consent.extension",
+      "sliceName" : "accessType",
+      "short" : "Type of access restrictions on file downloads ( open | registered | controlled )",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type"]
+      }]
+    },
+    {
+      "id" : "Consent.extension:website",
+      "path" : "Consent.extension",
+      "sliceName" : "website",
+      "short" : "URL describing the policy restrictions in detail.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-link"]
+      }]
+    },
+    {
+      "id" : "Consent.category",
+      "path" : "Consent.category",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+          "code" : "research",
+          "display" : "Research Information Access"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "Consent.provision.extension",
+      "path" : "Consent.provision.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Consent.provision.extension:diseaseUseLimitation",
+      "path" : "Consent.provision.extension",
+      "sliceName" : "diseaseUseLimitation",
+      "short" : "Consent Code Disease Abbreviation",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-disease-use-limitation"]
+      }]
+    },
+    {
+      "id" : "Consent.provision.purpose",
+      "path" : "Consent.provision.purpose",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs"
+      }
+    }]
   }
 }
 

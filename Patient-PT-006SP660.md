@@ -35,82 +35,72 @@ Anonymous Patient (no stated gender), DoB Unknown ( https://cbtn.org/#C21156)
   "resourceType" : "Patient",
   "id" : "PT-006SP660",
   "meta" : {
-    "profile" : [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"
-    ]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-participant"]
   },
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
-      "valueCode" : "F"
-    },
-    {
-      "extension" : [
-        {
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2106-3",
-            "display" : "White"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "White"
-        }
-      ],
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
-    },
-    {
-      "extension" : [
-        {
-          "url" : "ombCategory",
-          "valueCoding" : {
-            "system" : "urn:oid:2.16.840.1.113883.6.238",
-            "code" : "2186-5",
-            "display" : "Not Hispanic or Latino"
-          }
-        },
-        {
-          "url" : "text",
-          "valueString" : "Not Hispanic or Latino"
-        }
-      ],
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-    },
-    {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+    "valueCode" : "F"
+  },
+  {
+    "extension" : [{
+      "url" : "ombCategory",
       "valueCoding" : {
-        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
-        "code" : "year-only"
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2106-3",
+        "display" : "White"
       }
     },
     {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status",
-      "valueQuantity" : {
-        "value" : 6314,
-        "unit" : "days",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "d"
+      "url" : "text",
+      "valueString" : "White"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+  },
+  {
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2186-5",
+        "display" : "Not Hispanic or Latino"
       }
     },
     {
-      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
-      "valueReference" : {
-        "reference" : "ResearchStudy/kf-research-study-cbtn"
-      }
+      "url" : "text",
+      "valueString" : "Not Hispanic or Latino"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-date-of-birth-method",
+    "valueCoding" : {
+      "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method",
+      "code" : "year-only"
     }
-  ],
-  "identifier" : [
-    {
-      "system" : "https://cbtn.org/",
-      "value" : "C21156"
-    },
-    {
-      "system" : "https://data.kidsfirstdrc.org",
-      "value" : "PT-006SP660"
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-age-at-last-vital-status",
+    "valueQuantity" : {
+      "value" : 6314,
+      "unit" : "days",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "d"
     }
-  ]
+  },
+  {
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/part-of-study",
+    "valueReference" : {
+      "reference" : "ResearchStudy/kf-research-study-cbtn"
+    }
+  }],
+  "identifier" : [{
+    "system" : "https://cbtn.org/",
+    "value" : "C21156"
+  },
+  {
+    "system" : "https://data.kidsfirstdrc.org",
+    "value" : "PT-006SP660"
+  }]
 }
 
 ```

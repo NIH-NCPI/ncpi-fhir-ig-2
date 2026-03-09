@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-vcf | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:NcpiVCF |
+| Draft as of 2026-03-09 | *Computable Name*:NcpiVCF |
 
  
 VCF or gVCF file profile 
@@ -60,437 +60,377 @@ Other representations of profile: [CSV](StructureDefinition-ncpi-vcf.csv), [Exce
   "name" : "NcpiVCF",
   "title" : "VCF or gVCF file profile",
   "status" : "draft",
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "VCF or gVCF file profile",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-file-metadata",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
-      {
-        "id" : "Observation.extension",
-        "path" : "Observation.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Observation.extension:collection",
-        "path" : "Observation.extension",
-        "sliceName" : "collection",
-        "short" : "Linkage for related samples",
-        "min" : 0,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/specimen-collection"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component",
-        "path" : "Observation.component",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "code"
-            }
-          ],
-          "description" : "Slice pattern for component.code",
-          "ordered" : false,
-          "rules" : "open"
-        },
-        "min" : 5
-      },
-      {
-        "id" : "Observation.component:assay_strategy",
-        "path" : "Observation.component",
-        "sliceName" : "assay_strategy",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component:assay_strategy.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-              "code" : "AssayStrategy"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:assay_strategy.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "preferred",
-          "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/assay-strategy-vs"
-        }
-      },
-      {
-        "id" : "Observation.component:platform_instrument",
-        "path" : "Observation.component",
-        "sliceName" : "platform_instrument",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component:platform_instrument.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-              "code" : "PlatformInstrument"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:platform_instrument.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "preferred",
-          "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs"
-        }
-      },
-      {
-        "id" : "Observation.component:library_prep",
-        "path" : "Observation.component",
-        "sliceName" : "library_prep",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component:library_prep.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-              "code" : "LibraryPrep"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:library_prep.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:library_selection",
-        "path" : "Observation.component",
-        "sliceName" : "library_selection",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component:library_selection.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-              "code" : "LibrarySelection"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:library_selection.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:strandedness",
-        "path" : "Observation.component",
-        "sliceName" : "strandedness",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component:strandedness.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-              "code" : "Strandedness"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:strandedness.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:target_region",
-        "path" : "Observation.component",
-        "sliceName" : "target_region",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component:target_region.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-              "code" : "TargetRegion"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:target_region.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:is_paired_end",
-        "path" : "Observation.component",
-        "sliceName" : "is_paired_end",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component:is_paired_end.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-              "code" : "IsPairedEnd"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:is_paired_end.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "boolean"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:adaptor_trimmed",
-        "path" : "Observation.component",
-        "sliceName" : "adaptor_trimmed",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component:adaptor_trimmed.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-              "code" : "AdaptorTrimmed"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:adaptor_trimmed.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "boolean"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:reference_genome",
-        "path" : "Observation.component",
-        "sliceName" : "reference_genome",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component:reference_genome.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-              "code" : "ReferenceGenome"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:reference_genome.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:workflow_type",
-        "path" : "Observation.component",
-        "sliceName" : "workflow_type",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component:workflow_type.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-              "code" : "WorkflowType"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:workflow_type.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component:workflow_tool",
-        "path" : "Observation.component",
-        "sliceName" : "workflow_tool",
-        "min" : 1,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component:workflow_tool.code",
-        "path" : "Observation.component.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
-              "code" : "WorkflowTool"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.component:workflow_tool.value[x]",
-        "path" : "Observation.component.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.extension",
+      "path" : "Observation.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Observation.extension:collection",
+      "path" : "Observation.extension",
+      "sliceName" : "collection",
+      "short" : "Linkage for related samples",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/specimen-collection"]
+      }]
+    },
+    {
+      "id" : "Observation.component",
+      "path" : "Observation.component",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "code"
+        }],
+        "description" : "Slice pattern for component.code",
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "min" : 5
+    },
+    {
+      "id" : "Observation.component:assay_strategy",
+      "path" : "Observation.component",
+      "sliceName" : "assay_strategy",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component:assay_strategy.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+          "code" : "AssayStrategy"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:assay_strategy.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/assay-strategy-vs"
+      }
+    },
+    {
+      "id" : "Observation.component:platform_instrument",
+      "path" : "Observation.component",
+      "sliceName" : "platform_instrument",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component:platform_instrument.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+          "code" : "PlatformInstrument"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:platform_instrument.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/platform-instrument-vs"
+      }
+    },
+    {
+      "id" : "Observation.component:library_prep",
+      "path" : "Observation.component",
+      "sliceName" : "library_prep",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component:library_prep.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+          "code" : "LibraryPrep"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:library_prep.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Observation.component:library_selection",
+      "path" : "Observation.component",
+      "sliceName" : "library_selection",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component:library_selection.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+          "code" : "LibrarySelection"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:library_selection.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Observation.component:strandedness",
+      "path" : "Observation.component",
+      "sliceName" : "strandedness",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component:strandedness.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+          "code" : "Strandedness"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:strandedness.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Observation.component:target_region",
+      "path" : "Observation.component",
+      "sliceName" : "target_region",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component:target_region.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+          "code" : "TargetRegion"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:target_region.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Observation.component:is_paired_end",
+      "path" : "Observation.component",
+      "sliceName" : "is_paired_end",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component:is_paired_end.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+          "code" : "IsPairedEnd"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:is_paired_end.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "Observation.component:adaptor_trimmed",
+      "path" : "Observation.component",
+      "sliceName" : "adaptor_trimmed",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component:adaptor_trimmed.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+          "code" : "AdaptorTrimmed"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:adaptor_trimmed.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "Observation.component:reference_genome",
+      "path" : "Observation.component",
+      "sliceName" : "reference_genome",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component:reference_genome.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+          "code" : "ReferenceGenome"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:reference_genome.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Observation.component:workflow_type",
+      "path" : "Observation.component",
+      "sliceName" : "workflow_type",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component:workflow_type.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+          "code" : "WorkflowType"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:workflow_type.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Observation.component:workflow_tool",
+      "path" : "Observation.component",
+      "sliceName" : "workflow_tool",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component:workflow_tool.code",
+      "path" : "Observation.component.code",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/metadata-elements",
+          "code" : "WorkflowTool"
+        }]
+      }
+    },
+    {
+      "id" : "Observation.component:workflow_tool.value[x]",
+      "path" : "Observation.component.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    }]
   }
 }
 

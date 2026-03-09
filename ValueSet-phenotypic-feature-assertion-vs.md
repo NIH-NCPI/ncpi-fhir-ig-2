@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/phenotypic-feature-assertion-vs | *Version*:0.2.0 |
-| Draft as of 2026-02-06 | *Computable Name*:PhenotypicFeatureAssertionVS |
+| Draft as of 2026-03-09 | *Computable Name*:PhenotypicFeatureAssertionVS |
 
  
 Assertion of Phenotypic Feature Codes 
@@ -51,43 +51,35 @@ Assertion of Phenotypic Feature Codes
   "title" : "Assertion of Phenotypic Feature Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-06T18:07:39+00:00",
+  "date" : "2026-03-09T20:11:59+00:00",
   "publisher" : "NCPI FHIR Working Group",
-  "contact" : [
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ncpi-acc.org/about/working-groups"
+    },
     {
-      "name" : "NCPI FHIR Working Group",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ncpi-acc.org/about/working-groups"
-        },
-        {
-          "system" : "email",
-          "value" : "ncpi-fhir-ig@googlegroups.com"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "ncpi-fhir-ig@googlegroups.com"
+    }]
+  }],
   "description" : "Assertion of Phenotypic Feature Codes",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://loinc.org",
-        "concept" : [
-          {
-            "code" : "LA9633-4",
-            "display" : "Present"
-          },
-          {
-            "code" : "LA9634-2",
-            "display" : "Absent"
-          }
-        ]
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA9633-4",
+        "display" : "Present"
       },
       {
-        "valueSet" : ["http://terminology.hl7.org/ValueSet/v3-NullFlavor"]
-      }
-    ]
+        "code" : "LA9634-2",
+        "display" : "Absent"
+      }]
+    },
+    {
+      "valueSet" : ["http://terminology.hl7.org/ValueSet/v3-NullFlavor"]
+    }]
   }
 }
 
