@@ -73,14 +73,14 @@ Description: "Age at Event Extension"
 * value[x] only dateTime
 * valueDateTime ^short = "Indicate age via relative date time extension or official date of when condition was asserted."
 
-Extension: AgeAtAssertion
-Id: age-at-assertion
-Title: "Age at Assertion"
-Description: "Age at Assertion Extension"
-* insert SetContext(effectiveDateTime)
-// * value[x] only date
-* value[x] only Quantity
-* valueQuantity ^short = "Indicate age via relative date time extension or official date of when condition was asserted."
+// Moved to input/fsh/extensions/AgeAtAssertion.fsh
+// Extension: AgeAtAssertion
+// Id: age-at-assertion
+// Title: "Age at Assertion"
+// Description: "Age at Assertion Extension"
+// * insert SetContext(effectiveDateTime)
+// * value[x] only Quantity
+// * valueQuantity ^short = "Indicate age via relative date time extension or official date of when condition was asserted."
 
 Extension: OtherConditionModifiers 
 Id: other-condition-modifiers 
