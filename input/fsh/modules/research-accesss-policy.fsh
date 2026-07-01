@@ -1,8 +1,8 @@
 // This code system is intended solely for example purposes and should be
 // replaced with the different code systems that are managed by those groups
-// that currently oversee the relevant ontologies such as dbGaP and GA4GH 
+// that currently oversee the relevant ontologies such as dbGaP and GA4GH
 // (DUO). However, until we have a server that contains those code systems
-// that can be used as an terminology server, this subset will do. 
+// that can be used as an terminology server, this subset will do.
 CodeSystem: ResearchDataAccessCode
 Id: research-data-access-code
 Title: "Research Data Access Codes"
@@ -70,8 +70,8 @@ Extension: ResearchDiseaseUseLimitation
 Id: research-disease-use-limitation
 Title: "Research Usage Limitation Disease Code"
 Description: "Coding associated with limitation on what research can be performed this data."
-* insert SetContext(Consent.provision) 
-* value[x] only CodeableConcept 
+* insert SetContext(Consent.provision)
+* value[x] only CodeableConcept
 * valueCodeableConcept from mesh-terms (example)
 
 Extension: AccessType
@@ -86,25 +86,25 @@ Extension: AccessPolicyDescription
 Id: access-policy-description
 Title: "Access Policy Description"
 Description: "Descriptive text summarizing the policy restrictions and other details associated with this access provision."
-* insert SetContext(Consent) 
+* insert SetContext(Consent)
 * value[x] only markdown
 * valueMarkdown 1..1
 * valueMarkdown ^short = "Descriptive text summarizing the policy restrictions and other details associated with this access provision."
 
 Profile: NcpiResearchAccessPolicy
-Parent: Consent 
+Parent: Consent
 Id: ncpi-research-access-policy
 Title: "NCPI Research Access Policy"
 Description: "Limitations and/or requirements that define how a user may gain access to a particular set of data."
 * ^version = "0.1.0"
-* category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research "Research Information Access" 
+* category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research "Research Information Access"
 * provision.purpose from research-data-access-code-vs (extensible)
 * provision.extension contains ResearchDiseaseUseLimitation named diseaseUseLimitation 0..1
 * provision.extension[diseaseUseLimitation] ^short = "Consent Code Disease Abbreviation"
 * obeys completed-consent-code
 * extension contains AccessPolicyDescription named description 0..1
 * extension[description] ^short = "Descriptive text summarizing the policy restrictions and other details associated with this access provision."
-* extension contains AccessType named accessType 1..1
+* extension contains AccessType named accessType 0..1
 * extension[accessType] ^short = "Type of access restrictions on file downloads ( open | registered | controlled )"
 // This may be somewhat unnecessary
 * extension contains ResearchWebLink named website 0..1
